@@ -164,19 +164,22 @@ static inline void str_free(str *s)
   free(s->p);
 }
 
+static inline bool is_id_char(char c)
+{
+  return
+    (c >= '0' && c <= '9') ||
+    (c >= 'A' && c <= 'Z') ||
+    (c >= 'a' && c <= 'z') ||
+    c == '_';
+}
+
 bool calc_cond(const char **body, lua_State *L)
 {
   const char *s = *body;
   if (*s != '@') return true;
   s++;  // Skip '@'
   const char *cond_end = s;
-  while (
-    (*cond_end >= '0' && *cond_end <= '9') ||
-    (*cond_end >= 'A' && *cond_end <= 'Z') ||
-    (*cond_end >= 'a' && *cond_end <= 'z') ||
-    *cond_end == '_'
-  )
-    cond_end++;
+  while (is_id_char(*cond_end)) cond_end++;
   // Evaluate condition expression
   str expr = str_new();
   str_pushn(&expr, "return ");
@@ -193,13 +196,17 @@ bool calc_cond(const char **body, lua_State *L)
   return cond;
 }
 
-void expand_template(str *s, entry_list l, lua_State *L)
+void eval_template(str *s, entry_list l, lua_State *L)
 {
+  char *block_name = NULL;
+  bool block_disabled = false;
+  str block_s;
+
   for (size_t i = 0; i < l.count; i++) {
     const entry e = l.e[i];
-    if (e.ty == ENTRY_TEXT) {
+    if (e.ty == ENTRY_TEXT && !block_disabled) {
       str_push(s, e.text, e.len);
-    } else if (e.ty == ENTRY_EXPR) {
+    } else if (e.ty == ENTRY_EXPR && !block_disabled) {
       const char *body = e.text;
       bool exec = calc_cond(&body, L);
       if (exec) {
@@ -216,18 +223,51 @@ void expand_template(str *s, entry_list l, lua_State *L)
         lua_pop(L, 1);
         str_push(s, result, len);
       }
-    } else if (e.ty == ENTRY_STMT) {
+    } else if (e.ty == ENTRY_STMT && !block_disabled) {
       const char *body = e.text;
       bool exec = calc_cond(&body, L);
       if (exec) {
         luaL_loadbuffer(L, body, e.text + e.len - body, "template statement");
         lua_call(L, 0, 0);
       }
+    } else if (e.ty == ENTRY_BLOCK) {
+      const char *body = e.text;
+      bool exec = calc_cond(&body, L);
+      if (exec) {
+        // Free previous
+        if (block_name != NULL) {
+          lua_pushlstring(L, s->p, s->len);
+          lua_setglobal(L, block_name);
+          free(block_name);
+          str_free(s);
+        }
+        // Copy the name of the block
+        while (!is_id_char(*body)) body++;
+        const char *name_start = body;
+        while (is_id_char(*body)) body++;
+        size_t name_len = body - name_start;
+        block_name = (char *)malloc(name_len + 1);
+        memcpy(block_name, name_start, name_len);
+        block_name[name_len] = '\0';
+        printf("block: %s\n", block_name);
+        // Switch to a separate string buffer
+        block_s = str_new();
+        s = &block_s;
+        block_disabled = false;
+      } else {
+        block_disabled = true;
+      }
     }
+  }
+  if (block_name != NULL) {
+    lua_pushlstring(L, s->p, s->len);
+    lua_setglobal(L, block_name);
+    free(block_name);
+    str_free(s);
   }
 }
 
-char *eval(entry_list index, entry_list page)
+char *eval(entry_list index, entry_list page, size_t *len)
 {
   str s = str_new();
 
@@ -237,9 +277,10 @@ char *eval(entry_list index, entry_list page)
   lua_pushboolean(L, true);
   lua_setglobal(L, "zh");
 
-  expand_template(&s, page, L);
-  expand_template(&s, index, L);
+  eval_template(&s, page, L);
+  eval_template(&s, index, L);
 
+  if (len != NULL) *len = s.len;
   return str_get(&s);
 }
 
@@ -285,7 +326,12 @@ int main()
       entry_list l = parse(read_all(full_path));
       print_entries(l);
       putchar('\n');
-      puts(eval(index_l, l));
+      size_t len;
+      char *rendered = eval(index_l, l, &len);
+      char *rendered_path = multicat("rendered/", ent->d_name);
+      FILE *f = fopen(rendered_path, "w");
+      fwrite(rendered, len, 1, f);
+      fclose(f);
     }
   }
 
