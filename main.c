@@ -1,3 +1,5 @@
+#include "minilua.h"
+
 #include <dirent.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -126,6 +128,121 @@ entry_list parse(const char *s)
   return l;
 }
 
+typedef struct str {
+  char *p;
+  size_t len, cap;
+} str;
+
+static inline str str_new()
+{
+  return (str){
+    .p = (char *)malloc(9),
+    .len = 0,
+    .cap = 8,
+  };
+}
+static inline void str_push(str *s, const char *t, size_t l)
+{
+  if (s->len + l > s->cap) {
+    do s->cap *= 2; while (s->len + l > s->cap);
+    s->p = (char *)realloc(s->p, s->cap + 1);
+  }
+  memcpy(s->p + s->len, t, l);
+  s->len += l;
+}
+static inline void str_pushn(str *s, const char *t)
+{
+  str_push(s, t, strlen(t));
+}
+static inline char *str_get(const str *s)
+{
+  s->p[s->len] = '\0';
+  return s->p;
+}
+static inline void str_free(str *s)
+{
+  free(s->p);
+}
+
+bool calc_cond(const char **body, lua_State *L)
+{
+  const char *s = *body;
+  if (*s != '@') return true;
+  s++;  // Skip '@'
+  const char *cond_end = s;
+  while (
+    (*cond_end >= '0' && *cond_end <= '9') ||
+    (*cond_end >= 'A' && *cond_end <= 'Z') ||
+    (*cond_end >= 'a' && *cond_end <= 'z') ||
+    *cond_end == '_'
+  )
+    cond_end++;
+  // Evaluate condition expression
+  str expr = str_new();
+  str_pushn(&expr, "return ");
+  str_push(&expr, s, cond_end - s);
+  printf("cond: %s\n", str_get(&expr));
+  luaL_loadbuffer(L, expr.p, expr.len, "condition expression");
+  str_free(&expr);
+  lua_call(L, 0, 1);
+  bool cond = lua_toboolean(L, -1);
+  lua_pop(L, 1);
+  puts(cond ? "yes" : "no");
+  // Return
+  *body = cond_end;
+  return cond;
+}
+
+void expand_template(str *s, entry_list l, lua_State *L)
+{
+  for (size_t i = 0; i < l.count; i++) {
+    const entry e = l.e[i];
+    if (e.ty == ENTRY_TEXT) {
+      str_push(s, e.text, e.len);
+    } else if (e.ty == ENTRY_EXPR) {
+      const char *body = e.text;
+      bool exec = calc_cond(&body, L);
+      if (exec) {
+        str expr = str_new();
+        str_pushn(&expr, "return tostring(");
+        str_push(&expr, body, e.text + e.len - body);
+        str_pushn(&expr, ")");
+        luaL_loadbuffer(L, expr.p, expr.len, "template expression");
+        printf("expr: %s\n", str_get(&expr));
+        str_free(&expr);
+        lua_call(L, 0, 1);
+        size_t len;
+        const char *result = lua_tolstring(L, -1, &len);
+        lua_pop(L, 1);
+        str_push(s, result, len);
+      }
+    } else if (e.ty == ENTRY_STMT) {
+      const char *body = e.text;
+      bool exec = calc_cond(&body, L);
+      if (exec) {
+        luaL_loadbuffer(L, body, e.text + e.len - body, "template statement");
+        lua_call(L, 0, 0);
+      }
+    }
+  }
+}
+
+char *eval(entry_list index, entry_list page)
+{
+  str s = str_new();
+
+  lua_State *L = luaL_newstate();
+  luaopen_base(L);
+
+  lua_pushboolean(L, true);
+  lua_setglobal(L, "zh");
+
+  expand_template(&s, page, L);
+  expand_template(&s, index, L);
+
+  return str_get(&s);
+}
+
 char *read_all(const char *path)
 {
   FILE *f = fopen(path, "r");
@@ -155,15 +272,20 @@ static inline char *multicat(const char *a, const char *b)
 
 int main()
 {
-  print_entries(parse(read_all("index.html")));
+  entry_list index_l = parse(read_all("index.html"));
+  print_entries(index_l);
 
   DIR *dir = opendir("site");
   struct dirent *ent;
   while ((ent = readdir(dir)) != NULL) {
     if (endswith(ent->d_name, ".html")) {
       char *full_path = multicat("site/", ent->d_name);
+      putchar('\n');
       puts(full_path);
-      print_entries(parse(read_all(full_path)));
+      entry_list l = parse(read_all(full_path));
+      print_entries(l);
+      putchar('\n');
+      puts(eval(index_l, l));
     }
   }
 
