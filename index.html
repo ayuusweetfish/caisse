@@ -1,4 +1,5 @@
-{{! siteName = "Site" }}
+{{!@zh siteName = "站" }}
+{{! if en then siteName = "Site" end }}
 
 <!DOCTYPE html>
 <html><head>
@@ -9,7 +10,11 @@
   <nav><a href='/'>home</a> | <a href='/1'>one</a></nav>
   <hr>
   <h1>{{ title }}</h1>
-  <main>{{ contents }}</main>
+  <main>{{ main }}</main>
   <br><hr>
-  <footer>URL = {{ url }}<br>Brimming with &lt;3</footer>
+  <footer>
+    URL = {{ url }}<br>
+    lang = {{@zh "zh"}}{{@en "en"}}<br>
+    Brimming with &lt;3
+  </footer>
 </body></html>
