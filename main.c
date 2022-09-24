@@ -172,6 +172,22 @@ static inline bool is_id_char(char c)
     (c >= 'a' && c <= 'z') ||
     c == '_';
 }
+static inline bool is_space(char c)
+{
+  return (
+    c == '\t' || c == '\n' || c == '\v' ||
+    c == '\f' || c == '\r' || c == ' '
+  );
+}
+
+char *trim(char *s, size_t len, size_t *newlen)
+{
+  size_t i = 0, j = len - 1;
+  while (i < len && is_space(s[i])) i++;
+  while (j >= i && is_space(s[j])) j--;
+  *newlen = j + 1 - i;
+  return s + i;
+}
 
 bool calc_cond(const char **body, lua_State *L)
 {
@@ -204,7 +220,7 @@ void eval_template(str *s, entry_list l, lua_State *L)
 
   for (size_t i = 0; i < l.count; i++) {
     const entry e = l.e[i];
-    if (e.ty == ENTRY_TEXT && !block_disabled) {
+    if (e.ty == ENTRY_TEXT && !block_disabled && s != NULL) {
       str_push(s, e.text, e.len);
     } else if (e.ty == ENTRY_EXPR && !block_disabled) {
       const char *body = e.text;
@@ -236,7 +252,9 @@ void eval_template(str *s, entry_list l, lua_State *L)
       if (exec) {
         // Free previous
         if (block_name != NULL) {
-          lua_pushlstring(L, s->p, s->len);
+          size_t trimmed_len;
+          char *trimmed_start = trim(s->p, s->len, &trimmed_len);
+          lua_pushlstring(L, trimmed_start, trimmed_len);
           lua_setglobal(L, block_name);
           free(block_name);
           str_free(s);
@@ -260,7 +278,9 @@ void eval_template(str *s, entry_list l, lua_State *L)
     }
   }
   if (block_name != NULL) {
-    lua_pushlstring(L, s->p, s->len);
+    size_t trimmed_len;
+    char *trimmed_start = trim(s->p, s->len, &trimmed_len);
+    lua_pushlstring(L, trimmed_start, trimmed_len);
     lua_setglobal(L, block_name);
     free(block_name);
     str_free(s);
@@ -277,7 +297,7 @@ char *eval(entry_list index, entry_list page, size_t *len)
   lua_pushboolean(L, true);
   lua_setglobal(L, "zh");
 
-  eval_template(&s, page, L);
+  eval_template(NULL, page, L);
   eval_template(&s, index, L);
 
   if (len != NULL) *len = s.len;
