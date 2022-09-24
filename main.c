@@ -307,7 +307,7 @@ char *eval(entry_list index, entry_list page, size_t *len)
 char *read_all(const char *path)
 {
   FILE *f = fopen(path, "r");
-  fseek(f, 0, SEEK_END);
+  fseek(f, -1, SEEK_END);
   size_t len = (size_t)ftell(f);
   fseek(f, 0, SEEK_SET);
   char *buf = (char *)malloc(len);
