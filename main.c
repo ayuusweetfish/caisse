@@ -101,7 +101,7 @@ entry_list parse(const char *s)
           e.ty = ENTRY_STMT;
           e.text++; e.len--;
           break;
-        case '=':
+        case ':':
           e.ty = ENTRY_BLOCK;
           e.text++; e.len--;
           break;
@@ -214,6 +214,8 @@ bool calc_cond(const char **body, lua_State *L)
 
 void eval_template(str *s, entry_list l, lua_State *L)
 {
+  str *top_level_s = s;
+
   char *block_name = NULL;
   bool block_disabled = false;
   str block_s;
@@ -227,7 +229,7 @@ void eval_template(str *s, entry_list l, lua_State *L)
       bool exec = calc_cond(&body, L);
       if (exec) {
         str expr = str_new();
-        str_pushn(&expr, "return tostring(");
+        str_pushn(&expr, "return (");
         str_push(&expr, body, e.text + e.len - body);
         str_pushn(&expr, ")");
         luaL_loadbuffer(L, expr.p, expr.len, "template expression");
@@ -237,7 +239,8 @@ void eval_template(str *s, entry_list l, lua_State *L)
         size_t len;
         const char *result = lua_tolstring(L, -1, &len);
         lua_pop(L, 1);
-        str_push(s, result, len);
+        if (result != NULL)
+          str_push(s, result, len);
       }
     } else if (e.ty == ENTRY_STMT && !block_disabled) {
       const char *body = e.text;
@@ -260,18 +263,25 @@ void eval_template(str *s, entry_list l, lua_State *L)
           str_free(s);
         }
         // Copy the name of the block
-        while (!is_id_char(*body)) body++;
+        while (!is_id_char(*body) && body < e.text + e.len) body++;
         const char *name_start = body;
-        while (is_id_char(*body)) body++;
+        while (is_id_char(*body) && body < e.text + e.len) body++;
         size_t name_len = body - name_start;
-        block_name = (char *)malloc(name_len + 1);
-        memcpy(block_name, name_start, name_len);
-        block_name[name_len] = '\0';
-        printf("block: %s\n", block_name);
-        // Switch to a separate string buffer
-        block_s = str_new();
-        s = &block_s;
-        block_disabled = false;
+        if (name_len > 0) {
+          block_name = (char *)malloc(name_len + 1);
+          memcpy(block_name, name_start, name_len);
+          block_name[name_len] = '\0';
+          printf("block: %s\n", block_name);
+          // Switch to a separate string buffer
+          block_s = str_new();
+          s = &block_s;
+          block_disabled = false;
+        } else {
+          // Back to top-level
+          block_name = NULL;
+          block_disabled = false;
+          s = top_level_s;
+        }
       } else {
         block_disabled = true;
       }
