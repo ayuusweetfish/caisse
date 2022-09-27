@@ -14,6 +14,17 @@
   <footer>
     URL = {{ url }}<br>
     lang = {{@zh "zh"}}{{@en "en"}}<br>
+    {{:@zh tempblock }}
+    <div>中文 {{ 2 + 3 }} 五</div>
+    {{:@zh}}
+    {{ tempblock }}
+    {{: tempblockzh}}
+    <div>中文 {{ 2 + 3 }} 五</div>
+    {{: tempblocken}}
+    <div>English {{ 3 + 4 }} seven</div>
+    {{:}}
+    {{@zh tempblockzh}}
+    {{@en tempblocken}}
     Brimming with &lt;3
   </footer>
 </body></html>
