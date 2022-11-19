@@ -1,8 +1,21 @@
-{{!@zh title = "一" }}
-{{!@en title = "One" }}
+{{@zh title = "一" }}
+{{@en title = "One" }}
 
-{{:@zh main }}
+{{ mylist = {
+  {500, 'a'},
+  {800, 'b'},
+  {999, 'c'},
+}
+}}
+
+{{@zh block main }}
 <p>内容其一</p>
+{{@zh end}}
 
-{{:@en main }}
+{{each myitem mylist}}
+{{ myitem[1] }}
+{{end}}
+
+{{@en block main }}
 <p>Contents, 1</p>
+{{@en end}}
