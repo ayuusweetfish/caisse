@@ -14,6 +14,16 @@
   <li><a href='/words'>Words</a></li>
   <li><a href='/stray'>Stray</a></li>
 </ul>
+<section id='icon-buttons'>
+  <span id='lang-container'>
+    <a href='#' id='lang-icon'>🌐</a>
+    <section id='lang-list'>
+      <a href='/?lang=zh' title='汉语/Chinese'>zh</a>
+      <a href='/?lang=en' title='English/英语'>en</a>
+    </section>
+  </span>
+  <a href='/?dark=1'>🌙</a>
+</section>
 </nav>
 
 <main>
@@ -61,6 +71,27 @@ nav > ul > li {
   flex: 1;
 }
 
+#lang-container {
+  position: relative;
+}
+body:not(.js) #lang-icon {
+  display: none;
+}
+body:not(.js) #lang-list {
+  display: block;
+}
+body.js #lang-list {
+  width: max-content;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: rgba(240, 240, 240, 97%);
+  position: absolute;
+  inset-block-start: 2rem;
+}
+body.js #lang-list a {
+  display: block;
+}
+
 @media (max-width: 115vh), (max-width: 48rem) {
   #main-columns {
     display: initial;
@@ -70,6 +101,17 @@ nav > ul > li {
     column-gap: 1rem;
     overflow-x: scroll;
   }
+  #icon-buttons {
+    position: absolute;
+    inset-inline-end: 1rem;
+    inset-block-start: 1rem;
+  }
+  body:not(.js) #lang-list {
+    display: inline;
+  }
+  body.js #lang-list {
+    inset-inline-end: 0;
+  }
 }
 
 nav, main, aside, footer { padding: 0.5rem 1rem; }
@@ -78,5 +120,43 @@ main { background: #f9f9f9; }
 aside { background: #f8fcff; }
 footer { background: #f8fefc; }
 </style>
+
+<script>
+(() => {
+document.body.classList.add('js')
+const langIcon = document.querySelector('#lang-icon')
+const langList = document.querySelector('#lang-list')
+for (const a of langList.getElementsByTagName('a')) {
+  a.innerText = a.getAttribute('title')
+  a.removeAttribute('title')
+}
+langList.style.visibility = 'hidden'
+langList.addEventListener('mousedown', (e) => e.stopPropagation())
+langIcon.addEventListener('click', (e) => {
+  langList.style.visibility = 'visible'
+  const tempEvents = {}
+  const removeAllTemporaryFn = () => {
+    for (const key in tempEvents)
+      document.body.removeEventListener(key, tempEvents[key])
+  }
+  tempEvents['mousedown'] = (e) => {
+    langList.style.visibility = 'hidden'
+    removeAllTemporaryFn()
+    e.preventDefault()
+  }
+  tempEvents['keydown'] = (e) => {
+    if (e.keyCode === 27) {
+      langList.style.visibility = 'hidden'
+      removeAllTemporaryFn()
+      e.preventDefault()
+    }
+  }
+  for (const key in tempEvents)
+    document.body.addEventListener(key, tempEvents[key])
+  e.stopPropagation()
+  e.preventDefault()
+})
+})()
+</script>
 
 </body></html>
