@@ -15,13 +15,13 @@
   <li><a href='/stray'>Stray</a></li>
 </ul>
 <section id='icon-buttons'>
-  <span id='lang-container'>
-    <a href='#' id='lang-icon'>🌐</a>
+  <details id='lang-container'>
+    <summary>🌐</summary>
     <section id='lang-list'>
-      <a href='/?lang=zh' title='汉语/Chinese'>zh</a>
-      <a href='/?lang=en' title='English/英语'>en</a>
+      <a href='/?lang=zh'>汉语/Chinese</a>
+      <a href='/?lang=en'>English/英语</a>
     </section>
-  </span>
+  </details>
   <a href='/?dark=1'>🌙</a>
 </section>
 </nav>
@@ -73,14 +73,11 @@ nav > ul > li {
 
 #lang-container {
   position: relative;
+  display: inline-block;
 }
-body:not(.js) #lang-icon {
-  display: none;
+#lang-container {
 }
-body:not(.js) #lang-list {
-  display: block;
-}
-body.js #lang-list {
+#lang-list {
   width: max-content;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -88,8 +85,15 @@ body.js #lang-list {
   position: absolute;
   inset-block-start: 2rem;
 }
-body.js #lang-list a {
+#lang-list a {
   display: block;
+}
+
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
 }
 
 @media (max-width: 115vh), (max-width: 48rem) {
@@ -106,10 +110,7 @@ body.js #lang-list a {
     inset-inline-end: 1rem;
     inset-block-start: 1rem;
   }
-  body:not(.js) #lang-list {
-    display: inline;
-  }
-  body.js #lang-list {
+  #lang-list {
     inset-inline-end: 0;
   }
 }
@@ -120,43 +121,5 @@ main { background: #f9f9f9; }
 aside { background: #f8fcff; }
 footer { background: #f8fefc; }
 </style>
-
-<script>
-(() => {
-document.body.classList.add('js')
-const langIcon = document.querySelector('#lang-icon')
-const langList = document.querySelector('#lang-list')
-for (const a of langList.getElementsByTagName('a')) {
-  a.innerText = a.getAttribute('title')
-  a.removeAttribute('title')
-}
-langList.style.visibility = 'hidden'
-langList.addEventListener('mousedown', (e) => e.stopPropagation())
-langIcon.addEventListener('click', (e) => {
-  langList.style.visibility = 'visible'
-  const tempEvents = {}
-  const removeAllTemporaryFn = () => {
-    for (const key in tempEvents)
-      document.body.removeEventListener(key, tempEvents[key])
-  }
-  tempEvents['mousedown'] = (e) => {
-    langList.style.visibility = 'hidden'
-    removeAllTemporaryFn()
-    e.preventDefault()
-  }
-  tempEvents['keydown'] = (e) => {
-    if (e.keyCode === 27) {
-      langList.style.visibility = 'hidden'
-      removeAllTemporaryFn()
-      e.preventDefault()
-    }
-  }
-  for (const key in tempEvents)
-    document.body.addEventListener(key, tempEvents[key])
-  e.stopPropagation()
-  e.preventDefault()
-})
-})()
-</script>
 
 </body></html>
