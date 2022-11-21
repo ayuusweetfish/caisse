@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <title>Site</title>
+</head><body>
+
+<span id='main-columns'>
+<nav>
+<h1>Site Name</h1>
+<ul>
+  <li><a href='/'>Home</a></li>
+  <li><a href='/music'>Music</a></li>
+  <li><a href='/playful'>Playful</a></li>
+  <li><a href='/words'>Words</a></li>
+  <li><a href='/stray'>Stray</a></li>
+</ul>
+</nav>
+
+<main>
+
+<article>
+  <header>
+    <h1>Daytime Cat</h1>
+    <p>A unique cat that does not sleep by daylight.</p>
+  </header>
+  <p>Trijam #152 entry.</p>
+  <p>Thank you for playing! Please leave feedback! &gt;&nbsp;&nbsp;&lt;</p>
+  <p>Sadly it does not have audio, which deeply hurts the creator's heart as a composer, not being able to tackle the challenge of creating everything within 3 hours with only a trackpad.</p>
+</article>
+
+</main>
+
+<aside>
+Related links
+</aside>
+</span>
+
+<footer>
+Brimming with &lt;3
+</footer>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#main-columns {
+  display: grid;
+  grid-template-columns: 5fr 12fr 4fr;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  list-style-type: none;
+}
+nav > ul > li {
+  flex: 1;
+}
+
+@media (max-width: 115vh), (max-width: 48rem) {
+  #main-columns {
+    display: initial;
+  }
+  nav > ul {
+    flex-direction: row;
+    column-gap: 1rem;
+    overflow-x: scroll;
+  }
+}
+
+nav, main, aside, footer { padding: 0.5rem 1rem; }
+nav { background: #fffafc; }
+main { background: #f9f9f9; }
+aside { background: #f8fcff; }
+footer { background: #f8fefc; }
+</style>
+
+</body></html>
