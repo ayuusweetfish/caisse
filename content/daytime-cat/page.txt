@@ -6,7 +6,7 @@
 {{date=}}2021.23
 
 {{contents.zh=}}
-Trijam #152 参赛作品
+Trijam #{{150 + 2}} 参赛作品
 
 {{contents.en=}}
 Trijam #152 entry.

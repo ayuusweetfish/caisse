@@ -6,6 +6,7 @@ local loadtemplate = function (s)
   local items = {}
   local last, cur = 0, 1
   local levelbegin = {}
+  local blockbegin = 0
   local loadfn = function (expr)
     local fn = load('return ' .. expr, expr, 't')
     if fn == nil then
@@ -50,7 +51,11 @@ local loadtemplate = function (s)
         end
       elseif expr:sub(-1) == '=' then
         -- Block
+        if blockbegin ~= 0 then
+          items[blockbegin].span = #items
+        end
         items[#items + 1] = {type = 'block', expr = expr:sub(1, -2), span = 0}
+        blockbegin = #items
       else
         -- Detect type
         items[#items + 1] = loadfn(expr)
@@ -63,6 +68,9 @@ local loadtemplate = function (s)
   end
   if last ~= #s then
     items[#items + 1] = s:sub(last + 1, #s)
+  end
+  if blockbegin ~= 0 then
+    items[blockbegin].span = #items
   end
   return items
 end
@@ -86,7 +94,17 @@ local function render(template, locals, outputs, rangestart, rangeend)
       outputs[#outputs + 1] = item
     elseif type(item) == 'function' then
       local value = item(locals)
-      if value ~= nil then outputs[#outputs + 1] = value end
+      if value ~= nil then
+        if type(value) == 'table' then
+          local lang = 'zh'
+          if value[lang] ~= nil and type(value[lang]) ~= 'table' then
+            value = tostring(value[lang])
+          else
+            error('Tables results are not allowed')
+          end
+        end
+        outputs[#outputs + 1] = value
+      end
     elseif type(item) == 'table' then
       if item.type == 'scope' then
         local ctx = item.expr(locals)
@@ -115,8 +133,22 @@ local function render(template, locals, outputs, rangestart, rangeend)
         else
           error('Expression should either be a boolean or a table value')
         end
-      elseif item.ty == 'block' then
-        -- TODO
+      elseif item.type == 'block' then
+        -- Render to a completely new block
+        local newoutputs = {}
+        render(template, locals, newoutputs, i + 1, item.span)
+        local contents = table.concat(newoutputs, '')
+        -- Find the variable
+        local function metaindex(table, key)
+          local result = setmetatable({}, {__index = metaindex})
+          rawset(table, key, result)
+          return result
+        end
+        local setfn = load(item.expr .. ' = ...; return', item.expr, 't')
+        setmetatable(_ENV, {__index = metaindex})
+        setfn(contents)
+        setmetatable(_ENV, nil)
+        i = item.span
       end
     end
     i = i + 1
@@ -129,6 +161,6 @@ end
 local t_creation = loadtemplate(io.open('content/creation.html', 'r'):read('a'))
 local t_page = loadtemplate(io.open('content/daytime-cat/page.txt', 'r'):read('a'))
 local locals = {}
---render(t_page, locals)
+render(t_page, locals)
 render(t_creation, locals)
 --local t_main = loadtemplate(io.open('index.html', 'r'):read('a'))
