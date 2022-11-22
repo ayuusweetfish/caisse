@@ -11,7 +11,7 @@
   <li><a href='/'>Home</a></li>
   <li><a href='/music'>Music</a></li>
   <li><a href='/playful'>Playful</a></li>
-  <li><a href='/words'>Words</a></li>
+  <li><a href='/murmurs'>Murmurs</a></li>
   <li><a href='/stray'>Stray</a></li>
 </ul>
 <section id='icon-buttons'>
@@ -53,6 +53,7 @@ Brimming with &lt;3
 body {
   margin: 0;
   padding: 0;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -121,5 +122,35 @@ main { background: #f9f9f9; }
 aside { background: #f8fcff; }
 footer { background: #f8fefc; }
 </style>
+
+<script>
+(() => {
+document.body.classList.add('js')
+const langContainer = document.getElementById('lang-container')
+const langList = document.getElementById('lang-list')
+const tempEvents = [
+  [document.body, 'mousedown', (e) => closeLangContainer(e)],
+  [document.body, 'keydown', (e) => { if (e.keyCode === 27) closeLangContainer(e) }],
+  [langContainer, 'mousedown', (e) => e.stopPropagation()],
+]
+const clearTempEvents = () => {
+  for (const [el, key, fn] of tempEvents)
+    el.removeEventListener(key, fn)
+}
+const closeLangContainer = (e) => {
+  langContainer.open = false
+  clearTempEvents()
+  e.preventDefault()
+}
+langContainer.addEventListener('toggle', (e) => {
+  if (langContainer.open) {
+    for (const [el, key, fn] of tempEvents)
+      el.addEventListener(key, fn)
+  } else {
+    clearTempEvents()
+  }
+})
+})()
+</script>
 
 </body></html>
