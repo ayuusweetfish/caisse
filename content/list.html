@@ -1,0 +1,58 @@
+<header>
+  <h1>List</h1>
+</header>
+{{{ list = {{
+  page = 'daytime-cat',
+  image = 'daytime-cat/preview.png',
+  title = {zh = '昼行猫', en = 'Daytime Cat'},
+  intro = {zh = '一只白天不睡觉的奇妙猫猫', en = 'Lorem ipsum'},
+  date = '2021.23',
+}, {
+  page = 'lorem-ipsum',
+  image = 'daytime-cat/preview.png',
+  title = {zh = '测试', en = 'Lorem ipsum'},
+  intro = {zh = '教育的目的在于充分发展人的个性并加强对人权和基本自由的尊重。教育应促进各国、各种族或各宗教集团间的了解、容忍和友谊，并应促进联合国维护和平的各项活动。', en = 'Lorem ipsum'},
+  date = '2021.24',
+}} }}}
+{{@ list}}
+<section class='creation-card'><a href='/{{ page }}'>
+  <section class='creation-banner'>
+    <img src='content/{{ image }}'>
+    <h1>{{ title }}</h1>
+  </section>
+  <section class='creation-peek'>
+    <p>{{ intro }}</p>
+    <p>{{ date }}</p>
+  </section>
+</a></section>
+{{@ end}}
+
+<style>
+.creation-card {
+  border-block-start: 1px rgba(128, 128, 128, 50%) solid;
+  margin-block: 1rem;
+}
+.creation-card > a {
+  color: inherit;
+  text-decoration: inherit;
+}
+.creation-banner {
+  height: 10rem;
+  position: relative;
+}
+.creation-banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.creation-banner > h1 {
+  position: absolute;
+  inset-inline-start: 1.3rem;
+  inset-block-end: 1rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+.creation-peek {
+  margin-inline: 1.3rem;
+}
+</style>
