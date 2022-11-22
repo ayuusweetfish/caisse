@@ -11,4 +11,8 @@ Trijam #{{150 + 2}} 参赛作品
 {{contents.en=}}
 Trijam #152 entry.
 
+{{contents.zh=}}
+没有声音 >  <
+
+{{contents.en=}}
 Sadly it does not have audio, which deeply hurts the creator's heart as a composer, not being able to tackle the challenge of creating everything within 3 hours with only a trackpad.

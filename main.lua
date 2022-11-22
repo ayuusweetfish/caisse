@@ -141,7 +141,10 @@ local function render(template, locals, outputs, rangestart, rangeend)
           rawset(table, key, result)
           return result
         end
-        local setfn = load(item.expr .. ' = ...; return', item.expr, 't')
+        local setfn = load(
+          string.gsub('? = (type(?) == "table" and "" or ?) .. ...',
+            '[?]', item.expr),
+          item.expr, 't')
         setmetatable(_ENV, {__index = function (table, key)
           if locals[key] ~= nil then return locals[key] end
           local result = setmetatable({}, {__index = metaindex})
