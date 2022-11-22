@@ -1,0 +1,14 @@
+{{title.zh=}}昼行猫
+{{intro.zh=}}一只白天不睡觉的奇妙猫猫
+{{title.en=}}Daytime Cat
+{{intro.en=}}A unique cat that does not sleep by daylight.
+
+{{date=}}2021.23
+
+{{contents.zh=}}
+Trijam #152 参赛作品
+
+{{contents.en=}}
+Trijam #152 entry.
+
+Sadly it does not have audio, which deeply hurts the creator's heart as a composer, not being able to tackle the challenge of creating everything within 3 hours with only a trackpad.
