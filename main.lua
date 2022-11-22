@@ -79,20 +79,14 @@ local function render(template, locals, outputs, rangestart, rangeend)
   outputs = outputs or {}
   rangestart = rangestart or 1
   rangeend = rangeend or #template
-  --print('render', rangestart, rangeend, require('inspect')(locals))
   local i = rangestart
   while i <= rangeend do
     local item = template[i]
-    --[[if type(item) == 'function' then
-      print(i, item({title = 'a', intro = 'b', contents = 'c'}))
-    elseif type(item) == 'table' then
-      print(i, item.type, item.expr, item.span)
-    else print(i, item)
-    end]]
     if type(item) == 'string' then
-      --print('raw text', (item:sub(1, 20):gsub('\n', '.')))
+      -- Raw text
       outputs[#outputs + 1] = item
     elseif type(item) == 'function' then
+      -- Expression or statement
       local value = item(locals)
       if value ~= nil then
         if type(value) == 'table' then
@@ -106,11 +100,15 @@ local function render(template, locals, outputs, rangestart, rangeend)
         outputs[#outputs + 1] = value
       end
     elseif type(item) == 'table' then
+      -- Scope: conditional (if) / context (with/for-each)
       if item.type == 'scope' then
         local ctx = item.expr(locals)
         if type(ctx) == 'boolean' or ctx == nil then
+          -- Conditional (if): boolean or existence check
           if not ctx then i = item.span end
         elseif type(ctx) == 'table' then
+          -- Context context (with/for-each): depends on whether #ctx > 0
+          -- Unpack a table into the context and render a template slice
           local unpackctx = function (ctx)
             local stash = {}
             for k, v in pairs(ctx) do
@@ -123,10 +121,8 @@ local function render(template, locals, outputs, rangestart, rangeend)
             end
           end
           if #ctx > 0 then
-            -- Loop
             for j = 1, #ctx do unpackctx(ctx[j]) end
           else
-            -- Unpack
             unpackctx(ctx)
           end
           i = item.span
@@ -138,14 +134,20 @@ local function render(template, locals, outputs, rangestart, rangeend)
         local newoutputs = {}
         render(template, locals, newoutputs, i + 1, item.span)
         local contents = table.concat(newoutputs, '')
-        -- Find the variable
+        -- Assign the result to the variable specified,
+        -- supporting nested table auto-creation through metatables
         local function metaindex(table, key)
           local result = setmetatable({}, {__index = metaindex})
           rawset(table, key, result)
           return result
         end
         local setfn = load(item.expr .. ' = ...; return', item.expr, 't')
-        setmetatable(_ENV, {__index = metaindex})
+        setmetatable(_ENV, {__index = function (table, key)
+          if locals[key] ~= nil then return locals[key] end
+          local result = setmetatable({}, {__index = metaindex})
+          rawset(locals, key, result)
+          return result
+        end})
         setfn(contents)
         setmetatable(_ENV, nil)
         i = item.span
@@ -154,13 +156,15 @@ local function render(template, locals, outputs, rangestart, rangeend)
     i = i + 1
   end
   if rangestart == 1 and rangeend == #template then
-    print('render!', table.concat(outputs, ''))
+    return table.concat(outputs, '')
   end
 end
 
 local t_creation = loadtemplate(io.open('content/creation.html', 'r'):read('a'))
 local t_page = loadtemplate(io.open('content/daytime-cat/page.txt', 'r'):read('a'))
+local t_main = loadtemplate(io.open('index.html', 'r'):read('a'))
 local locals = {}
 render(t_page, locals)
-render(t_creation, locals)
---local t_main = loadtemplate(io.open('index.html', 'r'):read('a'))
+local pagemain = render(t_creation, locals)
+local pageall = render(t_main, {contents = pagemain})
+print(pageall)
