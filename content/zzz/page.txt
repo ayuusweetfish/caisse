@@ -3,7 +3,7 @@
 {{title.en=}}Zzz — Percussion septet
 {{intro.en=}}Adaptation
 
-{{--[[
+{{!--[[
 ~/Downloads/ffmpeg-5.0.1
   -ss 04.7 -i BV1px411J773_video.mp4 -frames:v 1 -q:v 1
   -filter:v "crop=1200:540:360:270"
