@@ -159,39 +159,43 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
       end
     elseif item.type == 'block' then
       -- Render to a completely new block
-      local newoutputs = {}
+      local defaultoutput = (item.expr == '')
+      local newoutputs = defaultoutput and outputs or {}
       locals[#locals + 1] = {}
       renderslice(template, locals, newoutputs, i + 1, item.span)
       locals[#locals] = nil
-      -- Trim
-      if #newoutputs > 0 then
-        local n = #newoutputs
-        newoutputs[1] = tostring(newoutputs[1]):gsub('^%s*', '')
-        newoutputs[n] = tostring(newoutputs[n]):gsub('%s*$', '')
+      if not defaultoutput then
+        -- Put the render result in a new variable
+        -- Trim
+        if #newoutputs > 0 then
+          local n = #newoutputs
+          newoutputs[1] = tostring(newoutputs[1]):gsub('^%s*', '')
+          newoutputs[n] = tostring(newoutputs[n]):gsub('%s*$', '')
+        end
+        local contents = table.concat(newoutputs)
+        -- Assign the result to the variable specified,
+        -- supporting nested table auto-creation through metatables
+        local function metaindex(table, key)
+          local result = setmetatable({}, {__index = metaindex})
+          rawset(table, key, result)
+          return result
+        end
+        local setfn = load(
+          string.gsub('? = (type(?) == "table" and "" or ?) .. ...',
+            '[?]', item.expr),
+          item.expr, 't')
+        local prevmt = getmetatable(_ENV)
+        setmetatable(_ENV, {__index = function (table, key)
+          if locals[#locals][key] ~= nil then return locals[#locals][key] end
+          local result = setmetatable({}, {__index = metaindex})
+          rawset(locals[#locals], key, result)
+          return result
+        end, __newindex = function (table, key, value)
+          rawset(locals[#locals], key, value)
+        end})
+        setfn(contents)
+        setmetatable(_ENV, prevmt)
       end
-      local contents = table.concat(newoutputs)
-      -- Assign the result to the variable specified,
-      -- supporting nested table auto-creation through metatables
-      local function metaindex(table, key)
-        local result = setmetatable({}, {__index = metaindex})
-        rawset(table, key, result)
-        return result
-      end
-      local setfn = load(
-        string.gsub('? = (type(?) == "table" and "" or ?) .. ...',
-          '[?]', item.expr),
-        item.expr, 't')
-      local prevmt = getmetatable(_ENV)
-      setmetatable(_ENV, {__index = function (table, key)
-        if locals[#locals][key] ~= nil then return locals[#locals][key] end
-        local result = setmetatable({}, {__index = metaindex})
-        rawset(locals[#locals], key, result)
-        return result
-      end, __newindex = function (table, key, value)
-        rawset(locals[#locals], key, value)
-      end})
-      setfn(contents)
-      setmetatable(_ENV, prevmt)
       i = item.span
     end
     i = i + 1
