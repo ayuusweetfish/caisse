@@ -1,28 +1,18 @@
 <header>
-  <h1>List</h1>
+  <h1>游乐园</h1>
 </header>
-{{{ pages = {
-  'daytime-cat',
-  'ice-hatch',
-} }}}
-{{ i = 3 }}
-{{@ name in pages}}
-{{ i = render('content/' .. name .. '/page.txt') }}
+{{@ pagelist}}
 <section class='creation-card'><a href='/{{ name }}'>
   <section class='creation-banner'>
-    <img src='content/{{ name }}/{{ i.bannerimg }}'>
-    <h1>{{ i.title }}</h1>
+    <img src='/bin/{{ name }}/{{ page.bannerimg }}'>
+    <h1>{{ page.title }}</h1>
   </section>
   <section class='creation-peek'>
-    <p>{{ i.intro }}</p>
-    <p>{{ i.date }}</p>
+    <p>{{ page.intro }}</p>
+    <p>{{ page.date }}</p>
   </section>
-  {{@ i.a}}
-    !! {{ i.a.b.c }}
-  {{@ end}}
 </a></section>
 {{@ end}}
-i = {{i}}, j = {{j}}
 
 <style>
 .creation-card {

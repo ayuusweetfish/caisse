@@ -163,7 +163,13 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
       locals[#locals + 1] = {}
       renderslice(template, locals, newoutputs, i + 1, item.span)
       locals[#locals] = nil
-      local contents = table.concat(newoutputs, '')
+      -- Trim
+      if #newoutputs > 0 then
+        local n = #newoutputs
+        newoutputs[1] = tostring(newoutputs[1]):gsub('^%s*', '')
+        newoutputs[n] = tostring(newoutputs[n]):gsub('%s*$', '')
+      end
+      local contents = table.concat(newoutputs)
       -- Assign the result to the variable specified,
       -- supporting nested table auto-creation through metatables
       local function metaindex(table, key)

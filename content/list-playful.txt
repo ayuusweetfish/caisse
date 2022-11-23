@@ -1,0 +1,6 @@
+{{{
+pages = {
+  'daytime-cat',
+  'ice-hatch',
+}
+}}}
