@@ -17,11 +17,8 @@ local function loadtemplate(s)
   local levelbegin = {}
   local blockbegin = 0
   local loadfn = function (expr)
-    local fn = load('return ' .. expr, expr, 't')
-    if fn == nil then
-      fn = load(expr, expr, 't')
-      if fn == nil then error('Statement "' .. expr:sub(2) .. '" is invalid') end
-    end
+    local fn = load(expr, expr, 't')
+    if fn == nil then error('Expression "' .. expr .. '" is invalid') end
     return function (locals)
       local prevmt = getmetatable(_ENV)
       setmetatable(_ENV, {
@@ -63,7 +60,7 @@ local function loadtemplate(s)
         else
           -- Nested scope
           expr = expr:sub(2)
-          local fn = loadfn(expr)
+          local fn = loadfn('return ' .. expr)
           items[#items + 1] = {type = 'scope', expr = expr, fn = fn, span = 0}
           levelbegin[#levelbegin + 1] = #items
         end
@@ -76,7 +73,13 @@ local function loadtemplate(s)
         blockbegin = #items
       else
         -- Detect type
-        items[#items + 1] = {type = 'expr', expr = expr, fn = loadfn(expr)}
+        local succeeded, fn = pcall(loadfn, 'return ' .. expr)
+        if succeeded then
+          items[#items + 1] = {type = 'expr', expr = expr, fn = fn}
+        else
+          fn = loadfn(expr) -- Errors, if any, will bubble up
+          items[#items + 1] = {type = 'stmt', expr = expr, fn = fn}
+        end
       end
       last = endext
       cur = endext + 1
@@ -102,15 +105,11 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
       outputs[#outputs + 1] = item.expr
     elseif item.type == 'expr' or item.type == 'stmt' then
       -- Expression or statement
-      if item.expr:sub(1, 4) == 'a = ' then
-        print('before', item.expr, inspect(locals))
-      end
       local value = item.fn(locals)
-      if item.expr:sub(1, 4) == 'a = ' then
-        print('after', item.expr, inspect(locals))
-      end
-      if value ~= nil then
-        if type(value) == 'table' then
+      if item.type == 'expr' then
+        if value == nil then
+          value = 'nil'
+        elseif type(value) == 'table' then
           local lang = 'zh'
           if value[lang] ~= nil and type(value[lang]) ~= 'table' then
             value = tostring(value[lang])
