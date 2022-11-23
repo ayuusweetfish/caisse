@@ -1,6 +1,12 @@
 {{{
 pages = {
-  'daytime-cat',
+  'fireflies',
+  'medle',
   'ice-hatch',
+  'daytime-cat',
+  'sheepdogs',
+}
+pagedarktitle = {
+  ['fireflies'] = true,
 }
 }}}

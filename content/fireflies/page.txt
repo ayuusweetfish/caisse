@@ -1,0 +1,14 @@
+{{title.zh=}}流萤花语
+{{intro.zh=}}解谜游戏，讲述与自己之所爱重新联结的故事。
+{{title.en=}}Fireflies in Forest Flowers
+{{intro.en=}}A puzzle game — when you reconnect with your loved one.
+
+{{bannerimg=}}cover.png
+
+{{date=}}2021.24, 2022.13
+
+{{contents.zh=}}
+Raylib 5K game jam 参赛作品
+
+{{contents.en=}}
+Raylib 5K game jam entry
