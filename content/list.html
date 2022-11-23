@@ -7,7 +7,7 @@
 } }}}
 {{ i = 3 }}
 {{@ name in pages}}
-{{ i = rendertemplate('content/' .. name .. '/page.txt') }}
+{{ i = render('content/' .. name .. '/page.txt') }}
 <section class='creation-card'><a href='/{{ name }}'>
   <section class='creation-banner'>
     <img src='content/{{ name }}/{{ i.bannerimg }}'>
