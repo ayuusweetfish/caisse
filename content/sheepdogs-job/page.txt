@@ -1,0 +1,14 @@
+{{title.zh=}}牧羊犬营业啦
+{{intro.zh=}}《为小羊指路》游戏配乐
+{{title.en=}}A Job for Sheepdogs
+{{intro.en=}}Music from the game “Sheepdogs at Work”.
+
+{{bannerimg=}}sheepdogs/cover.jpg
+
+{{date=}}2021.11
+
+{{contents.zh=}}
+如题
+
+{{contents.en=}}
+rt

@@ -1,0 +1,18 @@
+{{title.zh=}}八音盒
+{{title.en=}}Music Pieces
+{{=}}
+{{{
+pages = {
+  'bellflowers',
+  'sheepdogs-job',
+  'lili',
+  'zzz',
+  'misty-jungle',
+}
+pagedarktitle = {
+  'bellflowers',
+  'lili',
+  'zzz',
+  'misty-jungle',
+}
+}}}

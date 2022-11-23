@@ -161,10 +161,13 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
       -- Render to a completely new block
       local defaultoutput = (item.expr == '')
       local newoutputs = defaultoutput and outputs or {}
-      locals[#locals + 1] = {}
-      renderslice(template, locals, newoutputs, i + 1, item.span)
-      locals[#locals] = nil
       if not defaultoutput then
+        -- New variable scope
+        locals[#locals + 1] = {}
+      end
+      renderslice(template, locals, newoutputs, i + 1, item.span)
+      if not defaultoutput then
+        locals[#locals] = nil
         -- Put the render result in a new variable
         -- Trim
         if #newoutputs > 0 then
