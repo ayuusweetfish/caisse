@@ -1,10 +1,12 @@
-local inspect = require('deps/inspect')
+local inspect = require('caisse/deps/inspect')
 local printerr = function (...)
   for i = 1, select('#', ...) do
     io.stderr:write(tostring(select(i, ...)))
     io.stderr:write(i == select('#', ...) and '\n' or '\t')
   end
 end
+
+local envadditions = {}
 
 -- Item format:
 -- {type = 'string', expr = string}
@@ -27,6 +29,7 @@ local function parsetemplate(s)
           for i = #locals, 1, -1 do
             if locals[i][key] ~= nil then return locals[i][key] end
           end
+          if envadditions[key] ~= nil then return envadditions[key] end
         end,
         __newindex = function (table, key, value)
           locals[#locals][key] = value
@@ -206,8 +209,11 @@ local function render(path, locals)
     return locals
   end
 end
-_ENV.render = render
 
-local pagemain = render('content/list.html')
-local pageall = render('index.html', {contents = pagemain})
-print(pageall)
+envadditions = {
+  render = render,
+}
+return {
+  render = render,
+  envadditions = envadditions,
+}
