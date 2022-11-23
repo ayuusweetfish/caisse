@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>Site</title>
 </head><body>
 
-<span id='main-columns'>
+<span id='main-grid'>
 <nav>
 <h1>Site Name</h1>
 <ul>
@@ -44,6 +45,9 @@ Brimming with &lt;3
 </footer>
 
 <style>
+html {
+  font-size: clamp(100%, 75% + 0.5vw, 112.5%);
+}
 body {
   margin: 0;
   padding: 0;
@@ -51,9 +55,12 @@ body {
   min-height: 100vh;
 }
 
-#main-columns {
+#main-grid {
   display: grid;
-  grid-template-columns: 5fr 12fr 4fr;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+#main-grid > aside {
+  grid-column: 3;
 }
 
 nav > ul {
@@ -91,8 +98,26 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+@media (max-width: 60rem) {
+  #main-grid {
+    grid-template-columns: 5fr 16fr;
+  }
+  #main-grid > nav {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+  }
+  #main-grid > main {
+    grid-row: 1;
+    grid-column: 2;
+  }
+  #main-grid > aside {
+    grid-row: 2;
+    grid-column: 2;
+  }
+}
+
 @media (max-width: 115vh), (max-width: 48rem) {
-  #main-columns {
+  #main-grid {
     display: initial;
   }
   nav > ul {
@@ -104,6 +129,9 @@ summary::-webkit-details-marker {
     position: absolute;
     inset-inline-end: 1rem;
     inset-block-start: 1rem;
+  }
+  #icon-buttons summary, #icon-buttons > a {
+    font-size: 1.5rem;
   }
   #lang-list {
     inset-inline-end: 0;
