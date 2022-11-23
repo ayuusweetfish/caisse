@@ -12,7 +12,7 @@ end
 -- {type = 'block', expr = string, span = number}
 -- {type = 'scope', expr = string,
 --  ident = string/nil, fn = function, span = number}
-local function loadtemplate(s)
+local function parsetemplate(s)
   local items = {}
   local last, cur = 0, 1
   local levelbegin = {}
@@ -183,33 +183,31 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
     i = i + 1
   end
 end
-local function render(template, locals)
-  local outputs = {}
-  renderslice(template, {locals}, outputs, 1, #template)
-  return table.concat(outputs, '')
-end
 
-local templatecache = {}
-local function templatecontents(path)
-  if templatecache[path] ~= nil then return templatecache[path] end
+local templateregistry = {}
+local function loadtemplate(path)
+  if templateregistry[path] ~= nil then return templateregistry[path] end
   local f = io.open(path, 'r')
-  local t = loadtemplate(f:read('a'))
-  templatecache[path] = t
+  local t = parsetemplate(f:read('a'))
+  templateregistry[path] = t
   return t
 end
-local function rendertemplate(path)
-  local locals = {}
-  render(templatecontents(path), locals)
-  return locals
+-- Renders a template
+-- Returns the rendered string if the path ends with ".html";
+-- returns locals otherwise
+local function render(path, locals)
+  locals = locals or {}
+  local outputs = {}
+  local template = loadtemplate(path)
+  renderslice(template, {locals}, outputs, 1, #template)
+  if path:sub(-5) == '.html' then
+    return table.concat(outputs, '')
+  else
+    return locals
+  end
 end
-_ENV.rendertemplate = rendertemplate
+_ENV.render = render
 
-local t_creation = loadtemplate(io.open('content/creation.html', 'r'):read('a'))
-local t_page = loadtemplate(io.open('content/daytime-cat/page.txt', 'r'):read('a'))
-local t_main = loadtemplate(io.open('index.html', 'r'):read('a'))
-local locals = {}
---render(t_page, locals)
---local pagemain = render(t_creation, locals)
-local pagemain = render(loadtemplate(io.open('content/list.html', 'r'):read('a')), locals)
-local pageall = render(t_main, {contents = pagemain})
+local pagemain = render('content/list.html')
+local pageall = render('index.html', {contents = pagemain})
 print(pageall)
