@@ -1,0 +1,14 @@
+{{title.zh=}}岚烟丛林的薄暮至拂晓
+{{intro.zh=}}作业
+{{title.en=}}Dusk till Dawn in a Misty Jungle
+{{intro.en=}}Assignment
+
+{{bannerimg=}}cover.jpg
+
+{{date=}}2020.23
+
+{{contents.zh=}}
+如题
+
+{{contents.en=}}
+rt

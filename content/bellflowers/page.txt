@@ -1,0 +1,14 @@
+{{title.zh=}}梦游铃草间
+{{intro.zh=}}《流萤花语》游戏配乐
+{{title.en=}}Bellflowers’ Wonderland
+{{intro.en=}}Music from the game “Fireflies in Forest Flowers”.
+
+{{bannerimg=}}fireflies/cover.png
+
+{{date=}}2022.13
+
+{{contents.zh=}}
+如题
+
+{{contents.en=}}
+rt

@@ -1,13 +1,10 @@
-{{title=}}游乐园
-
-{{=}}
 <header>
   <h1>{{ title }}</h1>
 </header>
 {{@ pagelist}}
 <section class='creation-card'><a href='/{{ name }}'>
   <section class='creation-banner'>
-    {{ image('/bin/' .. name .. '/' .. page.bannerimg) }}
+    {{ image(bannerimg) }}
     <h1{{@ pagedarktitle}} class='creation-title-dark'{{@ end}}>{{ page.title }}</h1>
   </section>
   <section class='creation-peek'>

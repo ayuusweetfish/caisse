@@ -1,0 +1,20 @@
+{{title.zh=}}Zzz・打击乐七重奏
+{{intro.zh=}}改编
+{{title.en=}}Zzz — Percussion septet
+{{intro.en=}}Adaptation
+
+{{--[[
+~/Downloads/ffmpeg-5.0.1
+  -ss 04.7 -i BV1px411J773_video.mp4 -frames:v 1 -q:v 1
+  -filter:v "crop=1200:540:360:270"
+  content/zzz/cover.jpg
+]]}}
+{{bannerimg=}}cover.jpg
+
+{{date=}}2021.07
+
+{{contents.zh=}}
+如题
+
+{{contents.en=}}
+rt

@@ -16,7 +16,8 @@ local function shallowdup(t)
 end
 
 local function writefile(file, s) io.open(file, 'w'):write(s) end
-local function copyfile(src, dst)
+local function copyfile(src)
+  local dst = 'bin/' .. src
   os.execute('mkdir -p $(dirname "' .. sitepath .. dst .. '")')
   os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
 end
@@ -45,29 +46,54 @@ local function inspectimage(path)
   return w, h
 end
 caisse.envadditions.image = function (path, class)
-  local w, h = inspectimage(sitepath .. path)
+  local realpath
+  if path:sub(1, 4) == 'bin/' then
+    realpath = srcpath .. path:sub(5)
+  else
+    realpath = sitepath .. path
+  end
+  local w, h = inspectimage(realpath)
   return '<img src="' .. path .. '"' ..
     ' width=' .. w .. ' height=' .. h ..
     (class and (' class="' .. class .. '"') or '') ..
     '>'
 end
 
-local pagelist = {}
-local listplayful = render('list-playful.txt')
-for i, name in ipairs(listplayful.pages) do
-  local page = render(name .. '/page.txt')
-  copyfile(
-    name .. '/' .. page.bannerimg,
-    'bin/' .. name .. '/' .. page.bannerimg)
-  pagelist[i] = {
-    name = name,
-    page = page,
-    pagedarktitle = listplayful.pagedarktitle[name],
-  }
+local function renderlist(name)
+  local pagelist = {}
+  listtemplate = render('list-' .. name .. '.txt')
+  local pagedarktitle = {}
+  if listtemplate.pagedarktitle then
+    for _, name in ipairs(listtemplate.pagedarktitle) do
+      pagedarktitle[name] = true
+    end
+  end
+  for i, name in ipairs(listtemplate.pages) do
+    local page = render(name .. '/page.txt')
+    local bannerimg
+    if page.bannerimg:find('/') ~= nil then
+      bannerimg = 'bin/' .. page.bannerimg
+    else
+      bannerimg = 'bin/' .. name .. '/' .. page.bannerimg
+      copyfile(name .. '/' .. page.bannerimg)
+    end
+    pagelist[i] = {
+      name = name,
+      page = page,
+      pagedarktitle = pagedarktitle[name] or false,
+      bannerimg = bannerimg,
+    }
 
-  local innerlocals = shallowdup(page)
-  innerlocals.name = name
-  renderfile(name, 'creation.html', innerlocals)
+    local innerlocals = shallowdup(page)
+    innerlocals.name = name
+    innerlocals.bannerimg = bannerimg
+    renderfile(name, 'creation.html', innerlocals)
+  end
+
+  renderfile(name, 'list.html', {
+    title = listtemplate.title,
+    pagelist = pagelist,
+  })
 end
-
-renderfile('playful', 'list.html', {pagelist = pagelist})
+renderlist('music')
+renderlist('playful')

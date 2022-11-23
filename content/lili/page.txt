@@ -1,0 +1,20 @@
+{{title.zh=}}绽放的百合花
+{{intro.zh=}}作业；电影《丹麦女孩》配乐练习
+{{title.en=}}Lili: Into a Blossom
+{{intro.en=}}Assignment; practice composition for the film “Danish Girl”.
+
+{{--[[
+~/Downloads/ffmpeg-5.0.1
+  -ss 03:19.4 -i out.mp4 -frames:v 1 -q:v 1
+  -filter:v "crop=720:240:0:0"
+  content/lili/cover.jpg
+]]}}
+{{bannerimg=}}cover.jpg
+
+{{date=}}2021.11
+
+{{contents.zh=}}
+如题
+
+{{contents.en=}}
+rt
