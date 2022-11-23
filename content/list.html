@@ -2,11 +2,11 @@
   <h1>List</h1>
 </header>
 {{{ pages = {
-  {name = 'daytime-cat'},
-  {name = 'ice-hatch'},
+  'daytime-cat',
+  'ice-hatch',
 } }}}
 {{ i = 3 }}
-{{@ pages}}
+{{@ name in pages}}
 {{ i = rendertemplate('content/' .. name .. '/page.txt') }}
 <section class='creation-card'><a href='/{{ name }}'>
   <section class='creation-banner'>
