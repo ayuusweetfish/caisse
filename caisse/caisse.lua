@@ -7,6 +7,7 @@ local printerr = function (...)
 end
 
 local caisse = {
+  lang = 'zh',
   envadditions = {},
   readfile = function (path) return io.open(path, 'r'):read('a') end,
 }
@@ -84,7 +85,12 @@ local function parsetemplate(s)
         blockbegin = #items
       else
         -- Detect type
-        local succeeded, fn = pcall(loadfn, 'return ' .. expr)
+        local succeeded, fn
+        if expr:sub(1, 1) == '!' then
+          expr = expr:sub(2)
+        else
+          succeeded, fn = pcall(loadfn, 'return ' .. expr)
+        end
         if succeeded then
           items[#items + 1] = {type = 'expr', expr = expr, fn = fn}
         else
@@ -121,7 +127,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         if value == nil then
           value = 'nil'
         elseif type(value) == 'table' then
-          local lang = 'zh'
+          local lang = caisse.lang
           if value[lang] ~= nil and type(value[lang]) ~= 'table' then
             value = tostring(value[lang])
           else
