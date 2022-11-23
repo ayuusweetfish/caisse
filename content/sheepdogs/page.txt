@@ -1,0 +1,14 @@
+{{title.zh=}}为小羊指路
+{{intro.zh=}}解谜游戏，让牧羊犬将小羊引导至正确的羊圈~
+{{title.en=}}Sheepdogs at Work
+{{intro.en=}}A puzzle game. Let sheepdogs guide the sheep into correct sheepfolds.
+
+{{bannerimg=}}cover.jpg
+
+{{date=}}2021.11
+
+{{contents.zh=}}
+2021 CiGA Game Jam 参赛作品
+
+{{contents.en=}}
+2021 CiGA Game Jam Entry

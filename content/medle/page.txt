@@ -1,0 +1,14 @@
+{{title.zh=}}Medle・谜谜之音
+{{intro.zh=}}旋律猜谜游戏，每日更新~
+{{title.en=}}Medle
+{{intro.en=}}Daily melody puzzle game
+
+{{bannerimg=}}share.jpg
+
+{{date=}}2022.02
+
+{{contents.zh=}}
+如题
+
+{{contents.en=}}
+rt

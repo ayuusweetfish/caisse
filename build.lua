@@ -33,10 +33,15 @@ local function renderfile(savepath, templatepath, locals)
     }))
 end
 
+local inspectimagecache = {}
 local function inspectimage(path)
+  if inspectimagecache[path] ~= nil then
+    return table.unpack(inspectimagecache[path])
+  end
   local p = io.popen('identify -format "%w %h" "' .. path .. '"')
   local w = p:read('n')
   local h = p:read('n')
+  inspectimagecache[path] = {w, h}
   return w, h
 end
 caisse.envadditions.image = function (path, class)
@@ -48,12 +53,17 @@ caisse.envadditions.image = function (path, class)
 end
 
 local pagelist = {}
-for i, name in ipairs(render('list-playful.txt').pages) do
+local listplayful = render('list-playful.txt')
+for i, name in ipairs(listplayful.pages) do
   local page = render(name .. '/page.txt')
   copyfile(
     name .. '/' .. page.bannerimg,
     'bin/' .. name .. '/' .. page.bannerimg)
-  pagelist[i] = { name = name, page = page }
+  pagelist[i] = {
+    name = name,
+    page = page,
+    pagedarktitle = listplayful.pagedarktitle[name],
+  }
 
   local innerlocals = shallowdup(page)
   innerlocals.name = name
