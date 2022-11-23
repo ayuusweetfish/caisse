@@ -10,7 +10,8 @@ end
 -- {type = 'string', expr = string}
 -- {type = 'expr'/'stmt', expr = string, fn = function}
 -- {type = 'block', expr = string, span = number}
--- {type = 'scope', expr = string, fn = function, span = number}
+-- {type = 'scope', expr = string,
+--  ident = string/nil, fn = function, span = number}
 local function loadtemplate(s)
   local items = {}
   local last, cur = 0, 1
@@ -59,9 +60,11 @@ local function loadtemplate(s)
           levelbegin[#levelbegin] = nil
         else
           -- Nested scope
-          expr = expr:sub(2)
-          local fn = loadfn('return ' .. expr)
-          items[#items + 1] = {type = 'scope', expr = expr, fn = fn, span = 0}
+          local ident, ctxexpr = expr:match('^@%s*([%a_][%w_]*)%s+in([^%w_].*)$')
+          if ident == nil then ctxexpr = expr:sub(2) end
+          local fn = loadfn('return ' .. ctxexpr)
+          items[#items + 1] = {type = 'scope', expr = ctxexpr,
+            ident = ident, fn = fn, span = 0}
           levelbegin[#levelbegin + 1] = #items
         end
       elseif expr:sub(-1) == '=' then
@@ -127,7 +130,11 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         -- Unpack a table into the context and render a template slice
         local unpackctx = function (ctx)
           local ctxcopy = {}
-          for k, v in pairs(ctx) do ctxcopy[k] = v end
+          if item.ident ~= nil then
+            ctxcopy[item.ident] = ctx
+          else
+            for k, v in pairs(ctx) do ctxcopy[k] = v end
+          end
           locals[#locals + 1] = ctxcopy
           renderslice(template, locals, outputs, i + 1, item.span)
           locals[#locals] = nil
