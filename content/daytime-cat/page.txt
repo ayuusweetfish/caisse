@@ -3,6 +3,8 @@
 {{title.en=}}Daytime Cat
 {{intro.en=}}A unique cat that does not sleep by daylight.
 
+{{bannerimg=}}preview.png
+
 {{date=}}2021.23
 
 {{contents.zh=}}
