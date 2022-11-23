@@ -1,6 +1,13 @@
 local caisse = require('caisse/caisse')
 local render = caisse.render
 
-local pagemain = render('content/list.html')
-local pageall = render('index.html', {contents = pagemain})
-print(pageall)
+local sitepath = 'build/'
+os.execute('rm -rf ' .. sitepath)
+os.execute('mkdir ' .. sitepath)
+
+local function writefile(file, s) io.open(file, 'w'):write(s) end
+local function renderfile(savepath, templatepath, locals)
+  writefile(sitepath .. savepath, render(templatepath, locals))
+end
+
+renderfile('1.html', 'index.html', {contents = render('content/list.html')})

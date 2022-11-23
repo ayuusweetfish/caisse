@@ -6,7 +6,10 @@ local printerr = function (...)
   end
 end
 
-local envadditions = {}
+local caisse = {
+  envadditions = {},
+  readfile = function (path) return io.open(path, 'r'):read('a') end,
+}
 
 -- Item format:
 -- {type = 'string', expr = string}
@@ -29,7 +32,9 @@ local function parsetemplate(s)
           for i = #locals, 1, -1 do
             if locals[i][key] ~= nil then return locals[i][key] end
           end
-          if envadditions[key] ~= nil then return envadditions[key] end
+          if caisse.envadditions[key] ~= nil then
+            return caisse.envadditions[key]
+          end
         end,
         __newindex = function (table, key, value)
           locals[#locals][key] = value
@@ -190,8 +195,7 @@ end
 local templateregistry = {}
 local function loadtemplate(path)
   if templateregistry[path] ~= nil then return templateregistry[path] end
-  local f = io.open(path, 'r')
-  local t = parsetemplate(f:read('a'))
+  local t = parsetemplate(caisse.readfile(path))
   templateregistry[path] = t
   return t
 end
@@ -210,10 +214,6 @@ local function render(path, locals)
   end
 end
 
-envadditions = {
-  render = render,
-}
-return {
-  render = render,
-  envadditions = envadditions,
-}
+caisse.envadditions.render = render
+caisse.render = render
+return caisse
