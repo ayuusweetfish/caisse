@@ -5,6 +5,7 @@
   {name = 'daytime-cat'},
   {name = 'ice-hatch'},
 } }}}
+{{ i = 3 }}
 {{@ pages}}
 {{ i = rendertemplate('content/' .. name .. '/page.txt') }}
 <section class='creation-card'><a href='/{{ name }}'>
@@ -16,11 +17,12 @@
     <p>{{ i.intro }}</p>
     <p>{{ i.date }}</p>
   </section>
-  {{@ i.a.b.c}}
+  {{@ i.a}}
     !! {{ i.a.b.c }}
   {{@ end}}
 </a></section>
 {{@ end}}
+i = {{tostring(i)}}
 
 <style>
 .creation-card {

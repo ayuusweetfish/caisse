@@ -1,7 +1,16 @@
+local inspect = require('deps/inspect')
+local printerr = function (...)
+  for i = 1, select('#', ...) do
+    io.stderr:write(tostring(select(i, ...)))
+    io.stderr:write(i == select('#', ...) and '\n' or '\t')
+  end
+end
+
 -- Item format:
--- string
--- function
--- {type = string, expr = string/function, span = number}
+-- {type = 'string', expr = string}
+-- {type = 'expr'/'stmt', expr = string, fn = function}
+-- {type = 'block', expr = string, span = number}
+-- {type = 'scope', expr = string, fn = function, span = number}
 local function loadtemplate(s)
   local items = {}
   local last, cur = 0, 1
@@ -14,20 +23,28 @@ local function loadtemplate(s)
       if fn == nil then error('Statement "' .. expr:sub(2) .. '" is invalid') end
     end
     return function (locals)
+      local prevmt = getmetatable(_ENV)
       setmetatable(_ENV, {
-        __index = locals,
-        __newindex = function (table, key, value) locals[key] = value end,
+        __index = function (table, key)
+          for i = #locals, 1, -1 do
+            if locals[i][key] ~= nil then return locals[i][key] end
+          end
+        end,
+        __newindex = function (table, key, value)
+          locals[#locals][key] = value
+        end,
       })
       local succeeded, ret = pcall(fn)
-      setmetatable(_ENV, nil)
-      return succeeded and ret or nil
+      setmetatable(_ENV, prevmt)
+      if not succeeded then error(ret) end
+      return ret
     end
   end
   while cur <= #s do
     if s:sub(cur, cur + 1) == '{{' then
       -- New text entry
       if last ~= cur then
-        items[#items + 1] = s:sub(last + 1, cur - 1)
+        items[#items + 1] = {type = 'string', expr = s:sub(last + 1, cur - 1)}
       end
       -- Find matching closing brackets
       local obrkts = 2
@@ -45,8 +62,9 @@ local function loadtemplate(s)
           levelbegin[#levelbegin] = nil
         else
           -- Nested scope
-          local fn = loadfn(expr:sub(2))
-          items[#items + 1] = {type = 'scope', expr = fn, span = 0}
+          expr = expr:sub(2)
+          local fn = loadfn(expr)
+          items[#items + 1] = {type = 'scope', expr = expr, fn = fn, span = 0}
           levelbegin[#levelbegin + 1] = #items
         end
       elseif expr:sub(-1) == '=' then
@@ -58,7 +76,7 @@ local function loadtemplate(s)
         blockbegin = #items
       else
         -- Detect type
-        items[#items + 1] = loadfn(expr)
+        items[#items + 1] = {type = 'expr', expr = expr, fn = loadfn(expr)}
       end
       last = endext
       cur = endext + 1
@@ -67,7 +85,7 @@ local function loadtemplate(s)
     end
   end
   if last ~= #s then
-    items[#items + 1] = s:sub(last + 1, #s)
+    items[#items + 1] = {type = 'string', expr = s:sub(last + 1, #s)}
   end
   if blockbegin ~= 0 then
     items[blockbegin].span = #items
@@ -75,19 +93,22 @@ local function loadtemplate(s)
   return items
 end
 
-local function render(template, locals, outputs, rangestart, rangeend)
-  outputs = outputs or {}
-  rangestart = rangestart or 1
-  rangeend = rangeend or #template
+local function renderslice(template, locals, outputs, rangestart, rangeend)
   local i = rangestart
   while i <= rangeend do
     local item = template[i]
-    if type(item) == 'string' then
+    if item.type == 'string' then
       -- Raw text
-      outputs[#outputs + 1] = item
-    elseif type(item) == 'function' then
+      outputs[#outputs + 1] = item.expr
+    elseif item.type == 'expr' or item.type == 'stmt' then
       -- Expression or statement
-      local value = item(locals)
+      if item.expr:sub(1, 4) == 'a = ' then
+        print('before', item.expr, inspect(locals))
+      end
+      local value = item.fn(locals)
+      if item.expr:sub(1, 4) == 'a = ' then
+        print('after', item.expr, inspect(locals))
+      end
       if value ~= nil then
         if type(value) == 'table' then
           local lang = 'zh'
@@ -99,68 +120,67 @@ local function render(template, locals, outputs, rangestart, rangeend)
         end
         outputs[#outputs + 1] = value
       end
-    elseif type(item) == 'table' then
+    elseif item.type == 'scope' then
       -- Scope: conditional (if) / context (with/for-each)
-      if item.type == 'scope' then
-        local ctx = item.expr(locals)
-        if type(ctx) == 'table' then
-          -- Context context (with/for-each): depends on whether #ctx > 0
-          -- Unpack a table into the context and render a template slice
-          local unpackctx = function (ctx)
-            local stash = {}
-            for k, v in pairs(ctx) do
-              stash[k] = locals[k]
-              locals[k] = v
-            end
-            render(template, locals, outputs, i + 1, item.span)
-            for k, v in pairs(ctx) do
-              locals[k] = stash[k]
-            end
-          end
-          if #ctx > 0 then
-            for j = 1, #ctx do unpackctx(ctx[j]) end
-          else
-            unpackctx(ctx)
-          end
-          i = item.span
+      local ctx = item.fn(locals)
+      if type(ctx) == 'table' then
+        -- Context context (with/for-each): depends on whether #ctx > 0
+        -- Unpack a table into the context and render a template slice
+        local unpackctx = function (ctx)
+          local ctxcopy = {}
+          for k, v in pairs(ctx) do ctxcopy[k] = v end
+          locals[#locals + 1] = ctxcopy
+          renderslice(template, locals, outputs, i + 1, item.span)
+          locals[#locals] = nil
+        end
+        if #ctx > 0 then
+          for j = 1, #ctx do unpackctx(ctx[j]) end
         else
-          -- Conditional (if): boolean or existence check
-          if not ctx then i = item.span end
+          unpackctx(ctx)
         end
-      elseif item.type == 'block' then
-        -- Render to a completely new block
-        local newoutputs = {}
-        render(template, locals, newoutputs, i + 1, item.span)
-        local contents = table.concat(newoutputs, '')
-        -- Assign the result to the variable specified,
-        -- supporting nested table auto-creation through metatables
-        local function metaindex(table, key)
-          local result = setmetatable({}, {__index = metaindex})
-          rawset(table, key, result)
-          return result
-        end
-        local setfn = load(
-          string.gsub('? = (type(?) == "table" and "" or ?) .. ...',
-            '[?]', item.expr),
-          item.expr, 't')
-        setmetatable(_ENV, {__index = function (table, key)
-          if locals[key] ~= nil then return locals[key] end
-          local result = setmetatable({}, {__index = metaindex})
-          rawset(locals, key, result)
-          return result
-        end, __newindex = function (table, key, value)
-          rawset(locals, key, value)
-        end})
-        setfn(contents)
-        setmetatable(_ENV, nil)
         i = item.span
+      else
+        -- Conditional (if): boolean or existence check
+        if not ctx then i = item.span end
       end
+    elseif item.type == 'block' then
+      -- Render to a completely new block
+      local newoutputs = {}
+      locals[#locals + 1] = {}
+      renderslice(template, locals, newoutputs, i + 1, item.span)
+      locals[#locals] = nil
+      local contents = table.concat(newoutputs, '')
+      -- Assign the result to the variable specified,
+      -- supporting nested table auto-creation through metatables
+      local function metaindex(table, key)
+        local result = setmetatable({}, {__index = metaindex})
+        rawset(table, key, result)
+        return result
+      end
+      local setfn = load(
+        string.gsub('? = (type(?) == "table" and "" or ?) .. ...',
+          '[?]', item.expr),
+        item.expr, 't')
+      local prevmt = getmetatable(_ENV)
+      setmetatable(_ENV, {__index = function (table, key)
+        if locals[#locals][key] ~= nil then return locals[#locals][key] end
+        local result = setmetatable({}, {__index = metaindex})
+        rawset(locals[#locals], key, result)
+        return result
+      end, __newindex = function (table, key, value)
+        rawset(locals[#locals], key, value)
+      end})
+      setfn(contents)
+      setmetatable(_ENV, prevmt)
+      i = item.span
     end
     i = i + 1
   end
-  if rangestart == 1 and rangeend == #template then
-    return table.concat(outputs, '')
-  end
+end
+local function render(template, locals)
+  local outputs = {}
+  renderslice(template, {locals}, outputs, 1, #template)
+  return table.concat(outputs, '')
 end
 
 local templatecache = {}
