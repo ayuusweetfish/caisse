@@ -1,10 +1,13 @@
+{{title=}}游乐园
+
+{{=}}
 <header>
-  <h1>游乐园</h1>
+  <h1>{{ title }}</h1>
 </header>
 {{@ pagelist}}
 <section class='creation-card'><a href='/{{ name }}'>
   <section class='creation-banner'>
-    <img src='/bin/{{ name }}/{{ page.bannerimg }}'>
+    {{ image('/bin/' .. name .. '/' .. page.bannerimg) }}
     <h1>{{ page.title }}</h1>
   </section>
   <section class='creation-peek'>

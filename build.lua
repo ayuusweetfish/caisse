@@ -24,7 +24,27 @@ local function render(...)
   return caisse.render(...)
 end
 local function renderfile(savepath, templatepath, locals)
-  writefile(sitepath .. savepath, render(templatepath, locals))
+  local contents = render(templatepath, locals)
+  writefile(sitepath .. savepath,
+    render('index.html', {
+      savepath = savepath,
+      title = locals.title,
+      contents = contents,
+    }))
+end
+
+local function inspectimage(path)
+  local p = io.popen('identify -format "%w %h" "' .. path .. '"')
+  local w = p:read('n')
+  local h = p:read('n')
+  return w, h
+end
+caisse.envadditions.image = function (path, class)
+  local w, h = inspectimage(sitepath .. path)
+  return '<img src="' .. path .. '"' ..
+    ' width=' .. w .. ' height=' .. h ..
+    (class and (' class="' .. class .. '"') or '') ..
+    '>'
 end
 
 local pagelist = {}
@@ -35,9 +55,9 @@ for i, name in ipairs(render('list-playful.txt').pages) do
     'bin/' .. name .. '/' .. page.bannerimg)
   pagelist[i] = { name = name, page = page }
 
-  local creationcontents = render('creation.html', shallowdup(page))
-  renderfile(name, 'index.html', {contents = creationcontents})
+  local innerlocals = shallowdup(page)
+  innerlocals.name = name
+  renderfile(name, 'creation.html', innerlocals)
 end
 
-local listcontents = render('list.html', {pagelist = pagelist})
-renderfile('playful', 'index.html', {contents = listcontents})
+renderfile('playful', 'list.html', {pagelist = pagelist})
