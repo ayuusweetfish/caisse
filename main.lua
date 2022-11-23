@@ -2,7 +2,7 @@
 -- string
 -- function
 -- {type = string, expr = string/function, span = number}
-local loadtemplate = function (s)
+local function loadtemplate(s)
   local items = {}
   local last, cur = 0, 1
   local levelbegin = {}
@@ -18,9 +18,9 @@ local loadtemplate = function (s)
         __index = locals,
         __newindex = function (table, key, value) locals[key] = value end,
       })
-      local ret = fn()
+      local succeeded, ret = pcall(fn)
       setmetatable(_ENV, nil)
-      return ret
+      return succeeded and ret or nil
     end
   end
   while cur <= #s do
@@ -94,7 +94,7 @@ local function render(template, locals, outputs, rangestart, rangeend)
           if value[lang] ~= nil and type(value[lang]) ~= 'table' then
             value = tostring(value[lang])
           else
-            error('Tables results are not allowed')
+            error('Table results are not allowed')
           end
         end
         outputs[#outputs + 1] = value
@@ -103,10 +103,7 @@ local function render(template, locals, outputs, rangestart, rangeend)
       -- Scope: conditional (if) / context (with/for-each)
       if item.type == 'scope' then
         local ctx = item.expr(locals)
-        if type(ctx) == 'boolean' or ctx == nil then
-          -- Conditional (if): boolean or existence check
-          if not ctx then i = item.span end
-        elseif type(ctx) == 'table' then
+        if type(ctx) == 'table' then
           -- Context context (with/for-each): depends on whether #ctx > 0
           -- Unpack a table into the context and render a template slice
           local unpackctx = function (ctx)
@@ -127,7 +124,8 @@ local function render(template, locals, outputs, rangestart, rangeend)
           end
           i = item.span
         else
-          error('Expression should either be a boolean or a table value')
+          -- Conditional (if): boolean or existence check
+          if not ctx then i = item.span end
         end
       elseif item.type == 'block' then
         -- Render to a completely new block
@@ -150,6 +148,8 @@ local function render(template, locals, outputs, rangestart, rangeend)
           local result = setmetatable({}, {__index = metaindex})
           rawset(locals, key, result)
           return result
+        end, __newindex = function (table, key, value)
+          rawset(locals, key, value)
         end})
         setfn(contents)
         setmetatable(_ENV, nil)
@@ -162,6 +162,21 @@ local function render(template, locals, outputs, rangestart, rangeend)
     return table.concat(outputs, '')
   end
 end
+
+local templatecache = {}
+local function templatecontents(path)
+  if templatecache[path] ~= nil then return templatecache[path] end
+  local f = io.open(path, 'r')
+  local t = loadtemplate(f:read('a'))
+  templatecache[path] = t
+  return t
+end
+local function rendertemplate(path)
+  local locals = {}
+  render(templatecontents(path), locals)
+  return locals
+end
+_ENV.rendertemplate = rendertemplate
 
 local t_creation = loadtemplate(io.open('content/creation.html', 'r'):read('a'))
 local t_page = loadtemplate(io.open('content/daytime-cat/page.txt', 'r'):read('a'))

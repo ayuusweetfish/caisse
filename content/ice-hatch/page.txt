@@ -1,0 +1,15 @@
+{{title.zh=}}冰雪繁忙
+{{intro.zh=}}企鹅冰壶孵蛋游戏
+{{title.en=}}Ice Hatch
+{{intro.en=}}Curling, but penguins
+{{a.b.c=}}1
+
+{{bannerimg=}}cover.png
+
+{{date=}}2022.01
+
+{{contents.zh=}}
+Mini Jam #99 参赛作品
+
+{{contents.en=}}
+Mini Jam #99 entry.
