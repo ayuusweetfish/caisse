@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html><body>
+<svg xmlns='http://www.w3.org/2000/svg' version='1.1'></svg>
+<br><a href='https://jakearchibald.github.io/svgomg/'>Optimizer</a>
+<style>
+svg { background: hsl(50deg, 100%, 99%); }
+</style>
+<script src='https://unpkg.com/roughjs@4.5.2/bundled/rough.js'></script>
+<script>
+const hsl_rgb = (h, s, l) => {
+  // https://stackoverflow.com/a/9493060
+  let r, g, b
+  if (s === 0) {
+    r = g = b = l;
+  } else {
+    const fromhue = (p, q, t) => {
+      if (t < 0) t += 1
+      if (t > 1) t -= 1
+      if (t < 1/6) return p + (q - p) * 6 * t
+      if (t < 3/6) return q
+      if (t < 4/6) return p + (q - p) * (2/3 - t) * 6
+      return p
+    }
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s
+    const p = 2 * l - q
+    r = fromhue(p, q, h + 1/3)
+    g = fromhue(p, q, h)
+    b = fromhue(p, q, h - 1/3)
+  }
+  return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)]
+}
+const randomPastel = (seed) => {
+  const nextrand = () => {
+    seed = (Math.imul(seed, 1103515245) + 12345) & 0x7fffffff
+    return seed
+  }
+  for (let i = 0; i < 11; i++) nextrand()
+  const randin = (a, b) => (nextrand() / 0x7fffffff) * (b - a) + a
+  // https://www.w3.org/WAI/GL/wiki/Relative_luminance
+  const gammacorr = (x) =>
+    (x <= 0.03928 ? x / 12.92 : Math.pow((x + 0.055) / 1.055, 2.4))
+  const h = randin(0, 1)
+  while (true) {
+    const s = randin(0.6, 1)
+    const l = randin(s * 0.9, 1)
+    const [r, g, b] = hsl_rgb(h, s, l)
+    const rl = gammacorr(r / 255)
+    const gl = gammacorr(g / 255)
+    const bl = gammacorr(b / 255)
+    if (rl * 0.2126 + gl * 0.7152 + bl * 0.0722 >= 0.72 &&
+        rl * 0.2126 + gl * 0.7152 + bl * 0.0722 <= 0.75)
+      return '#' + [r, g, b].map((x) => x.toString(16).padStart(2, '0')).join('')
+  }
+}
+
+const svg = document.getElementsByTagName('svg')[0]
+const r = rough.svg(svg)
+
+const TX = 5
+const TY = Math.sqrt(3)
+const A = Math.atan2(TY, TX)
+const D = 600 / Math.sqrt(TX * TX + TY * TY)
+const R = 25
+const W = 600
+const H = D * Math.sqrt(3 * 5 * 5 + 3 * 3)  // (5, -2) at the lower-left corner
+const OX = D * 0
+const OY = D * 2.9
+svg.setAttribute('width', W)
+svg.setAttribute('height', H)
+for (let i = -4; i < 12; i++) {
+  const x0 = (i % 2 * D)
+  const y0 = i * D * Math.sqrt(3)
+  for (let j = -4; j < 12; j++) {
+    const x1 = x0 + j * D * 2
+    const y1 = y0
+    const x = x1 * Math.cos(A) + y1 * Math.sin(A) + OX
+    const y = x1 * -Math.sin(A) + y1 * Math.cos(A) + OY
+    if (x > -R && x < W + R && y > -R && y < H + R) {
+      const xi = Math.round(((x - OX + W) % W / W) * 100)
+      const yi = Math.round(((y - OY + H) % H / H) * 100)
+      const seed = 1124000 + xi * 2022 + yi
+      const g = r.circle(x, y, R * 2, {
+        seed,
+        roughness: 0.5,
+        stroke: '#c0c0c0',
+        strokeWidth: 1.5,
+        fill: randomPastel(seed),
+        fillStyle: 'hachure',
+        fillWeight: 1.5,
+        hachureAngle: -63,
+        hachureGap: 2,
+      })
+      for (const el of g.getElementsByTagName('path')) {
+        el.setAttribute('stroke-opacity', '0.1')
+      }
+      svg.appendChild(g)
+    }
+  }
+}
+</script>
+</body></html>
