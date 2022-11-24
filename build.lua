@@ -46,21 +46,23 @@ local function inspectimage(path)
   inspectimagecache[path] = {w, h}
   return w, h
 end
-caisse.envadditions.image = function (path, class)
+caisse.envadditions.image = function (path, alt, class)
   local realpath
-  if path:sub(1, 4) == 'bin/' then
-    realpath = srcpath .. path:sub(5)
+  if path:sub(1, 5) == '/bin/' then
+    realpath = srcpath .. path:sub(6)
   else
     realpath = sitepath .. path
   end
   local w, h = inspectimage(realpath)
   return '<img src="' .. path .. '"' ..
     ' width=' .. w .. ' height=' .. h ..
+    (alt and (' alt="' .. alt .. '"') or '') ..
     (class and (' class="' .. class .. '"') or '') ..
     '>'
 end
 
 copyfile('background.svg')
+copyfile('top-fleuron.svg')
 
 local function renderlist(cat)
   local pagelist = {}
@@ -75,9 +77,9 @@ local function renderlist(cat)
     local page = render(name .. '/page.txt')
     local bannerimg
     if page.bannerimg:find('/') ~= nil then
-      bannerimg = 'bin/' .. page.bannerimg
+      bannerimg = '/bin/' .. page.bannerimg
     else
-      bannerimg = 'bin/' .. name .. '/' .. page.bannerimg
+      bannerimg = '/bin/' .. name .. '/' .. page.bannerimg
       copyfile(name .. '/' .. page.bannerimg)
     end
     pagelist[i] = {
