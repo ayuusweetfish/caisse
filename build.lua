@@ -30,6 +30,7 @@ local function renderfile(savepath, templatepath, locals)
     render('index.html', {
       savepath = savepath,
       title = locals.title,
+      cat = locals.cat,
       contents = contents,
     }))
 end
@@ -61,9 +62,9 @@ end
 
 copyfile('background.svg')
 
-local function renderlist(name)
+local function renderlist(cat)
   local pagelist = {}
-  listtemplate = render('list-' .. name .. '.txt')
+  listtemplate = render('list-' .. cat .. '.txt')
   local pagedarktitle = {}
   if listtemplate.pagedarktitle then
     for _, name in ipairs(listtemplate.pagedarktitle) do
@@ -87,13 +88,14 @@ local function renderlist(name)
     }
 
     local innerlocals = shallowdup(page)
+    innerlocals.cat = cat
     innerlocals.name = name
     innerlocals.bannerimg = bannerimg
     renderfile(name, 'creation.html', innerlocals)
   end
 
-  renderfile(name, 'list.html', {
-    title = listtemplate.title,
+  renderfile(cat, 'list.html', {
+    cat = cat,
     pagelist = pagelist,
   })
 end
