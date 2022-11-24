@@ -151,17 +151,31 @@ a.pastel {
 a.pastel::after {
   content: '';
   display: block;
+  /* Transitions with logical properties do not work on Safari 14 */
+  height: 0.12em;
+  margin-top: -0.09em;
+/*
   block-size: 0.12em;
-  margin-block-start: -0.18em;
-  margin-block-end: 0;
+  margin-block-start: -0.09em;
+*/
+  margin-block-end: -0.18em;
   border-radius: 1em;
   transition:
+    height 0.2s ease,
+    margin-top 0.2s ease;
+  /*
     block-size 0.2s ease,
     margin-block-start 0.2s ease;
+  */
 }
-a.pastel:hover::after {
+a.pastel:hover::after,
+a.pastel:focus::after {
+  height: 0.24em;
+  margin-top: -0.18em;
+/*
   block-size: 0.24em;
-  margin-block-start: -0.27em;
+  margin-block-start: -0.18em;
+*/
 }
 {{@ cat in cats.list}}
 {{ hue, sat, val1, val2 = table.unpack(cats.tints[cat]) }}
