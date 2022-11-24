@@ -1,4 +1,4 @@
-{{title.zh=}}绽放的百合花
+{{title.zh=}}百合怒放
 {{intro.zh=}}作业；电影《丹麦女孩》配乐练习
 {{title.en=}}Lili: Into a Blossom
 {{intro.en=}}Assignment; practice composition for the film “Danish Girl”.
