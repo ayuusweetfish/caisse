@@ -104,6 +104,8 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+nav, main, aside, footer { padding: 1rem; }
+
 @media (max-width: 60rem) {
   #main-grid {
     grid-template-columns: 5fr 16fr;
@@ -121,8 +123,6 @@ summary::-webkit-details-marker {
     grid-column: 2;
   }
 }
-
-nav, main, aside, footer { padding: 1rem; }
 
 @media (max-width: 115vh), (max-width: 48rem) {
   #main-grid {
@@ -203,14 +203,22 @@ main header h1 {
 
 main {
   position: relative;
+  overflow-x: clip;
 }
 .top-fleuron {
-  inline-size: max(100%, 30rem);
+  inline-size: 100%;
   block-size: auto;
   position: absolute;
   inset-block-start: 0;
-  inset-inline-start: min(0px, 50% - 15rem);
+  inset-inline-start: 0;
   filter: hue-rotate({{hue}}deg);
+}
+
+@media (max-width: 115vh), (max-width: 48rem) {
+  .top-fleuron {
+    inline-size: max(100%, 36rem);
+    inset-inline-start: min(0px, 50% - 18rem);
+  }
 }
 </style>
 
