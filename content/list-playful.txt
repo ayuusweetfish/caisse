@@ -1,6 +1,3 @@
-{{title.zh=}}游乐园
-{{title.en=}}Playful Pieces
-{{=}}
 {{{
 pages = {
   'fireflies',

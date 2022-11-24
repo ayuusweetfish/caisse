@@ -1,6 +1,3 @@
-{{title.zh=}}八音盒
-{{title.en=}}Music Pieces
-{{=}}
 {{{
 pages = {
   'bellflowers',

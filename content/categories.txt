@@ -1,0 +1,41 @@
+{{home.zh=}}主页
+{{music.zh=}}八音盒
+{{playful.zh=}}游乐园
+{{murmurs.zh=}}梦话集
+{{stray.zh=}}杂物堆
+{{scratch.zh=}}涂鸦板
+
+{{home.en=}}Home
+{{music.en=}}Music
+{{playful.en=}}Playful
+{{murmurs.en=}}Murmurs
+{{stray.en=}}Stray
+{{scratch.en=}}Scratch
+
+{{long.home.en=}}Home
+{{long.music.en=}}Music Pieces
+{{long.playful.en=}}Playful Pieces
+{{long.murmurs.en=}}Murmur Pieces
+{{long.stray.en=}}Stray Pieces
+{{long.scratch.en=}}Scratch Pieces
+
+{{=}}
+{{{
+tints = {
+          -- hue  sat  v1  v2
+  home    = { 28, 100, 40, 89},
+  music   = {282, 100, 45, 90},
+  playful = { 40, 100, 40, 86},
+  murmurs = {204, 100, 40, 90},
+  stray   = {163,  85, 35, 89},
+  scratch = { 70,  10, 45, 85},
+}
+list = {
+  'home',
+  'music',
+  'playful',
+  'murmurs',
+  'stray',
+  'scratch',
+}
+}}}

@@ -113,6 +113,18 @@ local function parsetemplate(s)
   return items
 end
 
+local function tr(value)
+  if type(value) == 'table' then
+    if value[caisse.lang] ~= nil and type(value[caisse.lang]) ~= 'table' then
+      return tostring(value[caisse.lang])
+    else
+      return nil
+    end
+  else
+    return value
+  end
+end
+
 local function renderslice(template, locals, outputs, rangestart, rangeend)
   local i = rangestart
   while i <= rangeend do
@@ -127,11 +139,9 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         if value == nil then
           value = 'nil'
         elseif type(value) == 'table' then
-          local lang = caisse.lang
-          if value[lang] ~= nil and type(value[lang]) ~= 'table' then
-            value = tostring(value[lang])
-          else
-            error('Table results are not allowed')
+          value = tr(value)
+          if value == nil then
+            error('Table results are not allowed: ' .. inspect(value))
           end
         end
         outputs[#outputs + 1] = value
@@ -234,5 +244,7 @@ local function render(path, locals)
 end
 
 caisse.envadditions.render = render
+caisse.envadditions.inspect = inspect
+caisse.envadditions.tr = tr
 caisse.render = render
 return caisse

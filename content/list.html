@@ -1,3 +1,11 @@
+{{
+  categories = render('categories.txt')
+  if tr(categories.long[cat]) then
+    title = tr(categories.long[cat])
+  else
+    title = categories[cat]
+  end
+}}
 <header>
   <h1>{{ title }}</h1>
 </header>

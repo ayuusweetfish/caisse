@@ -5,15 +5,16 @@
   <title>{{ title }} — Site</title>
 </head><body>
 
+{{ cats = render('categories.txt') }}
+
 <span id='main-grid'>
 <nav>
 <h1>Site Name</h1>
 <ul>
-  <li><a href='/'>Home</a></li>
-  <li><a href='/music'>Music</a></li>
-  <li><a href='/playful'>Playful</a></li>
-  <li><a href='/murmurs'>Murmurs</a></li>
-  <li><a href='/stray'>Stray</a></li>
+  {{@ name in cats.list}}
+  <li><a class='pastel {{name}}'
+    href='/{{@ name ~= "home"}}{{name}}{{@ end}}'>{{cats[name]}}</a></li>
+  {{@ end}}
 </ul>
 <section id='icon-buttons'>
   <details id='lang-container'>
@@ -72,6 +73,7 @@ nav > ul {
 }
 nav > ul > li {
   flex: 1;
+  margin-block-end: 0.25em;
 }
 
 #lang-container {
@@ -124,7 +126,7 @@ summary::-webkit-details-marker {
   nav > ul {
     flex-direction: row;
     column-gap: 1rem;
-    overflow-x: scroll;
+    overflow: scroll visible;
   }
   #icon-buttons {
     position: absolute;
@@ -140,6 +142,39 @@ summary::-webkit-details-marker {
 }
 
 nav, main, aside, footer { padding: 0.5rem 1rem; }
+
+a.pastel {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+a.pastel::after {
+  content: '';
+  display: block;
+  block-size: 0.12em;
+  margin-block-start: -0.18em;
+  margin-block-end: 0;
+  border-radius: 1em;
+  transition:
+    block-size 0.2s ease,
+    margin-block-start 0.2s ease;
+}
+a.pastel:hover::after {
+  block-size: 0.24em;
+  margin-block-start: -0.27em;
+}
+{{@ cat in cats.list}}
+{{ hue, sat, val1, val2 = table.unpack(cats.tints[cat]) }}
+a.{{cat}} { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
+a.{{cat}}::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
+{{@ end}}
+
+{{@ cat}}
+{{ hue, sat, val1, val2 = table.unpack(cats.tints[cat]) }}
+main header h1 {
+  color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%);
+}
+{{@ end}}
 </style>
 
 <script>
