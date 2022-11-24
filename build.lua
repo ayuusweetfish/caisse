@@ -59,6 +59,8 @@ caisse.envadditions.image = function (path, class)
     '>'
 end
 
+copyfile('background.svg')
+
 local function renderlist(name)
   local pagelist = {}
   listtemplate = render('list-' .. name .. '.txt')
