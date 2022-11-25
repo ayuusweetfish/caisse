@@ -208,8 +208,12 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
           for j = 1, #newoutputslist do
             newoutputslist[j] = table.concat(newoutputslist[j])
           end
-          result = ctx(table.unpack(newoutputslist))
-          -- Errors at this point, if any, will bubble up
+          local succeeded2, result2 = pcall(ctx, table.unpack(newoutputslist))
+          if not succeeded2 then
+            error('Function call failed: ' .. tostring(item.expr) ..
+              '\nError with original segments:\n' .. tostring(result) ..
+              '\nError with concatenated strings:\n' .. tostring(result2))
+          end
         end
         outputs[#outputs + 1] = result
         i = item.span
