@@ -100,6 +100,22 @@ local function parsetemplate(s)
       end
       last = endext
       cur = endext + 1
+      -- Single-line blocks special check
+      if items[#items].type == 'block' then
+        local lineend = s:find('\n', cur)
+        if lineend then lineend = lineend - 1 else lineend = #s end
+        local linerem = s:sub(cur, lineend)
+        if linerem:find('[^%s]') then
+          -- Non-empty contents found; attach and close block
+          items[#items + 1] = {type = 'string', expr = linerem}
+          items[blockbegin].span = #items
+          items[#items + 1] = {type = 'block', expr = '', span = 0}
+          blockbegin = #items
+          -- Skip the line and newlines
+          cur = s:find('[^\n]', lineend + 1) or (#s + 1)
+          last = cur - 1
+        end
+      end
     else
       cur = cur + 1
     end
