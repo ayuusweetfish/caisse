@@ -151,10 +151,6 @@ nav, main, aside, footer { padding: 1rem; }
   #lang-list {
     inset-inline-end: 0;
   }
-
-  .top-fleuron {
-    min-inline-size: 36rem;
-  }
 }
 
 a.pastel {
@@ -203,10 +199,18 @@ main {
   max-inline-size: 72rem;
   block-size: auto;
   position: absolute;
-  inset-block-start: 0;
+  inset-block-start: -0.3em;
   inset-inline-start: 50%;
   transform: translate(-50%, 0);
+  z-index: -1;
   filter: hue-rotate({{hue}}deg);
+}
+
+@media (max-width: 115vh), (max-width: 48rem) {
+  .top-fleuron {
+    inset-block-start: 0;
+    min-inline-size: 36rem;
+  }
 }
 </style>
 
