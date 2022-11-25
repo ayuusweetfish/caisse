@@ -19,7 +19,6 @@
 {{long.stray.en=}}Stray Pieces
 {{long.scratch.en=}}Scratch Pieces
 
-{{=}}
 {{{
 tints = {
           -- hue  sat  v1  v2
