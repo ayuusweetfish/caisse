@@ -9,6 +9,8 @@
 
 {{contents.zh=}}
 如题
+这里有{{@b}}粗体{{@,}}a{{@end}}哦
+{{@image}}/bin/fireflies/cover.png{{@,}}Alt{{@,}}class{{@end}}
 
 {{contents.en=}}
 rt

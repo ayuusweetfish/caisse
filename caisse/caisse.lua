@@ -16,6 +16,7 @@ local caisse = {
 -- {type = 'string', expr = string}
 -- {type = 'expr'/'stmt', expr = string, fn = function}
 -- {type = 'block', expr = string, span = number}
+-- {type = 'blocksep'}
 -- {type = 'scope', expr = string,
 --  ident = string/nil, fn = function, span = number}
 local function parsetemplate(s)
@@ -67,6 +68,9 @@ local function parsetemplate(s)
           -- Move up one level
           items[levelbegin[#levelbegin]].span = #items
           levelbegin[#levelbegin] = nil
+        elseif expr:match('^@%s*,%s*$') then
+          -- Separator
+          items[#items + 1] = {type = 'blocksep'}
         else
           -- Nested scope
           local ident, ctxexpr = expr:match('^@%s*([%a_][%w_]*)%s+in([^%w_].*)$')
@@ -163,7 +167,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         outputs[#outputs + 1] = value
       end
     elseif item.type == 'scope' then
-      -- Scope: conditional (if) / context (with/for-each)
+      -- Scope: conditional (if) / context (with/for-each) / call
       local ctx = item.fn(locals)
       if type(ctx) == 'table' then
         -- Context context (with/for-each): depends on whether #ctx > 0
@@ -184,6 +188,30 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         else
           unpackctx(ctx)
         end
+        i = item.span
+      elseif type(ctx) == 'function' then
+        -- Function call
+        locals[#locals + 1] = {}
+        local newoutputslist = {}
+        local nextstart = i + 1
+        for j = i + 1, item.span + 1 do
+          if j == item.span + 1 or template[j].type == 'blocksep' then
+            newoutputslist[#newoutputslist + 1] = {}
+            renderslice(template, locals,
+              newoutputslist[#newoutputslist], nextstart, j - 1)
+            nextstart = j + 1
+          end
+        end
+        locals[#locals] = nil
+        local succeeded, result = pcall(ctx, table.unpack(newoutputslist))
+        if not succeeded then
+          for j = 1, #newoutputslist do
+            newoutputslist[j] = table.concat(newoutputslist[j])
+          end
+          result = ctx(table.unpack(newoutputslist))
+          -- Errors at this point, if any, will bubble up
+        end
+        outputs[#outputs + 1] = result
         i = item.span
       else
         -- Conditional (if): boolean or existence check
