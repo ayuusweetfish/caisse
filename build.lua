@@ -61,6 +61,10 @@ caisse.envadditions.image = function (path, alt, class)
     '>'
 end
 
+caisse.envadditions.b = function (a)
+  return '<strong>' .. table.concat(a) .. '</strong>'
+end
+
 copyfile('background.svg')
 copyfile('top-fleuron.svg')
 
