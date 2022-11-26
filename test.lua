@@ -21,4 +21,8 @@ print(caisse.rendermarkup(caisse.render('content/bellflowers/page.txt').contents
     return '{img ' .. src .. '|' .. alt .. '|' .. class .. '}'
   end,
   hr = function () return '{hr}' end,
+  vararg = function (a, b, ...)
+    return '{vararg a=' .. (a or 'nil') ..
+      ', b=' .. (b or 'nil') .. ', #rest=' .. select('#', ...) .. '}'
+  end,
 }))
