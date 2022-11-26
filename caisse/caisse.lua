@@ -16,9 +16,9 @@ local caisse = {
 -- {type = 'string', expr = string}
 -- {type = 'expr'/'stmt', expr = string, fn = function}
 -- {type = 'block', expr = string, span = number}
--- {type = 'blocksep'}
 -- {type = 'scope', expr = string,
 --  ident = string/nil, fn = function, span = number}
+-- {type = 'scopesep'}
 local function parsetemplate(s)
   local items = {}
   local last, cur = 0, 1
@@ -70,7 +70,7 @@ local function parsetemplate(s)
           levelbegin[#levelbegin] = nil
         elseif expr:match('^@%s*,%s*$') then
           -- Separator
-          items[#items + 1] = {type = 'blocksep'}
+          items[#items + 1] = {type = 'scopesep'}
         else
           -- Nested scope
           local ident, ctxexpr = expr:match('^@%s*([%a_][%w_]*)%s+in([^%w_].*)$')
@@ -195,7 +195,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         local newoutputslist = {}
         local nextstart = i + 1
         for j = i + 1, item.span + 1 do
-          if j == item.span + 1 or template[j].type == 'blocksep' then
+          if j == item.span + 1 or template[j].type == 'scopesep' then
             newoutputslist[#newoutputslist + 1] = {}
             renderslice(template, locals,
               newoutputslist[#newoutputslist], nextstart, j - 1)
@@ -214,6 +214,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
               '\nError with original segments:\n' .. tostring(result) ..
               '\nError with concatenated strings:\n' .. tostring(result2))
           end
+          result = result2
         end
         outputs[#outputs + 1] = result
         i = item.span
@@ -285,7 +286,7 @@ local function render(path, locals)
   local template = loadtemplate(path)
   renderslice(template, {locals}, outputs, 1, #template)
   if path:sub(-5) == '.html' then
-    return table.concat(outputs, '')
+    return table.concat(outputs)
   else
     return locals
   end
