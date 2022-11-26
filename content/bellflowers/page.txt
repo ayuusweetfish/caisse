@@ -12,6 +12,7 @@
 这里有<b 粗体>哦
 链接：<link  fire\<flies  haha  ha<<b bold right~> and <b bold again>>>>
 ha\>\\\\\<ha\\<b escape go brr>
+<vararg 1 2 3 4 5> <vararg x> <vararg xx> <vararg x  y >
 
 !<hr>
 

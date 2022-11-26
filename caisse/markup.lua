@@ -2,18 +2,18 @@ local function args(s, n)
   if n == 0 then return end
   local results = {}
   local cur = 1
-  for i = 1, n - 1 do
+  while (n and #results < n - 1) or (not n and cur <= #s) do
     local endat
     if s:sub(cur, cur) == '"' then
       endat = s:find('%f["]"%f[^"]', cur + 1) - 1
-      results[i] = s:sub(cur + 1, endat):gsub('""', '"')
+      results[#results + 1] = s:sub(cur + 1, endat)
     else
       endat = (s:find('%s', cur + 1) or (#s + 1)) - 1
-      results[i] = s:sub(cur, endat)
+      results[#results + 1] = s:sub(cur, endat)
     end
     cur = s:find('%g', endat + 2) or (#s + 1)
   end
-  results[n] = s:sub(cur)
+  if n then results[n] = s:sub(cur) end
   return table.unpack(results)
 end
 
@@ -51,7 +51,9 @@ local function render(s, fns)
       if cur == #s + 1 or s:sub(cur, cur + #mark - 1) == mark then
         topitems[#topitems + 1] = s:sub(last + 1, cur - 1):gsub('\\(.)', '%1')
         local fn = levels[#levels].fn
-        local arity = debug.getinfo(fn, 'u').nparams
+        local fninfo = debug.getinfo(fn, 'u')
+        local arity = fninfo.nparams
+        if fninfo.isvararg then arity = nil end
         local outitems = levels[#levels].items
         if #levels == 1 then
           topitems = allitems
