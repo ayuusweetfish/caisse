@@ -9,8 +9,10 @@
 
 {{contents.zh=}}
 如题
-这里有{{@b}}粗体{{@,}}a{{@end}}哦
-{{@image}}/bin/fireflies/cover.png{{@,}}Alt{{@,}}class{{@end}}
+这里有<b 粗体>哦
+链接：<link  fireflies  haha  ha<<b bold right~> and <b bold again>>>>
+<img /bin/fireflies/cover.png alt class1 class2>
+链接：<link " fire""flies " haha  ha<<b bold right~> and <<b bold again>>>>>
 
 {{contents.en=}}
 rt
