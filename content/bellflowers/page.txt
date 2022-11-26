@@ -8,6 +8,14 @@
 {{date=}}2022.13
 
 {{contents.zh=}}
+<pre>
+local <b>function</b> <i>shallowdup</i>(t)
+  local r = {}
+  for k, v in pairs(t) do r[k] = v end
+  return r
+end
+</pre>
+
 如题\<\<>>>
 这里有<b 粗体>哦
 链接：<link  fire\<flies  haha  ha<<b bold right~> and <b bold again>>>>
