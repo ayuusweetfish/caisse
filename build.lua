@@ -1,4 +1,5 @@
 local caisse = require('caisse/caisse')
+caisse.lang = 'zh'
 
 local srcpath = 'content/'
 local sitepath = 'build/'
@@ -67,6 +68,10 @@ end
 
 copyfile('background.svg')
 copyfile('top-fleuron.svg')
+copyfile('Livvic-Regular.woff2')
+copyfile('Livvic-Medium.woff2')
+copyfile('Sono.woff2')
+copyfile('AaKaiSong2.woff2')
 
 local function renderlist(cat)
   local pagelist = {}
