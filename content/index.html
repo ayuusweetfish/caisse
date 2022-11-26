@@ -225,13 +225,22 @@ main {
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/Livvic-Medium.woff2) format('woff2');
+{{ boldname = {zh = 'Medium', en = 'SemiBold'} }}
+  src: url(/bin/Livvic-{{ boldname }}.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Sono';
-  font-weight: 200 600;
+  font-style: normal;
+  font-weight: 400;
   font-display: swap;
-  src: url(/bin/Sono.woff2) format('woff2');
+  src: url(/bin/Sono_Monospace-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Sono';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/bin/Sono_Monospace-SemiBold.woff2) format('woff2');
 }
 @font-face {
   font-family: 'AaKaiSong';
