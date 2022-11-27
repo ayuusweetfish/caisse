@@ -1,4 +1,4 @@
-local function args(ss, n)
+local function args(ss, n, verb)
   if n == 0 then return end
   local results = {}
   local cur = 1
@@ -24,7 +24,7 @@ local function args(ss, n)
     s = ssi <= #ss and ss[ssi].text or ''
   end
   if n then
-    cur = s:find('[^%s]', cur) or (#s + 1)
+    if not verb then cur = s:find('[^%s]', cur) or (#s + 1) end
     local rems = {}
     for i = ssi + 1, #ss do rems[#rems + 1] = ss[i].text end
     results[n] = s:sub(cur) .. table.concat(rems)
@@ -44,16 +44,15 @@ local function render(s, fns)
     endmark = '\n',
   }}
   -- Array of { items = array of string, fnname = string, endmark = string }
-  local escape = false
   while cur <= #s + 1 do
     local topitems = levels[#levels].items
     -- Top as in top of a the stack (innermost)
-    if not levels[#levels].verb and not escape and s:sub(cur, cur) == '<' then
+    if not levels[#levels].verb and s:sub(cur, cur) == '<' then
       topitems[#topitems + 1] = {
-        text = s:sub(last + 1, cur - 1):gsub('\\(.)', '%1'),
+        text = s:sub(last + 1, cur - 1),
         unit = false,
       }
-      local obrkts, fnname, endpos = s:match('^<*()%s*([^%s>]*)%s*()', cur)
+      local obrkts, fnname, endpos = s:match('^<*()%s*([^%s>]*)()', cur)
       obrkts = obrkts - cur
       local verb = false
       local eqpos = fnname:find('=')
@@ -71,14 +70,19 @@ local function render(s, fns)
         verb = verb,
         endmark = endmark,
       }
+      -- Skip exactly one whitespace for verbatim text
+      -- and all following whitespaces for ordinary functions
+      if verb then
+        endpos = endpos + 1
+      else
+        endpos = s:find('%f[^%s]', endpos + 1)
+      end
       cur = endpos
       last = endpos - 1
-      escape = false
     else
       local mark = levels[#levels].endmark
       if cur == #s + 1 or s:sub(cur, cur + #mark - 1) == mark then
         local text = s:sub(last + 1, cur - 1)
-        if not levels[#levels].verb then text = text:gsub('\\(.)', '%1') end
         topitems[#topitems + 1] = {
           text = text,
           unit = false,
@@ -88,6 +92,7 @@ local function render(s, fns)
         local arity = fninfo.nparams
         if fninfo.isvararg then arity = nil end
         local outitems = levels[#levels].items
+        local outverb = levels[#levels].verb
         if #levels == 1 then
           topitems = allitems
           levels[1].items = {}
@@ -96,14 +101,12 @@ local function render(s, fns)
           topitems = levels[#levels].items
         end
         topitems[#topitems + 1] = {
-          text = fn(args(outitems, arity)),
+          text = fn(args(outitems, arity, outverb)),
           unit = true,
         }
         cur = cur + #mark
         last = cur - 1
-        escape = false
       else
-        escape = not escape and s:sub(cur, cur) == '\\'
         cur = cur + 1
       end
     end
