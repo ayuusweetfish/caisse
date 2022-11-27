@@ -15,7 +15,7 @@ print(caisse.rendermarkup(caisse.render('content/bellflowers/page.txt').contents
   end,
   b = function (s) return '{b ' .. s .. '}' end,
   link = function (href, text)
-    return '{link ' .. href .. '|' .. text .. '}'
+    return '{link [' .. href .. '] ' .. text .. '}'
   end,
   img = function (src, alt, class)
     return '{img ' .. src .. '|' .. alt .. '|' .. class .. '}'
@@ -25,4 +25,8 @@ print(caisse.rendermarkup(caisse.render('content/bellflowers/page.txt').contents
     return '{vararg a=' .. (a or 'nil') ..
       ', b=' .. (b or 'nil') .. ', #rest=' .. select('#', ...) .. '}'
   end,
+  allargs = function (...)
+    return '{allargs [' .. table.concat({...}, '] [') .. ']}'
+  end,
+  pre = function (s) return '{pre ' .. s .. '}' end,
 }))

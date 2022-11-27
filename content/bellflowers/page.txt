@@ -8,13 +8,13 @@
 {{date=}}2022.13
 
 {{contents.zh=}}
-<pre>
+<<<pre=
 local <b>function</b> <i>shallowdup</i>(t)
   local r = {}
   for k, v in pairs(t) do r[k] = v end
   return r
 end
-</pre>
+>>>
 
 如题\<\<>>>
 这里有<b 粗体>哦
@@ -27,8 +27,12 @@ ha\>\\\\\<ha\\<b escape go brr>
 !<img /bin/fireflies/cover.png
   alt class1
   class2>
-链接：<link <= fire\<flies >
+链接：<link <= fire\<flies yes >
   haha  ha<<b bold right~> and <<b bold again>>>>>
+
+<allargs  <= a  sd<> a  b<<= c <= d>cd>>c  ef >
+<link     <= a  sd<> a  b<<= c <= d>cd>>c  ef >
+<b        <= a  sd<> a  b<<= c <= d>cd>>c  ef >
 
 {{contents.en=}}
 rt
