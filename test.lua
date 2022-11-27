@@ -13,6 +13,9 @@ print(caisse.rendermarkup(caisse.render('content/bellflowers/page.txt').contents
     elseif s:sub(1, 1) == '!' then return s:sub(2) .. '\n'
     else return '{p ' .. s .. '}\n' end
   end,
+  ['^'] = function (s)
+    return s:gsub('[aeiou]', function (s) return '*[' .. s .. ']*' end)
+  end,
   b = function (s) return '{b ' .. s .. '}' end,
   link = function (href, text)
     return '{link [' .. href .. '] ' .. text .. '}'

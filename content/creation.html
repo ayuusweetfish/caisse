@@ -3,7 +3,7 @@
   <p>{{ intro }}</p>
 </header>
 {{ image(bannerimg, nil, 'creation-banner') }}
-<p>{{ contents }}</p>
+<p>{{ rendermarkup(tr(contents)) }}</p>
 {{ date }}
 
 <style>

@@ -1,4 +1,5 @@
 local caisse = require('caisse/caisse')
+local rendermarkup = require('caisse/markup')
 caisse.lang = 'zh'
 
 local srcpath = 'content/'
@@ -62,8 +63,41 @@ caisse.envadditions.image = function (path, alt, class)
     '>'
 end
 
-caisse.envadditions.b = function (a)
-  return '<strong>' .. table.concat(a) .. '</strong>'
+local htmlescapelookup = {
+  ['<'] = '&lt;',
+  ['>'] = '&gt;',
+  ['&'] = '&amp;',
+}
+local function htmlescape(s)
+  return s:gsub('[%<%>%&]', htmlescapelookup)
+end
+local markupfns = {
+  ['-'] = function (line)
+    if line == '' then return ''
+    elseif line:sub(1, 1) == '!' then return line:sub(2) .. '\n'
+    else return '<p>' .. line .. '</p>' end
+  end,
+  ['^'] = htmlescape,
+  b = function (text)
+    return '<strong>' .. text .. '</strong>'
+  end,
+  hr = function ()
+    return '<hr>'
+  end,
+  pre = function (text)
+    return '<pre>' .. text .. '</pre>'
+  end,
+  link = function (href, text)
+    return '<a href="' .. href .. '">' .. text .. '</a>'
+  end,
+  img = function (src, alt, class)
+    return '<image src="' .. src .. '"'
+      .. (alt and (' alt="' .. alt .. '"') or '')
+      .. (class or (' class="' .. class .. '"') or '')
+  end,
+}
+caisse.envadditions.rendermarkup = function (s)
+  return rendermarkup(s, markupfns)
 end
 
 copyfile('background.svg')
