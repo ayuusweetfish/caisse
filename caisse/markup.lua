@@ -56,9 +56,12 @@ local function render(s, fns)
       local obrkts, fnname, endpos = s:match('^<*()%s*([^%s>]*)%s*()', cur)
       obrkts = obrkts - cur
       local verb = false
-      if fnname:sub(-1) == '=' then
-        fnname = fnname:sub(1, -2)
+      local eqpos = fnname:find('=')
+      local endmark = string.rep('>', obrkts)
+      if eqpos ~= nil then
         verb = true
+        endmark = fnname:sub(eqpos + 1) .. endmark
+        fnname = fnname:sub(1, eqpos - 1)
       end
       local fn = fns[fnname]
       if fn == nil then error('Markup function ' .. fnname .. ' not provided') end
@@ -66,7 +69,7 @@ local function render(s, fns)
         items = {},
         fn = fn,
         verb = verb,
-        endmark = string.rep('>', obrkts)
+        endmark = endmark,
       }
       cur = endpos
       last = endpos - 1
