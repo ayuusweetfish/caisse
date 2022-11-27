@@ -8,6 +8,8 @@
 {{date=}}2022.13
 
 {{contents.zh=}}
+test <b test> <b te<b test>est> <b te<b te<pre= test>est>est> test
+
 <<<pre=
 local <b>function</b> <i>shallowdup</i>(t)
   local r = {}
@@ -20,7 +22,6 @@ end
 这里有<b 粗体>哦
 链接：<link  fire\flies  haha  ha<<b bold right~> and <b bold again>>>>
 ha-space<<=  >\\<>>ha\
-<vararg 1 2 3 4 5> <vararg x> <vararg xx> <vararg x  y >
 
 !<hr>
 
@@ -30,8 +31,6 @@ ha-space<<=  >\\<>>ha\
 链接：<link <= fire<flies yes >
   haha  ha<<b bold right~> and <<b bold again>>>>>
 
-<allargs  <= a  sd<> a  b<<= c <= d>cd>>c  ef >
-<link     <= a  sd<> a  b<<= c <= d>cd>>c  ef >
 <b        <= a  sd<> a  b<<= c <= d>cd>>c  ef >
 
 {{contents.en=}}

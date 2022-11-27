@@ -35,11 +35,14 @@ end
 local function render(s, fns)
   fns[''] = fns[''] or function (s) return s end  -- for <= ...>
   fns['-'] = fns['-'] or function (s) return s .. '\n' end
+  fns['^'] = fns['^'] or function (s) return s end
+  local linetransform = fns['-']
+  local texttransform = fns['^']
   local allitems = {}
   local last, cur = 0, 1
   local levels = {{
     items = {},
-    fn = fns['-'],
+    fn = linetransform,
     verb = false, -- Verbatim?
     endmark = '\n',
   }}
@@ -49,7 +52,7 @@ local function render(s, fns)
     -- Top as in top of a the stack (innermost)
     if not levels[#levels].verb and s:sub(cur, cur) == '<' then
       topitems[#topitems + 1] = {
-        text = s:sub(last + 1, cur - 1),
+        text = texttransform(s:sub(last + 1, cur - 1)),
         unit = false,
       }
       local obrkts, fnname, endpos = s:match('^<*()%s*([^%s>]*)()', cur)
@@ -75,24 +78,25 @@ local function render(s, fns)
       if verb then
         endpos = endpos + 1
       else
-        endpos = s:find('%f[^%s]', endpos + 1)
+        endpos = s:find('[^%s]', endpos) or (#s + 1)
       end
       cur = endpos
       last = endpos - 1
     else
       local mark = levels[#levels].endmark
       if cur == #s + 1 or s:sub(cur, cur + #mark - 1) == mark then
-        local text = s:sub(last + 1, cur - 1)
-        topitems[#topitems + 1] = {
-          text = text,
-          unit = false,
-        }
         local fn = levels[#levels].fn
         local fninfo = debug.getinfo(fn, 'u')
         local arity = fninfo.nparams
         if fninfo.isvararg then arity = nil end
         local outitems = levels[#levels].items
         local outverb = levels[#levels].verb
+        local text = s:sub(last + 1, cur - 1)
+        if not outverb then text = texttransform(text) end
+        topitems[#topitems + 1] = {
+          text = text,
+          unit = false,
+        }
         if #levels == 1 then
           topitems = allitems
           levels[1].items = {}
