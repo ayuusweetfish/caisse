@@ -16,7 +16,7 @@ local <b>function</b> <i>shallowdup</i>(t)
 end
 >>>
 
-如题\<\<>>>
+如题\<\<>>> <b <<<=EOF <<>>EOF>>>>
 这里有<b 粗体>哦
 链接：<link  fire\<flies  haha  ha<<b bold right~> and <b bold again>>>>
 ha\>\\\\\<ha\\<b escape go brr>
