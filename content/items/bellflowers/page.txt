@@ -3,7 +3,7 @@
 {{title.en=}}Bellflowers’ Wonderland
 {{intro.en=}}Music from the game “Fireflies in Forest Flowers”.
 
-{{bannerimg=}}fireflies/cover.png
+{{bannerimg=}}../fireflies/cover.png
 
 {{date=}}2022.13
 

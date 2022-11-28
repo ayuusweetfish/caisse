@@ -5,6 +5,9 @@ caisse.lang = 'zh'
 local srcpath = 'content/'
 local sitepath = 'build/'
 
+local function exists(path)
+  return io.open(srcpath .. path, 'r') ~= nil
+end
 caisse.readfile = function (path)
   return io.open(srcpath .. path, 'r'):read('a')
 end
@@ -26,15 +29,29 @@ end
 local function render(...)
   return caisse.render(...)
 end
-local function renderfile(savepath, templatepath, locals)
+local function renderpage(savepath, templatepath, locals)
+  locals = locals or {}
   local contents = render(templatepath, locals)
   writefile(sitepath .. savepath,
-    render('index.html', {
+    render('framework.html', {
       savepath = savepath,
       title = locals.title,
-      cat = locals.cat,
+      curcat = locals.curcat,
       contents = contents,
     }))
+end
+
+local function split(s, delim)
+  local i = 1
+  local t = {}
+  while i <= #s do
+    local p = string.find(s, delim, i, true)
+    if not p then break end
+    t[#t + 1] = s:sub(i, p - 1)
+    i = p + #delim
+  end
+  t[#t + 1] = s:sub(i)
+  return t
 end
 
 local inspectimagecache = {}
@@ -61,6 +78,36 @@ caisse.envadditions.image = function (path, alt, class)
     (alt and (' alt="' .. alt .. '"') or '') ..
     (class and (' class="' .. class .. '"') or '') ..
     '>'
+end
+caisse.envadditions.file = function (path, wd)
+  if path:sub(1, 1) == '/' then
+    path = path:sub(2)
+    wd = {}
+  else
+    wd = wd and split(wd, '/') or {}
+  end
+  for _, part in ipairs(split(path, '/')) do
+    if part == '.' then
+      -- No-op
+    elseif part == '..' then
+      wd[#wd] = nil
+    else
+      wd[#wd + 1] = part
+    end
+  end
+  local fullpath = table.concat(wd, '/')
+  copyfile(fullpath)
+  return '/bin/' .. fullpath
+end
+
+local categories = render('categories.txt')
+caisse.envadditions.ensurepage = function (path)
+  -- `path` is the path in URL, without the leading `/`
+  -- TODO: Deduplicate
+  local locals = render('items/' .. path .. '/page.txt')
+  locals.name = path
+  locals.curcat = 'music'
+  renderpage(path, 'creation.html', locals)
 end
 
 local htmlescapelookup = {
@@ -109,42 +156,5 @@ copyfile('Sono_Monospace-Regular.woff2')
 copyfile('Sono_Monospace-SemiBold.woff2')
 copyfile('AaKaiSong2.woff2')
 
-local function renderlist(cat)
-  local pagelist = {}
-  listtemplate = render('list-' .. cat .. '.txt')
-  local pagedarktitle = {}
-  if listtemplate.pagedarktitle then
-    for _, name in ipairs(listtemplate.pagedarktitle) do
-      pagedarktitle[name] = true
-    end
-  end
-  for i, name in ipairs(listtemplate.pages) do
-    local page = render(name .. '/page.txt')
-    local bannerimg
-    if page.bannerimg:find('/') ~= nil then
-      bannerimg = '/bin/' .. page.bannerimg
-    else
-      bannerimg = '/bin/' .. name .. '/' .. page.bannerimg
-      copyfile(name .. '/' .. page.bannerimg)
-    end
-    pagelist[i] = {
-      name = name,
-      page = page,
-      pagedarktitle = pagedarktitle[name] or false,
-      bannerimg = bannerimg,
-    }
-
-    local innerlocals = shallowdup(page)
-    innerlocals.cat = cat
-    innerlocals.name = name
-    innerlocals.bannerimg = bannerimg
-    renderfile(name, 'creation.html', innerlocals)
-  end
-
-  renderfile(cat, 'list.html', {
-    cat = cat,
-    pagelist = pagelist,
-  })
-end
-renderlist('music')
-renderlist('playful')
+renderpage('music', 'cat-music.html')
+renderpage('playful', 'cat-playful.html')

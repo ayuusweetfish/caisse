@@ -1,0 +1,15 @@
+{{{
+  curcat = 'music'
+  contents, vars = render('list.html', {
+    curcat = curcat,
+    pagelist = {
+      {name = 'bellflowers', dark = true},
+      {name = 'sheepdogs-job'},
+      {name = 'lili', dark = true},
+      {name = 'zzz', dark = true},
+      {name = 'misty-jungle', dark = true},
+    }
+  })
+  title = vars.title
+}}}
+{{{ contents }}}
