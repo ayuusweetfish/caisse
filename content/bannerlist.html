@@ -6,13 +6,13 @@
   <h1>{{ title }}</h1>
 </header>
 {{@ cats[curcat].pagelist}}
-<section class='creation-card'><a href='/{{ name }}'>
+<section class='item-card'><a href='/{{ name }}'>
   {{ page = render('items/' .. name .. '/page.txt') }}
-  <section class='creation-banner'>
+  <section class='item-banner'>
     {{ image(file(page.bannerimg, 'items/' .. name)) }}
-    <h1{{@ dark}} class='creation-title-dark'{{@ end}}>{{ page.title }}</h1>
+    <h1{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</h1>
   </section>
-  <section class='creation-peek'>
+  <section class='item-peek'>
     <p>{{ page.intro }}</p>
     <p>{{ page.date }}</p>
   </section>
@@ -20,34 +20,34 @@
 {{@ end}}
 
 <style>
-.creation-card {
+.item-card {
   border-block-start: 1px rgba(128, 128, 128, 50%) solid;
   margin-block: 1rem;
 }
-.creation-card > a {
+.item-card > a {
   color: inherit;
   text-decoration: inherit;
 }
-.creation-banner {
+.item-banner {
   height: 10rem;
   position: relative;
 }
-.creation-banner > img {
+.item-banner > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.creation-banner > h1 {
+.item-banner > h1 {
   position: absolute;
   inset-inline-start: 1.3rem;
   inset-block-end: 1rem;
   font-size: 1.5rem;
   margin: 0;
 }
-.creation-peek {
+.item-peek {
   margin-inline: 1.3rem;
 }
-h1.creation-title-dark {
+h1.item-title-dark {
   color: white;
 }
 </style>

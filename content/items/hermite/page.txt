@@ -1,0 +1,32 @@
+{{title.zh=}}线性袋鼠之内积溯源
+{{intro.zh=}}
+只有考试结束之后我才能真正地学习，考试之前我都在应考。—— 一只又在考场上被自己蠢哭的 sq
+{{title.en=}}Digging into the Inner Product?
+{{intro.en=}}a
+
+{{date=}}2019.09
+
+{{contents.zh=}}
+线性代数教材上有一个乍看之下很难理解的现象。
+
+按数学中常见的习惯，$n$ 维复空间 $\mathbb{C}^n$ 上的标准内积 $\langle \cdot, \cdot \rangle$ 定义为：
+
+$$
+\langle \mathbf{u}, \mathbf{v} \rangle = \sum_{k=1}^n u_k \overline {v_k\raisebox{0.67em}{}}
+$$
+
+而同时有 Hermite 二次型的定义：
+
+$$
+f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em}{}} u_k
+$$
+
+这两个本该密切相关的定义，却在不同的元素上取了共轭 —— 对于内积，是后面的 $v_k$；对于二次型，是前面的 $u_j$。
+
+当然也可以采用另一组定义，在此定义下 $\langle \mathbf{u}, \mathbf{v} \rangle$ 和 $f(\mathbf{u})$ 中取共轭的>元素都变成了另一个，上面看到的「不一致性」仍然存在。
+
+于是在这个奇怪的问题上纠结了很久，有了一些奇妙的想法，详细记录在此。不过鬼知道是不是里面又双叒叕写错了什么咯
+（掩面
+
+{{contents.en=}}
+Yes?

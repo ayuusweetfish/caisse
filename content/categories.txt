@@ -51,4 +51,8 @@ cats.playful.pagelist = {
   {name = 'daytime-cat', dark = false},
   {name = 'sheepdogs', dark = false},
 }
+cats.murmurs.pagelist = {
+  {name = 'hermite'},
+  {name = 'hello'},
+}
 }}}

@@ -115,7 +115,7 @@ local function renderallitems()
     locals.name = path
     locals.curcat = item.cat
     print(item.cat, caisse.envadditions.tr(locals.title))
-    renderpage(path, 'creation.html', locals)
+    renderpage(path, 'item.html', locals)
   end
 end
 
@@ -189,3 +189,4 @@ renderallitems()
 
 renderpage('music', 'bannerlist.html', { curcat = 'music' })
 renderpage('playful', 'bannerlist.html', { curcat = 'playful' })
+renderpage('murmurs', 'textlist.html', { curcat = 'murmurs' })
