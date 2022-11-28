@@ -1,40 +1,37 @@
-{{home.zh=}}主页
-{{music.zh=}}八音盒
-{{playful.zh=}}游乐园
-{{murmurs.zh=}}梦话集
-{{stray.zh=}}杂物堆
-{{scratch.zh=}}涂鸦板
+{{title.short.home.zh=}}主页
+{{title.short.music.zh=}}八音盒
+{{title.short.playful.zh=}}游乐园
+{{title.short.murmurs.zh=}}梦话集
+{{title.short.stray.zh=}}杂物堆
+{{title.short.scratch.zh=}}涂鸦板
 
-{{home.en=}}Home
-{{music.en=}}Music
-{{playful.en=}}Playful
-{{murmurs.en=}}Murmurs
-{{stray.en=}}Stray
-{{scratch.en=}}Scratch
+{{title.short.home.en=}}Home
+{{title.short.music.en=}}Music
+{{title.short.playful.en=}}Playful
+{{title.short.murmurs.en=}}Murmurs
+{{title.short.stray.en=}}Stray
+{{title.short.scratch.en=}}Scratch
 
-{{long.home.en=}}Home
-{{long.music.en=}}Music Pieces
-{{long.playful.en=}}Playful Pieces
-{{long.murmurs.en=}}Murmur Pieces
-{{long.stray.en=}}Stray Pieces
-{{long.scratch.en=}}Scratch Pieces
+{{title.long.home.en=}}Home
+{{title.long.music.en=}}Music Pieces
+{{title.long.playful.en=}}Playful Pieces
+{{title.long.murmurs.en=}}Murmur Pieces
+{{title.long.stray.en=}}Stray Pieces
+{{title.long.scratch.en=}}Scratch Pieces
 
 {{{
-tints = {
-          -- hue  sat  v1  v2
-  home    = { 28, 100, 40, 89},
-  music   = {282, 100, 45, 90},
-  playful = { 40, 100, 40, 86},
-  murmurs = {204, 100, 40, 90},
-  stray   = {163,  85, 35, 89},
-  scratch = { 70,  10, 45, 85},
+cats = {
+-- name        hue  sat  v1  v2
+  {'home',    { 28, 100, 40, 89}},
+  {'music',   {282, 100, 45, 90}},
+  {'playful', { 40, 100, 40, 86}},
+  {'murmurs', {204, 100, 40, 90}},
+  {'stray',   {163,  85, 35, 89}},
+  {'scratch', { 70,  10, 45, 85}},
 }
-list = {
-  'home',
-  'music',
-  'playful',
-  'murmurs',
-  'stray',
-  'scratch',
-}
+for i = 1, #cats do
+  local name, tint = table.unpack(cats[i])
+  cats[i] = { name = name, tint = tint }
+  cats[name] = cats[i]
+end
 }}}

@@ -1,0 +1,15 @@
+{{{
+  curcat = 'playful'
+  contents, vars = render('list.html', {
+    curcat = curcat,
+    pagelist = {
+      {name = 'fireflies', dark = true},
+      {name = 'medle', dark = false},
+      {name = 'ice-hatch', dark = false},
+      {name = 'daytime-cat', dark = false},
+      {name = 'sheepdogs', dark = false},
+    }
+  })
+  title = vars.title
+}}}
+{{{ contents }}}

@@ -5,15 +5,19 @@
   <title>{{ title }} — Site</title>
 </head><body>
 
-{{ cats = render('categories.txt') }}
+{{
+  local catsinfo = render('categories.txt')
+  cats = catsinfo.cats
+  cattitle = catsinfo.title
+}}
 
 <span id='main-grid'>
 <nav>
 <h1>Site Name</h1>
 <ul>
-  {{@ name in cats.list}}
-  <li><a class='pastel {{name}}'
-    href='/{{@ name ~= "home"}}{{name}}{{@ end}}'>{{cats[name]}}</a></li>
+  {{@ cat in cats}}
+  <li><a class='pastel {{cat.name}}'
+    href='/{{@ name ~= "home"}}{{cat.name}}{{@ end}}'>{{cattitle.short[cat.name]}}</a></li>
   {{@ end}}
 </ul>
 <section id='icon-buttons'>
@@ -175,15 +179,14 @@ a.pastel:focus::after {
   block-size: 0.24em;
   margin-block-start: -0.03em;
 }
-{{@ cat in cats.list}}
-{{ hue, sat, val1, val2 = table.unpack(cats.tints[cat]) }}
-a.{{cat}} { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
-a.{{cat}}::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
+{{@ cat in cats}}
+{{ hue, sat, val1, val2 = table.unpack(cats[cat.name].tint) }}
+a.{{cat.name}} { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
+a.{{cat.name}}::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
 {{@ end}}
 
-{{ hue, sat, val1, val2 = 0, 0, 0, 0 }}
-{{@ cat}}
-{{ hue, sat, val1, val2 = table.unpack(cats.tints[cat]) }}
+{{@ curcat}}
+{{ hue, sat, val1, val2 = table.unpack(cats[curcat].tint) }}
 main header h1 {
   color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%);
 }

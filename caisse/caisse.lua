@@ -42,9 +42,8 @@ local function parsetemplate(s)
           locals[#locals][key] = value
         end,
       })
-      local succeeded, ret = pcall(fn)
+      local ret = fn()
       setmetatable(_ENV, prevmt)
-      if not succeeded then error(ret) end
       return ret
     end
   end
@@ -159,10 +158,11 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         if value == nil then
           value = 'nil'
         elseif type(value) == 'table' then
-          value = tr(value)
-          if value == nil then
+          local trvalue = tr(value)
+          if trvalue == nil then
             error('Table results are not allowed: ' .. inspect(value))
           end
+          value = trvalue
         end
         outputs[#outputs + 1] = value
       end
@@ -286,7 +286,7 @@ local function render(path, locals)
   local template = loadtemplate(path)
   renderslice(template, {locals}, outputs, 1, #template)
   if path:sub(-5) == '.html' then
-    return table.concat(outputs)
+    return table.concat(outputs), locals
   else
     return locals
   end
