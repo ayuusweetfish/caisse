@@ -15,7 +15,7 @@ local function args(ss, n, verb)
       local endat = (s:find('%f[%s]', cur + 1) or (#s + 1)) - 1
       local arg = s:sub(cur, endat)
       if arg ~= '' then results[#results + 1] = arg end
-      cur = s:find('%g', endat + 2) or (#s + 1)
+      cur = s:find('[^%s]', endat + 2) or (#s + 1)
       if cur > #s then
         ssi = ssi + 1
         cur = 1

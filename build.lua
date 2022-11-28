@@ -99,22 +99,22 @@ end
 
 local cats = render('categories.txt').cats
 
-local itemcat = {}
+local itemreg = {}
 local function registeritem(path, curcat)
-  if itemcat[path] then return end
+  if itemreg[path] then return end
   -- `path` is the path in URL, without the leading `/`
   local locals = render('items/' .. path .. '/page.txt')
-  itemcat[path] = {
+  itemreg[path] = {
     locals = locals,
     cat = curcat,
   }
 end
 local function renderallitems()
-  for path, info in pairs(itemcat) do
-    local locals = info.locals
+  for path, item in pairs(itemreg) do
+    local locals = item.locals
     locals.name = path
-    locals.curcat = info.cat
-    print(info.cat, caisse.envadditions.tr(locals.title))
+    locals.curcat = item.cat
+    print(item.cat, caisse.envadditions.tr(locals.title))
     renderpage(path, 'creation.html', locals)
   end
 end
@@ -127,7 +127,8 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
-local markupfns = {
+local markupfns
+markupfns = {
   ['-'] = function (line)
     if line == '' then return ''
     elseif line:sub(1, 1) == '!' then return line:sub(2) .. '\n'
@@ -143,8 +144,20 @@ local markupfns = {
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
   end,
-  link = function (href, text)
+  rawlink = function (href, text)
     return '<a href="' .. href .. '">' .. text .. '</a>'
+  end,
+  extlink = function (href, text)
+    return '<a class="pastel external" href="' .. href .. '">'
+      .. htmlescape(text)
+      .. '<sup>+</sup>'
+      .. '</a>'
+  end,
+  link = function (path)
+    local item = itemreg[path]
+    if not item then return markupfns.extlink(path, path) end
+    return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
+      .. htmlescape(caisse.envadditions.tr(item.locals.title)) .. '</a>'
   end,
   img = function (src, alt, class)
     return '<img src="' .. src .. '"'
