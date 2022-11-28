@@ -1,6 +1,6 @@
 local caisse = require('caisse/caisse')
 local rendermarkup = require('caisse/markup')
-caisse.lang = 'en'
+caisse.lang = 'zh'
 
 local srcpath = 'content/'
 local sitepath = 'build/'
@@ -97,12 +97,17 @@ caisse.envadditions.file = function (path, wd)
   return '/bin/' .. fullpath
 end
 
-local function renderdate(datestr)
+local function renderdate(datestr, nolink)
   local dates = {}
   for year, term in datestr:gmatch('([0-9]+)%.([0-9]+)') do
     dates[#dates + 1] = { year = tonumber(year, 10), term = tonumber(term, 10) }
   end
-  return render('date.html', { dates = dates })
+  local content = render('date.html', { dates = dates })
+  if not nolink then
+    content = '<a href="/dates" class="hidden-pastel date-term-link">'
+      .. content .. '</a>'
+  end
+  return content
 end
 caisse.envadditions.renderdate = renderdate
 
@@ -188,6 +193,7 @@ copyfile('Livvic-SemiBold.woff2')
 copyfile('Sono_Monospace-Regular.woff2')
 copyfile('Sono_Monospace-SemiBold.woff2')
 copyfile('AaKaiSong2.woff2')
+copyfile('little-icons.woff2')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}

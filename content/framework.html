@@ -155,7 +155,7 @@ nav, main, aside, footer { padding: 1rem; }
   }
 }
 
-a.pastel {
+a.pastel, a.hidden-pastel {
   text-decoration: none;
   color: inherit;
   display: inline-block;
@@ -163,12 +163,12 @@ a.pastel {
 a.pastel > sup {
   line-height: 0;
 }
-a.pastel::after {
+a.pastel::after, a.hidden-pastel::after {
   content: '';
   display: block;
   block-size: 0.12em;
   margin-block-start: -0.12em;
-  margin-block-end: -0.21em;
+  margin-block-end: -0.09em;
   border-radius: 1em;
   /* Transitions with logical properties do not work on Safari 14 */
   transition:
@@ -179,6 +179,17 @@ a.pastel:hover::after,
 a.pastel:focus::after {
   block-size: 0.24em;
   margin-block-start: -0.18em;
+}
+a.hidden-pastel::after {
+  block-size: 0.08em;
+  margin-block-start: -0.10em;
+  margin-block-end: -0.07em;
+  inline-size: 0;
+  margin-inline-start: 50%;
+}
+a.hidden-pastel:hover::after {
+  inline-size: 100%;
+  margin-inline-start: 0;
 }
 {{@ cat in cats}}
 {{ hue, sat, val1, val2 = table.unpack(cat.tint) }}
@@ -256,6 +267,13 @@ main {
   font-display: swap;
   src: url(/bin/AaKaiSong2.woff2) format('woff2');
 }
+@font-face {
+  font-family: 'Ayuu Little Icons — 221128';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/little-icons.woff2) format('woff2');
+}
 body {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
   color: #181410;
@@ -265,6 +283,7 @@ pre {
   font-size: 0.9rem;
 }
 
+a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term {
   font-size: 0.9rem;
   color: rgb(112, 112, 112);
@@ -274,8 +293,18 @@ pre {
   position: relative;
   inset-block-start: -0.15rem;
 }
-.date-term::before { content: '<'; }
-.date-term::after { content: '>'; }
+.date-term::before { content: '<'; inset-inline-start: -0.2em; }
+.date-term::after { content: '>'; inset-inline-start: 0.04em; }
+.date-term .delim::after { content: '/'; padding-inline: 0.1em 0.2em; }
+.date-term sup::after {
+  font-family: 'Ayuu Little Icons — 221128';
+  line-height: 0;
+  display: inline-block;
+}
+.date-term sup.season-1::after { content: '\1f340'; transform: rotate(-21deg); }
+.date-term sup.season-2::after { content: '\1f333'; transform: rotate(0deg); }
+.date-term sup.season-3::after { content: '\1f343'; transform: rotate(-25deg); }
+.date-term sup.season-4::after { content: '\2744'; transform: rotate(5deg); }
 </style>
 
 <script>
