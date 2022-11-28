@@ -1,0 +1,14 @@
+{{title.zh=}}折翼
+{{intro.zh=}}一首歌
+{{title.en=}}Broken Angel Wings
+{{intro.en=}}A song
+
+{{bannerimg=}}../sheepdogs/cover.jpg
+
+{{date=}}2021.18, 2021.22
+
+{{contents.zh=}}
+…
+
+{{contents.en=}}
+…

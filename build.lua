@@ -114,10 +114,13 @@ caisse.envadditions.renderdate = renderdate
 local cats = render('categories.txt').cats
 
 local itemreg = {}
-local function registeritem(path, curcat)
+local function registeritem(path, curcat, extralocals)
   if itemreg[path] then return end
   -- `path` is the path in URL, without the leading `/`
   local locals = render('items/' .. path .. '/page.txt')
+  if extralocals then
+    for k, v in pairs(extralocals) do locals[k] = v end
+  end
   itemreg[path] = {
     locals = locals,
     cat = curcat,
@@ -204,6 +207,12 @@ end
 registeritem('index', 'home')
 registeritem('about', 'home')
 registeritem('dates', 'home')
+registeritem('sundry', 'sundry', {
+  title = caisse.envadditions.tr(cats.sundry.longtitle) or cats.sundry.title
+})
+registeritem('stray', 'stray', {
+  title = caisse.envadditions.tr(cats.stray.longtitle) or cats.stray.title
+})
 renderallitems()
 
 renderpage('music', 'bannerlist.html', { curcat = 'music' })
