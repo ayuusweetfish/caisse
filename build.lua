@@ -5,9 +5,6 @@ caisse.lang = 'zh'
 local srcpath = 'content/'
 local sitepath = 'build/'
 
-local function exists(path)
-  return io.open(srcpath .. path, 'r') ~= nil
-end
 caisse.readfile = function (path)
   return io.open(srcpath .. path, 'r'):read('a')
 end
@@ -100,14 +97,26 @@ caisse.envadditions.file = function (path, wd)
   return '/bin/' .. fullpath
 end
 
-local categories = render('categories.txt')
-caisse.envadditions.ensurepage = function (path)
+local cats = render('categories.txt').cats
+
+local itemcat = {}
+local function registeritem(path, curcat)
+  if itemcat[path] then return end
   -- `path` is the path in URL, without the leading `/`
-  -- TODO: Deduplicate
   local locals = render('items/' .. path .. '/page.txt')
-  locals.name = path
-  locals.curcat = 'music'
-  renderpage(path, 'creation.html', locals)
+  itemcat[path] = {
+    locals = locals,
+    cat = curcat,
+  }
+end
+local function renderallitems()
+  for path, info in pairs(itemcat) do
+    local locals = info.locals
+    locals.name = path
+    locals.curcat = info.cat
+    print(info.cat, caisse.envadditions.tr(locals.title))
+    renderpage(path, 'creation.html', locals)
+  end
 end
 
 local htmlescapelookup = {
@@ -138,9 +147,10 @@ local markupfns = {
     return '<a href="' .. href .. '">' .. text .. '</a>'
   end,
   img = function (src, alt, class)
-    return '<image src="' .. src .. '"'
+    return '<img src="' .. src .. '"'
       .. (alt and (' alt="' .. alt .. '"') or '')
       .. (class or (' class="' .. class .. '"') or '')
+      .. '>'
   end,
 }
 caisse.envadditions.rendermarkup = function (s)
@@ -156,5 +166,13 @@ copyfile('Sono_Monospace-Regular.woff2')
 copyfile('Sono_Monospace-SemiBold.woff2')
 copyfile('AaKaiSong2.woff2')
 
-renderpage('music', 'cat-music.html')
-renderpage('playful', 'cat-playful.html')
+for i = 1, #cats do
+  local pagelist = cats[i].pagelist or {}
+  for j = 1, #pagelist do
+    registeritem(pagelist[j].name, cats[i].name)
+  end
+end
+renderallitems()
+
+renderpage('music', 'bannerlist.html', { curcat = 'music' })
+renderpage('playful', 'bannerlist.html', { curcat = 'playful' })

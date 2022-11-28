@@ -31,7 +31,7 @@ ha-space<<=  >\\<>>ha\
 链接：<link <= fire<flies yes >
   haha  ha<<b bold right~> and <<b bold again>>>>>
 
-<b        <= a  sd<> a  b<<= c <= d>cd>>c  ef >
+<b        <^= a  sd<> a  b<<^= c <^= d>cd>>c  ef >
 
 {{contents.en=}}
 rt

@@ -6,9 +6,7 @@
 </head><body>
 
 {{
-  local catsinfo = render('categories.txt')
-  cats = catsinfo.cats
-  cattitle = catsinfo.title
+  cats = render('categories.txt').cats
 }}
 
 <span id='main-grid'>
@@ -17,7 +15,7 @@
 <ul>
   {{@ cat in cats}}
   <li><a class='pastel {{cat.name}}'
-    href='/{{@ name ~= "home"}}{{cat.name}}{{@ end}}'>{{cattitle.short[cat.name]}}</a></li>
+    href='/{{@ name ~= "home"}}{{cat.name}}{{@ end}}'>{{cat.title}}</a></li>
   {{@ end}}
 </ul>
 <section id='icon-buttons'>
@@ -180,7 +178,7 @@ a.pastel:focus::after {
   margin-block-start: -0.03em;
 }
 {{@ cat in cats}}
-{{ hue, sat, val1, val2 = table.unpack(cats[cat.name].tint) }}
+{{ hue, sat, val1, val2 = table.unpack(cat.tint) }}
 a.{{cat.name}} { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
 a.{{cat.name}}::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
 {{@ end}}
