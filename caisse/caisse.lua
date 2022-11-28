@@ -39,6 +39,15 @@ local function parsetemplate(s)
           end
         end,
         __newindex = function (table, key, value)
+          -- Look for outer levels
+          -- TODO: Persistent nil
+          for i = #locals, 1, -1 do
+            if locals[i][key] ~= nil then
+              locals[i][key] = value
+              return
+            end
+          end
+          -- Create new local variable
           locals[#locals][key] = value
         end,
       })

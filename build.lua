@@ -97,6 +97,15 @@ caisse.envadditions.file = function (path, wd)
   return '/bin/' .. fullpath
 end
 
+local function renderdate(datestr)
+  local dates = {}
+  for year, term in datestr:gmatch('([0-9]+)%.([0-9]+)') do
+    dates[#dates + 1] = { year = tonumber(year, 10), term = tonumber(term, 10) }
+  end
+  return render('date.html', { dates = dates })
+end
+caisse.envadditions.renderdate = renderdate
+
 local cats = render('categories.txt').cats
 
 local itemreg = {}
