@@ -32,7 +32,7 @@
 
 <main>
 
-{{ image('/bin/top-fleuron.svg', '', 'top-fleuron') }}
+<section id='top-fleuron'></section>
 
 <article>
 {{ contents }}
@@ -59,7 +59,7 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background: url(/bin/background.svg) hsl(50deg, 100%, 99%) center;
+  background: url(/bin/background.svg), hsl(50deg, 100%, 99%) center;
 }
 
 #main-grid {
@@ -195,10 +195,10 @@ main {
   overflow-x: hidden;
   /* overflow-inline: hidden; */
 }
-.top-fleuron {
+#top-fleuron {
+  background: no-repeat center 0 / contain url('/bin/top-fleuron.svg');
   inline-size: 100%;
-  max-inline-size: 72rem;
-  block-size: auto;
+  block-size: 6.75rem;  /* max-inline-size (72rem) * 960/90 */
   position: absolute;
   inset-block-start: -0.3em;
   inset-inline-start: 50%;
@@ -208,7 +208,7 @@ main {
 }
 
 @media (max-width: 115vh), (max-width: 48rem) {
-  .top-fleuron {
+  #top-fleuron {
     inset-block-start: 0;
     min-inline-size: 36rem;
   }
@@ -252,9 +252,11 @@ main {
 }
 body {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
+  color: #181410;
 }
 pre {
   font-family: 'Sono', monospace;
+  font-size: 0.9rem;
 }
 </style>
 
