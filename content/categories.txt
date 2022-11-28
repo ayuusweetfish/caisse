@@ -39,6 +39,7 @@ end
 {{{
 cats.music.pagelist = {
   {name = 'bellflowers', dark = true},
+  {name = 'wings'},
   {name = 'sheepdogs-job'},
   {name = 'lili', dark = true},
   {name = 'zzz', dark = true},
@@ -55,4 +56,23 @@ cats.murmurs.pagelist = {
   {name = 'hermite'},
   {name = 'hello'},
 }
+--[[
+cats.sundry.pagelist = {
+  --{name = 'common-sky'},
+  {name = 'patchwork'},
+  {name = 'maylove'},
+  {name = 'tilde'},
+}
+cats.stray.pagelist = {
+  {name = 'ice-rink'},
+  {name = 'sound-course-21'},
+  {name = 'sound-course-20'},
+  {name = 'rabbit-hole'},
+  {name = 'define-21'},
+  {name = 'mikabox'},
+  {name = 'bmflat'},
+  {name = 'zero'},
+  {name = 'ne-er-do-well'},
+}
+]]
 }}}
