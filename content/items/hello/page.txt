@@ -1,0 +1,10 @@
+{{title.zh=}}你好
+{{title.en=}}Hello
+
+{{date=}}2022.20
+
+{{contents.zh=}}
+好耶
+
+{{contents.en=}}
+Hello!
