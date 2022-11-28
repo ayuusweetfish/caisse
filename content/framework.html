@@ -264,6 +264,18 @@ pre {
   font-family: 'Sono', monospace;
   font-size: 0.9rem;
 }
+
+.date-term {
+  font-size: 0.9rem;
+  color: rgb(112, 112, 112);
+}
+.date-term::before, .date-term::after {
+  font-size: 0.5rem;
+  position: relative;
+  inset-block-start: -0.15rem;
+}
+.date-term::before { content: '<'; }
+.date-term::after { content: '>'; }
 </style>
 
 <script>

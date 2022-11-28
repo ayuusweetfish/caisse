@@ -2,7 +2,7 @@
 {{title.en=}}Date Format
 
 {{contents.zh=}}
-日期是二十四节气哒！！！
+日期是二十四节气哒！！！不要和 <extlink https://wiki.xxiivv.com/site/arvelie.html Arvelie 格式>搞混啦！
 
 {{contents.en=}}
-Dates are based on the 24 solar terms!
+Dates are based on the 24 solar terms! Do not mistake it for <extlink https://wiki.xxiivv.com/site/arvelie.html the Arvelie calendar>!
