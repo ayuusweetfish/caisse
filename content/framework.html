@@ -268,7 +268,7 @@ main {
   src: url(/bin/AaKaiSong2.woff2) format('woff2');
 }
 @font-face {
-  font-family: 'Ayuu Little Icons — 221128';
+  font-family: 'Ayuu Little Icons — 221128a';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -295,16 +295,20 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
 }
 .date-term::before { content: '<'; inset-inline-start: -0.2em; }
 .date-term::after { content: '>'; inset-inline-start: 0.04em; }
-.date-term .delim::after { content: '/'; padding-inline: 0.1em 0.2em; }
+.date-term .delim::after { content: '~'; padding-inline: 0.1em 0.2em; }
 .date-term sup::after {
-  font-family: 'Ayuu Little Icons — 221128';
+  font-family: 'Ayuu Little Icons — 221128a';
   line-height: 0;
   display: inline-block;
 }
 .date-term sup.season-1::after { content: '\1f340'; transform: rotate(-21deg); }
-.date-term sup.season-2::after { content: '\1f333'; transform: rotate(0deg); }
-.date-term sup.season-3::after { content: '\1f343'; transform: rotate(-25deg); }
-.date-term sup.season-4::after { content: '\2744'; transform: rotate(5deg); }
+.date-term sup.season-2::after { content: '\1f338'; transform: rotate(10deg); }
+.date-term sup.season-3::after { content: '\1f333'; transform: rotate(0deg); }
+.date-term sup.season-4::after { content: '\2600'; transform: rotate(0deg); }
+.date-term sup.season-5::after { content: '\1f33e'; transform: rotate(-15deg) scale(0.99); }
+.date-term sup.season-6::after { content: '\1f343'; transform: rotate(-25deg) scale(1.02); }
+.date-term sup.season-7::after { content: '\2744'; transform: rotate(8deg) scale(0.97); }
+.date-term sup.season-8::after { content: '\1f9ca'; transform: rotate(5deg); }
 </style>
 
 <script>
