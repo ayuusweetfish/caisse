@@ -46,30 +46,30 @@
 {{T[22].hint.zh=}}公历 (A) 年 12 月末至 (B) 年 1 月初
 {{T[23].hint.zh=}}公历 (B) 年 1 月中旬
 {{T[24].hint.zh=}}公历 (B) 年 1 月末至 2 月初
-{{T[ 1].name.en=}}J01
-{{T[ 2].name.en=}}Z01
-{{T[ 3].name.en=}}J02
-{{T[ 4].name.en=}}Z02
-{{T[ 5].name.en=}}J03
-{{T[ 6].name.en=}}Z03
-{{T[ 7].name.en=}}J04
-{{T[ 8].name.en=}}Z04
-{{T[ 9].name.en=}}J05
-{{T[10].name.en=}}Z05
-{{T[11].name.en=}}J06
-{{T[12].name.en=}}Z06
-{{T[13].name.en=}}J07
-{{T[14].name.en=}}Z07
-{{T[15].name.en=}}J08
-{{T[16].name.en=}}Z08
-{{T[17].name.en=}}J09
-{{T[18].name.en=}}Z09
-{{T[19].name.en=}}J10
-{{T[20].name.en=}}Z10
-{{T[21].name.en=}}J11
-{{T[22].name.en=}}Z11
-{{T[23].name.en=}}J12
-{{T[24].name.en=}}Z12
+{{T[ 1].name.en=}}Aqr’
+{{T[ 2].name.en=}}Psc
+{{T[ 3].name.en=}}Psc’
+{{T[ 4].name.en=}}Ari
+{{T[ 5].name.en=}}Ari’
+{{T[ 6].name.en=}}Tau
+{{T[ 7].name.en=}}Tau’
+{{T[ 8].name.en=}}Gem
+{{T[ 9].name.en=}}Gem’
+{{T[10].name.en=}}Cnc
+{{T[11].name.en=}}Cnc’
+{{T[12].name.en=}}Leo
+{{T[13].name.en=}}Leo’
+{{T[14].name.en=}}Vir
+{{T[15].name.en=}}Vir’
+{{T[16].name.en=}}Lib
+{{T[17].name.en=}}Lib’
+{{T[18].name.en=}}Sco
+{{T[19].name.en=}}Sco’
+{{T[20].name.en=}}Sgr
+{{T[21].name.en=}}Sgr’
+{{T[22].name.en=}}Cap
+{{T[23].name.en=}}Cap’
+{{T[24].name.en=}}Aqr
 {{T[ 1].hint.en=}}mid-February (A)
 {{T[ 2].hint.en=}}February — March (A)
 {{T[ 3].hint.en=}}mid-March (A)
@@ -100,7 +100,7 @@
 {{@ dates }}
   {{@ not first }}/{{@ end }}
   <span title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
-    {{ string.format('%02d', year % 100) }}-{{ T[term].name }}
+    {{ string.format('%02d', (year + (term >= 23 and 1 or 0)) % 100) }}-{{ T[term].name }}
   </span>
   {{ first = false }}
 {{@ end }}

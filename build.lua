@@ -1,6 +1,6 @@
 local caisse = require('caisse/caisse')
 local rendermarkup = require('caisse/markup')
-caisse.lang = 'zh'
+caisse.lang = 'en'
 
 local srcpath = 'content/'
 local sitepath = 'build/'
