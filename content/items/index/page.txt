@@ -1,0 +1,8 @@
+{{title.zh=}}~
+{{title.en=}}~
+
+{{contents.zh=}}
+哈哈哈！看看<link about 关于页面>！或者看看<link dates>？
+
+{{contents.en=}}
+Hahaha!

@@ -8,7 +8,9 @@
   {{ image(file(bannerimg, 'items/' .. name), nil, 'creation-banner') }}
 {{@ end }}
 <p>{{ rendermarkup(tr(contents)) }}</p>
-{{ date }}
+{{@ date }}
+  {{ date }}
+{{@ end }}
 
 <style>
 img.creation-banner {

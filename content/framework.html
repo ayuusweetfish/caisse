@@ -15,7 +15,7 @@
 <ul>
   {{@ cat in cats}}
   <li><a class='pastel {{cat.name}}'
-    href='/{{@ name ~= "home"}}{{cat.name}}{{@ end}}'>{{cat.title}}</a></li>
+    href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'>{{cat.title}}</a></li>
   {{@ end}}
 </ul>
 <section id='icon-buttons'>
