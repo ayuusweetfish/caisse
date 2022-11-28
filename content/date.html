@@ -95,13 +95,18 @@
 {{T[23].hint.en=}}mid-January (B)
 {{T[24].hint.en=}}January — February (B)
 
+{{builder =}}
 <span class='date-term'>
 {{ first = true }}
 {{@ dates }}
-  {{@ not first }}/{{@ end }}
+  {{@ not first }}<span class='delim'></span>{{@ end }}
   <span title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
     {{ string.format('%02d', (year + (term >= 23 and 1 or 0)) % 100) }}-{{ T[term].name }}
+    <sup class='season-{{ math.ceil(term / 6) }}'></sup>
   </span>
   {{ first = false }}
 {{@ end }}
 </span>
+
+{{=}}
+{{ builder:gsub('>%s*', '>'):gsub('%s*<', '<') }}

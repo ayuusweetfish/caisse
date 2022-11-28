@@ -10,7 +10,7 @@
   {{ page = render('items/' .. name .. '/page.txt') }}
   <h1>{{ page.title }}</h1>
   <p>{{ page.intro }}</p>
-  <p>{{ renderdate(page.date) }}</p>
+  <p>{{ renderdate(page.date, true) }}</p>
 </a></section>
 {{@ end}}
 
