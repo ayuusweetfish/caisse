@@ -1,0 +1,8 @@
+{{title.zh=}}日期格式
+{{title.en=}}Date Format
+
+{{contents.zh=}}
+日期是二十四节气哒！！！
+
+{{contents.en=}}
+Dates are based on the 24 solar terms!

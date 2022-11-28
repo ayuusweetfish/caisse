@@ -153,11 +153,12 @@ markupfns = {
       .. '<sup>+</sup>'
       .. '</a>'
   end,
-  link = function (path)
+  link = function (path, text)
     local item = itemreg[path]
-    if not item then return markupfns.extlink(path, path) end
+    if not item then return markupfns.extlink(path, text or path) end
+    if text == '' then text = caisse.envadditions.tr(item.locals.title) end
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
-      .. htmlescape(caisse.envadditions.tr(item.locals.title)) .. '</a>'
+      .. htmlescape(text) .. '</a>'
   end,
   img = function (src, alt, class)
     return '<img src="' .. src .. '"'
@@ -185,6 +186,9 @@ for i = 1, #cats do
     registeritem(pagelist[j].name, cats[i].name)
   end
 end
+registeritem('index', 'home')
+registeritem('about', 'home')
+registeritem('dates', 'home')
 renderallitems()
 
 renderpage('music', 'bannerlist.html', { curcat = 'music' })
