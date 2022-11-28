@@ -249,7 +249,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
           return result
         end
         local setfn = load(
-          string.gsub('? = (type(?) == "table" and "" or (? .. "\\n")) .. ...',
+          string.gsub('? = (type(?) == "table" and "" or ((? or "") .. "\\n")) .. ...',
             '[?]', item.expr),
           item.expr, 't')
         local prevmt = getmetatable(_ENV)

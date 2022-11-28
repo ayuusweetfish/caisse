@@ -1,24 +1,3 @@
-{{title.short.home.zh=}}主页
-{{title.short.music.zh=}}八音盒
-{{title.short.playful.zh=}}游乐园
-{{title.short.murmurs.zh=}}梦话集
-{{title.short.stray.zh=}}杂物堆
-{{title.short.scratch.zh=}}涂鸦板
-
-{{title.short.home.en=}}Home
-{{title.short.music.en=}}Music
-{{title.short.playful.en=}}Playful
-{{title.short.murmurs.en=}}Murmurs
-{{title.short.stray.en=}}Stray
-{{title.short.scratch.en=}}Scratch
-
-{{title.long.home.en=}}Home
-{{title.long.music.en=}}Music Pieces
-{{title.long.playful.en=}}Playful Pieces
-{{title.long.murmurs.en=}}Murmur Pieces
-{{title.long.stray.en=}}Stray Pieces
-{{title.long.scratch.en=}}Scratch Pieces
-
 {{{
 cats = {
 -- name        hue  sat  v1  v2
@@ -31,7 +10,45 @@ cats = {
 }
 for i = 1, #cats do
   local name, tint = table.unpack(cats[i])
-  cats[i] = { name = name, tint = tint }
+  cats[i] = { name = name, tint = tint, title = {}, longtitle = {} }
   cats[name] = cats[i]
 end
+}}}
+
+{{cats.home.title.zh=}}主页
+{{cats.music.title.zh=}}八音盒
+{{cats.playful.title.zh=}}游乐园
+{{cats.murmurs.title.zh=}}梦话集
+{{cats.stray.title.zh=}}杂物堆
+{{cats.scratch.title.zh=}}涂鸦板
+
+{{cats.home.title.en=}}Home
+{{cats.music.title.en=}}Music
+{{cats.playful.title.en=}}Playful
+{{cats.murmurs.title.en=}}Murmurs
+{{cats.stray.title.en=}}Stray
+{{cats.scratch.title.en=}}Scratch
+
+{{cats.home.longtitle.en=}}Home
+{{cats.music.longtitle.en=}}Music Pieces
+{{cats.playful.longtitle.en=}}Playful Pieces
+{{cats.murmurs.longtitle.en=}}Murmur Pieces
+{{cats.stray.longtitle.en=}}Stray Pieces
+{{cats.scratch.longtitle.en=}}Scratch Pieces
+
+{{{
+cats.music.pagelist = {
+  {name = 'bellflowers', dark = true},
+  {name = 'sheepdogs-job'},
+  {name = 'lili', dark = true},
+  {name = 'zzz', dark = true},
+  {name = 'misty-jungle', dark = true},
+}
+cats.playful.pagelist = {
+  {name = 'fireflies', dark = true},
+  {name = 'medle', dark = false},
+  {name = 'ice-hatch', dark = false},
+  {name = 'daytime-cat', dark = false},
+  {name = 'sheepdogs', dark = false},
+}
 }}}

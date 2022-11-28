@@ -1,14 +1,13 @@
 {{
-  local cats = render('categories.txt')
-  title = tr(cats.title.long[curcat]) or cats.title.short[curcat]
+  cats = render('categories.txt').cats
+  title = tr(cats[curcat].longtitle) or cats[curcat].title
 }}
 <header>
   <h1>{{ title }}</h1>
 </header>
-{{@ pagelist}}
+{{@ cats[curcat].pagelist}}
 <section class='creation-card'><a href='/{{ name }}'>
   {{ page = render('items/' .. name .. '/page.txt') }}
-  {{! ensurepage(name) }}
   <section class='creation-banner'>
     {{ image(file(page.bannerimg, 'items/' .. name)) }}
     <h1{{@ dark}} class='creation-title-dark'{{@ end}}>{{ page.title }}</h1>
