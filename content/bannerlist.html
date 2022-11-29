@@ -13,16 +13,15 @@
     <h1{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</h1>
   </section>
   <section class='item-peek'>
-    <p>{{ page.intro }}</p>
-    <p>{{ renderdate(page.date, true) }}</p>
+    <p>{{ page.intro }}<span class='date-container'>{{ renderdate(page.date, true) }}</span></p>
+    <section style='clear: both'></section>
   </section>
 </a></section>
 {{@ end}}
 
 <style>
 .item-card {
-  border-block-start: 1px rgba(128, 128, 128, 50%) solid;
-  margin-block: 1rem;
+  margin-block: 1rem 1.5rem;
 }
 .item-card > a {
   color: inherit;
@@ -43,11 +42,18 @@
   inset-block-end: 1rem;
   font-size: 1.5rem;
   margin: 0;
+  text-shadow: #fdfdfd 0.05em 0.05em;
 }
 .item-peek {
   margin-inline: 1.3rem;
 }
+.item-peek > p > span.date-container {
+  float: right;
+  margin-inline-start: 2em;
+  margin-block-start: 0.2em;
+}
 h1.item-title-dark {
-  color: white;
+  color: #fdfdfd;
+  text-shadow: #181410 0.05em 0.05em;
 }
 </style>
