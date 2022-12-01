@@ -6,7 +6,7 @@
   <h1>{{ title }}</h1>
 </header>
 {{@ cats[curcat].pagelist}}
-<section class='item-entry'><a href='/{{ name }}'>
+<a href='/{{ name }}' class='item-entry'><section>
   {{ page = render('items/' .. name .. '/page.txt') }}
   {{@ page.bannerimg }}
   <div class='item-banner'>
@@ -21,17 +21,15 @@
     <p>{{ page.intro }}<span class='date-container'>{{ renderdate(page.date, true) }}</span></p>
     <div class='clear-float'></div>
   </section>
-  <div role='separator' class='item-separator'></div>
-</a></section>
+</section></a>
+<div role='separator' class='item-separator'></div>
 {{@ end}}
 
 <style>
-.item-entry {
-  margin-block: 1rem 1.5rem;
-}
-.item-entry > a {
+a.item-entry {
   color: inherit;
   text-decoration: inherit;
+  margin-block: 1rem 1.5rem;
 }
 .item-banner {
   height: 10rem;
@@ -67,6 +65,6 @@ h1.item-title-dark {
   text-shadow: #181410 0.05em 0.05em;
 }
 div[role='separator'].item-separator {
-  margin-block: 1em;
+  margin-block: 1em 1.5em;
 }
 </style>
