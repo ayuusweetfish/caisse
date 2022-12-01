@@ -156,7 +156,7 @@ markupfns = {
     return '<strong>' .. text .. '</strong>'
   end,
   hr = function ()
-    return '<hr>'
+    return '<div role="separator"></div>'
   end,
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
@@ -198,6 +198,10 @@ copyfile('Sono_Monospace-SemiBold.woff2')
 copyfile('AaKaiSong2.woff2')
 copyfile('little-icons.woff2')
 
+copyfile('divider-end.svg')
+copyfile('divider-fleuron-doubleline.svg')
+copyfile('divider-fleuron-heart.svg')
+
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
   for j = 1, #pagelist do
@@ -217,4 +221,4 @@ renderallitems()
 
 renderpage('music', 'bannerlist.html', { curcat = 'music' })
 renderpage('playful', 'bannerlist.html', { curcat = 'playful' })
-renderpage('murmurs', 'textlist.html', { curcat = 'murmurs' })
+renderpage('murmurs', 'bannerlist.html', { curcat = 'murmurs' })

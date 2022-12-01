@@ -6,24 +6,30 @@
   <h1>{{ title }}</h1>
 </header>
 {{@ cats[curcat].pagelist}}
-<section class='item-card'><a href='/{{ name }}'>
+<section class='item-entry'><a href='/{{ name }}'>
   {{ page = render('items/' .. name .. '/page.txt') }}
-  <section class='item-banner'>
+  {{@ page.bannerimg }}
+  <div class='item-banner'>
     {{ image(file(page.bannerimg, 'items/' .. name)) }}
     <h1{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</h1>
-  </section>
+  </div>
+  {{@ end }}
+  {{@ not page.bannerimg }}
+  <h1>{{ page.title }}</h1>
+  {{@ end }}
   <section class='item-peek'>
     <p>{{ page.intro }}<span class='date-container'>{{ renderdate(page.date, true) }}</span></p>
-    <section style='clear: both'></section>
+    <div class='clear-float'></div>
   </section>
+  <div role='separator' class='doubleline item-separator'></div>
 </a></section>
 {{@ end}}
 
 <style>
-.item-card {
+.item-entry {
   margin-block: 1rem 1.5rem;
 }
-.item-card > a {
+.item-entry > a {
   color: inherit;
   text-decoration: inherit;
 }
@@ -42,7 +48,7 @@
   inset-block-end: 1rem;
   font-size: 1.5rem;
   margin: 0;
-  text-shadow: #fdfdfd 0.05em 0.05em;
+  text-shadow: #fdfdfd 0.03em 0.03em;
 }
 .item-peek {
   margin-inline: 1.3rem;
@@ -52,8 +58,15 @@
   margin-inline-start: 2em;
   margin-block-start: 0.2em;
 }
+.item-peek > .clear-float {
+  clear: both;
+  margin-block-start: -2em;
+}
 h1.item-title-dark {
   color: #fdfdfd;
   text-shadow: #181410 0.05em 0.05em;
+}
+div[role='separator'].item-separator {
+  margin-block: 1em;
 }
 </style>

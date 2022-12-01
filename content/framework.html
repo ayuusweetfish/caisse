@@ -309,6 +309,28 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term sup.season-6::after { content: '\1f343'; transform: rotate(-25deg) scale(1.02); }
 .date-term sup.season-7::after { content: '\2744'; transform: rotate(8deg) scale(0.97); }
 .date-term sup.season-8::after { content: '\1f9ca'; transform: rotate(5deg); }
+
+div[role='separator'] {
+  block-size: 1.5em;
+  margin-block: 1.5em;
+  inline-size: calc(100% - 3em);
+  margin-inline-start: 1.5em;
+  background: no-repeat center 0 / auto 100% url('/bin/divider-fleuron-heart.svg');
+  filter: hue-rotate({{hue}}deg);
+}
+div[role='separator']::before, div[role='separator']::after {
+  content: '';
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  background: no-repeat 0 / contain url('/bin/divider-end.svg');
+}
+div[role='separator']::before { margin-inline-start: -1.5em; }
+div[role='separator']::after { margin-inline-end: -1.5em; float: inline-end; }
+div[role='separator'].doubleline {
+  background-image: url('/bin/divider-fleuron-doubleline.svg');
+  background-repeat: repeat-x;
+}
 </style>
 
 <script>
