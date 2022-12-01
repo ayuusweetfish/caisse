@@ -162,6 +162,7 @@ a.pastel, a.hidden-pastel {
 }
 a.pastel > sup {
   line-height: 0;
+  user-select: none;
   display: inline-block;
   transform: translateY(-0.225em) rotate(-40deg);
 }
@@ -323,8 +324,8 @@ div[role='separator'] {
 div[role='separator']::before, div[role='separator']::after {
   content: '';
   display: inline-block;
-  height: 1.5em;
-  width: 1.5em;
+  block-size: 1.5em;
+  inline-size: 1.5em;
   background: no-repeat 0 / contain url('/bin/divider-end.svg');
 }
 div[role='separator']::before { margin-inline-start: -1.5em; }
