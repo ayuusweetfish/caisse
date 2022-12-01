@@ -126,15 +126,6 @@ local function registeritem(path, curcat, extralocals)
     cat = curcat,
   }
 end
-local function renderallitems()
-  for path, item in pairs(itemreg) do
-    local locals = item.locals
-    locals.name = path
-    locals.curcat = item.cat
-    print(item.cat, caisse.envadditions.tr(locals.title))
-    renderpage(path, 'item.html', locals)
-  end
-end
 
 local htmlescapelookup = {
   ['<'] = '&lt;',
@@ -144,6 +135,7 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
+local markupfnswd -- Working directory for <img ...> and the like
 local markupfns
 markupfns = {
   ['-'] = function (line)
@@ -167,25 +159,51 @@ markupfns = {
   extlink = function (href, text)
     return '<a class="pastel external" href="' .. href .. '">'
       .. htmlescape(text)
-      .. '<sup>+</sup>'
+      .. '<sup>&gt;</sup>'
       .. '</a>'
   end,
   link = function (path, text)
     local item = itemreg[path]
-    if not item then return markupfns.extlink(path, text or path) end
+    if not item then return markupfns.extlink(path, text ~= '' and text or path) end
     if text == '' then text = caisse.envadditions.tr(item.locals.title) end
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
       .. htmlescape(text) .. '</a>'
   end,
   img = function (src, alt, class)
-    return '<img src="' .. src .. '"'
-      .. (alt and (' alt="' .. alt .. '"') or '')
-      .. (class or (' class="' .. class .. '"') or '')
-      .. '>'
+    return caisse.envadditions.image(
+      caisse.envadditions.file(src, markupfnswd),
+      alt, class)
+  end,
+  h1 = function (text)
+    return '<h1>' .. htmlescape(text) .. '</h1>'
+  end,
+  kao = function (text)
+    local function fxhash(s)
+      local h = 0
+      for i = 1, #s do
+        h = ((h << 5) ~ string.byte(s, i)) * 0x517cc1b727220a95
+      end
+      return string.format('%016x', h)
+    end
+    return '<span class="kaomoji">' ..
+      io.open('misc/kaomoji/gen/moji-' .. fxhash(text) .. '.svg'):read('a') ..
+      '</span>'
   end,
 }
 caisse.envadditions.rendermarkup = function (s)
   return rendermarkup(s, markupfns)
+end
+
+local function renderallitems()
+  for path, item in pairs(itemreg) do
+    local locals = item.locals
+    locals.name = path
+    locals.curcat = item.cat
+    print(item.cat, caisse.envadditions.tr(locals.title))
+    markupfnswd = 'items/' .. path
+    renderpage(path, 'item.html', locals)
+  end
+  markupfnswd = nil
 end
 
 copyfile('background.svg')

@@ -6,7 +6,7 @@ local function args(ss, n, verb)
   local s = ss[1].text
   while (n and #results < n - 1) or (not n and ssi <= #ss) do
     -- Extract a whitespace-insensitive argument
-    if ss[ssi].unit then
+    if not ss[ssi] or ss[ssi].unit then
       -- An unbreakable unit
       results[#results + 1] = s
       ssi = ssi + 1
