@@ -162,6 +162,8 @@ a.pastel, a.hidden-pastel {
 }
 a.pastel > sup {
   line-height: 0;
+  display: inline-block;
+  transform: translateY(-0.225em) rotate(-40deg);
 }
 a.pastel::after, a.hidden-pastel::after {
   content: '';
@@ -327,9 +329,18 @@ div[role='separator']::before, div[role='separator']::after {
 }
 div[role='separator']::before { margin-inline-start: -1.5em; }
 div[role='separator']::after { margin-inline-end: -1.5em; float: inline-end; }
-div[role='separator'].doubleline {
+div[role='separator'].item-separator {
   background-image: url('/bin/divider-fleuron-doubleline.svg');
   background-repeat: repeat-x;
+}
+
+.kaomoji {
+  display: inline-block;
+  vertical-align: middle;
+}
+.kaomoji > svg {
+  block-size: 1em;
+  inline-size: auto;
 }
 </style>
 

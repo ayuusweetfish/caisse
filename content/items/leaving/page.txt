@@ -1,0 +1,15 @@
+{{title.zh=}}我已经要走了哦
+{{intro.zh=}}你会想我嘛？
+{{title.en=}}I’m Leaving Already
+{{intro.en=}}Will you miss me?
+
+{{date=}}2022.20
+
+{{contents.zh=}}
+“那位姑娘快上车啦，别一会儿关门了！”
+“啊好的好的谢谢！”
+<hr>
+来，跟伙伴道个别 <kao ₍˄·͈༝·͈˄*₎◞ ̑̑>
+
+{{contents.en=}}
+<kao ₍˄·͈༝·͈˄*₎◞ ̑̑>

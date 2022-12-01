@@ -5,16 +5,28 @@
   {{@ end }}
 </header>
 {{@ bannerimg }}
-  {{ image(file(bannerimg, 'items/' .. name), nil, 'creation-banner') }}
+  {{ image(file(bannerimg, 'items/' .. name), nil, 'item-banner') }}
 {{@ end }}
-<p>{{ rendermarkup(tr(contents)) }}</p>
+{{@ (intro and intro ~= '') or bannerimg }}
+  <div role='separator' class='item-separator'></div>
+{{@ end }}
+<section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
 {{@ date }}
   {{ renderdate(date) }}
 {{@ end }}
 
 <style>
-img.creation-banner {
-  inline-size: 100%;
+img.item-banner, .item-contents img {
+  inline-size: 80%;
   block-size: auto;
+  max-block-size: 20em;
+  margin-inline: 10%;
+  object-fit: contain;
+}
+@media (max-width: 115vh), (max-width: 48rem) {
+  img.item-banner, .item-contents img {
+    inline-size: 100%;
+    margin-inline: 0;
+  }
 }
 </style>

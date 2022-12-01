@@ -49,22 +49,30 @@ cats.playful.pagelist = {
   {name = 'fireflies', dark = true},
   {name = 'medle', dark = false},
   {name = 'ice-hatch', dark = false},
-  {name = 'daytime-cat', dark = false},
   {name = 'sheepdogs', dark = false},
 }
 cats.murmurs.pagelist = {
-  {name = 'hermite'},
+--[[
+  {name = 'kuusoh-forest'},
+  {name = 'moon-river'},
+  {name = 'why-comp-engr'},
+]]
+  {name = 'inner-prod'},
   {name = 'hello'},
 }
---[[
 cats.sundry.pagelist = {
+  {name = 'leaving'},
+--[[
   --{name = 'common-sky'},
   {name = 'patchwork'},
   {name = 'maylove'},
   {name = 'tilde'},
+]]
 }
 cats.stray.pagelist = {
+--[[
   {name = 'ice-rink'},
+  {name = 'daytime-cat'},
   {name = 'sound-course-21'},
   {name = 'sound-course-20'},
   {name = 'rabbit-hole'},
@@ -73,6 +81,6 @@ cats.stray.pagelist = {
   {name = 'bmflat'},
   {name = 'zero'},
   {name = 'ne-er-do-well'},
-}
 ]]
+}
 }}}

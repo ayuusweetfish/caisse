@@ -30,9 +30,6 @@ ha-space<<=  >\\<>>ha\
 
 !<hr>
 
-!<img /bin/fireflies/cover.png
-  alt class1
-  class2>
 链接：<link <= fire<flies yes >
   haha  ha<<b bold right~> and <<b bold again>>>>>
 

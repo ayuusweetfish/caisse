@@ -3,7 +3,7 @@
 
 {{contents.zh=}}
 哈哈哈！去<link index 最外面>看看！
-看看<link bellflowers>，<link daytime-cat>，或者学点数学<link hermite>？
+看看<link bellflowers>，<link daytime-cat>，或者学点数学<link inner-prod>？
 
 {{contents.en=}}
 Hahaha!
