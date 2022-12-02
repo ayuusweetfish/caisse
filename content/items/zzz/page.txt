@@ -16,8 +16,12 @@
 {{contents.zh=}}
 如题
 
-<file cover.jpg> ——封面图
-<file ../sheepdogs/cover.jpg>
+!<filetable
+<file cover.jpg 封面图>
+<file ../leaving/IMG_20221130_145907.jpg 不是封面图>
+<file ../leaving/unifystrokes.c 甚至是程序代码>
+<file ../leaving/page.txt 不知道是什么东西>
+>
 
 {{contents.en=}}
 rt
