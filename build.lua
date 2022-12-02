@@ -157,9 +157,9 @@ markupfns = {
     return '<a href="' .. href .. '">' .. text .. '</a>'
   end,
   extlink = function (href, text)
-    return '<a class="pastel external" href="' .. href .. '">'
+    return '<a class="pastel external" href="' .. href .. '" target="_blank">'
       .. htmlescape(text)
-      .. '<sup>&gt;</sup>'
+      .. '<sup class="little-icons">&#x1fa90;</sup>'
       .. '</a>'
   end,
   link = function (path, text)
