@@ -5,7 +5,9 @@
   {{@ end }}
 </header>
 {{@ bannerimg }}
-  {{ image(file(bannerimg, 'items/' .. name), nil, 'item-banner') }}
+  <div class='image-container'>
+    {{ image(file(bannerimg, 'items/' .. name), nil, 'item-banner') }}
+  </div>
 {{@ end }}
 {{@ (intro and intro ~= '') or bannerimg }}
   <div role='separator' class='item-separator'></div>
@@ -22,7 +24,7 @@ img.item-banner, .item-contents img {
   max-block-size: 20em;
   object-fit: contain;
 }
-.item-contents div.image-container {
+div.image-container {
   text-align: center;
 }
 .item-contents img.vertical {
