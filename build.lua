@@ -223,6 +223,7 @@ copyfile('little-icons.woff2')
 copyfile('divider-end.svg')
 copyfile('divider-fleuron-cloudy.svg')
 copyfile('divider-fleuron-heart.svg')
+copyfile('divider-fleuron-windy.svg')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
