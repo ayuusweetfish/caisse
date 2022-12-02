@@ -142,6 +142,24 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
+-- %s/, /,\r/g
+-- v/0x[0-9a-f]\+/d
+-- %s/^.*0x\([0-9a-f]\+\).*$/\1/g
+-- %!sort | uniq
+local filetypeicons = {
+  [''] = 0x1f4e6,
+  -- Music and audio
+  ogg = 0x1f3a7, mp3 = 0x1f3a7, wav = 0x1f3a7,
+  mid = 0x1f3b6, midi = 0x1f3b6,
+  mscz = 0x1f3bc,
+  -- Images
+  png = 0x1f5bc, jpg = 0x1f5bc, jpeg = 0x1f5bc, gif = 0x1f5bc, webp = 0x1f5bc,
+  -- Video
+  mp4 = 0x1f39e, ogv = 0x1f39e, webm = 0x1f39e,
+  -- Text, code, and documents
+  txt = 0x1f4c3, pdf = 0x1f4c3,
+  c = 0x1f47e, h = 0x1f47e, lua = 0x1f47e, js = 0x1f47e,
+}
 local markupfnsenvitem  -- Item name of the item currently being processed
 local markupfns
 markupfns = {
@@ -185,7 +203,10 @@ markupfns = {
         alt, class) ..
       '</div>'
   end,
-  file = function (src)
+  filetable = function (contents)
+    return '<table class="file-table"><tbody>' .. contents .. '</tbody></table>'
+  end,
+  file = function (src, text)
     local item = itemreg[markupfnsenvitem]
     local fileurl = caisse.envadditions.file(src, 'items/' .. markupfnsenvitem)
     local size = filesize(fileurl)
@@ -205,9 +226,15 @@ markupfns = {
     end
     local parts = split(fileurl, '/')
     local basename = parts[#parts]
-    return '<a class="pastel ' .. item.cat .. '" href="' ..
-      fileurl ..  '"><strong>' .. basename .. '</strong> (' ..
-      sizestring .. ')</a>'
+    local dotpos = basename:find('.', 1, true)
+    local ext = (dotpos == nil and '' or basename:sub(dotpos + 1))
+    local filetypeicon = filetypeicons[ext] or filetypeicons['']
+    return '<tr><td>' .. text .. '</td>' ..
+      '<td><a class="pastel ' .. item.cat .. '" href="' ..
+      fileurl ..  '">' ..
+      '<span class="little-icons">&#x' .. string.format('%x', filetypeicon) ..
+      ';</span><strong class="file-table-name">' .. basename .. '</strong>(' ..
+      sizestring .. ')</a></td>'
   end,
   h1 = function (text)
     return '<h1>' .. htmlescape(text) .. '</h1>'
