@@ -38,6 +38,7 @@ end
 
 {{{
 cats.music.pagelist = {
+  {name = 'leaving', dark = true},
   {name = 'bellflowers', dark = true},
   {name = 'wings'},
   {name = 'sheepdogs-job'},
@@ -61,7 +62,7 @@ cats.murmurs.pagelist = {
   {name = 'hello'},
 }
 cats.sundry.pagelist = {
-  {name = 'leaving'},
+  {name = 'adventure'},
 --[[
   --{name = 'common-sky'},
   {name = 'patchwork'},

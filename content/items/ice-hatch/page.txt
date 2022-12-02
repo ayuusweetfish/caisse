@@ -11,7 +11,7 @@
 {{contents.zh=}}
 企鹅冰壶孵蛋游戏——指引企鹅在滑溜溜冰面上孵出丢掉的蛋。
 可以在 <link https://ayuusweetfish.itch.io/ice-hatch itch.io> 玩！
-受 2022 年北京冬奥会期间火了一把的冰壶运动启发，在 <link https://itch.io/jam/mini-jam-99-birds Mini Jam #99> 中制作了这个游戏。活动主题是“鸟（Birds）”，附加限制是“无法停止运动（Can't stop moving）”；加起来就有了这一群不经常动动就会掉进冰窟窿的小可爱们。
+受 2022 年北京冬奥会期间火了一把的冰壶运动启发，在 <link https://itch.io/jam/mini-jam-99-birds Mini Jam #99> 中制作了这个游戏。活动主题是“鸟（Birds）”，附加限制是“无法停止运动（Can't stop moving）”；加起来就有了这一群不经常动动就会掉进冰窟窿的小可爱们。以及……标题里的“繁”是“繁殖”的“繁”（？
 音乐做了一半，不过已经提交得很晚了所以就没有继续写完。会抽空更新~
 
 {{contents.en=}}

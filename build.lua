@@ -239,6 +239,12 @@ markupfns = {
   h1 = function (text)
     return '<h1>' .. htmlescape(text) .. '</h1>'
   end,
+  list = function (contents)
+    return '<ul>' .. contents .. '</ul>'
+  end,
+  li = function (text)
+    return '<li>' .. htmlescape(text) .. '</li>'
+  end,
   cen = function (text)
     return '<p style="text-align: center">' .. text .. '</p>'
   end,
