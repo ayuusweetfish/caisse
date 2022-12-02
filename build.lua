@@ -181,6 +181,9 @@ markupfns = {
   h1 = function (text)
     return '<h1>' .. htmlescape(text) .. '</h1>'
   end,
+  cen = function (text)
+    return '<p style="text-align: center">' .. text .. '</p>'
+  end,
   kao = function (text)
     local function fxhash(s)
       local h = 0
