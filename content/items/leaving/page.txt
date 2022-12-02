@@ -1,76 +1,25 @@
-{{title.zh=}}我已经要走了哦
-{{intro.zh=}}你会想我嘛？
+{{title.zh=}}我已经要走了哦・打击乐二重奏
+{{intro.zh=}}日本民谣双人组 Humbert Humbert 的歌曲，键盘打击乐改编
 {{title.en=}}I’m Leaving Already
-{{intro.en=}}Will you miss me?
+{{intro.en=}}Rearrangement
+
+{{bannerimg=}}IMG_20221130_151158.jpg
+{{!-- GIMP adjust sat. & filter; convert -scale 25% -brightness-contrast 0x-12 -modulate 135,160 }}
 
 {{date=}}2022.20
 
 {{contents.zh=}}
-!<cen “那位姑娘快上车啦，别一会儿关门了！”>
-!<img Tan1.png <= > vertical>
-!<cen “啊好的好的谢谢！”>
-<hr cloudy>
+在学校经历了封楼之后人心惶惶，纠结再三终于还是决定给学校减轻一些压力，收拾行李准备回家。其实最不舍的可能就是排练厅了，但时间安排实在是比较混乱，甚至在群里看到大家问有没有合排才想起要是音乐会没有取消的话原本今天应该还在快乐小合排。再加上不知道哪里来的、和各种人事物混作一团的分离焦虑（反正就是离开哪儿都要恋恋不舍好久，就是这么没出息 ; - ;），所以在前一天只有赶工改首曲子的心力了。
+引用一句歌词，“毕竟如果看到你的眼睛的话，告别什么的就会特别、特别、特别、特别、特别……”到现在好像也还是不太敢面对这种按时完成的告别呀。
+乐器是颤音琴和马林巴，理论上都可以用双槌演奏，但是自己没摸过所以也不好说hh 另外颤音琴演奏员需要吹一段口哨。预览音频是 MuseScore 直出，滚奏和倚音有点奇怪。希望可以按时回学校玩一玩呜呜呜呜。
 
-……
-!<img Tan2.png <= > vertical>
-!<cen ……终于该道个别了吗。>
-<hr windy>
+!<filetable
+  <file <= deteiku.pdf> 乐谱>
+  <file <= deteiku.ogg> 预览音频>
+  <file <= deteiku.mscz> MuseScore 文档>
+>
 
-!<cen 从小就觉得，每一件小物品都是一个小小的灵魂，>
-!<img Vio1.png <= > vertical>
-!<cen 会爱、会痛、会习惯、会想念，会值得和世间美好的万物共处。>
-<hr cloudy>
-
-!<cen 所以会揣摩着一套荧光笔里丢掉的一支对伙伴们的思念而在深夜哭泣，>
-!<img Vio2.png <= > vertical>
-!<cen 会心疼着遗落在不知道什么地方的、家中存放多年的布制红领巾而久久不能入眠。>
-<hr cloudy>
-
-!<cen 有时候很讨厌自己的丢三落四。>
-!<img Vio3.png <= > vertical>
-!<cen 一边焦急地四处寻觅，一边在心里无声地大哭一场，让这个之前弄丢东西的笨蛋赔礼道歉安慰补偿。>
-<hr cloudy>
-
-!<cen 如果桌椅底下悄悄探出一个笑脸，情绪的乌云就会一扫而空；>
-!<img Vio4.png <= > vertical>
-!<cen 但更多时候，黑夜打翻装满不舍、心疼与无奈的五味瓶，任由它们沾满心里的每一个角落。>
-<hr windy>
-
-!<cen 有一次在网络上看到素不相识的伤心灵魂说，自己把水宝宝弄坏了很心疼它，不知道怎么办。>
-!<img Azu1.png <= > vertical>
-!<cen 于是赶紧安慰说，她帮水宝宝毕业啦，水宝宝只是以新的形态开始这个世界的全新冒险了。然后还被点了很多赞。>
-<hr cloudy>
-
-!<cen 在这之后，似乎自己也学会了一些与世界、与自己的这个角落相处的方法。>
-!<img Azu2.png <= > vertical>
-!<cen 只是有时候还是很难按捺住那些思念，借着黑夜的热烈与它们重逢、又独自面对着梦醒时分那淡淡的孤单。>
-<hr cloudy>
-
-!<cen 也还是会讨厌笨手笨脚的自己。>
-!<img Azu3.png <= > vertical>
-!<cen 也还是那么珍视自己所拥有的一切——那么没有安全感。>
-<hr windy>
-
-!<cen 如果我明天就要出发去冒险，>
-!<img Oli1.png <= > vertical>
-!<cen 你会想我嘛？>
-<hr cloudy>
-
-!<img Oli2.png <= > vertical>
-<hr windy>
-
-!<cen 生活好像也就是一列火车，>
-!<img Tan3.png <= > vertical>
-!<cen 世间的一切都有自己的始发与换乘。>
-<hr cloudy>
-
-!<cen 所以虽然很不舍，虽然晚上可能还是会想你……>
-!<img Tan4.png <= > vertical>
-!<cen 但是这个时候，应该悄悄祝你换乘愉快呀。>
-<hr>
-
-!<img IMG_20221130_145907.jpg <= > vertical>
-!<cen 来，跟伙伴道个别 <kao ₍˄·͈༝·͈˄*₎◞ ̑̑>>
+第二天回家的时候把非常喜欢的手套弄丢了一只，于是一路上都在伤心地画画，还把手机画没电了。起了个标题叫<link adventure>，意外地和这首歌也挺贴切的。所以也就拿路上随便拍的（唯一）一张照片作封面啦。
 
 {{contents.en=}}
-<kao ₍˄·͈༝·͈˄*₎◞ ̑̑>
+rt

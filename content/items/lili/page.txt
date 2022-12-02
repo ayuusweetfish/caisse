@@ -1,5 +1,5 @@
 {{title.zh=}}百合怒放
-{{intro.zh=}}作业；电影《丹麦女孩》配乐练习
+{{intro.zh=}}电影《丹麦女孩》配乐练习；《应用作曲与电子音乐设计》结课作业
 {{title.en=}}Lili: Into a Blossom
 {{intro.en=}}Assignment; practice composition for the film “Danish Girl”.
 
@@ -14,7 +14,15 @@
 {{date=}}2021.11
 
 {{contents.zh=}}
-如题
+也算是辅修的毕业作业啦，趁机给了自己一个理由把这部一直想看的电影看了。
+本来写到三分钟的时候正打算收笔，可是偏偏撞上国内高校性少数社团组织微信公众号遭大规模封禁，感到十分不平，于是临时增加了一个选段——对生活与世界的热爱、对理想与未来的追逐，这样炽热的火焰是封不住的！不过也是因此导致原本就极晚的提交时间雪上加霜，把老师也催成了死线战士，在成绩提交截止前几小时还在看作业（滑跪）。
+
+!<filetable
+  <file Lili__Into_a_Blossom.mp4 视频>
+  <file Lili__Into_a_Blossom.pdf 乐谱>
+  <file Lili__Call_you_Lili.mscz 第一部分 MuseScore 文档>
+  <file Lili__Good_morning.mscz 第二部分 MuseScore 文档>
+>
 
 {{contents.en=}}
 rt

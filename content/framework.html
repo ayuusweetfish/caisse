@@ -371,6 +371,19 @@ table.file-table {
 table.file-table .file-table-name {
   margin-inline: 0.2em 0.33em;
 }
+@media (max-width: 115vh), (max-width: 48rem) {
+  table.file-table {
+    margin-block-start: -0.4em;
+    border-spacing: 1em 0;
+  }
+  table.file-table tr > td { display: block; }
+  table.file-table tr > td:first-child { margin: 0.5em -0.4em 0 -0.7em; }
+}
+
+ul {
+  padding-inline-start: 1.5em;
+  list-style: '–   ';
+}
 </style>
 
 <script>

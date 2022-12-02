@@ -1,5 +1,5 @@
 {{contents.zh=}}
-<link leaving>！
+<link adventure>！
 
 {{contents.en=}}
 Check <link dates>?
