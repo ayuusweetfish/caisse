@@ -20,13 +20,19 @@ img.item-banner, .item-contents img {
   inline-size: 80%;
   block-size: auto;
   max-block-size: 20em;
-  margin-inline: 10%;
   object-fit: contain;
+}
+.item-contents div.image-container {
+  text-align: center;
+}
+.item-contents img.vertical {
+  max-block-size: unset;
+  inline-size: 100%;
+  max-inline-size: 20em;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
   img.item-banner, .item-contents img {
     inline-size: 100%;
-    margin-inline: 0;
   }
 }
 </style>

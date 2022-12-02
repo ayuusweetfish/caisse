@@ -147,8 +147,10 @@ markupfns = {
   b = function (text)
     return '<strong>' .. text .. '</strong>'
   end,
-  hr = function ()
-    return '<div role="separator"></div>'
+  hr = function (class)
+    return '<div role="separator"' ..
+      (class ~= '' and ' class="' .. class .. '"' or '') ..
+      '></div>'
   end,
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
@@ -170,9 +172,11 @@ markupfns = {
       .. htmlescape(text) .. '</a>'
   end,
   img = function (src, alt, class)
-    return caisse.envadditions.image(
-      caisse.envadditions.file(src, markupfnswd),
-      alt, class)
+    return '<div class="image-container">' ..
+      caisse.envadditions.image(
+        caisse.envadditions.file(src, markupfnswd),
+        alt, class) ..
+      '</div>'
   end,
   h1 = function (text)
     return '<h1>' .. htmlescape(text) .. '</h1>'
@@ -217,7 +221,7 @@ copyfile('AaKaiSong2.woff2')
 copyfile('little-icons.woff2')
 
 copyfile('divider-end.svg')
-copyfile('divider-fleuron-doubleline.svg')
+copyfile('divider-fleuron-cloudy.svg')
 copyfile('divider-fleuron-heart.svg')
 
 for i = 1, #cats do
