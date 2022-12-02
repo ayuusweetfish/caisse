@@ -23,6 +23,10 @@ local function copyfile(src)
   os.execute('mkdir -p $(dirname "' .. sitepath .. dst .. '")')
   os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
 end
+local function filesize(src)
+  -- macOS 10.14
+  return io.popen('stat -f "%z" "' .. sitepath .. src .. '"'):read('n')
+end
 local function render(...)
   return caisse.render(...)
 end
@@ -76,7 +80,7 @@ caisse.envadditions.image = function (path, alt, class)
     (class and (' class="' .. class .. '"') or '') ..
     '>'
 end
-caisse.envadditions.file = function (path, wd)
+local function fullpath(path, wd)
   if path:sub(1, 1) == '/' then
     path = path:sub(2)
     wd = {}
@@ -92,9 +96,12 @@ caisse.envadditions.file = function (path, wd)
       wd[#wd + 1] = part
     end
   end
-  local fullpath = table.concat(wd, '/')
-  copyfile(fullpath)
-  return '/bin/' .. fullpath
+  return table.concat(wd, '/')
+end
+caisse.envadditions.file = function (path, wd)
+  path = fullpath(path, wd)
+  copyfile(path)
+  return '/bin/' .. path
 end
 
 local function renderdate(datestr, nolink)
@@ -135,7 +142,7 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
-local markupfnswd -- Working directory for <img ...> and the like
+local markupfnsenvitem  -- Item name of the item currently being processed
 local markupfns
 markupfns = {
   ['-'] = function (line)
@@ -174,9 +181,33 @@ markupfns = {
   img = function (src, alt, class)
     return '<div class="image-container">' ..
       caisse.envadditions.image(
-        caisse.envadditions.file(src, markupfnswd),
+        caisse.envadditions.file(src, 'items/' .. markupfnsenvitem),
         alt, class) ..
       '</div>'
+  end,
+  file = function (src)
+    local item = itemreg[markupfnsenvitem]
+    local fileurl = caisse.envadditions.file(src, 'items/' .. markupfnsenvitem)
+    local size = filesize(fileurl)
+    local sizestring
+    if size < 1024 then
+      sizestring = string.format('%d B', size)
+    elseif size < 1024 * 100 then
+      sizestring = string.format('%.1f KiB', size / 1024)
+    elseif size < 1024 * 1024 then
+      sizestring = string.format('%.0f KiB', size / 1024)
+    elseif size < 1024 * 1024 * 100 then
+      sizestring = string.format('%.1f MiB', size / (1024 * 1024))
+    elseif size < 1024 * 1024 * 1024 then
+      sizestring = string.format('%.0f MiB', size / (1024 * 1024))
+    else
+      sizestring = string.format('%.2f GiB', size / (1024 * 1024 * 1024))
+    end
+    local parts = split(fileurl, '/')
+    local basename = parts[#parts]
+    return '<a class="pastel ' .. item.cat .. '" href="' ..
+      fileurl ..  '"><strong>' .. basename .. '</strong> (' ..
+      sizestring .. ')</a>'
   end,
   h1 = function (text)
     return '<h1>' .. htmlescape(text) .. '</h1>'
@@ -207,10 +238,10 @@ local function renderallitems()
     locals.name = path
     locals.curcat = item.cat
     print(item.cat, caisse.envadditions.tr(locals.title))
-    markupfnswd = 'items/' .. path
+    markupfnsenvitem = path
     renderpage(path, 'item.html', locals)
   end
-  markupfnswd = nil
+  markupfnsenvitem = nil
 end
 
 copyfile('background.svg')

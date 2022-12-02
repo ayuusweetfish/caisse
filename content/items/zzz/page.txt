@@ -16,5 +16,8 @@
 {{contents.zh=}}
 如题
 
+<file cover.jpg> ——封面图
+<file ../sheepdogs/cover.jpg>
+
 {{contents.en=}}
 rt
