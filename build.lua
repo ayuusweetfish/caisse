@@ -172,6 +172,7 @@ markupfns = {
   b = function (text)
     return '<strong>' .. text .. '</strong>'
   end,
+  br = function () return '<br>' end,
   hr = function (class)
     return '<div role="separator"' ..
       (class ~= '' and ' class="' .. class .. '"' or '') ..

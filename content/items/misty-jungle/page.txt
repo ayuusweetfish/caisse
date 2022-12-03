@@ -1,5 +1,5 @@
 {{title.zh=}}岚烟丛林的薄暮至拂晓
-{{intro.zh=}}管弦小乐队的短小奏鸣曲；《作曲与配器》作业
+{{intro.zh=}}管弦小乐队的短小奏鸣曲；《作曲与配器》结课作业
 {{title.en=}}Dusk till Dawn in a Misty Jungle
 {{intro.en=}}Assignment
 
@@ -11,13 +11,14 @@
 第一次正经写管弦的产物。存在一些声部平衡方面的问题，不过还是原样留存啦。
 cy 老师锐评：竖琴演奏员肯定觉得你没招了（掩面
 当时把写了一点的开头拿给友人听，但由于是第一次因而非常胆怯，一个劲声称自己写得“奇奇怪怪”，友人只有一脸疑惑地表示“看上去十分正常”。唉总之还是不能那么畏畏缩缩吧。
-封面是玩 Disco Diffusion 的时候让它画的，可惜好像把提示语弄丢了呜呜。
 
 !<filetable
   <file <= Misty Jungle.mp3> 音频>
   <file <= Misty Jungle.pdf> 乐谱>
   <file <= Misty Jungle.mscz> MuseScore 文档>
 >
+
+封面是玩 Disco Diffusion 的时候让它画的，可惜好像把提示语弄丢了呜呜。
 
 {{contents.en=}}
 rt

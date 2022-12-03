@@ -14,7 +14,9 @@
 {{@ end }}
 <section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
 {{@ date }}
+<section class='item-date'>
   {{ renderdate(date) }}
+</section>
 {{@ end }}
 
 <style>
@@ -31,6 +33,9 @@ div.image-container {
   max-block-size: unset;
   inline-size: 100%;
   max-inline-size: 20em;
+}
+.item-date {
+  margin-block-start: 1em;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
   img.item-banner, .item-contents img {
