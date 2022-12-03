@@ -10,7 +10,14 @@
   {{ page = render('items/' .. name .. '/page.txt') }}
   {{@ page.bannerimg }}
   <div class='item-banner'>
-    {{ image(file(page.bannerimg, 'items/' .. name)) }}
+    {{
+      style = nil
+      if page.bannerimgpos then
+        local x, y = table.unpack(split(page.bannerimgpos, ','))
+        style = 'object-position: ' .. x .. '% ' .. y .. '%'
+      end
+    }}
+    {{ image(file(page.bannerimg, 'items/' .. name), nil, nil, style) }}
     <h1{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</h1>
   </div>
   {{@ end }}
