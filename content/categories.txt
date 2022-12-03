@@ -51,6 +51,9 @@ cats.playful.pagelist = {
   {name = 'medle', dark = false},
   {name = 'ice-hatch', dark = false},
   {name = 'sheepdogs', dark = false},
+  {name = 'fhxl', dark = true},
+  {name = 'aakami', dark = true},
+  {name = 'sunshine', dark = true},
 }
 cats.murmurs.pagelist = {
 --[[

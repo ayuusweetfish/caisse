@@ -1,0 +1,13 @@
+{{title.zh=}}飞花小令
+{{intro.zh=}}游戏
+{{title.en=}}飞花小令
+{{intro.en=}}Game
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,72
+
+{{date=}}2020.24-2021.08
+
+{{contents.zh=}}
+
+{{contents.en=}}

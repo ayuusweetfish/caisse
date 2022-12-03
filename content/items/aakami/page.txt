@@ -1,0 +1,13 @@
+{{title.zh=}}AAKAMI
+{{intro.zh=}}游戏
+{{title.en=}}AAKAMI
+{{intro.en=}}Game
+
+{{bannerimg=}}illustration20.png
+{{bannerimgpos=}}50,80
+
+{{date=}}2019.15
+
+{{contents.zh=}}
+
+{{contents.en=}}

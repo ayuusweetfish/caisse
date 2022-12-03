@@ -1,0 +1,13 @@
+{{title.zh=}}阳光之下
+{{intro.zh=}}游戏
+{{title.en=}}Under Sunshine
+{{intro.en=}}Game
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,90
+
+{{date=}}2019.10-2019.11
+
+{{contents.zh=}}
+
+{{contents.en=}}
