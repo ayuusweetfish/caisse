@@ -4,6 +4,7 @@
 {{intro.en=}}Music from the game “Sheepdogs at Work”.
 
 {{bannerimg=}}../sheepdogs/cover.jpg
+{{bannerimgpos=}}50,28
 
 {{date=}}2021.11
 

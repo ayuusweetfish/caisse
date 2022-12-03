@@ -4,6 +4,7 @@
 {{intro.en=}}A ballad
 
 {{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,35
 
 {{date=}}2021.18, 2021.22
 

@@ -54,6 +54,7 @@ local function split(s, delim)
   t[#t + 1] = s:sub(i)
   return t
 end
+caisse.envadditions.split = split
 
 local inspectimagecache = {}
 local function inspectimage(path)
@@ -66,7 +67,7 @@ local function inspectimage(path)
   inspectimagecache[path] = {w, h}
   return w, h
 end
-caisse.envadditions.image = function (path, alt, class)
+caisse.envadditions.image = function (path, alt, class, style)
   local realpath
   if path:sub(1, 5) == '/bin/' then
     realpath = srcpath .. path:sub(6)
@@ -78,6 +79,7 @@ caisse.envadditions.image = function (path, alt, class)
     ' width=' .. w .. ' height=' .. h ..
     (alt and (' alt="' .. alt .. '"') or '') ..
     (class and (' class="' .. class .. '"') or '') ..
+    (style and (' style="' .. style .. '"') or '') ..
     '>'
 end
 local function fullpath(path, wd)

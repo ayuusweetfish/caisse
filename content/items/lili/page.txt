@@ -10,6 +10,7 @@
   content/lili/cover.jpg
 ]]}}
 {{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,25
 
 {{date=}}2021.11
 

@@ -4,6 +4,7 @@
 {{intro.en=}}A puzzle game. Let sheepdogs guide the sheep into correct sheepfolds.
 
 {{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,28
 
 {{date=}}2021.11
 
