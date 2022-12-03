@@ -1,14 +1,77 @@
-{{title.zh=}}折翼
-{{intro.zh=}}一首歌
+{{title.zh=}}天使折翼
+{{intro.zh=}}一首歌～
 {{title.en=}}Broken Angel Wings
-{{intro.en=}}A song
+{{intro.en=}}A ballad
 
-{{bannerimg=}}../sheepdogs/cover.jpg
+{{bannerimg=}}cover.jpg
 
 {{date=}}2021.18, 2021.22
 
 {{contents.zh=}}
+
+写给勇敢、可爱的栗子同学。
+
+!<filetable
+  <file <= Broken Angel Wings.ogg> 音频>
+  <file <= Broken Angel Wings.pdf> 乐谱>
+>
+
+<hr windy>
+
+Two decades’ time with one year more
+That’s how long an angel has been around for
+Arriving at dawn with the sky getting bright
+Look at this land like never before
+
+<hr cloudy>
+
+Spread the wings of feather and snow
+Oh, how would this miracle ever not glow?
+Fly about the sky, filled with delight
+Play the birds’ song and let melodies flow
+
+<hr cloudy>
+
+Nothing goes on forever,
+but the angel dances and lights up today
+Share the moments of merriment
+in the time for them to stay
+
+<hr cloudy>
+
+To never, never, never, never, never being afraid
+For there always, always, always, always will be the angel wings
+
+<hr cloudy>
+
+In sun and rain, through wind and mist
+Landscapes the angel had witnessed or missed
+With celestial memories from up so high
+But the feathers of glow could no longer persist
+
+<hr cloudy>
+
+On walks of day, in dreams of night
+The angel cried over the broken wings
+Sunk in sorrow, longing to fly
+The angel sang as much as one could sing
 …
+
+<hr cloudy>
+
+Stalk a bird, fly a kite
+Roam in the sunshine along a strand
+Join the campfire and be the guide
+The angel’s dance goes on hand in hand
+
+<hr cloudy>
+
+Maybe never, never, never, never back are the broken wings
+But there’s so much, so much, so much, so much to see on this wonderland
+Maybe never, never, never, never back are the broken wings
+But there’s so much, so much, so much, so much to see on this wonderland
+
+<hr windy>
 
 {{contents.en=}}
 …

@@ -40,8 +40,8 @@ end
 cats.music.pagelist = {
   {name = 'leaving', dark = true},
   {name = 'bellflowers', dark = true},
-  {name = 'wings'},
-  {name = 'sheepdogs-job'},
+  {name = 'wings', dark = true},
+  {name = 'sheepdogs-work'},
   {name = 'lili', dark = true},
   {name = 'zzz', dark = true},
   {name = 'misty-jungle', dark = true},

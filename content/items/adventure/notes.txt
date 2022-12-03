@@ -1,0 +1,1 @@
+convert ~/Downloads/Leaving/Tan1.jpg -scale 200% -threshold 95% -morphology Dilate Disk:1 -scale 50% -blur 1x1
