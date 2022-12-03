@@ -8,32 +8,17 @@
 {{date=}}2022.13
 
 {{contents.zh=}}
-哈哈<link fireflies>游戏配乐。<^=' <span>'>哈哈<^=' </span>'>
-一些链接，比如<link medle>、<link sheepdogs-job>、<link lili>。还有<extlink https://medle.0-th.art/ 外链>以及<rawlink /lili 普通链接<b 这个真的有用吗>>
+<link fireflies 《流萤花语》>游戏配乐。
 
-达·芬奇 Leonardo da Vinci 曾经说过，大胆和坚定的决心能够抵得上武器的精良。这似乎解答了我的疑惑。我们一般认为，抓住了问题的关键，其他一切则会迎刃而解。叔本华在不经意间这样说过，普通人只想到如何度过时间，有才能的人设法利用时间。这似乎解答了我的疑惑。屠格涅夫说过一句富有哲理的话，你想成为幸福的人吗？但愿你首先学会吃得起苦。这句话语虽然很短，但令我浮想联翩。<extlink https://suulnnka.github.io/BullshitGenerator/index.html?%E4%B8%BB%E9%A2%98=%E7%81%B0%E5%8C%96%E8%82%A5%E6%8C%A5%E5%8F%91%E4%BC%9A%E4%B8%8D%E4%BC%9A%E5%8F%91%E9%BB%91&%E9%9A%8F%E6%9C%BA%E7%A7%8D%E5%AD%90=1 灰化肥挥发会不会发黑>，发生了会如何，不发生又会如何。雷锋曾经说过，自己活着，就是为了使别人过得更美好。我希望诸位也能好好地体会这句话。我认为，伏尔泰曾经提到过，不经巨大的困难，不会有伟大的事业。带着这句话，我们还要更加慎重的审视这个问题：灰化肥挥发会不会发黑因何而发生？灰化肥挥发会不会发黑因何而发生？每个人都不得不面对这些问题。在面对这种问题时，带着这些问题，我们来审视一下灰化肥挥发会不会发黑。
+!<filetable
+  <file Bellflowers_Wonderland.ogg 梦游铃草间>
+>
 
-test <b test> <b te<b test>est> <b te<b te<pre= test>est>est> test
+<hr>
 
-<<<pre=
-local <b>function</b> <i>shallowdup</i>(t)
-  local r = {}
-  for k, v in pairs(t) do r[k] = v end
-  return r
-end
->>>
+Game jam 的时候没来得及把音乐和声音加上，一直觉得是比较大的遗憾。寒假结束之后一直想着抽空做完，但其实自己并不愿意面对——“做完就真的结束了”的不舍，让本就无可救药的完美主义雪上加霜；加上后来研究生复试、乐团演出、毕业论文、社团项目等许多事情让自己忙了起来，于是确实不得不暂时搁置了。
 
-如题 <b <<<=EOF <<>>EOF>>>>
-这里有<b 粗体>哦
-链接：<link  fire\flies  haha  ha<<b bold right~> and <b bold again>>>>
-ha-space<<=  >\\<>>ha\
-
-!<hr>
-
-链接：<link <= fire<flies yes >
-  haha  ha<<b bold right~> and <<b bold again>>>>>
-
-<b        <^= a  sd<> a  b<<^= c <^= d>cd>>c  ef >
+直到暑假回家才决定重拾这项创作，解开这个心结。在同一个空间揣摩着不久前的心境，回想着被叫进手术室之前浮现在脑海里的、一直觉得是“猫猫托付给自己的”短小旋律，以及十年来与她一起创造的五彩斑斓的回忆，好像我们还像曾经一样一起住在这个家——把内心涌动的这一切记录了下来。99 个小节好像咕哝着永远不会结束的梦话，游戏里的爱莉丝也永远可以在孤单时来这片森林里漫游呀。
 
 {{contents.en=}}
 rt

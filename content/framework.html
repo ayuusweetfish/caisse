@@ -384,6 +384,15 @@ ul {
   padding-inline-start: 1.5em;
   list-style: '–   ';
 }
+
+blockquote {
+  margin: -0.1em 2em -0.1em 1em;
+  padding: 0.6em 1em;
+  border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{val1}}%);
+  background: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 4%);
+}
+blockquote *:first-child { margin-block-start: 0; }
+blockquote *:last-child { margin-block-end: 0; }
 </style>
 
 <script>

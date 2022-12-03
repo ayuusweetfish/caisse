@@ -36,6 +36,7 @@ local function render(s, fns)
   fns[''] = fns[''] or function (s) return s end  -- for <= ...>
   fns['-'] = fns['-'] or function (s) return s .. '\n' end
   fns['^'] = fns['^'] or function (s) return s end
+  fns['~'] = fns['~'] or function (s) return render(s, fns) end
   local linetransform = fns['-']
   local texttransform = fns['^']
   local allitems = {}
