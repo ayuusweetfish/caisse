@@ -249,6 +249,9 @@ markupfns = {
   cen = function (text)
     return '<p style="text-align: center">' .. text .. '</p>'
   end,
+  blockquote = function (text)
+    return '<blockquote>' .. text .. '</blockquote>'
+  end,
   kao = function (text)
     local function fxhash(s)
       local h = 0
