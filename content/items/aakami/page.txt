@@ -1,5 +1,5 @@
 {{title.zh=}}AAKAMI
-{{intro.zh=}}游戏
+{{intro.zh=}}射击游戏：小红帽与大灰狼，可乐椰奶和咖啡
 {{title.en=}}AAKAMI
 {{intro.en=}}Game
 
@@ -9,5 +9,18 @@
 {{date=}}2019.15
 
 {{contents.zh=}}
+BOOOM! The 3rd GameShell Game Jam 队伍“未来网吧”作品。
+未来动漫・游戏技术兴趣团队组队参加的 game jam。主题是“SHIFT”，游戏对此的诠释是主角可以在小红帽与大灰狼之间切换（shift）；被异色子弹伤害，但是可以吸收同色子弹补充弹药。自己主要负责了程序。
+
+!<filetable
+  <file AAKAMI.love LOVE2D 游戏包>
+>
+
+敌人是可×可乐、百×可乐、×树椰汁和星×克，提供道具的是自动售货机，好喜欢这个设定！
+
+<hr>
+主办方机核给每个队伍分配了一台开发测试用的 GameShell。<link https://www.clockworkpi.com/gameshell GameShell> 是虚假（x）的复古掌机，320×240 的屏幕下是十分完整的现代计算机系统。图中是当时珍稀的影像留存，是之前做的一个音游播放器移植到上面的效果。
+!<img IMG_20190825_181704.jpg>
+但是它的显卡好像比想象中菜一点，在电脑上流畅运行的像素画风游戏放在上面只有 2 帧的帧率，后来想了想加上了 sprite batch 的优化，居然回到了 50 帧以上，快乐。
 
 {{contents.en=}}

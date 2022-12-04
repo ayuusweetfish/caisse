@@ -373,9 +373,6 @@ end
 registeritem('index', 'home')
 registeritem('about', 'home')
 registeritem('dates', 'home')
-registeritem('sundry', 'sundry', {
-  title = caisse.envadditions.tr(cats.sundry.longtitle) or cats.sundry.title
-})
 registeritem('stray', 'stray', {
   title = caisse.envadditions.tr(cats.stray.longtitle) or cats.stray.title
 })
@@ -384,3 +381,4 @@ renderallitems()
 renderpage('music', 'bannerlist.html', { curcat = 'music' })
 renderpage('playful', 'bannerlist.html', { curcat = 'playful' })
 renderpage('murmurs', 'bannerlist.html', { curcat = 'murmurs' })
+renderpage('sundry', 'bannerlist.html', { curcat = 'sundry' })
