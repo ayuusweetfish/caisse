@@ -4,7 +4,7 @@
     <p>{{ intro }}</p>
   {{@ end }}
 </header>
-{{@ bannerimg }}
+{{@ bannerimg and bannerimginpage ~= 'false' }}
   <div class='image-container'>
     {{ image(file(bannerimg, 'items/' .. name), nil, 'item-banner') }}
   </div>
