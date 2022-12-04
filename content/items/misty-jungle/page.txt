@@ -22,3 +22,9 @@ cy 老师锐评：竖琴演奏员肯定觉得你没招了（掩面
 
 {{contents.en=}}
 rt
+
+!<filetable
+  <file <= Misty Jungle.mp3> Audio>
+  <file <= Misty Jungle.pdf> Score>
+  <file <= Misty Jungle.mscz> MuseScore document>
+>
