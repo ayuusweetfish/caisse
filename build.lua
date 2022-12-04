@@ -18,10 +18,21 @@ local function shallowdup(t)
 end
 
 local function writefile(file, s) io.open(file, 'w'):write(s) end
+-- `filepath` is an absolute path without the leading slash
+local function ensuredir(filepath)
+  os.execute('mkdir -p $(dirname "' .. sitepath .. filepath .. '")')
+end
+-- `src` is an absolute path without the leading slash
 local function copyfile(src)
-  local dst = 'bin/' .. src
-  os.execute('mkdir -p $(dirname "' .. sitepath .. dst .. '")')
+  local dst
+  if src:find('^items/') then
+    dst = src:sub(7)
+  else
+    dst = 'bin/' .. src
+  end
+  ensuredir(dst)
   os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  return dst
 end
 local function filesize(src)
   -- macOS 10.14
@@ -33,7 +44,9 @@ end
 local function renderpage(savepath, templatepath, locals)
   locals = locals or {}
   local contents = render(templatepath, locals)
-  writefile(sitepath .. savepath,
+  local filepath = savepath .. '/index.html'
+  ensuredir(filepath)
+  writefile(sitepath .. filepath,
     render('framework.html', {
       savepath = savepath,
       title = locals.title,
@@ -81,11 +94,7 @@ local function ffprobe(path, stream, entries)
 end
 caisse.envadditions.image = function (path, alt, class, style)
   local realpath
-  if path:sub(1, 5) == '/bin/' then
-    realpath = srcpath .. path:sub(6)
-  else
-    realpath = sitepath .. path
-  end
+  realpath = sitepath .. path
   local w, h = inspectimage(realpath)
   return '<img src="' .. path .. '"' ..
     ' width=' .. w .. ' height=' .. h ..
@@ -114,8 +123,7 @@ local function fullpath(path, wd)
 end
 caisse.envadditions.file = function (path, wd)
   path = fullpath(path, wd)
-  copyfile(path)
-  return '/bin/' .. path
+  return '/' .. copyfile(path)
 end
 
 local function renderdate(datestr, nolink)
