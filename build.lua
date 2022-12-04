@@ -67,6 +67,18 @@ local function inspectimage(path)
   inspectimagecache[path] = {w, h}
   return w, h
 end
+local function ffprobe(path, stream, entries)
+  local cmd = 'ffprobe' ..
+    ' -v error -hide_banner -print_format flat -of default=noprint_wrappers=1' ..
+    ' -select_streams ' .. stream .. ' -show_entries ' .. entries ..
+    ' "' .. path .. '"'
+  local results = {}
+  for line in io.popen(cmd):lines() do
+    local key, value = table.unpack(split(line, '='))
+    if key ~= '' then results[key] = value end
+  end
+  return results
+end
 caisse.envadditions.image = function (path, alt, class, style)
   local realpath
   if path:sub(1, 5) == '/bin/' then
@@ -144,24 +156,80 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
--- %s/, /,\r/g
--- v/0x[0-9a-f]\+/d
--- %s/^.*0x\([0-9a-f]\+\).*$/\1/g
--- %!sort | uniq
+
+local function sizestring(size)
+  if size < 1024 then
+    return string.format('%d B', size)
+  elseif size < 1024 * 100 then
+    return string.format('%.1f KiB', size / 1024)
+  elseif size < 1024 * 1024 then
+    return string.format('%.0f KiB', size / 1024)
+  elseif size < 1024 * 1024 * 100 then
+    return string.format('%.1f MiB', size / (1024 * 1024))
+  elseif size < 1024 * 1024 * 1024 then
+    return string.format('%.0f MiB', size / (1024 * 1024))
+  else
+    return string.format('%.2f GiB', size / (1024 * 1024 * 1024))
+  end
+end
+local function lengthstring(seconds)
+  if seconds < 60 * 60 then
+    return string.format('%02d:%02d', seconds // 60, seconds % 60)
+  else
+    return string.format('%d:%02d:%02d',
+      seconds // 3600, (seconds % 3600) // 60, seconds % 60)
+  end
+end
+
+local filetypes = {
+  -- Music and audio
+  ogg = 'audio', mp3 = 'audio', wav = 'audio',
+  mid = 'musicnotes', midi = 'musicnotes',
+  mscz = 'score',
+  -- Images
+  png = 'image', jpg = 'image', jpeg = 'image', gif = 'image', webp = 'image',
+  -- Video
+  mp4 = 'video', ogv = 'video', webm = 'video',
+  -- Text, code, and documents
+  txt = 'document', pdf = 'document',
+  c = 'code', h = 'code', lua = 'code', js = 'code',
+}
 local filetypeicons = {
   [''] = 0x1f4e6,
-  -- Music and audio
-  ogg = 0x1f3a7, mp3 = 0x1f3a7, wav = 0x1f3a7,
-  mid = 0x1f3b6, midi = 0x1f3b6,
-  mscz = 0x1f3bc,
-  -- Images
-  png = 0x1f5bc, jpg = 0x1f5bc, jpeg = 0x1f5bc, gif = 0x1f5bc, webp = 0x1f5bc,
-  -- Video
-  mp4 = 0x1f39e, ogv = 0x1f39e, webm = 0x1f39e,
-  -- Text, code, and documents
-  txt = 0x1f4c3, pdf = 0x1f4c3,
-  c = 0x1f47e, h = 0x1f47e, lua = 0x1f47e, js = 0x1f47e,
+  audio = 0x1f3a7,
+  musicnotes = 0x1f3b6,
+  score = 0x1f3bc,
+  image = 0x1f5bc,
+  video = 0x1f39e,
+  document = 0x1f4c3,
+  code = 0x1f47e,
 }
+local filetypeextrainfo = {
+  audio = function (path)
+    local info = ffprobe(path, 'a:0', 'stream=duration')
+    return lengthstring(math.floor(tonumber(info.duration)))
+  end,
+  video = function (path)
+    local info = ffprobe(path, 'v:0', 'stream=width,height,duration')
+    return lengthstring(math.floor(tonumber(info.duration))) .. ', ' ..
+      info.width .. 'x' .. info.height
+  end,
+  ['.pdf'] = function (path)
+    local npages
+    local cmd = 'pdfinfo "' .. path .. '"'
+    for line in io.popen(cmd):lines() do
+      if line:find('^Pages:') then
+        npages = tonumber(line:match('[0-9]+'))
+        break
+      end
+    end
+    if npages then return tostring(npages) ..
+      (caisse.lang == 'en' and (npages == 1 and ' page' or ' pages')
+       or ' 页')
+    end
+  end,
+}
+
 local markupfnsenvitem  -- Item name of the item currently being processed
 local markupfns
 markupfns = {
@@ -213,31 +281,21 @@ markupfns = {
     local item = itemreg[markupfnsenvitem]
     local fileurl = caisse.envadditions.file(src, 'items/' .. markupfnsenvitem)
     local size = filesize(fileurl)
-    local sizestring
-    if size < 1024 then
-      sizestring = string.format('%d B', size)
-    elseif size < 1024 * 100 then
-      sizestring = string.format('%.1f KiB', size / 1024)
-    elseif size < 1024 * 1024 then
-      sizestring = string.format('%.0f KiB', size / 1024)
-    elseif size < 1024 * 1024 * 100 then
-      sizestring = string.format('%.1f MiB', size / (1024 * 1024))
-    elseif size < 1024 * 1024 * 1024 then
-      sizestring = string.format('%.0f MiB', size / (1024 * 1024))
-    else
-      sizestring = string.format('%.2f GiB', size / (1024 * 1024 * 1024))
-    end
     local parts = split(fileurl, '/')
     local basename = parts[#parts]
     local dotpos = basename:find('.', 1, true)
     local ext = (dotpos == nil and '' or basename:sub(dotpos + 1))
-    local filetypeicon = filetypeicons[ext] or filetypeicons['']
+    local filetype = filetypes[ext] or ''
+    local icon = filetypeicons[filetype]
+    local extrainfo = filetypeextrainfo[filetype] or filetypeextrainfo['.' ..ext]
+    if extrainfo then extrainfo = extrainfo(sitepath .. fileurl) end
     return '<tr><td>' .. text .. '</td>' ..
       '<td><a class="pastel ' .. item.cat .. '" href="' ..
       fileurl ..  '">' ..
-      '<span class="little-icons">&#x' .. string.format('%x', filetypeicon) ..
+      '<span class="little-icons">&#x' .. string.format('%x', icon) ..
       ';</span><strong class="file-table-name">' .. basename .. '</strong>(' ..
-      sizestring .. ')</a></td>'
+      sizestring(size) ..
+      (extrainfo and (', ' .. extrainfo) or '') .. ')</a></td>'
   end,
   h1 = function (text)
     return '<h1>' .. htmlescape(text) .. '</h1>'
