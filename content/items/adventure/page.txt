@@ -15,7 +15,7 @@
 !<cen “啊好的好的谢谢！”>
 <hr cloudy>
 
-……
+!<cen ……>
 !<img Tan2.png <= > vertical>
 !<cen ……终于该道个别了吗。>
 <hr windy>
@@ -78,6 +78,8 @@
 <hr cloudy>
 !<cen 几天前的两只小可爱合影！>
 !<img IMG_20221126_183545.jpg <= > vertical>
+
+一些音乐：<link leaving>
 
 {{contents.en=}}
 <kao ₍˄·͈༝·͈˄*₎◞ ̑̑>

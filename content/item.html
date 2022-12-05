@@ -38,6 +38,19 @@ div.image-container {
   inline-size: 50%;
   max-inline-size: 15em;
 }
+.item-contents img.float-end {
+  inline-size: auto;
+  max-inline-size: 45%;
+  float: right; /* inline-end */
+  margin-inline-start: 1em;
+}
+@media (max-width: 115vh), (max-width: 48rem) {
+  .item-contents img.float-end {
+    inline-size: 80%;
+    float: unset;
+    margin-inline-start: inherit;
+  }
+}
 .item-date {
   margin-block-start: 1em;
 }
