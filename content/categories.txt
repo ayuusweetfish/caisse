@@ -66,17 +66,17 @@ cats.murmurs.pagelist = {
 }
 cats.sundry.pagelist = {
   {name = 'adventure'},
+  {name = 'patchwork'},
+  {name = 'daytime-cat'},
+  {name = 'tilde', dark = true},
 --[[
   --{name = 'common-sky'},
-  {name = 'patchwork'},
   {name = 'maylove'},
-  {name = 'tilde'},
 ]]
 }
 cats.stray.pagelist = {
 --[[
   {name = 'ice-rink'},
-  {name = 'daytime-cat'},
   {name = 'sound-course-21'},
   {name = 'sound-course-20'},
   {name = 'rabbit-hole'},

@@ -1,0 +1,19 @@
+{{title.zh=}}Patchwork Girl
+{{intro.zh=}}绿野仙踪（Wizard of Oz）用户测试软件原型开发工具包
+{{title.en=}}Patchwork Girl
+{{intro.en=}}
+
+{{bannerimg=}}illust.png
+{{bannerimgpos=}}50,72
+{{bannerimginpage=}}false
+
+{{date=}}2022.17
+
+{{contents.zh=}}
+Patchwork Girl “拼布女孩”是针对绿野仙踪（Wizard of Oz）用户测试方法的工具包，旨在提高前期测试所用的软件原型的开发效率。
+这个项目主要面向正在编写绿野仙踪法实验中软件原型的开发者，他们所编制的程序需要由人类观察者来手动远程操控。借助此工具包，可以相对容易地实现这种远程控制功能。
+!<img illust.png 工作原理示意图：实验参与者操作的软件以及一旁的人类观察者使用的 web 界面都通过 WebSocket 与一台服务器通信。观察者通过界面上的按钮和滑动条发出远程控制的指令，参与者的软件接收这些信号并执行对应的改变，实现远程控制的功能。>
+Patchwork Girl 定义了一个基于 WebSocket 的应用层协议，并提供了一个带有 web 界面的服务端程序。被控制的程序可以使用任何语言或程序库编写，它们只要按标准流程向服务器建立 WebSocket 连接并编解码其上传输的简单 JSON 数据，就可以获得一个远程控制的界面，提供给实验操作人员使用。
+具体可参见<link https://github.com/ayuusweetfish/PatchworkGirl 源码仓库>中的 README 说明文档。
+
+{{contents.en=}}
