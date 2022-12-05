@@ -69,6 +69,14 @@ local function split(s, delim)
 end
 caisse.envadditions.split = split
 
+local function fxhash(s)
+  local h = 0
+  for i = 1, #s do
+    h = ((h << 5) ~ string.byte(s, i)) * 0x517cc1b727220a95
+  end
+  return string.format('%016x', h)
+end
+
 local inspectimagecache = {}
 local function inspectimage(path)
   if inspectimagecache[path] ~= nil then
@@ -269,7 +277,15 @@ markupfns = {
       .. '</a>'
   end,
   link = function (path, text)
-    local item = itemreg[path]
+    local itemname = path
+    local anchor
+    local hashpos = path:find('#')
+    if hashpos ~= nil then
+      itemname = path:sub(1, hashpos - 1)
+      anchor = path:sub(hashpos + 1)
+      if text == '' then text = anchor end
+    end
+    local item = itemreg[itemname]
     if not item then return markupfns.extlink(path, text ~= '' and text or path) end
     if text == '' then text = caisse.envadditions.tr(item.locals.title) end
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
@@ -305,8 +321,10 @@ markupfns = {
       sizestring(size) ..
       (extrainfo and (', ' .. extrainfo) or '') .. ')</a></td>'
   end,
-  h1 = function (text)
-    return '<h1>' .. htmlescape(text) .. '</h1>'
+  h1 = function (text, anchor)
+    return '<h1' ..
+      (anchor and (' id="' .. anchor .. '"') or '') ..
+      '>' .. htmlescape(text) .. '</h1>'
   end,
   list = function (contents)
     return '<ul>' .. contents .. '</ul>'
@@ -324,13 +342,6 @@ markupfns = {
     return renderdate(datestr)
   end,
   kao = function (text)
-    local function fxhash(s)
-      local h = 0
-      for i = 1, #s do
-        h = ((h << 5) ~ string.byte(s, i)) * 0x517cc1b727220a95
-      end
-      return string.format('%016x', h)
-    end
     return '<span class="kaomoji">' ..
       io.open('misc/kaomoji/gen/moji-' .. fxhash(text) .. '.svg'):read('a') ..
       '</span>'
