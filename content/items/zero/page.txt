@@ -1,0 +1,95 @@
+{{title.zh=}}“从零开始”系列
+{{intro.zh=}}迷路乐曲收容处，不定期更新
+{{title.en=}}“Zero” Series
+{{intro.en=}}
+
+{{bannerimg=}}../tilde/screenshot.png
+
+{{date=}}2017.24, 2020.06
+
+{{contents.zh=}}
+写的一些奇奇怪怪零零碎碎的曲子，或许更像是黑历史留存。
+
+<h1 Adornment>
+<date 2017.24>
+
+高中最后一个寒假终于决定开始认真地完整制作乐曲，于是拿着 LMMS 自带的合成器和一些从 <link https://trisamples.com/ TriSamples> 拿到的架子鼓采样拼凑出了一首电子音乐。
+
+!<filetable <file Adornment.ogg Adornment>>
+
+<h1 Concoction>
+<date 2018.04>
+
+Coursera 课程<link https://www.coursera.org/learn/audio-signal-processing 《音乐应用的音频信号处理》>结课作业。作业要求从 <link freesound.org Freesound> 上寻找声音，并使用课程提供的 Python 软件包进行信号处理操作（如频谱拆分、移调等），在此基础上创作一首乐曲。
+提交作业原标题为《Kitchraensform》。说明文档中解释了制作过程，原始文件包包含了音频素材与所用的程序代码。
+
+!<filetable
+  <file Concoction.ogg Concoction>
+  <file Concoction_notes.txt 提交作业说明>
+  <file Concoction_a10-a.zip 提交作业原始文件包>
+>
+
+<h1 Epigone>
+<date 2018.06>
+
+Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫扎特一样作曲：古典音乐作曲概论》>结课作业。作业内容是为钢琴与一件独奏乐器创作 20—30 小节的乐曲，并对音乐的和声与织体作了一定的限制。算是戴着镣铐跳舞嘛？
+
+!<filetable
+  <file Epigone.mp3 Epigone — 音频>
+  <file Epigone.pdf Epigone — 乐谱>
+>
+
+<h1 Frivolity>
+<date 2019.13>
+
+使用 <link https://warmplace.ru/soft/pixitracker/ PixiTracker> 制作的一段 chiptune 风格乐曲。
+
+!<filetable
+  <file Frivolity.ogg Frivolity — 音频>
+  <file Frivolity.piximod Frivolity — PixiTracker 序列>
+>
+
+<h1 Gradus>
+<date 2018.18, 2019.12>
+
+尝试为小游戏 <link gradatim> 写配乐，结果没来得及写完。过了好长时间才终于补完了，但还是好单薄啊 <= (/- <)>
+
+!<filetable
+  <file Gradus.ogg Gradus — 预览音频>
+  <file Gradus.mscz Gradus — MuseScore 2 乐谱文档>
+>
+
+<h1 Heptadekka>
+<date 2019.16>
+
+2019 年参与了建国 70 周年庆典的广场合唱活动，排练临近结束、正式活动即将到来时用 <link tilde>把几个月来唱了无数遍的歌们编进混成曲，活动结束后在回家的火车上完成了制作。
+
+!<filetable
+  <file Heptadekka.ogg Heptadekka — 音频>
+  <file Heptadekka.org Heptadekka — Organya 序列>
+>
+
+!<img Heptadekka.png>
+
+那时一切好像都是那么美好，未来是那么光明；一千个日夜后的现在或许也没有那么糟，理想与信仰也都还在，只是有些事情不再敢去全身心地相信了。
+
+!<img IMG_20190929_125506.jpg>
+
+<h1 Intersection>
+<date 2020.04>
+
+或许是一些人生转折？网课期间在自己的小房间对着窗外的夕阳写下的曲子。
+
+!<filetable
+  <file Intersection.ogg Intersection — 音频>
+  <file Intersection.mmpz Intersection — LMMS 工程>
+>
+
+<h1 Juvenile>
+<date 2020.06>
+
+不想长大呀——
+
+!<filetable <file Juvenile.ogg Juvenile>>
+
+{{contents.en=}}

@@ -320,6 +320,9 @@ markupfns = {
   blockquote = function (text)
     return '<blockquote>' .. text .. '</blockquote>'
   end,
+  date = function (datestr)
+    return renderdate(datestr)
+  end,
   kao = function (text)
     local function fxhash(s)
       local h = 0

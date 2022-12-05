@@ -1,0 +1,30 @@
+* Instead of a single sound, I attached an archive containing detailed description of creation, all sound extractions, and the LMMS project. Feel free to take a look! :) The final piece is [a10-a.wav] in the archive.
+
+I decided to create a mix of random sounds at home, esp. in the kitchen and in the morning.
+
+After searching with tags (tried 'home', 'kitchen' etc.) and filters on Freesound, I selected a fairly small number of sounds, including both harmonic and stochastic ones:
+https://freesound.org/people/samplecat/sounds/11587/ (Microwave oven 'ding' sound)
+https://freesound.org/people/lorenzosu/sounds/49435/ (Boiling and eruption sound of a coffee machine)
+https://freesound.org/people/joedeshon/sounds/78562/ (Alarm clock)
+https://freesound.org/people/jakobhandersen/sounds/133824/ (Sounds of plates and cups)
+https://freesound.org/people/ultradust/sounds/167510/ (Sounds of frying food)
+
+To begin with, downloaded sounds were converted to mono for use in sms-tools.
+
+To create a rhythm pattern that lay the fundamental of the piece, I wrote a Python script to procedurally manipulate the dynamics of the food's sound by multiplying different segments with different coefficients, whose outcome appears to be a sequence of beats. The script and the output are included in the archive.
+
+After that I extracted the first few seconds from the alarm's sound. With sms-tools, I applied an analysis and transformation with HPS model. First I analyzed the frequency spectrum with Audacity and it shows the fundamental frequency is around 800 Hz, thus a window size of 44100*6/800=331 samples should be sufficient. I set it to be 401, an odd positive number slightly greater. Since the clock's sound has lots of details on the high end, I tuned other parameters to extreme in order to capture as much as possible. The transformation involves a frequency stretch, a frequency scale and a time scale, ending at different times to generate a 'distorted-to-normal' evolvement. Please refer to script.md attached for exact parameters.
+
+Also, I cut the alarm's sound into exactly one 'ding' and removed the following sounds of ticks in Audacity. This sound is harmonic and will be used as the lead instrument with frequency scaling. Several other extractions on the plates' sound has been done, creating the percussion elements in the piece.
+
+I would like to add some ambient elements into the piece, so I looked at the coffee machine's boiling sound. I carried out another transformation with STFT Morph model, combining this boiling sound with the alarm's ringing. I tuned the balance factor to be 0.7 (similar to the latter) so the result sounds much like an alarm, but contains features of boiling as well. I randomly inserted this sample into the piece.
+
+There's another longer extraction from the same coffee machine sound with fade-in and fade-out effects (direct multiplication on the waveform) applied in Audacity and randomly inserted as well.
+
+As for the microwave 'ding', I decided to just put it at the very end of the piece.
+
+Finally I mixed all the sounds obtained before in LMMS to create a music piece. With frequency scaling transformations implemented inside LMMS, I created a melody with the aforementioned alarm's extraction on top of the frying food's beats and included other samples obtained before. The melodies and percussions are rather random, the sound misses a lot on the lower end, but that's super fun!
+
+* Note: For the sake of simplicity and productivity, some of the pitch scaling transformations (implemented by waveform stretching with no analysis models) and mixing work are done in LMMS. No other effect (no panning either) has been applied to the sounds, hence no other models and transformations are involved.
+
+I'd like to thank Prof Xavier Serra and the course team for providing such a fantastic 10-week experience, and all the people, hardware, software and tools that have made this ever possible. Finally, thank you for reading through all of this and listening! Hope this entertains you as well > <
