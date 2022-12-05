@@ -338,6 +338,9 @@ markupfns = {
   blockquote = function (text)
     return '<blockquote>' .. text .. '</blockquote>'
   end,
+  clearfloat = function ()
+    return '<div style="clear: both"></div>'
+  end,
   date = function (datestr)
     return renderdate(datestr)
   end,
