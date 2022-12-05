@@ -1,12 +1,12 @@
 {{{
 cats = {
--- name        hue  sat  v1  v2
-  {'home',    { 28, 100, 43, 89}},
-  {'music',   {282, 100, 45, 90}},
-  {'playful', { 40, 100, 38, 84}},
-  {'murmurs', {204, 100, 40, 90}},
-  {'sundry',  {163,  85, 35, 89}},
-  {'stray',   { 80,  30, 45, 85}},
+-- name          hue  sat  v1  v2
+  {'home',      { 28, 100, 43, 89}},
+  {'music',     {282, 100, 45, 90}},
+  {'playful',   { 40, 100, 38, 84}},
+  {'murmurs',   {204, 100, 40, 90}},
+  {'potpourri', {163,  85, 35, 89}},
+  {'pile',      { 80,  30, 45, 85}},
 }
 for i = 1, #cats do
   local name, tint = table.unpack(cats[i])
@@ -19,22 +19,22 @@ end
 {{cats.music.title.zh=}}八音盒
 {{cats.playful.title.zh=}}游乐园
 {{cats.murmurs.title.zh=}}梦话集
-{{cats.sundry.title.zh=}}杂物堆
-{{cats.stray.title.zh=}}涂鸦板
+{{cats.potpourri.title.zh=}}百花篮
+{{cats.pile.title.zh=}}碎石堆
 
 {{cats.home.title.en=}}Home
 {{cats.music.title.en=}}Music
 {{cats.playful.title.en=}}Playful
 {{cats.murmurs.title.en=}}Murmurs
-{{cats.sundry.title.en=}}Sundry
-{{cats.stray.title.en=}}Stray
+{{cats.potpourri.title.en=}}Sundry
+{{cats.pile.title.en=}}Stray
 
 {{cats.home.longtitle.en=}}Home
 {{cats.music.longtitle.en=}}Music Pieces
 {{cats.playful.longtitle.en=}}Playful Pieces
 {{cats.murmurs.longtitle.en=}}Murmur Pieces
-{{cats.sundry.longtitle.en=}}Sundry Pieces
-{{cats.stray.longtitle.en=}}Stray Pieces
+{{cats.potpourri.longtitle.en=}}Sundry Pieces
+{{cats.pile.longtitle.en=}}Stray Pieces
 
 {{{
 cats.music.pagelist = {
@@ -64,7 +64,7 @@ cats.murmurs.pagelist = {
   {name = 'inner-prod'},
   {name = 'hello'},
 }
-cats.sundry.pagelist = {
+cats.potpourri.pagelist = {
   {name = 'adventure'},
   {name = 'patchwork'},
   {name = 'daytime-cat'},
@@ -74,7 +74,7 @@ cats.sundry.pagelist = {
   {name = 'maylove'},
 ]]
 }
-cats.stray.pagelist = {
+cats.pile.pagelist = {
 --[[
   {name = 'ice-rink'},
   {name = 'sound-course-21'},
