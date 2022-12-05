@@ -312,7 +312,7 @@ markupfns = {
     return '<ul>' .. contents .. '</ul>'
   end,
   li = function (text)
-    return '<li>' .. htmlescape(text) .. '</li>'
+    return '<li>' .. text .. '</li>'
   end,
   cen = function (text)
     return '<p style="text-align: center">' .. text .. '</p>'
