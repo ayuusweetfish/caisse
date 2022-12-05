@@ -68,6 +68,7 @@ cats.potpourri.pagelist = {
   {name = 'adventure'},
   {name = 'patchwork'},
   {name = 'daytime-cat'},
+  {name = 'rabbit-hole', dark = true},
   {name = 'tilde', dark = true},
 --[[
   --{name = 'common-sky'},
