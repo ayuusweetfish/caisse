@@ -70,12 +70,15 @@ cats.potpourri.pagelist = {
   {name = 'daytime-cat'},
   {name = 'rabbit-hole', dark = true},
   {name = 'tilde', dark = true},
+  {name = 'zero'},
 --[[
   --{name = 'common-sky'},
   {name = 'maylove'},
 ]]
 }
 cats.pile.pagelist = {
+  {name = 'ne-er-do-well'},
+  {name = 'gradatim'},
 --[[
   {name = 'ice-rink'},
   {name = 'sound-course-21'},
@@ -84,8 +87,6 @@ cats.pile.pagelist = {
   {name = 'define-21'},
   {name = 'mikabox'},
   {name = 'bmflat'},
-  {name = 'zero'},
-  {name = 'ne-er-do-well'},
 ]]
 }
 }}}

@@ -1,0 +1,16 @@
+{{title.zh=}}一条咸鱼的自我救赎
+{{intro.zh=}}合作整活歌曲
+{{title.en=}}Confession of a Ne'er-do-well
+{{intro.en=}}
+
+{{date=}}2019.11, 2022.08
+
+{{contents.zh=}}
+
+<filetable
+  <file lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf 乐谱>
+  <file instr_CONFESSION_OF_A_NE'ER_DO_WELL.mp3 预览音频>
+  <file instr_CONFESSION_OF_A_NE'ER_DO_WELL.mid 预览音频 MIDI>
+>
+
+{{contents.en=}}

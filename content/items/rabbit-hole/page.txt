@@ -6,7 +6,7 @@
 {{bannerimg=}}cover.jpg
 {{bannerimginpage=}}false
 
-{{date=}}2021.20
+{{date=}}2021.18, 2021.20
 
 {{contents.zh=}}
 这是《计算机图形学基础》与《计算机动画的算法与技术》两门课的课程作业集合，程序和实验报告都发布在 <link https://github.com/ayuusweetfish/graphics-lab-THSS GitHub>。
