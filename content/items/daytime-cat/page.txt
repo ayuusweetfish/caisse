@@ -3,18 +3,17 @@
 {{title.en=}}Daytime Cat
 {{intro.en=}}A unique cat that does not sleep by daylight.
 
-{{bannerimg=}}preview.png
+{{bannerimg=}}cover.png
 
 {{date=}}2021.23
 
 {{contents.zh=}}
-Trijam #{{150 + 2}} 参赛作品
+“做一只白天活动的猫不容易，但是普通猫猫可享受不到那么多阳光的美好。”
+昼行猫模拟器，跟着脚印找到其他猫（也可以找到鱼！）。可以在 <link https://ayuusweetfish.itch.io/daytime-cat itch.io> 玩！
+
+!<img screenshot.png <= 游戏截图>>
+
+Trijam #152 参赛作品。这个系列的 jam 要求在三小时内完成制作，不过最后画画还是严重超时了一两个小时，而且声音也没有做，心痛。单人作战的话可能只能用现成素材吧（躺
 
 {{contents.en=}}
 Trijam #152 entry.
-
-{{contents.zh=}}
-没有声音 <<^= >  <>>
-
-{{contents.en=}}
-Sadly it does not have audio, which deeply hurts the creator's heart as a composer, not being able to tackle the challenge of creating everything within 3 hours with only a trackpad.
