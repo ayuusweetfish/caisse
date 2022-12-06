@@ -22,6 +22,7 @@ local function writefile(file, s) io.open(file, 'w'):write(s) end
 local function ensuredir(filepath)
   os.execute('mkdir -p $(dirname "' .. sitepath .. filepath .. '")')
 end
+local contentpath = {}
 -- `src` is an absolute path without the leading slash
 local function copyfile(src)
   local dst
@@ -32,11 +33,8 @@ local function copyfile(src)
   end
   ensuredir(dst)
   os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  contentpath[dst] = src
   return dst
-end
-local function filesize(src)
-  -- macOS 10.14
-  return io.popen('stat -f "%z" "' .. sitepath .. src .. '"'):read('n')
 end
 local function render(...)
   return caisse.render(...)
@@ -69,6 +67,20 @@ local function split(s, delim)
 end
 caisse.envadditions.split = split
 
+local filedb = {}
+for line in io.open('misc/stat/database.tsv', 'r'):lines() do
+  local fields = split(line, '\t')
+  filedb[fields[1]] = {
+    size = tonumber(fields[2]),
+    type = fields[3],
+    args = {table.unpack(fields, 4)},
+  }
+end
+local function fileinfo(src)
+  if not filedb[src] then error('File ' .. src .. ' not recorded') end
+  return filedb[src]
+end
+
 local function fxhash(s)
   local h = 0
   for i = 1, #s do
@@ -77,40 +89,6 @@ local function fxhash(s)
   return string.format('%016x', h)
 end
 
-local inspectimagecache = {}
-local function inspectimage(path)
-  if inspectimagecache[path] ~= nil then
-    return table.unpack(inspectimagecache[path])
-  end
-  local p = io.popen('identify -format "%w %h" "' .. path .. '"')
-  local w = p:read('n')
-  local h = p:read('n')
-  inspectimagecache[path] = {w, h}
-  return w, h
-end
-local function ffprobe(path, stream, entries)
-  local cmd = 'ffprobe' ..
-    ' -v error -hide_banner -print_format flat -of default=noprint_wrappers=1' ..
-    ' -select_streams ' .. stream .. ' -show_entries ' .. entries ..
-    ' "' .. path .. '"'
-  local results = {}
-  for line in io.popen(cmd):lines() do
-    local key, value = table.unpack(split(line, '='))
-    if key ~= '' then results[key] = value end
-  end
-  return results
-end
-caisse.envadditions.image = function (path, alt, class, style)
-  local realpath
-  realpath = sitepath .. path
-  local w, h = inspectimage(realpath)
-  return '<img src="' .. path .. '"' ..
-    ' width=' .. w .. ' height=' .. h ..
-    (alt and (' alt="' .. alt .. '"') or '') ..
-    (class and (' class="' .. class .. '"') or '') ..
-    (style and (' style="' .. style .. '"') or '') ..
-    '>'
-end
 local function fullpath(path, wd)
   if path:sub(1, 1) == '/' then
     path = path:sub(2)
@@ -132,6 +110,19 @@ end
 caisse.envadditions.file = function (path, wd)
   path = fullpath(path, wd)
   return '/' .. copyfile(path)
+end
+
+local function inspectimage(path)
+  return table.unpack(fileinfo(path).args)
+end
+caisse.envadditions.image = function (path, alt, class, style)
+  local w, h = inspectimage(contentpath[fullpath(path)])
+  return '<img src="' .. path .. '"' ..
+    ' width=' .. w .. ' height=' .. h ..
+    (alt and (' alt="' .. alt .. '"') or '') ..
+    (class and (' class="' .. class .. '"') or '') ..
+    (style and (' style="' .. style .. '"') or '') ..
+    '>'
 end
 
 local function renderdate(datestr, nolink)
@@ -197,21 +188,8 @@ local function lengthstring(seconds)
   end
 end
 
-local filetypes = {
-  -- Music and audio
-  ogg = 'audio', mp3 = 'audio', wav = 'audio',
-  mid = 'musicnotes', midi = 'musicnotes',
-  mscz = 'score',
-  -- Images
-  png = 'image', jpg = 'image', jpeg = 'image', gif = 'image', webp = 'image',
-  -- Video
-  mp4 = 'video', ogv = 'video', webm = 'video',
-  -- Text, code, and documents
-  txt = 'document', pdf = 'document',
-  c = 'code', h = 'code', lua = 'code', js = 'code',
-}
 local filetypeicons = {
-  [''] = 0x1f4e6,
+  unknown = 0x1f4e6,
   audio = 0x1f3a7,
   musicnotes = 0x1f3b6,
   score = 0x1f3bc,
@@ -221,27 +199,18 @@ local filetypeicons = {
   code = 0x1f47e,
 }
 local filetypeextrainfo = {
-  audio = function (path)
-    local info = ffprobe(path, 'a:0', 'stream=duration')
-    return lengthstring(math.floor(tonumber(info.duration)))
+  audio = function (dur)
+    return lengthstring(tonumber(dur))
   end,
-  video = function (path)
-    local info = ffprobe(path, 'v:0', 'stream=width,height,duration')
-    return lengthstring(math.floor(tonumber(info.duration))) .. ', ' ..
-      info.width .. 'x' .. info.height
+  video = function (dur, w, h)
+    return lengthstring(tonumber(dur)) .. ', ' .. w .. 'x' .. h
   end,
-  ['.pdf'] = function (path)
-    local npages
-    local cmd = 'pdfinfo "' .. path .. '"'
-    for line in io.popen(cmd):lines() do
-      if line:find('^Pages:') then
-        npages = tonumber(line:match('[0-9]+'))
-        break
-      end
-    end
-    if npages then return tostring(npages) ..
-      (caisse.lang == 'en' and (npages == 1 and ' page' or ' pages')
-       or ' 页')
+  document = function (npages)
+    if npages then
+      npages = tonumber(npages)
+      return tostring(npages) ..
+        (caisse.lang == 'en' and (npages == 1 and ' page' or ' pages')
+         or ' 页')
     end
   end,
 }
@@ -303,16 +272,17 @@ markupfns = {
   end,
   file = function (src, text)
     local item = itemreg[markupfnsenvitem]
-    local fileurl = caisse.envadditions.file(src, 'items/' .. markupfnsenvitem)
-    local size = filesize(fileurl)
+    local fullpath = fullpath(src, 'items/' .. markupfnsenvitem)
+    local fileurl = caisse.envadditions.file(fullpath)
+    local size = fileinfo(fullpath).size
     local parts = split(fileurl, '/')
     local basename = parts[#parts]
-    local dotpos = basename:find('.', 1, true)
-    local ext = (dotpos == nil and '' or basename:sub(dotpos + 1))
-    local filetype = filetypes[ext] or ''
+    local filetype = fileinfo(fullpath).type
     local icon = filetypeicons[filetype]
-    local extrainfo = filetypeextrainfo[filetype] or filetypeextrainfo['.' ..ext]
-    if extrainfo then extrainfo = extrainfo(sitepath .. fileurl) end
+    local extrainfo = filetypeextrainfo[filetype]
+    if extrainfo then
+      extrainfo = extrainfo(table.unpack(fileinfo(fullpath).args))
+    end
     return '<tr><td>' .. text .. '</td>' ..
       '<td><a class="pastel ' .. item.cat .. '" href="' ..
       fileurl ..  '">' ..
