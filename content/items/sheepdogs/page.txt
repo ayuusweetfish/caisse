@@ -9,6 +9,8 @@
 {{date=}}2021.11
 
 {{contents.zh=}}
+<subpagelink sheepdogs/play 在线游玩>！
+
 借着 2021 CiGA Game Jam 的机会与栗子同学共同制作的解谜游戏。栗子负责视觉设计，鱼负责音乐和大部分程序；其余部分都是合作完成的。
 这次的主题不出意外还是图片，虽然实在是越来越抽象了。
 !<img CiGAGJ-2021.jpg 拉火车>

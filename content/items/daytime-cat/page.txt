@@ -9,7 +9,7 @@
 
 {{contents.zh=}}
 “做一只白天活动的猫不容易，但是普通猫猫可享受不到那么多阳光的美好。”
-昼行猫模拟器，跟着脚印找到其他猫（也可以找到鱼！）。可以在 <link https://ayuusweetfish.itch.io/daytime-cat itch.io> 玩！
+昼行猫模拟器，跟着脚印找到其他猫（也可以找到鱼！）。可以在 <subpagelink daytime-cat/play 本站> 或者 <link https://ayuusweetfish.itch.io/daytime-cat itch.io> 玩！
 
 !<img screenshot.png <= 游戏截图>>
 
