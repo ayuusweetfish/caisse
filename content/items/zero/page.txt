@@ -90,6 +90,9 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
 
 不想长大呀——
 
-!<filetable <file Juvenile.ogg Juvenile>>
+!<filetable
+  <file Juvenile.ogg Juvenile — 音频>
+  <file Juvenile.tracktionedit Juvenile — Waveform 工程>
+>
 
 {{contents.en=}}

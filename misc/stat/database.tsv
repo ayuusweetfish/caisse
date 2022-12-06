@@ -79,11 +79,11 @@ items/fireflies/cover.png	47073	image	540	200
 items/zero/Epigone.mp3	2288034	audio	95
 items/zero/Concoction_notes.txt	4043	document
 items/zero/Heptadekka.ogg	9189096	audio	606
-items/zero/Intersection.mmpz	22183	unknown
+items/zero/Intersection.mmpz	22183	musicnotes
 items/zero/Frivolity.ogg	12988336	audio	247
-items/zero/Heptadekka.org	51442	unknown
+items/zero/Heptadekka.org	51442	musicnotes
 items/zero/Adornment.ogg	5160906	audio	294
-items/zero/Frivolity.piximod	553262	unknown
+items/zero/Frivolity.piximod	553262	musicnotes
 items/zero/Concoction.ogg	12191586	audio	96
 items/zero/Juvenile.ogg	3000712	audio	176
 items/zero/Heptadekka.png	244665	image	2168	1424
@@ -140,3 +140,7 @@ top-fleuron.svg	19723	image	960	90
 AaKaiSong2.woff2	2623040	unknown
 date.html	4053	unknown
 item.html	1361	unknown
+items/sheepdogs-work/Sheepdogs_on_Vacation.tracktionedit	2325982	musicnotes
+items/sheepdogs-work/Sheepdogs_at_Work.tracktionedit	502306	musicnotes
+items/bellflowers/Bellflowers_Wonderland.tracktionedit	334735	musicnotes
+items/zero/Juvenile.tracktionedit	183715	musicnotes
