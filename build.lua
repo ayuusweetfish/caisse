@@ -24,7 +24,7 @@ local function ensuredir(filepath)
 end
 local contentpath = {}
 -- `src` is an absolute path without the leading slash
-local function copyfile(src)
+local function copydst(src)
   local dst
   if src:find('^items/') then
     dst = src:sub(7)
@@ -32,9 +32,22 @@ local function copyfile(src)
     dst = 'bin/' .. src
   end
   ensuredir(dst)
+  return dst
+end
+local function copyfile(src)
+  local dst = copydst(src)
   -- os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
   -- Hard link
   os.execute('ln -f "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  contentpath[dst] = src
+  return dst
+end
+local function copydir(src)
+  local dst = copydst(src)
+  -- os.execute('cp -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  os.execute('ln -s ' ..
+    '"$(realpath --relative-to="$(dirname "' .. sitepath .. dst .. '")" "' .. srcpath .. src .. '")" ' ..
+    '"' .. sitepath .. dst .. '"')
   contentpath[dst] = src
   return dst
 end
@@ -259,6 +272,13 @@ markupfns = {
     local item = itemreg[itemname]
     if not item then return markupfns.extlink(path, text ~= '' and text or path) end
     if text == '' then text = caisse.envadditions.tr(item.locals.title) end
+    return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
+      .. htmlescape(text) .. '</a>'
+  end,
+  subpagelink = function (path, text)
+    local itemname = split(path, '/')[1]
+    local item = itemreg[itemname]
+    copydir('items/' .. path)
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
       .. htmlescape(text) .. '</a>'
   end,

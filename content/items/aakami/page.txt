@@ -10,11 +10,14 @@
 
 {{contents.zh=}}
 BOOOM! The 3rd GameShell Game Jam 队伍“未来网吧”作品。
-未来动漫・游戏技术兴趣团队组队参加的 game jam。主题是“SHIFT”，游戏对此的诠释是主角可以在小红帽与大灰狼之间切换（shift）；被异色子弹伤害，但是可以吸收同色子弹补充弹药。自己主要负责了程序。
+可以在 <subpagelink aakami/play 这里> 或者 <link https://xiashj96.itch.io/aakami itch.io> 玩！
+用 W/S/A/D 或者箭头移动，I/K/J/U 对应三角/圆圈/叉/方块四个按钮。
 
 !<filetable
   <file AAKAMI.love LOVE2D 游戏包>
 >
+
+未来动漫・游戏技术兴趣团队组队参加的 game jam。主题是“SHIFT”，游戏对此的诠释是主角可以在小红帽与大灰狼之间切换（shift）；被异色子弹伤害，但是可以吸收同色子弹补充弹药。自己主要负责了程序。
 
 敌人是可×可乐、百×可乐、×树椰汁和星×克，提供道具的是自动售货机，好喜欢这个设定！
 
