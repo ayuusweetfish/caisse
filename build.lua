@@ -313,7 +313,9 @@ markupfns = {
       sizestring(size) ..
       (extrainfo and (', ' .. extrainfo) or '') .. ')</a></td>'
   end,
-  h1 = function (text, anchor)
+  h1 = function (text)
+    local bodytext, anchor = text:match('^(.+[^%w])%w*#([^#]*)$')
+    if bodytext then text = bodytext end
     return '<h1' ..
       (anchor and (' id="' .. anchor .. '"') or '') ..
       '>' .. htmlescape(text) .. '</h1>'
