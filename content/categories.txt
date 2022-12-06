@@ -19,7 +19,7 @@ end
 {{cats.music.title.zh=}}八音盒
 {{cats.playful.title.zh=}}游乐园
 {{cats.murmurs.title.zh=}}梦话集
-{{cats.potpourri.title.zh=}}百花篮
+{{cats.potpourri.title.zh=}}繁花丛
 {{cats.pile.title.zh=}}碎石堆
 
 {{cats.home.title.en=}}Home
