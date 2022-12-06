@@ -32,7 +32,9 @@ local function copyfile(src)
     dst = 'bin/' .. src
   end
   ensuredir(dst)
-  os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  -- os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  -- Hard link
+  os.execute('ln -f "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
   contentpath[dst] = src
   return dst
 end
@@ -179,7 +181,7 @@ local function sizestring(size)
     return string.format('%.2f GiB', size / (1024 * 1024 * 1024))
   end
 end
-local function lengthstring(seconds)
+local function durstring(seconds)
   if seconds < 60 * 60 then
     return string.format('%02d:%02d', seconds // 60, seconds % 60)
   else
@@ -200,10 +202,10 @@ local filetypeicons = {
 }
 local filetypeextrainfo = {
   audio = function (dur)
-    return lengthstring(tonumber(dur))
+    return durstring(tonumber(dur))
   end,
   video = function (dur, w, h)
-    return lengthstring(tonumber(dur)) .. ', ' .. w .. 'x' .. h
+    return durstring(tonumber(dur)) .. ', ' .. w .. 'x' .. h
   end,
   document = function (npages)
     if npages then

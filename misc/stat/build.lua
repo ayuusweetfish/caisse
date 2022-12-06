@@ -4,6 +4,7 @@ local filetypes = {
   -- Music and audio
   ogg = 'audio', mp3 = 'audio', wav = 'audio',
   mid = 'musicnotes', midi = 'musicnotes',
+  tracktionedit = 'musicnotes',
   mscz = 'score',
   -- Images
   png = 'image', jpg = 'image', jpeg = 'image', gif = 'image', webp = 'image',

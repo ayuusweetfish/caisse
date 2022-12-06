@@ -1,0 +1,2214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<EDIT appVersion="Waveform 11.0.26" projectID="69c328/183b498" creationTime="1588147956324"
+      lastSignificantChange="171deed7b63" modifiedBy="Shiqing Lyu">
+  <TRANSPORT scrubInterval="2.752881484558624" loopPoint1="85.0" loopPoint2="45.0"
+             position="46.1535147392533" looping="0"/>
+  <MACROPARAMETERS id="1001"/>
+  <TEMPOSEQUENCE>
+    <TEMPO startBeat="0.0" bpm="144.0" curve="1.0"/>
+    <TIMESIG numerator="3" denominator="4" startBeat="0.0"/>
+  </TEMPOSEQUENCE>
+  <PITCHSEQUENCE>
+    <PITCH startBeat="0.0" pitch="60"/>
+  </PITCHSEQUENCE>
+  <VIDEO/>
+  <AUTOMAPXML/>
+  <CLICKTRACK level="0.6000000238418579" active="0"/>
+  <ID3VORBISMETADATA trackNumber="1" date="2020"/>
+  <MASTERVOLUME>
+    <PLUGIN type="volume" volume="0.6247810125350952" id="1003" enabled="1">
+      <MACROPARAMETERS id="1005"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERVOLUME>
+  <RACKS/>
+  <MASTERPLUGINS>
+    <PLUGIN type="vst" uid="52415731" filename="AudioUnit:Effects/aufx,ZnE9,iZtp"
+            name="Ozone 9 Elements" manufacturer="iZotope" windowLocked="1"
+            id="1076" enabled="1" windowX="80" windowY="125" programNum="-1"
+            state="5508.hAGaoMGcv.i0AHv.DTfAGfPBJr.CT4VXsUFWsEla0YVXiQWcxUlbTQVXzEFUzkGbkc0b0IFc4AWYWYWYxMWZu4FVU4FcoQGakQlDooEcv8TDTrt2JhF.A....7ME...tjE..3wY6ck0jhpzs889WAw409dJkQ0NhuGPDUDPEwgRuwMp.0TEEAjAm9hy+8KXMYWCcKZkk6pOrensKqRYQl6bk6LYk68+8aDDD+kfic.Za.gdfQ.5uH9Aw+M9si+Ms24d3M9qRliBLcrM718W+OO9K6ZXE9S+4G8c8iezXuiM5oepEZBxCYO5v634XYg7jQ6dwG92cE+EW2it52+s+lWxe7i5gKe588eyuieBDcjrCdwk+kfH6K+s+yq96+8v5o2DSP5auyOcLV+sccpF1FSwS+VI8lOegLsm95q5icc3pS6jZgD05vqHMPr0cBMp2V711e3MDUrbFZXQzQ52ea9te+u5p7OmfKZSCOikmPi6oeUeiea7efPnWT+Zf0Nhtl9lCsPDMMrQV+hOBwI049xq+q5heua8G9fkPVF6zGYXE4ws8TQSYKGiSDN2vcukmiklIedR1BmO.MswA.ou2Xno3xwvjMeBwm31.Oind20H+C8rlVlAuASwaiyhNNVmDLmXX4iRHxp34D5dn4Ci.KvKLo3R0XJNc3xm8fQRVfJaAp7E3NW3gG2MlGrb4XYySRmTz0blgOBfcpGvUKjuqisOBfPCmdbrbTrmOlvjaFctDiIOzZSmP+qzLTuwa+5YvOo3U9EQSbgwoT1Cs5Pu1ieMWbHYTmRPJVgSMsqhLmNK32eQeeujmuprrzm70sm43fYeLWVRR5SYcC5HKzn.zXBcyo1QcjByLLsITcFGZcUWofjJekzff+CLHXokwq0REEf79UCrOa7P9uUlXU9akTSW43ejCZ9iwI885IuzMkKY8ae369Vx5ev07me6nWuGjw650GxdtF+8HZgVF0H+w26wGN1zQOvCYrD48ILJ+gaDh5QWuScLTD7LsmdRihdw8SRGpGOBgnKxyO5d7pS7zMJ3PGO+QNtHB9v.m+tti2RCKy8mbCGNWs4wnqpoez+GF6Fzw3JJT5OufbNIh523gGLyvNhupg6mwbr3dz2Q2LIMzT60Hu.BEP3C8.XZABvn5X6.Bf.K1wC6rDQKmnIXifCA+RmP62cWCdIpRvNLkPXc.PQwfDiNPzqouwLXzLBkLetdymIa3CDTG1Ij+.3C+oamD1wc3AtPTbWv6+jreIzJF4zwwbhAJwufmmuX4Q21c1vJVbCtUhujVzaUtd1A2VyZ3th0F1qrc76KD+9hjyPUrBLt00Zzz+y+AVwV8AOor3pvCAZ8YDQLezmeMJZ0KnMWcRUdq.BcGKGh6AEHHvdBSwaJ8GOAOY1rmcqTkeAK04inyFNZe7X4Uae9uCKga+AQQC6wDjDh1FCe+Mx9kXBmqU4XTE6EEhrGcxqVIQtRW.v.hyzQHJQAw74.IL3hm8lbYyc3IomijiijNWtK.e5yLvw9pmzMV+XH8v1hAqwgT3hc3rlg4HXgQ5AJly2ymBbzCTvidfB3zCTXhd3RZwvE6vkMNjFjAOPiS1A1KfcfFbrCzvicfF3rCzficfFlwNv.yXGXv5RKntf0Vv.N5AF3QOv.b5AFvQOv.zfGXAYvCrXcoE4t.5AVvQOvBO5AVfSOvBN5AVXF8.GLidfCqqsf8BnG3.G8.G7nG3.N8.G3nG3.ZzC4.YzC4v7ys3B3GxAN9gbvieHGv4GxgqmbwqN2OI.RfL9g7vL9g7Xkff6RHHxCNBh7vifHOvIHxiKBBlK.RfKBBQsePnZDLZlo8TrIIQxyxKKFZ5KcbBvJ1XOKrcnIKBgGjcjiMQKzz3WvxwXl5bC148.INn1nRJBAmjavuZanHydCMKYg7ExwvksPxOG3XU2MT2jmhKa9bL4XxSQUnPRS2FvRBN.V8MvR3MvSyM3UtMmOfvIy.EG4MTL4YinGNibVAVEbCyMYYnYxmkt.GUjmOaRWeDrzdCNkcCSVlBzzbzjLTYIoYOydQLwKblnAZ7BPRmM3WhME3JbCIUt7wIoKJ5yHywfUw1PcCStnXFxwwUfKWtbzLIckQvR3M.VyMfRtMvSoMvSjMfTeMfRZMvRUM.VPMfRKM.TFMfSAM3W7Lj4YxcSTLlbbYO6kKfKMz724tgt.IcV1BQArvQVfj4rVQJXDTC9zRC0MrEHiWs.IEaVNxrzmY+HfXF.kBZfm3Y.otY.kjYfkZY.rPY.kFY.n7X.mxX9DDECMKa9axlOa1b4IOufBvkxXHuIJh.FZF1nWJPk87BI.LhjAv5iAVRiAdphAdBhAlZgATxfAVJfAvheAV5dAfRdo3NWC+SO4DgenPvGdxJF4y.NpIX.OVwinFdxEhIczNL0GEPkFE1SNYOkjqRHvTPSBxzJNK8SbeJrGB4CPES6EDM8bFg78i6Fi82IdnHbACNpX1fLQLT.pQC5BuCzZt6QhLX3bYNNitYjKObbtvaF+Koqd5ETCW8VG8YNaddtvDkS4wa9B8P5+CHwQc.Le5QQ8Fu8ojzHiWdGgjsa3IT7Zt3rFIfh8F2wobT6ZBQ1yeRh3XV93my3uSJKzwHxYzBzXHhIhFSl3i.PxT9Hj05WUTnNeDcdMVMBCvmO0Y0H8HhvjO0kiIX4S8.zvjS0k.o1dlKgGhfzV79LSED1B7ibxg.btN4n+KIfo6a.SiX52AnDGwzCMrPKjoKHF.PM61+RCX5hhD.NNTowKcNPCf9TowK86vVZ7R+AFuzuzuOMnoKLno6acSibB+PBVSykF4zoiHH4QkF4zY.ozHm9cXKMxo+Xhb5P0S+SHdIbGjRi8N1HhGJF7ObwRbfJ2+oiKovGF8AnQbO.M.E04CHpjoWvNhxVFmrZORhPUYyywVfihMKKMSV1bbIVaCekFKpfVirHTQAHuOsmVNtGV956o+szC9os88elcgm2Vm+kpOT0vO9Nk222zOv38065GXOnPU9V7BsEacmZiRheZMPuW2UIQEoths5CDzzuNupjf9csq1RTu5cJh7speWaIUw6zEE93mzIoGnsH7IpAUvgatgWMXIg3SoQmR0E0i5b4aUQrcao5UfgWmJe8N7J28B78gCqjd.EU40ioI300kzayWu8cQ+aaHzZc6cU3kpeWKwRcDZK0ntN1GJjziITLFebT5i8pPa3Zyn4ATEa2RR3tHNkXDWOZvv8MskJ9wiujVDi+Y7oKvqDOfkWsQm5m7XijD9OMc1CmSMZRR5rTj4Sb64UIvi2CM5hJhQyxWJZTRYwVh0EDuSpdIwa+3YURJx5Hcm.eDdTtiWPPrY66JqvW4p2d0Upda9Jh2IzPsYz3V8Fsf5zrcUjTeDa2OSwcMEaIHhiQEEJ7QGu6VykGNrS3OPW.s8EByh3FFE7921uDMI37xjTnD54EEjl0tGOCq2uXqq93uRB2+.Cfz9fg+.ZebzPRA1g1nCmjchVnwgGFo3SnfL7rgxQg5ALpG4bgbHhOWfPX+xe.Usm4g7m4XMFjsYs8Lr8Mi87hO06PAbGZoPiOpsqIxaTDJMO8gqmNuV9y5jm9L1hOm9pFdSAxQ+NYPAeOnuHJGhDOaD9VgIDNBfvJt8ldn0wi7i99iPjwR2H9.AKSWvPCn6hFE3YX8H2TDC+tSm..atRmw7L3aT1Qf4gDYf+ge3zkpANmC7Az87rLGgyqeaW6HlRT7CXObrMx2m3+cbw+uOdT82INyu7zTKX.LIMH9yN.gKua6LW3WSG+nP6eJUWf+U+EmpBVihVjCZyUmSm2Jpi5vA59.n.AM9SXJNIc8w69PdFk2oGQDLRPWOAGLjTrR5Vg9b0VCREWpiQEdqKpW.v.hyzQHBHo7sigDDy6aGiOfTVoNFR.J+O9LrvVAl5xpJp3sLSwb9d93p7RcIHBbzCXpvR8gQOfqpK0kzhAo7C4y3BR0YpiQENyc7W.6.tJwTWBh.G6.LqsTGiOnwN.ppL0yvBTkZpigErp2TGiLnQO.lJO0wPB1zCPoFTcLhfYvCPpZTcLpv4RKxcAzC3pVTcIHBbzCXoFT8ARO.kBQ0wHBjQO.pRR0wvBV0kpiQFznG.SEp5XHAa5AnTqpNFQvL5AHU0pNFU384VbA7C3ppUcIHBb7CvrdUcL9.RQq5XHAx3G.U4q5XXArZX0wPCZDDfoZVcLjfMAAXpqUGCIvEAALqWQOAM.VzhNfMnWVY9kfDD0VFvI4FHp1FPIzFXowF.KuFXorF3IpF3omFHJkFPohFXIfF.qcFPIaF.pXFvIVFHpSFPIQFXoNF.KLFPoIF3IGF3oDFPJBFPo+EXI8E.q5EPI3E.p0EvIyEPpvEPItEXoqE.KoEPolE3IjE3ogEPJeEPobEXIZE.qWEPIUE.pREvIPEXpMEPIKEXoHE.KFEXoCE3IAE3o9DXJ7DPo4DXI2D.qzDXIxD.puD.kjPuGJD7gmr7L9LfiZBFvi2binFAHRWbvTLR.UGR3NCp9hzJUBQWb87KygZBGgNxBcP.RWc+qCIisldNiP99w8kwN8DBN1AdNVvfnJlRHSDMEfZzftT2.sJ2djMCFNWliynaF4xCGmKnkfP+IpgqNdzm4r44IDaZXid2J72KwDdySoGR3d.IXpCf4SOTp23sOob0nGJNQrqGXD7ttWOiTvWRwt+1496ljF9x1.OChh6BPm9LuQKIki4DQlXKqAKKSNrp124SsTK0RsTK0RsTK0RsTK0RsTK0RsTK0RsTK0RsTK0RsTK0RsTK0RsujVRkiv0QHRmoJRtWMpD7giMcHzC7PFK+TJ7m3VNIu880ez8j1Ft9ybdW8D+Q148uXwUm8FVfot5m53gkroT0T44EjJwyWjwVd8xNVE05H5opnOqWGuh5q3GtUiWZlkVOWIdQqsbxlaEcrpNXFSuJ0ZH2cpYESGgh06HUywsW.697aKJyz0VqzXorpkJVTOnsam5SyHOuQOgJbbcrq8812xzdrEWEDRua+lUrbFrrkqwxVSM60Rxvh0ryB1UB1Cla2TY+nb78WvZzuC6N4AhCL5zyY159MGZJupXIssdZqpLN5iLzLfp4F8tkWdqsauR6bKWqVeqZrFNNsVnayVrucsk55cc86Mv0rRKgd8Frs17RU1IsYimkSHeYxYqZ24ZOSVpkZe0rP9M77U2DwkT0bz5AhaExKsQT5V5LRqzB6HOrc6QiK1.sxbu4n5i6xuzWagvpayttPf7PCUwVBVKC81OexjRntZyl2VtjlUH+.u.2IxbaU12cUw8RTEWrnUyIZqM+t0b+Fq5xR1V368pMVXJJLHGCes4n5y51Yz774b2Nm1gY2fVZ0b2tymUJTrjBEs3dAsgEmSoTPSeZ67MzlqzTbPHUiamzbb8V8nXkyXoueljbYUtgMFUcg7LAc2hUnataYY4l0TzWTs7sSr6saPMWlYECoWqXaLO63R0G5TJn1NmLSu1cGoVp8EyDXhhAgeRLOBp1tBKZKprYNu1rISxa5JvpY4aSeqllc4fwaaTwek1P8ZBCZIKeaF5tCVUYWmo5yq1lsE85oYPgZylMm2oythpE1RNg0PROa2gZ81ksnqr378jJSJ40OWUOqFC5tIyLyauUrVz5O9N+tAaqvy40Xl4.RFxbjp0qUyytSFW8gACEPKjqN2cpTC6h4JjYUuNzMZ1bZq0qTqVqtRlLgMZwQxZLbQ68cTjkmloOkDo3twM0qII0oQeekAL5y1o0cf5td2xl0e4hNMXF0W0fKGESgxZyQbjJxyybs6NRsT6qloLMJ9ih4uxqkYIuaIeRk8ht012obHMmcllaFozzqsncC4NrUU0EBjULZQ2nXPq5CzKNsyFmkMU0GQ1X622WgwUX5dksTJ0X6Ijeqjh47l6z21R0pVQ0clEjZqx3uRWyc2zMAkFTVUV02e+z1Up3tr0VqaUJpIPtVdw0t6H0RsuZ1OsNlUeefdmxE0z82DHWdfteYYmhqKyyaVoaQiES40uspyJEQcyNiWVcV+9KXb6IHYHOURjTa5RSKCZ6l6EE8l0aLe8ry01nJVVlrgkFUo7qTY6KMzyUejMa8IypScqy.V1Zcml2nuvhF66rVUegccsd4lrZR9LE23+8fHNBF21KFsURNqSfa0QLUHEIsjpTrsfY+7aiXbxUMm5PyExkTWWsuusU+HlnogxpYpoTVbW2Eh6kUxNScu4N2ZB1xkDxVeQD+ytc6aTTsuwxAUqzcjeYdkApqzDu18GoVp80x940w3wZUSKhCQduPVmtVxa5rZZk7c3EjFzo7Jc9h0FgLc7aIWqEUeT4YlsMs5KMyYE+z1cEDLj65gFkQUSOr7fr7z50KwuQqiWGttk52bmydqoyBCspsaxBxuKRO.My1dgUuRacmJqkqtd9sxQQUTbXv2cyrOeUg8bYi3HLsZzJhTvS2jZw38SG1ocuNS6GEGQs46Esq21eh+1PYMG0c4GatC0cZDSj.iy97K76rultVaUm05h6anHuXg7HGUEMpVsElqnnxHtc1pAKFMn6tMc3CB14xmtWHoVpkH6O60wzV0ZvIuNF5gxKJcs6ORsT6Kl8e9ZHhh2MEu7vCKmH6CISzwvHyy7HrHgIrnfIrngIrXfIrXgIr3fIrxASXUILNsqAT1q6A20gC6bkMmKZTfW3x+Dz73i2Jesmg9g6BB90HOioHhdl1ic1PnatGCIG4yEbMh.mkgKb.TSjwBhpNViIZad5tWmLtRZJj+IbcHwC9D3fAc0iX6wKGL72woeN8EBJrzR8dIl7KjI+OkLh3Oe+jTw8dXF33bY6uaBtWBQbVFGd.Upl1lfBWpg9liLrH5XaF.ir2LrlStExXrS3Iql9OhtpykDH.4gbHjVFE4vmw4XINSQuFQDWyDt58RGJbCYItGRPXX0C.BRUug6QTbh9EN3g7f6CQIjkAFJiLmkWDYzD+iClEE3l2HDVNFMIEUvwGRvyw22IJ9ehhgSlD8BHhX6YTIDF3LYBAIFNRVIt7i+JTQ8wiJpjmn+eErnwPi0YT.BdFWXnLEkzys1yfAKQ+mzUTJD54EQEYs6wJSDgJJ38mi+SCWXeY.+TDMmW.22+cbn3q.AFzCEOEdKqCy6ACRcUmwgQMT36vrlTpf5QK9NQMOXaKlv6RQRLZ7PqiGtwaGX5ljJKGd2RoCm63tQqn0wyejiKBOU8iDu6fOMtGWQWxc9H5SstnbRKm7auyO83+8vq2eq8WpFyc7dqQEuCneQm3ieKl1Wz2x29mu8++1a7moDgUmY3IgVtUTNP...H.PE.nA.m..K.DC.4.PP.nD.OUgOULTEHA.......HP..........z...................TgR"
+            base64:layout="99.LETVOUEU..P.BjjSPUEUSA..ADfPUME.AHPZtQVY3AP.ED......rEVduUGc.DPAEvDHRA..OUEUPUEUSA..ADfPUME.AHPZtQVY3AP.ED......rEVduUGc.DPAEvDHRA..">
+      <MACROPARAMETERS id="1084"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="reverb" id="1125" enabled="1" mode="0.0" presetDirty="1"
+            damp="0.2545312345027924" width="0.6134374737739563" roomSize="0.332953155040741"
+            wet="0.2030156254768372" windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1129"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+  </MASTERPLUGINS>
+  <AUXBUSNAMES/>
+  <INPUTDEVICES>
+    <INPUTDEVICE name="Input 1"/>
+    <INPUTDEVICE name="Input 2"/>
+  </INPUTDEVICES>
+  <TRACKCOMPS/>
+  <ARADOCUMENT/>
+  <CONTROLLERMAPPINGS/>
+  <VIEWSTATE minimalTransportBar="1" hiddenClips="" lockedClips="" chordTrackVisible="0"
+             arrangerTrackVisible="0" disabledSearchLibraries="" enabledTrackTags=""
+             currentSidePanel="Search" viewleft="-1.0" viewright="136.6440742279312"
+             midiEditorShown="1" scrollWhenPlaying="0" midiEditorHeight="1.935552000999451"
+             tracktop="0.0" sidePanelsShown="0" pluginsVisible="1" pluginAreaWidth="0.7504528164863586"/>
+  <EDITMIXGROUPS/>
+  <AUDIOEDITING/>
+  <MIDIVIEWSTATE verticalOffset="0.2965561224489796" visibleProportion="0.234375"
+                 leftTime="42.2169188033413" rightTime="43.72486805349349"/>
+  <ARRANGERTRACK name="Arranger" id="1116" height="30.0">
+    <MACROPARAMETERS id="1118"/>
+    <MODIFIERS/>
+  </ARRANGERTRACK>
+  <TEMPOTRACK name="Global" id="1121" height="13.0">
+    <MACROPARAMETERS id="1123"/>
+    <MODIFIERS/>
+  </TEMPOTRACK>
+  <MARKERTRACK id="1007" height="13.0">
+    <MACROPARAMETERS id="1009"/>
+    <MODIFIERS/>
+  </MARKERTRACK>
+  <CHORDTRACK name="Chords" id="1126" height="20.0">
+    <MACROPARAMETERS id="1128"/>
+    <MODIFIERS/>
+  </CHORDTRACK>
+  <TRACK id="1012" midiVProp="0.28125" midiVOffset="0.359375" colour="ffff0000"
+         height="45.37080765135104" solo="0">
+    <MACROPARAMETERS id="1014"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="4.583333333333334" length="10.0"
+              offset="0.0" id="1131" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0" source="" showingTakes="0" mpeMode="0" volDb="0.0"
+              originalLength="0.0" sendProgramChange="1" mute="0" sendBankChange="1"
+              grooveStrength="0.1000000014901161">
+      <QUANTISATION/>
+      <GROOVE current=""/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="72" b="0.0" l="0.996875" v="43" c="0"/>
+        <NOTE p="81" b="1.0" l="0.246875" v="59" c="0"/>
+        <NOTE p="84" b="2.999999999999998" l="0.996875" v="96" c="0"/>
+        <NOTE p="79" b="4.0" l="0.246875" v="70" c="0"/>
+        <NOTE p="72" b="5.999999999999998" l="0.996875" v="46" c="0"/>
+        <NOTE p="81" b="8.999999999999998" l="0.996875" v="96" c="0"/>
+        <NOTE p="77" b="6.999999999999998" l="0.246875" v="75" c="0"/>
+        <NOTE p="76" b="9.999999999999998" l="0.246875" v="62" c="0"/>
+        <NOTE p="69" b="12.0" l="0.996875" v="96" c="0"/>
+        <NOTE p="74" b="13.0" l="0.246875" v="54" c="0"/>
+        <NOTE p="77" b="15.0" l="0.996875" v="102" c="0"/>
+        <NOTE p="72" b="16.0" l="0.246875" v="6" c="0"/>
+        <NOTE p="77" b="17.0" l="0.371875" v="72" c="0"/>
+        <NOTE p="84" b="18.0" l="0.996875" v="108" c="0"/>
+        <NOTE p="82" b="19.0" l="0.496875" v="99" c="0"/>
+        <NOTE p="81" b="20.0" l="0.184375" v="28" c="0"/>
+        <NOTE p="82" b="20.1875" l="0.121875" v="33" c="0"/>
+        <NOTE p="81" b="20.3125" l="0.684375" v="95" c="0"/>
+        <NOTE p="77" b="21.0" l="0.871875" v="108" c="0"/>
+        <NOTE p="77" b="22.0" l="0.996875" v="112" c="0"/>
+        <NOTE p="79" b="23.0" l="0.746875" v="119" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="14.58333333333333" length="10.0"
+              offset="0.0" id="1138" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="72" b="0.0" l="0.996875" v="50" c="0"/>
+        <NOTE p="81" b="1.0" l="0.246875" v="68" c="0"/>
+        <NOTE p="84" b="2.999999999999998" l="0.996875" v="103" c="0"/>
+        <NOTE p="79" b="4.0" l="0.246875" v="77" c="0"/>
+        <NOTE p="72" b="5.999999999999998" l="0.996875" v="35" c="0"/>
+        <NOTE p="81" b="8.999999999999998" l="0.996875" v="104" c="0"/>
+        <NOTE p="77" b="6.999999999999998" l="0.246875" v="51" c="0"/>
+        <NOTE p="76" b="9.999999999999998" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="12.0" l="0.996875" v="90" c="0"/>
+        <NOTE p="74" b="13.0" l="0.246875" v="28" c="0"/>
+        <NOTE p="77" b="14.0" l="0.996875" v="61" c="0"/>
+        <NOTE p="82" b="15.00000000000001" l="0.871875" v="114" c="0"/>
+        <NOTE p="82" b="16.0" l="0.996875" v="126" c="0"/>
+        <NOTE p="81" b="17.0" l="0.996875" v="123" c="0"/>
+        <NOTE p="79" b="18.00000000000001" l="0.996875" v="121" c="0"/>
+        <NOTE p="77" b="19.0" l="3.746875" v="118" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="24.58333333333334" length="10.0"
+              offset="0.0" id="1144" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0" source="" showingTakes="0" mpeMode="0" volDb="0.0"
+              originalLength="0.0" sendProgramChange="1" mute="0" sendBankChange="1"
+              grooveStrength="0.1000000014901161">
+      <QUANTISATION/>
+      <GROOVE current=""/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="72" b="0.0" l="0.996875" v="43" c="0"/>
+        <NOTE p="81" b="1.0" l="0.246875" v="59" c="0"/>
+        <NOTE p="84" b="2.999999999999998" l="0.246875" v="65" c="0"/>
+        <NOTE p="79" b="4.0" l="1.746875" v="92" c="0"/>
+        <NOTE p="72" b="5.999999999999998" l="0.996875" v="46" c="0"/>
+        <NOTE p="81" b="8.999999999999998" l="0.246875" v="73" c="0"/>
+        <NOTE p="77" b="6.999999999999998" l="0.246875" v="75" c="0"/>
+        <NOTE p="76" b="9.999999999999998" l="1.746875" v="99" c="0"/>
+        <NOTE p="69" b="12.0" l="0.996875" v="96" c="0"/>
+        <NOTE p="74" b="13.0" l="0.246875" v="54" c="0"/>
+        <NOTE p="77" b="15.0" l="0.996875" v="102" c="0"/>
+        <NOTE p="72" b="16.0" l="0.246875" v="6" c="0"/>
+        <NOTE p="77" b="17.0" l="0.371875" v="72" c="0"/>
+        <NOTE p="84" b="18.0" l="0.996875" v="108" c="0"/>
+        <NOTE p="82" b="19.0" l="0.496875" v="99" c="0"/>
+        <NOTE p="81" b="20.0" l="0.184375" v="28" c="0"/>
+        <NOTE p="82" b="20.1875" l="0.121875" v="33" c="0"/>
+        <NOTE p="81" b="20.3125" l="0.684375" v="95" c="0"/>
+        <NOTE p="77" b="21.0" l="0.871875" v="108" c="0"/>
+        <NOTE p="81" b="22.0" l="0.996875" v="112" c="0"/>
+        <NOTE p="79" b="23.0" l="0.746875" v="119" c="0"/>
+        <NOTE p="81" b="2.5" l="0.496875" v="73" c="0"/>
+        <NOTE p="77" b="8.5" l="0.496875" v="83" c="0"/>
+        <NOTE p="74" b="14.5" l="0.496875" v="83" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="34.58333333333334" length="10.0"
+              offset="0.0" id="1152" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0" source="" showingTakes="0" mpeMode="0" volDb="0.0"
+              originalLength="0.0" sendProgramChange="1" mute="0" sendBankChange="1"
+              grooveStrength="0.1000000014901161">
+      <QUANTISATION/>
+      <GROOVE current=""/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="72" b="0.0" l="0.996875" v="65" c="0"/>
+        <NOTE p="84" b="1.0" l="0.246875" v="91" c="0"/>
+        <NOTE p="86" b="3.0" l="0.246875" v="102" c="0"/>
+        <NOTE p="84" b="4.0" l="1.121875" v="103" c="0"/>
+        <NOTE p="74" b="6.0" l="0.996875" v="73" c="0"/>
+        <NOTE p="82" b="9.0" l="0.246875" v="99" c="0"/>
+        <NOTE p="81" b="7.000000000000001" l="0.246875" v="87" c="0"/>
+        <NOTE p="81" b="10.0" l="0.246875" v="104" c="0"/>
+        <NOTE p="77" b="12.0" l="0.246875" v="114" c="0"/>
+        <NOTE p="77" b="13.0" l="0.996875" v="95" c="0"/>
+        <NOTE p="89" b="15.0" l="0.996875" v="114" c="0"/>
+        <NOTE p="84" b="16.0" l="0.184375" v="118" c="0"/>
+        <NOTE p="84" b="2.5" l="0.496875" v="89" c="0"/>
+        <NOTE p="81" b="8.5" l="0.496875" v="87" c="0"/>
+        <NOTE p="86" b="14.0" l="0.246875" v="106" c="0"/>
+        <NOTE p="79" b="11.00000000000001" l="0.996875" v="110" c="0"/>
+        <NOTE p="79" b="17.6875" l="0.309375" v="77" c="0"/>
+        <NOTE p="77" b="18.0" l="0.684375" v="86" c="0"/>
+        <NOTE p="74" b="18.6875" l="0.3093750000000142" v="91" c="0"/>
+        <NOTE p="84" b="22.0" l="1.746875" v="106" c="0"/>
+        <NOTE p="82" b="19.0" l="0.184375" v="115" c="0"/>
+        <NOTE p="81" b="20.00000000000001" l="0.184375" v="111" c="0"/>
+        <NOTE p="79" b="21.0" l="0.996875" v="108" c="0"/>
+        <NOTE p="81" b="17.0" l="0.684375" v="86" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="44.58333333333334" length="40.0"
+              offset="0.0" id="1169" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="77" b="0.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="86" b="1.0" l="0.121875" v="60" c="0"/>
+        <NOTE p="86" b="2.000000000000014" l="0.653125" v="67" c="0"/>
+        <NOTE p="85" b="2.65625" l="0.3406249999999996" v="67" c="0"/>
+        <NOTE p="86" b="3.0" l="0.871875" v="67" c="0"/>
+        <NOTE p="86" b="4.0" l="0.121875" v="67" c="0"/>
+        <NOTE p="86" b="5.000000000000014" l="0.653125" v="61" c="0"/>
+        <NOTE p="85" b="5.65625" l="0.3406249999999996" v="75" c="0"/>
+        <NOTE p="86" b="6.0" l="0.871875" v="75" c="0"/>
+        <NOTE p="86" b="7.000000000000014" l="0.121875" v="75" c="0"/>
+        <NOTE p="86" b="8.000000000000028" l="0.653125" v="59" c="0"/>
+        <NOTE p="85" b="8.656250000000014" l="0.3406249999999996" v="83" c="0"/>
+        <NOTE p="86" b="9.000000000000014" l="0.871875" v="83" c="0"/>
+        <NOTE p="88" b="10.0" l="0.934375" v="89" c="0"/>
+        <NOTE p="89" b="11.0" l="0.934375" v="96" c="0"/>
+        <NOTE p="88" b="12.0" l="0.934375" v="104" c="0"/>
+        <NOTE p="84" b="12.99999999999999" l="0.121875" v="64" c="0"/>
+        <NOTE p="84" b="14.0" l="0.653125" v="72" c="0"/>
+        <NOTE p="83" b="14.65624999999999" l="0.3406249999999996" v="72" c="0"/>
+        <NOTE p="84" b="14.99999999999999" l="0.871875" v="72" c="0"/>
+        <NOTE p="84" b="16.0" l="0.121875" v="72" c="0"/>
+        <NOTE p="84" b="17.00000000000001" l="0.653125" v="58" c="0"/>
+        <NOTE p="83" b="17.65625" l="0.3406249999999996" v="81" c="0"/>
+        <NOTE p="84" b="18.0" l="0.871875" v="81" c="0"/>
+        <NOTE p="84" b="19.00000000000001" l="0.121875" v="81" c="0"/>
+        <NOTE p="84" b="20.00000000000003" l="0.653125" v="57" c="0"/>
+        <NOTE p="83" b="20.65625000000001" l="0.3406249999999996" v="85" c="0"/>
+        <NOTE p="84" b="21.00000000000001" l="0.871875" v="85" c="0"/>
+        <NOTE p="87" b="22.0" l="0.934375" v="90" c="0"/>
+        <NOTE p="86" b="23.0" l="0.934375" v="76" c="0"/>
+        <NOTE p="81" b="24.0" l="0.934375" v="61" c="0"/>
+        <NOTE p="82" b="24.99999999999999" l="0.121875" v="82" c="0"/>
+        <NOTE p="82" b="26.0" l="0.653125" v="89" c="0"/>
+        <NOTE p="81" b="26.65624999999999" l="0.3406249999999996" v="89" c="0"/>
+        <NOTE p="82" b="26.99999999999999" l="0.871875" v="89" c="0"/>
+        <NOTE p="82" b="28.0" l="0.121875" v="75" c="0"/>
+        <NOTE p="82" b="29.00000000000001" l="0.653125" v="106" c="0"/>
+        <NOTE p="81" b="29.65625" l="0.3406249999999996" v="105" c="0"/>
+        <NOTE p="82" b="30.0" l="0.653125" v="105" c="0"/>
+        <NOTE p="86" b="30.65625" l="0.340625" v="90" c="0"/>
+        <NOTE p="93" b="31.0" l="1.965625" v="35" c="0"/>
+        <NOTE p="91" b="33.0" l="0.965625" v="47" c="0"/>
+        <NOTE p="89" b="34.0" l="1.965625" v="49" c="0"/>
+        <NOTE p="91" b="36.0" l="0.965625" v="12" c="0"/>
+        <NOTE p="88" b="37.0" l="2.965625" v="21" c="0"/>
+        <NOTE p="84" b="40.0" l="1.965625" v="42" c="0"/>
+        <NOTE p="79" b="42.0" l="0.965625" v="60" c="0"/>
+        <NOTE p="80" b="43.0" l="0.965625" v="73" c="0"/>
+        <NOTE p="81" b="44.0" l="1.715625" v="82" c="0"/>
+        <NOTE p="81" b="46.0" l="0.965625" v="83" c="0"/>
+        <NOTE p="82" b="47.0" l="0.965625" v="83" c="0"/>
+        <NOTE p="84" b="48.00000000000003" l="0.965625" v="83" c="0"/>
+        <NOTE p="86" b="48.99999999999999" l="0.121875" v="62" c="0"/>
+        <NOTE p="86" b="50.00000000000001" l="0.653125" v="83" c="0"/>
+        <NOTE p="85" b="50.65624999999999" l="0.3406249999999996" v="83" c="0"/>
+        <NOTE p="86" b="50.99999999999999" l="0.871875" v="83" c="0"/>
+        <NOTE p="86" b="52.00000000000001" l="0.121875" v="65" c="0"/>
+        <NOTE p="86" b="53.00000000000003" l="0.653125" v="77" c="0"/>
+        <NOTE p="85" b="53.65625000000001" l="0.3406249999999996" v="77" c="0"/>
+        <NOTE p="86" b="54.00000000000001" l="0.871875" v="77" c="0"/>
+        <NOTE p="86" b="55.00000000000003" l="0.121875" v="59" c="0"/>
+        <NOTE p="86" b="56.00000000000004" l="0.653125" v="70" c="0"/>
+        <NOTE p="85" b="56.65625000000003" l="0.3406249999999996" v="70" c="0"/>
+        <NOTE p="86" b="57.00000000000003" l="0.871875" v="69" c="0"/>
+        <NOTE p="88" b="58.0" l="0.934375" v="92" c="0"/>
+        <NOTE p="89" b="59.0" l="0.934375" v="99" c="0"/>
+        <NOTE p="91" b="60.00000000000003" l="0.934375" v="97" c="0"/>
+        <NOTE p="84" b="60.99999999999999" l="0.121875" v="69" c="0"/>
+        <NOTE p="84" b="62.0" l="0.653125" v="83" c="0"/>
+        <NOTE p="83" b="62.65624999999999" l="0.3406249999999996" v="83" c="0"/>
+        <NOTE p="84" b="62.99999999999999" l="0.871875" v="83" c="0"/>
+        <NOTE p="84" b="63.99999999999999" l="0.121875" v="76" c="0"/>
+        <NOTE p="84" b="65.0" l="0.653125" v="92" c="0"/>
+        <NOTE p="83" b="65.65624999999999" l="0.3406249999999996" v="92" c="0"/>
+        <NOTE p="84" b="65.99999999999999" l="0.871875" v="92" c="0"/>
+        <NOTE p="84" b="66.99999999999999" l="0.121875" v="82" c="0"/>
+        <NOTE p="84" b="68.0" l="0.653125" v="105" c="0"/>
+        <NOTE p="83" b="68.65624999999999" l="0.3406249999999996" v="105" c="0"/>
+        <NOTE p="84" b="68.99999999999999" l="0.871875" v="105" c="0"/>
+        <NOTE p="84" b="70.0" l="0.934375" v="83" c="0"/>
+        <NOTE p="82" b="71.0" l="0.934375" v="82" c="0"/>
+        <NOTE p="81" b="72.00000000000003" l="0.934375" v="82" c="0"/>
+        <NOTE p="79" b="72.99999999999999" l="0.121875" v="52" c="0"/>
+        <NOTE p="79" b="74.0" l="0.653125" v="83" c="0"/>
+        <NOTE p="78" b="74.65624999999999" l="0.3406249999999996" v="83" c="0"/>
+        <NOTE p="79" b="74.99999999999999" l="0.871875" v="83" c="0"/>
+        <NOTE p="79" b="75.99999999999999" l="0.121875" v="57" c="0"/>
+        <NOTE p="79" b="77.0" l="0.653125" v="83" c="0"/>
+        <NOTE p="78" b="77.65624999999999" l="0.3406249999999996" v="83" c="0"/>
+        <NOTE p="79" b="77.99999999999999" l="0.871875" v="83" c="0"/>
+        <NOTE p="82" b="79.0" l="2.934375" v="116" c="0"/>
+        <NOTE p="81" b="82.0" l="1.934375" v="104" c="0"/>
+        <NOTE p="79" b="84.00000000000003" l="0.934375" v="63" c="0"/>
+        <NOTE p="79" b="85.0" l="5.934375" v="17" c="0"/>
+        <NOTE p="77" b="91.0" l="2.934375" v="51" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="84.58333333333334" length="20.0"
+              offset="0.0" id="1010" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="72" b="0.0" l="0.9968750000000002" v="94" c="0"/>
+        <NOTE p="81" b="0.9999999999999716" l="0.246875" v="94" c="0"/>
+        <NOTE p="81" b="1.999999999999972" l="0.684375" v="94" c="0"/>
+        <NOTE p="80" b="2.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="3.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="82" b="3.687499999999972" l="0.309375" v="94" c="0"/>
+        <NOTE p="84" b="3.999999999999972" l="0.246875" v="94" c="0"/>
+        <NOTE p="79" b="4.999999999999972" l="0.996875" v="94" c="0"/>
+        <NOTE p="72" b="6.0" l="0.996875" v="93" c="0"/>
+        <NOTE p="77" b="6.999999999999972" l="0.246875" v="94" c="0"/>
+        <NOTE p="77" b="8.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="76" b="8.687500000000028" l="0.309375" v="94" c="0"/>
+        <NOTE p="77" b="9.000000000000028" l="0.684375" v="94" c="0"/>
+        <NOTE p="79" b="9.687500000000002" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="10.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="74" b="13.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="76" b="11.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="69" b="12.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="74" b="13.99999999999997" l="0.684375" v="94" c="0"/>
+        <NOTE p="73" b="14.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="74" b="15.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="76" b="15.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="77" b="15.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="82" b="19.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="72" b="16.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="84" b="18.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="81" b="19.99999999999997" l="0.121875" v="94" c="0"/>
+        <NOTE p="82" b="20.125" l="0.1375" v="95" c="0"/>
+        <NOTE p="81" b="20.265625" l="0.731249999999968" v="95" c="0"/>
+        <NOTE p="77" b="21.0" l="0.934375" v="94" c="0"/>
+        <NOTE p="77" b="21.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="79" b="22.99999999999997" l="0.2468749999999998" v="94" c="0"/>
+        <NOTE p="72" b="24.0" l="0.9968750000000002" v="94" c="0"/>
+        <NOTE p="81" b="24.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="81" b="25.99999999999997" l="0.684375" v="94" c="0"/>
+        <NOTE p="80" b="26.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="27.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="82" b="27.68749999999997" l="0.309375" v="94" c="0"/>
+        <NOTE p="84" b="27.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="79" b="28.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="85" b="30.0" l="0.996875" v="93" c="0"/>
+        <NOTE p="86" b="31.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="81" b="32.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="80" b="32.68750000000003" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="33.00000000000003" l="0.684375" v="94" c="0"/>
+        <NOTE p="82" b="33.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="34.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="79" b="35.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="77" b="36.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="77" b="37.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="84" b="40.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="86" b="37.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="89" b="38.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="81" b="41.00000000000001" l="0.684375" v="94" c="0"/>
+        <NOTE p="79" b="41.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="77" b="42.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="74" b="42.68750000000001" l="0.309375" v="94" c="0"/>
+        <NOTE p="82" b="42.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="81" b="43.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="79" b="44.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="77" b="45.99999999999997" l="0.246875" v="94" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="104.5833333333333" length="20.0"
+              offset="0.0" id="1006" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="82" b="1.000000000000028" l="0.246875" v="57" c="0"/>
+        <NOTE p="82" b="2.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="81" b="2.687500000000028" l="0.309375" v="71" c="0"/>
+        <NOTE p="77" b="0.0" l="0.996875" v="48" c="0"/>
+        <NOTE p="82" b="3.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="86" b="3.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="91" b="4.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="91" b="5.0" l="0.684375" v="64" c="0"/>
+        <NOTE p="90" b="5.687500000000028" l="0.309375" v="76" c="0"/>
+        <NOTE p="91" b="6.0" l="0.684375" v="81" c="0"/>
+        <NOTE p="93" b="6.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="94" b="7.000000000000001" l="0.246875" v="19" c="0"/>
+        <NOTE p="93" b="7.687500000000029" l="0.309375" v="68" c="0"/>
+        <NOTE p="94" b="8.0" l="0.684375" v="71" c="0"/>
+        <NOTE p="93" b="8.687500000000028" l="0.309375" v="79" c="0"/>
+        <NOTE p="94" b="9.0" l="0.684375" v="84" c="0"/>
+        <NOTE p="93" b="9.687500000000028" l="0.309375" v="89" c="0"/>
+        <NOTE p="94" b="10.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="93" b="10.68750000000003" l="0.309375" v="102" c="0"/>
+        <NOTE p="91" b="11.0" l="0.684375" v="105" c="0"/>
+        <NOTE p="89" b="11.6875" l="0.309375" v="111" c="0"/>
+        <NOTE p="88" b="12.0" l="0.684375" v="114" c="0"/>
+        <NOTE p="86" b="12.6875" l="0.309375" v="117" c="0"/>
+        <NOTE p="84" b="13.00000000000003" l="0.246875" v="48" c="0"/>
+        <NOTE p="84" b="14.0" l="0.684375" v="60" c="0"/>
+        <NOTE p="83" b="14.68750000000003" l="0.309375" v="65" c="0"/>
+        <NOTE p="84" b="15.0" l="0.684375" v="68" c="0"/>
+        <NOTE p="88" b="15.6875" l="0.309375" v="72" c="0"/>
+        <NOTE p="93" b="16.0" l="0.246875" v="77" c="0"/>
+        <NOTE p="93" b="17.0" l="0.684375" v="41" c="0"/>
+        <NOTE p="92" b="17.68750000000003" l="0.309375" v="60" c="0"/>
+        <NOTE p="93" b="18.0" l="0.684375" v="69" c="0"/>
+        <NOTE p="94" b="18.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="96" b="19.0" l="0.246875" v="28" c="0"/>
+        <NOTE p="95" b="19.68750000000003" l="0.309375" v="41" c="0"/>
+        <NOTE p="96" b="20.0" l="0.684375" v="44" c="0"/>
+        <NOTE p="95" b="20.68750000000003" l="0.309375" v="51" c="0"/>
+        <NOTE p="96" b="21.0" l="0.684375" v="54" c="0"/>
+        <NOTE p="95" b="21.68750000000003" l="0.309375" v="61" c="0"/>
+        <NOTE p="96" b="22.0" l="0.246875" v="64" c="0"/>
+        <NOTE p="94" b="22.6875" l="0.309375" v="72" c="0"/>
+        <NOTE p="93" b="23.0" l="0.684375" v="77" c="0"/>
+        <NOTE p="91" b="23.6875" l="0.309375" v="85" c="0"/>
+        <NOTE p="89" b="24.0" l="0.684375" v="89" c="0"/>
+        <NOTE p="88" b="24.6875" l="0.309375" v="103" c="0"/>
+        <NOTE p="86" b="25.0" l="0.246875" v="52" c="0"/>
+        <NOTE p="86" b="26.0" l="0.684375" v="91" c="0"/>
+        <NOTE p="85" b="26.6875" l="0.309375" v="60" c="0"/>
+        <NOTE p="86" b="27.0" l="0.684375" v="92" c="0"/>
+        <NOTE p="82" b="27.6875" l="0.309375" v="85" c="0"/>
+        <NOTE p="79" b="28.0" l="0.309375" v="45" c="0"/>
+        <NOTE p="89" b="30.0" l="0.996875" v="108" c="0"/>
+        <NOTE p="88" b="31.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="32.0" l="0.684375" v="86" c="0"/>
+        <NOTE p="87" b="32.6875" l="0.309375" v="58" c="0"/>
+        <NOTE p="88" b="33.0" l="0.684375" v="105" c="0"/>
+        <NOTE p="85" b="33.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="34.0" l="0.309375" v="67" c="0"/>
+        <NOTE p="83" b="35.0" l="0.309375" v="64" c="0"/>
+        <NOTE p="85" b="36.0" l="0.9968750000000002" v="44" c="0"/>
+        <NOTE p="86" b="37.0" l="3.746875" v="18" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="124.5833333333333" length="25.00000000000004"
+              offset="0.0" id="1059" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="82" b="1.000000000000028" l="0.246875" v="57" c="0"/>
+        <NOTE p="82" b="2.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="81" b="2.687500000000028" l="0.309375" v="71" c="0"/>
+        <NOTE p="81" b="0.0" l="0.996875" v="48" c="0"/>
+        <NOTE p="82" b="3.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="86" b="3.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="91" b="4.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="91" b="5.0" l="0.684375" v="64" c="0"/>
+        <NOTE p="90" b="5.687500000000028" l="0.309375" v="76" c="0"/>
+        <NOTE p="91" b="6.0" l="0.684375" v="81" c="0"/>
+        <NOTE p="93" b="6.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="94" b="7.000000000000001" l="0.246875" v="19" c="0"/>
+        <NOTE p="93" b="7.687500000000029" l="0.309375" v="68" c="0"/>
+        <NOTE p="94" b="8.0" l="0.684375" v="71" c="0"/>
+        <NOTE p="96" b="8.6875" l="0.309375" v="79" c="0"/>
+        <NOTE p="94" b="9.0" l="0.684375" v="84" c="0"/>
+        <NOTE p="93" b="9.687500000000028" l="0.309375" v="89" c="0"/>
+        <NOTE p="94" b="10.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="93" b="10.68750000000003" l="0.309375" v="102" c="0"/>
+        <NOTE p="91" b="11.0" l="0.684375" v="105" c="0"/>
+        <NOTE p="89" b="11.6875" l="0.309375" v="111" c="0"/>
+        <NOTE p="88" b="12.0" l="0.684375" v="114" c="0"/>
+        <NOTE p="86" b="12.6875" l="0.309375" v="117" c="0"/>
+        <NOTE p="84" b="13.00000000000003" l="0.246875" v="48" c="0"/>
+        <NOTE p="84" b="14.0" l="0.684375" v="60" c="0"/>
+        <NOTE p="83" b="14.68750000000003" l="0.309375" v="65" c="0"/>
+        <NOTE p="84" b="15.0" l="0.684375" v="68" c="0"/>
+        <NOTE p="88" b="15.6875" l="0.309375" v="72" c="0"/>
+        <NOTE p="93" b="16.0" l="0.246875" v="77" c="0"/>
+        <NOTE p="93" b="17.0" l="0.684375" v="41" c="0"/>
+        <NOTE p="92" b="17.68750000000003" l="0.309375" v="60" c="0"/>
+        <NOTE p="93" b="18.0" l="0.684375" v="69" c="0"/>
+        <NOTE p="94" b="18.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="96" b="19.0" l="0.246875" v="28" c="0"/>
+        <NOTE p="95" b="19.68750000000003" l="0.309375" v="41" c="0"/>
+        <NOTE p="96" b="20.0" l="0.684375" v="44" c="0"/>
+        <NOTE p="98" b="20.6875" l="0.309375" v="51" c="0"/>
+        <NOTE p="96" b="21.0" l="0.684375" v="54" c="0"/>
+        <NOTE p="95" b="21.68750000000003" l="0.309375" v="61" c="0"/>
+        <NOTE p="96" b="22.0" l="0.246875" v="64" c="0"/>
+        <NOTE p="94" b="22.6875" l="0.309375" v="72" c="0"/>
+        <NOTE p="93" b="23.0" l="0.684375" v="77" c="0"/>
+        <NOTE p="91" b="23.6875" l="0.309375" v="85" c="0"/>
+        <NOTE p="89" b="24.0" l="0.684375" v="89" c="0"/>
+        <NOTE p="88" b="24.6875" l="0.309375" v="103" c="0"/>
+        <NOTE p="86" b="25.0" l="0.246875" v="52" c="0"/>
+        <NOTE p="86" b="26.0" l="0.684375" v="91" c="0"/>
+        <NOTE p="85" b="26.6875" l="0.309375" v="60" c="0"/>
+        <NOTE p="86" b="27.0" l="0.684375" v="92" c="0"/>
+        <NOTE p="82" b="27.6875" l="0.309375" v="85" c="0"/>
+        <NOTE p="79" b="28.0" l="0.309375" v="45" c="0"/>
+        <NOTE p="89" b="30.0" l="0.996875" v="108" c="0"/>
+        <NOTE p="88" b="31.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="32.0" l="0.684375" v="86" c="0"/>
+        <NOTE p="87" b="32.6875" l="0.309375" v="58" c="0"/>
+        <NOTE p="88" b="33.0" l="0.684375" v="105" c="0"/>
+        <NOTE p="85" b="33.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="34.0" l="0.309375" v="67" c="0"/>
+        <NOTE p="91" b="36.0" l="0.996875" v="108" c="0"/>
+        <NOTE p="89" b="37.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="89" b="38.0" l="0.684375" v="86" c="0"/>
+        <NOTE p="88" b="38.6875" l="0.309375" v="58" c="0"/>
+        <NOTE p="89" b="39.0" l="0.684375" v="105" c="0"/>
+        <NOTE p="86" b="39.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="83" b="40.0" l="0.309375" v="67" c="0"/>
+        <NOTE p="86" b="41.00000000000006" l="0.309375" v="67" c="0"/>
+        <NOTE p="93" b="42.0" l="0.309375" v="67" c="0"/>
+        <NOTE p="91" b="43.0" l="3.184375" v="67" c="0"/>
+        <NOTE p="86" b="48.0" l="0.684375" v="86" c="0"/>
+        <NOTE p="88" b="48.6875" l="0.309375" v="58" c="0"/>
+        <NOTE p="89" b="49.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="50.00000000000001" l="0.684375" v="86" c="0"/>
+        <NOTE p="86" b="50.68750000000001" l="0.309375" v="58" c="0"/>
+        <NOTE p="84" b="51.0" l="0.246875" v="93" c="0"/>
+        <NOTE p="88" b="52.0" l="1.996875" v="94" c="0"/>
+        <NOTE p="86" b="54.0" l="0.246875" v="93" c="0"/>
+        <NOTE p="84" b="55.0" l="1.121875" v="93" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="149.5833333333333" length="25.41666666666666"
+              offset="0.0" id="1063" sync="0" colour="ffff0000" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="79" b="0.0" l="0.9968750000000002" v="94" c="0"/>
+        <NOTE p="88" b="0.9999999999999716" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="1.999999999999972" l="0.684375" v="94" c="0"/>
+        <NOTE p="87" b="2.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="88" b="3.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="89" b="3.687499999999972" l="0.309375" v="94" c="0"/>
+        <NOTE p="91" b="3.999999999999972" l="0.246875" v="94" c="0"/>
+        <NOTE p="86" b="4.999999999999972" l="0.996875" v="94" c="0"/>
+        <NOTE p="79" b="6.0" l="0.996875" v="93" c="0"/>
+        <NOTE p="84" b="6.999999999999972" l="0.246875" v="94" c="0"/>
+        <NOTE p="84" b="8.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="83" b="8.687500000000028" l="0.309375" v="94" c="0"/>
+        <NOTE p="84" b="9.000000000000028" l="0.684375" v="94" c="0"/>
+        <NOTE p="86" b="9.687500000000002" l="0.309375" v="94" c="0"/>
+        <NOTE p="88" b="10.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="81" b="13.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="83" b="11.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="76" b="12.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="81" b="13.99999999999997" l="0.684375" v="94" c="0"/>
+        <NOTE p="80" b="14.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="81" b="15.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="83" b="15.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="84" b="15.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="89" b="19.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="79" b="16.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="91" b="18.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="88" b="19.99999999999997" l="0.121875" v="94" c="0"/>
+        <NOTE p="89" b="20.125" l="0.1375" v="95" c="0"/>
+        <NOTE p="88" b="20.265625" l="0.731249999999968" v="95" c="0"/>
+        <NOTE p="84" b="21.0" l="0.934375" v="94" c="0"/>
+        <NOTE p="84" b="21.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="86" b="22.99999999999997" l="0.2468749999999998" v="94" c="0"/>
+        <NOTE p="79" b="24.0" l="0.9968750000000002" v="94" c="0"/>
+        <NOTE p="88" b="24.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="25.99999999999997" l="0.684375" v="94" c="0"/>
+        <NOTE p="87" b="26.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="88" b="27.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="89" b="27.68749999999997" l="0.309375" v="94" c="0"/>
+        <NOTE p="91" b="27.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="86" b="28.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="92" b="30.0" l="0.996875" v="93" c="0"/>
+        <NOTE p="93" b="31.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="32.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="87" b="32.68750000000003" l="0.309375" v="94" c="0"/>
+        <NOTE p="88" b="33.00000000000003" l="0.684375" v="94" c="0"/>
+        <NOTE p="89" b="33.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="88" b="34.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="86" b="35.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="84" b="36.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="84" b="37.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="91" b="40.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="93" b="37.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="96" b="38.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="88" b="41.00000000000001" l="0.684375" v="94" c="0"/>
+        <NOTE p="86" b="41.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="84" b="42.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="81" b="42.68750000000001" l="0.309375" v="94" c="0"/>
+        <NOTE p="89" b="42.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="43.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="86" b="44.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="46.0" l="1.996875" v="94" c="0"/>
+        <NOTE p="86" b="48.0" l="0.996875" v="94" c="0"/>
+        <NOTE p="84" b="49.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="93" b="49.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="96" b="50.99999999999997" l="0.996875" v="94" c="0"/>
+        <NOTE p="91" b="52.0" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="53.00000000000001" l="0.684375" v="94" c="0"/>
+        <NOTE p="86" b="53.6875" l="0.309375" v="94" c="0"/>
+        <NOTE p="84" b="54.0" l="0.684375" v="94" c="0"/>
+        <NOTE p="81" b="54.68750000000001" l="0.309375" v="94" c="0"/>
+        <NOTE p="89" b="54.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="88" b="55.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="86" b="56.99999999999997" l="0.246875" v="94" c="0"/>
+        <NOTE p="84" b="58.0" l="0.246875" v="94" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="7d69757d" filename="AudioUnit:Synths/aumu,Helm,Tyte"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1134"
+            enabled="1" windowX="80" windowY="125" programNum="-1" state="6025.hAGaoMGcv.C1AHv.DTfAGfPBJr.DQHwDTvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIAU4QWYOEAAjA..............KB....COfmUH....w3Cv......fL8jYlZB...LyO.B......z7SFYpI...PM+........XC.........2..........N.........jiOpp5p..fAe7STz0E..X.H9X61tA..FDB.......fAh7iA1MO..XvH+.......FPxOyLyL..fAk7iDIUB..XfI........FbhOpp5p..fAn7STz0E..XfO+.......F7yO.B....fA.A.......XPP........FHD.......fAC4Cv.....X.Q+.......FTjO.C....fAF8C......XvQ........FzkO.C....fAdA.......XvW........F.F.......fAgA.......XfX+.......FL1O......fAj8C......XPY........FXF.......fA74Cv.....XPe9.L.....F32O......fA+8Cf.....X.f+zQhYC..FD3O.B....fAB5ipptJ..Xvf+rfnoC..FPH.......fAE9Cf.....Xvl+zQhYC..Fv4O.B....fAc5ipptJ..Xfm+HB55B..F7I.......fAfB.......XPn9bVNNC..FH5O......fAi9C......X.o8vLyMC..FnK.......fA69CC2vH..X.u9vLyMC..Fz6O......fA99C......Xvu8vLyMC..F.L.......fAA+CC2vH..Xfv9vLyMC..FL7O......fAY+C......Xf1+.......FrcOpp5p..fAb+Cf.....XP2+zQhYC..F3sOpp5p..fAe+iHnqK..X.3........FDdOFGCi..fAh6Cf.....X.9........Fj+O......fA5+C......Xv9+.......Fv+O......fA8C.......Xf++HB55B..F7+O......vA.7C......bP.+.......GbwO......vAX7C......bPF+.......GnwO......vAa7C......b.G+.......GzwO......vAd7C......bvG+.......G.xO......Puw+C......zq7+.......8N+O......Puz+C......za8+.......8Z+O......Pu2+C......zK9+.......8l+O......Pu5+C......3KD+.......9FwO......fuR7C......36D+.......9RwO......fuU7C......3qE+.......9dwO......fuX7C......3aF+.H.....99hOpp5p..fuv7iHnqK..3aL........9JiOa21s..fuy........3KM+niKLB..9ViOpp5p..fu17yBhlN..36M9vDyMC..9hiOpp5p..fuN4CyL2L..36S........9BE.......fuQA.......3qT9vDyMC..9NE.......fuTA.......3aU+.......9ZkO+u++QyPCQISzN7PTvX0S0QGb0QmDHUFasAA.RDVcsU2SQHAP60fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHRb2E2LhvRCJ.BHhX1arQVYx8kag0VYhnCHhD2cwIBKMn.HfHRX0QGZuImH5.hHhvRCJ.BHhLWYzQWZtc1bhnCH60fBf.BHfHRXsA2WgQGcgM1ZhnCHv3RLvjSMzTCLv.CLv.CLv.CLvLCM3vRCJ.BHf.hHg0FbeQVYiEVdhnCHw3BLwPSNyTiM1DyM1PyMvTCNzLiLrzfBf.BHfHRXsA2WxUFakE1bkIhNf.iKxjSN4jSN4jSN4jSN4jSN4fCN4vRCJ.BHf.hHg0FbeMWcyQWXo4lH5.BLtbSN0PSN1LiLyTiL4PSLwbSN2LiMrzfBf.BHfHRXxA2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHgIGbecVXzUlH5.BLtTCKMn.Hf.BHhDlbv80aiQWX1U1bhnCHwvRCJ.BHf.hHgIGbe8lahnCHvvRCJ.BHf.hHgIGbeAWXzQWYx4lH5.BLrzfBf.BHfHRXxA2WykmaiIhNfDCKMn.Hf.BHhDlbv8Eck0FbuIhNfjCKMn.Hf.BHhHVYgQ2beAWYx8Uao4VczUlH5.hLtLSN4jSN4jSN4jSN4jSN4jSLwHCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLrzfBf.BHfHxX0Q2alYlH5.RLwHiK4bCM4jSN4jSN4jSN4jCMyHCKMn.Hf.BHhPVYrEVdeQlb480ckQmH5.BLtTCKMn.Hf.BHhPVYrEVdeYVYkQlXgM1ZhnCHv3BMv.CLv.CLv.CLv.CLv.CLxHiLrzfBf.BHfHBYkwVX48kYxUVb0UlaikmH5.hLrzfBf.BHfHBYkwVX480atIhNf.CKMn.Hf.BHhPVYrEVdeMWdtMlH5.RLrzfBf.BHfHBYkwVX48Eck0FbuIhNfjCKMn.Hf.BHhPVZyQ2axQWZu41WjIWZ1UlH5.BLrzfBf.BHfHBYoMGcuIGco8lae0VZ3IhNfDCKMn.Hf.BHhPVZyQ2axQWZu41Wu4lH5.BLrzfBf.BHfHBYoMGcuIGco8laeQWdvUlH5.BLrzfBf.BHfHhYow1WgQGcgM1ZhnCHvvRCJ.BHf.hHlkFaeQVYiEVdhnCHw3RMrzfBf.BHfHhYow1Wk4lceQVYvQGZhnCHvvRCJ.BHf.hHlkFaeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhXVZr80b0MGcgklahnCHv3RMrzfBf.BHfHhYowFckI2WhwVYtQlH5.BLtTCM0.CM2fCNy.iMzTSL1DiL0PSMrzfBf.BHfHhYowFckI2WjIWZ1UlH5.hLtbSL1PSN4jSN4jSN4jSN4jSLzbCKMn.Hf.BHhXVZrQWYx80atIhNf.CKMn.Hf.BHhXVZrQWYx80bnUFalIhNf.CKMn.Hf.BHhXVZrQWYx80bzkGakIhNf.CKMn.Hf.BHhX1ax0VXtQ2Wu4lH5.BLrzfBf.BHfHhYuIWag4FcegmH5.BLtTCMw.SN0fSNvPSLvjSM3jSM2LCMrzfBf.BHfHhYuIWag4FcekmH5.BLtTCLzTCLzTCLzTCLzTCLzPSM3TCKMn.Hf.BHhrVY4QmbgM1ZhnCHvvRCJ.BHf.hHrU1YgQ2ahnCHvvRCJ.BHf.hHs8FYeEFczE1XqIhNf.CKMn.Hf.BHhz1aj8EYkMVX4IhNfDiK0vRCJ.BHf.hHs8FYeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhz1aj80b0MGcgklahnCHv3RMrzfBf.BHfHRau41aewlYu8ULeEVavwVZzUGYkIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWlIWYwUWYtMVdhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kbkQmboc1YkImH5.RLrzfBf.BHfHRau41aewlYu8ULeMWdtMlH5.RLrzfBf.BHfHRau41aewlYu8ULeQWYsA2ahnCH3vRCJ.BHf.hHs8lau8Eal81Ww70cgYWYl8lbsIhNf.CKMn.Hf.BHhz1at81WrY1aeIyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8kLeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeIyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeIyWzUVav8lH5.xMrzfBf.BHfHRau41aewlYu8kLecWX1UlYuIWahnCHvvRCJ.BHf.hHt8VZyU1W18Fa00VYhnCHv3RLv.yLvHCMwjyL0PCNyfyMzTCM4vRCJ.BHf.hHtUWaeMGckA2bhnCH3vRCJ.BHf.hHuM2XeEyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeEyWzUmakIhNf.CKMn.Hf.BHh71bi8ULeUmaoM2at8EYkQWctUlH5.RLvvRCJ.BHf.hHuM2XeEyW04VZy8laeY2aoMVYyIhNfDCKMn.Hf.BHh71bi8ULeY2arUWakIhNf.iK1LCN1.CN3bCL4XyM2PSL4jiL2jCKMn.Hf.BHh71bi8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHuM2XeIyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeIyWzUmakIhNf.CKMn.Hf.BHh71bi8kLeUmaoM2at8EYkQWctUlH5.RLvvRCJ.BHf.hHuM2XeIyW04VZy8laeY2aoMVYyIhNfDCKMn.Hf.BHh71bi8kLeY2arUWakIhNf.iK2fiLyfCMvbiL0fCL1PSMwHSNvXCKMn.Hf.BHh71bi8kLecWX1UlYuIWahnCHwvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeEVauUmazIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1WlUVYjIVXis1WzUmakIhNf.CKMn.Hf.BHh.WZzMFZeIVYtQ1WxElamUlH5.hLrzfBf.BHfHBbuwVdewlYu8UXsAGaoQWcjUlH5.RLrzfBf.BHfHBbuwVdewlYu8kYxUVb0UlaikmH5.RLrzfBf.BHfHBbuwVdewlYu80b441XhnCHwvRCJ.BHf.hHv8Fa48Eal81WzUVav8lH5.xMrzfBf.BHfHBbuwVdewlYu80cgYWYl8lbsIhNf.CKMn.Hf.BHh.2arkGbn8la4IhNfPCKMn.Hf.BHh.2axQWXsUlaz8lH5.RK2vRCJ.BHf.hHv8lbzEVak4Fcu8Ec4AWYhnCHvvRCJ.BHf.hHxU1bu4VXtMVYhnCHv3RLzXiM1XiM1XiM1XiM1XiMwDSNrzfBf.BHfHhbkYWYxI1WjEVavklamIhNf.iK0vRCJ.BHf.hHxUlckImXeQlb480ckQmH5.BLtTCKMn.Hf.BHhHWY1Ulbh8kYkUFYhE1XqIhNf.iK4.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHxUlckImXe8lahnCHvvRCJ.BHf.hHyQWYv8kYxUVb0UlaikmH5.hLrzfBf.BHfHxbzUFbeMWYw8ELvHhNf.CKMn.Hf.BHhLGckA2WyUVbeASLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELyHhNf.CKMn.Hf.BHhLGckA2WyUVbeACMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvTiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeAyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvfiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeECLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULxHhNf.CKMn.Hf.BHhLGckA2WyUVbeEyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwPiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeEiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwbiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeESNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wx.iH5.BLrzfBf.BHfHxbzUFbeMWYw8kLwHhNf.CKMn.Hf.BHhLGckA2WyUVbeIiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxLiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLzHhNf.CKMn.Hf.BHhLGckA2WyUVbeISMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxXiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeICNhnCHvvRCJ.BHf.hHyQWYv80bkE2WxjiH5.BLrzfBf.BHfHxbzUFbeMWYw80LvHhNf.CKMn.Hf.BHhLGckA2WyUVbeMSLhnCHvvRCJ.BHf.hHyQWYv80bkEWck41XkI2WxUFcxk1YmUlbhnCHxvRCJ.BHf.hHyQWYv80bkEWck41XkI2WykmaiIhNfDCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeQWYsA2ahnCH2vRCJ.BHf.hHyQWYv80bs81azgVZtclH5.BLrzfBf.BHfHxbzUGczUlbeYlbkEWck41X4IhNfLCKMn.Hf.BHhLGc0QGckI2Wu4lH5.BLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeYlbkEWck41X4IhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WzUVav8lH5.hMrzfBf.BHfHxbzUGczUlbeM2alQmakM2bhnCHv3hLv.CLv.CLv.CLv.CLv.CLwDSLrzfBf.BHfHxbzUGczUlbeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeQWYsA2ahnCH3vRCJ.BHf.hHyUmXe81XzElckIhNf.CKMn.Hf.BHhLWch80bnUmYlwVYhnCHvvRCJ.BHf.hHyUmXeY2arUWakIhNf.CKMn.Hf.BHhLWch80cgYWYl8lbsIhNf.CKMn.Hf.BHhTmaoM2at8ULegVXx01atkldkIhNf.CKMn.Hf.BHhTmaoM2at8kLegVXx01atkldkIhNf.CKMn.Hf.BHhXWYr81XoQWdeQmbgM1ZhnCHvvRCJ.BHf.hH18Fa00VYhnCHv3xMvbSLvXCNv.CLv.CLv.CLyTyLwvRCJ.BHf.hHs8FY0wVXzk1atMmH5.xVMn.Hf.BHf.xdMn.Hf.BHf.BHfHxbuUmbiUlH5.hH1UFauMVZzkmHrzfBf.BHf.BHf.hHjU1bzklagQWZu4lH5.hHuM2XeIyW18Fa00VYhvRCJ.BHf.BHf.BHhDVauUmazIhNf.iKwbSM3LCMyDiMvLiM4jSNxfyLvLSCJ.BHf.BHfzGKMn.Hf.BHf.xdMn.Hf.BHf.BHfHxbuUmbiUlH5.hH1UFauMVZzkmHrzfBf.BHf.BHf.hHjU1bzklagQWZu4lH5.hHuM2XeEyW18Fa00VYhvRCJ.BHf.BHf.BHhDVauUmazIhNf.iKxDSL3fyM4bCN0HSMyXyL2TyMwzfBf.BHf.BH8wRCJ.BHf.BHfrWCJ.BHf.BHf.BHhL2a0I2XkIhNfHRau41aewlYu8ULhvRCJ.BHf.BHf.BHhPVYyQWZtEFco8lahnCHh71bi8kLeY2arUWakIBKMn.Hf.BHf.BHfHRXs8VctQmH5.BLt.yLvPCM4TCMwDCLyLCMyDSNwbSMMn.Hf.BHf.ReMn.Hf.BHc0fBf.ReMnPe.v0PMAxRrUVYxARPxAG.H.PF.XB.q..N..D.HAPS.7E.jAPZDDMATSf0DjMAaSf3DbNAoSf6WHC.......f.A.........PE..................vE+."
+            base64:layout="53.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.CTvP...">
+      <MACROPARAMETERS id="1135"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="4bandEq" id="1024" enabled="1" midFreq2="4599.87451171875"
+            presetDirty="1" midGain2="-6.166666507720947" midFreq1="2345.556640625"
+            midGain1="-0.1666666716337204" hiFreq="18769.587890625" hiGain="-2.333333253860474"
+            midQ1="0.2520593106746674" windowX="35" windowY="227" windowLocked="0"
+            loFreq="355.0715637207031" loQ="0.1000000014901161" midQ2="1.782390356063843"
+            hiQ="4.0" loGain="1.166666626930237">
+      <MACROPARAMETERS id="1058"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1017" enabled="1" volume="0.7527558207511902"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1018"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1021" enabled="1">
+      <MACROPARAMETERS id="1022"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1025" midiVProp="0.28125" midiVOffset="0.359375" colour="ffffaa00"
+         height="45.37080765135104">
+    <MACROPARAMETERS id="1027"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="0.0" length="5.0" offset="0.0" id="1159"
+              sync="0" colour="ffffaa00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="65" b="0.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="3.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="6.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="7.000000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="7.000000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="9.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="11.0" l="0.246875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="5.0" length="20.0" offset="0.0" id="1162"
+              sync="0" colour="ffffaa00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="65" b="0.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="77" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="64" b="3.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="6.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="9.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="12.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="15.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="55" b="18.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="24.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="77" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="64" b="27.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="30.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="33.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="36.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="39.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="41.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="41.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="65" b="42.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="44.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="72" b="44.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="47.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="47.0" l="0.246875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="25.0" length="20.00000000000001"
+              offset="0.0" id="1166" sync="0" colour="ffffaa00" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="65" b="0.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="77" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="64" b="3.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="6.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="9.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="12.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="15.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="55" b="18.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="24.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="77" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="64" b="27.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="30.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="33.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="36.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="39.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="41.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="41.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="55" b="42.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="71" b="44.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="67" b="44.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="47.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="47.0" l="0.246875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="45.0" length="40.0" offset="0.0"
+              id="1172" sync="0" colour="ffffaa00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="58" b="0.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="1.000000000000014" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="1.000000000000014" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="2.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="2.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="5.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="3.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="4.000000000000014" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="4.000000000000014" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="5.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="73" b="8.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="6.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="7.000000000000014" l="0.246875" v="82" c="0"/>
+        <NOTE p="73" b="7.000000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="8.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="12.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="9.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="11.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="11.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="57" b="15.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="18.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="19.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="19.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="20.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="72" b="20.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="62" b="21.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="66" b="22.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="72" b="22.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="57" b="23.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="23.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="55" b="24.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="55" b="27.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="59" b="30.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="31.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="31.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="32.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="32.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="33.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="34.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="34.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="35.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="35.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="36.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="39.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="41.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="41.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="59" b="42.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="44.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="44.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="46.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="69" b="46.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="65" b="47.00000000000003" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="47.00000000000003" l="0.246875" v="80" c="0"/>
+        <NOTE p="74" b="59.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="58" b="48.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="49.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="49.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="50.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="50.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="51.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="52.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="52.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="53.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="53.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="54.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="73" b="55.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="55.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="73" b="56.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="56.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="57.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="58.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="58.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="59.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="60.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="61.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="61.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="62.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="62.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="63.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="64.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="64.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="65.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="65.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="66.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="67.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="67.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="68.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="72" b="68.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="62" b="69.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="66" b="70.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="72" b="70.0" l="0.246875" v="84" c="0"/>
+        <NOTE p="57" b="71.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="71.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="55" b="72.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="73.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="73.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="74.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="74.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="55" b="75.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="76.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="76.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="77.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="70" b="77.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="78.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="79.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="79.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="80.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="80.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="81.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="82.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="82.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="83.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="83.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="84.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="85.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="85.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="86.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="86.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="58" b="87.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="88.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="88.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="89.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="89.00000000000003" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="90.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="91.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="91.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="92.00000000000003" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="92.00000000000003" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="93.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="93.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="94.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="94.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="95.00000000000003" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="95.00000000000003" l="0.246875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="85.0" length="20.0" offset="0.0"
+              id="1020" sync="0" colour="ffffaa00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="65" b="0.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="77" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="64" b="3.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="6.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="9.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="12.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="15.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="55" b="18.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="24.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="77" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="64" b="27.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="73" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="62" b="30.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="60" b="33.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="58" b="36.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="57" b="39.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="41.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="41.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="55" b="42.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="60" b="44.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="72" b="44.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="47.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="47.00000000000001" l="0.246875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="105.0" length="36.25" offset="0.0"
+              id="1032" sync="0" colour="ffffaa00" currentTake="0" speed="1.0"
+              originalLength="48.0" loopStartBeats="0.0" loopLengthBeats="48.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="70" b="0.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="1.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="1.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="2.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="79" b="2.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="3.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="70" b="4.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="4.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="5.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="79" b="5.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="6.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="7.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="76" b="7.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="76" b="8.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="79" b="8.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="9.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="82" b="10.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="11.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="79" b="11.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="69" b="12.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="13.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="76" b="13.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="76" b="14.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="79" b="14.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="69" b="15.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="69" b="16.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="76" b="16.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="17.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="79" b="17.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="62" b="18.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="69" b="19.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="74" b="19.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="20.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="77" b="20.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="62" b="21.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="69" b="22.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="74" b="22.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="23.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="65" b="23.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="67" b="24.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="70" b="25.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="74" b="25.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="70" b="26.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="77" b="26.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="67" b="27.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="70" b="28.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="74" b="28.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="70" b="29.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="77" b="29.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="60" b="30.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="67" b="31.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="76" b="31.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="70" b="32.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="79" b="32.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="61" b="33.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="69" b="34.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="76" b="34.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="73" b="35.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="79" b="35.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="62" b="36.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="69" b="37.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="74" b="37.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="77" b="38.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="81" b="38.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="61" b="39.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="69" b="40.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="73" b="40.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="77" b="41.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="81" b="41.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="60" b="42.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="69" b="43.0" l="0.246875" v="78" c="0"/>
+        <NOTE p="77" b="43.0" l="0.246875" v="78" c="0"/>
+        <NOTE p="72" b="44.0" l="0.246875" v="78" c="0"/>
+        <NOTE p="81" b="44.0" l="0.246875" v="78" c="0"/>
+        <NOTE p="59" b="45.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="79" b="46.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="71" b="46.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="74" b="47.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="77" b="47.00000000000001" l="0.246875" v="79" c="0"/>
+        <NOTE p="62" b="84.0" l="1.996875" v="81" c="0"/>
+        <NOTE p="77" b="86.0" l="1.996875" v="81" c="0"/>
+        <NOTE p="74" b="85.00000000000006" l="1.996875" v="81" c="0"/>
+        <NOTE p="81" b="86.0" l="1.996875" v="81" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="141.25" length="8.75" offset="0.0"
+              id="1072" sync="0" colour="ffffaa00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="67" b="0.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="71" b="1.000000000000057" l="0.246875" v="79" c="0"/>
+        <NOTE p="74" b="1.000000000000057" l="0.246875" v="79" c="0"/>
+        <NOTE p="74" b="2.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="79" b="2.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="62" b="3.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="67" b="4.000000000000057" l="0.246875" v="79" c="0"/>
+        <NOTE p="71" b="4.000000000000057" l="0.246875" v="79" c="0"/>
+        <NOTE p="71" b="5.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="74" b="5.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="62" b="6.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="67" b="7.000000000000057" l="0.246875" v="79" c="0"/>
+        <NOTE p="71" b="7.000000000000057" l="0.246875" v="79" c="0"/>
+        <NOTE p="65" b="8.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="74" b="8.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="62" b="9.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="65" b="10.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="72" b="10.00000000000006" l="0.246875" v="79" c="0"/>
+        <NOTE p="69" b="11.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="74" b="11.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="67" b="12.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="72" b="13.00000000000006" l="0.246875" v="79" c="0"/>
+        <NOTE p="76" b="13.00000000000006" l="0.246875" v="79" c="0"/>
+        <NOTE p="71" b="14.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="77" b="14.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="72" b="15.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="76" b="16.00000000000006" l="0.246875" v="79" c="0"/>
+        <NOTE p="79" b="16.00000000000006" l="0.246875" v="79" c="0"/>
+        <NOTE p="76" b="17.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="79" b="17.0" l="0.246875" v="79" c="0"/>
+        <NOTE p="67" b="18.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="71" b="18.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="69" b="19.00000000000006" l="0.246875" v="80" c="0"/>
+        <NOTE p="72" b="19.00000000000006" l="0.246875" v="80" c="0"/>
+        <NOTE p="71" b="20.0" l="0.246875" v="80" c="0"/>
+        <NOTE p="74" b="20.0" l="0.246875" v="80" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="150.0" length="23.95833333333334"
+              offset="0.0" id="1085" sync="0" colour="ffffaa00" currentTake="0"
+              speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="72" b="0.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="84" b="2.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="1.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="71" b="3.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="74" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="4.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="83" b="5.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="6.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="7.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="8.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="9.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="10.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="11.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="12.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="13.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="81" b="14.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="15.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="76" b="16.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="76" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="79" b="17.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="62" b="18.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="19.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="20.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="71" b="21.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="22.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="71" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="23.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="24.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="25.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="84" b="26.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="71" b="27.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="74" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="28.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="80" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="83" b="29.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="69" b="30.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="31.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="32.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="67" b="33.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="72" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="34.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="76" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="79" b="35.0" l="0.246875" v="83" c="0"/>
+        <NOTE p="65" b="36.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="37.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="81" b="38.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="39.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="71" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="79" b="40.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="41.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="81" b="41.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="62" b="42.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="71" b="43.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="44.00000000000001" l="0.2468749999999929" v="82" c="0"/>
+        <NOTE p="79" b="44.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="45.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="74" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="68" b="46.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="76" b="47.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="47.00000000000001" l="0.246875" v="82" c="0"/>
+        <NOTE p="65" b="48.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="69" b="49.00000000000006" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="49.00000000000006" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="50.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="81" b="50.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="64" b="51.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="67" b="52.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="76" b="52.00000000000006" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="53.00000000000001" l="0.246875" v="81" c="0"/>
+        <NOTE p="81" b="53.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="62" b="54.0" l="0.246875" v="81" c="0"/>
+        <NOTE p="65" b="55.00000000000006" l="0.246875" v="81" c="0"/>
+        <NOTE p="72" b="55.00000000000006" l="0.246875" v="82" c="0"/>
+        <NOTE p="67" b="56.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="77" b="56.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="76" b="57.0" l="0.246875" v="82" c="0"/>
+        <NOTE p="72" b="57.0" l="0.246875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="7d69757d" filename="AudioUnit:Synths/aumu,Helm,Tyte"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1155"
+            enabled="1" windowX="98" windowY="40" programNum="-1" state="5737.hAGaoMGcv.C1AHv.DTfAGfPBJr.DQHwDTvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIAU4QWYOEAAjA..............KB....COfmUH....w3Cv......fL8jYlZB...LyO.B......z7SFYpI...PM+........XC.........2..........N.........jiOpp5p..fAe7STz0E..X.H9X61tA..FDB.......fAh7iA1MO..XvH+.......FPxOyLyL..fAk7iDIUB..XfI........FbhOpp5p..fAn7STz0E..XfO+.......F7yO.B....fA.A.......XPP........FHD.......fAC4Cv.....X.Q+.......FTjO.C....fAF8C......XvQ........FzkO.C....fAdA.......XvW........F.F.......fAgA.......XfX+.......FL1O......fAj8C......XPY........FXF.......fA74Cv.....XPe9.L.....F32O......fA+8Cf.....X.f+zQhYC..FD3O.B....fAB5ipptJ..Xvf+rfnoC..FPH.......fAE9Cf.....Xvl+zQhYC..Fv4O.B....fAc5ipptJ..Xfm+HB55B..F7I.......fAfB.......XPn9bVNNC..FH5O......fAi9C......X.o8vLyMC..FnK.......fA69CC2vH..X.u9vLyMC..Fz6O......fA99C......Xvu8vLyMC..F.L.......fAA+CC2vH..Xfv9vLyMC..FL7O......fAY+C......Xf1+.......FrcOpp5p..fAb+Cf.....XP2+zQhYC..F3sOpp5p..fAe+iHnqK..X.3........FDdOFGCi..fAh6Cf.....X.9........Fj+O......fA5+C......Xv9+.......Fv+O......fA8C.......Xf++HB55B..F7+O......vA.7C......bP.+.......GbwO......vAX7C......bPF+.......GnwO......vAa7C......b.G+.......GzwO......vAd7C......bvG+.......G.xO......Puw+C......zq7+.......8N+O......Puz+C......za8+.......8Z+O......Pu2+C......zK9+.......8l+O......Pu5+C......3KD+.......9FwO......fuR7C......36D+.......9RwO......fuU7C......3qE+.......9dwO......fuX7C......3aF+.H.....99hOpp5p..fuv7iHnqK..3aL........9JiOa21s..fuy........3KM+niKLB..9ViOpp5p..fu17yBhlN..36M9vDyMC..9hiOpp5p..fuN4CyL2L..36S........9BE.......fuQA.......3qT9vDyMC..9NE.......fuTA.......3aU+.......9ZkO+u++QyPCQISzN7PTvX0S0QGb0QmDHUFasAA.RDVcsU2SQDAH60fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHRb2E2cwIiHrzfBf.hHl8FajUlbe4VXsUlH5.hHwcWbhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLrzfBf.BHfHRXsA2WjU1XgkmH5.BLtbSMxHSN2bSNzDSL2XCM2.yM3PiLrzfBf.BHfHRXsA2WxUFakE1bkIhNf.iK3PyLvXCL1XSL2XCM2.SM4TCMwjCKMn.Hf.BHhDVav80b0MGcgklahnCHvvRCJ.BHf.hHgIGbeYlbkEWck41X4IhNfHCKMn.Hf.BHhDlbv80YgQWYhnCHv3RMrzfBf.BHfHRXxA2WuMFcgYWYyIhNfDCKMn.Hf.BHhDlbv80atIhNf.CKMn.Hf.BHhDlbv8EbgQGckImahnCHvvRCJ.BHf.hHgIGbeMWdtMlH5.RLrzfBf.BHfHRXxA2WzUVav8lH5.RNrzfBf.BHfHhXkEFcy8EbkI2Wskla0QWYhnCHx3xL4jSN4jSN4jSN4jSN4jSNwDiLrzfBf.BHfHxXx81by8UauQVcrEFco8lahnCHvvRCJ.BHf.hHiUGcuYlYhnCH4HiKyTCLv.CLv.CLv.CLv.CN0HyMrzfBf.BHfHBYkwVX48EYxk2W2UFchnCHv3RMrzfBf.BHfHBYkwVX48kYkUFYhE1XqIhNf.iKz.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHjUFagk2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHjUFagk2Wu4lH5.BLrzfBf.BHfHBYkwVX480b441XhnCHwvRCJ.BHf.hHjUFagk2WzUVav8lH5.RNrzfBf.BHfHBYoMGcuIGco8laeQlboYWYhnCHvvRCJ.BHf.hHjk1bz8lbzk1at8UaogmH5.RLrzfBf.BHfHBYoMGcuIGco8lae8lahnCHvvRCJ.BHf.hHjk1bz8lbzk1at8Ec4AWYhnCHvvRCJ.BHf.hHlkFaeEFczE1XqIhNf.CKMn.Hf.BHhXVZr8EYkMVX4IhNfDiK0PCM3XCLybSMyjiL4TCN1DCNrzfBf.BHfHhYow1Wk4lceQVYvQGZhnCHvvRCJ.BHf.hHlkFaeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhXVZr80b0MGcgklahnCHv3RMy.CLv.CLv.CLv.CLv.CLxXiM0vRCJ.BHf.hHlkFazUlbeIFak4FYhnCHv3BNzbyLzDiLxjCNyfyMvjiMy.CN1vRCJ.BHf.hHlkFazUlbeQlboYWYhnCHvvRCJ.BHf.hHlkFazUlbe8lahnCHvvRCJ.BHf.hHlkFazUlbeMGZkwlYhnCHvvRCJ.BHf.hHlkFazUlbeMGc4wVYhnCHvvRCJ.BHf.hHl8lbsElaz80atIhNf.CKMn.Hf.BHhX1ax0VXtQ2W3IhNf.iK0.iM3PSNyDSMvXCNzjyLwbCNvXCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iKxDiMxDiMxDiMxDiMxDiMxHCNxHCKMn.Hf.BHhrVY4QmbgM1ZhnCHvvRCJ.BHf.hHrU1YgQ2ahnCHvvRCJ.BHf.hHs8FYeEFczE1XqIhNf.CKMn.Hf.BHhz1aj8EYkMVX4IhNfDiK0vRCJ.BHf.hHs8FYeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhz1aj80b0MGcgklahnCHv3RMrzfBf.BHfHRau41aewlYu8ULeEVavwVZzUGYkIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWlIWYwUWYtMVdhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kbkQmboc1YkImH5.RLrzfBf.BHfHRau41aewlYu8ULeMWdtMlH5.RLrzfBf.BHfHRau41aewlYu8ULeQWYsA2ahnCH4vRCJ.BHf.hHs8lau8Eal81Ww70cgYWYl8lbsIhNf.CKMn.Hf.BHhz1at81WrY1aeIyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8kLeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeIyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeIyWzUVav8lH5.xMrzfBf.BHfHRau41aewlYu8kLecWX1UlYuIWahnCHvvRCJ.BHf.hHt8VZyU1W18Fa00VYhnCHvvRCJ.BHf.hHtUWaeMGckA2bhnCH3vRCJ.BHf.hHuM2XeEyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeEyWzUmakIhNf.CKMn.Hf.BHh71bi8ULeUmaoM2at8EYkQWctUlH5.BMtTSN0LSLxTCLv.CLv.CLvLSM0LCKMn.Hf.BHh71bi8ULeUmaoM2at8kcuk1XkMmH5.RLrzfBf.BHfHxayM1Ww7kcuwVcsUlH5.RLrzfBf.BHfHxayM1Ww70cgYWYl8lbsIhNfDCKMn.Hf.BHh71bi8kLeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kLeQWctUlH5.BLrzfBf.BHfHxayM1Wx7Uctk1bu41WjUFc04VYhnCHw.CKMn.Hf.BHh71bi8kLeUmaoM2at8kcuk1XkMmH5.RLrzfBf.BHfHxayM1Wx7kcuwVcsUlH5.BLtXiLxTCMxfCMxbCMwjyL0PSN3HCKMn.Hf.BHh71bi8kLecWX1UlYuIWahnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeEVauUmazIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1WlUVYjIVXis1WzUmakIhNf.CKMn.Hf.BHh.WZzMFZeIVYtQ1WxElamUlH5.hLrzfBf.BHfHBbuwVdewlYu8UXsAGaoQWcjUlH5.RLrzfBf.BHfHBbuwVdewlYu8kYxUVb0UlaikmH5.RLrzfBf.BHfHBbuwVdewlYu80b441XhnCHwvRCJ.BHf.hHv8Fa48Eal81WzUVav8lH5.xMrzfBf.BHfHBbuwVdewlYu80cgYWYl8lbsIhNf.CKMn.Hf.BHh.2arkGbn8la4IhNffCKMn.Hf.BHh.2axQWXsUlaz8lH5.RK13xM1HCLv.CLv.CLv.CLv.CM0PyMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLrzfBf.BHfHhbkYWYxI1WjEVavklamIhNf.iK0vRCJ.BHf.hHxUlckImXeQlb480ckQmH5.BLtTCKMn.Hf.BHhHWY1Ulbh8kYkUFYhE1XqIhNf.iK4.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHxUlckImXe8lahnCHvvRCJ.BHf.hHyQWYv8kYxUVb0UlaikmH5.hLrzfBf.BHfHxbzUFbeMWYw8ELvHhNf.CKMn.Hf.BHhLGckA2WyUVbeASLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELyHhNf.CKMn.Hf.BHhLGckA2WyUVbeACMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvTiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeAyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvfiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeECLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULxHhNf.CKMn.Hf.BHhLGckA2WyUVbeEyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwPiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeEiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwbiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeESNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wx.iH5.BLrzfBf.BHfHxbzUFbeMWYw8kLwHhNf.CKMn.Hf.BHhLGckA2WyUVbeIiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxLiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLzHhNf.CKMn.Hf.BHhLGckA2WyUVbeISMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxXiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeICNhnCHvvRCJ.BHf.hHyQWYv80bkE2WxjiH5.BLrzfBf.BHfHxbzUFbeMWYw80LvHhNf.CKMn.Hf.BHhLGckA2WyUVbeMSLhnCHvvRCJ.BHf.hHyQWYv80bkEWck41XkI2WxUFcxk1YmUlbhnCHxvRCJ.BHf.hHyQWYv80bkEWck41XkI2WykmaiIhNfDCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeQWYsA2ahnCH2vRCJ.BHf.hHyQWYv80bs81azgVZtclH5.BLrzfBf.BHfHxbzUGczUlbeYlbkEWck41X4IhNfLCKMn.Hf.BHhLGc0QGckI2Wu4lH5.BLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeYlbkEWck41X4IhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WzUVav8lH5.hMrzfBf.BHfHxbzUGczUlbeM2alQmakM2bhnCHv3hLv.CLv.CLv.CLv.CLv.CLwDSLrzfBf.BHfHxbzUGczUlbeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeQWYsA2ahnCH3vRCJ.BHf.hHyUmXe81XzElckIhNf.CKMn.Hf.BHhLWch80bnUmYlwVYhnCHv3xLz.iMvjyL2PSN4jSN4jSN4HCLwvRCJ.BHf.hHyUmXeY2arUWakIhNf.CKMn.Hf.BHhLWch80cgYWYl8lbsIhNf.CKMn.Hf.BHhTmaoM2at8ULegVXx01atkldkIhNf.CKMn.Hf.BHhTmaoM2at8kLegVXx01atkldkIhNf.CKMn.Hf.BHhXWYr81XoQWdeQmbgM1ZhnCHvvRCJ.BHf.hH18Fa00VYhnCHv3xMvbSLvXCNv.CLv.CLv.CLyTyLwvRCJ.BHf.hHs8FY0wVXzk1atMmH5.xVMn.Hf.BHf.xdMn.Hf.BHf.BHfHxbuUmbiUlH5.hHs8lau8Eal81WwHBKMn.Hf.BHf.BHfHBYkMGco4VXzk1atIhNfHxayM1Ww7Ec04VYhvRCJ.BHf.BHf.BHhDVauUmazIhNf.iKvDSNyPyL2PSN0HyLwXiL2TiM0LiLMn.Hf.BHf.ReMn.Hf.BHc0fBf.ReMnPe.v0PMAxRrUVYxARPxAG.H.PF.XB.q..N..D.HAPS.7E.jAPZDDMATSf0DjMAaSf3DbNAoSf6VHA.......f.A.........PE..................fEe."
+            base64:layout="53.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.CTvP...">
+      <MACROPARAMETERS id="1156"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1030" enabled="1" volume="0.6552174687385559"
+            windowX="80" windowY="125" windowLocked="0" pan="-0.08715534210205078">
+      <MACROPARAMETERS id="1031"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1034" enabled="1">
+      <MACROPARAMETERS id="1035"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1038" midiVProp="0.28125" midiVOffset="0.359375" colour="ffaaff00"
+         height="45.37080765135104" verticalOffset="0.2369402985074627"
+         visibleProportion="0.25">
+    <MACROPARAMETERS id="1040"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="23.75" length="21.25" offset="0.0"
+              id="1175" sync="0" colour="ffaaff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="40" b="0.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="1.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="43" b="2.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="3.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="6.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="9.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="12.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="34" b="15.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="18.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="34" b="21.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="24.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="25.00000000000001" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="26.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="41" b="27.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="30.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="33.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="36.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="34" b="39.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="42.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="44.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="31" b="45.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="35" b="47.00000000000001" l="0.996875" v="81" c="0"/>
+        <NOTE p="36" b="48.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="36" b="50.0" l="0.746875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="45.0" length="40.0" offset="0.0"
+              id="1182" sync="0" colour="ffaaff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="34" b="0.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="3.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="37" b="6.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="37" b="9.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="12.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="11.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="15.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="18.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="21.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="42" b="23.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="43" b="24.0" l="0.746875" v="83" c="0"/>
+        <NOTE p="31" b="27.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="35" b="30.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="33.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="36.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="39.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="35" b="42.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="45.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="48.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="51.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="37" b="54.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="37" b="57.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="60.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="63.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="66.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="69.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="71.00000000000003" l="0.746875" v="82" c="0"/>
+        <NOTE p="31" b="72.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="75.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="78.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="81.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="82.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="40" b="83.00000000000003" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="84.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="40" b="87.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="90.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="40" b="93.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="94.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="43" b="95.00000000000003" l="0.746875" v="82" c="0"/>
+        <NOTE p="31" b="59.00000000000003" l="0.746875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="85.0" length="20.0" offset="1.25"
+              id="1028" sync="0" colour="ffaaff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="40" b="0.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="1.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="43" b="2.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="3.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="6.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="9.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="12.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="34" b="15.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="18.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="34" b="21.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="24.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="25.00000000000001" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="26.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="41" b="27.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="30.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="38" b="33.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="36.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="34" b="39.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="42.0" l="0.496875" v="82" c="0"/>
+        <NOTE p="38" b="44.0" l="0.496875" v="82" c="0"/>
+        <NOTE p="31" b="45.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="36" b="47.00000000000001" l="0.996875" v="81" c="0"/>
+        <NOTE p="29" b="48.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="29" b="50.00000000000001" l="0.746875" v="82" c="0"/>
+        <NOTE p="41" b="29.00000000000003" l="0.996875" v="82" c="0"/>
+        <NOTE p="37" b="32.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="38" b="35.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="35" b="38.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="34" b="41.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="40" b="43.0" l="0.496875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="105.0" length="36.25" offset="0.0"
+              id="1046" sync="0" colour="ffaaff00" currentTake="0" speed="1.0"
+              originalLength="48.0" loopStartBeats="0.0" loopLengthBeats="48.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="34" b="0.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="3.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="31" b="6.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="9.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="11.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="12.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="15.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="17.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="18.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="38" b="21.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="23.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="34" b="24.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="31" b="27.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="30.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="33.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="35.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="36.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="37" b="39.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="42.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="35" b="45.0" l="0.746875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="141.25" length="8.75" offset="0.0"
+              id="1041" sync="0" colour="ffaaff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="35" b="0.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="38" b="2.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="43" b="3.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="41" b="9.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="31" b="12.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="36" b="15.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="38" b="6.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="31" b="18.0" l="0.746875" v="81" c="0"/>
+        <NOTE p="31" b="20.0" l="0.746875" v="81" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="150.0" length="26.25" offset="1.25"
+              id="1093" sync="0" colour="ffaaff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="35" b="0.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="1.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="2.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="3.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="35" b="6.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="9.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="31" b="12.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="41" b="15.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="18.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="41" b="21.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="43" b="24.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="25.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="35" b="26.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="36" b="27.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="35" b="30.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="33" b="33.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="43" b="36.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="41" b="39.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="40" b="42.0" l="0.496875" v="82" c="0"/>
+        <NOTE p="33" b="44.0" l="0.496875" v="82" c="0"/>
+        <NOTE p="38" b="45.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="43" b="47.00000000000001" l="0.996875" v="81" c="0"/>
+        <NOTE p="40" b="48.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="33" b="50.00000000000001" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="29.00000000000003" l="0.996875" v="82" c="0"/>
+        <NOTE p="32" b="32.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="45" b="35.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="42" b="38.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="41" b="41.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="35" b="43.0" l="0.496875" v="82" c="0"/>
+        <NOTE p="43" b="14.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="41" b="51.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="40" b="54.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="33" b="56.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="38" b="57.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="31" b="59.0" l="0.746875" v="82" c="0"/>
+        <NOTE p="36" b="60.0" l="0.746875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="7d69757d" filename="AudioUnit:Synths/aumu,Helm,Tyte"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1178"
+            enabled="1" windowX="103" windowY="43" programNum="-1" state="5569.hAGaoMGcv.C1AHv.DTfAGfPBJr.DQHwDTvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIAU4QWYOEAAjA..............KB....COfmUH....w3Cv......fL8jYlZB...LyO.B......z7SFYpI...PM+........XC.........2..........N.........jiOpp5p..fAe7STz0E..X.H9X61tA..FDB.......fAh7iA1MO..XvH+.......FPxOyLyL..fAk7iDIUB..XfI........FbhOpp5p..fAn7STz0E..XfO+.......F7yO.B....fA.A.......XPP........FHD.......fAC4Cv.....X.Q+.......FTjO.C....fAF8C......XvQ........FzkO.C....fAdA.......XvW........F.F.......fAgA.......XfX+.......FL1O......fAj8C......XPY........FXF.......fA74Cv.....XPe9.L.....F32O......fA+8Cf.....X.f+zQhYC..FD3O.B....fAB5ipptJ..Xvf+rfnoC..FPH.......fAE9Cf.....Xvl+zQhYC..Fv4O.B....fAc5ipptJ..Xfm+HB55B..F7I.......fAfB.......XPn9bVNNC..FH5O......fAi9C......X.o8vLyMC..FnK.......fA69CC2vH..X.u9vLyMC..Fz6O......fA99C......Xvu8vLyMC..F.L.......fAA+CC2vH..Xfv9vLyMC..FL7O......fAY+C......Xf1+.......FrcOpp5p..fAb+Cf.....XP2+zQhYC..F3sOpp5p..fAe+iHnqK..X.3........FDdOFGCi..fAh6Cf.....X.9........Fj+O......fA5+C......Xv9+.......Fv+O......fA8C.......Xf++HB55B..F7+O......vA.7C......bP.+.......GbwO......vAX7C......bPF+.......GnwO......vAa7C......b.G+.......GzwO......vAd7C......bvG+.......G.xO......Puw+C......zq7+.......8N+O......Puz+C......za8+.......8Z+O......Pu2+C......zK9+.......8l+O......Pu5+C......3KD+.......9FwO......fuR7C......36D+.......9RwO......fuU7C......3qE+.......9dwO......fuX7C......3aF+.H.....99hOpp5p..fuv7iHnqK..3aL........9JiOa21s..fuy........3KM+niKLB..9ViOpp5p..fu17yBhlN..36M9vDyMC..9hiOpp5p..fuN4CyL2L..36S........9BE.......fuQA.......3qT9vDyMC..9NE.......fuTA.......3aU+.......9ZkO+u++QyPCQISzN7PTvX0S0QGb0QmDHUFasAA.RDVcsU2SQ.Ad60fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHRb2EGMhvRCJ.BHhX1arQVYx8kag0VYhnCHhD2cwIBKMn.HfHRX0QGZuImH5.hHhvRCJ.BHhLWYzQWZtc1bhnCH60fBf.BHfHRXsA2WgQGcgM1ZhnCHv3RLybiMybCN1biMzbCL0fCNx.iL1vRCJ.BHf.hHg0FbeQVYiEVdhnCHw3hMwjCM3TiL4PSLwbiMzXSN1bCMrzfBf.BHfHRXsA2WxUFakE1bkIhNf.iK1biLw.CM2bSNzDSL2XCM2DCN4PCKMn.Hf.BHhDVav80b0MGcgklahnCHv3xMzPyLwHSN0jSM0fCNxLCM3LyMrzfBf.BHfHRXxA2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHgIGbecVXzUlH5.BLtTCKMn.Hf.BHhDlbv80aiQWX1U1bhnCHwvRCJ.BHf.hHgIGbe8lahnCHvvRCJ.BHf.hHgIGbeAWXzQWYx4lH5.BLrzfBf.BHfHRXxA2WykmaiIhNfDCKMn.Hf.BHhDlbv8Eck0FbuIhNfjCKMn.Hf.BHhHVYgQ2beAWYx8Uao4VczUlH5.hLtLSN4jSN4jSN4jSN4jSN4jSLwHCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLtDiL0HyMyPyL2TCLv.CLv.CLwDSLrzfBf.BHfHxX0Q2alYlH5.BNy3hM3bSMrzfBf.BHfHBYkwVX48EYxk2W2UFchnCHv3RMrzfBf.BHfHBYkwVX48kYkUFYhE1XqIhNf.iKz.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHjUFagk2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHjUFagk2Wu4lH5.BLrzfBf.BHfHBYkwVX480b441XhnCHwvRCJ.BHf.hHjUFagk2WzUVav8lH5.RNrzfBf.BHfHBYoMGcuIGco8laeQlboYWYhnCHvvRCJ.BHf.hHjk1bz8lbzk1at8UaogmH5.RLrzfBf.BHfHBYoMGcuIGco8lae8lahnCHvvRCJ.BHf.hHjk1bz8lbzk1at8Ec4AWYhnCHvvRCJ.BHf.hHlkFaeEFczE1XqIhNf.CKMn.Hf.BHhXVZr8EYkMVX4IhNfDiK0vRCJ.BHf.hHlkFaeUla18EYkAGcnIhNf.CKMn.Hf.BHhXVZr8kbkwVYgMWYhnCHw3RMrzfBf.BHfHhYow1WyU2bzEVZtIhNf.iK0vRCJ.BHf.hHlkFazUlbeIFak4FYhnCHvvRCJ.BHf.hHlkFazUlbeQlboYWYhnCHvvRCJ.BHf.hHlkFazUlbe8lahnCHwvRCJ.BHf.hHlkFazUlbeMGZkwlYhnCHvvRCJ.BHf.hHlkFazUlbeMGc4wVYhnCHvvRCJ.BHf.hHl8lbsElaz80atIhNf.CKMn.Hf.BHhX1ax0VXtQ2W3IhNf.iK1.iL2LSN2HiMvHyMyjyMxHiM3HCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0.CM0.CM0.CM0.CM0.CMzTCN0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.hMrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeEyW2ElckY1ax0lH5.RLrzfBf.BHfHxayM1Wx7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Wx7Ec04VYhnCHvvRCJ.BHf.hHuM2XeIyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Wx7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeIyW18Fa00VYhnCHv3RMzbyMxHSM0bCM4jSN4jSN3PiMzvRCJ.BHf.hHuM2XeIyW2ElckY1ax0lH5.xLrzfBf.BHfHxayM1WlUVYjIVXis1Wg01a04FchnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8Ec04VYhnCHvvRCJ.BHf.hHvkFcig1WhUlaj8kbg41YkIhNfHCKMn.Hf.BHh.2ark2WrY1aeEVavwVZzUGYkIhNfDCKMn.Hf.BHh.2ark2WrY1aeYlbkEWck41X4IhNfDCKMn.Hf.BHh.2ark2WrY1aeMWdtMlH5.RLrzfBf.BHfHBbuwVdewlYu8Eck0FbuIhNfbCKMn.Hf.BHh.2ark2WrY1aecWX1UlYuIWahnCHvvRCJ.BHf.hHv8Fa4AGZu4VdhnCHzvRCJ.BHf.hHv8lbzEVak4FcuIhNfzxMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLtDCNv.CLv.CLv.CLv.CLv.CM3fSMrzfBf.BHfHhbkYWYxI1WjEVavklamIhNf.iK0vRCJ.BHf.hHxUlckImXeQlb480ckQmH5.BLtTCKMn.Hf.BHhHWY1Ulbh8kYkUFYhE1XqIhNf.iK4.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHxUlckImXe8lahnCHvvRCJ.BHf.hHyQWYv8kYxUVb0UlaikmH5.hLrzfBf.BHfHxbzUFbeMWYw8ELvHhNf.CKMn.Hf.BHhLGckA2WyUVbeASLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELyHhNf.CKMn.Hf.BHhLGckA2WyUVbeACMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvTiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeAyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvfiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeECLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULxHhNf.CKMn.Hf.BHhLGckA2WyUVbeEyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwPiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeEiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwbiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeESNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wx.iH5.BLrzfBf.BHfHxbzUFbeMWYw8kLwHhNf.CKMn.Hf.BHhLGckA2WyUVbeIiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxLiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLzHhNf.CKMn.Hf.BHhLGckA2WyUVbeISMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxXiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeICNhnCHvvRCJ.BHf.hHyQWYv80bkE2WxjiH5.BLrzfBf.BHfHxbzUFbeMWYw80LvHhNf.CKMn.Hf.BHhLGckA2WyUVbeMSLhnCHvvRCJ.BHf.hHyQWYv80bkEWck41XkI2WxUFcxk1YmUlbhnCHxvRCJ.BHf.hHyQWYv80bkEWck41XkI2WykmaiIhNfDCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeQWYsA2ahnCH2vRCJ.BHf.hHyQWYv80bs81azgVZtclH5.BLrzfBf.BHfHxbzUGczUlbeYlbkEWck41X4IhNfLCKMn.Hf.BHhLGc0QGckI2Wu4lH5.BLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeYlbkEWck41X4IhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WzUVav8lH5.hMrzfBf.BHfHxbzUGczUlbeM2alQmakM2bhnCHv3hLv.CLv.CLv.CLv.CLv.CLwDSLrzfBf.BHfHxbzUGczUlbeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeQWYsA2ahnCH3vRCJ.BHf.hHyUmXe81XzElckIhNf.CKMn.Hf.BHhLWch80bnUmYlwVYhnCHvvRCJ.BHf.hHyUmXeY2arUWakIhNf.CKMn.Hf.BHhLWch80cgYWYl8lbsIhNf.CKMn.Hf.BHhTmaoM2at8ULegVXx01atkldkIhNf.CKMn.Hf.BHhTmaoM2at8kLegVXx01atkldkIhNf.CKMn.Hf.BHhXWYr81XoQWdeQmbgM1ZhnCHvvRCJ.BHf.hH18Fa00VYhnCHv3xMvbSLvXCNv.CLv.CLv.CLyTyLwvRCJ.BHf.hHs8FY0wVXzk1atMmH5.xVc0fBf.ReMnPe.v0PMAxRrUVYxARPxAG.H.PF.XB.q..N..D.HAPS.7E.jAPZDDMATSf0DjMAaSf3DbNAoSf6UnF.......f.A.........PE..................PE2A"
+            base64:layout="53.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.CTvP...">
+      <MACROPARAMETERS id="1179"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1043" enabled="1" volume="0.7682966589927673"
+            windowX="80" windowY="125" windowLocked="0" pan="0.04813884198665619">
+      <MACROPARAMETERS id="1044"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1047" enabled="1">
+      <MACROPARAMETERS id="1048"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1051" midiVProp="0.28125" midiVOffset="0.359375" colour="ff00ff00"
+         height="45.37080765135104" verticalOffset="0.25" visibleProportion="0.25"
+         solo="0">
+    <MACROPARAMETERS id="1053"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="45.0" length="40.0" offset="0.0"
+              id="1011" sync="0" colour="ff00ff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="58" b="0.0" l="4.996875" v="82" c="0"/>
+        <NOTE p="61" b="6.0" l="3.996875" v="82" c="0"/>
+        <NOTE p="60" b="12.0" l="4.996875" v="82" c="0"/>
+        <NOTE p="60" b="5.0" l="0.9968750000000002" v="82" c="0"/>
+        <NOTE p="60" b="10.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="58" b="11.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="58" b="17.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="57" b="18.0" l="3.996875" v="82" c="0"/>
+        <NOTE p="60" b="22.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="57" b="23.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="55" b="24.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="58" b="27.0" l="1.996875" v="82" c="0"/>
+        <NOTE p="57" b="29.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="59" b="30.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="58" b="33.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="57" b="36.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="58" b="39.0" l="2.996875" v="83" c="0"/>
+        <NOTE p="59" b="42.0" l="2.996875" v="83" c="0"/>
+        <NOTE p="60" b="45.0" l="1.996875" v="83" c="0"/>
+        <NOTE p="53" b="47.00000000000003" l="0.9968750000000002" v="83" c="0"/>
+        <NOTE p="62" b="48.0" l="5.996875" v="82" c="0"/>
+        <NOTE p="61" b="54.0" l="3.996875" v="82" c="0"/>
+        <NOTE p="67" b="58.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="65" b="59.00000000000003" l="0.996875" v="83" c="0"/>
+        <NOTE p="60" b="60.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="57" b="63.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="58" b="64.0" l="0.996875" v="83" c="0"/>
+        <NOTE p="60" b="65.00000000000003" l="0.996875" v="83" c="0"/>
+        <NOTE p="62" b="66.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="57" b="69.0" l="2.996875" v="83" c="0"/>
+        <NOTE p="58" b="72.0" l="2.996875" v="83" c="0"/>
+        <NOTE p="55" b="75.0" l="2.996875" v="83" c="0"/>
+        <NOTE p="60" b="78.0" l="2.996875" v="83" c="0"/>
+        <NOTE p="52" b="81.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="53" b="84.0" l="2.996875000000001" v="82" c="0"/>
+        <NOTE p="55" b="87.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="57" b="90.0" l="2.996875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="105.0" length="45.0" offset="0.0"
+              id="1054" sync="0" colour="ff00ff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="58" b="0.0" l="5.996875" v="82" c="0"/>
+        <NOTE p="55" b="6.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="60" b="9.0" l="1.996875" v="82" c="0"/>
+        <NOTE p="58" b="11.0" l="0.9968750000000002" v="82" c="0"/>
+        <NOTE p="57" b="12.0" l="2.871875" v="82" c="0"/>
+        <NOTE p="57" b="15.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="55" b="16.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="53" b="17.0" l="0.871875" v="82" c="0"/>
+        <NOTE p="53" b="18.0" l="2.871875" v="82" c="0"/>
+        <NOTE p="53" b="21.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="55" b="22.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="57" b="23.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="58" b="24.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="55" b="27.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="60" b="30.0" l="1.996875" v="81" c="0"/>
+        <NOTE p="57" b="33.0" l="1.871875" v="81" c="0"/>
+        <NOTE p="58" b="32.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="57" b="35.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="50" b="36.0" l="0.9968750000000002" v="80" c="0"/>
+        <NOTE p="61" b="39.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="60" b="42.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="53" b="37.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="62" b="38.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="65" b="43.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="60" b="44.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="59" b="45.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="55" b="46.0" l="0.996875" v="79" c="0"/>
+        <NOTE p="57" b="47.0" l="0.996875" v="79" c="0"/>
+        <NOTE p="58" b="48.0" l="5.996875" v="82" c="0"/>
+        <NOTE p="55" b="54.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="60" b="57.0" l="1.996875" v="82" c="0"/>
+        <NOTE p="58" b="59.0" l="0.9968750000000002" v="82" c="0"/>
+        <NOTE p="57" b="60.0" l="2.871875" v="82" c="0"/>
+        <NOTE p="57" b="63.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="55" b="64.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="53" b="65.0" l="0.871875" v="82" c="0"/>
+        <NOTE p="53" b="66.0" l="2.871875" v="82" c="0"/>
+        <NOTE p="53" b="69.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="55" b="70.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="57" b="71.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="58" b="72.0" l="2.996875" v="82" c="0"/>
+        <NOTE p="55" b="75.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="60" b="78.0" l="1.996875" v="81" c="0"/>
+        <NOTE p="58" b="80.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="57" b="81.0" l="1.871875" v="81" c="0"/>
+        <NOTE p="57" b="83.0" l="0.996875" v="82" c="0"/>
+        <NOTE p="50" b="84.0" l="1.996875" v="80" c="0"/>
+        <NOTE p="62" b="86.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="55" b="87.0" l="1.996875" v="80" c="0"/>
+        <NOTE p="57" b="90.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="54" b="89.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="55" b="93.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="53" b="96.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="55" b="99.0" l="1.996875" v="81" c="0"/>
+        <NOTE p="48" b="102.0" l="0.2468749999999997" v="81" c="0"/>
+        <NOTE p="43" b="101.0" l="0.996875" v="81" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="150.0" length="26.25" offset="0.0"
+              id="1098" sync="0" colour="ff00ff00" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="52" b="0.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="60" b="0.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="55" b="3.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="59" b="3.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="57" b="6.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="60" b="6.0" l="5.746875000000001" v="81" c="0"/>
+        <NOTE p="55" b="9.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="53" b="12.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="60" b="12.0" l="5.746875000000001" v="81" c="0"/>
+        <NOTE p="52" b="15.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="50" b="18.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="57" b="18.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="55" b="21.0" l="2.996875" v="81" c="0"/>
+        <NOTE p="59" b="21.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="52" b="24.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="60" b="24.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="50" b="27.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="59" b="27.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="52" b="30.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="57" b="30.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="48" b="33.0" l="2.746875" v="80" c="0"/>
+        <NOTE p="55" b="33.0" l="1.996875" v="80" c="0"/>
+        <NOTE p="54" b="35.0" l="0.9968750000000002" v="80" c="0"/>
+        <NOTE p="53" b="36.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="48" b="36.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="52" b="39.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="55" b="39.0" l="1.996875" v="80" c="0"/>
+        <NOTE p="57" b="41.0" l="0.996875" v="80" c="0"/>
+        <NOTE p="60" b="42.0" l="1.996875" v="80" c="0"/>
+        <NOTE p="50" b="42.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="59" b="44.0" l="0.996875" v="81" c="0"/>
+        <NOTE p="60" b="45.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="52" b="45.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="53" b="48.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="57" b="48.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="52" b="51.0" l="2.996875" v="80" c="0"/>
+        <NOTE p="55" b="51.0" l="2.996875" v="80" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="48656c6d" filename="/Library/Audio/Plug-Ins/VST/helm.vst"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1002"
+            enabled="1" windowX="90" windowY="25" programNum="0" state="4412.CMlaKA....fQBMDZ....AfTYr0F...fV..P.X..............................................................................................................................................................................DbtWCJ.BHhvVZiUlayUlH5.hHPEFcigFHnLVJfHVdf3BHfPEZoMGHvEFcigFHoMGHrk1Xk41bkQFH04FYkIGHgAxPxUVXzklckAxPu0Vau41bfDDczIWZhUGco8lafPiKv.RRtQWYx4VXzk1atEFafvTZiUlayUlKf.RVuUGHyg1a0wFYffVX1UFHxU1XkklckQFHgAxXuAWdf7lYfPGZkABaoMVYtMWYfDFau41YfbWZzgFHzgVZyAxcuI2Zt.BHIYFHt8Fcr.xbkUFH7fFczAmNu7xXxUVXzklckM1as01atMmKuI2YuvVZiUlayU1buHVduPiKv7hOtHBKMn.HfHxb44Fcn8kckI2bo8lahnCHh.iK43BLhvRCJ.BHh.WXzMFZe4VXsUlH5.hHwcWb1HBKMn.HfHhYuwFYkI2WtEVakIhNfHRb2EmHrzfBf.hHgUGcn8lbhnCHhHBKMn.HfHxbkQGco41YyIhNfrWCJ.BHf.hHg0FbeEFczE1XqIhNf.iKx.iLx.SM3fiLyTiL4PSLx.yMzjCKMn.Hf.BHhDVav8EYkMVX4IhNfDiKvPiM0TyMwTiMybCL4XSNzXSM3vRCJ.BHf.hHg0FbeIWYrUVXyUlH5.BLtHSN4jSN4jSN4jSN4jSN4jCN3jCKMn.Hf.BHhDVav80b0MGcgklahnCHv3xM4TyLxLSN3fSN2.SM3fiLvHiMzvRCJ.BHf.hHgIGbeYlbkEWck41X4IhNfHCKMn.Hf.BHhDlbv80YgQWYhnCHv3RMrzfBf.BHfHRXxA2WuMFcgYWYyIhNfDCKMn.Hf.BHhDlbv80atIhNf.CKMn.Hf.BHhDlbv8EbgQGckImahnCHvvRCJ.BHf.hHgIGbeMWdtMlH5.RLrzfBf.BHfHRXxA2WzUVav8lH5.RNrzfBf.BHfHhXkEFcy8EbkI2Wskla0QWYhnCHx3xL4jSN4jSN4jSN4jSN4jSNwDiLrzfBf.BHfHxXx81by8UauQVcrEFco8lahnCHvvRCJ.BHf.hHiUGcuYlYhnCH1DCKMn.Hf.BHhPVYrEVdeQlb480ckQmH5.BLtTCKMn.Hf.BHhPVYrEVdeYVYkQlXgM1ZhnCHv3BMv.CLv.CLv.CLv.CLv.CLxHiLrzfBf.BHfHBYkwVX48kYxUVb0UlaikmH5.hLrzfBf.BHfHBYkwVX480atIhNf.CKMn.Hf.BHhPVYrEVdeMWdtMlH5.RLrzfBf.BHfHBYkwVX48Eck0FbuIhNfjCKMn.Hf.BHhPVZyQ2axQWZu41WjIWZ1UlH5.BLrzfBf.BHfHBYoMGcuIGco8lae0VZ3IhNfDCKMn.Hf.BHhPVZyQ2axQWZu41Wu4lH5.BLrzfBf.BHfHBYoMGcuIGco8laeQWdvUlH5.BLrzfBf.BHfHhYow1WgQGcgM1ZhnCHvvRCJ.BHf.hHlkFaeQVYiEVdhnCHw3RMrzfBf.BHfHhYow1Wk4lceQVYvQGZhnCHvvRCJ.BHf.hHlkFaeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhXVZr80b0MGcgklahnCHv3RMrzfBf.BHfHhYowFckI2WhwVYtQlH5.RLtDCLyHiMyXCL3fyMvjiM2bCM4DCKMn.Hf.BHhXVZrQWYx8EYxklckIhNfDiKxjSL0.CLv.CLv.CLv.CL4fCL0vRCJ.BHf.hHlkFazUlbe8lahnCHwvRCJ.BHf.hHlkFazUlbeMGZkwlYhnCHvvRCJ.BHf.hHlkFazUlbeMGc4wVYhnCHwvRCJ.BHf.hHl8lbsElaz80atIhNf.CKMn.Hf.BHhX1ax0VXtQ2W3IhNf.iK0HyMyjyMxXCLxbyL4biL1.SLxHCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0DyL0DyL0DyL0DyL0DyLzfiM0DCKMn.Hf.BHhrVY4QmbgM1ZhnCHvvRCJ.BHf.hHrU1YgQ2ahnCHvvRCJ.BHf.hHs8FYeEFczE1XqIhNf.CKMn.Hf.BHhz1aj8EYkMVX4IhNfDiK0vRCJ.BHf.hHs8FYeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhz1aj80b0MGcgklahnCHv3RMrzfBf.BHfHRau41aewlYu8ULeEVavwVZzUGYkIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWlIWYwUWYtMVdhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kbkQmboc1YkImH5.hLrzfBf.BHfHRau41aewlYu8ULeMWdtMlH5.RLrzfBf.BHfHRau41aewlYu8ULeQWYsA2ahnCH1vRCJ.BHf.hHs8lau8Eal81Ww70cgYWYl8lbsIhNf.CKMn.Hf.BHhz1at81WrY1aeIyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8kLeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeIyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeIyWzUVav8lH5.xMrzfBf.BHfHRau41aewlYu8kLecWX1UlYuIWahnCHvvRCJ.BHf.hHt8VZyU1W18Fa00VYhnCHvvRCJ.BHf.hHtUWaeMGckA2bhnCH3vRCJ.BHf.hHuM2XeEyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeEyWzUmakIhNf.CKMn.Hf.BHh71bi8ULeUmaoM2at8EYkQWctUlH5.RLvvRCJ.BHf.hHuM2XeEyW04VZy8laeY2aoMVYyIhNfDCKMn.Hf.BHh71bi8ULeY2arUWakIhNf.iKyfCLw.yLyHiM1DiL4.yLy.iL3DCKMn.Hf.BHh71bi8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHuM2XeIyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeIyWzUmakIhNf.CKMn.Hf.BHh71bi8kLeUmaoM2at8EYkQWctUlH5.RLvvRCJ.BHf.hHuM2XeIyW04VZy8laeY2aoMVYyIhNfDCKMn.Hf.BHh71bi8kLeY2arUWakIhNf.iKzfSNw.CLy.iLzDSNyTCM3bCL4PCKMn.Hf.BHh71bi8kLecWX1UlYuIWahnCHyvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeEVauUmazIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1WlUVYjIVXis1WzUmakIhNf.CKMn.Hf.BHh.WZzMFZeIVYtQ1WxElamUlH5.hLrzfBf.BHfHBbuwVdewlYu8UXsAGaoQWcjUlH5.RLrzfBf.BHfHBbuwVdewlYu8kYxUVb0UlaikmH5.RLrzfBf.BHfHBbuwVdewlYu80b441XhnCHwvRCJ.BHf.hHv8Fa48Eal81WzUVav8lH5.xMrzfBf.BHfHBbuwVdewlYu80cgYWYl8lbsIhNf.CKMn.Hf.BHh.2arkGbn8la4IhNfPCKMn.Hf.BHh.2axQWXsUlaz8lH5.RK2vRCJ.BHf.hHv8lbzEVak4Fcu8Ec4AWYhnCHvvRCJ.BHf.hHxU1bu4VXtMVYhnCHv3hL1XiM1XiM1XiM1XiM1XyMwfCM3vRCJ.BHf.hHxUlckImXeQVXsAWZtclH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYxk2W2UFchnCHv3RMrzfBf.BHfHhbkYWYxI1WlUVYjIVXislH5.BLtjCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhHWY1Ulbh80atIhNf.CKMn.Hf.BHhLGckA2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHyQWYv80bkE2Wv.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ELwHhNf.CKMn.Hf.BHhLGckA2WyUVbeAiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELzHhNf.CKMn.Hf.BHhLGckA2WyUVbeASMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvXiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeACNhnCHvvRCJ.BHf.hHyQWYv80bkE2WvjiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULvHhNf.CKMn.Hf.BHhLGckA2WyUVbeESLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULyHhNf.CKMn.Hf.BHhLGckA2WyUVbeECMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwTiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeEyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwfiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeICLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxDiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLxHhNf.CKMn.Hf.BHhLGckA2WyUVbeIyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxPiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeIiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxbiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeISNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wy.iH5.BLrzfBf.BHfHxbzUFbeMWYw80LwHhNf.CKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeMWdtMlH5.RLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8Eck0FbuIhNfbCKMn.Hf.BHhLGckA2Wy01auQGZo41YhnCHvvRCJ.BHf.hHyQWczQWYx8kYxUVb0UlaikmH5.xLrzfBf.BHfHxbzUGczUlbe8lahnCHvvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8kYxUVb0UlaikmH5.RLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeQWYsA2ahnCH1vRCJ.BHf.hHyQWczQWYx80buYFctU1byIhNf.iKx.CLv.CLv.CLv.CLv.CLvDSLwvRCJ.BHf.hHyQWczQWYx80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8Eck0FbuIhNffCKMn.Hf.BHhLWch80aiQWX1UlH5.BLrzfBf.BHfHxb0I1WygVclYFakIhNf.CKMn.Hf.BHhLWch8kcuwVcsUlH5.BLtDCMzHSL1HiL4fyL3bCL4XyLvfiMrzfBf.BHfHxb0I1W2ElckY1ax0lH5.RLrzfBf.BHfHRctk1bu41Ww7EZgIWau4VZ5UlH5.BLrzfBf.BHfHRctk1bu41Wx7EZgIWau4VZ5UlH5.BLrzfBf.BHfHhckw1aikFc48EcxE1XqIhNf.CKMn.Hf.BHhX2arUWakIhNf.iK2.yMw.iM3.CLv.CLv.CLvLSMyDCKMn.Hf.BHhz1ajUGagQWZu41bhnCHa0UCJ.BH80fB8A."
+            base64:layout="55.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.ET.SfHE...">
+      <MACROPARAMETERS id="1004"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="vst" uid="60e59a27" filename="/Library/Audio/Plug-Ins/VST3/Wider.vst3"
+            name="Wider" manufacturer="Infected Mushroom" windowLocked="1"
+            id="1136" enabled="1" windowX="80" windowY="125" state="432.VMjLgbZ....O+fWarAhckI2bo8la8HRLt.iHfTlai8FYo41Y8HRUTYTK3HxO9.BOVMEUy.Ea0cVZtMEcgQWY9vSRC8Vav8lak4Fc9HCMv3hUMczXWEjKt3hYt3hKt.kKt3hKt3BS5gEcyQjKt3hKwXTR5AkaA4hKtfjKTEyXqIlKD4hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hKt3hZw7TLs8jKt3hKt3hKt3hKlIUUMQUTPkzUZESQFM1ZQQEV5UjQtDDQlAEMAcEV40zQtDDQ14hK5EjKt3hKt3hKt3hRUACTEEzZh8VVWgkdUYTTmE0UXwyKIMzasA2atUlaz4COuX0TTMCTrU2Yo41TzEFck4C."
+            base64:layout="97.LETVOUEU..P.BjjSPUEUSA..ADfPUME.AHPZtQVY3AP.ED......rEVduUGc.Dv.ELD..7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.ET.SfHE...">
+      <MACROPARAMETERS id="1137"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="4bandEq" id="1107" enabled="1" midFreq1="725.125244140625"
+            presetDirty="1" midGain1="3.333333253860474" midQ1="0.1947501003742218"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1110"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1056" enabled="1" volume="0.5923638939857483"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1057"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1060" enabled="1">
+      <MACROPARAMETERS id="1061"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1064" midiVProp="0.28125" midiVOffset="0.359375" colour="ff00ffaa"
+         height="45.37080765135104">
+    <MACROPARAMETERS id="1066"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="85.0" length="20.0" offset="0.0"
+              id="1042" sync="0" colour="ff00ffaa" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="84" b="4.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="86" b="4.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="84" b="5.000000000000028" l="0.6875" v="82" c="0"/>
+        <NOTE p="82" b="5.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="81" b="6.0" l="0.2520833333333332" v="82" c="0"/>
+        <NOTE p="81" b="10.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="82" b="10.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="81" b="11.00000000000003" l="0.6875" v="82" c="0"/>
+        <NOTE p="79" b="11.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="77" b="12.0" l="1.252083333333333" v="82" c="0"/>
+        <NOTE p="70" b="14.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="72" b="14.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="74" b="15.00000000000003" l="0.25" v="82" c="0"/>
+        <NOTE p="69" b="16.0" l="0.25" v="82" c="0"/>
+        <NOTE p="77" b="17.0" l="0.25" v="82" c="0"/>
+        <NOTE p="74" b="18.0" l="0.25" v="82" c="0"/>
+        <NOTE p="76" b="19.0" l="1.0" v="82" c="0"/>
+        <NOTE p="74" b="20.0" l="1.0" v="82" c="0"/>
+        <NOTE p="72" b="21.0" l="1.9375" v="82" c="0"/>
+        <NOTE p="70" b="23.00000000000003" l="1.0" v="82" c="0"/>
+        <NOTE p="69" b="24.0" l="0.25" v="82" c="0"/>
+        <NOTE p="81" b="29.0" l="1.0" v="81" c="0"/>
+        <NOTE p="77" b="30.0" l="0.25" v="81" c="0"/>
+        <NOTE p="77" b="33.0" l="0.25" v="81" c="0"/>
+        <NOTE p="72" b="34.0" l="0.25" v="81" c="0"/>
+        <NOTE p="72" b="35.0" l="1.0" v="81" c="0"/>
+        <NOTE p="70" b="36.0" l="0.25" v="81" c="0"/>
+        <NOTE p="77" b="37.0" l="0.25" v="81" c="0"/>
+        <NOTE p="82" b="38.0" l="0.25" v="81" c="0"/>
+        <NOTE p="81" b="39.0" l="0.25" v="81" c="0"/>
+        <NOTE p="77" b="40.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="76" b="40.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="74" b="41.0" l="1.0" v="81" c="0"/>
+        <NOTE p="72" b="42.0" l="0.25" v="81" c="0"/>
+        <NOTE p="74" b="43.0" l="0.25" v="81" c="0"/>
+        <NOTE p="76" b="44.00000000000001" l="0.25" v="81" c="0"/>
+        <NOTE p="77" b="45.0" l="0.25" v="81" c="0"/>
+        <NOTE p="76" b="28.0" l="0.25" v="81" c="0"/>
+        <NOTE p="74" b="31.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="73" b="31.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="74" b="32.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="76" b="32.6875" l="0.3145833333333333" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="120.0" length="30.0" offset="0.0"
+              id="1067" sync="0" colour="ff00ffaa" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="73" b="1.687499999999943" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="74" b="1.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="74" b="2.0" l="0.25" v="82" c="0"/>
+        <NOTE p="73" b="4.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="72" b="4.687499999999943" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="73" b="5.0" l="0.25" v="82" c="0"/>
+        <NOTE p="71" b="5.687500000000001" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="72" b="6.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="71" b="6.687499999999943" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="72" b="7.000000000000001" l="0.6875" v="82" c="0"/>
+        <NOTE p="77" b="7.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="81" b="8.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="77" b="8.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="79" b="9.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="78" b="9.687499999999943" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="79" b="10.0" l="0.25" v="81" c="0"/>
+        <NOTE p="77" b="11.0" l="0.25" v="81" c="0"/>
+        <NOTE p="79" b="12.0" l="0.25" v="81" c="0"/>
+        <NOTE p="70" b="16.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="69" b="16.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="70" b="17.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="74" b="17.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="79" b="18.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="67" b="19.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="66" b="19.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="67" b="20.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="69" b="20.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="70" b="21.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="72" b="22.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="74" b="23.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="72" b="24.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="72" b="28.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="71" b="28.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="72" b="29.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="76" b="29.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="81" b="30.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="74" b="31.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="73" b="31.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="74" b="32.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="73" b="32.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="74" b="33.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="72" b="34.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="69" b="35.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="70" b="36.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="70" b="37.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="69" b="37.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="70" b="38.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="67" b="38.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="62" b="39.0" l="0.246875" v="44" c="0"/>
+        <NOTE p="67" b="40.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="70" b="41.00000000000001" l="0.246875" v="45" c="0"/>
+        <NOTE p="72" b="42.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="71" b="42.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="72" b="43.0" l="0.684375" v="73" c="0"/>
+        <NOTE p="71" b="43.6875" l="0.309375" v="82" c="0"/>
+        <NOTE p="72" b="44.00000000000001" l="0.684375" v="65" c="0"/>
+        <NOTE p="70" b="44.6875" l="0.309375" v="71" c="0"/>
+        <NOTE p="69" b="45.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="69" b="46.0" l="0.684375" v="65" c="0"/>
+        <NOTE p="71" b="46.6875" l="0.309375" v="71" c="0"/>
+        <NOTE p="73" b="47.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="73" b="48.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="73" b="49.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="74" b="48.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="74" b="49.00000000000006" l="0.246875" v="45" c="0"/>
+        <NOTE p="73" b="50.68750000000003" l="0.309375" v="71" c="0"/>
+        <NOTE p="74" b="50.00000000000006" l="0.246875" v="45" c="0"/>
+        <NOTE p="74" b="51.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="74" b="52.0" l="0.246875" v="65" c="0"/>
+        <NOTE p="76" b="52.6875" l="0.309375" v="71" c="0"/>
+        <NOTE p="78" b="53.00000000000001" l="0.996875" v="45" c="0"/>
+        <NOTE p="79" b="54.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="67" b="55.00000000000006" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="66" b="55.33333333333331" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="67" b="55.66666666666669" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="69" b="56.66666666666664" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="69" b="56.00000000000001" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="68" b="56.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="70" b="57.66666666666664" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="70" b="57.00000000000001" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="69" b="57.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="71" b="58.66666666666664" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="71" b="58.00000000000001" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="70" b="58.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="72" b="59.66666666666663" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="71" b="59.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="72" b="59.0" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="74" b="60.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="69" b="61.00000000000006" l="0.246875" v="45" c="0"/>
+        <NOTE p="65" b="62.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="67" b="63.0" l="1.996875" v="45" c="0"/>
+        <NOTE p="71" b="65.0" l="0.246875" v="45" c="0"/>
+        <NOTE p="72" b="66.0" l="0.246875" v="45" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <MIDICLIP name="New MIDI Clip" start="150.0" length="26.25" offset="0.0"
+              id="1080" sync="0" colour="ff00ffaa" currentTake="0" speed="1.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="91" b="4.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="93" b="4.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="91" b="5.000000000000028" l="0.6875" v="82" c="0"/>
+        <NOTE p="89" b="5.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="88" b="6.0" l="0.2520833333333332" v="82" c="0"/>
+        <NOTE p="88" b="10.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="89" b="10.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="88" b="11.00000000000003" l="0.6875" v="82" c="0"/>
+        <NOTE p="86" b="11.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="84" b="12.0" l="1.252083333333333" v="82" c="0"/>
+        <NOTE p="77" b="14.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="79" b="14.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="81" b="15.00000000000003" l="0.25" v="82" c="0"/>
+        <NOTE p="76" b="16.0" l="0.25" v="82" c="0"/>
+        <NOTE p="84" b="17.0" l="0.25" v="82" c="0"/>
+        <NOTE p="81" b="18.0" l="0.25" v="82" c="0"/>
+        <NOTE p="83" b="19.0" l="1.0" v="82" c="0"/>
+        <NOTE p="81" b="20.0" l="1.0" v="82" c="0"/>
+        <NOTE p="79" b="21.0" l="1.9375" v="82" c="0"/>
+        <NOTE p="77" b="23.00000000000003" l="1.0" v="82" c="0"/>
+        <NOTE p="76" b="24.0" l="0.25" v="82" c="0"/>
+        <NOTE p="88" b="29.0" l="1.0" v="81" c="0"/>
+        <NOTE p="84" b="30.0" l="0.25" v="81" c="0"/>
+        <NOTE p="84" b="33.0" l="0.25" v="81" c="0"/>
+        <NOTE p="79" b="34.0" l="0.25" v="81" c="0"/>
+        <NOTE p="79" b="35.0" l="1.0" v="81" c="0"/>
+        <NOTE p="77" b="36.0" l="0.25" v="81" c="0"/>
+        <NOTE p="84" b="37.0" l="0.25" v="81" c="0"/>
+        <NOTE p="89" b="38.0" l="0.25" v="81" c="0"/>
+        <NOTE p="88" b="39.0" l="0.25" v="81" c="0"/>
+        <NOTE p="84" b="40.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="83" b="40.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="81" b="41.0" l="1.0" v="81" c="0"/>
+        <NOTE p="79" b="42.0" l="0.25" v="81" c="0"/>
+        <NOTE p="81" b="43.0" l="0.25" v="81" c="0"/>
+        <NOTE p="83" b="44.00000000000001" l="0.25" v="81" c="0"/>
+        <NOTE p="84" b="45.0" l="0.25" v="81" c="0"/>
+        <NOTE p="83" b="28.0" l="0.25" v="81" c="0"/>
+        <NOTE p="81" b="31.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="80" b="31.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="81" b="32.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="83" b="32.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="83" b="46.0" l="0.6875" v="82" c="0"/>
+        <NOTE p="82" b="46.6875" l="0.3145833333333333" v="82" c="0"/>
+        <NOTE p="83" b="47.00000000000001" l="1.0" v="81" c="0"/>
+        <NOTE p="81" b="48.0" l="0.25" v="81" c="0"/>
+        <NOTE p="81" b="49.0" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="80" b="49.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="81" b="49.66666666666663" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="83" b="50.00000000000001" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="82" b="50.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="83" b="50.66666666666664" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="79" b="51.0" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="78" b="51.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="79" b="51.66666666666663" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="76" b="52.0" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="75" b="52.33333333333326" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="76" b="52.66666666666663" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="72" b="53.01041666666674" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="69" b="53.34375" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="72" b="53.67708333333337" l="0.3333333333333333" v="45" c="0"/>
+        <NOTE p="77" b="54.0" l="0.2499999999999999" v="81" c="0"/>
+        <NOTE p="74" b="56.00000000000001" l="1.0" v="81" c="0"/>
+        <NOTE p="72" b="57.0" l="0.25" v="81" c="0"/>
+        <NOTE p="76" b="55.00000000000006" l="0.25" v="81" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="7d69757d" filename="AudioUnit:Synths/aumu,Helm,Tyte"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1033"
+            enabled="1" windowX="80" windowY="35" programNum="-1" state="5721.hAGaoMGcv.C1AHv.DTfAGfPBJr.DQHwDTvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIAU4QWYOEAAjA..............KB....COfmUH....w3Cv......fL8jYlZB...LyO.B......z7SFYpI...PM+........XC.........2..........N.........jiOpp5p..fAe7STz0E..X.H9X61tA..FDB.......fAh7iA1MO..XvH+.......FPxOyLyL..fAk7iDIUB..XfI........FbhOpp5p..fAn7STz0E..XfO+.......F7yO.B....fA.A.......XPP........FHD.......fAC4Cv.....X.Q+.......FTjO.C....fAF8C......XvQ........FzkO.C....fAdA.......XvW........F.F.......fAgA.......XfX+.......FL1O......fAj8C......XPY........FXF.......fA74Cv.....XPe9.L.....F32O......fA+8Cf.....X.f+zQhYC..FD3O.B....fAB5ipptJ..Xvf+rfnoC..FPH.......fAE9Cf.....Xvl+zQhYC..Fv4O.B....fAc5ipptJ..Xfm+HB55B..F7I.......fAfB.......XPn9bVNNC..FH5O......fAi9C......X.o8vLyMC..FnK.......fA69CC2vH..X.u9vLyMC..Fz6O......fA99C......Xvu8vLyMC..F.L.......fAA+CC2vH..Xfv9vLyMC..FL7O......fAY+C......Xf1+.......FrcOpp5p..fAb+Cf.....XP2+zQhYC..F3sOpp5p..fAe+iHnqK..X.3........FDdOFGCi..fAh6Cf.....X.9........Fj+O......fA5+C......Xv9+.......Fv+O......fA8C.......Xf++HB55B..F7+O......vA.7C......bP.+.......GbwO......vAX7C......bPF+.......GnwO......vAa7C......b.G+.......GzwO......vAd7C......bvG+.......G.xO......Puw+C......zq7+.......8N+O......Puz+C......za8+.......8Z+O......Pu2+C......zK9+.......8l+O......Pu5+C......3KD+.......9FwO......fuR7C......36D+.......9RwO......fuU7C......3qE+.......9dwO......fuX7C......3aF+.H.....99hOpp5p..fuv7iHnqK..3aL........9JiOa21s..fuy........3KM+niKLB..9ViOpp5p..fu17yBhlN..36M9vDyMC..9hiOpp5p..fuN4CyL2L..36S........9BE.......fuQA.......3qT9vDyMC..9NE.......fuTA.......3aU+.......9ZkO+u++QyPCQISzN7PTvX0S0QGb0QmDHUFasAA.RDVcsU2SQDAD60fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHRb2E2LhvRCJ.BHhX1arQVYx8kag0VYhnCHhD2cwIBKMn.HfHRX0QGZuImH5.hHhvRCJ.BHhLWYzQWZtc1bhnCH60fBf.BHfHRXsA2WgQGcgM1ZhnCHv3RLvjSMzTCLv.CLv.CLv.CLvLCM3vRCJ.BHf.hHg0FbeQVYiEVdhnCHw3BLwPSNyTiM1DyM1PyMvTCNzLiLrzfBf.BHfHRXsA2WxUFakE1bkIhNf.iKxjSN4jSN4jSN4jSN4jSN4fCN4vRCJ.BHf.hHg0FbeMWcyQWXo4lH5.BLtbSN0PSN1LiLyTiL4PSLwbSN2LiMrzfBf.BHfHRXxA2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHgIGbecVXzUlH5.BLtTCKMn.Hf.BHhDlbv80aiQWX1U1bhnCHwvRCJ.BHf.hHgIGbe8lahnCHvvRCJ.BHf.hHgIGbeAWXzQWYx4lH5.BLrzfBf.BHfHRXxA2WykmaiIhNfDCKMn.Hf.BHhDlbv8Eck0FbuIhNfjCKMn.Hf.BHhHVYgQ2beAWYx8Uao4VczUlH5.hLtLSN4jSN4jSN4jSN4jSN4jSLwHCKMn.Hf.BHhLlbuM2be01ajUGagQWZu4lH5.BLt.iL0PiLwfyM0.CLv.CLv.SL2LyM0vRCJ.BHf.hHiUGcuYlYhnCHw.SMtDyL2TCLv.CLv.CLv.CLxfCMrzfBf.BHfHBYkwVX48EYxk2W2UFchnCHv3RMrzfBf.BHfHBYkwVX48kYkUFYhE1XqIhNf.iKz.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHjUFagk2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHjUFagk2Wu4lH5.BLrzfBf.BHfHBYkwVX480b441XhnCHwvRCJ.BHf.hHjUFagk2WzUVav8lH5.RNrzfBf.BHfHBYoMGcuIGco8laeQlboYWYhnCHvvRCJ.BHf.hHjk1bz8lbzk1at8UaogmH5.RLrzfBf.BHfHBYoMGcuIGco8lae8lahnCHvvRCJ.BHf.hHjk1bz8lbzk1at8Ec4AWYhnCHvvRCJ.BHf.hHlkFaeEFczE1XqIhNf.CKMn.Hf.BHhXVZr8EYkMVX4IhNfDiK0vRCJ.BHf.hHlkFaeUla18EYkAGcnIhNf.CKMn.Hf.BHhXVZr8kbkwVYgMWYhnCHw3RMrzfBf.BHfHhYow1WyU2bzEVZtIhNf.iK0vRCJ.BHf.hHlkFazUlbeIFak4FYhnCHvvRCJ.BHf.hHlkFazUlbeQlboYWYhnCHvvRCJ.BHf.hHlkFazUlbe8lahnCHwvRCJ.BHf.hHlkFazUlbeMGZkwlYhnCHvvRCJ.BHf.hHlkFazUlbeMGc4wVYhnCHvvRCJ.BHf.hHl8lbsElaz80atIhNf.CKMn.Hf.BHhX1ax0VXtQ2W3IhNf.iK0PSLvjSM3jCLzDCL4TCN4TyMyPCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iK0.CM0.CM0.CM0.CM0.CMzTCN0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.BNrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHv3xM4HCM1PyMwbyMzDSNyTCM4fiLrzfBf.BHfHxayM1Ww70cgYWYl8lbsIhNf.CKMn.Hf.BHh71bi8kLeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kLeQWctUlH5.BLrzfBf.BHfHxayM1Wx7Uctk1bu41WjUFc04VYhnCHw.CKMn.Hf.BHh71bi8kLeUmaoM2at8kcuk1XkMmH5.RLrzfBf.BHfHxayM1Wx7kcuwVcsUlH5.BLtLSNvDiLvjiM2bCMwjyL0PSN3HCKMn.Hf.BHh71bi8kLecWX1UlYuIWahnCHxvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeEVauUmazIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1WlUVYjIVXis1WzUmakIhNf.CKMn.Hf.BHh.WZzMFZeIVYtQ1WxElamUlH5.hLrzfBf.BHfHBbuwVdewlYu8UXsAGaoQWcjUlH5.RLrzfBf.BHfHBbuwVdewlYu8kYxUVb0UlaikmH5.RLrzfBf.BHfHBbuwVdewlYu80b441XhnCHwvRCJ.BHf.hHv8Fa48Eal81WzUVav8lH5.xMrzfBf.BHfHBbuwVdewlYu80cgYWYl8lbsIhNf.CKMn.Hf.BHh.2arkGbn8la4IhNfPCKMn.Hf.BHh.2axQWXsUlaz8lH5.RK2vRCJ.BHf.hHv8lbzEVak4Fcu8Ec4AWYhnCHvvRCJ.BHf.hHxU1bu4VXtMVYhnCHv3hL2LyLyLyLyLyLyLyLyLyLwbCL0vRCJ.BHf.hHxUlckImXeQVXsAWZtclH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYxk2W2UFchnCHv3RMrzfBf.BHfHhbkYWYxI1WlUVYjIVXislH5.BLtjCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhHWY1Ulbh80atIhNf.CKMn.Hf.BHhLGckA2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHyQWYv80bkE2Wv.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ELwHhNf.CKMn.Hf.BHhLGckA2WyUVbeAiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELzHhNf.CKMn.Hf.BHhLGckA2WyUVbeASMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvXiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeACNhnCHvvRCJ.BHf.hHyQWYv80bkE2WvjiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULvHhNf.CKMn.Hf.BHhLGckA2WyUVbeESLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULyHhNf.CKMn.Hf.BHhLGckA2WyUVbeECMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwTiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeEyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwfiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeICLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxDiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLxHhNf.CKMn.Hf.BHhLGckA2WyUVbeIyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxPiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeIiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxbiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeISNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wy.iH5.BLrzfBf.BHfHxbzUFbeMWYw80LwHhNf.CKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeMWdtMlH5.RLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8Eck0FbuIhNfbCKMn.Hf.BHhLGckA2Wy01auQGZo41YhnCHvvRCJ.BHf.hHyQWczQWYx8kYxUVb0UlaikmH5.xLrzfBf.BHfHxbzUGczUlbe8lahnCHvvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8kYxUVb0UlaikmH5.RLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeQWYsA2ahnCH1vRCJ.BHf.hHyQWczQWYx80buYFctU1byIhNf.iKx.CLv.CLv.CLv.CLv.CLvDSLwvRCJ.BHf.hHyQWczQWYx80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8Eck0FbuIhNffCKMn.Hf.BHhLWch80aiQWX1UlH5.BLrzfBf.BHfHxb0I1WygVclYFakIhNf.CKMn.Hf.BHhLWch8kcuwVcsUlH5.BLrzfBf.BHfHxb0I1W2ElckY1ax0lH5.BLrzfBf.BHfHRctk1bu41Ww7EZgIWau4VZ5UlH5.BLrzfBf.BHfHRctk1bu41Wx7EZgIWau4VZ5UlH5.BLrzfBf.BHfHhckw1aikFc48EcxE1XqIhNf.CKMn.Hf.BHhX2arUWakIhNf.iK2.yMw.iM3.CLv.CLv.CLvLSMyDCKMn.Hf.BHhz1ajUGagQWZu41bhnCHa0fBf.BHf.BH60fBf.BHf.BHf.hHy8VcxMVYhnCHhz1at81WrY1aeEiHrzfBf.BHf.BHf.hHjU1bzklagQWZu4lH5.hHuM2XeIyW18Fa00VYhvRCJ.BHf.BHf.BHhDVauUmazIhNf.iKvLCLzPSN0PSLw.yLyPyLwjSL2TSCJ.BHf.BHfzWCJ.BHf.RWMn.HfzWCJzG.bMTSfrDakUlbfDjbvA.B.jA.l.vJ.fC..A.R.zD.eA.Y.jFAQS.0DXMAYSv1DHNAmSP5D3tEB........HP..........TA..................XwC"
+            base64:layout="53.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.CTvP...">
+      <MACROPARAMETERS id="1036"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="vst" uid="614f6758" filename="AudioUnit:Effects/aufx,PvWr,PLVR"
+            name="Wider" manufacturer="Infected Mushroom" windowLocked="1"
+            id="1115" enabled="1" windowX="80" windowY="125" programNum="-1"
+            state="240.hAGaoMGcv.C1AHv.DTfAGfPBJrvDTTgEWvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIATLYkTOAAE..............P.08AO3A....fzLzfCQDULQISzO.QTvTURtAWczE8CRX0S0QGb0QmDPY2UxAA.RDVclgGQJyLS9fUUtQWZzwVYjgPFlrBN.gTSeQVZ.V3gIxniTdomiVppuB.......DP..........fA....................t"
+            base64:layout="97.LETVOUEU..P.BjjSPUEUSA..ADfPUME.AHPZtQVY3AP.ED......rEVduUGc.Dv.ELD..7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.ET.SfHE...">
+      <MACROPARAMETERS id="1119"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="4bandEq" id="1089" enabled="1" midFreq1="3995.582275390625"
+            presetDirty="1" midGain1="1.166666626930237" midFreq2="10800.662109375"
+            midGain2="0.1666666716337204" loFreq="118.509407043457" loGain="-1.833333373069763"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1097"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1069" enabled="1" volume="0.639255702495575"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1070"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1073" enabled="1">
+      <MACROPARAMETERS id="1074"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1077" midiVProp="0.28125" midiVOffset="0.359375" colour="ff00aaff"
+         height="45.37080765135104">
+    <MACROPARAMETERS id="1079"/>
+    <MODIFIERS/>
+    <PLUGIN type="volume" id="1082" enabled="1">
+      <MACROPARAMETERS id="1083"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1086" enabled="1">
+      <MACROPARAMETERS id="1087"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1090" midiVProp="0.28125" midiVOffset="0.359375" colour="ff0000ff"
+         height="45.37080765135104">
+    <MACROPARAMETERS id="1092"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="25.0" length="148.75" offset="0.0"
+              id="1185" sync="0" colour="ff0000ff" currentTake="0" speed="1.0"
+              originalLength="3.0" loopStartBeats="0.0" loopLengthBeats="3.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="30" b="0.0" l="0.496875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="7d69757d" filename="AudioUnit:Synths/aumu,Helm,Tyte"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1190"
+            enabled="1" windowX="199" windowY="82" programNum="-1" state="5503.hAGaoMGcv.C1AHv.DTfAGfPBJr.DQHwDTvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIAU4QWYOEAAjA..............KB....COfmUH....w3Cv......fL8jYlZB...LyO.B......z7SFYpI...PM+........XC.........2..........N.........jiOpp5p..fAe7STz0E..X.H9X61tA..FDB.......fAh7iA1MO..XvH+.......FPxOyLyL..fAk7iDIUB..XfI........FbhOpp5p..fAn7STz0E..XfO+.......F7yO.B....fA.A.......XPP........FHD.......fAC4Cv.....X.Q+.......FTjO.C....fAF8C......XvQ........FzkO.C....fAdA.......XvW........F.F.......fAgA.......XfX+.......FL1O......fAj8C......XPY........FXF.......fA74Cv.....XPe9.L.....F32O......fA+8Cf.....X.f+zQhYC..FD3O.B....fAB5ipptJ..Xvf+rfnoC..FPH.......fAE9Cf.....Xvl+zQhYC..Fv4O.B....fAc5ipptJ..Xfm+HB55B..F7I.......fAfB.......XPn9bVNNC..FH5O......fAi9C......X.o8vLyMC..FnK.......fA69CC2vH..X.u9vLyMC..Fz6O......fA99C......Xvu8vLyMC..F.L.......fAA+CC2vH..Xfv9vLyMC..FL7O......fAY+C......Xf1+.......FrcOpp5p..fAb+Cf.....XP2+zQhYC..F3sOpp5p..fAe+iHnqK..X.3........FDdOFGCi..fAh6Cf.....X.9........Fj+O......fA5+C......Xv9+.......Fv+O......fA8C.......Xf++HB55B..F7+O......vA.7C......bP.+.......GbwO......vAX7C......bPF+.......GnwO......vAa7C......b.G+.......GzwO......vAd7C......bvG+.......G.xO......Puw+C......zq7+.......8N+O......Puz+C......za8+.......8Z+O......Pu2+C......zK9+.......8l+O......Pu5+C......3KD+.......9FwO......fuR7C......36D+.......9RwO......fuU7C......3qE+.......9dwO......fuX7C......3aF+.H.....99hOpp5p..fuv7iHnqK..3aL........9JiOa21s..fuy........3KM+niKLB..9ViOpp5p..fu17yBhlN..36M9vDyMC..9hiOpp5p..fuN4CyL2L..36S........9BE.......fuQA.......3qT9vDyMC..9NE.......fuTA.......3aU+.......9ZkO+u++QyPCQISzN7PTvX0S0QGb0QmDHUFasAA.RDVcsU2SQ.gM60fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHRb2EWMsDiHrzfBf.hHl8FajUlbe4VXsUlH5.hHwcWbhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLtDCLyfiMvHSNzDSL2XCM2.iMzTCMrzfBf.BHfHRXsA2WjU1XgkmH5.BLtTCMyfCN2fiM2XCM2.SM3fyM0bCNrzfBf.BHfHRXsA2WxUFakE1bkIhNf.iKzfyMyXiLwLiLyTiL4PSLwbSN2PCKMn.Hf.BHhDVav80b0MGcgklahnCHvvRCJ.BHf.hHgIGbeYlbkEWck41X4IhNfHCKMn.Hf.BHhDlbv80YgQWYhnCHv3RMrzfBf.BHfHRXxA2WuMFcgYWYyIhNfDCKMn.Hf.BHhDlbv80atIhNf.CKMn.Hf.BHhDlbv8EbgQGckImahnCHvvRCJ.BHf.hHgIGbeMWdtMlH5.RLrzfBf.BHfHRXxA2WzUVav8lH5.RNrzfBf.BHfHhXkEFcy8EbkI2Wskla0QWYhnCHx3xL4jSN4jSN4jSN4jSN4jSNwDiLrzfBf.BHfHxXx81by8UauQVcrEFco8lahnCHvvRCJ.BHf.hHiUGcuYlYhnCHyTiK3LyMzjSN4jSN4jSN4jCN0bSNrzfBf.BHfHBYkwVX48EYxk2W2UFchnCHv3RMrzfBf.BHfHBYkwVX48kYkUFYhE1XqIhNf.iKz.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHjUFagk2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHjUFagk2Wu4lH5.BLrzfBf.BHfHBYkwVX480b441XhnCHwvRCJ.BHf.hHjUFagk2WzUVav8lH5.RNrzfBf.BHfHBYoMGcuIGco8laeQlboYWYhnCHvvRCJ.BHf.hHjk1bz8lbzk1at8UaogmH5.RLrzfBf.BHfHBYoMGcuIGco8lae8lahnCHvvRCJ.BHf.hHjk1bz8lbzk1at8Ec4AWYhnCHvvRCJ.BHf.hHlkFaeEFczE1XqIhNf.CKMn.Hf.BHhXVZr8EYkMVX4IhNfDiK0vRCJ.BHf.hHlkFaeUla18EYkAGcnIhNf.CKMn.Hf.BHhXVZr8kbkwVYgMWYhnCHw3RMrzfBf.BHfHhYow1WyU2bzEVZtIhNf.iK0vRCJ.BHf.hHlkFazUlbeIFak4FYhnCHvvRCJ.BHf.hHlkFazUlbeQlboYWYhnCHvvRCJ.BHf.hHlkFazUlbe8lahnCHwvRCJ.BHf.hHlkFazUlbeMGZkwlYhnCHvvRCJ.BHf.hHlkFazUlbeMGc4wVYhnCHvvRCJ.BHf.hHl8lbsElaz80atIhNf.CKMn.Hf.BHhX1ax0VXtQ2W3IhNf.iK0PSLvjSM3jCLzDCL4TCN4TyMyPCKMn.Hf.BHhX1ax0VXtQ2W4IhNf.iKzjSMzjSMzjSMzjSMzjSM0PSL0vRCJ.BHf.hHqUVdzIWXislH5.BLrzfBf.BHfHBakcVXz8lH5.BLrzfBf.BHfHRauQ1WgQGcgM1ZhnCHvvRCJ.BHf.hHs8FYeQVYiEVdhnCHw3RMrzfBf.BHfHRauQ1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHs8FYeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhz1at81WrY1aeEyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8ULeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeEyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWzUVav8lH5.hMrzfBf.BHfHRau41aewlYu8ULecWX1UlYuIWahnCHvvRCJ.BHf.hHs8lau8Eal81Wx7UXsAGaoQWcjUlH5.RLrzfBf.BHfHRau41aewlYu8kLeYlbkEWck41X4IhNfDCKMn.Hf.BHhz1at81WrY1aeIyWxUFcxk1YmUlbhnCHxvRCJ.BHf.hHs8lau8Eal81Wx70b441XhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7Eck0FbuIhNfbCKMn.Hf.BHhz1at81WrY1aeIyW2ElckY1ax0lH5.BLrzfBf.BHfHhauk1bk8kcuwVcsUlH5.BLrzfBf.BHfHha001WyQWYvMmH5.BNrzfBf.BHfHxayM1Ww7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Ww7Ec04VYhnCHvvRCJ.BHf.hHuM2XeEyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Ww7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeEyW18Fa00VYhnCHwvRCJ.BHf.hHuM2XeEyW2ElckY1ax0lH5.BLrzfBf.BHfHxayM1Wx7EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1Wx7Ec04VYhnCHvvRCJ.BHf.hHuM2XeIyW04VZy8laeQVYzUmakIhNfDCLrzfBf.BHfHxayM1Wx7Uctk1bu41W18VZiU1bhnCHwvRCJ.BHf.hHuM2XeIyW18Fa00VYhnCHwvRCJ.BHf.hHuM2XeIyW2ElckY1ax0lH5.RLrzfBf.BHfHxayM1WlUVYjIVXis1Wg01a04FchnCHvvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeQmbg41bv81bkIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8Ec04VYhnCHvvRCJ.BHf.hHvkFcig1WhUlaj8kbg41YkIhNfHCKMn.Hf.BHh.2ark2WrY1aeEVavwVZzUGYkIhNfDCKMn.Hf.BHh.2ark2WrY1aeYlbkEWck41X4IhNfDCKMn.Hf.BHh.2ark2WrY1aeMWdtMlH5.RLrzfBf.BHfHBbuwVdewlYu8Eck0FbuIhNfbCKMn.Hf.BHh.2ark2WrY1aecWX1UlYuIWahnCHvvRCJ.BHf.hHv8Fa4AGZu4VdhnCHzvRCJ.BHf.hHv8lbzEVak4FcuIhNfzxMrzfBf.BHfHBbuIGcg0VYtQ2aeQWdvUlH5.BLrzfBf.BHfHhbkM2atElaiUlH5.BLtTCMv.CLv.CLv.CLv.CLv.yL0TyLrzfBf.BHfHhbkYWYxI1WjEVavklamIhNf.iK0vRCJ.BHf.hHxUlckImXeQlb480ckQmH5.BLtTCKMn.Hf.BHhHWY1Ulbh8kYkUFYhE1XqIhNf.iK4.CLv.CLv.CLv.CLv.CLvHiLxvRCJ.BHf.hHxUlckImXe8lahnCHvvRCJ.BHf.hHyQWYv8kYxUVb0UlaikmH5.hLrzfBf.BHfHxbzUFbeMWYw8ELvHhNf.CKMn.Hf.BHhLGckA2WyUVbeASLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELyHhNf.CKMn.Hf.BHhLGckA2WyUVbeACMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvTiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeAyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvfiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeECLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwDiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULxHhNf.CKMn.Hf.BHhLGckA2WyUVbeEyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwPiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeEiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwbiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeESNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wx.iH5.BLrzfBf.BHfHxbzUFbeMWYw8kLwHhNf.CKMn.Hf.BHhLGckA2WyUVbeIiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxLiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLzHhNf.CKMn.Hf.BHhLGckA2WyUVbeISMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxXiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeICNhnCHvvRCJ.BHf.hHyQWYv80bkE2WxjiH5.BLrzfBf.BHfHxbzUFbeMWYw80LvHhNf.CKMn.Hf.BHhLGckA2WyUVbeMSLhnCHvvRCJ.BHf.hHyQWYv80bkEWck41XkI2WxUFcxk1YmUlbhnCHxvRCJ.BHf.hHyQWYv80bkEWck41XkI2WykmaiIhNfDCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeQWYsA2ahnCH2vRCJ.BHf.hHyQWYv80bs81azgVZtclH5.BLrzfBf.BHfHxbzUGczUlbeYlbkEWck41X4IhNfLCKMn.Hf.BHhLGc0QGckI2Wu4lH5.BLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeYlbkEWck41X4IhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WykmaiIhNfDCKMn.Hf.BHhLGc0QGckI2WxU1bg0FbrU1WzUVav8lH5.hMrzfBf.BHfHxbzUGczUlbeM2alQmakM2bhnCHv3hLv.CLv.CLv.CLv.CLv.CLwDSLrzfBf.BHfHxbzUGczUlbeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeQWYsA2ahnCH3vRCJ.BHf.hHyUmXe81XzElckIhNf.CKMn.Hf.BHhLWch80bnUmYlwVYhnCHvvRCJ.BHf.hHyUmXeY2arUWakIhNf.CKMn.Hf.BHhLWch80cgYWYl8lbsIhNfHCKMn.Hf.BHhTmaoM2at8ULegVXx01atkldkIhNf.CKMn.Hf.BHhTmaoM2at8kLegVXx01atkldkIhNf.CKMn.Hf.BHhXWYr81XoQWdeQmbgM1ZhnCHvvRCJ.BHf.hH18Fa00VYhnCHv3xMvbSLvXCNv.CLv.CLv.CLyTyLwvRCJ.BHf.hHs8FY0wVXzk1atMmH5.xVc0fBf.ReMnPe.v0PMAxRrUVYxARPxAG.H.PF.XB.q..N..D.HAPS.7E.jAPZDDMATSf0DjMAaSf3DbNAoSf6UfB.......f.A.........PE..................PE0."
+            base64:layout="53.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.CTvP...">
+      <MACROPARAMETERS id="1191"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1095" enabled="1" pan="0.01146596949547529"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1096"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1099" enabled="1">
+      <MACROPARAMETERS id="1100"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+  <TRACK id="1103" midiVProp="0.28125" midiVOffset="0.359375" colour="ffaa00ff"
+         height="45.37080765135104" verticalOffset="0.25" visibleProportion="0.25">
+    <MACROPARAMETERS id="1105"/>
+    <MODIFIERS/>
+    <MIDICLIP name="New MIDI Clip" start="23.75" length="148.75" offset="0.0"
+              id="1204" sync="0" colour="ffaa00ff" currentTake="0" speed="1.0"
+              originalLength="3.0" loopStartBeats="0.0" loopLengthBeats="3.0">
+      <QUANTISATION/>
+      <GROOVE/>
+      <SEQUENCE ver="1" channelNumber="1">
+        <NOTE p="33" b="1.0" l="0.496875" v="82" c="0"/>
+        <NOTE p="33" b="2.0" l="0.496875" v="82" c="0"/>
+      </SEQUENCE>
+      <PATTERNGENERATOR>
+        <PROGRESSION/>
+      </PATTERNGENERATOR>
+    </MIDICLIP>
+    <PLUGIN type="vst" uid="7d69757d" filename="AudioUnit:Synths/aumu,Helm,Tyte"
+            name="Helm" manufacturer="Matt Tytel" windowLocked="1" id="1200"
+            enabled="1" windowX="102" windowY="54" programNum="-1" state="5510.hAGaoMGcv.C1AHv.DTfAGfPBJr.DQHwDTvUag4VclE1XzUmbkIGUjEFcgwUYrUVak4Fcs3VXsU1UyUmXzkGbkckckI2bo8laTQWdvU1WP7fZ0MVYPwVcmklaSQWXzUFUtEVakIAU4QWYOEAAjA..............KB....COfmUH....w3Cv......fL8jYlZB...LyO.B......z7SFYpI...PM+........XC.........2..........N.........jiOpp5p..fAe7STz0E..X.H9X61tA..FDB.......fAh7iA1MO..XvH+.......FPxOyLyL..fAk7iDIUB..XfI........FbhOpp5p..fAn7STz0E..XfO+.......F7yO.B....fA.A.......XPP........FHD.......fAC4Cv.....X.Q+.......FTjO.C....fAF8C......XvQ........FzkO.C....fAdA.......XvW........F.F.......fAgA.......XfX+.......FL1O......fAj8C......XPY........FXF.......fA74Cv.....XPe9.L.....F32O......fA+8Cf.....X.f+zQhYC..FD3O.B....fAB5ipptJ..Xvf+rfnoC..FPH.......fAE9Cf.....Xvl+zQhYC..Fv4O.B....fAc5ipptJ..Xfm+HB55B..F7I.......fAfB.......XPn9bVNNC..FH5O......fAi9C......X.o8vLyMC..FnK.......fA69CC2vH..X.u9vLyMC..Fz6O......fA99C......Xvu8vLyMC..F.L.......fAA+CC2vH..Xfv9vLyMC..FL7O......fAY+C......Xf1+.......FrcOpp5p..fAb+Cf.....XP2+zQhYC..F3sOpp5p..fAe+iHnqK..X.3........FDdOFGCi..fAh6Cf.....X.9........Fj+O......fA5+C......Xv9+.......Fv+O......fA8C.......Xf++HB55B..F7+O......vA.7C......bP.+.......GbwO......vAX7C......bPF+.......GnwO......vAa7C......b.G+.......GzwO......vAd7C......bvG+.......G.xO......Puw+C......zq7+.......8N+O......Puz+C......za8+.......8Z+O......Pu2+C......zK9+.......8l+O......Pu5+C......3KD+.......9FwO......fuR7C......36D+.......9RwO......fuU7C......3qE+.......9dwO......fuX7C......3aF+.H.....99hOpp5p..fuv7iHnqK..3aL........9JiOa21s..fuy........3KM+niKLB..9ViOpp5p..fu17yBhlN..36M9vDyMC..9hiOpp5p..fuN4CyL2L..36S........9BE.......fuQA.......3qT9vDyMC..9NE.......fuTA.......3aU+.......9ZkO+u++QyPCQISzN7PTvX0S0QGb0QmDHUFasAA.RDVcsU2SQ.QO60fBf.hHrk1Xk41bkIhNfHBTgQ2XnABJikBHhkGHt.BHTgVZyABbgQ2XnARZyABaoMVYtMWYjARctQVYxARXfLjbkEFcoYWYfLzas01atMGHAQGcxklX0QWZu4FHz3BLfjjazUlbtEFco8lagwFHLk1Xk41bk4BHfj0a0Axbn8VcrQFHnElckAhbkMVYoYWYjARXfL1avkGHuYFHzgVYfvVZiUlayUFHgw1atcFH2kFcnABcnk1bfb2axslKf.RRlAhauQGKfLWYkABOnQGcvoyKuLlbkEFcoYWYi8Vas8lay4xaxc1Krk1Xk41bkM2Khk2Kz3BLu3iKhvRCJ.BHhLWdtQGZeYWYxMWZu4lH5.hHv3RNt.iHrzfBf.hHvEFcig1WtEVakIhNfHRb2EWMsHiHrzfBf.hHl8FajUlbe4VXsUlH5.hHwcWbhvRCJ.BHhDVczg1axIhNfHhHrzfBf.hHyUFczklamMmH5.xdMn.Hf.BHhDVav8UXzQWXislH5.BLtDiLzLSLvXiMwbiMzbCL0fCNzfCKMn.Hf.BHhDVav8EYkMVX4IhNf.iKybiMwPCN3jyMvTCN3HyL0LSNxDCKMn.Hf.BHhDVav8kbkwVYgMWYhnCHv3BL2jCLzPSLwbiMzbCL0fCNx.iL1PCKMn.Hf.BHhDVav80b0MGcgklahnCHvvRCJ.BHf.hHgIGbeYlbkEWck41X4IhNfHCKMn.Hf.BHhDlbv80YgQWYhnCHv3RMrzfBf.BHfHRXxA2WuMFcgYWYyIhNfDCKMn.Hf.BHhDlbv80atIhNf.CKMn.Hf.BHhDlbv8EbgQGckImahnCHvvRCJ.BHf.hHgIGbeMWdtMlH5.RLrzfBf.BHfHRXxA2WzUVav8lH5.RNrzfBf.BHfHhXkEFcy8EbkI2Wskla0QWYhnCHx3xL4jSN4jSN4jSN4jSN4jSNwDiLrzfBf.BHfHxXx81by8UauQVcrEFco8lahnCHvvRCJ.BHf.hHiUGcuYlYhnCHwHiLtfyM0vRCJ.BHf.hHjUFagk2WjIWdecWYzIhNf.iK0vRCJ.BHf.hHjUFagk2WlUVYjIVXislH5.BLtPCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhPVYrEVdeYlbkEWck41X4IhNfHCKMn.Hf.BHhPVYrEVde8lahnCHvvRCJ.BHf.hHjUFagk2WykmaiIhNfDCKMn.Hf.BHhPVYrEVdeQWYsA2ahnCH4vRCJ.BHf.hHjk1bz8lbzk1at8EYxklckIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WskFdhnCHwvRCJ.BHf.hHjk1bz8lbzk1at80atIhNf.CKMn.Hf.BHhPVZyQ2axQWZu41WzkGbkIhNf.CKMn.Hf.BHhXVZr8UXzQWXislH5.BLrzfBf.BHfHhYow1WjU1XgkmH5.RLtTCKMn.Hf.BHhXVZr8UYtY2WjUFbzglH5.BLrzfBf.BHfHhYow1WxUFakE1bkIhNfDiK0vRCJ.BHf.hHlkFaeMWcyQWXo4lH5.BLtTCKMn.Hf.BHhXVZrQWYx8kXrUlajIhNf.CKMn.Hf.BHhXVZrQWYx8EYxklckIhNf.CKMn.Hf.BHhXVZrQWYx80atIhNfDCKMn.Hf.BHhXVZrQWYx80bnUFalIhNf.CKMn.Hf.BHhXVZrQWYx80bzkGakIhNf.CKMn.Hf.BHhX1ax0VXtQ2Wu4lH5.BLrzfBf.BHfHhYuIWag4FcegmH5.BLtTCMw.SN0fSNvPSLvjSM3jSM2LCMrzfBf.BHfHhYuIWag4FcekmH5.BLtPSN0PSN0PSN0PSN0PSN0TCMwTCKMn.Hf.BHhrVY4QmbgM1ZhnCHvvRCJ.BHf.hHrU1YgQ2ahnCHvvRCJ.BHf.hHs8FYeEFczE1XqIhNf.CKMn.Hf.BHhz1aj8EYkMVX4IhNfDiK0vRCJ.BHf.hHs8FYeIWYrUVXyUlH5.RLtTCKMn.Hf.BHhz1aj80b0MGcgklahnCHv3RMrzfBf.BHfHRau41aewlYu8ULeEVavwVZzUGYkIhNfDCKMn.Hf.BHhz1at81WrY1aeEyWlIWYwUWYtMVdhnCHwvRCJ.BHf.hHs8lau8Eal81Ww7kbkQmboc1YkImH5.hLrzfBf.BHfHRau41aewlYu8ULeMWdtMlH5.RLrzfBf.BHfHRau41aewlYu8ULeQWYsA2ahnCH1vRCJ.BHf.hHs8lau8Eal81Ww70cgYWYl8lbsIhNf.CKMn.Hf.BHhz1at81WrY1aeIyWg0FbrkFc0QVYhnCHwvRCJ.BHf.hHs8lau8Eal81Wx7kYxUVb0UlaikmH5.RLrzfBf.BHfHRau41aewlYu8kLeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhz1at81WrY1aeIyWykmaiIhNfDCKMn.Hf.BHhz1at81WrY1aeIyWzUVav8lH5.xMrzfBf.BHfHRau41aewlYu8kLecWX1UlYuIWahnCHvvRCJ.BHf.hHt8VZyU1W18Fa00VYhnCHv3BM1PiL2XyMwLyMvjiM2byL2jSN1vRCJ.BHf.hHtUWaeMGckA2bhnCH3vRCJ.BHf.hHuM2XeEyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeEyWzUmakIhNf.CKMn.Hf.BHh71bi8ULeUmaoM2at8EYkQWctUlH5.RLvvRCJ.BHf.hHuM2XeEyW04VZy8laeY2aoMVYyIhNfDCKMn.Hf.BHh71bi8ULeY2arUWakIhNf.CKMn.Hf.BHh71bi8ULecWX1UlYuIWahnCHzvRCJ.BHf.hHuM2XeIyWzIWXtMGbuMWYhnCHvvRCJ.BHf.hHuM2XeIyWzUmakIhNf.CKMn.Hf.BHh71bi8kLeUmaoM2at8EYkQWctUlH5.RLvvRCJ.BHf.hHuM2XeIyW04VZy8laeY2aoMVYyIhNfDCKMn.Hf.BHh71bi8kLeY2arUWakIhNf.CKMn.Hf.BHh71bi8kLecWX1UlYuIWahnCHzvRCJ.BHf.hHuM2XeYVYkQlXgM1ZeEVauUmazIhNf.CKMn.Hf.BHh71bi8kYkUFYhE1Xq8EcxElayA2ayUlH5.BLrzfBf.BHfHxayM1WlUVYjIVXis1WzUmakIhNf.CKMn.Hf.BHh.WZzMFZeIVYtQ1WxElamUlH5.hLrzfBf.BHfHBbuwVdewlYu8UXsAGaoQWcjUlH5.RLrzfBf.BHfHBbuwVdewlYu8kYxUVb0UlaikmH5.RLrzfBf.BHfHBbuwVdewlYu80b441XhnCHwvRCJ.BHf.hHv8Fa48Eal81WzUVav8lH5.xMrzfBf.BHfHBbuwVdewlYu80cgYWYl8lbsIhNf.CKMn.Hf.BHh.2arkGbn8la4IhNfPCKMn.Hf.BHh.2axQWXsUlaz8lH5.RK2vRCJ.BHf.hHv8lbzEVak4Fcu8Ec4AWYhnCHvvRCJ.BHf.hHxU1bu4VXtMVYhnCHv3hLvXiM1XiM1XiM1XiM1XiMybCMyvRCJ.BHf.hHxUlckImXeQVXsAWZtclH5.BLtTCKMn.Hf.BHhHWY1Ulbh8EYxk2W2UFchnCHv3RMrzfBf.BHfHhbkYWYxI1WlUVYjIVXislH5.BLtjCLv.CLv.CLv.CLv.CLv.iLxHCKMn.Hf.BHhHWY1Ulbh80atIhNf.CKMn.Hf.BHhLGckA2WlIWYwUWYtMVdhnCHxvRCJ.BHf.hHyQWYv80bkE2Wv.iH5.BLrzfBf.BHfHxbzUFbeMWYw8ELwHhNf.CKMn.Hf.BHhLGckA2WyUVbeAiLhnCHvvRCJ.BHf.hHyQWYv80bkE2WvLiH5.BLrzfBf.BHfHxbzUFbeMWYw8ELzHhNf.CKMn.Hf.BHhLGckA2WyUVbeASMhnCHvvRCJ.BHf.hHyQWYv80bkE2WvXiH5.BLrzfBf.BHfHxbzUFbeMWYw8EL2HhNf.CKMn.Hf.BHhLGckA2WyUVbeACNhnCHvvRCJ.BHf.hHyQWYv80bkE2WvjiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULvHhNf.CKMn.Hf.BHhLGckA2WyUVbeESLhnCHvvRCJ.BHf.hHyQWYv80bkE2WwHiH5.BLrzfBf.BHfHxbzUFbeMWYw8ULyHhNf.CKMn.Hf.BHhLGckA2WyUVbeECMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwTiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL1HhNf.CKMn.Hf.BHhLGckA2WyUVbeEyMhnCHvvRCJ.BHf.hHyQWYv80bkE2WwfiH5.BLrzfBf.BHfHxbzUFbeMWYw8UL4HhNf.CKMn.Hf.BHhLGckA2WyUVbeICLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxDiH5.BLrzfBf.BHfHxbzUFbeMWYw8kLxHhNf.CKMn.Hf.BHhLGckA2WyUVbeIyLhnCHvvRCJ.BHf.hHyQWYv80bkE2WxPiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL0HhNf.CKMn.Hf.BHhLGckA2WyUVbeIiMhnCHvvRCJ.BHf.hHyQWYv80bkE2WxbiH5.BLrzfBf.BHfHxbzUFbeMWYw8kL3HhNf.CKMn.Hf.BHhLGckA2WyUVbeISNhnCHvvRCJ.BHf.hHyQWYv80bkE2Wy.iH5.BLrzfBf.BHfHxbzUFbeMWYw80LwHhNf.CKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeIWYzIWZmcVYxIhNfHCKMn.Hf.BHhLGckA2WyUVb0UlaiUlbeMWdtMlH5.RLrzfBf.BHfHxbzUFbeMWYwUWYtMVYx8Eck0FbuIhNfbCKMn.Hf.BHhLGckA2Wy01auQGZo41YhnCHvvRCJ.BHf.hHyQWczQWYx8kYxUVb0UlaikmH5.xLrzfBf.BHfHxbzUGczUlbe8lahnCHvvRCJ.BHf.hHyQWczQWYx8kbkMWXsAGak8kYxUVb0UlaikmH5.RLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeMWdtMlH5.RLrzfBf.BHfHxbzUGczUlbeIWYyEVavwVYeQWYsA2ahnCH1vRCJ.BHf.hHyQWczQWYx80buYFctU1byIhNf.iKx.CLv.CLv.CLv.CLv.CLvDSLwvRCJ.BHf.hHyQWczQWYx80b441XhnCHwvRCJ.BHf.hHyQWczQWYx8Eck0FbuIhNffCKMn.Hf.BHhLWch80aiQWX1UlH5.BLrzfBf.BHfHxb0I1WygVclYFakIhNf.CKMn.Hf.BHhLWch8kcuwVcsUlH5.BLrzfBf.BHfHxb0I1W2ElckY1ax0lH5.hLrzfBf.BHfHRctk1bu41Ww7EZgIWau4VZ5UlH5.BLrzfBf.BHfHRctk1bu41Wx7EZgIWau4VZ5UlH5.BLrzfBf.BHfHhckw1aikFc48EcxE1XqIhNf.CKMn.Hf.BHhX2arUWakIhNf.iK2.yMw.iM3.CLv.CLv.CLvLSMyDCKMn.Hf.BHhz1ajUGagQWZu41bhnCHa0UCJ.BH80fB8A.WC0DHKwVYkIGHAIGb.f..Y.fI.rB.3..P.fD.MAvW.PF.oQPzDPMAVSP1DrMAhSv4DjNAtWwK........BD..........U...................UvC"
+            base64:layout="53.LETVOUEU..P.A7TUTAUUTME..DP.BU0T.Df.o4FYkgG.ATP......vVX48VczAP.CTvP...">
+      <MACROPARAMETERS id="1201"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="volume" id="1108" enabled="1" pan="-0.03253674879670143"
+            windowX="80" windowY="125" windowLocked="0">
+      <MACROPARAMETERS id="1109"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <PLUGIN type="level" id="1112" enabled="1">
+      <MACROPARAMETERS id="1113"/>
+      <MODIFIERASSIGNMENTS/>
+    </PLUGIN>
+    <OUTPUTDEVICES>
+      <DEVICE name="(default audio output)"/>
+    </OUTPUTDEVICES>
+  </TRACK>
+</EDIT>
