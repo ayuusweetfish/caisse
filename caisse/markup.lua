@@ -10,6 +10,8 @@ local function args(ss, n, verb)
       -- An unbreakable unit
       results[#results + 1] = s
       ssi = ssi + 1
+      s = ssi <= #ss and ss[ssi].text or ''
+      cur = s:find('[^%s]') or (#s + 1)
     else
       -- Match a whitespace frontier or to the end of the string
       local endat = (s:find('%f[%s]', cur + 1) or (#s + 1)) - 1
@@ -18,10 +20,10 @@ local function args(ss, n, verb)
       cur = s:find('[^%s]', endat + 2) or (#s + 1)
       if cur > #s then
         ssi = ssi + 1
-        cur = 1
+        s = ssi <= #ss and ss[ssi].text or ''
+        cur = s:find('[^%s]') or (#s + 1)
       end
     end
-    s = ssi <= #ss and ss[ssi].text or ''
   end
   if n then
     if not verb then cur = s:find('[^%s]', cur) or (#s + 1) end
@@ -36,7 +38,13 @@ local function render(s, fns)
   fns[''] = fns[''] or function (s) return s end  -- for <= ...>
   fns['-'] = fns['-'] or function (s) return s .. '\n' end
   fns['^'] = fns['^'] or function (s) return s end
-  fns['~'] = fns['~'] or function (s) return render(s, fns) end
+  fns['~'] = fns['~'] or function (s)
+    local r = render('!' .. s:gsub('\n', ' '), fns)
+    local endpos = r:find('[^%s]%s*$')
+    if endpos then r = r:sub(1, endpos) end
+    return r
+  end
+  fns['~~'] = fns['~~'] or function (s) return render(s, fns) end
   local linetransform = fns['-']
   local texttransform = fns['^']
   local allitems = {}

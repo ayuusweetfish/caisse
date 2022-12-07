@@ -192,7 +192,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
           renderslice(template, locals, outputs, i + 1, item.span)
           locals[#locals] = nil
         end
-        if #ctx > 0 then
+        if #ctx > 0 or next(ctx) == nil then
           for j = 1, #ctx do unpackctx(ctx[j]) end
         else
           unpackctx(ctx)
