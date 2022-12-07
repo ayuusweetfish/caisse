@@ -32,5 +32,21 @@
   <musictrack 潮汐-tide/冉语优 如见青山 <= > music/rjqs.jpg 歌曲动画中的画面，苏东坡站在小船上一手托着碗，衣带随风飘扬，佛印和尚坐在一旁微笑看向苏东坡。>
 >
 
+!<h2 游戏>
+!<list
+  <li <b 蔚蓝/Celeste> — Maddy Makes Games>
+  <li <b 短途旅行/A Short Hike> — Adam Robinson-Yu>
+  <li <b 节奏天国/リズム天国> — 任天堂 SPD>
+>
+!<img games.png 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>
+
+!<h2 动画>
+!<list
+  <li <b 日常>>
+  <li <b 利兹与青鸟>>
+  <li <b 凉宫春日的忧郁>>
+>
+!<img animations.jpg 《日常》片头中的三位主人公、《利兹与青鸟》的 key art 以及《凉宫春日的忧郁》中的角色合影>
+
 {{contents.en=}}
 Hahaha!
