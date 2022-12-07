@@ -6,7 +6,6 @@
   <h1>{{ title }}</h1>
 </header>
 <section class='banner-list'>
-{{ odd = false }}
 {{@ cats[curcat].pagelist}}
 <a href='/{{ name }}' class='item-entry'><section>
   {{ page = render('items/' .. name .. '/page.txt') }}
@@ -31,10 +30,7 @@
     <div class='clear-float'></div>
   </section>
 </section></a>
-{{ odd = not odd }}
-{{@ not compact or not odd }}
-  <div role='separator' class='item-separator'></div>
-{{@ end }}
+<div role='separator' class='item-separator'></div>
 {{@ end}}
 </section>
 
@@ -59,13 +55,14 @@ a.item-entry {
   inset-block-end: 1rem;
   font-size: 1.5rem;
   margin: 0;
+  margin-inline-end: 1.3rem;
   text-shadow: #fdfdfd 0.03em 0.03em;
 }
 .item-peek {
   margin-inline: 1.3rem;
 }
 .item-peek > p > span.date-container {
-  float: right;
+  float: right; /* inline-end */
   margin-inline-start: 2em;
   margin-block-start: 0.2em;
 }
@@ -89,12 +86,17 @@ div[role='separator'].item-separator {
 }
 .banner-list > div.item-separator {
   grid-column: 1 / span 2;
+  margin-block: -0.5em 0.5em;
+  transform: rotate(5deg);
 }
-.banner-list > *:nth-child(3n+2) {
+html[dir="rtl"] .banner-list > div.item-separator {
+  transform: rotate(-5deg);
+}
+.banner-list > *:nth-child(4n+2) {
+  display: none;
+}
+.banner-list > *:nth-child(4n+3) {
   margin-block-start: 2em;
-}
-div[role='separator'].item-separator {
-  margin-block: 0.5em;
 }
 a.item-entry {
   margin-block: 0;
@@ -104,30 +106,34 @@ a.item-entry {
   .banner-list {
     display: initial;
   }
-  .banner-list > *:nth-child(3n+2) {
+  .banner-list > *:nth-child(4n+3) {
     margin-block-start: unset;
   }
   .banner-list > div.item-separator {
-    display: none;
+    transform: unset;
+    margin-block: 0.5em;
+  }
+  .banner-list > *:nth-child(4n+2) {
+    display: block;
   }
   a.item-entry > section {
     display: grid;
   }
-  a.item-entry:nth-child(3n+1) > section {
+  a.item-entry:nth-child(4n+1) > section {
     grid-template-columns: 3fr 2fr;
   }
-  a.item-entry:nth-child(3n+2) > section {
+  a.item-entry:nth-child(4n+3) > section {
     grid-template-columns: 2fr 3fr;
   }
-  a.item-entry:nth-child(3n+2) > section > .item-banner { grid-column: 2; }
-  a.item-entry:nth-child(3n+2) > section > .item-peek { grid-column: 1; grid-row: 1; }
+  a.item-entry:nth-child(4n+3) > section > .item-banner { grid-column: 2; }
+  a.item-entry:nth-child(4n+3) > section > .item-peek { grid-column: 1; grid-row: 1; }
   .item-peek {
     max-height: 10rem;
     overflow-x: hidden;
     overflow-y: scroll;
   }
-  a.item-entry:nth-child(3n+1) > section > .item-peek { margin-inline-end: 0.5em; }
-  a.item-entry:nth-child(3n+2) > section > .item-peek { margin-inline-start: 0.5em; }
+  a.item-entry:nth-child(4n+1) > section > .item-peek { margin-inline-end: 0.5em; }
+  a.item-entry:nth-child(4n+3) > section > .item-peek { margin-inline-start: 0.5em; }
   .item-peek > p {
     display: flex;
     flex-direction: column;
@@ -142,7 +148,7 @@ a.item-entry {
     margin-block-start: 0.5em;
     flex-grow: 0;
   }
-  a.item-entry:nth-child(3n+1) span.date-container { text-align: end; }
-  a.item-entry:nth-child(3n+2) span.date-container { text-align: start; }
+  a.item-entry:nth-child(4n+1) span.date-container { text-align: end; }
+  a.item-entry:nth-child(4n+3) span.date-container { text-align: start; }
 {{@ end }}
 </style>

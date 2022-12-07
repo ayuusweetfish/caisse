@@ -1,5 +1,5 @@
 {{title.zh=}}Patchwork Girl
-{{intro.zh=}}Wizard of Oz 用户测试的软件原型开发工具包
+{{intro.zh=}}Wizard of Oz 用户测试原型工具包
 {{title.en=}}Patchwork Girl
 {{intro.en=}}
 
