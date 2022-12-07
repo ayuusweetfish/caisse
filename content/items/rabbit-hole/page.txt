@@ -1,5 +1,5 @@
 {{title.zh=}}兔子洞
-{{intro.zh=}}三维渲染与物理动画；《计算机图形学基础》与《计算机动画的算法与技术》课程作业
+{{intro.zh=}}三维渲染与物理模拟动画
 {{title.en=}}Rabbit Hole
 {{intro.en=}}
 
