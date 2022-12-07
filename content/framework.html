@@ -130,7 +130,10 @@ nav, main, aside, footer { padding: 1rem; }
     display: initial;
   }
   nav {
-    padding-block-start: 0.5rem;
+    padding-block: 0.5rem 0.25rem;
+  }
+  main {
+    padding-block-start: 1.25rem;
   }
   nav > ul {
     flex-direction: row;
@@ -213,8 +216,7 @@ main header h1 {
 
 main {
   position: relative;
-  overflow-x: hidden;
-  /* overflow-inline: hidden; */
+  overflow: hidden;
 }
 #top-fleuron {
   background: no-repeat center 0 / contain url('/bin/top-fleuron.svg');
@@ -304,13 +306,17 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
   font-size: 0.9rem;
   color: rgb(112, 112, 112);
 }
-.date-term::before, .date-term::after {
+.date-term .date-bracket-left,
+.date-term .date-bracket-right {
   font-size: 0.5rem;
   position: relative;
   inset-block-start: -0.15rem;
 }
-.date-term::before { content: '<'; inset-inline-start: -0.2em; }
-.date-term::after { content: '>'; inset-inline-start: 0.04em; }
+.date-term .date-bracket-left { margin-inline-end: 0.2em; }
+.date-term .date-bracket-right { margin-inline-start: 0.04em; }
+.date-term .date-term-single {
+  display: inline-block;
+}
 .date-term .delim::after { content: '~'; padding-inline: 0.1em 0.2em; }
 .date-term sup::after {
   font-family: 'Ayuu Little Icons — 221202a';
@@ -325,9 +331,6 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term sup.season-6::after { content: '\1f343'; transform: rotate(-25deg) scale(1.02); }
 .date-term sup.season-7::after { content: '\2744'; transform: rotate(8deg) scale(0.97); }
 .date-term sup.season-8::after { content: '\1f9ca'; transform: rotate(5deg); }
-.date-term .date-term-single {
-  display: inline-block;
-}
 
 div[role='separator'] {
   block-size: 1.5em;

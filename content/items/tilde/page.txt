@@ -1,5 +1,5 @@
 {{title.zh=}}Tilde 音乐序列器
-{{intro.zh=}}《洞窟物语》Organya 格式音乐编辑工具
+{{intro.zh=}}《洞窟物语》Organya 音乐编辑工具
 {{title.en=}}Tilde Sequencer
 {{intro.en=}}
 

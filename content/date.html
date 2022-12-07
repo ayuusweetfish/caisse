@@ -98,16 +98,24 @@
 
 {{builder =}}
 <span class='date-term'>
+<span class='date-term-single'>
+<span class='date-bracket-left'>&lt;</span>
 {{ first = true }}
 {{@ dates }}
-  {{@ not first }}<span class='delim'></span>{{@ end }}
-  <span class='date-term-single'
+  {{@ not first }}
+    </span>
+    <span class='delim'></span>
+    <span class='date-term-single'>
+  {{@ end }}
+  <span
       title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
     {{ string.format('%02d', year % 100) }}-{{ T[term].name }}
     <sup class='season-{{ math.ceil(term / 3) }}'></sup>
   </span>
   {{ first = false }}
 {{@ end }}
+<span class='date-bracket-right'>&gt;</span>
+</span>
 </span>
 
 {{=}}
