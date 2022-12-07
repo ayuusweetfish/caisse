@@ -5,6 +5,8 @@
 <header>
   <h1>{{ title }}</h1>
 </header>
+<section class='banner-list'>
+{{ odd = false }}
 {{@ cats[curcat].pagelist}}
 <a href='/{{ name }}' class='item-entry'><section>
   {{ page = render('items/' .. name .. '/page.txt') }}
@@ -25,12 +27,16 @@
   <h1>{{ page.title }}</h1>
   {{@ end }}
   <section class='item-peek'>
-    <p>{{ page.intro }}<span class='date-container'>{{ renderdate(page.date, true) }}</span></p>
+    <p><span class='intro-text'>{{ page.intro }}</span><span class='date-container'>{{ renderdate(page.date, true) }}</span></p>
     <div class='clear-float'></div>
   </section>
 </section></a>
-<div role='separator' class='item-separator'></div>
+{{ odd = not odd }}
+{{@ not compact or not odd }}
+  <div role='separator' class='item-separator'></div>
+{{@ end }}
 {{@ end}}
+</section>
 
 <style>
 a.item-entry {
@@ -74,4 +80,69 @@ h1.item-title-dark {
 div[role='separator'].item-separator {
   margin-block: 1em 1.5em;
 }
+
+{{@ compact }}
+.banner-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1em;
+}
+.banner-list > div.item-separator {
+  grid-column: 1 / span 2;
+}
+.banner-list > *:nth-child(3n+2) {
+  margin-block-start: 2em;
+}
+div[role='separator'].item-separator {
+  margin-block: 0.5em;
+}
+a.item-entry {
+  margin-block: 0;
+}
+
+@media (max-width: 115vh), (max-width: 48rem) {
+  .banner-list {
+    display: initial;
+  }
+  .banner-list > *:nth-child(3n+2) {
+    margin-block-start: unset;
+  }
+  .banner-list > div.item-separator {
+    display: none;
+  }
+  a.item-entry > section {
+    display: grid;
+  }
+  a.item-entry:nth-child(3n+1) > section {
+    grid-template-columns: 3fr 2fr;
+  }
+  a.item-entry:nth-child(3n+2) > section {
+    grid-template-columns: 2fr 3fr;
+  }
+  a.item-entry:nth-child(3n+2) > section > .item-banner { grid-column: 2; }
+  a.item-entry:nth-child(3n+2) > section > .item-peek { grid-column: 1; grid-row: 1; }
+  .item-peek {
+    max-height: 10rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  a.item-entry:nth-child(3n+1) > section > .item-peek { margin-inline-end: 0.5em; }
+  a.item-entry:nth-child(3n+2) > section > .item-peek { margin-inline-start: 0.5em; }
+  .item-peek > p {
+    display: flex;
+    flex-direction: column;
+    min-block-size: calc(100% - 2em); /* 100% - 2 * margin-block */
+  }
+  .item-peek > p > span.intro-text {
+    flex-grow: 1;
+  }
+  .item-peek > p > span.date-container {
+    float: unset;
+    margin-inline: 0;
+    margin-block-start: 0.5em;
+    flex-grow: 0;
+  }
+  a.item-entry:nth-child(3n+1) span.date-container { text-align: end; }
+  a.item-entry:nth-child(3n+2) span.date-container { text-align: start; }
+{{@ end }}
 </style>

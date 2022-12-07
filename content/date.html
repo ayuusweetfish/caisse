@@ -101,7 +101,8 @@
 {{ first = true }}
 {{@ dates }}
   {{@ not first }}<span class='delim'></span>{{@ end }}
-  <span title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
+  <span class='date-term-single'
+      title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
     {{ string.format('%02d', year % 100) }}-{{ T[term].name }}
     <sup class='season-{{ math.ceil(term / 3) }}'></sup>
   </span>
