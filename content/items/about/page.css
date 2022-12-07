@@ -1,0 +1,37 @@
+.music-table {
+  display: grid;
+  grid-template-columns: 2fr 5fr 5fr;
+  align-items: center;
+  width: 100%;
+  max-width: 60em;
+}
+.music-table > div {
+  padding: 0.25em 0.5em;
+  block-size: fit-content;
+}
+.music-table > div:nth-child(6n+5) div.music-track,
+.music-table > div:nth-child(6n+6) div.music-track {
+  flex-direction: row-reverse;
+  text-align: end;
+}
+@media (max-width: 115vh), (max-width: 48rem) {
+  .music-table {
+    grid-template-columns: 1fr 4fr;
+  }
+  .music-table > div {
+    padding: 0.125em 0.25em;
+  }
+  .music-table > div:nth-child(6n+5) div.music-track,
+  .music-table > div:nth-child(6n+6) div.music-track {
+    flex-direction: unset;
+    text-align: unset;
+  }
+  .music-table > div:nth-child(3n+1) {
+    grid-row: span 2;
+    writing-mode: vertical-rl;
+  }
+  .music-table > div:nth-child(3n+3) div.music-track {
+    flex-direction: row-reverse;
+    text-align: end;
+  }
+}

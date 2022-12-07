@@ -4,25 +4,33 @@
 {{contents.zh=}}
 很开心见到你！那么晚不睡在想什么呀，可以跟我说吗？
 
-<img portrait.jpg <= > float-end>
+!<img portrait.jpg 夜晚灯光下的画像 float-end>
 有许多名字和昵称，但在这里叫我阿鱼/Ayu 就好！图画是一只名叫甜瓜的 AI 根据一张路灯下的自拍绘制的。
 是个多面手三脚猫，努力学习世界的一切；愿做一点无名的光，尽自己的绵薄之力为这万花筒般的世界添上一抹色彩。
 做的事情很杂，音乐、游戏、计算机什么的都有，整理归类放到这个小站聊以敝帚自珍啦。不过要是被喜欢的话真的会非常开心！
-是 ENFP/INFP，喜欢夸人与被夸。无可救药的空想家，重度拖延自救中 ; - ;
+是 ENFP/INFP，外向社恐，无可救药的空想家，重度拖延自救中 ; - ;
 
 !<clearfloat>
 !<hr>
+
+!<h1 最近在干嘛>
+最近把这个网站搭了起来，短期内应该会比较频繁地更新。
+有一个上个月就想做完的实验性小动画还差一些工作，可能这段时间也会做一下吧。
+在尝试学画画，跟着 <link https://drawabox.com/ Drawabox> 的教程摸索中。<date 2022.21>
+
 !<h1 喜欢的东西>
-音乐
-创作者
-とあ：拼图女孩/パズルガール (nameless ver.)
-春卷饭：萤火虫未曾来过/蛍はいなかった (Vocaloid ver.)
-乐队
-夜鹿：希区柯克/ヒッチコック
-Humbert Humbert：讯息/メッセージ
-一些零散的歌曲
-独自旅行/ひとり旅 (瀬名航/鎖那)
-染上你的颜色/君色に染まる (西沢さんP/柊南cover)
+!<h2 歌单>
+!<gridtable music-table
+  <<~=' by <nobr 喜欢的作者>'>>
+  <musictrack とあ//nameless <= Puzzle Girl> <<~= <lang ja パズルガール>//212>> music/212.jpg 专辑封面，黄绿色的奇幻场景中，身穿白色连衣裙、头上有形似鹿角装饰的仙子背对画面站在水池边，面对着对岸一座由形状奇特的绿色石头组成的山，石头之间有几棵树扎根；空中漂浮着些许白色光点，还有几只白色的鸟也正飞向这座山。>
+  <musictrack 春卷饭 萤火虫未曾来过 <lang ja 蛍はいなかった> music/hotaru.jpg 歌曲封面，两位女孩相拥在一起，深绿的夜色被仿佛两人心中照出的黄色光亮划破。>
+  <<~=' by <nobr 喜欢的乐队>'>>
+  <musictrack 夜鹿 Hitchcock <lang ja ヒッチコック> music/hitchcock.jpg 歌曲动画中的画面，一个孩子与一个不明生物站在十字路口中央，各自背对对方。>
+  <musictrack <= Humbert Humbert> Message <lang ja メッセージ> music/hundreds.jpg 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
+  <= 一些零散的歌>
+  <musictrack 瀬名航//鎖那 一个人的旅行 <lang ja ひとり旅> music/hitori.jpg 歌曲动画中的画面，女孩背着包、脖子上挂着相机独自走在路上，由 Mitsuki Sanagi 绘制。>
+  <musictrack 潮汐-tide/冉语优 如见青山 <= > music/rjqs.jpg 歌曲动画中的画面，苏东坡站在小船上一手托着碗，衣带随风飘扬，佛印和尚坐在一旁微笑看向苏东坡。>
+>
 
 {{contents.en=}}
 Hahaha!

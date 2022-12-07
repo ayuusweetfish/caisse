@@ -6,7 +6,8 @@ local srcpath = 'content/'
 local sitepath = 'build/'
 
 caisse.readfile = function (path)
-  return io.open(srcpath .. path, 'r'):read('a')
+  local f = io.open(srcpath .. path, 'r')
+  if f then return f:read('a') end
 end
 os.execute('rm -rf ' .. sitepath)
 os.execute('mkdir ' .. sitepath)
@@ -161,6 +162,8 @@ local function registeritem(path, curcat, extralocals)
   if itemreg[path] then return end
   -- `path` is the path in URL, without the leading `/`
   local locals = render('items/' .. path .. '/page.txt')
+  local extrastyle = caisse.readfile('items/' .. path .. '/page.css')
+  if extrastyle then locals.extrastyle = extrastyle end
   if extralocals then
     for k, v in pairs(extralocals) do locals[k] = v end
   end
@@ -230,6 +233,14 @@ local filetypeextrainfo = {
   end,
 }
 
+local function heading(tag, text)
+  local bodytext, anchor = text:match('^(.+[^%s])%s*#([^#]*)$')
+  if bodytext then text = bodytext end
+  return '<' .. tag ..
+    (anchor and (' id="' .. anchor .. '"') or '') ..
+    '>' .. htmlescape(text) .. '</' .. tag .. '>'
+end
+
 local markupfnsenvitem  -- Item name of the item currently being processed
 local markupfns
 markupfns = {
@@ -239,6 +250,7 @@ markupfns = {
     else return '<p>' .. line .. '</p>' end
   end,
   ['^'] = htmlescape,
+  rawhtml = function (text) return text end,
   b = function (text)
     return '<strong>' .. text .. '</strong>'
   end,
@@ -250,6 +262,12 @@ markupfns = {
   end,
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
+  end,
+  lang = function (lang, text)
+    return '<span lang="' .. lang .. '">' .. text .. '</span>'
+  end,
+  nobr = function (text)
+    return '<span class="no-break">' .. text .. '</span>'
   end,
   rawlink = function (href, text)
     return '<a href="' .. href .. '">' .. text .. '</a>'
@@ -313,13 +331,9 @@ markupfns = {
       sizestring(size) ..
       (extrainfo and (', ' .. extrainfo) or '') .. ')</a></td>'
   end,
-  h1 = function (text)
-    local bodytext, anchor = text:match('^(.+[^%w])%w*#([^#]*)$')
-    if bodytext then text = bodytext end
-    return '<h1' ..
-      (anchor and (' id="' .. anchor .. '"') or '') ..
-      '>' .. htmlescape(text) .. '</h1>'
-  end,
+  h1 = function (text) return heading('h1', text) end,
+  h2 = function (text) return heading('h2', text) end,
+  h3 = function (text) return heading('h3', text) end,
   list = function (contents)
     return '<ul>' .. contents .. '</ul>'
   end,
@@ -342,6 +356,44 @@ markupfns = {
     return '<span class="kaomoji">' ..
       io.open('misc/kaomoji/gen/moji-' .. fxhash(text) .. '.svg'):read('a') ..
       '</span>'
+  end,
+  gridtable = function (class, ...)
+    local builder = {'<div class="' .. class .. '">', ...}
+    for i = 2, #builder do
+      builder[i] = '<div>' .. builder[i] .. '</div>'
+    end
+    builder[#builder + 1] = '</div>'
+    return table.concat(builder)
+  end,
+  musictrack = function (artist, title, origtitle, image, alt)
+    -- Extract composer and vocalist from artist
+    local artiststr
+    local slashpos = artist:find('//', 1, true)
+    if slashpos ~= nil then
+      local composer, vocalist = artist:sub(1, slashpos - 1), artist:sub(slashpos + 2)
+      artiststr =
+        '<span class="little-icons">&#x1f58c;</span>' .. composer ..
+        ' / <span class="little-icons">&#x1f3a4;</span>' .. vocalist
+    else
+      artiststr =
+        '<span class="little-icons">&#x1f3b6;</span>' .. artist
+    end
+    -- Extract album name from original title
+    slashpos = origtitle:find('//', 1, true)
+    if slashpos ~= nil then
+      local title, album = origtitle:sub(1, slashpos - 1), origtitle:sub(slashpos + 2)
+      origtitle =
+        title .. ' / <span class="little-icons">&#x1f4bf;</span>' .. album
+    end
+    return '<div class="music-track">' ..
+      (image and
+        '<img src="' .. caisse.envadditions.file(image, 'items/' .. markupfnsenvitem) ..
+        (alt and ('" alt="' .. alt) or '') .. '">'
+       or '') ..
+      '<div><strong>' .. title .. '</strong><br>' ..
+      (origtitle ~= '' and ('<span class="orig-title">' .. origtitle .. '</span>') or '') ..
+      artiststr ..
+      '</div></div>'
   end,
 }
 caisse.envadditions.rendermarkup = function (s)
