@@ -2,6 +2,9 @@ http://localhost:1123
 
 header Cross-Origin-Opener-Policy same-origin
 header Cross-Origin-Embedder-Policy require-corp
-encode zstd gzip
-root build
-file_server browse
+rewrite / /index
+# encode gzip
+file_server {
+  root build
+  browse
+}
