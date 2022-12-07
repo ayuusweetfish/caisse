@@ -346,6 +346,9 @@ markupfns = {
   blockquote = function (text)
     return '<blockquote>' .. text .. '</blockquote>'
   end,
+  note = function (text)
+    return '<blockquote>' .. text .. '</blockquote>'
+  end,
   clearfloat = function ()
     return '<div style="clear: both"></div>'
   end,
