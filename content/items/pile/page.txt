@@ -1,6 +1,9 @@
 {{contents.zh=}}
-还没有东西，还是先看看<link dates>？？
-<link ne-er-do-well>
+一些不太完整或者比较黑历史的产物归档。
+!<hr cloudy>
+
+<link gradatim> 是一个平台跳跃/节奏类游戏，作为之前程序设计课程的结课项目，不过只留了一段视频。
+<link ne-er-do-well>是一首整活歌曲，主要是拜托的这位词作写的词太整活向了（x
 
 {{contents.en=}}
 Check <link dates>, again?

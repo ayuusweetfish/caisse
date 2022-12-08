@@ -13,7 +13,7 @@ divider-end.svg	348	image	120	120
 divider-fleuron-cloudy.svg	374	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
-framework.html	10991	unknown
+framework.html	11033	unknown
 item.html	1822	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
@@ -81,7 +81,10 @@ items/fireflies/play/index.html	561	unknown
 items/fireflies/play/index.js	206385	code
 items/fireflies/play/index.wasm	613680	unknown
 items/fireflies/screenshot.jpg	34780	image	800	500
-items/gradatim/page.txt	126	document
+items/gradatim/Gradatim_1.jpg	75030	image	1080	720
+items/gradatim/Gradatim_2.jpg	135756	image	1080	720
+items/gradatim/Gradatim_trailer.mp4	1257564	video	32	540	360
+items/gradatim/page.txt	1575	document
 items/hello/page.txt	170	document
 items/ice-hatch/cover.png	22420	image	650	500
 items/ice-hatch/page.txt	1228	document
@@ -93,7 +96,7 @@ items/ice-hatch/play/love.wasm	4702493	unknown
 items/ice-hatch/screenshot1.png	14400	image	540	360
 items/ice-hatch/screenshot2.png	19453	image	540	360
 items/index/fish.png	2116	image	60	60
-items/index/page.txt	385	document
+items/index/page.txt	649	document
 items/inner-prod/page.txt	1284	document
 items/into/page.txt	6190	document
 items/leaving/IMG_20221130_151158.jpg	57870	image	912	684
@@ -120,7 +123,7 @@ items/ne-er-do-well/lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf	1478407	document	2
 items/ne-er-do-well/page.txt	391	document
 items/patchwork/illust.png	68221	image	1000	700
 items/patchwork/page.txt	1485	document
-items/pile/page.txt	135	document
+items/pile/page.txt	372	document
 items/rabbit-hole/cat.jpg	51820	image	798	448
 items/rabbit-hole/cover.jpg	56098	image	958	539
 items/rabbit-hole/page.txt	2903	document
@@ -180,11 +183,12 @@ items/zero/Concoction_a10-a.zip	20134894	unknown
 items/zero/Concoction_notes.txt	4043	document
 items/zero/Epigone.mp3	2288034	audio	95
 items/zero/Epigone.pdf	265220	document	3
-items/zero/Frivolity.ogg	12988336	audio	247
+items/zero/Frivolity.mp4	16595919	video	246	640	400
 items/zero/Frivolity.piximod	553262	musicnotes
+items/zero/Frivolity.sh	216	unknown
 items/zero/Gradus.mscz	37647	score
 items/zero/Gradus.ogg	1783337	audio	122
-items/zero/Heptadekka.ogg	9189096	audio	606
+items/zero/Heptadekka.mp4	19510797	video	589	640	400
 items/zero/Heptadekka.org	51442	musicnotes
 items/zero/Heptadekka.png	244665	image	2168	1424
 items/zero/IMG_20190929_125506.jpg	134816	image	560	560
@@ -192,12 +196,12 @@ items/zero/Intersection.mmpz	22183	musicnotes
 items/zero/Intersection.ogg	4442693	audio	219
 items/zero/Juvenile.ogg	3000712	audio	176
 items/zero/Juvenile.tracktionedit	183715	musicnotes
-items/zero/cover.svg	1194	image	220	220
-items/zero/page.txt	3347	document
+items/zero/cover.svg	1535	image	220	220
+items/zero/page.txt	3408	document
 items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-items/zzz/page.txt	1760	document
+items/zzz/page.txt	1757	document
 little-icons.woff2	7948	unknown
 top-fleuron.svg	19723	image	960	90
