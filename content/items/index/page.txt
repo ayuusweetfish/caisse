@@ -4,7 +4,7 @@
 {{contents.zh=}}
 多面手三脚猫，努力学习世界的一切。
 
-<link about 关于自己> | <link fireflies 萤火虫> | <link medle 旋律猜谜> | <link zzz 改编歌曲> | <link adventure 找不回的伙伴>
+<link about 关于自己> | <link fireflies 萤火虫> | <link medle 旋律猜谜> | <link zzz 打击乐小节目> | <link traviata 《茶花女》序曲> | <link adventure 伙伴的冒险>
 
 {{contents.en=}}
 Hahaha!

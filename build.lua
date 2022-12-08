@@ -305,6 +305,7 @@ markupfns = {
       caisse.envadditions.image(
         caisse.envadditions.file(src, 'items/' .. markupfnsenvitem),
         alt, class) ..
+      (class:find('caption') and ('<p>' .. htmlescape(alt) .. '</p>') or '') ..
       '</div>'
   end,
   filetable = function (contents)
@@ -341,7 +342,7 @@ markupfns = {
     return '<li>' .. text .. '</li>'
   end,
   cen = function (text)
-    return '<p style="text-align: center">' .. text .. '</p>'
+    return '<p class="text-center">' .. text .. '</p>'
   end,
   blockquote = function (text)
     return '<blockquote>' .. text .. '</blockquote>'

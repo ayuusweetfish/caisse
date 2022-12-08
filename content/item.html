@@ -20,6 +20,16 @@
 {{@ end }}
 
 <style>
+.item-contents > p {
+  text-indent: 2em;
+}
+.item-contents > p * {
+  text-indent: 0;
+}
+.item-contents > p.text-center {
+  text-align: center;
+  text-indent: 0;
+}
 img.item-banner, .item-contents img {
   inline-size: 80%;
   block-size: auto;
@@ -28,6 +38,7 @@ img.item-banner, .item-contents img {
 }
 div.image-container {
   text-align: center;
+  margin-block: 1em;
 }
 .item-contents img.vertical {
   max-block-size: unset;
@@ -37,6 +48,10 @@ div.image-container {
 .item-contents img.small {
   inline-size: 50%;
   max-inline-size: 15em;
+}
+.item-contents img.orig-size {
+  max-inline-size: 80%;
+  inline-size: unset;
 }
 .item-contents img.float-end {
   inline-size: auto;
@@ -51,6 +66,9 @@ div.image-container {
     float: unset;
     margin-inline-start: inherit;
   }
+}
+.item-contents div.image-container p {
+  margin-block: 0.25em 0;
 }
 .item-date {
   margin-block-start: 1em;
