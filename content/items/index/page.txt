@@ -6,7 +6,7 @@
 
 <link about 关于自己> | <link fireflies 萤火虫> | <link medle 旋律猜谜> | <link zzz 打击乐小节目> | <link traviata 《茶花女》序曲> | <link adventure 去冒险的伙伴>
 
-<link https://github.com/ayuusweetfish GitHub>
+<link https://github.com/ayuusweetfish GitHub> | <link https://discord.com/users/707786894213120082 Discord>
 
 !<img fish.png 一条简笔画小鱼 <= orig-size more-margin>>
 
