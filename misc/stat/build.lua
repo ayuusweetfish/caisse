@@ -63,21 +63,30 @@ infofn['.pdf'] = function (path)
 end
 
 local function filesize(path)
-  return io.popen('stat -f "%z" "' .. path .. '"'):read('n')
+  return io.popen('stat -f "%z" "' .. path .. '" 2>/dev/null'):read('n')
 end
 
 local prefix = arg[1] or ''
 
 local existingfiles = {}
+local lines = {}
 local inf = io.open('database.tsv', 'r')
 if inf then
   for line in inf:lines() do
-    local tabpos = line:find('\t')
-    existingfiles[line:sub(1, tabpos - 1)] = true
+    local tabpos1 = line:find('\t') or (#line + 1)
+    local tabpos2 = line:find('\t', tabpos1 + 1) or (#line + 1)
+    local path = line:sub(1, tabpos1 - 1)
+    local recsize = tonumber(line:sub(tabpos1 + 1, tabpos2 - 1))
+    local realsize = filesize(prefix .. path)
+    if realsize == recsize then
+      existingfiles[path] = true
+      lines[#lines + 1] = line
+    else
+      if realsize == nil then print('Removing ' .. path) end
+    end
   end
   inf:close()
 end
-local outf = io.open('database.tsv', 'a')
 for path in io.lines() do
   local fullpath = path
   if path:sub(1, #prefix) == prefix then
@@ -88,12 +97,15 @@ for path in io.lines() do
     local dotpos = path:find('.[^./]*$')
     local ext = (dotpos == nil and '' or path:sub(dotpos + 1))
     local filetype = filetypes[ext] or 'unknown'
-    local fn = infofn[filetype] or infofn['.' ..ext]
-    outf:write(path, '\t', tostring(filesize(fullpath)), '\t', filetype)
-    if fn then
-      for _, w in ipairs({fn(fullpath)}) do outf:write('\t', tostring(w)) end
-    end
-    outf:write('\n')
+    local fn = infofn[filetype] or infofn['.' ..ext] or function () end
+    lines[#lines + 1] = table.concat({
+      path, tostring(filesize(fullpath)), filetype,
+      fn(fullpath)
+    }, '\t')
+    print(path)
   end
 end
+table.sort(lines)
+local outf = io.open('database.tsv', 'w')
+for i = 1, #lines do outf:write(lines[i], '\n') end
 outf:close()

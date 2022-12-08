@@ -4,7 +4,19 @@
 {{contents.zh=}}
 多面手三脚猫，努力学习世界的一切。
 
-<link about 关于自己> | <link fireflies 萤火虫> | <link medle 旋律猜谜> | <link zzz 打击乐小节目> | <link traviata 《茶花女》序曲> | <link adventure 伙伴的冒险>
+<link about 关于自己> | <link fireflies 萤火虫> | <link medle 旋律猜谜> | <link zzz 打击乐小节目> | <link traviata 《茶花女》序曲> | <link adventure 去冒险的伙伴>
+
+<link https://github.com/ayuusweetfish GitHub>
+
+!<img fish.png 一条简笔画小鱼 <= orig-size more-margin>>
+
+!<hr windy>
+
+!<h1 最近更新>
+!<list
+  <li <date 2022.21> …>
+  <li <date 2022.20> 推翻了之前写的一些程序重新开始搭这个站了！>
+>
 
 {{contents.en=}}
 Hahaha!
