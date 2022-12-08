@@ -24,6 +24,7 @@ items/aakami/play/game.js	11415	code
 items/aakami/play/index.html	4709	unknown
 items/aakami/play/love.js	325312	code
 items/aakami/play/love.wasm	4702493	unknown
+items/about/IMG_20220505_113339_mh1651727711263.jpg	121653	image	684	749
 items/about/animations.jpg	99348	image	732	465
 items/about/games.png	22585	image	600	240
 items/about/music/212.jpg	22891	image	250	250
@@ -33,7 +34,7 @@ items/about/music/hotaru.jpg	14387	image	250	250
 items/about/music/hundreds.jpg	18600	image	250	250
 items/about/music/rjqs.jpg	22004	image	300	300
 items/about/page.css	896	unknown
-items/about/page.txt	3214	document
+items/about/page.txt	3442	document
 items/about/portrait.jpg	98017	image	672	756
 items/adventure/.gitignore	32	unknown
 items/adventure/Azu1.png	20386	image	360	640
@@ -109,7 +110,7 @@ items/lili/Lili__Good_morning.mscz	26240	score
 items/lili/Lili__Into_a_Blossom.mp4	15047848	video	268	720	390
 items/lili/Lili__Into_a_Blossom.pdf	338482	document	17
 items/lili/cover.jpg	22340	image	720	240
-items/lili/page.txt	1278	document
+items/lili/page.txt	1282	document
 items/medle/cover.png	24623	image	960	360
 items/medle/page.txt	2684	document
 items/misty-jungle/Misty Jungle.mp3	5333994	audio	333
