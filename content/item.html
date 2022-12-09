@@ -38,28 +38,28 @@ img.item-banner, .item-contents img {
   object-fit: contain;
   display: inline-block;
 }
-.item-contents img:not(.vertical) {
+.item-contents div.image-container img:not(.vertical) {
   max-block-size: 20em;
 }
-.item-contents img:not(.orig-size) {
+.item-contents div.image-container img:not(.orig-size) {
   inline-size: 80%;
   block-size: auto;
 }
-.item-contents img.vertical {
+.item-contents div.image-container img.vertical {
   inline-size: 100%;
   max-inline-size: 20em;
 }
-.item-contents img.small {
+.item-contents div.image-container img.small {
   inline-size: 50%;
   max-inline-size: 15em;
 }
-.item-contents img.orig-size {
+.item-contents div.image-container img.orig-size {
   max-inline-size: 80%;
 }
-.item-contents img.more-margin {
+.item-contents div.image-container img.more-margin {
   margin-block: 1.5em;
 }
-.item-contents img.float-end {
+.item-contents div.image-container img.float-end {
   inline-size: auto;
   max-inline-size: 45%;
   float: right; /* inline-end */
@@ -67,7 +67,7 @@ img.item-banner, .item-contents img {
   margin-block-end: 0.25em;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
-  .item-contents img.float-end {
+  .item-contents div.image-container img.float-end {
     inline-size: 80%;
     float: unset;
     margin-inline-start: inherit;
@@ -80,7 +80,7 @@ img.item-banner, .item-contents img {
   margin-block-start: 1em;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
-  img.item-banner, .item-contents img {
+  img.item-banner, .item-contents div.image-container img {
     inline-size: 100%;
   }
 }
