@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head>
+<html lang='{{ tr({ zh = "zh", en = "en" }) }}'><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>{{ title }} — Site</title>
@@ -406,7 +406,7 @@ blockquote {
 blockquote *:first-child { margin-block-start: 0; }
 blockquote *:last-child { margin-block-end: 0; }
 
-span[lang='lat'] { font-style: italic; }
+span:lang(lat) { font-style: italic; }
 
 .no-break {
   display: inline-block;
