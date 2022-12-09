@@ -7,7 +7,7 @@ Sono_Monospace-Regular.woff2	28724	unknown
 Sono_Monospace-SemiBold.woff2	28888	unknown
 background.svg	33277	image	600	1039
 bannerlist.html	3888	unknown
-categories.txt	2349	document
+categories.txt	2355	document
 date.html	4244	unknown
 divider-end.svg	348	image	120	120
 divider-fleuron-cloudy.svg	374	image	1200	120
@@ -111,6 +111,16 @@ items/lili/Lili__Into_a_Blossom.mp4	15047848	video	268	720	390
 items/lili/Lili__Into_a_Blossom.pdf	338482	document	17
 items/lili/cover.jpg	22340	image	720	240
 items/lili/page.txt	1282	document
+items/maylove-ex-22/IMG_4659.jpg	118075	image	642	950
+items/maylove-ex-22/IMG_4661.jpg	206570	image	642	418
+items/maylove-ex-22/cover.jpg	37199	image	720	420
+items/maylove-ex-22/game.jpg	43529	image	794	300
+items/maylove-ex-22/page.txt	1772	document
+items/maylove-ex-22/play/game.data	827647	unknown
+items/maylove-ex-22/play/game.js	11413	code
+items/maylove-ex-22/play/index.html	4711	unknown
+items/maylove-ex-22/play/love.js	325312	code
+items/maylove-ex-22/play/love.wasm	4702493	unknown
 items/medle/cover.png	24623	image	960	360
 items/medle/page.txt	2684	document
 items/misty-jungle/Misty Jungle.mp3	5333994	audio	333
@@ -121,7 +131,7 @@ items/misty-jungle/page.txt	1073	document
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mid	19891	musicnotes
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mp3	4035940	audio	167
 items/ne-er-do-well/lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf	1478407	document	2
-items/ne-er-do-well/page.txt	391	document
+items/ne-er-do-well/page.txt	620	document
 items/patchwork/illust.png	68221	image	1000	700
 items/patchwork/page.txt	1485	document
 items/pile/page.txt	372	document
