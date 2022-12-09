@@ -6,7 +6,7 @@
 </header>
 {{@ bannerimg and bannerimginpage ~= 'false' }}
   <div class='image-container'>
-    {{ image(file(bannerimg, 'items/' .. name), nil, 'item-banner') }}
+    {{ image(file(bannerimg, 'items/' .. name), tr(banneralt or ''), 'item-banner') }}
   </div>
 {{@ end }}
 {{@ (intro and intro ~= '') or bannerimg }}
