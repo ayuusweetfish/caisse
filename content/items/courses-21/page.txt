@@ -1,0 +1,35 @@
+{{title.zh=}}课程习作集合（2021）
+{{title.en=}}
+
+{{date=}}2021.07, 2021.22
+
+{{contents.zh=}}
+
+!<h1 声音设计>
+
+一些不同主题的影视声音设计练习作业。
+
+!<filetable
+  <file Sound_Design_Travel.mp4 旅行>
+  <file Sound_Design_Suspense.mp3 悬疑>
+  <file Sound_Design_Love.mp4 爱情>
+  <file Sound_Design_Spy.mp4 谍战>
+>
+
+!<h1 歌曲编配>
+
+是李海鹰创作、刘欢演唱的歌曲《弯弯的月亮》的重编曲～作业布置时没有给出歌词与歌名。
+
+!<filetable
+  <file Crescent_Moon.mp3 弯弯的月亮>
+>
+
+!<h1 音乐工程>
+
+命题作文，从《钢铁侠》中选择片段编写配乐。
+
+!<filetable
+  <file Iron_Man.mp4 钢铁侠>
+>
+
+{{contents.en=}}

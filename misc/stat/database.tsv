@@ -7,7 +7,7 @@ Sono_Monospace-Regular.woff2	28724	unknown
 Sono_Monospace-SemiBold.woff2	28888	unknown
 background.svg	33277	image	600	1039
 bannerlist.html	3888	unknown
-categories.txt	2355	document
+categories.txt	2294	document
 date.html	4244	unknown
 divider-end.svg	348	image	120	120
 divider-fleuron-cloudy.svg	374	image	1200	120
@@ -61,6 +61,14 @@ items/adventure/unifystrokes.c	6617	code
 items/bellflowers/Bellflowers_Wonderland.ogg	4340151	audio	252
 items/bellflowers/Bellflowers_Wonderland.tracktionedit	334735	musicnotes
 items/bellflowers/page.txt	1354	document
+items/courses-21/Crescent_Moon.mp3	4466232	audio	223
+items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
+items/courses-21/Sound_Design_Love.mp4	3826291	video	89	640	360
+items/courses-21/Sound_Design_Spy.mp4	2702791	video	83	640	360
+items/courses-21/Sound_Design_Suspense.mp3	1748178	audio	87
+items/courses-21/Sound_Design_Travel.mp4	3125577	video	63	640	360
+items/courses-21/page.txt	702	document
+items/courses-21/scripts.sh	694	unknown
 items/dates/page.txt	347	document
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/page.txt	830	document
@@ -131,10 +139,10 @@ items/misty-jungle/page.txt	1073	document
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mid	19891	musicnotes
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mp3	4035940	audio	167
 items/ne-er-do-well/lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf	1478407	document	2
-items/ne-er-do-well/page.txt	620	document
+items/ne-er-do-well/page.txt	621	document
 items/patchwork/illust.png	68221	image	1000	700
 items/patchwork/page.txt	1485	document
-items/pile/page.txt	372	document
+items/pile/page.txt	447	document
 items/rabbit-hole/cat.jpg	51820	image	798	448
 items/rabbit-hole/cover.jpg	56098	image	958	539
 items/rabbit-hole/page.txt	2903	document
