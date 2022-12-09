@@ -81,11 +81,9 @@ cats.potpourri.pagelist = {
 cats.pile.pagelist = {
   {name = 'ne-er-do-well'},
   {name = 'gradatim'},
+  {name = 'courses-21'},
 --[[
   {name = 'ice-rink'},
-  {name = 'sound-course-21'},
-  {name = 'sound-course-20'},
-  {name = 'rabbit-hole'},
   {name = 'define-21'},
   {name = 'mikabox'},
   {name = 'bmflat'},
