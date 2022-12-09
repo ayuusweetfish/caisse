@@ -30,18 +30,22 @@
   text-align: center;
   text-indent: 0;
 }
-img.item-banner, .item-contents img {
-  inline-size: 80%;
-  block-size: auto;
-  max-block-size: 20em;
-  object-fit: contain;
-}
 div.image-container {
   text-align: center;
   margin-block: 1em;
 }
+img.item-banner, .item-contents img {
+  object-fit: contain;
+  display: inline-block;
+}
+.item-contents img:not(.vertical) {
+  max-block-size: 20em;
+}
+.item-contents img:not(.orig-size) {
+  inline-size: 80%;
+  block-size: auto;
+}
 .item-contents img.vertical {
-  max-block-size: unset;
   inline-size: 100%;
   max-inline-size: 20em;
 }
@@ -51,7 +55,6 @@ div.image-container {
 }
 .item-contents img.orig-size {
   max-inline-size: 80%;
-  inline-size: unset;
 }
 .item-contents img.more-margin {
   margin-block: 1.5em;
