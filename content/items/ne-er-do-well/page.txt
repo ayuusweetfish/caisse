@@ -1,11 +1,10 @@
 {{title.zh=}}一条咸鱼的自我救赎
-{{intro.zh=}}合作整活歌曲
 {{title.en=}}Confession of a Ne'er-do-well
-{{intro.en=}}
 
-{{date=}}2019.11, 2022.08
+{{date=}}2019.11, 2020.08
 
 {{contents.zh=}}
+为了完成歌曲创作课的作业冥思苦想写不出词，于是拉来热爱改编填词的好友 cyd 写了一份词。写的词是一贯的整活风格，所以顺着加上自己的想法补完了这个咸鱼自嘲的故事。Demo 只有钢琴，做得十分潦草。
 
 <filetable
   <file lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf 乐谱>
