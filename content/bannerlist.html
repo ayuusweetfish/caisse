@@ -1,9 +1,13 @@
 {{
   cats = render('categories.txt').cats
   title = tr(cats[curcat].longtitle) or cats[curcat].title
+  intro = tr(cats[curcat].intro)
 }}
 <header>
   <h1>{{ title }}</h1>
+  {{@ intro }}
+    <p>{{ intro }}</p>
+  {{@ end }}
 </header>
 <section class='banner-list'>
 {{@ cats[curcat].pagelist}}
@@ -79,6 +83,10 @@ div[role='separator'].item-separator {
 }
 
 {{@ compact }}
+header > p {
+  text-indent: 2em;
+  margin-block-end: 1.5em;
+}
 .banner-list {
   display: grid;
   grid-template-columns: 1fr 1fr;

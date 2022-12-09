@@ -1,20 +1,20 @@
 AaKaiSong2.woff2	6248764	unknown
-LXGWWenKai-Regular.woff2	1564656	unknown
+LXGWWenKai-Regular.woff2	7112840	unknown
 Livvic-Medium.woff2	35740	unknown
 Livvic-Regular.woff2	35840	unknown
 Livvic-SemiBold.woff2	35856	unknown
 Sono_Monospace-Regular.woff2	28724	unknown
 Sono_Monospace-SemiBold.woff2	28888	unknown
 background.svg	33277	image	600	1039
-bannerlist.html	3888	unknown
-categories.txt	2294	document
+bannerlist.html	4034	unknown
+categories.txt	2413	document
 date.html	4244	unknown
 divider-end.svg	348	image	120	120
 divider-fleuron-cloudy.svg	374	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
-framework.html	11033	unknown
-item.html	1822	unknown
+framework.html	11423	unknown
+item.html	2073	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
 items/aakami/illustration20.png	8290	image	320	240
@@ -25,7 +25,6 @@ items/aakami/play/index.html	4709	unknown
 items/aakami/play/love.js	325312	code
 items/aakami/play/love.wasm	4702493	unknown
 items/about/IMG_20220505_113339_mh1651727711263.jpg	121653	image	684	749
-items/about/animations.jpg	99348	image	732	465
 items/about/games.png	22585	image	600	240
 items/about/music/212.jpg	22891	image	250	250
 items/about/music/hitchcock.jpg	13637	image	271	270
@@ -33,8 +32,9 @@ items/about/music/hitori.jpg	26704	image	348	348
 items/about/music/hotaru.jpg	14387	image	250	250
 items/about/music/hundreds.jpg	18600	image	250	250
 items/about/music/rjqs.jpg	22004	image	300	300
+items/about/nichijou.jpg	51732	image	640	360
 items/about/page.css	896	unknown
-items/about/page.txt	3442	document
+items/about/page.txt	3356	document
 items/about/portrait.jpg	98017	image	672	756
 items/adventure/.gitignore	32	unknown
 items/adventure/Azu1.png	20386	image	360	640
@@ -139,10 +139,10 @@ items/misty-jungle/page.txt	1073	document
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mid	19891	musicnotes
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mp3	4035940	audio	167
 items/ne-er-do-well/lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf	1478407	document	2
-items/ne-er-do-well/page.txt	621	document
+items/ne-er-do-well/page.txt	618	document
 items/patchwork/illust.png	68221	image	1000	700
 items/patchwork/page.txt	1485	document
-items/pile/page.txt	447	document
+items/pile/page.txt	468	document
 items/rabbit-hole/cat.jpg	51820	image	798	448
 items/rabbit-hole/cover.jpg	56098	image	958	539
 items/rabbit-hole/page.txt	2903	document

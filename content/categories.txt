@@ -6,16 +6,16 @@ cats = {
   {'playful',   { 40, 100, 38, 84}},
   {'murmurs',   {204, 100, 40, 90}},
   {'potpourri', {163,  85, 35, 89}},
-  {'pile',      { 80,  30, 45, 85}},
+  {'pile',      { 80,  40, 40, 85}},
 }
 for i = 1, #cats do
   local name, tint = table.unpack(cats[i])
-  cats[i] = { name = name, tint = tint, title = {}, longtitle = {} }
+  cats[i] = { name = name, tint = tint, title = {}, longtitle = {}, intro = {} }
   cats[name] = cats[i]
 end
 }}}
 
-{{cats.home.title.zh=}}主页
+{{cats.home.title.zh=}}珊瑚礁
 {{cats.music.title.zh=}}八音盒
 {{cats.playful.title.zh=}}游乐园
 {{cats.murmurs.title.zh=}}梦话集
@@ -35,6 +35,9 @@ end
 {{cats.murmurs.longtitle.en=}}Murmur Pieces
 {{cats.potpourri.longtitle.en=}}Sundry Pieces
 {{cats.pile.longtitle.en=}}Stray Pieces
+
+{{cats.potpourri.intro.zh=}}杂七杂八，或者只是做着玩的事。
+{{cats.potpourri.intro.en=}}
 
 {{{
 cats.music.pagelist = {
