@@ -69,13 +69,13 @@ cats.murmurs.pagelist = {
 cats.potpourri.pagelist = {
   {name = 'adventure'},
   {name = 'patchwork'},
+  {name = 'maylove-ex-22'},
   {name = 'daytime-cat'},
   {name = 'rabbit-hole', dark = true},
   {name = 'tilde', dark = true},
   {name = 'zero'},
 --[[
   --{name = 'common-sky'},
-  {name = 'maylove'},
 ]]
 }
 cats.pile.pagelist = {
