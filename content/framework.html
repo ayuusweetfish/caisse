@@ -87,9 +87,10 @@ nav > ul > li {
   margin-inline-end: 0.33em;
 }
 #lang-list {
-  width: max-content;
+  inline-size: 8.5em;
+  white-space: nowrap;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding-block: 0.5rem;
   background: rgba(240, 240, 240, 97%);
   position: absolute;
   inset-block-start: 2rem;
@@ -127,7 +128,7 @@ nav, main, aside, footer { padding: 1rem; }
 
 @media (max-width: 115vh), (max-width: 48rem) {
   #main-grid {
-    display: initial;
+    display: inline;
   }
   nav {
     padding-block: 0.5rem 0.25rem;
@@ -216,7 +217,6 @@ main header h1 {
 
 main {
   position: relative;
-  overflow: hidden;
 }
 #top-fleuron {
   background: no-repeat center 0 / contain url('/bin/top-fleuron.svg');
@@ -224,8 +224,7 @@ main {
   block-size: 6.75rem;  /* max-inline-size (72rem) * 960/90 */
   position: absolute;
   inset-block-start: -0.3em;
-  inset-inline-start: 50%;
-  transform: translate(-50%, 0);
+  inset-inline-start: 0;
   z-index: -1;
   filter: hue-rotate({{hue}}deg);
 }
@@ -233,7 +232,9 @@ main {
 @media (max-width: 115vh), (max-width: 48rem) {
   #top-fleuron {
     inset-block-start: 0;
-    min-inline-size: 36rem;
+    block-size: 9.375vw;  /* 100vw * 90/960 */
+    min-block-size: 3.375rem; /* max-inline-size (36rem) * 960/90 */
+    background-size: cover;
   }
 }
 
@@ -298,7 +299,8 @@ sup {
 a.pastel.external > sup.little-icons {
   user-select: none;
   display: inline-block;
-  transform: translateY(-0.1em);
+  position: relative;
+  top: -0.1em;
 }
 
 a.date-term-link::after { background: rgb(216, 216, 216); }
@@ -306,14 +308,14 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
   font-size: 0.9rem;
   color: rgb(112, 112, 112);
 }
-.date-term .date-bracket-left,
-.date-term .date-bracket-right {
+.date-term .date-bracket-start,
+.date-term .date-bracket-end {
   font-size: 0.5rem;
   position: relative;
   inset-block-start: -0.15rem;
 }
-.date-term .date-bracket-left { margin-inline-end: 0.2em; }
-.date-term .date-bracket-right { margin-inline-start: 0.04em; }
+.date-term .date-bracket-start { margin-inline-end: 0.2em; }
+.date-term .date-bracket-end { margin-inline-start: 0.04em; }
 .date-term .date-term-single {
   display: inline-block;
 }
