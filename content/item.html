@@ -38,9 +38,11 @@ img.item-banner, .item-contents img {
   object-fit: contain;
   display: inline-block;
 }
+img.item-banner,
 .item-contents div.image-container img:not(.vertical) {
   max-block-size: 20em;
 }
+img.item-banner,
 .item-contents div.image-container img:not(.orig-size) {
   inline-size: 80%;
   block-size: auto;
@@ -69,6 +71,7 @@ img.item-banner, .item-contents img {
 @media (max-width: 115vh), (max-width: 48rem) {
   .item-contents div.image-container img.float-end {
     inline-size: 80%;
+    max-inline-size: 80%;
     float: none;
     margin-inline-start: inherit;
   }

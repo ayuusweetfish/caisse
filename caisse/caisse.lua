@@ -130,7 +130,6 @@ local function parsetemplate(s)
           -- Skip following new lines
           local skipto = s:match('^%s*\n()', cur)
           if skipto then
-            print(s:sub(cur, cur + 20):gsub('\n', '$'), cur, skipto)
             last = skipto - 1
             cur = skipto
           end
