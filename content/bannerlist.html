@@ -55,12 +55,14 @@ a.item-entry {
 }
 .item-banner > h1 {
   position: absolute;
-  inset-inline-start: 1.3rem;
+  inset-inline-start: 0;
   inset-block-end: 1rem;
   font-size: 1.5rem;
   margin: 0;
-  margin-inline-end: 1.3rem;
-  text-shadow: #fdfdfd 0.03em 0.03em;
+  padding-inline: 1.3rem 1.8rem;
+  text-shadow: #fdfdfd 0.05em 0.05em;
+  border-width: 0;
+  border-image: url(/bin/chalk-bg-w.png) 18 fill / 0.3em / 0.1em 0;
 }
 .item-peek {
   margin-inline: 1.3rem;
@@ -77,6 +79,7 @@ a.item-entry {
 h1.item-title-dark {
   color: #fdfdfd;
   text-shadow: #181410 0.05em 0.05em;
+  border-image: url(/bin/chalk-bg-b.png) 18 fill / 0.3em / 0.1em 0;
 }
 div[role='separator'].item-separator {
   margin-block: 1em 1.5em;

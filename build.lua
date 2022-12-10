@@ -418,6 +418,8 @@ end
 
 copyfile('background.svg')
 copyfile('top-fleuron.svg')
+copyfile('chalk-bg-w.png')
+copyfile('chalk-bg-b.png')
 copyfile('Livvic-Regular.woff2')
 copyfile('Livvic-Medium.woff2')
 copyfile('Livvic-SemiBold.woff2')
