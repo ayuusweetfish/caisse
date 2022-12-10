@@ -112,7 +112,7 @@ local function parsetemplate(s)
       end
       last = endext
       cur = endext + 1
-      -- Single-line blocks special check
+      -- Blocks special check: either single-line or skip newlines
       if items[#items].type == 'block' then
         local lineend = s:find('\n', cur)
         if lineend then lineend = lineend - 1 else lineend = #s end
@@ -126,6 +126,14 @@ local function parsetemplate(s)
           -- Skip the line and newlines
           cur = s:find('[^\n]', lineend + 1) or (#s + 1)
           last = cur - 1
+        else
+          -- Skip following new lines
+          local skipto = s:match('^%s*\n()', cur)
+          if skipto then
+            print(s:sub(cur, cur + 20):gsub('\n', '$'), cur, skipto)
+            last = skipto - 1
+            cur = skipto
+          end
         end
       end
     else
@@ -243,10 +251,9 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
       if not defaultoutput then
         locals[#locals] = nil
         -- Put the render result in a new variable
-        -- Trim
+        -- Trim trailing whitespaces
         if #newoutputs > 0 then
           local n = #newoutputs
-          newoutputs[1] = tostring(newoutputs[1]):gsub('^%s*', '')
           newoutputs[n] = tostring(newoutputs[n]):gsub('%s*$', '')
         end
         local contents = table.concat(newoutputs)
