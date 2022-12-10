@@ -7,7 +7,6 @@
 }
 .music-table > div {
   padding: 0.25em 0.5em;
-  block-size: fit-content;
 }
 .music-table > div:nth-child(6n+5) div.music-track,
 .music-table > div:nth-child(6n+6) div.music-track {
@@ -23,8 +22,8 @@
   }
   .music-table > div:nth-child(6n+5) div.music-track,
   .music-table > div:nth-child(6n+6) div.music-track {
-    flex-direction: unset;
-    text-align: unset;
+    flex-direction: row;
+    text-align: start;
   }
   .music-table > div:nth-child(3n+1) {
     grid-row: span 2;
