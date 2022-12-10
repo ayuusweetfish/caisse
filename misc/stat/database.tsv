@@ -1,20 +1,21 @@
 AaKaiSong2.woff2	6248764	unknown
-LXGWWenKai-Regular.woff2	7112840	unknown
 Livvic-Medium.woff2	35740	unknown
 Livvic-Regular.woff2	35840	unknown
 Livvic-SemiBold.woff2	35856	unknown
 Sono_Monospace-Regular.woff2	28724	unknown
 Sono_Monospace-SemiBold.woff2	28888	unknown
 background.svg	33277	image	600	1039
-bannerlist.html	4034	unknown
+bannerlist.html	4188	unknown
 categories.txt	2413	document
-date.html	4244	unknown
+chalk-bg-b.png	8536	image	360	90
+chalk-bg-w.png	8536	image	360	90
+date.html	4243	unknown
 divider-end.svg	348	image	120	120
 divider-fleuron-cloudy.svg	374	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
-framework.html	11423	unknown
-item.html	2073	unknown
+framework.html	11540	unknown
+item.html	2132	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
 items/aakami/illustration20.png	8290	image	320	240
@@ -33,8 +34,8 @@ items/about/music/hotaru.jpg	14387	image	250	250
 items/about/music/hundreds.jpg	18600	image	250	250
 items/about/music/rjqs.jpg	22004	image	300	300
 items/about/nichijou.jpg	51732	image	640	360
-items/about/page.css	896	unknown
-items/about/page.txt	3356	document
+items/about/page.css	867	unknown
+items/about/page.txt	3345	document
 items/about/portrait.jpg	98017	image	672	756
 items/adventure/.gitignore	32	unknown
 items/adventure/Azu1.png	20386	image	360	640
@@ -63,11 +64,12 @@ items/bellflowers/Bellflowers_Wonderland.tracktionedit	334735	musicnotes
 items/bellflowers/page.txt	1354	document
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
+items/courses-21/Iron_Man.mscz	55061	score
 items/courses-21/Sound_Design_Love.mp4	3826291	video	89	640	360
 items/courses-21/Sound_Design_Spy.mp4	2702791	video	83	640	360
 items/courses-21/Sound_Design_Suspense.mp3	1748178	audio	87
 items/courses-21/Sound_Design_Travel.mp4	3125577	video	63	640	360
-items/courses-21/page.txt	702	document
+items/courses-21/page.txt	742	document
 items/courses-21/scripts.sh	694	unknown
 items/dates/page.txt	347	document
 items/daytime-cat/cover.png	26286	image	900	240
@@ -223,4 +225,5 @@ items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
 items/zzz/page.txt	1757	document
 little-icons.woff2	7948	unknown
+timeofday.html	785	unknown
 top-fleuron.svg	19723	image	960	90
