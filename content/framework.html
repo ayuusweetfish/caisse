@@ -5,6 +5,8 @@
   <title>{{ title }} — Site</title>
 </head><body>
 
+<style></style>
+
 {{
   cats = render('categories.txt').cats
 }}
@@ -109,6 +111,17 @@ summary::-webkit-details-marker {
 
 nav, main, aside, footer { padding: 1rem; }
 
+#main-grid > nav {
+  display: block;
+  grid-row: 1;
+  grid-column: 1;
+}
+#main-grid > main {
+  display: block;
+  grid-row: 1;
+  grid-column: 2;
+}
+
 @media (max-width: 60rem) {
   #main-grid {
     grid-template-columns: 5fr 16fr;
@@ -116,10 +129,6 @@ nav, main, aside, footer { padding: 1rem; }
   #main-grid > nav {
     grid-row: 1 / span 2;
     grid-column: 1;
-  }
-  #main-grid > main {
-    grid-row: 1;
-    grid-column: 2;
   }
   #main-grid > aside {
     grid-row: 2;
@@ -393,7 +402,8 @@ div.item-separator:nth-child(5n+5) { background-position-x: 8em; }
 }
 
 table.file-table {
-  margin: 1em 0;
+  margin-block: 1em;
+  margin-inline: 0;
   border-spacing: 1em 0.4em;
 }
 table.file-table > tbody {
@@ -408,7 +418,10 @@ table.file-table .file-table-name {
     border-spacing: 1em 0;
   }
   table.file-table tr > td { display: block; }
-  table.file-table tr > td:first-child { margin: 0.5em -0.4em 0 -0.7em; }
+  table.file-table tr > td:first-child {
+    margin-block: 0.5em 0;
+    margin-inline: -0.7em -0.4em;
+  }
 }
 
 ul {
@@ -420,8 +433,10 @@ section h1 { font-size: 1.2rem; margin-block-end: 1.08rem; }
 section h2 { font-size: 1.14rem; margin-block-end: 1rem; }
 section h3 { font-size: 1.08rem; margin-block-end: 1rem; }
 blockquote {
-  margin: -0.1em 2em -0.1em 1em;
-  padding: 0.6em 1em;
+  margin-block: -0.1em;
+  margin-inline: 1em 2em;
+  padding-block: 0.6em;
+  padding-inline: 1em;
   border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{val1}}%);
   background: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 4%);
 }

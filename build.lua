@@ -2,6 +2,8 @@ local caisse = require('caisse/caisse')
 local rendermarkup = require('caisse/markup')
 caisse.lang = 'zh'
 
+local postproc = require('postproc')
+
 local srcpath = 'content/'
 local sitepath = 'build/'
 
@@ -66,12 +68,12 @@ local function renderpage(savepath, templatepath, locals)
   local filepath = savepath .. '/index.html'
   ensuredir(filepath)
   writefile(sitepath .. filepath,
-    render('framework.html', {
+    postproc.html(render('framework.html', {
       savepath = savepath,
       title = locals.title,
       curcat = locals.curcat,
       contents = contents,
-    }))
+    })))
 end
 
 local function split(s, delim)
