@@ -12,16 +12,18 @@ end
 os.execute('rm -rf ' .. sitepath)
 os.execute('mkdir ' .. sitepath)
 
-local function shallowdup(t)
-  local r = {}
-  for k, v in pairs(t) do r[k] = v end
-  return r
-end
+local bufferedcmds = {}
 
 local function writefile(file, s) io.open(file, 'w'):write(s) end
+--local function writefile(file, s) end
 -- `filepath` is an absolute path without the leading slash
+local existingdirs = {}
 local function ensuredir(filepath)
-  os.execute('mkdir -p $(dirname "' .. sitepath .. filepath .. '")')
+  local dirname = filepath:match('^(.*)/')
+  if dirname and not existingdirs[dirname] then
+    os.execute('mkdir -p "' .. sitepath .. dirname .. '"')
+    existingdirs[dirname] = true
+  end
 end
 local contentpath = {}
 -- `src` is an absolute path without the leading slash
@@ -37,18 +39,21 @@ local function copydst(src)
 end
 local function copyfile(src)
   local dst = copydst(src)
-  -- os.execute('cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  if contentpath[dst] then return dst end
   -- Hard link
-  os.execute('ln -f "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
+  bufferedcmds[#bufferedcmds + 1] =
+    'ln "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
   contentpath[dst] = src
   return dst
 end
 local function copydir(src)
   local dst = copydst(src)
-  -- os.execute('cp -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"')
-  os.execute('ln -s ' ..
+  if contentpath[dst] then return dst end
+  -- Symbolic link
+  bufferedcmds[#bufferedcmds + 1] =
+    'ln -s ' ..
     '"$(realpath --relative-to="$(dirname "' .. sitepath .. dst .. '")" "' .. srcpath .. src .. '")" ' ..
-    '"' .. sitepath .. dst .. '"')
+    '"' .. sitepath .. dst .. '"'
   contentpath[dst] = src
   return dst
 end
@@ -141,12 +146,19 @@ caisse.envadditions.image = function (path, alt, class, style)
     '>'
 end
 
+local datecache = {}
 local function renderdate(datestr, nolink)
-  local dates = {}
-  for year, term in datestr:gmatch('([0-9]+)%.([0-9]+)') do
-    dates[#dates + 1] = { year = tonumber(year, 10), term = tonumber(term, 10) }
+  local content
+  if datecache[datestr] then
+    content = datecache[datestr]
+  else
+    local dates = {}
+    for year, term in datestr:gmatch('([0-9]+)%.([0-9]+)') do
+      dates[#dates + 1] = { year = tonumber(year, 10), term = tonumber(term, 10) }
+    end
+    content = render('date.html', { dates = dates })
+    datecache[datestr] = content
   end
-  local content = render('date.html', { dates = dates })
   if not nolink then
     content = '<a href="/dates" class="hidden-pastel date-term-link">'
       .. content .. '</a>'
@@ -451,3 +463,5 @@ renderpage('music', 'bannerlist.html', { curcat = 'music' })
 renderpage('playful', 'bannerlist.html', { curcat = 'playful' })
 renderpage('murmurs', 'bannerlist.html', { curcat = 'murmurs' })
 renderpage('potpourri', 'bannerlist.html', { curcat = 'potpourri', compact = true })
+
+os.execute(table.concat(bufferedcmds, '; '))
