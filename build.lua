@@ -69,6 +69,7 @@ local function renderpage(savepath, templatepath, locals)
   ensuredir(filepath)
   writefile(sitepath .. filepath,
     postproc.html(render('framework.html', {
+      lang = caisse.lang,
       savepath = savepath,
       title = locals.title,
       curcat = locals.curcat,

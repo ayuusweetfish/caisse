@@ -21,8 +21,8 @@
     list-style: none;
   }
   .item-contents ul:nth-of-type(1) > li::before {
-    content: '\1f31f   ';
-    margin-inline: -1.75em 0.25em;
+    content: '\1f31f';
+    margin-inline: -1.75em 0.5em;
     font-family: 'Ayuu Little Icons — 221202a';
     color: hsl(28deg, 65%, 65%);
   }
