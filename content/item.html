@@ -57,6 +57,7 @@ img.item-banner,
 }
 .item-contents div.image-container img.orig-size {
   max-inline-size: 80%;
+  block-size: auto;
 }
 .item-contents div.image-container img.more-margin {
   margin-block: 1.5em;
@@ -84,7 +85,7 @@ img.item-banner,
 }
 @media (max-width: 115vh), (max-width: 48rem) {
   img.item-banner, .item-contents div.image-container img {
-    inline-size: 100%;
+    max-inline-size: 100%;
   }
 }
 

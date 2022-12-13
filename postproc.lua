@@ -1,3 +1,21 @@
+local function normalizetint(v)
+  return v:gsub('hsl%((.+)deg, (.+), (.+)%)',
+    function (h, s, l)
+      return string.format('hsl(%s, %s, %s)',
+        h, s, l)
+    end)
+       :gsub('hsla%((.+)deg, (.+), (.+), (.+)%%%)',
+    function (h, s, l, a)
+      return string.format('hsla(%s, %s, %s, %g)',
+        h, s, l, tonumber(a) / 100)
+    end)
+       :gsub('rgba%((.+), (.+), (.+), (.+)%%%)',
+    function (r, g, b, a)
+      return string.format('rgba(%s, %s, %s, %g)',
+        r, g, b, tonumber(a) / 100)
+    end)
+end
+
 local function css(s)
   return s:gsub('{[^{}]*}', function (block)
     local logical = {
@@ -21,11 +39,15 @@ local function css(s)
       else return false end
       return true
     end
+    local rules = {}
     local concat = table.concat
-    local function serialize(rules, table, ...)
+    local function serialize(table, ...)
       local count = (table[1] and 1 or 0) + (table[2] and 1 or 0) +
         (table[3] and 1 or 0) + (table[4] and 1 or 0)
       if count == 0 then return end
+      for i = 1, 4 do
+        if table[i] then table[i] = normalizetint(table[i]) end
+      end
       local n = select('#', ...)
       if n >= 2 then
         -- Separate names
@@ -53,7 +75,6 @@ local function css(s)
         end
       end
     end
-    local remains = {}
     for k, v in block:gmatch('(%g+):%s*([^;]+);') do
       if not (
            (k:sub(-5) == '-size' and (
@@ -66,36 +87,50 @@ local function css(s)
         or (k:sub(1, 7) == 'margin-' and set(logical.margin, k:sub(8), v))
         or (k:sub(1, 8) == 'padding-' and set(logical.padding, k:sub(9), v))
       ) then
+        -- Logical properties (float)
         v = (v == 'inline-end' and 'right'
           or (v == 'inline-start' and 'left') or v)
-        remains[#remains + 1] = k .. ': ' .. v .. ';'
+        -- Colours
+        v = normalizetint(v)
+        -- Emit a rule
+        rules[#rules + 1] = k .. ': ' .. v .. ';'
         -- Grid for IE11
         if k == 'display' and v == 'grid' then
-          remains[#remains + 1] = 'display: -ms-grid;'
+          rules[#rules + 1] = 'display: -ms-grid;'
         end
         if k == 'grid-template-columns' then
-          remains[#remains + 1] = '-ms-grid-columns: ' .. v .. ';'
+          rules[#rules + 1] = '-ms-grid-columns: ' .. v .. ';'
         end
         if k == 'grid-row' or k == 'grid-column' then
           local start, span = v:match('(%d+) / span (%d+)')
           if start then
-            remains[#remains + 1] = '-ms-' .. k .. ': ' .. start .. ';'
-            remains[#remains + 1] = '-ms-' .. k .. '-span: ' .. span .. ';'
+            rules[#rules + 1] = '-ms-' .. k .. ': ' .. start .. ';'
+            rules[#rules + 1] = '-ms-' .. k .. '-span: ' .. span .. ';'
           else
-            remains[#remains + 1] = '-ms-' .. k .. ': ' .. v .. ';'
+            local span = v:match('span (%d+)')
+            if span then
+              rules[#rules + 1] = '-ms-' .. k .. '-span: ' .. span .. ';'
+            else
+              rules[#rules + 1] = '-ms-' .. k .. ': ' .. v .. ';'
+            end
           end
+        end
+        -- Writing mode for IE11
+        if k == 'writing-mode' and v == 'vertical-rl' then
+          rules[#rules + 1] = '-ms-writing-mode: tb-rl;'
         end
       end
     end
-    serialize(remains, logical.size, 'height', 'width')
-    serialize(remains, logical.minsize, 'min-height', 'min-width')
-    serialize(remains, logical.maxsize, 'max-height', 'max-width')
-    serialize(remains, logical.inset, 'top', 'right', 'bottom', 'left')
-    serialize(remains, logical.margin, 'margin')
-    serialize(remains, logical.padding, 'padding')
+    serialize(logical.size, 'height', 'width')
+    serialize(logical.minsize, 'min-height', 'min-width')
+    serialize(logical.maxsize, 'max-height', 'max-width')
+    serialize(logical.inset, 'top', 'right', 'bottom', 'left')
+    serialize(logical.border, 'border')
+    serialize(logical.margin, 'margin')
+    serialize(logical.padding, 'padding')
     local init = block:match('^({%s+)')
     local fin = block:match('(%s+})$')
-    return init .. table.concat(remains, init:sub(2)) .. fin
+    return init .. table.concat(rules, init:sub(2)) .. fin
   end)
 end
 
