@@ -27,6 +27,9 @@ A Description
     {{@ end }}
   {{@ end }}
 
+  <link rel='alternate' type='application/rss+xml' href='/rss.xml' title='RSS feed'>
+  <link rel='alternate' type='application/atom+xml' href='/atom.xml' title='Atom feed'>
+
   <title>{{ fulltitle }}</title>
 </head><body>
 
@@ -47,13 +50,13 @@ A Description
 </ul>
 <section id='icon-buttons'>
   <details id='lang-container'>
-    <summary class='pastel little-icons' title='语言/Language'>🌐</summary>
+    <summary class='pastel miscellaneous little-icons' title='语言/Language'>🌐</summary>
     <section id='lang-list'>
       <a href='/?lang=zh'>汉语/Chinese</a>
       <a href='/?lang=en'>English/英语</a>
     </section>
   </details><a
-    href='/?dark=1' class='pastel dark-mode little-icons' title='深色主题'>🌙</a>
+    href='/?dark=1' class='pastel miscellaneous little-icons' title='深色主题'>🌙</a>
 </section>
 </nav>
 
@@ -73,7 +76,12 @@ Related links
 </span>
 
 <footer>
-Brimming with <span class='little-icons' style='display: inline-block; transform: rotate(-8deg)'>&#x1f31f;</span>
+<span>
+  <span>Brimming with <span class='little-icons' style='display: inline-block; transform: rotate(-8deg)'>&#x1f31f;</span></span><!--
+  --><span><a class='pastel miscellaneous' href='/rss.xml'>RSS</a></span><!--
+  --><span><a class='pastel miscellaneous' href='/atom.xml'>Atom</a></span>
+</span>
+<br>
 {{ render('timeofday.html') }}
 </footer>
 
@@ -238,10 +246,10 @@ a.external { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
 a.external::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
 #lang-container > summary { cursor: pointer; }
-a.dark-mode, #lang-container > summary {
+.pastel.miscellaneous {
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
 }
-a.dark-mode::after, #lang-container > summary::after {
+.pastel.miscellaneous::after {
   background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%);
 }
 
@@ -251,6 +259,11 @@ main header h1 {
   color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%);
 }
 {{@ end}}
+
+footer > span:first-child > *:not(:last-child)::after {
+  content: '|';
+  margin-inline: 0.25em;
+}
 
 main {
   position: relative;
