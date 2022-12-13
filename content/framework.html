@@ -276,6 +276,14 @@ main {
   src: url(/bin/AaKaiSong2.woff2) format('woff2');
 }
 @font-face {
+  font-family: 'AaKaiSong Punctuations';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/AaKaiSong2.woff2) format('woff2');
+  unicode-range: u+2018-201f;
+}
+@font-face {
   font-family: 'Ayuu Little Icons — 221202a';
   font-style: normal;
   font-weight: 400;
@@ -283,8 +291,13 @@ main {
   src: url(/bin/little-icons.woff2) format('woff2');
 }
 body {
-  font-family: 'Livvic', 'AaKaiSong', sans-serif;
   color: #181410;
+}
+:lang(en) {
+  font-family: 'Livvic', 'AaKaiSong', sans-serif;
+}
+:lang(zh) {
+  font-family: 'AaKaiSong Punctuations', 'Livvic', 'AaKaiSong', sans-serif;
 }
 pre {
   font-family: 'Sono', monospace;
@@ -414,6 +427,7 @@ blockquote {
 }
 blockquote *:first-child { margin-block-start: 0; }
 blockquote *:last-child { margin-block-end: 0; }
+blockquote + blockquote { margin-block-start: 0.4em; }
 
 span:lang(lat) { font-style: italic; }
 

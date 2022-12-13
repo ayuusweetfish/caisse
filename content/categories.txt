@@ -65,6 +65,7 @@ cats.murmurs.pagelist = {
   {name = 'why-comp-engr'},
 ]]
   {name = 'into'},
+  {name = 'amusing'},
   {name = 'traviata'},
   {name = 'inner-prod'},
   {name = 'hello'},
