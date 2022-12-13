@@ -253,7 +253,8 @@ main {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/Livvic-Regular.woff2) format('woff2');
+  src: url(/bin/Livvic-Regular.woff2) format('woff2'),
+       url(/bin/Livvic-Regular.woff) format('woff');
 }
 @font-face {
   font-family: 'Livvic';
@@ -261,35 +262,40 @@ main {
   font-weight: bold;
   font-display: swap;
 {{ boldname = {zh = 'Medium', en = 'SemiBold'} }}
-  src: url(/bin/Livvic-{{ boldname }}.woff2) format('woff2');
+  src: url(/bin/Livvic-{{ boldname }}.woff2) format('woff2'),
+       url(/bin/Livvic-{{ boldname }}.woff) format('woff');
 }
 @font-face {
   font-family: 'Sono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/Sono_Monospace-Regular.woff2) format('woff2');
+  src: url(/bin/Sono_Monospace-Regular.woff2) format('woff2'),
+       url(/bin/Sono_Monospace-Regular.woff) format('woff');
 }
 @font-face {
   font-family: 'Sono';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/Sono_Monospace-SemiBold.woff2) format('woff2');
+  src: url(/bin/Sono_Monospace-SemiBold.woff2) format('woff2'),
+       url(/bin/Sono_Monospace-SemiBold.woff) format('woff');
 }
 @font-face {
   font-family: 'AaKaiSong';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/AaKaiSong2.woff2) format('woff2');
+  src: url(/bin/AaKaiSong2.woff2) format('woff2'),
+       url(/bin/AaKaiSong2.woff) format('woff');
 }
 @font-face {
   font-family: 'AaKaiSong Punctuations';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/AaKaiSong2.woff2) format('woff2');
+  src: url(/bin/AaKaiSong2.woff2) format('woff2'),
+       url(/bin/AaKaiSong2.woff) format('woff');
   unicode-range: u+2018-201f;
 }
 @font-face {
@@ -297,7 +303,8 @@ main {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/little-icons.woff2) format('woff2');
+  src: url(/bin/little-icons.woff2) format('woff2'),
+       url(/bin/little-icons.woff) format('woff');
 }
 body {
   color: #181410;
@@ -443,6 +450,9 @@ blockquote {
 blockquote *:first-child { margin-block-start: 0; }
 blockquote *:last-child { margin-block-end: 0; }
 blockquote + blockquote { margin-block-start: 0.4em; }
+@media (max-width: 115vh), (max-width: 48rem) {
+  blockquote { margin-inline-end: 1em; }
+}
 
 span:lang(lat) { font-style: italic; }
 

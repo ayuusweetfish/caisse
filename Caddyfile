@@ -1,4 +1,4 @@
-http://ayuu.ink:1123
+http://localhost:1123
 
 header Cross-Origin-Opener-Policy same-origin
 header Cross-Origin-Embedder-Policy require-corp

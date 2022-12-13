@@ -349,8 +349,8 @@ markupfns = {
   h1 = function (text) return heading('h1', text) end,
   h2 = function (text) return heading('h2', text) end,
   h3 = function (text) return heading('h3', text) end,
-  list = function (contents)
-    return '<ul>' .. contents .. '</ul>'
+  list = function (...)
+    return '<ul>' .. table.concat({...}) .. '</ul>'
   end,
   li = function (text)
     return '<li>' .. text .. '</li>'
@@ -434,13 +434,19 @@ copyfile('background.svg')
 copyfile('top-fleuron.svg')
 copyfile('chalk-bg-w.png')
 copyfile('chalk-bg-b.png')
-copyfile('Livvic-Regular.woff2')
-copyfile('Livvic-Medium.woff2')
-copyfile('Livvic-SemiBold.woff2')
-copyfile('Sono_Monospace-Regular.woff2')
-copyfile('Sono_Monospace-SemiBold.woff2')
-copyfile('AaKaiSong2.woff2')
-copyfile('little-icons.woff2')
+local fontfiles = {
+  'Livvic-Regular',
+  'Livvic-Medium',
+  'Livvic-SemiBold',
+  'Sono_Monospace-Regular',
+  'Sono_Monospace-SemiBold',
+  'AaKaiSong2',
+  'little-icons',
+}
+for _, fontfile in ipairs(fontfiles) do
+  copyfile(fontfile .. '.woff2')  -- woff2_compress
+  copyfile(fontfile .. '.woff')   -- sfnt2woff
+end
 
 copyfile('divider-end.svg')
 copyfile('divider-fleuron-cloudy.svg')

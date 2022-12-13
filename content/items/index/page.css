@@ -1,0 +1,19 @@
+@media (min-width: 115vh) and (min-width: 48rem) {
+  .item-contents ul:nth-of-type(1) > li,
+  .item-contents ul:nth-of-type(2) > li {
+    display: inline-block;
+  }
+  .item-contents ul:nth-of-type(1) > li:not(:last-child)::after,
+  .item-contents ul:nth-of-type(2) > li:not(:last-child)::after {
+    content: '|';
+    margin-inline: 0.25em;
+  }
+}
+
+.item-contents ul:nth-of-type(1) > li {
+  list-style: '\1f31f   ';
+}
+.item-contents ul:nth-of-type(1) > li::marker {
+  font-family: 'Ayuu Little Icons — 221202a';
+  color: hsl(28deg, 65%, 65%);
+}
