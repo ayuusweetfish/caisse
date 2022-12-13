@@ -8,6 +8,10 @@
     content: '|';
     margin-inline: 0.25em;
   }
+  .item-contents ul:nth-of-type(1) > li::before,
+  .item-contents ul:nth-of-type(2) > li::before {
+    display: none;
+  }
 }
 
 @media (max-width: 115vh), (max-width: 48rem) {
