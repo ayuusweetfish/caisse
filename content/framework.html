@@ -1,8 +1,33 @@
 <!DOCTYPE html>
-<html lang='{{ tr({ zh = "zh", en = "en" }) }}'><head>
+<html lang='{{ lang }}'><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1' />
-  <title>{{ title }} — Site</title>
+
+{{fulltitle.zh =}}
+{{ title }} — Site
+{{metadescription.zh =}}
+说明说明！
+
+{{fulltitle.en =}}
+{{ title }} — Site
+{{metadescription.en =}}
+A Description
+
+{{=}}
+  <meta name='description' content='{{ metadescription }}'>
+  <meta property='og:title' content='{{ fulltitle }}'>
+  <meta property='og:type' content='website'>
+  <meta property='og:image' content=''>
+  <meta property='og:url' content=''>
+  <meta property='og:description' content='{{ metadescription }}'>
+  <meta property='og:locale' content='{{ lang }}'>
+  {{@ otherlang in {'zh', 'en'} }}
+    {{@ otherlang ~= lang }}
+      <meta property='og:locale:alternate' content='{{ otherlang }}'>
+    {{@ end }}
+  {{@ end }}
+
+  <title>{{ fulltitle }}</title>
 </head><body>
 
 <style></style>
