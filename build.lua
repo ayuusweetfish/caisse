@@ -2,6 +2,8 @@ local caisse = require('caisse/caisse')
 local rendermarkup = require('caisse/markup')
 caisse.lang = 'zh'
 
+os.setlocale('C')
+
 local postproc = require('postproc')
 
 local srcpath = 'content/'
@@ -76,6 +78,20 @@ local function renderpage(savepath, templatepath, locals)
       contents = contents,
     })))
 end
+local function renderraw(savepath, templatepath, locals)
+  locals = locals or {}
+  local contents = render(templatepath, locals)
+  ensuredir(savepath)
+  writefile(sitepath .. savepath, contents)
+end
+
+local function seq(start, finish, step)
+  step = step or 1
+  local ret = {}
+  for i = start, finish, step do ret[#ret + 1] = i end
+  return ret
+end
+caisse.envadditions.seq = seq
 
 local function split(s, delim)
   local i = 1
@@ -187,6 +203,12 @@ local function registeritem(path, curcat, extralocals)
     cat = curcat,
   }
 end
+local function registeritemfile(path, curcat)
+  itemreg[path] = { cat = curcat, isfile = true }
+end
+local function registeritemempty(path, curcat)
+  itemreg[path] = { cat = curcat, isempty = true }
+end
 
 local htmlescapelookup = {
   ['<'] = '&lt;',
@@ -196,6 +218,7 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
+caisse.envadditions.htmlescape = htmlescape
 
 local function sizestring(size)
   if size < 1024 then
@@ -253,7 +276,7 @@ local function heading(tag, text)
   if bodytext then text = bodytext end
   return '<' .. tag ..
     (anchor and (' id="' .. anchor .. '"') or '') ..
-    '>' .. htmlescape(text) .. '</' .. tag .. '>'
+    '>' .. text .. '</' .. tag .. '>'
 end
 
 local markupfnsenvitem  -- Item name of the item currently being processed
@@ -421,12 +444,16 @@ end
 
 local function renderallitems()
   for path, item in pairs(itemreg) do
-    local locals = item.locals
-    locals.name = path
-    locals.curcat = item.cat
-    print(item.cat, caisse.envadditions.tr(locals.title))
-    markupfnsenvitem = path
-    renderpage(path, 'item.html', locals)
+    if item.isempty then  -- No-op
+    elseif item.isfile then copyfile(path)
+    else
+      local locals = item.locals
+      locals.name = path
+      locals.curcat = item.cat
+      print(item.cat, caisse.envadditions.tr(locals.title))
+      markupfnsenvitem = path
+      renderpage(path, 'item.html', locals)
+    end
   end
   markupfnsenvitem = nil
 end
@@ -463,6 +490,14 @@ end
 registeritem('index', 'home')
 registeritem('about', 'home')
 registeritem('dates', 'home')
+registeritem('revlog', 'home')
+for _, lang in ipairs({'zh', 'en'}) do
+  registeritemempty('rss.' .. lang .. '.xml', 'home')
+  registeritemempty('atom.' .. lang .. '.xml', 'home')
+  renderraw('rss.' .. lang .. '.xml', 'items/revlog/rss.xml', { lang = lang })
+  renderraw('atom.' .. lang .. '.xml', 'items/revlog/atom.xml', { lang = lang })
+end
+
 registeritem('pile', 'pile', {
   title = caisse.envadditions.tr(cats.pile.longtitle) or cats.pile.title
 })

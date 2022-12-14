@@ -28,5 +28,7 @@
   <li <date 2022.20> 推翻了之前写的一些程序重新开始搭这个站了！>
 >
 
+<link revlog 月度修订记录>
+
 {{contents.en=}}
 Hahaha!

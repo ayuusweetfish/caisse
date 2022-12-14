@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+<channel>
+  <title>Site</title>
+  <link>http://localhost:1123/</link>
+  <description>说明</description>
+  <language>{{ lang }}</language>
+  <atom:link href='http://localhost:1123/rss.{{ lang }}.xml' rel='self' type='application/rss+xml' />
+  <generator>Caisse</generator>
+
+{{@ i in seq(2022*12 + 11, 2022*12 + 10, -1) }}
+  {{ year = (i - 1) // 12 }}
+  {{ month = i - year * 12 }}
+  {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
+  <item>
+    <title>{{ log.title[lang]}}</title>
+    <link>http://localhost:1123/revlog#{{ string.format('%d%02d', year, month) }}</link>
+    <description>{{ htmlescape(log.contents[lang]) }}</description>
+    <pubDate>{{*
+      local y, m, d, h = table.unpack(split(log.timestamp, '.'))
+      return os.date('%a, %d %b %Y %T %z', os.time({ year = y, month = m, day = d, hour = h }))
+    }}</pubDate>
+    <guid isPermaLink='false'>revlog#{{ string.format('%d%02d', year, month) }}</guid>
+  </item>
+{{@ end }}
+</channel>
+</rss>

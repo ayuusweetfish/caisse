@@ -27,8 +27,8 @@ A Description
     {{@ end }}
   {{@ end }}
 
-  <link rel='alternate' type='application/rss+xml' href='/rss.xml' title='RSS feed'>
-  <link rel='alternate' type='application/atom+xml' href='/atom.xml' title='Atom feed'>
+  <link rel='alternate' type='application/rss+xml' href='/rss.{{ lang }}.xml' title='RSS feed'>
+  <link rel='alternate' type='application/atom+xml' href='/atom.{{ lang }}.xml' title='Atom feed'>
 
   <title>{{ fulltitle }}</title>
 </head><body>
@@ -77,9 +77,7 @@ Related links
 
 <footer>
 <span>
-  <span>Brimming with <span class='little-icons' style='display: inline-block; transform: rotate(-8deg)'>&#x1f31f;</span></span><!--
-  --><span><a class='pastel miscellaneous' href='/rss.xml'>RSS</a></span><!--
-  --><span><a class='pastel miscellaneous' href='/atom.xml'>Atom</a></span>
+  <span>Brimming with <span class='little-icons' style='display: inline-block; transform: rotate(-8deg)'>&#x1f31f;</span></span>
 </span>
 <br>
 {{ render('timeofday.html') }}

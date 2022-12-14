@@ -1,0 +1,10 @@
+{{title.zh=}}22 亥月 —— 哈哈哈！
+{{title.en=}}22 Month of the Pig — Hahaha!
+
+{{timestamp=}}2022.12.14.12
+
+{{contents.zh=}}
+aa
+
+{{contents.en=}}
+English content
