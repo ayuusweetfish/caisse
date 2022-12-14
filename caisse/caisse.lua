@@ -99,7 +99,10 @@ local function parsetemplate(s)
         -- Detect type
         local succeeded, fn
         if expr:sub(1, 1) == '!' then
-          expr = expr:sub(2)
+          expr = expr:sub(2)  -- Statement
+        elseif expr:sub(1, 1) == '*' then
+          expr = expr:sub(2)  -- Expression; errors catched again later if any
+          succeeded, fn = pcall(loadfn, expr)
         else
           succeeded, fn = pcall(loadfn, 'return ' .. expr)
         end
@@ -300,10 +303,10 @@ local function render(path, locals)
   local outputs = {}
   local template = loadtemplate(path)
   renderslice(template, {locals}, outputs, 1, #template)
-  if path:sub(-5) == '.html' then
-    return table.concat(outputs), locals
-  else
+  if path:sub(-4) == '.txt' then
     return locals
+  else
+    return table.concat(outputs), locals
   end
 end
 

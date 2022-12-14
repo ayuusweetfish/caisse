@@ -1,0 +1,15 @@
+{{title.zh=}}月度修订记录
+{{title.en=}}Monthly Revision Logs
+
+{{contents.zh=}}
+通过 <link rss.zh.xml RSS> 或 <link atom.zh.xml Atom> 订阅。
+!<hr windy>
+
+{{@ i in seq(2022*12 + 11, 2022*12 + 10, -1) }}
+{{ year = (i - 1) // 12 }}
+{{ month = i - year * 12 }}
+{{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
+!<h1 {{ log.title }} <date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+{{ log.contents }}
+!<hr windy>
+{{@ end }}
