@@ -20,17 +20,18 @@
 {{@ end }}
 
 <style>
-.item-contents > p {
+.item-contents p {
   text-indent: 2em;
 }
-.item-contents > p * {
+.item-contents > p *,
+.item-contents blockquote p {
   text-indent: 0;
 }
 .item-contents > p.text-center {
   text-align: center;
   text-indent: 0;
 }
-.item-contents div.image-container {
+div.image-container {
   text-align: center;
   margin-block: 1em;
 }

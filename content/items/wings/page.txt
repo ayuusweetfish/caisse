@@ -23,62 +23,62 @@
   <file <= Broken Angel Wings.pdf> 乐谱>
 >
 
-<hr windy>
+!<hr windy>
 
-Two decades’ time with one year more
-That’s how long an angel has been around for
-Arriving at dawn with the sky getting bright
-Look at this land like never before
+<lang en Two decades’ time with one year more>
+<lang en That’s how long an angel has been around for>
+<lang en Arriving at dawn with the sky getting bright>
+<lang en Look at this land like never before>
 
-<hr cloudy>
+!<hr cloudy>
 
-Spread the wings of feather and snow
-Oh, how would this miracle ever not glow?
-Fly about the sky, filled with delight
-Play the birds’ song and let melodies flow
+<lang en Spread the wings of feather and snow>
+<lang en Oh, how would this miracle ever not glow?>
+<lang en Fly about the sky, filled with delight>
+<lang en Play the birds’ song and let melodies flow>
 
-<hr cloudy>
+!<hr cloudy>
 
-Nothing goes on forever,
-but the angel dances and lights up today
-Share the moments of merriment
-in the time for them to stay
+<lang en Nothing goes on forever,>
+<lang en but the angel dances and lights up today>
+<lang en Share the moments of merriment>
+<lang en in the time for them to stay>
 
-<hr cloudy>
+!<hr cloudy>
 
-To never, never, never, never, never being afraid
-For there always, always, always, always will be the angel wings
+<lang en To never, never, never, never, never being afraid>
+<lang en For there always, always, always, always will be the angel wings>
 
-<hr cloudy>
+!<hr cloudy>
 
-In sun and rain, through wind and mist
-Landscapes the angel had witnessed or missed
-With celestial memories from up so high
-But the feathers of glow could no longer persist
+<lang en In sun and rain, through wind and mist>
+<lang en Landscapes the angel had witnessed or missed>
+<lang en With celestial memories from up so high>
+<lang en But the feathers of glow could no longer persist>
 
-<hr cloudy>
+!<hr cloudy>
 
-On walks of day, in dreams of night
-The angel cried over the broken wings
-Sunk in sorrow, longing to fly
-The angel sang as much as one could sing
-…
+<lang en On walks of day, in dreams of night>
+<lang en The angel cried over the broken wings>
+<lang en Sunk in sorrow, longing to fly>
+<lang en The angel sang as much as one could sing>
+<lang en …>
 
-<hr cloudy>
+!<hr cloudy>
 
-Stalk a bird, fly a kite
-Roam in the sunshine along a strand
-Join the campfire and be the guide
-The angel’s dance goes on hand in hand
+<lang en Stalk a bird, fly a kite>
+<lang en Roam in the sunshine along a strand>
+<lang en Join the campfire and be the guide>
+<lang en The angel’s dance goes on hand in hand>
 
-<hr cloudy>
+!<hr cloudy>
 
-Maybe never, never, never, never back are the broken wings
-But there’s so much, so much, so much, so much to see on this wonderland
-Maybe never, never, never, never back are the broken wings
-But there’s so much, so much, so much, so much to see on this wonderland
+<lang en Maybe never, never, never, never back are the broken wings>
+<lang en But there’s so much, so much, so much, so much to see on this wonderland>
+<lang en Maybe never, never, never, never back are the broken wings>
+<lang en But there’s so much, so much, so much, so much to see on this wonderland>
 
-<hr windy>
+!<hr windy>
 
 {{contents.en=}}
 …

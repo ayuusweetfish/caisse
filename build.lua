@@ -222,6 +222,10 @@ local function htmlescape(s)
 end
 caisse.envadditions.htmlescape = htmlescape
 
+local function uriescape(s)
+  return s:gsub(' ', '%%20')
+end
+
 local function sizestring(size)
   if size < 1024 then
     return string.format('%d B', size)
@@ -369,7 +373,7 @@ markupfns = {
     end
     return '<tr><td>' .. text .. '</td>' ..
       '<td><a class="pastel ' .. item.cat .. '" href="' ..
-      fileurl ..  '">' ..
+      uriescape(fileurl) ..  '">' ..
       '<span class="little-icons">&#x' .. string.format('%x', icon) ..
       ';</span><strong class="file-table-name">' .. basename .. '</strong>(' ..
       sizestring(size) ..
