@@ -3,6 +3,9 @@ local rendermarkup = require('caisse/markup')
 caisse.lang = 'zh'
 
 os.setlocale('C')
+caisse.envadditions.lang = caisse.lang
+caisse.envadditions.siteroot = 'http://localhost:1123'
+caisse.envadditions.domain = 'ayuu.ink'
 
 local postproc = require('postproc')
 
@@ -71,7 +74,6 @@ local function renderpage(savepath, templatepath, locals)
   ensuredir(filepath)
   writefile(sitepath .. filepath,
     postproc.html(render('framework.html', {
-      lang = caisse.lang,
       savepath = savepath,
       title = locals.title,
       curcat = locals.curcat,
@@ -189,10 +191,10 @@ caisse.envadditions.renderdate = renderdate
 local cats = render('categories.txt').cats
 
 local itemreg = {}
-local function registeritem(path, curcat, extralocals)
+local function registeritem(path, curcat, extralocals, pageextralocals)
   if itemreg[path] then return end
   -- `path` is the path in URL, without the leading `/`
-  local locals = render('items/' .. path .. '/page.txt')
+  local locals = render('items/' .. path .. '/page.txt', pageextralocals)
   local extrastyle = caisse.readfile('items/' .. path .. '/page.css')
   if extrastyle then locals.extrastyle = extrastyle end
   if extralocals then
@@ -301,6 +303,9 @@ markupfns = {
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
   end,
+  tt = function (text)
+    return '<span class="tt">' .. text .. '</span>'
+  end,
   lang = function (lang, text)
     return '<span lang="' .. lang .. '">' .. text .. '</span>'
   end,
@@ -390,6 +395,16 @@ markupfns = {
   end,
   clearfloat = function ()
     return '<div style="clear: both"></div>'
+  end,
+  table = function (...)
+    return '<div class="table-container"><table>'
+      .. table.concat({...}) .. '</table></div>'
+  end,
+  tr = function (...) return '<tr>' .. table.concat({...}) .. '</tr>' end,
+  th = function (text) return '<th>' .. text .. '</th>' end,
+  td = function (text) return '<td>' .. text .. '</td>' end,
+  tdspan = function (rowspan, colspan, text)
+    return '<td rowspan="' .. rowspan .. '" colspan="' .. colspan .. '">' .. text .. '</td>'
   end,
   date = function (datestr)
     return renderdate(datestr)
@@ -490,12 +505,17 @@ end
 registeritem('index', 'home')
 registeritem('about', 'home')
 registeritem('dates', 'home')
-registeritem('revlog', 'home')
+
+local revloglatest = 2022*12 + 11
+local revlogfirst = 2022*12 + 10
+registeritem('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
 for _, lang in ipairs({'zh', 'en'}) do
   registeritemempty('rss.' .. lang .. '.xml', 'home')
   registeritemempty('atom.' .. lang .. '.xml', 'home')
-  renderraw('rss.' .. lang .. '.xml', 'items/revlog/rss.xml', { lang = lang })
-  renderraw('atom.' .. lang .. '.xml', 'items/revlog/atom.xml', { lang = lang })
+  renderraw('rss.' .. lang .. '.xml', 'items/revlog/rss.xml',
+    { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
+  renderraw('atom.' .. lang .. '.xml', 'items/revlog/atom.xml',
+    { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
 end
 
 registeritem('pile', 'pile', {

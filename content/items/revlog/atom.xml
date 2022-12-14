@@ -1,26 +1,28 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <feed xmlns='http://www.w3.org/2005/Atom' xml:lang='{{ lang }}'>
   <title>Site</title>
-  <id>http://localhost:1123/</id>
-  <link rel='self' href='http://localhost:1123/atom.{{ lang }}.xml' />
+  <id>{{ siteroot }}/</id>
+  <link rel='self' href='{{ siteroot }}/atom.{{ lang }}.xml' />
   <author>
     <name>Ayu</name>
   </author>
   <updated>{{*
-    local log = render(string.format('items/revlog/2022-11.txt'))
+    local year = (revloglatest - 1) // 12
+    local month = revloglatest - year * 12
+    local log = render(string.format('items/revlog/%d-%02d.txt', year, month))
     local y, m, d, h = table.unpack(split(log.timestamp, '.'))
     return os.date('!%FT%TZ', os.time({ year = y, month = m, day = d, hour = h }))
   }}</updated>
   <generator>Caisse</generator>
 
-{{@ i in seq(2022*12 + 11, 2022*12 + 10, -1) }}
+{{@ i in seq(revloglatest, revlogfirst, -1) }}
   {{ year = (i - 1) // 12 }}
   {{ month = i - year * 12 }}
   {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
   <entry>
     <title>{{ log.title[lang]}}</title>
-    <id>tag:ayuu.ink,2022-12:revlog#{{ string.format('%d%02d', year, month) }}</id>
-    <link rel='alternate' href='http://localhost:1123/revlog#{{ string.format("%d%02d", year, month) }}' />
+    <id>tag:{{ domain }},2022-12:revlog#{{ string.format('%d%02d', year, month) }}</id>
+    <link rel='alternate' href='{{ siteroot }}/revlog#{{ string.format("%d%02d", year, month) }}' />
     <content type='html'>{{ htmlescape('<html><body>' .. log.contents[lang] .. '</body></html>') }}</content>
     <updated>{{*
       local y, m, d, h = table.unpack(split(log.timestamp, '.'))

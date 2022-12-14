@@ -25,15 +25,19 @@ local function css(s)
       margin = {},
       padding = {},
     }
-    local function set(table, side, value)
+    local function set(table, side, value, singleval)
       if side == 'block-start' then table[1] = value
       elseif side == 'block-end' then table[3] = value
       elseif side == 'inline-start' then table[4] = value
       elseif side == 'inline-end' then table[2] = value
       elseif side == 'block' or side == 'inline' then
         local v1, v2
-        v1 = value:match('^(%g+%b())') or value:match('^(%g+)')
-        v2 = value:match('(%g+%b())$') or value:match('(%g+)$')
+        if singleval then
+          v1, v2 = value, value
+        else
+          v1 = value:match('^(%g+%b())') or value:match('^(%g+)')
+          v2 = value:match('(%g+%b())$') or value:match('(%g+)$')
+        end
         if side == 'block' then table[1], table[3] = v1, v2
         else table[4], table[2] = v1, v2 end
       else return false end
@@ -83,7 +87,7 @@ local function css(s)
              (k:sub(1, 4) == 'max-' and set(logical.maxsize, k:sub(5, -6), v))
            )
         or (k:sub(1, 6) == 'inset-' and set(logical.inset, k:sub(7), v))
-        or (k:sub(1, 7) == 'border-' and set(logical.border, k:sub(8), v))
+        or (k:sub(1, 7) == 'border-' and set(logical.border, k:sub(8), v, true))
         or (k:sub(1, 7) == 'margin-' and set(logical.margin, k:sub(8), v))
         or (k:sub(1, 8) == 'padding-' and set(logical.padding, k:sub(9), v))
       ) then

@@ -347,13 +347,13 @@ main {
 body {
   color: #181410;
 }
-:lang(en) {
+:not(pre, code, .tt, .little-icons):lang(en) {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
 }
-:lang(zh) {
+:not(pre, code, .tt, .little-icons):lang(zh) {
   font-family: 'AaKaiSong Punctuations', 'Livvic', 'AaKaiSong', sans-serif;
 }
-pre {
+pre, code, .tt {
   font-family: 'Sono', monospace;
   font-size: 0.9rem;
 }
