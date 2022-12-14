@@ -2,7 +2,39 @@
 {{title.en=}}Date Format
 
 {{contents.zh=}}
-日期是二十四节气哒！！！不要和 <extlink https://wiki.xxiivv.com/site/arvelie.html Arvelie 格式>搞混啦！
+本站采用二十四节气记载日期。
+不少时候，精确的月日时分带来的更像是烦恼。不断变化的数字难免制造出些许紧迫感，而生活中的许多事也很难用一个特定的时刻来描述。因此，以节气所代表的时间段来记录事件，并维护一份近期的修订记录，对于本站而言是一个理想的方式。
+节气是一种阳历。根据太阳在黄道上的位置，将一个回归年（地球围绕太阳公转的周期）划分为十二份，作为十二个月令，或称节气月，以十二地支为序；每月又各自分为上下两半，上半称“节”，下半称“气”，共二十四段，按照中国古人在农耕经验中总结出的物候节律予以命名，如今合称二十四节气。
+
+!<table
+  <tr <th 季节> <th 节气名> <th 公历时段> <th 月支>>
+  <tr <tdspan 6 1 春> <td 立春> <td 2 月中旬> <tdspan 2 1 寅>>
+  <tr                 <td 雨水> <td 2 月末至 3 月初>>
+  <tr                 <td 惊蛰> <td 3 月中旬> <tdspan 2 1 卯>>
+  <tr                 <td 春分> <td 3 月末至 4 月初>>
+  <tr                 <td 清明> <td 4 月中旬> <tdspan 2 1 辰>>
+  <tr                 <td 谷雨> <td 4 月末至 5 月初>>
+  <tr <tdspan 6 1 夏> <td 立夏> <td 5 月中旬> <tdspan 2 1 巳>>
+  <tr                 <td 小满> <td 5 月末至 6 月初>>
+  <tr                 <td 芒种> <td 6 月中旬> <tdspan 2 1 午>>
+  <tr                 <td 夏至> <td 6 月末至 7 月初>>
+  <tr                 <td 小暑> <td 7 月中旬> <tdspan 2 1 未>>
+  <tr                 <td 大暑> <td 7 月末至 8 月初>>
+  <tr <tdspan 6 1 秋> <td 立秋> <td 8 月中旬> <tdspan 2 1 申>>
+  <tr                 <td 处暑> <td 8 月末至 9 月初>>
+  <tr                 <td 白露> <td 9 月中旬> <tdspan 2 1 酉>>
+  <tr                 <td 秋分> <td 9 月末至 10 月初>>
+  <tr                 <td 寒露> <td 10 月中旬> <tdspan 2 1 戌>>
+  <tr                 <td 霜降> <td 10 月末至 11 月初>>
+  <tr <tdspan 6 1 冬> <td 立冬> <td 11 月中旬> <tdspan 2 1 亥>>
+  <tr                 <td 小雪> <td 11 月末至 12 月初>>
+  <tr                 <td 大雪> <td 12 月中旬> <tdspan 2 1 子>>
+  <tr                 <td 冬至> <td 12 月末至翌年 1 月初>>
+  <tr                 <td 小寒> <td 1 月中旬> <tdspan 2 1 丑>>
+  <tr                 <td 大寒> <td 1 月末至 2 月初>>
+>
+
+本站惯例取建寅之月（立春）为岁首；简洁起见，年份取立春所在公历年份末二位。如公历 2022 年 1 月末记为 <date 2021.24>，2 月中旬为 <date 2022.01>。
 
 {{contents.en=}}
 Dates are based on the 24 solar terms! Do not mistake it for <extlink https://wiki.xxiivv.com/site/arvelie.html the Arvelie calendar>!
