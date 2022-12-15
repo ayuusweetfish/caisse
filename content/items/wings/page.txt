@@ -11,6 +11,8 @@
   seed: 1203154647
   size: 512x512
 ]]}}
+{{bannerimgalt.zh=}}白色长发的女孩伸出手触碰空中的流光。
+{{bannerimgalt.en=}}A girl with long white hair reaching out to the flowing lights in the air.
 
 {{date=}}2021.18, 2021.22
 

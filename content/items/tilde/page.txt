@@ -5,6 +5,8 @@
 
 {{bannerimg=}}screenshot.png
 {{bannerimginpage=}}false
+{{bannerimgalt.zh=}}音乐编辑器的卷帘窗界面截图。
+{{bannerimgalt.en=}}Screenshot of a piano roll, a graphical interface of a music editor.
 
 {{date=}}2019.01, 2019.02
 

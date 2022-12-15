@@ -2,9 +2,10 @@
 {{intro.zh=}}企鹅冰壶孵蛋游戏
 {{title.en=}}Ice Hatch
 {{intro.en=}}Curling, but penguins
-{{a.b.c=}}1
 
 {{bannerimg=}}cover.png
+{{bannerimgalt.zh=}}游戏封面图；趴在冰面上的企鹅，面前放着一只蛋。
+{{bannerimgalt.en=}}Cover art of the image; a penguin lying face down on the ice, with an egg in front of it.
 
 {{date=}}2022.01
 

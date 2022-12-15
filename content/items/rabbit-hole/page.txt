@@ -5,6 +5,8 @@
 
 {{bannerimg=}}cover.jpg
 {{bannerimginpage=}}false
+{{bannerimgalt.zh=}}计算机渲染图：低模风格的树丛中有一只小松鼠和许多物体。
+{{bannerimgalt.en=}}Computer rendered image: trees of low-poly style with a squirrel and many objects scattered among them.
 
 {{date=}}2021.18, 2021.20
 

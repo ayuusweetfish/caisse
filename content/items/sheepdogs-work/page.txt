@@ -5,6 +5,7 @@
 
 {{bannerimg=}}../sheepdogs/cover.jpg
 {{bannerimgpos=}}50,28
+{{bannerimgalt = render('items/sheepdogs/page.txt').bannerimgalt}}
 
 {{date=}}2021.11
 
