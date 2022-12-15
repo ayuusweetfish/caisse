@@ -19,7 +19,7 @@
 
 序曲由半数小提琴在高音区缓慢奏出的 B 小调上的动机引入，这是全剧中的第一个重要主题，我们暂且称之为“病床”。
 
-!<img image-01.png <= p. 1，“病床”主题> <= orig-size caption>>
+!<img image-01.png <= p. 1，“病床”主题> <= orig-size caption syncdark>>
 
 这代表主人公 Violetta 因病卧床的情景。它后来在第三幕的前奏曲与第一场 Violetta 卧床的场景中都以原样出现（移到了 C 小调），听众在那时将明确地意识到这个主题的含义。在那时，旋律所处的高音区、慢板的速度、和声小调的阴暗色彩、极弱中包含一个突强的病态般的力度以及谨慎的声部进行，无一不将 Violetta 所受病痛的折磨与虚弱的状态展现在听众眼前，让人不禁屏息，仿佛自己也在 Violetta 的房间里目睹着这一切，心生哀怜。
 
@@ -29,18 +29,18 @@
 
 序曲接着不断增加乐器并变化调性，色彩逐渐明快，直至最后通过明确的 E 大调上的属—主进行，进入一个活泼欢快的节奏上。一小节后即出现了第二个重要的主题，暂且称之为“爱情”。
 
-!<img image-02.png <= p. 2，“爱情”主题> <= orig-size>>
-!<img image-03.png <= p. 2，“爱情”主题> <= orig-size caption>>
+!<img image-02.png <= p. 2，“爱情”主题> <= orig-size syncdark>>
+!<img image-03.png <= p. 2，“爱情”主题> <= orig-size caption syncdark>>
 
 这个主题再现于第二幕第一场 Violetta 受 Alfredo 父亲要求决定离开 Alfredo 时深情而决绝地唱出“爱我，Alfredo”的场景。
 
-!<img image-04.png <= p. 190，“爱我，Alfredo”> <= orig-size caption>>
+!<img image-04.png <= p. 190，“爱我，Alfredo”> <= orig-size caption syncdark>>
 
 Violetta 对 Alfredo 的深情只增不减，但她不得不离开 Alfredo 而面对两人未知的未来。深爱、不舍、无奈、急切、痛苦、坚决，无数种情绪交织在一起，令人动容，也将这一主题与深情却坎坷的爱紧紧地联系在了一起。
 
 这个主题第二次再现于第三幕 Violetta 与 Alfredo 重逢后 Violetta 累倒在地，Alfredo 唱起“让我们远离巴黎，我的挚爱”之前，由木管组以较慢的速度和十分空灵的声部配置作变化重复。
 
-!<img image-05.png <= p. 378，木管组的主题再现> <= orig-size caption>>
+!<img image-05.png <= p. 378，木管组的主题再现> <= orig-size caption syncdark>>
 
 实际上并没有直接证据表明 Verdi 在此处的意图是再现“爱情”主题，但这样的旋律线条让人很难不把它与这个主题联系起来。此句位于两个全体休止的小节中间，在剧情中处于重逢的喜悦之后、Alfredo 真切的关怀之前，与离别时 Violetta 的真情流露形成呼应，似乎在此时回忆过往，感叹命运多舛。
 
@@ -48,32 +48,32 @@ Violetta 对 Alfredo 的深情只增不减，但她不得不离开 Alfredo 而�
 
 一个有趣的细节是在序曲后半部分出现的“颤音后二度下行”的短小动机。这个乐汇在序曲中于“爱情”主题后出现，而在上述第二幕中“爱我，Alfredo”旋律出现之前，则将这个动机以及前面的重复跳音堆叠形成了织体，在密集的音符中把情绪推向了高潮，将 Violetta 内心翻涌却难言的苦涩描绘得淋漓尽致——“看见了吗？我正对你微笑呢！”或许这正是在描写 Violetta 的啜泣吧？
 
-!<img image-06.png <= p. 4，序曲中出现的动机> <= orig-size caption>>
-!<img image-07.png <= p. 188，Violetta 的啜泣> <= orig-size caption>>
+!<img image-06.png <= p. 4，序曲中出现的动机> <= orig-size caption syncdark>>
+!<img image-07.png <= p. 188，Violetta 的啜泣> <= orig-size caption syncdark>>
 
 另外，在 Violetta 的这些台词之后（“爱我，Alfredo”呼之欲出之前），不仅可以听到中提琴和大提琴对“爱情”主题的变化先现，也可以找到序曲中“八度下行接同音反复”和“二度上下行”两个乐思的呼应。前者的这份紧张感尤为强烈，这或许寓意着甜蜜的爱情遭受的无情打击，也可以是父亲的威严或是疾病的折磨，让人为之心头一紧。而在序曲中，它经历了短暂的踌躇之后就重新回到了“爱情”主题，颇有一种摆脱苦难后的幸福感。在第三幕将现实的残酷展现无遗后重新体会此处，着实令人唏嘘。如前所述，这首序曲或许是 Violetta 卧床时对过往的回忆，那么她在临终前是不是也为了曾经的这份幸福而感慨过呢？
 
-!<img image-08.png <= p. 189，“八度下行接同音反复”动机与“爱情”主题变化先现> <= orig-size caption>>
-!<img image-09.png <= p. 189，“二度上下行”> <= orig-size caption>>
-!<img image-10.png <= p. 3，序曲中的前述两个动机> <= orig-size caption>>
+!<img image-08.png <= p. 189，“八度下行接同音反复”动机与“爱情”主题变化先现> <= orig-size caption syncdark>>
+!<img image-09.png <= p. 189，“二度上下行”> <= orig-size caption syncdark>>
+!<img image-10.png <= p. 3，序曲中的前述两个动机> <= orig-size caption syncdark>>
 
 而序曲中从“病床”到“爱情”两个主题间的过渡段也可以见到后者的变化先现以及“啜泣”动机的些许影子。
 
-!<img image-11.png <= p. 1，中提琴演奏的“爱情”变化先现以及第一小提琴的二度下行> <= orig-size caption>>
+!<img image-11.png <= p. 1，中提琴演奏的“爱情”变化先现以及第一小提琴的二度下行> <= orig-size caption syncdark>>
 
 除此之外，序曲结尾处的琶音和快速二度上下行也在 Violetta 与 Alfredo 分别的瞬间出现。
 
-!<img image-12.png <= p. 6，序曲结尾的动机> <= orig-size caption>>
-!<img image-13.png <= p. 191，第二幕第一场结尾 Violetta 与 Alfredo 的道别> <= orig-size>>
-!<img image-14.png <= p. 191，第二幕第一场结尾 Violetta 与 Alfredo 的道别> <= orig-size caption>>
+!<img image-12.png <= p. 6，序曲结尾的动机> <= orig-size caption syncdark>>
+!<img image-13.png <= p. 191，第二幕第一场结尾 Violetta 与 Alfredo 的道别> <= orig-size syncdark>>
+!<img image-14.png <= p. 191，第二幕第一场结尾 Violetta 与 Alfredo 的道别> <= orig-size caption syncdark>>
 
 由此看来，“爱情”主题实际上远不止“爱我，Alfredo”的这段旋律，而是包含了上述这些乐汇的一系列反复出现的碎片。这个较大的主题组成了序曲的后半部分。
 
 值得一提的是，在剧中有另一个代表爱情的主题，在 Alfredo 对 Violetta 求爱时出现，暂且称之为“苦乐交融”。虽然在序曲中没有出现，它也是在剧中多次再现的重要主题。
 
-!<img image-15.png <= p. 55，Alfredo“幸福的一天”> <= orig-size caption>>
-!<img image-16.png <= p. 84，Violetta 似乎被 Alfredo 真挚的情感所打动> <= orig-size caption>>
-!<img image-17.png <= p. 352，Violetta 读信时的主题再现> <= orig-size caption>>
+!<img image-15.png <= p. 55，Alfredo“幸福的一天”> <= orig-size caption syncdark>>
+!<img image-16.png <= p. 84，Violetta 似乎被 Alfredo 真挚的情感所打动> <= orig-size caption syncdark>>
+!<img image-17.png <= p. 352，Violetta 读信时的主题再现> <= orig-size caption syncdark>>
 
 与前面展开分析的这个“爱情”主题相比，“苦乐交融”主题强调的则是爱情本身的真挚与纠结，不仅 Violetta 面对求爱时的纠结，而且也有 Alfredo 在发现自己坠入爱河时的踌躇与深思——用“misterioso”形容爱情确实贴切。不过，这个主题终究是象征着幸福的，而在第三幕第四场 Violetta 读信时，它却出现在令人不安的弦乐震音上，最后在 Violetta 一声“太晚了！”的哀叹中支离破碎。“将人生有价值的东西毁灭给人看”大抵如此吧！
 
