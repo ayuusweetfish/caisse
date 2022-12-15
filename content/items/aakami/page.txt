@@ -5,6 +5,8 @@
 
 {{bannerimg=}}illustration20.png
 {{bannerimgpos=}}50,80
+{{bannerimgalt.zh=}}游戏封面图；穿红斗篷的小女孩背对售货机坐在地面，远处是赛博风格的城市。
+{{bannerimgalt.en=}}Cover art of the game; a girl in a red cloak sitting on the floor with her back to a vending machine, with a cyber-styled city skyline in the distance.
 
 {{date=}}2019.15
 

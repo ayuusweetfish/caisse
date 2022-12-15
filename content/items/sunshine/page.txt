@@ -5,6 +5,8 @@
 
 {{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,90
+{{bannerimgalt.zh=}}游戏封面图；黑色斗篷下的吸血鬼坐在阴影中，凝望着远方城市高楼中的阳光。
+{{bannerimgalt.en=}}Cover art of the game; a vampire in a black cloak sitting under the shadows, gazing at the sunlight in the city buildings far away.
 
 {{date=}}2019.10-2019.11
 

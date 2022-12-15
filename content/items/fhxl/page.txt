@@ -5,6 +5,8 @@
 
 {{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,72
+{{bannerimgalt.zh=}}游戏封面图；砖红色的墙里露出许多竹叶，墙外白色的花朵向屋檐探去。
+{{bannerimgalt.en=}}Cover art of the game; bamboo leaves peek out of the red brick walls, with white flowers reaching to the eaves from the outside.
 
 {{date=}}2020.24-2021.08
 
