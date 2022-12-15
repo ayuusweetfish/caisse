@@ -5,13 +5,15 @@
 
 {{bannerimg=}}cover.jpg
 {{bannerimginpage=}}false
+{{bannerimgalt.zh=}}游戏截图，包含提醒服药的闹钟与日历。
+{{bannerimgalt.en=}}Game screenshot containing an alarm clock for medication reminders and a calendar.
 
 {{date=}}2022.15
 
 {{contents.zh=}}
-2022 年由莓辣 MAYLOVE 策划的大型性教育互动展会中的两组互动道具。
+2022 年由莓辣 MAYLOVE 策划、摘星阁 PLUCK 赞助的大型性教育互动展会中的两组互动道具。
 
-!<img IMG_4659.jpg <= 展会标识照片 by 莓辣> <= vertical caption>>
+!<img IMG_4659.jpg <= 展会标识照片 by 摘星阁/莓辣> <= vertical caption>>
 
 !<h1 “我从哪里来” —— 认识避孕>
 
@@ -25,7 +27,7 @@
 
 一个互动装置，用触摸点亮“身体教科书”上身体的不同部位，观察不同的颜色，看到图上的孩子对自己身体的隐私认识。主要负责技术实现部分。
 
-!<img IMG_4661.jpg <= 现场照片 by 莓辣> caption>
+!<img IMG_4661.jpg <= 现场照片 by 摘星阁/莓辣> caption>
 
 硬件是由 STM32 结合红外距离传感器做的，在学校拼好电路之后打包邮寄到深圳。后来时间紧张很焦虑，拉上外援 bw 同学来一起当了几天焊接工。途中还得到了隔壁社团同学的大量帮助和好朋友的支持，努力思考怎么报答中。
 但是远程工作遇到的困难比预想中多得多，自己在这方面的经验也有限，出现了各种难以解决的问题，最后大部分的手势交互还是不太能正常工作，只好改成了常亮的彩灯。好像也白给人添了不少麻烦，挺难过的 ._.

@@ -4,6 +4,8 @@
 {{intro.en=}}A unique cat that does not sleep by daylight.
 
 {{bannerimg=}}cover.png
+{{bannerimgalt.zh=}}游戏封面图；小猫在草丛间行走，地面上散布着许多猫爪印。
+{{bannerimgalt.en=}}Cover art of the game; a kitten walking among the bushes; on the ground scatters lots of paw prints of cats.
 
 {{date=}}2021.23
 

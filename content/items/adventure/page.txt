@@ -6,6 +6,8 @@
 {{bannerimg=}}Tan3.png
 {{bannerimgpos=}}50,25
 {{bannerimginpage=}}false
+{{bannerimgalt.zh=}}简笔画，望向火车车窗外的孩子。
+{{bannerimgalt.en=}}Line sketch of a child looking out of a train’s window.
 
 {{date=}}2022.20
 

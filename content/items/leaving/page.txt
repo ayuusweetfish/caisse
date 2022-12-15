@@ -5,6 +5,8 @@
 
 {{bannerimg=}}IMG_20221130_151158.jpg
 {{!-- GIMP adjust sat. & filter; convert -scale 25% -brightness-contrast 0x-12 -modulate 135,160 }}
+{{bannerimgalt.zh=}}火车车窗外的景色，蓝天下长满树木的平原，由木质栏杆与火车相隔。照片经模糊处理。
+{{bannerimgalt.en=}}Landscape outside a train’s window; a desnely vegetated plain under the blue sky, with wooden railings in the front. A blurred photo.
 
 {{date=}}2022.20
 

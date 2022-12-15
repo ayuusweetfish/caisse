@@ -10,6 +10,8 @@
   content/zzz/cover.jpg
 ]]}}
 {{bannerimg=}}cover.jpg
+{{bannerimgalt.zh=}}片尾动画画面；用剪贴画装点的舞台上，主角之一佑子从幕布后犹疑着探出身。
+{{bannerimgalt.en=}}Footage from the ending animation; on a stage decorated with clip art, Yuuko, one of the main characters, peeks out hesitantly from behind the curtain.
 
 {{date=}}2021.07
 

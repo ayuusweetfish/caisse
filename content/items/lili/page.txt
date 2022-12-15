@@ -11,6 +11,8 @@
 ]]}}
 {{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,25
+{{bannerimgalt.zh=}}电影画面；主人公 Elbe 抱着花束与白色长裙坐在一幅油画画像旁。
+{{bannerimgalt.en=}}Film footage; the protagonist, Elbe, holds a bouquet and a long white dress sitting beside an oil painting portrait.
 
 {{date=}}2021.11
 

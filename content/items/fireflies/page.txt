@@ -4,6 +4,8 @@
 {{intro.en=}}A puzzle game — when you reconnect with your loved one.
 
 {{bannerimg=}}cover.png
+{{bannerimgalt.zh=}}游戏封面图；两朵风铃形状的花在黑暗中散发光亮，其间两只萤火虫沿着圆形的轨迹飞行。
+{{bannerimgalt.en=}}Cover art of the image; two bell-shaped flowers glimmering in the darkness, with two fireflies flying along circular tracks among them.
 
 {{date=}}2021.24, 2022.13
 

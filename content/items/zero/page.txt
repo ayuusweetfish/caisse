@@ -4,6 +4,8 @@
 {{intro.en=}}
 
 {{bannerimg=}}cover.svg
+{{bannerimgalt.zh=}}带有格子背景的纸张图案，包含五行五列方格。
+{{bannerimgalt.en=}}Chequered pattern on paper containing five rows and five columns.
 
 {{date=}}2017.24, 2020.06
 
@@ -69,11 +71,11 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
   <file Heptadekka.org Heptadekka — Organya 序列>
 >
 
-!<img Heptadekka.png>
+!<img Heptadekka.png <= 编辑器界面上用音符拼出的中华人民共和国国庆 70 周年庆祝活动图标。>>
 
 那时一切好像都是那么美好，未来是那么光明；一千个日夜后的现在或许也没有那么糟，理想与信仰也都还在，只是有些事情不再敢去全身心地相信了。
 
-!<img IMG_20190929_125506.jpg>
+!<img IMG_20190929_125506.jpg 地面的井盖上绘制着一架阳光下的飞机，旁边写有“70”与“中华腾飞”字样。>
 
 !<h1 Intersection>
 <date 2020.04>
