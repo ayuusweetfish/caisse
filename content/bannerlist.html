@@ -22,7 +22,7 @@
         style = 'object-position: ' .. x .. '% ' .. y .. '%'
       end
     }}
-    {{ image(file(page.bannerimg, 'items/' .. name), nil, nil, style) }}
+    {{ image(file(page.bannerimg, 'items/' .. name), tr(page.bannerimgalt), nil, style) }}
     <h1{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</h1>
   </div>
   {{@ end }}
