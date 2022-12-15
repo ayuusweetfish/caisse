@@ -33,6 +33,8 @@ A Description
   <title>{{ fulltitle }}</title>
 
   <style></style>
+
+  <link rel='stylesheet' href='/bin/fonts/AaKaiSong.css'>
 </head><body>
 
 {{
@@ -298,8 +300,8 @@ body.dark #top-fleuron { opacity: 45%; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/Livvic-Regular.woff2) format('woff2'),
-       url(/bin/Livvic-Regular.woff) format('woff');
+  src: url(/bin/fonts/Livvic-Regular.woff2) format('woff2'),
+       url(/bin/fonts/Livvic-Regular.woff) format('woff');
 }
 @font-face {
   font-family: 'Livvic';
@@ -307,49 +309,40 @@ body.dark #top-fleuron { opacity: 45%; }
   font-weight: bold;
   font-display: swap;
 {{ boldname = {zh = 'Medium', en = 'SemiBold'} }}
-  src: url(/bin/Livvic-{{ boldname }}.woff2) format('woff2'),
-       url(/bin/Livvic-{{ boldname }}.woff) format('woff');
+  src: url(/bin/fonts/Livvic-{{ boldname }}.woff2) format('woff2'),
+       url(/bin/fonts/Livvic-{{ boldname }}.woff) format('woff');
 }
 @font-face {
   font-family: 'Sono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/Sono_Monospace-Regular.woff2) format('woff2'),
-       url(/bin/Sono_Monospace-Regular.woff) format('woff');
+  src: url(/bin/fonts/Sono_Monospace-Regular.woff2) format('woff2'),
+       url(/bin/fonts/Sono_Monospace-Regular.woff) format('woff');
 }
 @font-face {
   font-family: 'Sono';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/Sono_Monospace-SemiBold.woff2) format('woff2'),
-       url(/bin/Sono_Monospace-SemiBold.woff) format('woff');
-}
-@font-face {
-  font-family: 'AaKaiSong';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/AaKaiSong2.woff2) format('woff2'),
-       url(/bin/AaKaiSong2.woff) format('woff');
+  src: url(/bin/fonts/Sono_Monospace-SemiBold.woff2) format('woff2'),
+       url(/bin/fonts/Sono_Monospace-SemiBold.woff) format('woff');
 }
 @font-face {
   font-family: 'AaKaiSong Punctuations';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/AaKaiSong2.woff2) format('woff2'),
-       url(/bin/AaKaiSong2.woff) format('woff');
-  unicode-range: U+2018-201f;
+  src: url(/bin/fonts/AaKaiSong.punct.woff2) format('woff2');
+  unicode-range: U+2013-2015, U+2018-201f;
 }
 @font-face {
   font-family: 'Ayuu Little Icons — 221202a';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/little-icons.woff2) format('woff2'),
-       url(/bin/little-icons.woff) format('woff');
+  src: url(/bin/fonts/little-icons.woff2) format('woff2'),
+       url(/bin/fonts/little-icons.woff) format('woff');
 }
 :not(pre, code, .tt, .little-icons):lang(en) {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
