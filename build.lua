@@ -478,6 +478,7 @@ local function renderallitems()
 end
 
 copyfile('background.svg')
+copyfile('background-dark.svg')
 copyfile('top-fleuron.svg')
 copyfile('chalk-bg-w.png')
 copyfile('chalk-bg-b.png')

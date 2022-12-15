@@ -20,7 +20,7 @@ Tilde 是一个朴素的音乐编辑与播放工具，或者也可以按照习�
 <link https://cavestory.fandom.com/wiki/Soundtrack Organya> 是日本游戏设计师 <link https://studiopixel.jp/ Pixel> 制作的游戏<link https://www.cavestory.org/ 《洞窟物语》>使用的音乐格式，包含一套 16 音轨的 chiptune 合成器以及一个完善的<link https://github.com/shbow/organya 编辑工具>。
 开发所用语言 <link https://www.warmplace.ru/soft/pixilang/ Pixilang> 是俄罗斯音乐人 Alexander Zolotov 设计的一门程序语言，适合用于跨平台多媒体开发。
 功能已经完善，也支持大量常用编辑操作与快捷键组合。音频合成算法与原本有一定差异（采样拉伸用的是 Lanczos 滤波器，没仔细研究游戏里是什么算法），在低频打击乐器中体现较为明显，不过一时不太有动力去细调了。后来也用它做了<link zero#Heptadekka 一段长长的音乐>！
-!<img icon_large.png 图标 small>
+!<img icon_large.png 图标 <= small syncdark>>
 《洞窟物语》的两位主角名字都是标点符号（结尾才公布名字的主人公和 Curly Brace 小姐姐），所以这个小玩意也跟着用标点符号作名字啦～
 
 {{contents.en=}}

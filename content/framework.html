@@ -94,6 +94,11 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   background: url(/bin/background.svg), hsl(50deg, 100%, 99%) center;
+  color: #181410;
+}
+body.dark {
+  background: url(/bin/background-dark.svg), hsl(36deg, 80%, 7%) center;
+  color: #fefbfa;
 }
 
 #main-grid {
@@ -238,24 +243,25 @@ nav, main, aside, footer { padding: 1rem; }
 {{ hue, sat, val1, val2 = table.unpack(cat.tint) }}
 a.{{cat.name}} { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
 a.{{cat.name}}::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
+body.dark a.{{cat.name}} { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%); }
+body.dark a.{{cat.name}}::after { background: hsla({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val2) * 0.45}}%, 40%); }
 {{@ end}}
 {{ hue, sat, val1, val2 = 240, 40, 50, 85 }}
 a.external { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
 a.external::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
+body.dark a.external { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%); }
+body.dark a.external::after { background: hsla({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val2) * 0.45}}%, 40%); }
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
 #lang-container > summary { cursor: pointer; }
-.pastel.miscellaneous {
-  color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
-}
-.pastel.miscellaneous::after {
-  background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%);
-}
+.pastel.miscellaneous { color: hsl({{hue}}deg, 0%, {{val1}}%); }
+.pastel.miscellaneous::after { background: hsla({{hue}}deg, 0%, {{val2}}%, 90%); }
+body.dark .pastel.miscellaneous { color: hsl({{hue}}deg, 0%, {{100 - (100 - val1) * 0.45}}%); }
+body.dark .pastel.miscellaneous::after { background: hsla({{hue}}deg, 0%, {{100 - (100 - val2) * 0.45}}%, 40%); }
 
 {{@ curcat}}
 {{ hue, sat, val1, val2 = table.unpack(cats[curcat].tint) }}
-main header h1 {
-  color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%);
-}
+main header h1 { color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%); }
+body.dark main header h1 { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.6}}%, {{val1 + (100 - val1) * 0.7}}%); }
 {{@ end}}
 
 footer > span:first-child > *:not(:last-child)::after {
@@ -276,6 +282,7 @@ main {
   z-index: -1;
   filter: hue-rotate({{hue}}deg);
 }
+body.dark #top-fleuron { opacity: 45%; }
 
 @media (max-width: 115vh), (max-width: 48rem) {
   #top-fleuron {
@@ -344,9 +351,6 @@ main {
   src: url(/bin/little-icons.woff2) format('woff2'),
        url(/bin/little-icons.woff) format('woff');
 }
-body {
-  color: #181410;
-}
 :not(pre, code, .tt, .little-icons):lang(en) {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
 }
@@ -402,6 +406,9 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term sup.season-7::after { content: '\2744'; transform: rotate(8deg) scale(0.97); }
 .date-term sup.season-8::after { content: '\1f9ca'; transform: rotate(5deg); }
 
+body.dark a.date-term-link::after { background: rgb(128, 128, 128); }
+body.dark .date-term { color: rgb(180, 180, 180); }
+
 div[role='separator'] {
   block-size: 1.5em;
   margin-block: 1.5em;
@@ -437,6 +444,9 @@ div.item-separator:nth-child(5n+3) { background-position-x: 0em; }
 div.item-separator:nth-child(5n+4) { background-position-x: -8em; }
 div.item-separator:nth-child(5n+5) { background-position-x: 8em; }
 
+body.dark div[role='separator']
+{ opacity: 60%; }
+
 .kaomoji {
   display: inline-block;
   vertical-align: middle;
@@ -445,6 +455,7 @@ div.item-separator:nth-child(5n+5) { background-position-x: 8em; }
   block-size: 1em;
   inline-size: auto;
 }
+body.dark .kaomoji { filter: invert(); }
 
 table.file-table {
   margin-block: 1em;
@@ -483,7 +494,7 @@ section h2 { font-size: 1.14rem; margin-block-end: 1rem; }
 section h3 { font-size: 1.08rem; margin-block-end: 1rem; }
 blockquote {
   margin-block: -0.1em;
-  margin-inline: 1em 2em;
+  margin-inline: 1em;
   padding-block: 0.6em;
   padding-inline: 1em;
   border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{val1}}%);
@@ -492,8 +503,9 @@ blockquote {
 blockquote *:first-child { margin-block-start: 0; }
 blockquote *:last-child { margin-block-end: 0; }
 blockquote + blockquote { margin-block-start: 0.4em; }
-@media (max-width: 115vh), (max-width: 48rem) {
-  blockquote { margin-inline-end: 1em; }
+body.dark blockquote {
+  border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%);
+  background: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%, 8%);
 }
 
 span:lang(lat) { font-style: italic; }
@@ -518,6 +530,8 @@ span:lang(lat) { font-style: italic; }
   color: #886;
   display: block;
 }
+
+body.dark img.syncdark { filter: invert(); }
 </style>
 
 <script>
