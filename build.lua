@@ -482,19 +482,7 @@ copyfile('background-dark.svg')
 copyfile('top-fleuron.svg')
 copyfile('chalk-bg-w.png')
 copyfile('chalk-bg-b.png')
-local fontfiles = {
-  'Livvic-Regular',
-  'Livvic-Medium',
-  'Livvic-SemiBold',
-  'Sono_Monospace-Regular',
-  'Sono_Monospace-SemiBold',
-  'AaKaiSong2',
-  'little-icons',
-}
-for _, fontfile in ipairs(fontfiles) do
-  copyfile(fontfile .. '.woff2')  -- woff2_compress
-  copyfile(fontfile .. '.woff')   -- sfnt2woff
-end
+copydir('fonts')
 
 copyfile('divider-end.svg')
 copyfile('divider-fleuron-cloudy.svg')
