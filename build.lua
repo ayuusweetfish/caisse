@@ -123,13 +123,14 @@ local function fileinfo(src)
   return filedb[src]
 end
 
-local function fxhash(s)
+local function basehash(s)
   local h = 0
   for i = 1, #s do
-    h = ((h << 5) ~ string.byte(s, i)) * 0x517cc1b727220a95
+    h = h * 997 + string.byte(s, i)
   end
-  return string.format('%016x', h)
+  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
 end
+caisse.envadditions.basehash = basehash
 
 local function fullpath(path, wd)
   if path:sub(1, 1) == '/' then
@@ -415,7 +416,7 @@ markupfns = {
   end,
   kao = function (text)
     return '<span class="kaomoji">' ..
-      io.open('misc/kaomoji/gen/moji-' .. fxhash(text) .. '.svg'):read('a') ..
+      io.open('misc/kaomoji/gen/moji-' .. basehash(text) .. '.svg'):read('a') ..
       '</span>'
   end,
   gridtable = function (class, ...)
