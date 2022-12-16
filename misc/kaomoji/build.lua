@@ -34,12 +34,12 @@ local template3 =
 </svg>
 ]]
 
-local function fxhash(s)
+local function basehash(s)
   local h = 0
   for i = 1, #s do
-    h = ((h << 5) ~ string.byte(s, i)) * 0x517cc1b727220a95
+    h = h * 997 + string.byte(s, i)
   end
-  return string.format('%016x', h)
+  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
 end
 
 local htmlescapelookup = {
@@ -60,7 +60,7 @@ while true do
     -- Output
     curline = table.concat(curline)
     tspans = table.concat(tspans)
-    local hash = fxhash(curline)
+    local hash = basehash(curline)
     -- Write an SVG with text
     local textsvgfile = outdir .. '/moji-' .. hash .. '-text.svg'
     local pathsvgfile = outdir .. '/moji-' .. hash .. '.svg'
