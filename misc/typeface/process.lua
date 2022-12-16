@@ -1,8 +1,15 @@
--- Files to be prepared:
---  AaKaiSong2WanZi2.charset.txt
---  common.txt
---  stray.txt
--- Then run without arguments or input: lua process.lua
+--[[
+Files to be prepared:
+  AaKaiSong2WanZi2.charset.txt
+  common.txt
+  stray.txt
+Then run without arguments or input:
+  lua process.lua
+To copy:
+  for i in AaKaiSong.*.ttf; do woff2_compress $i; rm $i; done
+  rm ../../content/fonts/AaKaiSong.*
+  mv AaKaiSong.*.woff2 ../../content/fonts
+]]
 
 local codepoints = {}
 local ncodepoints = 0
@@ -41,15 +48,15 @@ function addsubset(subset, name, skipcss)
   if not succeeded then os.exit() end
   if not skipcss then
     css:write(string.format([[
-  @font-face {
-    font-family: 'AaKaiSong';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/bin/fonts/AaKaiSong.%s.woff2) format('woff2');
-    unicode-range: %s;
-  }
-  ]],
+@font-face {
+  font-family: 'AaKaiSong';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/fonts/AaKaiSong.%s.woff2) format('woff2');
+  unicode-range: %s;
+}
+]],
     name, table.concat(terms, ',')))
   end
 end
@@ -95,23 +102,7 @@ for i = 1, #cpseq do
   subset[#subset + 1] = cpseq[i]
   codepoints[cpseq[i]] = nil
   if sep:byte(i) == sepmarker then
-    addsubset(subset)
+    addsubset(subset, 'common-' .. basehash(table.concat(subset, ',')))
     subset = {}
   end
 end
-
--- Punctuations
-local punctsubset = {}
-for _, range in ipairs({
-  {0x2013, 0x2015},
-  {0x2018, 0x201f},
-  {0x3001, 0x301f},
-}) do
-  local a, b = table.unpack(range)
-  local subset = {}
-  for i = a, b do if codepoints[i] then
-    codepoints[i] = nil
-    punctsubset[#punctsubset + 1] = i
-  end end
-end
-addsubset(punctsubset, 'punct')
