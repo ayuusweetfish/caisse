@@ -1,3 +1,9 @@
+/*
+  g++ solve.cc -std=c++11 -O2
+  find ../../build -name "*.html" | ./a.out > common.txt
+  find ../../build -name "*.html" | INC=1 ./a.out > stray.txt
+*/
+
 #include <cstdint>    // uint64_t
 #include <cstdio>     // fgets, fopen, fgetc
 #include <cstring>    // memset, memmove, strlen
@@ -10,21 +16,9 @@
 #include <utility>    // pair
 #include <vector>
 
-/*
-static const int N = 30;
-static int activepenalty = 1;
-static int segpenalty = 2;
-
-101010101010101010101010101010
-111111111111111000000000000000
-111000111000111000111000111000
-011010011001100110011001100110
-111111111110011001100000000000
-*/
-
 static const int MaxN = 2000;
 static int N = 0;
-static int activepenalty = 15;
+static int activepenalty = 5;
 static int segpenalty = 0;
 static int segminsize = 50;
 
@@ -164,6 +158,9 @@ static inline void printutf8(codepoint c)
 
 int main()
 {
+  bool incremental = (getenv("INC") != NULL);
+  if (incremental) fprintf(stderr, "Incremental mode: common charset will not be updated\n");
+
   // Charset
   // otfinfo -u AaKaiSong2WanZi2.ttf | perl -pe 's/^uni([0-9A-F]+) .*$/\1/g' > AaKaiSong2WanZi2.charset.txt
   std::unordered_set<codepoint> charset;
@@ -177,11 +174,13 @@ int main()
   std::map<codepoint, int> cpcount;
   std::vector<codepoint> cpseq;
   std::vector<std::unordered_set<codepoint>> docs;
+  std::vector<char *> docnames;
   char s[1024];
   while (fgets(s, sizeof s, stdin)) {
     size_t len = strlen(s);
     if (s[len - 1] == '\n') s[len - 1] = '\0';
     FILE *f = fopen(s, "r");
+    docnames.push_back(strdup(s));
 
     std::unordered_set<int> cpset;
     while (true) {
@@ -205,10 +204,28 @@ int main()
   }
   fprintf(stderr, "#glyphs = %zu\n", cpcount.size());
 
+  int K = docs.size();
+  fprintf(stderr, "#documents = %d\n", K);
+
+  if (incremental) {
+    // Read previously saved common charset
+    FILE *f = fopen("common.txt", "r");
+    std::unordered_set<codepoint> commoncps;
+    codepoint c;
+    while ((c = readutf8(f)) != '\n') commoncps.insert(c);
+
+    for (int i = 0; i < K; i++) {
+      printf("%s\t", docnames[i]);
+      for (const auto c : docs[i])
+        if (commoncps.count(c) == 0) printf(" %04x", c);
+      printf("\n");
+    }
+    return 0;
+  }
+
   std::unordered_map<codepoint, int> cpid;
   // first = codepoint, second = count
-  for (const auto &entry : cpcount) if (entry.second >= 2) {
-    // printutf8(entry.first); printf(" %d\n", entry.second);
+  for (const auto &entry : cpcount) if (entry.second >= 3) {
     cpid[entry.first] = cpseq.size();
     cpseq.push_back(entry.first);
   }
@@ -219,9 +236,6 @@ int main()
     fprintf(stderr, "MaxN = %d, please recompile\n", MaxN);
     return 1;
   }
-
-  int K = docs.size();
-  fprintf(stderr, "#rows = %d\n", K);
 
   for (int i = 0; i < K; i++) {
     arrayN<bool> row(false);
@@ -280,6 +294,14 @@ int main()
       genome[n_pop + i].val = eval(genome[n_pop + i].chro);
     }
     std::sort(genome, genome + n_pop + n_reprod);
+    if (it / (n_its / 20) != (it + 1) / (n_its / 20)) {
+      for (int i = n_pop / 2; i < n_pop; i++) {
+        for (int j = 0; j < N; j++) genome[i].chro[j] = j;
+        std::shuffle(genome[i].chro.begin(), genome[i].chro.end(), g);
+        genome[i].hash = phash(genome[i].chro);
+        genome[i].val = eval(genome[i].chro);
+      }
+    }
     fprintf(stderr, "it = %4d |", it);
     for (int i = 0; i < 10; i++) fprintf(stderr, " %6d", genome[i].val);
     fprintf(stderr, "\n");

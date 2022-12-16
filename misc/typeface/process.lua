@@ -1,4 +1,8 @@
--- cat solve.txt | lua %
+-- Files to be prepared:
+--  AaKaiSong2WanZi2.charset.txt
+--  common.txt
+--  stray.txt
+-- Then run without arguments or input: lua process.lua
 
 local codepoints = {}
 local ncodepoints = 0
@@ -8,24 +12,15 @@ for line in io.open('AaKaiSong2WanZi2.charset.txt'):lines() do
 end
 print('#codepoints', ncodepoints)
 
-local freqs = {}
-for line in io.open('freqs.tsv'):lines() do
-  local p1 = line:find('\t')
-  local p2 = line:find('\t', p1 + 1)
-  freqs[#freqs + 1] = utf8.codepoint(line:sub(p1 + 1, p2 - 1))
-end
-print('#freqs', #freqs)
-
 local css = io.open('AaKaiSong.css', 'w')
 
 local nsubset = 0
-function addsubset(subset, name)
+function addsubset(subset, name, skipcss)
   if name == nil then
     nsubset = nsubset + 1
     name = string.format('%03d', nsubset)
   end
   table.sort(subset)
-  -- for j = 1, n do print(string.format('%x', subset[j])) end
   local terms = {}
   local j = 1
   while j <= #subset do
@@ -44,24 +39,49 @@ function addsubset(subset, name)
     'pyftsubset AaKaiSong2WanZi2.ttf --unicodes=%s --output-file=AaKaiSong.%s.ttf',
     table.concat(terms, ','), name))
   if not succeeded then os.exit() end
-  css:write(string.format([[
-@font-face {
-  font-family: 'AaKaiSong';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/fonts/AaKaiSong.%s.woff2) format('woff2');
-  unicode-range: %s;
-}
-]],
-  name, table.concat(terms, ',')))
+  if not skipcss then
+    css:write(string.format([[
+  @font-face {
+    font-family: 'AaKaiSong';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/bin/fonts/AaKaiSong.%s.woff2) format('woff2');
+    unicode-range: %s;
+  }
+  ]],
+    name, table.concat(terms, ',')))
+  end
+end
+
+local function basehash(s)
+  local h = 0
+  for i = 1, #s do
+    h = h * 997 + string.byte(s, i)
+  end
+  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+end
+
+-- Page-curated subset
+for line in io.open('stray.txt'):lines() do
+  local tabpos = line:find('\t')
+  local docpath = line:sub(1, tabpos - 1)
+  local cps = {}
+  for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
+    cps[#cps + 1] = tonumber(w, 16)
+  end
+  docpath = docpath:gsub('^.+build/(.+)/index.html$', '%1')
+  print(docpath)
+  addsubset(cps, 'stray-' .. basehash(docpath), true)
 end
 
 -- Precalculated subset
-local seq = io.read('l')
-local sep = io.read('l')
+local fcommon = io.open('common.txt')
+local seq = fcommon:read('l')
+local sep = fcommon:read('l')
+fcommon:close()
 local cpseq = {utf8.codepoint(seq, 1, #seq)}
-print('#recorded codepoints = ', #cpseq)
+print('#codepoints in common set = ', #cpseq)
 if #sep ~= #cpseq then
   print('#split sequence = ', #sep)
   print('Invalid, please check')
@@ -80,31 +100,6 @@ for i = 1, #cpseq do
   end
 end
 
-print('Frequency ordered')
--- Subset sizes
-local breakpoints = {
-}
-local n = 0
-while n < 4000 do
-  if n < 1000 then n = n + 1000
-  elseif n < 2000 then n = n + 500
-  else n = n + 50 end
-  breakpoints[#breakpoints + 1] = n
-end
-for i = 1, #breakpoints do
-  local subset = {}
-  for j = (breakpoints[i - 1] or 0) + 1, breakpoints[i] do
-    if codepoints[freqs[j]] then
-      subset[#subset + 1] = freqs[j]
-      codepoints[freqs[j]] = nil
-    end
-  end
-  addsubset(subset)
-end
-
--- Remove unneeded glyphs
-for i = 1, 256 do codepoints[i] = nil end
-
 -- Punctuations
 local punctsubset = {}
 for _, range in ipairs({
@@ -120,17 +115,3 @@ for _, range in ipairs({
   end end
 end
 addsubset(punctsubset, 'punct')
-
-local remains = {}
-for k, _ in pairs(codepoints) do remains[#remains + 1] = k end
-table.sort(remains)
-local remainssubsetsize = 100
-for i = 1, #remains, remainssubsetsize do
-  local subset = {}
-  for j = i, math.min(#remains, i + remainssubsetsize - 1) do
-    subset[#subset + 1] = remains[j]
-  end
-  addsubset(subset)
-end
-
-css:close()
