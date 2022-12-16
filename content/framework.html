@@ -33,8 +33,6 @@ A Description
   <title>{{ fulltitle }}</title>
 
   <style></style>
-
-  <link rel='stylesheet' href='/bin/fonts/AaKaiSong.css'>
 </head><body>
 
 {{
@@ -329,20 +327,13 @@ body.dark #top-fleuron { opacity: 45%; }
        url(/bin/fonts/Sono_Monospace-SemiBold.woff) format('woff');
 }
 @font-face {
-  font-family: 'AaKaiSong Punctuations';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/fonts/AaKaiSong.punct.woff2) format('woff2');
-  unicode-range: U+2013-2015, U+2018-201f;
-}
-@font-face {
   font-family: 'AaKaiSong';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url(/bin/fonts/AaKaiSong.stray-{{ basehash(savepath) }}.woff2) format('woff2');
 }
+{{ AaKaiSong_css }}
 @font-face {
   font-family: 'Ayuu Little Icons — 221202a';
   font-style: normal;
@@ -355,7 +346,7 @@ body.dark #top-fleuron { opacity: 45%; }
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
 }
 :not(pre, code, .tt, .little-icons):lang(zh) {
-  font-family: 'AaKaiSong Punctuations', 'Livvic', 'AaKaiSong', sans-serif;
+  font-family: 'AaKaiSong', 'Livvic', sans-serif;
 }
 pre, code, .tt {
   font-family: 'Sono', monospace;

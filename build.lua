@@ -189,6 +189,9 @@ local function renderdate(datestr, nolink)
 end
 caisse.envadditions.renderdate = renderdate
 
+local AaKaiSong_css = io.open('misc/typeface/AaKaiSong.css'):read('a')
+caisse.envadditions.AaKaiSong_css = AaKaiSong_css
+
 local cats = render('categories.txt').cats
 
 local itemreg = {}
