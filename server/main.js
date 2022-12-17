@@ -1,3 +1,5 @@
+import { readAll } from 'https://deno.land/std@0.168.0/streams/read_all.ts'
+
 const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
 const port = +Deno.env.get('PORT') || 1123
@@ -12,8 +14,11 @@ const mime = (s) => {
   return 'application/octet-stream'
 }
 
-const staticFile = async (req, path) => {
-  const headers = new Headers()
+const setCookie = (headers, key, value) => {
+  headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Max-Age=2592000`)
+}
+
+const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
   headers.set('Accept-Ranges', 'bytes')
   headers.set('Date', new Date().toUTCString())
@@ -50,19 +55,60 @@ const staticFile = async (req, path) => {
   headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
   headers.set('Content-Type', mime(path))
 
-  return new Response(file.readable, {
-    status,
-    headers,
-  })
+  if (path.endsWith('.html')) {
+    let text = new TextDecoder().decode(await readAll(file))
+    text = text.replace(/<!-- \((.+?)\)\s*(.+?)\s*-->/gs, (_, key, value) => {
+      if (key === 'dark') {
+        const spacePos = value.indexOf(' ')
+        if (spacePos !== -1)
+          return (opts.isDark ? value.substring(0, spacePos) : value.substring(spacePos + 1))
+        else
+          return (opts.isDark ? value : '')
+      } else if (key == 'timeofday') {
+        return value.split('\n')[0].substring(3)
+      }
+    })
+    return new Response(text, { status, headers })
+  } else {
+    return new Response(file.readable, { status, headers })
+  }
 }
 
 const serveReq = async (req) => {
   const url = new URL(req.url)
   if (req.method === 'GET') {
-    if (url.pathname === '/') {
-      return await staticFile(req, '../build/index/index.html')
+    const opts = {}
+    const headers = new Headers()
+    // Parse cookies
+    const cookies = {}
+    const cookiesStr = req.headers.get('Cookie')
+    const regexp = /([A-Za-z0-9-_]+)=(.+?)(?:(?=;)|$)/g
+    let result
+    while ((result = regexp.exec(cookiesStr)) !== null) {
+      const [_, key, value] = result
+      cookies[decodeURIComponent(key)] = decodeURIComponent(value)
     }
-    return await staticFile(req, '../build' + url.pathname);  // XXX: Don't do this
+    opts.isDark = (cookies['dark'] === '1')
+    // Query string
+    if (url.search !== '') {
+      const map = {}
+      const regexp = /([A-Za-z0-9-_]+)=(.+?)(?:(?=&)|$)/g
+      let result
+      while ((result = regexp.exec(url.search)) !== null) {
+        const [_, key, value] = result
+        map[decodeURIComponent(key)] = decodeURIComponent(value)
+      }
+      if (map['dark'] !== undefined) {
+        const isDarkNew = (map['dark'] === '1')
+        setCookie(headers, 'dark', isDarkNew ? '1' : '0')
+        opts.isDark = isDarkNew
+      }
+    }
+    // Routes
+    if (url.pathname === '/') {
+      return await staticFile(req, opts, headers, '../build/index/index.html')
+    }
+    return await staticFile(req, opts, headers, '../build' + url.pathname);  // XXX: Don't do this
   }
   return new Response('hello')
 }
