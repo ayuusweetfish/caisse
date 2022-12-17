@@ -18,6 +18,36 @@ const setCookie = (headers, key, value) => {
   headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Max-Age=2592000`)
 }
 
+const timeOfDay = () => {
+  const timestampMinute = Math.floor(Date.now() + 3600000 * 8) / 60000
+  const minuteInDay = timestampMinute % 1440
+  const day = (timestampMinute - minuteInDay) / 1440
+
+  // Take the midpoint of the minute for period calculation
+  // in order to avoid intricacies of rounding
+  let period = Math.round((minuteInDay + 0.5) / 120) % 12
+  let phase = ((minuteInDay - period * 120) + 60) % 120   // [0, 120)
+  // Offset by 1/4 period and normalize
+  if ((phase += 30) >= 120) {
+    phase -= 120
+    period = (period + 1) % 12
+  }
+  // [0, 1/2): Linearly ramped-up probability
+  // [1/2, 1): Deterministic
+  if (phase >= 60) {
+    return period
+  } else {
+    // LCG
+    let seed = timestampMinute & 0xffffffff   // Works for 8166 years
+    let rand = 0
+    for (let i = 0; i < 5; i++) {
+      seed = (seed * 1664525 + 1013904223) & 0x7fffffff // Avoid negative values
+      rand ^= seed
+    }
+    return (rand % 60 <= phase ? period : (period + 11) % 12)
+  }
+}
+
 const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
   headers.set('Accept-Ranges', 'bytes')
@@ -57,7 +87,8 @@ const staticFile = async (req, opts, headers, path) => {
 
   if (path.endsWith('.html')) {
     let text = new TextDecoder().decode(await readAll(file))
-    text = text.replace(/<!-- \((.+?)\)\s*(.+?)\s*-->/gs, (_, key, value) => {
+    const timeOfDayCur = timeOfDay()
+    text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
       if (key === 'dark') {
         const spacePos = value.indexOf(' ')
         if (spacePos !== -1)
@@ -65,7 +96,7 @@ const staticFile = async (req, opts, headers, path) => {
         else
           return (opts.isDark ? value : '')
       } else if (key == 'timeofday') {
-        return value.split('\n')[0].substring(3)
+        return value.split('\n')[timeOfDayCur].substring(3)
       }
     })
     return new Response(text, { status, headers })
