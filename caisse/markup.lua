@@ -60,8 +60,10 @@ local function render(s, fns)
     local topitems = levels[#levels].items
     -- Top as in top of a the stack (innermost)
     if not levels[#levels].verb and s:sub(cur, cur) == '<' then
+      local text = s:sub(last + 1, cur - 1)
+      if #levels == 1 then text = texttransform(text) end
       topitems[#topitems + 1] = {
-        text = texttransform(s:sub(last + 1, cur - 1)),
+        text = text,
         unit = false,
       }
       local obrkts, fnname, endpos = s:match('^<*()%s*([^%s>]*)()', cur)
@@ -101,7 +103,7 @@ local function render(s, fns)
         local outitems = levels[#levels].items
         local outverb = levels[#levels].verb
         local text = s:sub(last + 1, cur - 1)
-        if not outverb then text = texttransform(text) end
+        if #levels == 1 then text = texttransform(text) end
         topitems[#topitems + 1] = {
           text = text,
           unit = false,
