@@ -19,6 +19,13 @@
 </section>
 {{@ end }}
 
+{{@ usemath == 'true' }}
+<link rel='stylesheet' href='/bin/fonts/katex/katex.css'>
+<style>
+.item-contents .katex { font-size: 1rem; }
+</style>
+{{@ end }}
+
 <style>
 .item-contents p {
   text-indent: 2em;

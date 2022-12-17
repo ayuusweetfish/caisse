@@ -326,6 +326,7 @@ body.dark #top-fleuron { opacity: 45%; }
   src: url(/bin/fonts/Sono_Monospace-SemiBold.woff2) format('woff2'),
        url(/bin/fonts/Sono_Monospace-SemiBold.woff) format('woff');
 }
+{{@ distbuild }}
 @font-face {
   font-family: 'AaKaiSong';
   font-style: normal;
@@ -334,6 +335,17 @@ body.dark #top-fleuron { opacity: 45%; }
   src: url(/bin/fonts/AaKaiSong.stray-{{ basehash(savepath) }}.woff2) format('woff2');
 }
 {{ AaKaiSong_css }}
+{{@ end }}
+{{@ not distbuild }}
+@font-face {
+  font-family: 'AaKaiSong';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/fonts/AaKaiSong2-full.woff2) format('woff2');
+  unicode-range: U+0800-FFFF;
+}
+{{@ end }}
 @font-face {
   font-family: 'Ayuu Little Icons — 221202a';
   font-style: normal;
@@ -342,12 +354,14 @@ body.dark #top-fleuron { opacity: 45%; }
   src: url(/bin/fonts/little-icons.woff2) format('woff2'),
        url(/bin/fonts/little-icons.woff) format('woff');
 }
-:not(pre, code, .tt, .little-icons):lang(en) {
+body:lang(en), *[lang='en'] {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
 }
-:not(pre, code, .tt, .little-icons):lang(zh) {
+body:lang(zh), *[lang='zh'] {
   font-family: 'AaKaiSong', 'Livvic', sans-serif;
 }
+*[lang='lat'] { font-style: italic; }
+
 pre, code, .tt {
   font-family: 'Sono', monospace;
   font-size: 0.9rem;
@@ -479,6 +493,9 @@ ul > li::before {
   content: '–';
   margin-inline: -1.25em 0.75em;
 }
+ul.compact {
+  margin-block-start: -1em;
+}
 
 section h1 { font-size: 1.2rem; margin-block-end: 1.08rem; }
 section h2 { font-size: 1.14rem; margin-block-end: 1rem; }
@@ -498,8 +515,6 @@ body.dark blockquote {
   border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%);
   background: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%, 8%);
 }
-
-span:lang(lat) { font-style: italic; }
 
 .no-break {
   display: inline-block;

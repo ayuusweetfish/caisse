@@ -6,6 +6,8 @@ log(`Running at http://localhost:${port}/`)
 
 const mime = (s) => {
   if (s.endsWith('.html')) return 'text/html; charset=UTF-8'
+  if (s.endsWith('.css')) return 'text/css; charset=UTF-8'
+  if (s.endsWith('.svg')) return 'image/svg+xml'
   if (s.endsWith('.mp4')) return 'media/mp4'
   return 'application/octet-stream'
 }
