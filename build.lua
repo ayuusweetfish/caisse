@@ -241,6 +241,14 @@ local htmlescapelookup = {
   ['&'] = '&amp;',
 }
 local function htmlescape(s)
+--[[
+  local cps = {utf8.codepoint(s, 1, #s)}
+  for i = 1, #cps do
+    if cps[i] == utf8.codepoint('!') then cps[i] = '!'
+    else cps[i] = string.format('&#x%x;', cps[i]) end
+  end
+  return table.concat(cps)
+]]
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
 caisse.envadditions.htmlescape = htmlescape
@@ -340,7 +348,7 @@ markupfns = {
     return '<span class="no-break">' .. text .. '</span>'
   end,
   rawlink = function (href, text)
-    return '<a href="' .. href .. '">' .. text .. '</a>'
+    return '<a href="' .. href .. '">' .. htmlescape(text) .. '</a>'
   end,
   extlink = function (href, text)
     return '<a class="pastel external" href="' .. href .. '" target="_blank">'
@@ -394,13 +402,13 @@ markupfns = {
     if extrainfo then
       extrainfo = extrainfo(table.unpack(fileinfo(fullpath).args))
     end
-    return '<tr><td>' .. text .. '</td>' ..
+    return '<tr><td>' .. htmlescape(text) .. '</td>' ..
       '<td><a class="pastel ' .. item.cat .. '" href="' ..
       uriescape(fileurl) ..  '">' ..
       '<span class="little-icons">&#x' .. string.format('%x', icon) ..
-      ';</span><strong class="file-table-name">' .. basename .. '</strong>(' ..
-      sizestring(size) ..
-      (extrainfo and (', ' .. extrainfo) or '') .. ')</a></td>'
+      ';</span><strong class="file-table-name">' .. htmlescape(basename) .. '</strong>(' ..
+      htmlescape(sizestring(size) ..
+        (extrainfo and (', ' .. extrainfo) or '')) .. ')</a></td>'
   end,
   h1 = function (text) return heading('h1', text) end,
   h2 = function (text) return heading('h2', text) end,

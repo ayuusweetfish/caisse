@@ -12,19 +12,19 @@
 
 按数学中常见的习惯，<math n> 维复空间 <math \mathbb{C}^n> 上的标准内积 <math \langle \cdot, \cdot \rangle> 定义为：
 
-!<dispmath=
+!<dispmath
 \langle \mathbf{u}, \mathbf{v} \rangle = \sum_{k=1}^n u_k \overline {v_k\raisebox{0.67em}{}}
 >
 
 而同时有 Hermite 二次型的定义：
 
-!<dispmath=
+!<dispmath
 f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em}{}} u_k
 >
 
 这两个本该密切相关的定义，却在不同的元素上取了共轭 —— 对于内积，是后面的 <math v_k>；对于二次型，是前面的 <math u_j>。
 
-当然也可以采用另一组定义，在此定义下 <math \langle \mathbf{u}, \mathbf{v} \rangle> 和 <math f(\mathbf{u})> 中取共轭的元素都变成了另一个，上面看到的「不一致性」仍然存在。
+当然也可以采用另一组定义，在此定义下 <math \langle \mathbf{u}, \mathbf{v} \rangle> 和 <math f(\mathbf{u})> 中取共轭的元素都变成了另一个，上面看到的“不一致性”仍然存在。
 
 于是在这个奇怪的问题上纠结了很久，有了一些奇妙的想法，详细记录在此。
 
@@ -42,9 +42,9 @@ f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em
 
 事实上，<math \langle \mathbf{\mathbf{u}}, \mathbf{v} \rangle = \mathbf{v}^\mathsf{H}\mathbf{u}>，而 <math f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u}>，所以它们同为广义的二次型 <math Q_\mathbf{A}(\mathbf{u}, \mathbf{v}) = \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}> 的特例。
 
-至于取共轭的「位置」不同，不过是写法造成的假象而已。改成下面的形式便一目了然。
+至于取共轭的“位置”不同，不过是写法造成的假象而已。改成下面的形式便一目了然。
 
-!<dispmath=
+!<dispmath
 \begin{aligned}
 \langle \mathbf{u}, \mathbf{v} \rangle = \mathbf{v}^\mathsf{H}\mathbf{I}\mathbf{u} &= \sum_{j=1}^n \sum_{k=1}^n \overline {v_j\raisebox{0.67em}{}} \delta_{j,k} u_k \\
 
@@ -70,32 +70,32 @@ f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u} &= \sum_{j=1}^n \sum_{
 
 不妨回到标准内积，试着把表达式中的实部与虚部分开。
 
-!<dispmath=
+!<dispmath
 \begin{aligned}
 \operatorname{Re} {\langle \mathbf{u}, \mathbf{v} \rangle} = \sum_{k=1}^n \operatorname{Re} u_k \operatorname{Re} v_k + \operatorname{Im} u_k \operatorname{Im} v_k \\
 \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle} = \sum_{k=1}^n \operatorname{Im} u_k \operatorname{Re} v_k - \operatorname{Re} u_k \operatorname{Im} v_k
 \end{aligned}
 >
 
-可以发现，实部 <math \operatorname{Re} {\langle \mathbf{u}, \mathbf{v} \rangle}> 相当于 <math n> 个 <math \mathbb{R}^2> 上的点积之和；而虚部 <math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle}> 则等于 <math n> 个 <math \mathbb{R}^2> 上的叉积之和，刻画了由 <math \mathbf{v}> 到 <math \mathbf{u}> 在「<math n> 维复空间中的旋转角度」—— 例如当两个向量每一维分量的幅角均相等时，<math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle} = 0>；当 <math \mathbf{u}> 每一维分量的幅角均为 <math \mathbf{v}> 对应分量逆时针旋转 <math 90> 度时，<math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle}> 取到最大值 <math \Vert \mathbf{u} \Vert \cdot \Vert \mathbf{v} \Vert>。
+可以发现，实部 <math \operatorname{Re} {\langle \mathbf{u}, \mathbf{v} \rangle}> 相当于 <math n> 个 <math \mathbb{R}^2> 上的点积之和；而虚部 <math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle}> 则等于 <math n> 个 <math \mathbb{R}^2> 上的叉积之和，刻画了由 <math \mathbf{v}> 到 <math \mathbf{u}> 在“<math n> 维复空间中的旋转角度”—— 例如当两个向量每一维分量的幅角均相等时，<math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle} = 0>；当 <math \mathbf{u}> 每一维分量的幅角均为 <math \mathbf{v}> 对应分量逆时针旋转 <math 90> 度时，<math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle}> 取到最大值 <math \Vert \mathbf{u} \Vert \cdot \Vert \mathbf{v} \Vert>。
 
-而在更一般的内积定义中，自然也希望结果的实部和虚部分别有对应的性质。共轭对称性正是来源于叉积的反交换律，或者更广义的「复空间中的旋转角度」之反交换律。
+而在更一般的内积定义中，自然也希望结果的实部和虚部分别有对应的性质。共轭对称性正是来源于叉积的反交换律，或者更广义的“复空间中的旋转角度”之反交换律。
 
-这么看，「共轭」的性质确实很优秀呢。
+这么看，“共轭”的性质确实很优秀呢。
 
 !<h2 为什么共轭取在第二个向量上？>
 
 要解决这个问题，不得不探寻内积的另一层本质，而从最简单的点积开始总是不会错的。点积的本质是什么？
 
-当然可以说，它表示「<math \mathbf{u}> 在 <math \mathbf{v}> 上的投影乘上 <math \mathbf{v}> 的原长」，但这并不够深入。
+当然可以说，它表示“<math \mathbf{u}> 在 <math \mathbf{v}> 上的投影乘上 <math \mathbf{v}> 的原长”，但这并不够深入。
 
 3Blue1Brown 在<link https://www.youtube.com/watch?v=LyGKycYT2v0 视频>里详细论述了一个观点：点积是将由 <math \mathbf{v}> 定义的一个 <math \mathbb{R}^n \rightarrow \mathbb{R}> 的线性变换作用在了 <math \mathbf{u}> 上。这个变换将任一向量 <math \mathbf{u}> 变换为一个标量 <math \mathbf{v}^\mathsf{T}\mathbf{u}>。
 
-在这个视角下，一个内积函数与一个向量也能共同确定一个线性变换。也就是说，「内积」是一个将向量映射到一个线性变换的算子。从更加抽象的角度看，这相当于一次函数部分求值（Curry 化）：二元函数 <math \mathbb{C}^n \rightarrow \mathbb{C}^n \rightarrow \mathbb{C}> 可以视作将某一参数映射到一个一元函数的算子 <math \mathbb{C}^n \rightarrow (\mathbb{C}^n \rightarrow \mathbb{C})>。
+在这个视角下，一个内积函数与一个向量也能共同确定一个线性变换。也就是说，“内积”是一个将向量映射到一个线性变换的算子。从更加抽象的角度看，这相当于一次函数部分求值（Curry 化）：二元函数 <math \mathbb{C}^n \rightarrow \mathbb{C}^n \rightarrow \mathbb{C}> 可以视作将某一参数映射到一个一元函数的算子 <math \mathbb{C}^n \rightarrow (\mathbb{C}^n \rightarrow \mathbb{C})>。
 
 一个正定 Hermite 矩阵 <math \mathbf{A}> 便定义了这样一个线性算子，它将一个向量 <math \mathbf{v}> 映射为 <math \mathbf{v}^\mathsf{H}\mathbf{A}> 在自然基下所对应的线性变换。将这个变换作用于 <math \mathbf{u}>，即是之前所见的 <math \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}> 这一形式。它实际上也是 <math \mathbb{C}^n> 上内积的一般形式（Hermite 形式）。
 
-从而共轭之所以取在 <math \mathbf{v}> 上，是因为我们希望 <math \mathbf{u}> 作为被变换的元素保留其原始状态，而将所有的运算放进 <math \mathbb{C}^n \rightarrow \mathbb{C}> 这个线性变换中去。至于 <math \mathbf{u}> 放在 <math \mathbf{v}> 前面的原因，大概也是觉得「先写被变换的元素，再指出变换」在这个二元运算当中比较符合直觉吧。
+从而共轭之所以取在 <math \mathbf{v}> 上，是因为我们希望 <math \mathbf{u}> 作为被变换的元素保留其原始状态，而将所有的运算放进 <math \mathbb{C}^n \rightarrow \mathbb{C}> 这个线性变换中去。至于 <math \mathbf{u}> 放在 <math \mathbf{v}> 前面的原因，大概也是觉得“先写被变换的元素，再指出变换”在这个二元运算当中比较符合直觉吧。
 
 !<h1 参考>
 
