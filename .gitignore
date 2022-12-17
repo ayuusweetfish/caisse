@@ -1,3 +1,5 @@
 /backups/
 /build/
-/content/*.woff
+/content/fonts/*.woff
+/content/fonts/AaKaiSong.*
+/content/fonts/katex/

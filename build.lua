@@ -216,6 +216,25 @@ local function registeritemempty(path, curcat)
   itemreg[path] = { cat = curcat, isempty = true }
 end
 
+-- KaTeX prerendering registry
+local katexrendered = {}
+local katexf = io.open('misc/katex/rendered.txt')
+if katexf then
+  for line in katexf:lines() do
+    local tabpos = line:find('\t')
+    katexrendered[line:sub(1, tabpos - 1)] = line:sub(tabpos + 1):gsub('\t', '\n')
+  end
+  katexf:close()
+end
+local katexstringlist = {}
+local function katexrender(string, isdisp)
+  string = string:match('^%s*(.-)%s*$'):gsub('\t', ' ')
+  local hash = basehash(string)
+  katexstringlist[#katexstringlist + 1] =
+    hash .. (isdisp and '\t1\t' or '\t0\t') .. string:gsub('\n', '\t')
+  return katexrendered[hash] or '(formula not rendered)'
+end
+
 local htmlescapelookup = {
   ['<'] = '&lt;',
   ['>'] = '&gt;',
@@ -389,6 +408,9 @@ markupfns = {
   list = function (...)
     return '<ul>' .. table.concat({...}) .. '</ul>'
   end,
+  listcompact = function (...)
+    return '<ul class="compact">' .. table.concat({...}) .. '</ul>'
+  end,
   li = function (text)
     return '<li>' .. text .. '</li>'
   end,
@@ -460,6 +482,8 @@ markupfns = {
       artiststr ..
       '</div></div>'
   end,
+  math = function (string) return katexrender(string, false) end,
+  dispmath = function (string) return katexrender(string, true) end,
 }
 caisse.envadditions.rendermarkup = function (s)
   return rendermarkup(s, markupfns)
@@ -526,3 +550,4 @@ renderpage('murmurs', 'bannerlist.html', { curcat = 'murmurs' })
 renderpage('potpourri', 'bannerlist.html', { curcat = 'potpourri', compact = true })
 
 os.execute(table.concat(bufferedcmds, '; '))
+io.open('misc/katex/list.txt', 'w'):write(table.concat(katexstringlist, '\n')):close()
