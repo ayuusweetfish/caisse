@@ -33,7 +33,7 @@ A Description
   <title>{{ fulltitle }}</title>
 
   <style></style>
-</head><body>
+</head><body class='<!-- (dark) dark -->'>
 
 {{
   cats = render('categories.txt').cats
@@ -55,8 +55,11 @@ A Description
       <a href='/?lang=zh'>汉语/Chinese</a>
       <a href='/?lang=en'>English/英语</a>
     </div>
-  </details><a
-    href='/?dark=1' class='pastel miscellaneous little-icons' title='深色主题'>🌙</a>
+  </details><a id='dark-toggle'
+    href='/{{ savepath == 'index' and '' or savepath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
+      zh = '切换深色/浅色主题',
+      en = 'Toggle dark/light theme',
+    }) }}'>🌙</a>
 </div>
 </nav>
 
@@ -542,7 +545,6 @@ body.dark img.syncdark { filter: invert(); }
 
 <script>
 (() => {
-document.body.classList.add('js')
 const langContainer = document.getElementById('lang-container')
 const langList = document.getElementById('lang-list')
 const tempEvents = [
@@ -567,6 +569,17 @@ langContainer.addEventListener('toggle', (e) => {
     clearTempEvents()
   }
 })
+
+const darkToggle = document.getElementById('dark-toggle')
+darkToggle.addEventListener('click', (e) => {
+  const isDark = !document.body.classList.contains('dark')
+  document.body.classList.toggle('dark')
+  document.cookie = 'dark=' + (isDark ? '1' : '0') + ';SameSite=Strict; Max-Age=2592000'
+  darkToggle.href = darkToggle.href.substring(0, darkToggle.href.length - 1) + (isDark ? '0' : '1')
+  e.preventDefault()
+})
+
+document.body.classList.add('js')
 })()
 </script>
 
