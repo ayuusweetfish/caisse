@@ -209,12 +209,12 @@ nav, main, aside, footer { padding: 1rem; }
   }
 }
 
-.pastel, .hidden-pastel {
+.hidden-pastel {
   text-decoration: none;
   color: inherit;
   display: inline-block;
 }
-.pastel::after, a.hidden-pastel::after {
+.hidden-pastel::after {
   content: '';
   display: block;
   block-size: 0.12em;
@@ -225,11 +225,6 @@ nav, main, aside, footer { padding: 1rem; }
   transition:
     width 0.2s ease, height 0.2s ease,
     margin 0.2s ease;
-}
-.pastel:hover::after,
-.pastel:focus::after {
-  block-size: 0.24em;
-  margin-block-start: -0.18em;
 }
 .hidden-pastel::after {
   block-size: 0.08em;
@@ -242,30 +237,85 @@ nav, main, aside, footer { padding: 1rem; }
   inline-size: 100%;
   margin-inline-start: 0;
 }
+
+.pastel {
+  text-decoration: none;
+  color: inherit;
+  /* url(<36x36 SVG>) 16 fill / 0.24em / 0.28em 0 */
+  border-width: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 16 fill;
+  border-image-width: 0.24em;
+  border-image-outset: 0.28em 0;
+  transition: border-image 0.2s ease;
+}
+/* Chrome/Chromium determines box heights of inline elements
+   differently from Firefox/Safari.
+  "The height of the content area should be based on the font,
+   but this specification does not specify how." */
+body.ua-inline-height .pastel {
+  border-image-outset: 0.18em 0;
+}
+.pastel:hover,
+.pastel:focus {
+  border-image-width: 0.48em;
+  border-image-outset: 0.40em 0;
+}
+body.ua-inline-height .pastel:hover,
+body.ua-inline-height .pastel:focus {
+  border-image-outset: 0.30em 0;
+}
+
+{{
+function underlinesvg(hue, sat, val, opacity)
+  opacity = (opacity or 100) / 100
+  return 'url(data:image/svg+xml;base64,' .. base64encode(string.format(
+    [[<svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" background='white'><path style="fill:none;stroke:hsl(%.0f,%.0f%%,%.0f%%);stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:%.2f" d="M 4.5,28.5 H 31.5" /></svg>]]
+  , hue, sat, val, opacity)) .. ')'
+end
+}}
 {{@ cat in cats}}
 {{ hue, sat, val1, val2 = table.unpack(cat.tint) }}
-a.{{cat.name}} { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
-a.{{cat.name}}::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
-body.dark a.{{cat.name}} { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%); }
-body.dark a.{{cat.name}}::after { background: hsla({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val2) * 0.45}}%, 40%); }
+a.{{cat.name}} {
+  color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
+  border-image-source: {{ underlinesvg(hue, sat, val2) }};
+}
+body.dark a.{{cat.name}} {
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%);
+  border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.45, 40) }};
+}
 {{@ end}}
 {{ hue, sat, val1, val2 = 240, 40, 50, 85 }}
-a.external { color: hsl({{hue}}deg, {{sat}}%, {{val1}}%); }
-a.external::after { background: hsla({{hue}}deg, {{sat}}%, {{val2}}%, 90%); }
-body.dark a.external { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%); }
-body.dark a.external::after { background: hsla({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val2) * 0.45}}%, 40%); }
+a.external {
+  color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
+  border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
+}
+body.dark a.external {
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%);
+  border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.45, 40) }};
+}
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
-#lang-container > summary { cursor: pointer; }
-.pastel.miscellaneous { color: hsl({{hue}}deg, 0%, {{val1}}%); }
-.pastel.miscellaneous::after { background: hsla({{hue}}deg, 0%, {{val2}}%, 90%); }
-body.dark .pastel.miscellaneous { color: hsl({{hue}}deg, 0%, {{100 - (100 - val1) * 0.45}}%); }
-body.dark .pastel.miscellaneous::after { background: hsla({{hue}}deg, 0%, {{100 - (100 - val2) * 0.45}}%, 40%); }
+.pastel.miscellaneous {
+  color: hsl({{hue}}deg, 0%, {{val1}}%);
+  border-image-source: {{ underlinesvg(hue, 0, val2, 90) }};
+}
+body.dark .pastel.miscellaneous {
+  color: hsl({{hue}}deg, 0%, {{100 - (100 - val1) * 0.45}}%);
+  border-image-source: {{ underlinesvg(hue, 0, 100 - (100 - val2) * 0.45, 40) }};
+}
 
 {{@ curcat}}
 {{ hue, sat, val1, val2 = table.unpack(cats[curcat].tint) }}
 main header h1 { color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%); }
 body.dark main header h1 { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.6}}%, {{val1 + (100 - val1) * 0.7}}%); }
 {{@ end}}
+
+#lang-container > summary,
+#dark-toggle {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.2;
+}
 
 footer > span:first-child > *:not(:last-child)::after {
   content: '|';
@@ -578,6 +628,9 @@ darkToggle.addEventListener('click', (e) => {
   darkToggle.href = darkToggle.href.substring(0, darkToggle.href.length - 1) + (isDark ? '0' : '1')
   e.preventDefault()
 })
+
+if (navigator.userAgent.indexOf('Chrome/') !== -1)
+  document.body.classList.add('ua-inline-height')
 
 document.body.classList.add('js')
 })()

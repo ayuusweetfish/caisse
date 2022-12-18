@@ -235,6 +235,30 @@ local function katexrender(string, isdisp)
   return katexrendered[hash] or '(formula not rendered)'
 end
 
+-- Base64
+local base64seq = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+local function base64encode(s)
+  local bits = {}
+  for i = 1, #s do
+    local b = s:byte(i)
+    for j = 7, 0, -1 do bits[#bits + 1] = (b >> j) & 1 end
+  end
+  while #bits % 6 ~= 0 do bits[#bits + 1] = 0 end
+  while #bits % 24 ~= 0 do bits[#bits + 1] = -1 end
+  local output = {}
+  for i = 1, #bits, 6 do
+    if bits[i] == -1 then output[#output + 1] = '='
+    else
+      output[#output + 1] = string.char(base64seq:byte(
+        (bits[i + 0] << 5) + (bits[i + 1] << 4) + (bits[i + 2] << 3) +
+        (bits[i + 3] << 2) + (bits[i + 4] << 1) + (bits[i + 5] << 0) + 1
+      ))
+    end
+  end
+  return table.concat(output)
+end
+caisse.envadditions.base64encode = base64encode
+
 local htmlescapelookup = {
   ['<'] = '&lt;',
   ['>'] = '&gt;',
