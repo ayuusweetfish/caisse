@@ -113,7 +113,7 @@ const serveReq = async (req) => {
     // Parse cookies
     const cookies = {}
     const cookiesStr = req.headers.get('Cookie')
-    const regexp = /([A-Za-z0-9-_]+)=(.+?)(?:(?=;)|$)/g
+    const regexp = /([A-Za-z0-9-_]+)=(.*?)(?:(?=;)|$)/g
     let result
     while ((result = regexp.exec(cookiesStr)) !== null) {
       const [_, key, value] = result

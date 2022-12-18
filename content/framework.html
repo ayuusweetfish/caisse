@@ -624,7 +624,7 @@ const darkToggle = document.getElementById('dark-toggle')
 darkToggle.addEventListener('click', (e) => {
   const isDark = !document.body.classList.contains('dark')
   document.body.classList.toggle('dark')
-  document.cookie = 'dark=' + (isDark ? '1' : '0') + ';SameSite=Strict; Max-Age=2592000'
+  document.cookie = 'dark=' + (isDark ? '1' : '0') + '; SameSite=Strict; Max-Age=2592000'
   darkToggle.href = darkToggle.href.substring(0, darkToggle.href.length - 1) + (isDark ? '0' : '1')
   e.preventDefault()
 })
