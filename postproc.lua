@@ -17,7 +17,8 @@ local function normalizetint(v)
 end
 
 local function css(s)
-  return s:gsub('{[^{}]*}', function (block)
+  -- Caveat: cannot handle '}' characters inside rules (strings)
+  return s:gsub('({%s+)([^{}]*)(%s+})', function (init, block, fin)
     local logical = {
       size = {}, minsize = {}, maxsize = {},
       inset = {},
@@ -79,7 +80,7 @@ local function css(s)
         end
       end
     end
-    for k, v in block:gmatch('(%g+):%s*([^;]+);') do
+    local function processrule(k, v)
       if not (
            (k:sub(-5) == '-size' and (
              set(logical.size, k:sub(1, -6), v)) or
@@ -125,6 +126,34 @@ local function css(s)
         end
       end
     end
+    local cur = 1
+    while cur <= #block do
+      cur = block:find('%g', cur)
+      if cur == nil then break end
+      if block:sub(cur, cur + 1) == '/*' then
+        cur = block:find('*/', cur + 2, true) + 2
+      else
+        local key, p1 = block:match('(%g+)%s*:%s*()%g', cur)
+        local paren = 0
+        cur = p1
+        while true do
+          local ch = block:sub(cur, cur)
+          if ch == ';' and paren == 0 then
+            break
+          elseif ch == '(' then
+            paren = paren + 1
+          elseif ch == ')' then
+            paren = paren - 1
+          elseif ch == '"' or ch == "'" then
+            cur = block:find(ch, cur + 1, true)
+          end
+          cur = cur + 1
+        end
+        local value = block:sub(p1, cur - 1)
+        processrule(key, value)
+        cur = cur + 1
+      end
+    end
     serialize(logical.size, 'height', 'width')
     serialize(logical.minsize, 'min-height', 'min-width')
     serialize(logical.maxsize, 'max-height', 'max-width')
@@ -132,8 +161,6 @@ local function css(s)
     serialize(logical.border, 'border')
     serialize(logical.margin, 'margin')
     serialize(logical.padding, 'padding')
-    local init = block:match('^({%s+)')
-    local fin = block:match('(%s+})$')
     return init .. table.concat(rules, init:sub(2)) .. fin
   end)
 end
