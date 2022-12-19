@@ -1,9 +1,8 @@
 local caisse = require('caisse/caisse')
 local rendermarkup = require('caisse/markup')
-caisse.lang = 'zh'
 
 os.setlocale('C')
-caisse.envadditions.lang = caisse.lang
+
 caisse.envadditions.siteroot = 'http://localhost:1123'
 caisse.envadditions.domain = 'ayuu.ink'
 
@@ -70,7 +69,7 @@ end
 local function renderpage(savepath, templatepath, locals)
   locals = locals or {}
   local contents = render(templatepath, locals)
-  local filepath = savepath .. '/index.html'
+  local filepath = savepath .. '/index.' .. caisse.lang .. '.html'
   ensuredir(filepath)
   writefile(sitepath .. filepath,
     postproc.html(render('framework.html', {
@@ -195,7 +194,7 @@ caisse.envadditions.AaKaiSong_css = AaKaiSong_css
 local cats = render('categories.txt').cats
 
 local itemreg = {}
-local function registeritem(path, curcat, extralocals, pageextralocals)
+local function registeritemmarkup(path, curcat, extralocals, pageextralocals)
   if itemreg[path] then return end
   -- `path` is the path in URL, without the leading `/`
   local locals = render('items/' .. path .. '/page.txt', pageextralocals)
@@ -205,8 +204,15 @@ local function registeritem(path, curcat, extralocals, pageextralocals)
     for k, v in pairs(extralocals) do locals[k] = v end
   end
   itemreg[path] = {
-    locals = locals,
     cat = curcat,
+    locals = locals,
+  }
+end
+local function registeritemtempl(path, curcat, templatepath, extralocals)
+  itemreg[path] = {
+    cat = curcat,
+    locals = extralocals or {},
+    template = templatepath,
   }
 end
 local function registeritemfile(path, curcat)
@@ -530,12 +536,19 @@ local function renderallitems()
       locals.name = path
       locals.curcat = item.cat
       print(item.cat, caisse.envadditions.tr(locals.title))
-      markupfnsenvitem = path
-      renderpage(path, 'item.html', locals)
+      if item.template ~= nil then
+        renderpage(path, item.template, item.locals)
+      else
+        -- Markup
+        markupfnsenvitem = path
+        renderpage(path, 'item.html', locals)
+        markupfnsenvitem = nil
+      end
     end
   end
-  markupfnsenvitem = nil
 end
+
+-- Site content
 
 copyfile('background.svg')
 copyfile('background-dark.svg')
@@ -552,16 +565,16 @@ copyfile('divider-fleuron-windy.svg')
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
   for j = 1, #pagelist do
-    registeritem(pagelist[j].name, cats[i].name)
+    registeritemmarkup(pagelist[j].name, cats[i].name)
   end
 end
-registeritem('index', 'home')
-registeritem('about', 'home')
-registeritem('dates', 'home')
+registeritemmarkup('index', 'home')
+registeritemmarkup('about', 'home')
+registeritemmarkup('dates', 'home')
 
 local revloglatest = 2022*12 + 11
 local revlogfirst = 2022*12 + 10
-registeritem('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
+registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
 for _, lang in ipairs({'zh', 'en'}) do
   registeritemempty('rss.' .. lang .. '.xml', 'home')
   registeritemempty('atom.' .. lang .. '.xml', 'home')
@@ -571,15 +584,19 @@ for _, lang in ipairs({'zh', 'en'}) do
     { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
 end
 
-registeritem('pile', 'pile', {
+registeritemtempl('music', 'music', 'bannerlist.html')
+registeritemtempl('playful', 'playful', 'bannerlist.html')
+registeritemtempl('murmurs', 'murmurs', 'bannerlist.html')
+registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true })
+registeritemmarkup('pile', 'pile', {
   title = caisse.envadditions.tr(cats.pile.longtitle) or cats.pile.title
 })
-renderallitems()
 
-renderpage('music', 'bannerlist.html', { curcat = 'music' })
-renderpage('playful', 'bannerlist.html', { curcat = 'playful' })
-renderpage('murmurs', 'bannerlist.html', { curcat = 'murmurs' })
-renderpage('potpourri', 'bannerlist.html', { curcat = 'potpourri', compact = true })
+for _, lang in ipairs({'zh', 'en'}) do
+  caisse.lang = lang
+  caisse.envadditions.lang = caisse.lang
+  renderallitems()
+end
 
 os.execute(table.concat(bufferedcmds, '; '))
 io.open('misc/katex/list.txt', 'w'):write(table.concat(katexstringlist, '\n')):close()
