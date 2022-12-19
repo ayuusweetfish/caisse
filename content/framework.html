@@ -4,7 +4,7 @@
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
 {{fulltitle.zh =}}
-{{ title }} — Site
+{{ title }} — Ayu
 {{metadescription.zh =}}
 说明说明！
 
@@ -12,6 +12,9 @@
 {{ title }} — Site
 {{metadescription.en =}}
 A Description
+
+{{siteheading.zh =}}甜鱼/Ayu
+{{siteheading.en =}}Sweetfish Ayu
 
 {{=}}
   <meta name='description' content='{{ metadescription }}'>
@@ -41,7 +44,7 @@ A Description
 
 <div id='main-grid'>
 <nav>
-<h1>Site Name</h1>
+<h1>{{ siteheading }}</h1>
 <ul>
   {{@ cat in cats}}
   <li><a class='pastel {{cat.name}}'
@@ -292,8 +295,8 @@ a.external {
   border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
 }
 body.dark a.external {
-  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%);
-  border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.45, 40) }};
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.35}}%);
+  border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.35, 40) }};
 }
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
 .pastel.miscellaneous {
