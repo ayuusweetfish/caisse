@@ -48,15 +48,16 @@ A Description
     href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'>{{cat.title}}</a></li>
   {{@ end}}
 </ul>
+{{ urlpath = (savepath == 'index' and '' or savepath) }}
 <div id='icon-buttons'>
   <details id='lang-container'>
     <summary class='pastel miscellaneous little-icons' title='语言/Language'>🌐</summary>
     <div id='lang-list'>
-      <a href='/?lang=zh'>汉语/Chinese</a>
-      <a href='/?lang=en'>English/英语</a>
+      <a href='/{{ urlpath }}?lang=zh'>汉语/Chinese</a>
+      <a href='/{{ urlpath }}?lang=en'>English/英语</a>
     </div>
   </details><a id='dark-toggle'
-    href='/{{ savepath == 'index' and '' or savepath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
+    href='/{{ urlpath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
       zh = '切换深色/浅色主题',
       en = 'Toggle dark/light theme',
     }) }}'>🌙</a>
