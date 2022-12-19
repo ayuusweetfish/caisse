@@ -6,16 +6,14 @@ const port = +Deno.env.get('PORT') || 1123
 const server = Deno.listen({ port })
 log(`Running at http://localhost:${port}/`)
 
+const supportedLangs = ['zh', 'en']
+
 const mime = (s) => {
   if (s.endsWith('.html')) return 'text/html; charset=UTF-8'
   if (s.endsWith('.css')) return 'text/css; charset=UTF-8'
   if (s.endsWith('.svg')) return 'image/svg+xml'
   if (s.endsWith('.mp4')) return 'media/mp4'
   return 'application/octet-stream'
-}
-
-const setCookie = (headers, key, value) => {
-  headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Max-Age=2592000`)
 }
 
 const timeOfDay = () => {
@@ -48,6 +46,33 @@ const timeOfDay = () => {
   }
 }
 
+const negotiateLang = (accept, supported) => {
+  const list = accept.split(',').map((s) => {
+    s = s.trim()
+    let q = 1
+    const pos = s.indexOf(';q=')
+    if (pos !== -1) {
+      const parsed = parseFloat(s.substring(pos + 3))
+      if (isFinite(parsed)) q = parsed
+      s = s.substring(0, pos).trim()
+    }
+    return { lang: s, q }
+  })
+
+  let bestScore = 0
+  let bestLang = supported[0]
+  for (const l of supported) {
+    for (const { lang, q } of list) {
+      if (lang.substring(0, 2) === l.substring(0, 2)) {
+        const score = q + (lang === l ? 0.2 : 0)
+        if (score > bestScore)
+          [bestScore, bestLang] = [score, l]
+      }
+    }
+  }
+  return bestLang
+}
+
 const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
   headers.set('Accept-Ranges', 'bytes')
@@ -61,7 +86,7 @@ const staticFile = async (req, opts, headers, path) => {
     file = await Deno.open(path)
     fileInfo = await file.stat()
     if (fileInfo.isDirectory) {
-      path += '/index.html'
+      path += `/index.${opts.lang}.html`
       file = await Deno.open(path)
       fileInfo = await file.stat()
     }
@@ -110,6 +135,7 @@ const serveReq = async (req) => {
   if (req.method === 'GET') {
     const opts = {}
     const headers = new Headers()
+    const newCookies = {}
     // Parse cookies
     const cookies = {}
     const cookiesStr = req.headers.get('Cookie')
@@ -119,25 +145,47 @@ const serveReq = async (req) => {
       const [_, key, value] = result
       cookies[decodeURIComponent(key)] = decodeURIComponent(value)
     }
+    // Options
     opts.isDark = (cookies['dark'] === '1')
-    // Query string
-    if (url.search !== '') {
-      const map = {}
-      const regexp = /([A-Za-z0-9-_]+)=(.+?)(?:(?=&)|$)/g
-      let result
-      while ((result = regexp.exec(url.search)) !== null) {
-        const [_, key, value] = result
-        map[decodeURIComponent(key)] = decodeURIComponent(value)
-      }
-      if (map['dark'] !== undefined) {
-        const isDarkNew = (map['dark'] === '1')
-        setCookie(headers, 'dark', isDarkNew ? '1' : '0')
-        opts.isDark = isDarkNew
-      }
+    if (cookies['lang'] && supportedLangs.indexOf(cookies['lang']) !== -1) {
+      opts.lang = cookies['lang']
+    } else {
+      opts.lang = negotiateLang(req.headers.get('Accept-Language') || '', supportedLangs)
+      newCookies.lang = opts.lang
     }
+    // Query string
+    let optsUpdatedByQuery = false
+    const queryDark = url.searchParams.get('dark')
+    if (queryDark !== null) {
+      const isDarkNew = (queryDark === '1')
+      opts.isDark = isDarkNew
+      newCookies.dark = isDarkNew ? '1' : '0'
+      optsUpdatedByQuery = true
+    }
+    const queryLang = url.searchParams.get('lang')
+    if (queryLang !== null &&
+        supportedLangs.indexOf(queryLang) !== -1) {
+      opts.lang = queryLang
+      newCookies.lang = queryLang
+      optsUpdatedByQuery = true
+    }
+    // Set cookies
+    for (const [key, value] of Object.entries(newCookies))
+      headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Max-Age=2592000`)
+    // Redirect to remove query string
+    if (optsUpdatedByQuery) {
+      const location = new URL(url)
+      location.search = ''
+      headers.set('Location', location)
+      return new Response('', {
+        status: 303,
+        headers,
+      })
+    }
+
     // Routes
     if (url.pathname === '/') {
-      return await staticFile(req, opts, headers, '../build/index/index.html')
+      return await staticFile(req, opts, headers, '../build/index')
     }
     return await staticFile(req, opts, headers, '../build' + url.pathname);  // XXX: Don't do this
   }
