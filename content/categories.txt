@@ -26,8 +26,8 @@ end
 {{cats.music.title.en=}}Music
 {{cats.playful.title.en=}}Playful
 {{cats.murmurs.title.en=}}Murmurs
-{{cats.potpourri.title.en=}}Sundry
-{{cats.pile.title.en=}}Stray
+{{cats.potpourri.title.en=}}Potpourri
+{{cats.pile.title.en=}}Pebbles
 
 {{cats.home.longtitle.en=}}Home
 {{cats.music.longtitle.en=}}Music Pieces
