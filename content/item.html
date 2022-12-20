@@ -21,6 +21,9 @@
 </section>
 {{ aside.date = date }}
 {{@ end }}
+{{@ rellinks }}
+{{ aside.rellinks = rendermarkup(tr(rellinks)) }}
+{{@ end }}
 
 {{@ usemath == 'true' }}
 <link rel='stylesheet' href='/bin/vendor/katex-0.16.3/katex.css'>

@@ -88,6 +88,15 @@ body.dark #table-of-contents { color: hsl(36deg, 5%, 70%); }
 #table-of-contents p.toc-h3 { margin-inline-start: 2em; }
 #table-of-contents a.hidden-pastel::after { background: hsl(50deg, 15%, 80%); }
 body.dark #table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%, 50%); }
+#related-links ul {
+  padding-inline: 0;
+}
+#related-links ul li::before {
+  display: none;
+}
+#related-links ul li {
+  margin-block: 0.5em;
+}
 
 #main-grid > nav {
   display: block;
