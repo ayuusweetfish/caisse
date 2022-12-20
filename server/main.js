@@ -26,15 +26,21 @@ const etagGet = async (path, file) => {
   let hash = 0
   while ((n = await file.read(buf)) !== null) {
     for (let i = 0; i < n; i++) {
-      hash = hash * 997 + buf[i]
+      hash = hash * 997 + buf[i] + 1
       hash = (hash / 4294967296) ^ hash
     }
   }
   if (hash < 0) hash += 4294967296
   file.seek(0, Deno.SeekMode.Start)
-  const etag = hash.toString(16).padStart(8, '0')
-  etagReg[path] = `"${etag}"`
+  const etag = `"${hash.toString(16).padStart(8, '0')}"`
+  etagReg[path] = etag
   return etag
+}
+const etagMatch = (a, b) => {
+  if (!a || !b) return false
+  if (a.startsWith('W/')) a = a.substring(2)
+  if (b.startsWith('W/')) b = b.substring(2)
+  return a === b
 }
 
 const redirectResponse = (url, headers, isPerm, isNoCache) => {
@@ -166,10 +172,21 @@ const staticFile = async (req, opts, headers, path) => {
         return value.split('\n')[timeOfDayCur].substring(3)
       }
     })
+    headers.set('Cache-Control', 'no-store')
     return new Response(text, { status, headers })
   } else {
     headers.set('ETag', etag)
-    headers.set('Cache-Control', 'public, max-age=10')
+    if (realPath.match(/\.[0-9a-f]{8}\.[a-zA-Z0-9-_]+$/)) {
+      // Versioned
+      headers.set('Cache-Control', 'public, max-age=31536000')
+    } else {
+      headers.set('Cache-Control', 'public, no-cache, max-age=31536000')
+    }
+    // Check whether not modified
+    if (etagMatch(etag, req.headers.get('If-None-Match'))) {
+      status = 304
+      return new Response(null, { status, headers })
+    }
     return new Response(file.readable, { status, headers })
   }
 }

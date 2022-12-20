@@ -43,8 +43,44 @@ local function copydst(src)
   ensuredir(dst)
   return dst
 end
-local function copyfile(src)
+
+local function basehash(s)
+  local h = 0
+  for i = 1, #s do
+    h = h * 997 + string.byte(s, i) + 1
+  end
+  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+end
+caisse.envadditions.basehash = basehash
+
+local function hashverhash(hash, targetpath)
+  local name, ext = targetpath:match('(.+)%.([^./]+)')
+  local pathwithver
+  if name ~= nil then
+    pathwithver = name .. '.' .. hash .. '.' .. ext
+  else
+    pathwithver = targetpath .. '.' .. hash
+  end
+  return pathwithver
+end
+local function hashverstr(str, targetpath)
+  local hash = basehash(str)
+  return hashverhash(hash, targetpath), hash
+end
+local filehashreg = {}
+local function hashverfile(path, targetpath)
+  local hash = filehashreg[path]
+  if hash == nil then
+    hash = basehash(io.open(srcpath .. path):read('a'))
+    filehashreg[hash] = hash
+  end
+  return hashverhash(hash, targetpath or path)
+end
+caisse.envadditions.hashverfile = hashverfile
+
+local function copyfile(src, ishashver)
   local dst = copydst(src)
+  if ishashver then dst = hashverfile(src, dst) end
   if contentpath[dst] then return dst end
   -- Hard link
   bufferedcmds[#bufferedcmds + 1] =
@@ -79,9 +115,13 @@ local function renderpage(savepath, templatepath, locals)
       contents = contents,
     })))
 end
-local function renderraw(savepath, templatepath, locals)
+local function renderraw(savepath, templatepath, locals, ishashver)
   locals = locals or {}
   local contents = render(templatepath, locals)
+  if ishashver then
+    savepath, hash = hashverstr(contents, savepath)
+    filehashreg[templatepath] = hash
+  end
   ensuredir(savepath)
   writefile(sitepath .. savepath, contents)
 end
@@ -121,15 +161,6 @@ local function fileinfo(src)
   if not filedb[src] then error('File ' .. src .. ' not recorded') end
   return filedb[src]
 end
-
-local function basehash(s)
-  local h = 0
-  for i = 1, #s do
-    h = h * 997 + string.byte(s, i)
-  end
-  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
-end
-caisse.envadditions.basehash = basehash
 
 local function fullpath(path, wd)
   if path:sub(1, 1) == '/' then
@@ -568,17 +599,19 @@ end
 
 -- Site content
 
-copyfile('background.svg')
-copyfile('background-dark.svg')
-copyfile('top-fleuron.svg')
-copyfile('chalk-bg-w.png')
-copyfile('chalk-bg-b.png')
-copydir('fonts')
+copyfile('background.svg', true)
+copyfile('background-dark.svg', true)
+copyfile('top-fleuron.svg', true)
+copyfile('chalk-bg-w.png', true)
+copyfile('chalk-bg-b.png', true)
 
-copyfile('divider-end.svg')
-copyfile('divider-fleuron-cloudy.svg')
-copyfile('divider-fleuron-heart.svg')
-copyfile('divider-fleuron-windy.svg')
+copyfile('divider-end.svg', true)
+copyfile('divider-fleuron-cloudy.svg', true)
+copyfile('divider-fleuron-heart.svg', true)
+copyfile('divider-fleuron-windy.svg', true)
+
+renderraw('bin/main.css', 'main.css', nil, true)
+copydir('fonts')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
