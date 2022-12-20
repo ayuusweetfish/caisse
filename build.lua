@@ -117,9 +117,10 @@ local function renderpage(savepath, templatepath, locals)
       aside = locals.aside or {},
     })))
 end
-local function renderraw(savepath, templatepath, locals, ishashver)
+local function renderraw(savepath, templatepath, locals, ishashver, filter)
   locals = locals or {}
   local contents = render(templatepath, locals)
+  if filter then contents = filter(contents) end
   if ishashver then
     savepath, hash = hashverstr(contents, savepath)
     filehashreg[templatepath] = hash
@@ -633,7 +634,7 @@ copyfile('divider-fleuron-cloudy.svg', true)
 copyfile('divider-fleuron-heart.svg', true)
 copyfile('divider-fleuron-windy.svg', true)
 
-renderraw('bin/main.css', 'main.css', nil, true)
+renderraw('bin/main.css', 'main.css', nil, true, postproc.css)
 renderraw('bin/main.js', 'main.js', nil, true)
 for _, fontname in ipairs({
   'Livvic-Regular', 'Livvic-SemiBold', 'Livvic-Medium',
