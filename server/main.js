@@ -1,10 +1,13 @@
 import { readAll } from 'https://deno.land/std@0.168.0/streams/read_all.ts'
+import { resolve } from 'https://deno.land/std@0.168.0/path/mod.ts'
 
 const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
 const port = +Deno.env.get('PORT') || 1123
 const server = Deno.listen({ port })
 log(`Running at http://localhost:${port}/`)
+
+const siteRootDir = resolve('../build')
 
 const supportedLangs = ['zh', 'en']
 
@@ -42,6 +45,18 @@ const etagMatch = (a, b) => {
   if (b.startsWith('W/')) b = b.substring(2)
   return a === b
 }
+
+;(async () => {
+  const watcher = Deno.watchFs(siteRootDir)
+  for await (const event of watcher) {
+    if (event.kind === 'create' || event.kind === 'modify' || event.kind === 'delete') {
+      for (const path of event.paths) {
+        const relPath = path.substring(siteRootDir.length)
+        delete etagReg[relPath]
+      }
+    }
+  }
+})()
 
 const redirectResponse = (url, headers, isPerm, isNoCache) => {
   if (!headers) headers = new Headers()
@@ -121,7 +136,7 @@ const staticFile = async (req, opts, headers, path) => {
     let file
     let fileInfo
     try {
-      file = await Deno.open('../build/' + path)
+      file = await Deno.open(siteRootDir + path)
       fileInfo = await file.stat()
       if (fileInfo.isDirectory) return null
     } catch (e) {
@@ -247,7 +262,7 @@ const serveReq = async (req) => {
 
     // Routes
     if (url.pathname === '/') {
-      return await staticFile(req, opts, headers, 'index')
+      return await staticFile(req, opts, headers, '/index')
     }
     return await staticFile(req, opts, headers, decodeURI(url.pathname))
   }
