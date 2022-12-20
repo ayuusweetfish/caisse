@@ -30,7 +30,7 @@ f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em
 
 !<hr>
 
-!<blockquote <~~=''
+!<note <~~=''
 未加说明的情况下，约定：
 !<listcompact
   <li <math u_k>，<math v_k> 分别表示 <math \mathbb{C}^n> 中向量 <math \mathbf{u}>，<math \mathbf{v}> 的第 <math k> 维分量；>

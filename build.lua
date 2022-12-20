@@ -612,6 +612,7 @@ copyfile('divider-fleuron-windy.svg', true)
 
 renderraw('bin/main.css', 'main.css', nil, true)
 copydir('fonts')
+copydir('katex')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
