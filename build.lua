@@ -611,8 +611,16 @@ copyfile('divider-fleuron-heart.svg', true)
 copyfile('divider-fleuron-windy.svg', true)
 
 renderraw('bin/main.css', 'main.css', nil, true)
-copydir('fonts')
-copydir('katex')
+for _, fontname in ipairs({
+  'Livvic-Regular', 'Livvic-SemiBold', 'Livvic-Medium',
+  'Sono_Monospace-Regular', 'Sono_Monospace-SemiBold',
+  'little-icons',
+}) do
+  copyfile('fonts/' .. fontname .. '.woff2', true)
+  copyfile('fonts/' .. fontname .. '.woff', true)
+end
+copydir('fonts-zh')
+copydir('vendor/katex-0.16.3')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}

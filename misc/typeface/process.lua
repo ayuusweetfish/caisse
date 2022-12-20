@@ -7,8 +7,8 @@ Then run without arguments or input:
   lua process.lua
 To copy:
   for i in AaKaiSong.*.ttf; do woff2_compress $i; rm $i; done
-  rm ../../content/fonts/AaKaiSong.*
-  mv AaKaiSong.*.woff2 ../../content/fonts
+  rm ../../content/fonts-zh/AaKaiSong.*
+  mv AaKaiSong.*.woff2 ../../content/fonts-zh
 ]]
 
 local codepoints = {}
@@ -53,7 +53,7 @@ function addsubset(subset, name, skipcss)
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/fonts/AaKaiSong.%s.woff2) format('woff2');
+  src: url(/bin/fonts-zh/AaKaiSong.%s.woff2) format('woff2');
   unicode-range: %s;
 }
 ]],

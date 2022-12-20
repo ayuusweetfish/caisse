@@ -1,5 +1,5 @@
 /backups/
 /build/
 /content/fonts/*.woff
-/content/fonts/AaKaiSong.*
-/content/katex/
+/content/fonts-zh/AaKaiSong.*
+/content/vendor/

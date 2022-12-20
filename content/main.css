@@ -273,47 +273,62 @@ body.dark #top-fleuron { opacity: 45%; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/fonts/Livvic-Regular.woff2) format('woff2'),
-       url(/bin/fonts/Livvic-Regular.woff) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff') }}) format('woff');
 }
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-{{ boldname = {zh = 'Medium', en = 'SemiBold'} }}
-  src: url(/bin/fonts/Livvic-{{ boldname }}.woff2) format('woff2'),
-       url(/bin/fonts/Livvic-{{ boldname }}.woff) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold.woff') }}) format('woff');
+}
+@font-face {
+  font-family: 'Livvic — Lighter Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff') }}) format('woff');
+}
+@font-face {
+  font-family: 'Livvic — Lighter Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Medium.woff') }}) format('woff');
 }
 @font-face {
   font-family: 'Sono';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/fonts/Sono_Monospace-Regular.woff2) format('woff2'),
-       url(/bin/fonts/Sono_Monospace-Regular.woff) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Sono_Monospace-Regular.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Sono_Monospace-Regular.woff') }}) format('woff');
 }
 @font-face {
   font-family: 'Sono';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/fonts/Sono_Monospace-SemiBold.woff2) format('woff2'),
-       url(/bin/fonts/Sono_Monospace-SemiBold.woff) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Sono_Monospace-SemiBold.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Sono_Monospace-SemiBold.woff') }}) format('woff');
 }
 @font-face {
   font-family: 'Ayuu Little Icons — 221202a';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/fonts/little-icons.woff2) format('woff2'),
-       url(/bin/fonts/little-icons.woff) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/little-icons.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/little-icons.woff') }}) format('woff');
 }
 body:lang(en), *[lang='en'] {
   font-family: 'Livvic', 'AaKaiSong', sans-serif;
 }
 body:lang(zh), *[lang='zh'] {
-  font-family: 'AaKaiSong', 'Livvic', sans-serif;
+  font-family: 'AaKaiSong', 'Livvic — Lighter Bold', sans-serif;
 }
 *[lang='lat'] { font-style: italic; }
 
