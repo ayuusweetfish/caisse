@@ -586,6 +586,32 @@ body.dark blockquote {
   border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%);
   background: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%, 8%);
 }
+blockquote.note {
+}
+blockquote.quote {
+  position: relative;
+}
+blockquote.quote, blockquote.quote p {
+  text-indent: 2em;
+}
+blockquote.quote::before,
+blockquote.quote::after {
+  text-indent: 0;
+  position: absolute;
+  font-family: 'Livvic', sans-serif;
+  font-size: 2em;
+  color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 30%);
+}
+blockquote.quote::before {
+  content: '“';
+  inset-block-start: -0.1em;
+  inset-inline-start: 0.2em;
+}
+blockquote.quote::after {
+  content: '”';
+  inset-block-end: -0.65em;
+  inset-inline-end: 0.2em;
+}
 
 .no-break {
   display: inline-block;
