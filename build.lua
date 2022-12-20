@@ -620,6 +620,8 @@ end
 
 -- Site content
 
+copyfile('favicon.png')
+
 copyfile('background.svg', true)
 copyfile('background-dark.svg', true)
 copyfile('top-fleuron.svg', true)

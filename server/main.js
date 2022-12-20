@@ -264,6 +264,9 @@ const serveReq = async (req) => {
     if (url.pathname === '/') {
       return await staticFile(req, opts, headers, '/index')
     }
+    if (url.pathname === '/favicon.ico') {
+      return await staticFile(req, opts, headers, '/bin/favicon.png')
+    }
     return await staticFile(req, opts, headers, decodeURI(url.pathname))
   }
   return new Response('hello')
