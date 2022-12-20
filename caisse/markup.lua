@@ -34,17 +34,19 @@ local function args(ss, n, verb)
   return table.unpack(results)
 end
 
-local function render(s, fns)
+local function render(s, fns, ignoremissingfns)
   fns[''] = fns[''] or function (s) return s end  -- for <= ...>
   fns['-'] = fns['-'] or function (s) return s .. '\n' end
   fns['^'] = fns['^'] or function (s) return s end
   fns['~'] = fns['~'] or function (s)
-    local r = render('!' .. s:gsub('\n', ' '), fns)
+    local r = render('!' .. s:gsub('\n', ' '), fns, ignoremissingfns)
     local endpos = r:find('[^%s]%s*$')
     if endpos then r = r:sub(1, endpos) end
     return r
   end
-  fns['~~'] = fns['~~'] or function (s) return render(s, fns) end
+  fns['~~'] = fns['~~'] or function (s)
+    return render(s, fns, ignoremissingfns)
+  end
   local linetransform = fns['-']
   local texttransform = fns['^']
   local allitems = {}
@@ -77,7 +79,10 @@ local function render(s, fns)
         fnname = fnname:sub(1, eqpos - 1)
       end
       local fn = fns[fnname]
-      if fn == nil then error('Markup function ' .. fnname .. ' not provided') end
+      if fn == nil then
+        if ignoremissingfns then fn = function () return '' end
+        else error('Markup function ' .. fnname .. ' not provided') end
+      end
       levels[#levels + 1] = {
         items = {},
         fn = fn,

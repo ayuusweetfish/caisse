@@ -80,7 +80,26 @@ A Description
 </main>
 
 <aside>
-Related links
+
+{{@ not not aside.date }}
+<div class='aside-section' id='aside-date'>
+  {{ renderdate(aside.date) }}
+</div>
+{{@ end }}
+
+<div role='separator' class='cloudy'></div>
+
+{{ asideempty = true }}
+
+{{@ not not aside.headinglist and #aside.headinglist > 0 }}
+{{ asideempty = false }}
+<section class='aside-section' id='table-of-contents'>
+  {{@ h in aside.headinglist }}
+  <p class='toc-h{{h[1]}}'><a class='hidden-pastel'>{{h[2]}}</a></p>
+  {{@ end }}
+{{@ end }}
+</section>
+
 </aside>
 </div>
 
