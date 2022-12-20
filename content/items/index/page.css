@@ -26,9 +26,24 @@
   }
   .item-contents ul:nth-of-type(1) > li::before {
     content: '\1f31f';
-    margin-inline: -1.75em 0.5em;
+    margin-inline: -1.35em 0.5em;
     font-family: 'Ayuu Little Icons — 221202a';
+  }
+  .item-contents ul:nth-of-type(1) > li:nth-of-type(1)::before {
     color: hsl(28deg, 65%, 65%);
+  }
+  .item-contents ul:nth-of-type(1) > li:nth-of-type(2)::before,
+  .item-contents ul:nth-of-type(1) > li:nth-of-type(3)::before {
+    color: hsl(40deg, 80%, 60%);
+  }
+  .item-contents ul:nth-of-type(1) > li:nth-of-type(4)::before {
+    color: hsl(282deg, 65%, 75%);
+  }
+  .item-contents ul:nth-of-type(1) > li:nth-of-type(5)::before {
+    color: hsl(204deg, 65%, 72%);
+  }
+  .item-contents ul:nth-of-type(1) > li:nth-of-type(6)::before {
+    color: hsl(163deg, 60%, 70%);
   }
 
   .item-contents ul:nth-of-type(1) > li,

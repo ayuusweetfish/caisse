@@ -2,6 +2,8 @@
 UNICODES=1f340,1f338,1f333,2600,1f33e,1f343,2744,1f9ca
 # Internationalization, dark mode
 UNICODES=${UNICODES},1f310,1f319,26aa
+# Categories
+UNICODES=${UNICODES},1fab8,1fa87,1fa81,1fab6,2618,1fae7
 # External link, star
 UNICODES=${UNICODES},1fa90,1f31f
 # File types
@@ -13,5 +15,6 @@ pyftsubset NotoEmoji-Regular.ttf \
   --unicodes=${UNICODES}
 mv seasons-NotoEmoji.ttf little-icons.ttf
 woff2_compress little-icons.ttf
-mv little-icons.woff2 ../../content
+sfnt2woff little-icons.ttf
+mv little-icons.woff2 little-icons.woff ../../content/fonts
 rm little-icons.ttf
