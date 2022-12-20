@@ -548,6 +548,24 @@ local function renderallitems()
   end
 end
 
+local function trmerge(...)
+  local origlang = caisse.lang
+  local merged = {}
+  local all = {...}
+  for _, lang in ipairs({'zh', 'en'}) do
+    caisse.lang = lang
+    for i = 1, #all do
+      local w = caisse.envadditions.tr(all[i])
+      if w then
+        merged[lang] = w
+        break
+      end
+    end
+  end
+  caisse.lang = origlang
+  return merged
+end
+
 -- Site content
 
 copyfile('background.svg')
@@ -588,8 +606,8 @@ registeritemtempl('music', 'music', 'bannerlist.html')
 registeritemtempl('playful', 'playful', 'bannerlist.html')
 registeritemtempl('murmurs', 'murmurs', 'bannerlist.html')
 registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true })
-registeritemmarkup('pile', 'pile', {
-  title = caisse.envadditions.tr(cats.pile.longtitle) or cats.pile.title
+registeritemmarkup('pebbles', 'pebbles', {
+  title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
 })
 
 for _, lang in ipairs({'zh', 'en'}) do

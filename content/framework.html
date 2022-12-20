@@ -48,7 +48,7 @@ A Description
 <ul>
   {{@ cat in cats}}
   <li><a class='pastel {{cat.name}}'
-    href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'>{{cat.title}}</a></li>
+    href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'><span class='little-icons'>{{utf8.char(cat.icon)}}</span>{{cat.title}}</a></li>
   {{@ end}}
 </ul>
 {{ urlpath = (savepath == 'index' and '' or savepath) }}
@@ -122,11 +122,13 @@ nav > ul {
   padding: 0;
 }
 nav > ul > li {
-  flex: 1 0 auto;
-  margin-block-end: 0.667em;
+  flex: 1 0 2.25em;
 }
 nav > ul > li::before {
   display: none;
+}
+nav > ul > li span.little-icons {
+  margin-inline-end: 0.125em;
 }
 
 #lang-container {
@@ -198,6 +200,7 @@ nav, main, aside, footer { padding: 1rem; }
     margin-block-end: 0;
   }
   nav > ul > li {
+    flex: 1 0 auto;
     margin-block-end: 0.25em;
   }
   #icon-buttons {

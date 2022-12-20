@@ -1,16 +1,23 @@
 {{{
 cats = {
--- name          hue  sat  v1  v2
-  {'home',      { 28, 100, 43, 89}},
-  {'music',     {282, 100, 45, 90}},
-  {'playful',   { 40, 100, 38, 84}},
-  {'murmurs',   {204, 100, 40, 90}},
-  {'potpourri', {163,  85, 35, 89}},
-  {'pile',      { 80,  40, 40, 85}},
+-- name          hue  sat  v1  v2   icon
+  {'home',      { 28, 100, 43, 89}, 0x1fab8},
+  {'music',     {282, 100, 45, 90}, 0x1fa87},
+  {'playful',   { 40, 100, 38, 84}, 0x1fa81},
+  {'murmurs',   {204, 100, 40, 90}, 0x1fab6},
+  {'potpourri', {163,  75, 35, 89}, 0x2618},
+  {'pebbles',   { 80,  40, 40, 85}, 0x1fae7},
 }
 for i = 1, #cats do
-  local name, tint = table.unpack(cats[i])
-  cats[i] = { name = name, tint = tint, title = {}, longtitle = {}, intro = {} }
+  local name, tint, icon = table.unpack(cats[i])
+  cats[i] = {
+    name = name,
+    tint = tint,
+    icon = icon,
+    title = {},
+    longtitle = {},
+    intro = {},
+  }
   cats[name] = cats[i]
 end
 }}}
@@ -20,21 +27,21 @@ end
 {{cats.playful.title.zh=}}游乐园
 {{cats.murmurs.title.zh=}}梦话集
 {{cats.potpourri.title.zh=}}繁花丛
-{{cats.pile.title.zh=}}碎石堆
+{{cats.pebbles.title.zh=}}碎石堆
 
 {{cats.home.title.en=}}Home
 {{cats.music.title.en=}}Music
 {{cats.playful.title.en=}}Playful
 {{cats.murmurs.title.en=}}Murmurs
 {{cats.potpourri.title.en=}}Potpourri
-{{cats.pile.title.en=}}Pebbles
+{{cats.pebbles.title.en=}}Pebbles
 
 {{cats.home.longtitle.en=}}Home
-{{cats.music.longtitle.en=}}Music Pieces
-{{cats.playful.longtitle.en=}}Playful Pieces
-{{cats.murmurs.longtitle.en=}}Murmur Pieces
-{{cats.potpourri.longtitle.en=}}Sundry Pieces
-{{cats.pile.longtitle.en=}}Stray Pieces
+{{cats.music.longtitle.en=}}Pieces of Music
+{{cats.playful.longtitle.en=}}Pieces of Playfulness
+{{cats.murmurs.longtitle.en=}}Pieces of Murmurs
+{{cats.potpourri.longtitle.en=}}Pieces of Potpourri
+{{cats.pebbles.longtitle.en=}}Pieces of Pebbles
 
 {{cats.potpourri.intro.zh=}}杂七杂八，或者只是做着玩的事。
 {{cats.potpourri.intro.en=}}
@@ -83,7 +90,7 @@ cats.potpourri.pagelist = {
   --{name = 'common-sky'},
 ]]
 }
-cats.pile.pagelist = {
+cats.pebbles.pagelist = {
   {name = 'ne-er-do-well'},
   {name = 'gradatim'},
   {name = 'courses-21'},
