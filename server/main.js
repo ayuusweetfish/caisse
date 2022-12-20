@@ -18,12 +18,32 @@ const mime = (s) => {
   return 'application/octet-stream'
 }
 
-const redirectResponse = (url, headers) => {
+const etagReg = {}
+const etagGet = async (path, file) => {
+  if (etagReg[path]) return etagReg[path]
+  const buf = new Uint8Array(1024 * 1024)
+  let n = 0
+  let hash = 0
+  while ((n = await file.read(buf)) !== null) {
+    for (let i = 0; i < n; i++) {
+      hash = hash * 997 + buf[i]
+      hash = (hash / 4294967296) ^ hash
+    }
+  }
+  if (hash < 0) hash += 4294967296
+  file.seek(0, Deno.SeekMode.Start)
+  const etag = hash.toString(16).padStart(8, '0')
+  etagReg[path] = `"${etag}"`
+  return etag
+}
+
+const redirectResponse = (url, headers, isPerm, isNoCache) => {
   if (!headers) headers = new Headers()
   headers.set('Location', url)
+  if (isNoCache) headers.set('Cache-Control', 'no-store')
   return new Response(
     `<html><body>Redirecting to <a href="${url}">${url}</a></body></html>`,
-    { status: 303, headers }
+    { status: isPerm ? 301 : 303, headers }
   )
 }
 
@@ -116,13 +136,15 @@ const staticFile = async (req, opts, headers, path) => {
   if (realPath === undefined)
     return new Response('', { status: 404, headers })
 
+  const etag = await etagGet(realPath, file)
+
   const rangeHeader = req.headers.get('Range')
   const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
   const byteStart = (result && result[1]) ? +result[1] : 0
   const byteEnd = (result && result[2]) ? +result[2] : fileSize - 1;
   if (result) {
     headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
-    file.seek(byteStart, Deno.SeekMode.Start);
+    file.seek(byteStart, Deno.SeekMode.Start)
     status = 206
   }
   headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
@@ -146,6 +168,8 @@ const staticFile = async (req, opts, headers, path) => {
     })
     return new Response(text, { status, headers })
   } else {
+    headers.set('ETag', etag)
+    headers.set('Cache-Control', 'public, max-age=10')
     return new Response(file.readable, { status, headers })
   }
 }
@@ -155,7 +179,7 @@ const serveReq = async (req) => {
   if (req.method === 'GET') {
     if (url.pathname.endsWith('/') && url.pathname.length > 1) {
       url.pathname = url.pathname.match(/^(.+?)\/+$/)[1]
-      return redirectResponse(url)
+      return redirectResponse(url, null, true, true)
     }
 
     const opts = {}
@@ -208,7 +232,7 @@ const serveReq = async (req) => {
       return await staticFile(req, opts, headers, '../build/index')
     }
     return await staticFile(req, opts, headers, '../build' +
-      decodeURI(url.pathname));  // XXX: Don't do this
+      decodeURI(url.pathname))  // XXX: Don't do this
   }
   return new Response('hello')
 }
