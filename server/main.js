@@ -13,7 +13,18 @@ const mime = (s) => {
   if (s.endsWith('.css')) return 'text/css; charset=UTF-8'
   if (s.endsWith('.svg')) return 'image/svg+xml'
   if (s.endsWith('.mp4')) return 'media/mp4'
+  if (s.endsWith('.js')) return 'application/javascript'
+  if (s.endsWith('.wasm')) return 'application/wasm'
   return 'application/octet-stream'
+}
+
+const redirectResponse = (url, headers) => {
+  if (!headers) headers = new Headers()
+  headers.set('Location', url)
+  return new Response(
+    `<html><body>Redirecting to <a href="${url}">${url}</a></body></html>`,
+    { status: 303, headers }
+  )
 }
 
 const timeOfDay = () => {
@@ -80,37 +91,46 @@ const staticFile = async (req, opts, headers, path) => {
 
   let status = 200
 
-  let file
-  let fileInfo
-  try {
-    file = await Deno.open(path)
-    fileInfo = await file.stat()
-    if (fileInfo.isDirectory) {
-      path += `/index.${opts.lang}.html`
+  const tryOpenFile = async (path) => {
+    let file
+    let fileInfo
+    try {
       file = await Deno.open(path)
       fileInfo = await file.stat()
+      if (fileInfo.isDirectory) return null
+    } catch (e) {
+      if (e instanceof Deno.errors.NotFound) return null
+      throw e
     }
-  } catch (e) {
-    if (e instanceof Deno.errors.NotFound) {
-      return new Response('', { status: 404, headers })
-    } else {
-      throw e;
+    return {
+      path, file,
+      fileSize: fileInfo.size,
     }
   }
+
+  const { path: realPath, file, fileSize } =
+    await tryOpenFile(path) ||
+    await tryOpenFile(path + `/index.${opts.lang}.html`) ||
+    await tryOpenFile(path + `/index.html`) ||
+    {}
+  if (realPath === undefined)
+    return new Response('', { status: 404, headers })
 
   const rangeHeader = req.headers.get('Range')
   const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
   const byteStart = (result && result[1]) ? +result[1] : 0
-  const byteEnd = (result && result[2]) ? +result[2] : fileInfo.size - 1;
+  const byteEnd = (result && result[2]) ? +result[2] : fileSize - 1;
   if (result) {
-    headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileInfo.size}`)
+    headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
     file.seek(byteStart, Deno.SeekMode.Start);
     status = 206
   }
   headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
-  headers.set('Content-Type', mime(path))
+  headers.set('Content-Type', mime(realPath))
+  headers.set('Cross-Origin-Opener-Policy', 'same-origin')
+  headers.set('Cross-Origin-Embedder-Policy', 'require-corp')
 
-  if (path.endsWith('.html')) {
+  if (realPath.endsWith('.html')) {
     let text = new TextDecoder().decode(await readAll(file))
     const timeOfDayCur = timeOfDay()
     text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
@@ -133,6 +153,11 @@ const staticFile = async (req, opts, headers, path) => {
 const serveReq = async (req) => {
   const url = new URL(req.url)
   if (req.method === 'GET') {
+    if (url.pathname.endsWith('/') && url.pathname.length > 1) {
+      url.pathname = url.pathname.match(/^(.+?)\/+$/)[1]
+      return redirectResponse(url)
+    }
+
     const opts = {}
     const headers = new Headers()
     const newCookies = {}
@@ -174,20 +199,16 @@ const serveReq = async (req) => {
       headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Max-Age=2592000`)
     // Redirect to remove query string
     if (optsUpdatedByQuery) {
-      const location = new URL(url)
-      location.search = ''
-      headers.set('Location', location)
-      return new Response('', {
-        status: 303,
-        headers,
-      })
+      url.search = ''
+      return redirectResponse(url, headers)
     }
 
     // Routes
     if (url.pathname === '/') {
       return await staticFile(req, opts, headers, '../build/index')
     }
-    return await staticFile(req, opts, headers, '../build' + url.pathname);  // XXX: Don't do this
+    return await staticFile(req, opts, headers, '../build' +
+      decodeURI(url.pathname));  // XXX: Don't do this
   }
   return new Response('hello')
 }
