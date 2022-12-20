@@ -14,7 +14,9 @@
   <div role='separator' class='item-separator'></div>
 {{@ end }}
 <section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
+{{@ toc == 'true' }}
 {{ aside.headinglist = markupheadings(tr(contents)) }}
+{{@ end }}
 {{@ date }}
 <section class='item-date'>
   {{ renderdate(date) }}
