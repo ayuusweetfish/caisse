@@ -62,7 +62,7 @@ a.item-entry {
   padding-inline: 1.3rem 1.8rem;
   text-shadow: #fdfdfd 0.05em 0.05em;
   border-width: 0;
-  border-image: url(/bin/chalk-bg-w.png) 18 fill / 0.3em / 0.1em 0;
+  border-image: url(/bin/{{ hashverfile('chalk-bg-w.png') }}) 18 fill / 0.3em / 0.1em 0;
 }
 .item-peek {
   margin-inline: 1.3rem;
@@ -82,7 +82,7 @@ a.item-entry {
 .item-banner h1.item-title-dark {
   color: #fdfdfd;
   text-shadow: #181410 0.05em 0.05em;
-  border-image: url(/bin/chalk-bg-b.png) 18 fill / 0.3em / 0.1em 0;
+  border-image: url(/bin/{{ hashverfile('chalk-bg-b.png') }}) 18 fill / 0.3em / 0.1em 0;
 }
 div[role='separator'].item-separator {
   margin-block: 1em 1.5em;

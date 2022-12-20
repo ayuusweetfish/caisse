@@ -64,7 +64,7 @@ end
 local function basehash(s)
   local h = 0
   for i = 1, #s do
-    h = h * 997 + string.byte(s, i)
+    h = h * 997 + string.byte(s, i) + 1
   end
   return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
 end
