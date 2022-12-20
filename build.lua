@@ -5,6 +5,7 @@ os.setlocale('C')
 
 caisse.envadditions.siteroot = 'http://localhost:1123'
 caisse.envadditions.domain = 'ayuu.ink'
+caisse.envadditions.distbuild = (os.getenv('DIST') == '1')
 
 local postproc = require('postproc')
 
@@ -219,7 +220,7 @@ local function renderdate(datestr, nolink)
 end
 caisse.envadditions.renderdate = renderdate
 
-local AaKaiSong_css = io.open('misc/typeface/AaKaiSong.css'):read('a')
+local AaKaiSong_css = io.open('misc/typeface-zh/AaKaiSong.css'):read('a')
 caisse.envadditions.AaKaiSong_css = AaKaiSong_css
 
 local cats = render('categories.txt').cats
