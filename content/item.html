@@ -1,3 +1,4 @@
+{{ aside = {} }}
 <header>
   <h1>{{ title }}</h1>
   {{@ intro }}
@@ -13,10 +14,12 @@
   <div role='separator' class='item-separator'></div>
 {{@ end }}
 <section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
+{{ aside.headinglist = markupheadings(tr(contents)) }}
 {{@ date }}
 <section class='item-date'>
   {{ renderdate(date) }}
 </section>
+{{ aside.date = date }}
 {{@ end }}
 
 {{@ usemath == 'true' }}

@@ -114,6 +114,7 @@ local function renderpage(savepath, templatepath, locals)
       title = locals.title,
       curcat = locals.curcat,
       contents = contents,
+      aside = locals.aside or {},
     })))
 end
 local function renderraw(savepath, templatepath, locals, ishashver)
@@ -370,9 +371,13 @@ local filetypeextrainfo = {
   end,
 }
 
-local function heading(tag, text)
+local function splitheading(text)
   local bodytext, anchor = text:match('^(.+[^%s])%s*#([^#]*)$')
-  if bodytext then text = bodytext end
+  if bodytext then return bodytext, anchor
+  else return text, nil end
+end
+local function heading(tag, text)
+  local bodytext, anchor = splitheading(text)
   return '<' .. tag ..
     (anchor and (' id="' .. anchor .. '"') or '') ..
     '>' .. text .. '</' .. tag .. '>'
@@ -558,6 +563,21 @@ markupfns = {
 caisse.envadditions.rendermarkup = function (s)
   return rendermarkup(s, markupfns)
 end
+
+local function markupheadings(s)
+  local list = {}
+  local function fn(n, w)
+    local text, anchor = splitheading(w)
+    list[#list + 1] = {n, text}
+  end
+  rendermarkup(s, {
+    h1 = function (w) fn(1, w) return '' end,
+    h2 = function (w) fn(2, w) return '' end,
+    h3 = function (w) fn(3, w) return '' end,
+  }, true)
+  return list
+end
+caisse.envadditions.markupheadings = markupheadings
 
 local function renderallitems()
   for path, item in pairs(itemreg) do
