@@ -612,6 +612,7 @@ copyfile('divider-fleuron-heart.svg', true)
 copyfile('divider-fleuron-windy.svg', true)
 
 renderraw('bin/main.css', 'main.css', nil, true)
+renderraw('bin/main.js', 'main.js', nil, true)
 for _, fontname in ipairs({
   'Livvic-Regular', 'Livvic-SemiBold', 'Livvic-Medium',
   'Sono_Monospace-Regular', 'Sono_Monospace-SemiBold',
