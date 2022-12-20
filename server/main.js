@@ -121,7 +121,7 @@ const staticFile = async (req, opts, headers, path) => {
     let file
     let fileInfo
     try {
-      file = await Deno.open(path)
+      file = await Deno.open('../build/' + path)
       fileInfo = await file.stat()
       if (fileInfo.isDirectory) return null
     } catch (e) {
@@ -176,8 +176,9 @@ const staticFile = async (req, opts, headers, path) => {
     return new Response(text, { status, headers })
   } else {
     headers.set('ETag', etag)
-    if (realPath.match(/\.[0-9a-f]{8}\.[a-zA-Z0-9-_]+$/)) {
-      // Versioned
+    if (realPath.match(/\.[0-9a-f]{8}\.[a-zA-Z0-9-_]+$/)  // Versioned
+      || realPath.match(/^\/bin\/vendor\//)   // Vendored
+    ) {
       headers.set('Cache-Control', 'public, max-age=31536000')
     } else {
       headers.set('Cache-Control', 'public, no-cache, max-age=31536000')
@@ -246,10 +247,9 @@ const serveReq = async (req) => {
 
     // Routes
     if (url.pathname === '/') {
-      return await staticFile(req, opts, headers, '../build/index')
+      return await staticFile(req, opts, headers, 'index')
     }
-    return await staticFile(req, opts, headers, '../build' +
-      decodeURI(url.pathname))  // XXX: Don't do this
+    return await staticFile(req, opts, headers, decodeURI(url.pathname))
   }
   return new Response('hello')
 }
