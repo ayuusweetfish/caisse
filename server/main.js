@@ -12,12 +12,29 @@ const siteRootDir = resolve('../build')
 const supportedLangs = ['zh', 'en']
 
 const mime = (s) => {
-  if (s.endsWith('.html')) return 'text/html; charset=UTF-8'
-  if (s.endsWith('.css')) return 'text/css; charset=UTF-8'
-  if (s.endsWith('.svg')) return 'image/svg+xml'
-  if (s.endsWith('.mp4')) return 'media/mp4'
-  if (s.endsWith('.js')) return 'application/javascript'
-  if (s.endsWith('.wasm')) return 'application/wasm'
+  const ext = s.substring(s.lastIndexOf('.') + 1).toLowerCase()
+  switch (ext) {
+    case 'html': return 'text/html; charset=UTF-8'
+    case 'css': return 'text/css; charset=UTF-8'
+    case 'js': return 'application/javascript; charset=UTF-8'
+    case 'woff2': return 'font/woff2'
+    case 'woff': return 'font/woff'
+    case 'svg': return 'image/svg+xml'
+    case 'png': return 'image/png'
+    case 'jpeg': case 'jpg': return 'image/jpeg'
+    case 'ogg': return 'audio/ogg'
+    case 'mp3': return 'audio/mp3'
+    case 'mp4': return 'video/mp4'
+    case 'pdf': return 'application/pdf'
+    case 'txt': return 'text/plain; charset=UTF-8'
+    case 'mid': return 'audio/midi'
+    case 'wasm': return 'application/wasm'
+    case 'xml': {
+      if (s.match(/^\/rss\.[A-Za-z-]+\.xml$/)) return 'application/rss+xml; charset=UTF-8'
+      if (s.match(/^\/atom\.[A-Za-z-]+\.xml$/)) return 'application/atom+xml; charset=UTF-8'
+      return 'application/xml; charset=UTF-8'
+    }
+  }
   return 'application/octet-stream'
 }
 

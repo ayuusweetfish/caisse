@@ -13,13 +13,13 @@
 !<clearfloat>
 !<hr windy>
 
-!<h1 最近在干嘛>
+!<h1 最近在干嘛 #recent>
 最近把这个网站搭了起来，短期内应该会比较频繁地更新。
 有一个上个月就想做完的实验性小动画还差一些工作，可能这段时间也会做一下吧。
 在尝试学画画，跟着 <link https://drawabox.com/ Drawabox> 的教程摸索中。<date 2022.21>
 
-!<h1 喜欢的东西>
-!<h2 歌单>
+!<h1 喜欢的东西 #prefs>
+!<h2 歌单 #playlist>
 !<gridtable music-table
   <= 一些零散的歌>
   <musictrack 瀬名航//鎖那 一个人的旅行 <lang ja ひとり旅> music/hitori.jpg 歌曲动画中的画面，女孩背着包、脖子上挂着相机独自走在路上，由 Mitsuki Sanagi 绘制。>
@@ -32,7 +32,7 @@
   <musictrack <= Humbert Humbert> Message <lang ja メッセージ> music/hundreds.jpg 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
 >
 
-!<h2 游戏>
+!<h2 游戏 #games>
 !<list
   <li <b 蔚蓝/Celeste> — Maddy Makes Games>
   <li <b 短途旅行/A Short Hike> — Adam Robinson-Yu>
@@ -40,7 +40,7 @@
 >
 !<img games.png 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>
 
-!<h2 动画>
+!<h2 动画 #animations>
 !<list
   <li <b 日常>>
   <li <b 利兹与青鸟>>
@@ -48,9 +48,11 @@
 >
 !<img nichijou.jpg 《日常》片头中的三位主人公>
 
-!<h2 吃的>
+!<h2 吃的 #eat>
 我也不知道，好像比较喜欢番茄和红豆，对好看的也没什么抵抗力吧
 !<img IMG_20220505_113339_mh1651727711263.jpg 巧克力冰淇淋，上面有彩色糖豆和樱桃和西瓜等水果小块>
 
 {{contents.en=}}
 Hahaha!
+
+{{toc=}}true
