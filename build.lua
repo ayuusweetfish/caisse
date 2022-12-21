@@ -381,7 +381,7 @@ local function heading(tag, text)
   local bodytext, anchor = splitheading(text)
   return '<' .. tag ..
     (anchor and (' id="' .. anchor .. '"') or '') ..
-    '>' .. text .. '</' .. tag .. '>'
+    '>' .. bodytext .. '</' .. tag .. '>'
 end
 
 local markupfnsenvitem  -- Item name of the item currently being processed
@@ -573,7 +573,7 @@ local function markupheadings(s)
   local list = {}
   local function fn(n, w)
     local text, anchor = splitheading(w)
-    list[#list + 1] = {n, text}
+    list[#list + 1] = {n, text, anchor}
   end
   rendermarkup(s, {
     h1 = function (w) fn(1, w) return '' end,

@@ -104,7 +104,7 @@ Current page belongs to the category of {{cats[curcat].title}}
 {{ asideempty = false }}
 <section class='aside-section' id='table-of-contents'>
   {{@ h in aside.headinglist }}
-  <p class='toc-h{{h[1]}}'><a class='hidden-pastel'>{{h[2]}}</a></p>
+  <p class='toc-h{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
   {{@ end }}
 {{@ end }}
 </section>
