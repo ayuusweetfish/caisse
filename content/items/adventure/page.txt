@@ -81,7 +81,12 @@
 !<cen 几天前的两只小可爱合影！>
 !<img IMG_20221126_183545.jpg <= > vertical>
 
-一些音乐：<link leaving>
-
 {{contents.en=}}
 <kao ₍˄·͈༝·͈˄*₎◞ ̑̑>
+
+{{rellinks.zh=}}
+!<list
+  <li <link leaving 一些音乐：《%》>>
+>
+
+{{rellinks.en=}}

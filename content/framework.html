@@ -80,6 +80,15 @@ A Description
 </main>
 
 <aside>
+{{@ curcat }}
+{{curcatdesc.zh =}}
+当前页面归属于“{{cats[curcat].title}}”分类下
+{{curcatdesc.en =}}
+Current page belongs to the category of {{cats[curcat].title}}
+{{=}}
+<div id='curcat-icon' class='little-icons'
+  title='{{curcatdesc}}'>{{utf8.char(cats[curcat].icon)}}</div>
+{{@ end }}
 
 {{@ not not aside.date }}
 <div class='aside-section' id='aside-date'>
@@ -166,6 +175,10 @@ body.dark blockquote {
 }
 blockquote.quote::before,
 blockquote.quote::after {
+  color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 30%);
+}
+
+#curcat-icon {
   color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 30%);
 }
 {{@ end}}

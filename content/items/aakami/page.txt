@@ -12,7 +12,7 @@
 
 {{contents.zh=}}
 BOOOM! The 3rd GameShell Game Jam 队伍“未来网吧”作品。
-可以在 <subpagelink aakami/play 这里> 或者 <link https://xiashj96.itch.io/aakami itch.io> 玩！
+可以在 <subpagelink aakami/play 这里> 玩！
 用 W/S/A/D 或者箭头移动，I/K/J/U 对应三角/圆圈/叉/方块四个按钮。
 
 !<filetable
@@ -29,3 +29,12 @@ BOOOM! The 3rd GameShell Game Jam 队伍“未来网吧”作品。
 但是它的显卡好像比想象中菜一点，在电脑上流畅运行的像素画风游戏放在上面只有 2 帧的帧率，后来想了想加上了 sprite batch 的优化，居然回到了 50 帧以上，快乐。
 
 {{contents.en=}}
+
+{{rellinks.zh=}}
+!<list
+  <li <subpagelink aakami/play 游玩链接>>
+  <li <link https://github.com/ayuusweetfish/AAKAMI 程序仓库（GitHub）>>
+  <li <link https://xiashj96.itch.io/aakami itch.io 页面>>
+>
+
+{{rellinks.en=}}

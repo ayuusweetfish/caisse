@@ -31,3 +31,10 @@
 在这段物理模拟的动画中，星号形状的物体混杂在对二氯苯之间，搅成了一团彻底的混沌；有时星号旋转直指观众，可是出现在屏幕上的分明是一个个“叉”。点燃所谓正义的火焰却将其投向无辜的人群，那在说出“我对你错”时是否还对得起自己的良知呢？
 
 {{contents.en=}}
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/graphics-lab-THSS 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}

@@ -10,7 +10,7 @@
 {{date=}}2021.24, 2022.13
 
 {{contents.zh=}}
-可以在 <subpagelink fireflies/play 本站> 或者 <link https://ayuusweetfish.itch.io/fireflies-in-forest-flowers itch.io> 游玩。
+可以在 <subpagelink fireflies/play 本站> 游玩。
 以前就经常思考，当一个个生灵离开这个世界的时候，它们会去往哪里呢？我愿意相信，它们是回归了宇宙，住在每一颗星、每一粒沙、每一朵花、每一个人；世界的每一个角落从此都有它们。它们不再生活在这里，但是曾经的足迹会永远陪伴着那些仍然停留在这里的生灵。
 所以不用太难过啦，只要用心去联结，我们所爱的一切就都未曾离开；只要将离我们而去的一切深深地刻在心里、带着它们前行，我们就不会孤单。
 
@@ -42,7 +42,7 @@ Jam 结束之后不久，家里的猫猫之一，窝窝，被紧急送往附近�
 
 回到学校后不久做了一个梦，梦见窝窝坐在家里阳台的水池上，我伸手去摸，她开心地过来蹭了蹭，然后化作一团黑色的烟雾消散在空气中。之后就再也没有来过梦里，是已经完成全部心愿了吗？
 但自己有时候还是有点想念，会在和别人说起的时候一不小心掉下眼泪。还是那么不舍，不愿去面对告别的最后一小步。
-直到暑假回到家，在同一个空间里找回那样的心境，做完了音乐<link bellflowers 《梦游铃草间》>，加上了音效，还经过友人的试玩调整了一下关卡设置和引导流程，也给妈咪玩了。虽然还是对人说着“家里有三只猫——有一只在喵星”，但是不会那么难过了。主角爱莉丝在这片仙境与完成了她给奈奈的一次告别，或许我也该继续走下去啦。
+直到暑假回到家，在同一个空间里找回那样的心境，做完了音乐<link bellflowers 《%》>，加上了音效，还经过友人的试玩调整了一下关卡设置和引导流程，也给妈咪玩了。虽然还是对人说着“家里有三只猫——有一只在喵星”，但是不会那么难过了。主角爱莉丝在这片仙境与完成了她给奈奈的一次告别，或许我也该继续走下去啦。
 
 {{contents.en=}}
 Raylib 5K game jam entry
@@ -51,8 +51,8 @@ Raylib 5K game jam entry
 !<list
   <li <subpagelink fireflies/play 游玩链接（本站）>>
   <li <link https://ayuusweetfish.itch.io/fireflies-in-forest-flowers 游玩链接（itch.io）>>
-  <li <link bellflowers 音乐《梦游铃草间》>>
   <li <link https://github.com/ayuusweetfish/Fireflies-in-Forest-Flowers 程序仓库（GitHub）>>
+  <li <link bellflowers 音乐《%》>>
 >
 
 {{rellinks.en=}}

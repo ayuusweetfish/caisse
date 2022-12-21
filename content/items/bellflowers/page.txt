@@ -9,7 +9,7 @@
 {{date=}}2022.13
 
 {{contents.zh=}}
-<link fireflies 《流萤花语》>游戏配乐。
+<link fireflies 《%》>游戏配乐。
 
 !<filetable
   <file Bellflowers_Wonderland.ogg 梦游铃草间>
@@ -23,3 +23,11 @@ Game jam 的时候没来得及把音乐和声音加上，一直觉得是比较�
 
 {{contents.en=}}
 rt
+
+{{rellinks.zh=}}
+!<list
+  <li <link fireflies 游戏《%》>>
+  <li <subpagelink fireflies/play 游玩链接（本站）>>
+>
+
+{{rellinks.en=}}

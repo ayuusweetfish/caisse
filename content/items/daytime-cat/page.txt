@@ -11,7 +11,7 @@
 
 {{contents.zh=}}
 “做一只白天活动的猫不容易，但是普通猫猫可享受不到那么多阳光的美好。”
-昼行猫模拟器，跟着脚印找到其他猫（也可以找到鱼！）。可以在 <subpagelink daytime-cat/play 本站> 或者 <link https://ayuusweetfish.itch.io/daytime-cat itch.io> 玩！
+昼行猫模拟器，跟着脚印找到其他猫（也可以找到鱼！）。可以在 <subpagelink daytime-cat/play 本站> 玩！
 
 !<img screenshot.png <= 游戏截图>>
 
@@ -19,3 +19,12 @@ Trijam #152 参赛作品。这个系列的 jam 要求在三小时内完成制作
 
 {{contents.en=}}
 Trijam #152 entry.
+
+{{rellinks.zh=}}
+!<list
+  <li <subpagelink daytime-cat/play 游玩链接（本站）>>
+  <li <link https://ayuusweetfish.itch.io/daytime-cat 游玩链接（itch.io）>>
+  <li <link https://github.com/ayuusweetfish/Daytime-Cat 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
