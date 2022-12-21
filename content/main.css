@@ -20,6 +20,14 @@ body.dark {
   color: #fefbfa;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  flex: 1;
+}
+
 #main-grid {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
@@ -325,11 +333,16 @@ body.dark #top-fleuron { opacity: 45%; }
 }
 
 #bottom-fleuron {
-  background: no-repeat 100% 0 / cover url('/bin/{{ hashverfile('puffs.svg') }}');
   inline-size: 100%;
   block-size: 4.8em;
-  max-inline-size: 48em;
   margin-block-start: -4.8em;
+  text-align: right;
+}
+#bottom-fleuron > div {
+  background: no-repeat 100% 0 / cover url('/bin/{{ hashverfile('puffs.svg') }}');
+  block-size: 100%;
+  inline-size: 100%;
+  max-inline-size: 48em;
   position: absolute;
   inset-inline-end: 0;
 }
