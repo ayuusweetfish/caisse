@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 2fr 5fr 5fr;
   align-items: center;
-  width: 100%;
-  max-width: 60em;
+  inline-size: 100%;
+  max-inline-size: 60em;
 }
 .music-table > div {
   padding: 0.25em 0.5em;
@@ -26,6 +26,7 @@
 @media (max-width: 115vh), (max-width: 48rem) {
   .music-table {
     grid-template-columns: 1fr 4fr;
+    max-inline-size: 36em;
   }
   .music-table > div {
     padding-block: 0.125em;

@@ -662,7 +662,7 @@ registeritemmarkup('index', 'home')
 registeritemmarkup('about', 'home')
 registeritemmarkup('dates', 'home')
 
-local revloglatest = 2022*12 + 11
+local revloglatest = 2022*12 + 10
 local revlogfirst = 2022*12 + 10
 registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
 for _, lang in ipairs({'zh', 'en'}) do
