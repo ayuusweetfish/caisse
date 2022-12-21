@@ -632,6 +632,7 @@ copyfile('background-dark.svg', true)
 copyfile('top-fleuron.svg', true)
 copyfile('chalk-bg-w.png', true)
 copyfile('chalk-bg-b.png', true)
+copyfile('puffs.svg', true)
 
 copyfile('divider-end.svg', true)
 copyfile('divider-fleuron-cloudy.svg', true)

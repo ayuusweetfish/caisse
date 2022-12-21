@@ -324,6 +324,16 @@ body.dark #top-fleuron { opacity: 45%; }
   }
 }
 
+#bottom-fleuron {
+  background: no-repeat 100% 0 / cover url('/bin/{{ hashverfile('puffs.svg') }}');
+  inline-size: 100%;
+  block-size: 4.8em;
+  max-inline-size: 48em;
+  margin-block-start: -4.8em;
+  position: absolute;
+  inset-inline-end: 0;
+}
+
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
