@@ -19,3 +19,10 @@ Patchwork Girl 定义了一个基于 WebSocket 的应用层协议，并提供了
 具体可参见<link https://github.com/ayuusweetfish/PatchworkGirl 源码仓库>中的 README 说明文档。
 
 {{contents.en=}}
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/PatchworkGirl 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}

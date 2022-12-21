@@ -24,3 +24,13 @@ Tilde 是一个朴素的音乐编辑与播放工具，或者也可以按照习�
 《洞窟物语》的两位主角名字都是标点符号（结尾才公布名字的主人公和 Curly Brace 小姐姐），所以这个小玩意也跟着用标点符号作名字啦～
 
 {{contents.en=}}
+
+{{rellinks.zh=}}
+!<list
+  <li <link zero#Heptadekka 使用 Tilde 制作的音乐《Heptadekka》>>
+  <li <link https://www.warmplace.ru/soft/pixilang/ Pixilang>>
+  <li <link https://www.cavestory.org/ 《洞窟物语》社区网站>>
+  <li <link https://studiopixel.jp/ Studio Pixel>>
+>
+
+{{rellinks.en=}}

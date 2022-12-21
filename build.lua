@@ -435,7 +435,11 @@ markupfns = {
     end
     local item = itemreg[itemname]
     if not item then return markupfns.extlink(path, text ~= '' and text or path) end
-    if text == '' then text = caisse.envadditions.tr(item.locals.title) end
+    if text == '' then text = '%' end
+    text = text:gsub('%%%%?', function (s)
+      if s == '%%' then return '%'
+      else return caisse.envadditions.tr(item.locals.title) end
+    end)
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
       .. htmlescape(text) .. '</a>'
   end,

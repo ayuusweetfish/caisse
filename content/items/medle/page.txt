@@ -24,3 +24,11 @@
 
 {{contents.en=}}
 rt
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://medle.0-th.art/ 游玩链接>>
+  <li <link https://github.com/ayuusweetfish/medle 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}

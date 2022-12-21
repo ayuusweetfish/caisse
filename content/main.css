@@ -72,11 +72,23 @@ nav, main, aside, footer { padding: 1rem; }
 
 aside {
   font-size: 0.9rem;
-  padding-block-start: 2rem;
+  padding-block-start: 4rem;
+  position: relative;
+}
+#curcat-icon {
+  position: absolute;
+  inset-inline-end: 0.5rem;
+  inset-block-start: 0;
+  font-size: 3.5rem;
+  transform: rotate(-9deg);
+  user-select: none;
 }
 aside div[role='separator'] {
   margin-block: 1em;
   opacity: 60%;
+}
+#aside-date {
+  margin-block: 1.5em 0.25em;
 }
 #table-of-contents { color: hsl(50deg, 5%, 30%); }
 body.dark #table-of-contents { color: hsl(36deg, 5%, 70%); }
@@ -122,10 +134,18 @@ body.dark #table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
     grid-column: 2;
   }
 
-  aside {
-    padding-block: 0.5em 0;
+  main {
+    padding-block-end: 0;
   }
-  #aside-date, #table-of-contents, aside div[role='separator'] {
+  aside {
+    padding-block: 0;
+  }
+  #related-links ul li::before {
+    display: inline-block;
+    margin-inline-start: 0;
+  }
+  #aside-date, #curcat-icon, #table-of-contents,
+  aside div[role='separator'] {
     display: none;
   }
 }
