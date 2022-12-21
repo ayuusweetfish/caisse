@@ -1,6 +1,5 @@
-{{title.zh=}}线性袋鼠之内积溯源
-{{intro.zh=}}
-只有考试结束之后我才能真正地学习，考试之前我都在应考。—— 一只又在考场上被自己蠢哭的 sq
+{{title.zh=}}溯源复空间内积中的共轭
+{{intro.zh=}}复空间内积与二次型中共轭元素位置的不一致现象。
 {{title.en=}}Digging into the Inner Product?
 {{intro.en=}}a
 
@@ -38,7 +37,7 @@ f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em
 >
 ''>>
 
-!<h1 简单的解释>
+!<h1 简单的解释 #simple>
 
 事实上，<math \langle \mathbf{\mathbf{u}}, \mathbf{v} \rangle = \mathbf{v}^\mathsf{H}\mathbf{u}>，而 <math f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u}>，所以它们同为广义的二次型 <math Q_\mathbf{A}(\mathbf{u}, \mathbf{v}) = \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}> 的特例。
 
@@ -54,11 +53,11 @@ f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u} &= \sum_{j=1}^n \sum_{
 
 （其中 Kronecker 函数 <math \delta_{j,k}> 等于单位阵 <math \mathbf{I}> 的第 <math j> 行第 <math k> 列元素。）
 
-!<h1 复杂的解释>
+!<h1 复杂的解释 #detailed>
 
 <math \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}> 这个形式当然不是拍脑袋乱写的，数学家偏爱这个形式，其背后还有更本质的原因。［物理学上的习惯似乎是相反的，不过那样的原因（量子力学的 Dirac 符号）就与本文无关啦。］
 
-!<h2 为什么有共轭和共轭对称？>
+!<h2 为什么有共轭和共轭对称？ #why-conjugate>
 
 首先，标准内积里为什么有共轭？
 
@@ -83,7 +82,7 @@ f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u} &= \sum_{j=1}^n \sum_{
 
 这么看，“共轭”的性质确实很优秀呢。
 
-!<h2 为什么共轭取在第二个向量上？>
+!<h2 为什么共轭取在第二个向量上？ #why-conjugate-on-latter>
 
 要解决这个问题，不得不探寻内积的另一层本质，而从最简单的点积开始总是不会错的。点积的本质是什么？
 
@@ -97,13 +96,16 @@ f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u} &= \sum_{j=1}^n \sum_{
 
 从而共轭之所以取在 <math \mathbf{v}> 上，是因为我们希望 <math \mathbf{u}> 作为被变换的元素保留其原始状态，而将所有的运算放进 <math \mathbb{C}^n \rightarrow \mathbb{C}> 这个线性变换中去。至于 <math \mathbf{u}> 放在 <math \mathbf{v}> 前面的原因，大概也是觉得“先写被变换的元素，再指出变换”在这个二元运算当中比较符合直觉吧。
 
-!<h1 参考>
-
-!<list
-  <li <link https://www.youtube.com/watch?v=LyGKycYT2v0 3B1B：点积和对偶性>；>
-  <li <link https://zh.wikipedia.org/wiki/%E5%8D%8A%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%BD%A2%E5%BC%8F Wikipedia：半双线性形式>；>
-  <li 标准内积实部与虚部含义的内容来源于 MathOverflow“内积的几何本质？”问题下<link https://mathoverflow.net/a/80014 这一回答>中的见解。>
->
-
 {{contents.en=}}
 Yes?
+
+{{toc=}}true
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://www.youtube.com/watch?v=LyGKycYT2v0 3B1B：点积和对偶性>>
+  <li <link https://zh.wikipedia.org/wiki/%E5%8D%8A%E5%8F%8C%E7%BA%BF%E6%80%A7%E5%BD%A2%E5%BC%8F Wikipedia：半双线性形式>>
+  <li <link https://mathoverflow.net/a/80014 MathOverflow：“内积的几何本质？”问题下的回答>>
+>
+
+{{rellinks.en=}}
