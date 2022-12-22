@@ -1,5 +1,5 @@
 {{title.zh=}}AAKAMI
-{{intro.zh=}}射击游戏：小红帽与大灰狼，可乐椰奶和咖啡
+{{intro.zh=}}射击游戏：小红帽与大灰狼大战可乐、椰奶和咖啡
 {{title.en=}}AAKAMI
 {{intro.en=}}Game
 

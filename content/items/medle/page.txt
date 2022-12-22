@@ -10,7 +10,7 @@
 {{date=}}2022.02
 
 {{contents.zh=}}
-<link https://medle.0-th.art/ 游玩链接>！
+<link https://medle.ayu.land/ 游玩链接>！
 2022 年初的时候 <link https://www.powerlanguage.co.uk/ Josh Wardle> 设计的单词猜谜小游戏《Wordle》爆火，受此启发在军乐队寒训的时候分析了旋律猜谜的可行性，也进行了内测，最后在寒训结束后当天上线了这个小游戏。
 !<h1 动机>
 设计的愿景是希望每个人，无论经验如何，都可以在猜谜游戏中近距离地探索、体验、创造音乐。
@@ -27,7 +27,7 @@ rt
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://medle.0-th.art/ 游玩链接>>
+  <li <link https://medle.ayu.land/ 游玩链接>>
   <li <link https://github.com/ayuusweetfish/medle 程序仓库（GitHub）>>
 >
 

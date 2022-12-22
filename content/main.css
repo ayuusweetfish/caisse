@@ -61,12 +61,13 @@ nav > ul > li span.little-icons {
   white-space: nowrap;
   text-align: center;
   padding-block: 0.5rem;
-  background: rgba(240, 240, 240, 97%);
+  background: rgba(248, 248, 248, 97%);
   position: absolute;
   inset-block-start: 2rem;
+  border-radius: 0.25em;
 }
-#lang-list a {
-  display: block;
+#lang-list p {
+  margin-block: 0.1em 0.3em;
 }
 
 summary {

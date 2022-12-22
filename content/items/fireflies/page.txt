@@ -1,5 +1,5 @@
 {{title.zh=}}流萤花语
-{{intro.zh=}}解谜游戏，讲述与自己之所爱重新联结的故事。
+{{intro.zh=}}解谜游戏，讲述与自己所爱的伙伴重新联结的故事。
 {{title.en=}}Fireflies in Forest Flowers
 {{intro.en=}}A puzzle game — when you reconnect with your loved one.
 

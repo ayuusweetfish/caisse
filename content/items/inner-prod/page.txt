@@ -1,4 +1,4 @@
-{{title.zh=}}溯源复空间内积中的共轭
+{{title.zh=}}溯源：复空间内积中的共轭
 {{intro.zh=}}复空间内积与二次型中共轭元素位置的不一致现象。
 {{title.en=}}Digging into the Inner Product?
 {{intro.en=}}a
