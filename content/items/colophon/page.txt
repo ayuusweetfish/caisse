@@ -1,0 +1,17 @@
+{{title.zh=}}版权页
+{{title.en=}}Colophon
+
+{{contents.zh=}}
+若无特别注明，发布于本站的内容均以 <link https://creativecommons.org/licenses/by-sa/4.0/deed.zh 知识共享署名-相同方式共享 4.0 国际许可协议>（CC BY-SA 4.0）进行许可。
+
+依照所有者的使用授权或者开源许可，本站引用以下图像与字体资源：
+!<list
+  <li <link https://www.freepik.com/free-vector/ornament-divider-collection_4187066.htm Ornament divider collection> —— Freepik（保留一切权利）>
+  <li <link https://commons.wikimedia.org/wiki/File:Feed-icon.svg Web feed icon> —— Matt Brett（MPL v1.1）>
+  <li <link https://github.com/googlefonts/noto-emoji Noto Emoji> —— Google（SIL OFL v1.1）>
+  <li <link https://fonts.google.com/specimen/Livvic Livvic> —— Jacques Le Bailly（SIL OFL v1.1）>
+  <li <link https://fonts.google.com/specimen/Sono Sono> —— Tyler Finck（SIL OFL v1.1）>
+  <li <link https://www.aafont.com.cn/detail.html?fontId=s9K1vqVZ Aa楷宋> —— Aa字库（保留一切权利）>
+>
+
+{{contents.en=}}

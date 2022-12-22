@@ -672,6 +672,7 @@ end
 registeritemmarkup('index', 'home')
 registeritemmarkup('about', 'home')
 registeritemmarkup('dates', 'home')
+registeritemmarkup('colophon', 'home')
 
 local revloglatest = 2022*12 + 10
 local revlogfirst = 2022*12 + 10

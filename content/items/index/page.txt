@@ -28,7 +28,7 @@
   <li <date 2022.20> 开始施工啦！之前做的一小部分没有用上，直接重新来过了。>
 >
 
-<link revlog 月度修订记录>，以及<link revlog#feed 订阅消息源>。
+<link revlog>
 
 {{contents.en=}}
 Hahaha!
