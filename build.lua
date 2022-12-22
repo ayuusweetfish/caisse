@@ -83,20 +83,31 @@ local function copyfile(src, ishashver)
   local dst = copydst(src)
   if ishashver then dst = hashverfile(src, dst) end
   if contentpath[dst] then return dst end
-  -- Hard link
-  bufferedcmds[#bufferedcmds + 1] =
-    'ln "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
+  if caisse.envadditions.distbuild then
+    bufferedcmds[#bufferedcmds + 1] =
+      'cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
+  else
+    -- Hard link
+    bufferedcmds[#bufferedcmds + 1] =
+      'ln "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
+  end
   contentpath[dst] = src
   return dst
 end
 local function copydir(src)
   local dst = copydst(src)
   if contentpath[dst] then return dst end
-  -- Symbolic link
-  bufferedcmds[#bufferedcmds + 1] =
-    'ln -s ' ..
-    '"$(realpath --relative-to="$(dirname "' .. sitepath .. dst .. '")" "' .. srcpath .. src .. '")" ' ..
-    '"' .. sitepath .. dst .. '"'
+  if caisse.envadditions.distbuild then
+    -- Recursive copy
+    bufferedcmds[#bufferedcmds + 1] =
+      'cp -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
+  else
+    -- Symbolic link
+    bufferedcmds[#bufferedcmds + 1] =
+      'ln -s ' ..
+      '"$(realpath --relative-to="$(dirname "' .. sitepath .. dst .. '")" "' .. srcpath .. src .. '")" ' ..
+      '"' .. sitepath .. dst .. '"'
+  end
   contentpath[dst] = src
   return dst
 end
