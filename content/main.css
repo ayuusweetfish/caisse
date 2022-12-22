@@ -248,17 +248,17 @@ body.dark #table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
    differently from Firefox/Safari.
   "The height of the content area should be based on the font,
    but this specification does not specify how." */
-body.ua-inline-height .pastel {
-  border-image-outset: 0.18em 0;
+body.ua-inline-height .pastel:not(.little-icons) {
+  border-image-outset: 0.24em 0;
 }
 .pastel:hover,
 .pastel:focus {
   border-image-width: 0.48em;
   border-image-outset: 0.40em 0;
 }
-body.ua-inline-height .pastel:hover,
-body.ua-inline-height .pastel:focus {
-  border-image-outset: 0.30em 0;
+body.ua-inline-height .pastel:not(.little-icons):hover,
+body.ua-inline-height .pastel:not(.little-icons):focus {
+  border-image-outset: 0.36em 0;
 }
 
 {{
@@ -349,7 +349,7 @@ body.dark #top-fleuron { opacity: 45%; }
 }
 #bottom-fleuron > div {
   background: no-repeat 100% 0 / cover url('/bin/{{ hashverfile('puffs.svg') }}');
-  block-size: 100%;
+  block-size: 4.8em;
   inline-size: 100%;
   max-inline-size: 48em;
   position: absolute;
