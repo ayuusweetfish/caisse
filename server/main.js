@@ -1,5 +1,4 @@
 import { readAll } from 'https://deno.land/std@0.168.0/streams/read_all.ts'
-import { resolve } from 'https://deno.land/std@0.168.0/path/mod.ts'
 
 const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
@@ -7,7 +6,7 @@ const port = +Deno.env.get('PORT') || 1123
 const server = Deno.listen({ port })
 log(`Running at http://localhost:${port}/`)
 
-const siteRootDir = resolve('../build')
+const siteRootDir = Deno.cwd() + '/build'
 
 const supportedLangs = ['zh', 'en']
 
@@ -183,9 +182,12 @@ const staticFile = async (req, opts, headers, path) => {
     let file
     let fileInfo
     try {
-      file = await Deno.open(siteRootDir + path)
-      fileInfo = await file.stat()
+      // XXX: Atomicity is sacrificed here, but as of December 2022
+      // the Deno Deploy runtime does not support FsFile.stat()
+      // and throws an exception (EISDIR) on Deno.open()'ing a directory
+      fileInfo = await Deno.stat(siteRootDir + path)
       if (fileInfo.isDirectory) return null
+      file = await Deno.open(siteRootDir + path)
     } catch (e) {
       if (e instanceof Deno.errors.NotFound) return null
       throw e
@@ -204,18 +206,6 @@ const staticFile = async (req, opts, headers, path) => {
   if (realPath === undefined)
     return new Response('', { status: 404, headers })
 
-  const etag = await etagGet(realPath, file)
-
-  const rangeHeader = req.headers.get('Range')
-  const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
-  const byteStart = (result && result[1]) ? +result[1] : 0
-  const byteEnd = (result && result[2]) ? +result[2] : fileSize - 1;
-  if (result) {
-    headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
-    file.seek(byteStart, Deno.SeekMode.Start)
-    status = 206
-  }
-  headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
   headers.set('Content-Type', mime(realPath))
   if ((await metaGet(realPath, 'COOP')) === true) {
     headers.set('Cross-Origin-Opener-Policy', 'same-origin')
@@ -223,6 +213,7 @@ const staticFile = async (req, opts, headers, path) => {
   }
 
   if (realPath.endsWith('.html')) {
+    // Templates
     let text = new TextDecoder().decode(await readAll(file))
     const timeOfDayCur = timeOfDay()
     text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
@@ -239,7 +230,19 @@ const staticFile = async (req, opts, headers, path) => {
     headers.set('Cache-Control', 'no-store')
     return new Response(text, { status, headers })
   } else {
+    // Static file
+    const etag = await etagGet(realPath, file)
     headers.set('ETag', etag)
+    const rangeHeader = req.headers.get('Range')
+    const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
+    const byteStart = (result && result[1]) ? +result[1] : 0
+    const byteEnd = (result && result[2]) ? +result[2] : fileSize - 1;
+    if (result) {
+      headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
+      file.seek(byteStart, Deno.SeekMode.Start)
+      status = 206
+    }
+    headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
     if (realPath.match(/\.[0-9a-f]{8}\.[a-zA-Z0-9-_]+$/)  // Versioned
       || realPath.match(/^\/bin\/vendor\//)   // Vendored
     ) {
