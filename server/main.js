@@ -84,7 +84,7 @@ const metaGet = async (path, attr) => {
   let index = path.length
   while (index > 0) {
     index = path.lastIndexOf('/', index - 1)
-    const metaPath = path.substring(0, index + 1) + '.meta.json'
+    const metaPath = path.substring(0, index + 1) + '.caisse.json'
     const metaObj = await metaRead(metaPath)
     if (metaObj && metaObj[attr]) return metaObj[attr]
   }
@@ -98,7 +98,7 @@ const metaGet = async (path, attr) => {
       for (const path of event.paths) {
         const relPath = path.substring(siteRootDir.length)
         delete etagReg[relPath]
-        if (relPath.endsWith('/.meta.json'))
+        if (relPath.endsWith('/.caisse.json'))
           delete metaReg[relPath]
       }
     }
