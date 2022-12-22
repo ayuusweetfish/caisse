@@ -63,6 +63,34 @@ const etagMatch = (a, b) => {
   return a === b
 }
 
+const metaReg = {}
+const metaRead = async (metaPath) => {
+  if (metaReg[metaPath] !== undefined) return metaReg[metaPath]
+  try {
+    const text = await Deno.readTextFile(siteRootDir + metaPath)
+    metaReg[metaPath] = JSON.parse(text)
+  } catch (e) {
+    if (e instanceof Deno.errors.NotFound) metaReg[metaPath] = null
+    else if (e instanceof SyntaxError) {
+      log(`Syntax error in ${metaPath}: ${e}`)
+      metaReg[metaPath] = null
+    }
+    else throw e
+  }
+  return metaReg[metaPath]
+}
+const metaGet = async (path, attr) => {
+  // assert(path.startsWith('/'))
+  let index = path.length
+  while (index > 0) {
+    index = path.lastIndexOf('/', index - 1)
+    const metaPath = path.substring(0, index + 1) + '.meta.json'
+    const metaObj = await metaRead(metaPath)
+    if (metaObj && metaObj[attr]) return metaObj[attr]
+  }
+  return undefined
+}
+
 ;(async () => {
   const watcher = Deno.watchFs(siteRootDir)
   for await (const event of watcher) {
@@ -70,6 +98,8 @@ const etagMatch = (a, b) => {
       for (const path of event.paths) {
         const relPath = path.substring(siteRootDir.length)
         delete etagReg[relPath]
+        if (relPath.endsWith('/.meta.json'))
+          delete metaReg[relPath]
       }
     }
   }
@@ -187,8 +217,10 @@ const staticFile = async (req, opts, headers, path) => {
   }
   headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
   headers.set('Content-Type', mime(realPath))
-  headers.set('Cross-Origin-Opener-Policy', 'same-origin')
-  headers.set('Cross-Origin-Embedder-Policy', 'require-corp')
+  if ((await metaGet(realPath, 'COOP')) === true) {
+    headers.set('Cross-Origin-Opener-Policy', 'same-origin')
+    headers.set('Cross-Origin-Embedder-Policy', 'require-corp')
+  }
 
   if (realPath.endsWith('.html')) {
     let text = new TextDecoder().decode(await readAll(file))
