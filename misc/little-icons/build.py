@@ -62,11 +62,25 @@ tr(0x1f343, r(25), s(1.02))
 tr(0x2744, r(-8), s(0.97))
 tr(0x1f9ca, r(-5))
 
+# Web feed icon
 glyph = font.createChar(0x1f5de)
 glyph.importOutlines('feed.svg')
 glyph.transform(psMat.scale(0.9))
 w = font.ascent + font.descent
 glyph.transform(psMat.translate(w * 0.05, font.descent * 0.3))
 glyph.width = w
+
+# Creative Commons icon
+glyph = font.createChar(0xa9)
+glyph.importOutlines('cc.svg')
+xmin, ymin, xmax, ymax = glyph.boundingBox()
+glyph.transform(psMat.translate(-xmin, -ymin))
+glyph.transform(psMat.scale(2.8))
+xmin, ymin, xmax, ymax = glyph.boundingBox()
+glyph.transform(psMat.translate(
+  (w * 3 - (xmax - xmin)) / 2,
+  -font.descent * 0.6
+))
+glyph.width = w * 3
 
 font.generate('little-icons.ttf')
