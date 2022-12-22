@@ -462,14 +462,14 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
   line-height: 0;
   display: inline-block;
 }
-.date-term sup.season-1::after { content: '\1f340'; transform: rotate(-21deg); }
-.date-term sup.season-2::after { content: '\1f338'; transform: rotate(10deg); }
-.date-term sup.season-3::after { content: '\1f333'; transform: rotate(0deg); }
-.date-term sup.season-4::after { content: '\2600'; transform: rotate(0deg); }
-.date-term sup.season-5::after { content: '\1f33e'; transform: rotate(-15deg) scale(0.99); }
-.date-term sup.season-6::after { content: '\1f343'; transform: rotate(-25deg) scale(1.02); }
-.date-term sup.season-7::after { content: '\2744'; transform: rotate(8deg) scale(0.97); }
-.date-term sup.season-8::after { content: '\1f9ca'; transform: rotate(5deg); }
+.date-term sup.season-1::after { content: '\1f340'; }
+.date-term sup.season-2::after { content: '\1f338'; }
+.date-term sup.season-3::after { content: '\1f333'; }
+.date-term sup.season-4::after { content: '\2600'; }
+.date-term sup.season-5::after { content: '\1f33e'; }
+.date-term sup.season-6::after { content: '\1f343'; }
+.date-term sup.season-7::after { content: '\2744'; }
+.date-term sup.season-8::after { content: '\1f9ca'; }
 
 body.dark a.date-term-link::after { background: rgb(128, 128, 128); }
 body.dark .date-term { color: rgb(180, 180, 180); }
