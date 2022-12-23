@@ -152,7 +152,7 @@ Current page belongs to the category of {{cats[curcat].title}}
 <style>
 {{@ distbuild }}
 @font-face {
-  font-family: 'AaKaiSong';
+  font-family: 'AaKaiSong Stray {{ basehash(savepath) }}';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -169,6 +169,12 @@ Current page belongs to the category of {{cats[curcat].title}}
   unicode-range: U+0800-FFFF;
 }
 {{@ end }}
+body:lang(en), *[lang='en'] {
+  font-family: 'Livvic', 'AaKaiSong', 'AaKaiSong Stray {{ basehash(savepath) }}', sans-serif;
+}
+body:lang(zh), *[lang='zh'] {
+  font-family: 'AaKaiSong', 'AaKaiSong Stray {{ basehash(savepath) }}', 'Livvic — Lighter Bold', sans-serif;
+}
 
 {{@ curcat}}
 {{ hue, sat, val1, val2 = table.unpack(cats[curcat].tint) }}

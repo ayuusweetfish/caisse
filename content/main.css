@@ -415,19 +415,13 @@ body.dark #top-fleuron { opacity: 45%; }
   font-family: 'Ayuu Little Icons — 221202a';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
   src: url(/bin/{{ hashverfile('fonts/little-icons.woff2') }}) format('woff2'),
        url(/bin/{{ hashverfile('fonts/little-icons.woff') }}) format('woff');
 }
 {{@ distbuild }}
 {{ AaKaiSong_css }}
 {{@ end }}
-body:lang(en), *[lang='en'] {
-  font-family: 'Livvic', 'AaKaiSong', sans-serif;
-}
-body:lang(zh), *[lang='zh'] {
-  font-family: 'AaKaiSong', 'Livvic — Lighter Bold', sans-serif;
-}
 *[lang='lat'] { font-style: italic; }
 
 pre, code, .tt {
