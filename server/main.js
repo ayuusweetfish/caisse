@@ -2,6 +2,16 @@ import { readAll } from 'https://deno.land/std@0.168.0/streams/read_all.ts'
 
 const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
+const persistEndpoint = Deno.env.get('PERS')
+const persistLog = (line) => {
+  log(line)
+  if (persistEndpoint)
+    fetch(persistEndpoint, {
+      method: 'POST',
+      body: `${(new Date()).toISOString()} ${line}`,
+    })
+}
+
 const port = +Deno.env.get('PORT') || 1123
 const server = Deno.listen({ port })
 log(`Running at http://localhost:${port}/`)
@@ -213,6 +223,7 @@ const staticFile = async (req, opts, headers, path) => {
   }
 
   if (realPath.endsWith('.html')) {
+    persistLog(`${req.url} ${req.headers.get('Cookie') || ''}`)
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
     const timeOfDayCur = timeOfDay(opts.tz || 8 * 60)
