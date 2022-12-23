@@ -114,8 +114,8 @@ const redirectResponse = (url, headers, isPerm, isNoCache) => {
   )
 }
 
-const timeOfDay = () => {
-  const timestampMinute = Math.floor(Date.now() + 3600000 * 8) / 60000
+const timeOfDay = (timezoneOffsetMin) => {
+  const timestampMinute = Math.floor(Date.now() / 60000) + timezoneOffsetMin
   const minuteInDay = timestampMinute % 1440
   const day = (timestampMinute - minuteInDay) / 1440
 
@@ -215,7 +215,7 @@ const staticFile = async (req, opts, headers, path) => {
   if (realPath.endsWith('.html')) {
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
-    const timeOfDayCur = timeOfDay()
+    const timeOfDayCur = timeOfDay(opts.tz || 8 * 60)
     text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
       if (key === 'dark') {
         const spacePos = value.indexOf(' ')
@@ -286,6 +286,11 @@ const serveReq = async (req) => {
     } else {
       opts.lang = negotiateLang(req.headers.get('Accept-Language') || '', supportedLangs)
       newCookies.lang = opts.lang
+    }
+    // Timezone
+    if (isFinite(cookies['tz'])) {
+      const tz = -cookies['tz']
+      if (tz >= -13 * 60 && tz <= 13 * 60) opts.tz = tz
     }
     // Query string
     let optsUpdatedByQuery = false

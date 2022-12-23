@@ -33,6 +33,18 @@ A Description
   <link rel='alternate' type='application/rss+xml' href='/rss.{{ lang }}.xml' title='RSS feed'>
   <link rel='alternate' type='application/atom+xml' href='/atom.{{ lang }}.xml' title='Atom feed'>
 
+  <script>
+  (() => {
+    const matched = document.cookie.match(/(?:^|;\s*)tz=(-?\d+)(?:;|$)/)
+    const initial = (matched && matched[1])
+    const tz = (new Date().getTimezoneOffset()).toString()
+    if (initial !== tz) {
+      document.cookie = 'tz=' + tz + '; SameSite=Strict; Max-Age=2592000'
+      window.location = window.location
+    }
+  })()
+  </script>
+
   <title>{{ fulltitle }}</title>
 
   <link rel='stylesheet' href='/bin/{{ hashverfile('main.css') }}'>
