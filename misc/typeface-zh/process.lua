@@ -77,7 +77,7 @@ for line in io.open('stray.txt'):lines() do
   for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
     cps[#cps + 1] = tonumber(w, 16)
   end
-  docpath = docpath:gsub('^.+build/(.+)/index.html$', '%1')
+  docpath = docpath:gsub('^.+build/(.+)/index.zh.html$', '%1')
   print(docpath)
   addsubset(cps, 'stray-' .. basehash(docpath), true)
 end

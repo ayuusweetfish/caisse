@@ -5,6 +5,6 @@
 
 施工中
 
-!<img friends.jpg <= >>
+!<img friends.jpg <= > small>
 
 {{contents.en=}}

@@ -3,7 +3,10 @@
 
 {{contents.zh=}}
 三脚猫多面手，努力学习世界的一切。
+{{contents.en=}}
+Half-baked polyglot, inquiring into every corner of the world.
 
+{{contents.zh=}}
 !<list
   <li <link about 关于自己>>
   <li <link fireflies 萤火虫>>
@@ -32,4 +35,30 @@
 <link revlog>
 
 {{contents.en=}}
-Hahaha!
+!<note You are viewing the English version because the browser hints that this is your preferred language; however, English content is largely incomplete. For now, please <catlink /?lang=zh home switch the language to Chinese>.>
+!<list
+  <li <link about About>>
+  <li <link fireflies Fireflies>>
+  <li <link medle Melody puzzles>>
+  <li <link zzz Piece for percussion>>
+  <li <link traviata <it La Traviata> Overture>>
+  <li <link adventure Friends on Adventure>>
+>
+
+!<list
+  <li <link https://github.com/ayuusweetfish GitHub>>
+  <li <link https://discord.com/users/707786894213120082 Discord>>
+  <li <link friends Friends>>
+>
+
+!<img fish.png Line art of a fish <= orig-size more-margin>>
+
+!<hr windy>
+
+!<h1 Recent updates>
+!<list
+  <li <date 2022.21> Most stuff done recently has been included, looking forward to going online!>
+  <li <date 2022.20> Construction begins!>
+>
+
+<link revlog>

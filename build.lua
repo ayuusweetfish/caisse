@@ -215,15 +215,15 @@ end
 local datecache = {}
 local function renderdate(datestr, nolink)
   local content
-  if datecache[datestr] then
-    content = datecache[datestr]
+  if datecache[caisse.lang .. datestr] then
+    content = datecache[caisse.lang .. datestr]
   else
     local dates = {}
     for year, term in datestr:gmatch('([0-9]+)%.([0-9]+)') do
       dates[#dates + 1] = { year = tonumber(year, 10), term = tonumber(term, 10) }
     end
     content = render('date.html', { dates = dates })
-    datecache[datestr] = content
+    datecache[caisse.lang .. datestr] = content
   end
   if not nolink then
     content = '<a href="/dates" class="hidden-pastel date-term-link">'
@@ -408,6 +408,9 @@ markupfns = {
   b = function (text)
     return '<strong>' .. text .. '</strong>'
   end,
+  it = function (text)
+    return '<i>' .. text .. '</i>'
+  end,
   br = function () return '<br>' end,
   hr = function (class)
     return '<div role="separator"' ..
@@ -427,13 +430,17 @@ markupfns = {
     return '<span class="no-break">' .. text .. '</span>'
   end,
   rawlink = function (href, text)
-    return '<a href="' .. href .. '">' .. htmlescape(text) .. '</a>'
+    return '<a href="' .. href .. '">' .. text .. '</a>'
   end,
   extlink = function (href, text)
     return '<a class="pastel external" href="' .. href .. '" target="_blank">'
-      .. htmlescape(text)
+      .. text
       .. '<sup class="little-icons">&#x1fa90;</sup>'
       .. '</a>'
+  end,
+  catlink = function (path, cat, text)
+    return '<a class="pastel ' .. cat .. '" href="' .. path .. '">'
+      .. text .. '</a>'
   end,
   link = function (path, text)
     local itemname = path
@@ -452,7 +459,7 @@ markupfns = {
       else return caisse.envadditions.tr(item.locals.title) end
     end)
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
-      .. htmlescape(text) .. '</a>'
+      .. text .. '</a>'
   end,
   subpagelink = function (path, text)
     local itemname = split(path, '/')[1]
