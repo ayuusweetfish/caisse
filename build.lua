@@ -672,6 +672,7 @@ for i = 1, #cats do
 end
 registeritemmarkup('index', 'home')
 registeritemmarkup('about', 'home')
+registeritemmarkup('friends', 'home')
 registeritemmarkup('dates', 'home')
 registeritemmarkup('colophon', 'home')
 
