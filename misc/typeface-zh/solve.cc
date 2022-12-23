@@ -1,7 +1,7 @@
 /*
   g++ solve.cc -std=c++11 -O2
-  find ../../build -name "*.html" | ./a.out > common.txt
-  find ../../build -name "*.html" | INC=1 ./a.out > stray.txt
+  find ../../build -name "index.zh.html" | ./a.out > common.txt
+  find ../../build -name "index.zh.html" | INC=1 ./a.out > stray.txt
 */
 
 #include <cstdint>    // uint64_t

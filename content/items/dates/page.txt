@@ -37,4 +37,36 @@
 本站惯例取建寅之月（立春）为岁首；简洁起见，年份取立春所在公历年份末二位。如公历 2022 年 1 月末记为 <date 2021.24>，2 月中旬为 <date 2022.01>。
 
 {{contents.en=}}
-Dates are based on the 24 solar terms! Do not mistake it for <extlink https://wiki.xxiivv.com/site/arvelie.html the Arvelie calendar>!
+Dates on this site are denoted by the 24 solar terms.
+Quite often, exact dates and hours are more of a disturbance. The ever-changing numbers inevitably create a slight sense of urgency, and many of life’s events do not fit into a specific moment. Recording dates in terms of time periods represented by the solar terms while maintaining a log of recent revisions, therefore, is more ideal for this site.
+This system is a solar calendar. According to the position of the Sun on the ecliptic, a return year (the time the Earth takes for one revolution around the Sun) is divided into twelve parts, which are known as the twelve solar months, numbered with the twelve Earthly Branches. Each month is divided into two halves, the first named “Jie” (season) and the second named “Qi” (climate), totalling 24 periods, which are named according to the patterns in weather and natural phenomena that the ancient Chinese had drawn from their farming experience, and are now collectively named “the solar terms”.
+
+!<table
+  <tr <th Season> <th Solar Term> <th Abbr.> <th Gregorian Calendar> <th Solar Month>>
+  <tr <tdspan 6 1 Spring> <td Spring’s arrival> <td P1> <td mid-Feb> <tdspan 2 1 Yin (Tiger)>>
+  <tr                     <td Rain’s bedewing> <td P2> <td Feb — March>>
+  <tr                     <td Insects’ arousal> <td P3> <td mid-March> <tdspan 2 1 Mao (Rabbit)>>
+  <tr                     <td Vernal equinox> <td P4> <td March — April>>
+  <tr                     <td Pure brightness> <td P5> <td mid-April> <tdspan 2 1 Chen (Dragon)>>
+  <tr                     <td Rain-soaked grains> <td P6> <td April — May>>
+  <tr <tdspan 6 1 Summer> <td Summer’s arrival> <td S1> <td mid-May> <tdspan 2 1 Si (Snake)>>
+  <tr                     <td Grain buds> <td S2> <td May — June>>
+  <tr                     <td Grain in ear> <td S3> <td mid-June> <tdspan 2 1 Wu (Horse)>>
+  <tr                     <td Summer solstice> <td S4> <td June — July>>
+  <tr                     <td Mild heat> <td S5> <td mid-July> <tdspan 2 1 Wei (Goat)>>
+  <tr                     <td Intense heat> <td S6> <td July — Aug>>
+  <tr <tdspan 6 1 Autumn> <td Autumn’s arrival> <td A1> <td mid-Aug> <tdspan 2 1 Shen (Monkey)>>
+  <tr                     <td End of heat> <td A2> <td Aug — Sept>>
+  <tr                     <td White dew> <td A3> <td mid-Sept> <tdspan 2 1 You (Rooster)>>
+  <tr                     <td Autumnal equinox> <td A4> <td Sept — Oct>>
+  <tr                     <td Chilled dew> <td A5> <td mid-Oct> <tdspan 2 1 Xu (Dog)>>
+  <tr                     <td Frost’s descent> <td A6> <td Oct — Nov>>
+  <tr <tdspan 6 1 Winter> <td Winter’s arrival> <td W1> <td mid-Nov> <tdspan 2 1 Hai (Pig)>>
+  <tr                     <td Light snow> <td W2> <td Nov — Dec>>
+  <tr                     <td Heavy snow> <td W3> <td mid-Dec> <tdspan 2 1 Zi (Rat)>>
+  <tr                     <td Winter solstice> <td W4> <td Dec — Jan (+1)>>
+  <tr                     <td Mild cold> <td W5> <td mid-Jan> <tdspan 2 1 Chou (Ox)>>
+  <tr                     <td Intense cold> <td W6> <td Jan — Feb>>
+>
+
+This site starts the new year with the month of Tiger, or Spring’s arrival; for simplicity, the year is written as the last two digits of the Gregorian calendar year in which this moment falls. For instance, late January of 2022 is denoted as <date 2021.24>, while the middle of February is denoted as <date 2022.01>.
