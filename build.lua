@@ -487,7 +487,7 @@ markupfns = {
     end
     return '<tr><td>' .. htmlescape(text) .. '</td>' ..
       '<td><a class="pastel ' .. item.cat .. '" href="' ..
-      uriescape(fileurl) ..  '">' ..
+      uriescape(fileurl) ..  '" target="_blank">' ..
       '<span class="little-icons">&#x' .. string.format('%x', icon) ..
       ';</span><strong class="file-table-name">' .. htmlescape(basename) .. '</strong>(' ..
       htmlescape(sizestring(size) ..

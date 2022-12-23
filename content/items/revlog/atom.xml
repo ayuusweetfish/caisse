@@ -23,7 +23,7 @@
     <title>{{ log.title[lang]}}</title>
     <id>tag:{{ domain }},2022-12:revlog#{{ string.format('%d%02d', year, month) }}</id>
     <link rel='alternate' href='{{ siteroot }}/revlog#{{ string.format("%d%02d", year, month) }}' />
-    <content type='html'>{{ htmlescape('<html><body>' .. log.contents[lang] .. '</body></html>') }}</content>
+    <content type='html'>{{ htmlescape(rendermarkup(log.contents[lang])) }}</content>
     <updated>{{*
       local y, m, d, h = table.unpack(split(log.timestamp, '.'))
       return os.date('!%FT%TZ', os.time({ year = y, month = m, day = d, hour = h }))
