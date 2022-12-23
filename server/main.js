@@ -343,17 +343,25 @@ const serveReq = async (req) => {
 const handleConn = async (conn) => {
   const httpConn = Deno.serveHttp(conn)
   try {
-    for await (const evt of httpConn) {
+    for await (const evt of httpConn) (async () => {
       const req = evt.request
       try {
-        await evt.respondWith(serveReq(req))
+        await evt.respondWith(await serveReq(req))
       } catch (e) {
-        log(`Internal server error: ${e}`)
-        await evt.respondWith(new Response('', { status: 500 }))
+        if (!(e instanceof Deno.errors.Http)) {
+          log(`Internal server error: ${e}`)
+          try {
+            await evt.respondWith(new Response('', { status: 500 }))
+          } catch (e) {
+            log(`Error writing 500 response: ${e}`)
+          }
+        }
       }
-    }
+    })()
   } catch (e) {
-    log(`Unhandled error: ${e}`)
+    if (!(e instanceof Deno.errors.Http)) {
+      log(`Unhandled error: ${e}`)
+    }
   }
 }
 while (true) {
