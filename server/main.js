@@ -223,7 +223,7 @@ const staticFile = async (req, opts, headers, path) => {
   }
 
   if (realPath.endsWith('.html')) {
-    persistLog(`${req.url} ${req.headers.get('Cookie') || ''}`)
+    persistLog(`${req.url} ${JSON.stringify(opts)}`)
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
     const timeOfDayCur = timeOfDay(opts.tz || 8 * 60)
