@@ -568,6 +568,7 @@ markupfns = {
         '<img src="' .. caisse.envadditions.file(image, 'items/' .. markupfnsenvitem) ..
         (alt and ('" alt="' .. alt) or '') .. '">'
        or '') ..
+      '<div class="music-track-gap"></div>' ..
       '<div><strong>' .. title .. '</strong><br>' ..
       (origtitle ~= '' and ('<span class="orig-title">' .. origtitle .. '</span>') or '') ..
       artiststr ..
