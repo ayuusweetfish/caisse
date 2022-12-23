@@ -1,0 +1,10 @@
+{{title.zh=}}网上邻居
+{{title.en=}}Network Neighbourhood
+
+{{contents.zh=}}
+
+施工中
+
+!<img friends.jpg <= >>
+
+{{contents.en=}}

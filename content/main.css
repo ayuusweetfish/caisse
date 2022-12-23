@@ -36,6 +36,11 @@ footer {
   grid-column: 3;
 }
 
+nav > h1 > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav > ul {
   display: flex;
   flex-direction: column;
@@ -554,6 +559,9 @@ ul {
 ul > li::before {
   content: '–';
   margin-inline: -1.25em 0.75em;
+  display: inline-block;
+  position: relative;
+  inset-block-start: 0.075em;
 }
 ul.compact {
   margin-block-start: -1em;

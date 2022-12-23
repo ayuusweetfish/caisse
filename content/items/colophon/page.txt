@@ -6,12 +6,12 @@
 
 依照所有者的使用授权或者开源许可证，本站引用以下图像与字体资源：
 !<list
-  <li <link https://www.freepik.com/free-vector/ornament-divider-collection_4187066.htm Ornament divider collection> —— Freepik（保留一切权利）>
+  <li <link https://www.freepik.com/free-vector/ornament-divider-collection_4187066.htm Ornament divider collection> —— Freepik（免费用户授权）>
   <li <link https://commons.wikimedia.org/wiki/File:Feed-icon.svg Web feed icon> —— Matt Brett（MPL v1.1）>
   <li <link https://github.com/googlefonts/noto-emoji Noto Emoji> —— Google（SIL OFL v1.1）>
   <li <link https://fonts.google.com/specimen/Livvic Livvic> —— Jacques Le Bailly（SIL OFL v1.1）>
   <li <link https://fonts.google.com/specimen/Sono Sono> —— Tyler Finck（SIL OFL v1.1）>
-  <li <link https://www.aafont.com.cn/detail.html?fontId=s9K1vqVZ Aa楷宋> —— Aa字库（保留一切权利）>
+  <li <link https://www.aafont.com.cn/detail.html?fontId=s9K1vqVZ Aa楷宋> —— Aa字库（非商用授权）>
 >
 
 搭起这些页面并且把它们送到读者面前的一组程序叫 Caisse（“盒子”）。负责搭建页面的部分是用 Lua 语言写成的；云端门神的咒语是 JavaScript，它们目前住在 <link https://deno.land/ Deno Deploy> 平台上。可以在 GitHub 上访问<link https://github.com/ayuusweetfish/caisse 程序仓库>。

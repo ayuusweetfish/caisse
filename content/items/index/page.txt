@@ -2,7 +2,7 @@
 {{title.en=}}~
 
 {{contents.zh=}}
-多面手三脚猫，努力学习世界的一切。
+三脚猫多面手，努力学习世界的一切。
 
 !<list
   <li <link about 关于自己>>
@@ -16,6 +16,7 @@
 !<list
   <li <link https://github.com/ayuusweetfish GitHub>>
   <li <link https://discord.com/users/707786894213120082 Discord>>
+  <li <link friends 朋友们>>
 >
 
 !<img fish.png 一条简笔画小鱼 <= orig-size more-margin>>
@@ -24,8 +25,8 @@
 
 !<h1 最近更新>
 !<list
-  <li <date 2022.21> 近期做的大部分事情应该都有单独的页面了，期待上线（搓手）>
-  <li <date 2022.20> 开始施工啦！之前做的一小部分没有用上，直接重新来过了。>
+  <li <date 2022.21> 收录了近期做的大部分事情，期待上线（搓手）>
+  <li <date 2022.20> 开始施工啦！>
 >
 
 <link revlog>
