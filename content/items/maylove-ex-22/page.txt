@@ -37,6 +37,7 @@
 {{rellinks.zh=}}
 !<list
   <li <subpagelink maylove-ex-22/play “我从哪里来”游玩链接>>
+  <li <link https://github.com/ayuusweetfish/MAYLOVE2022_Contraception “我从哪里来”程序仓库（GitHub）>>
 >
 
 {{rellinks.en=}}
