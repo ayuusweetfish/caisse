@@ -21,13 +21,7 @@ print('#codepoints', ncodepoints)
 
 local css = io.open('AaKaiSong.css', 'w')
 
-local nsubset = 0
-function addsubset(subset, name, skipcss)
-  if name == nil then
-    nsubset = nsubset + 1
-    name = string.format('%03d', nsubset)
-  end
-  table.sort(subset)
+function addsubset(subset, name, skipcss, comment)
   local terms = {}
   local j = 1
   while j <= #subset do
@@ -40,11 +34,17 @@ function addsubset(subset, name, skipcss)
     end
     j = j + k
   end
-  print('Subset ' .. name .. ', size ' .. #subset)
+  -- Hash
+  local h = 0
+  for i = 1, #subset do h = h * 100019 + subset[i] + 1 end
+  h = string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+  print(string.format(
+    'Subset %s, hash %s, size %d, comment %s',
+    name, h, #subset, comment or '(none)'))
   --print(table.concat(terms, ','))
   local succeeded = os.execute(string.format(
     'pyftsubset AaKaiSong2WanZi2.ttf --unicodes=%s --output-file=AaKaiSong.%s.ttf',
-    table.concat(terms, ','), name))
+    table.concat(terms, ','), name .. '.' .. h))
   if not succeeded then os.exit() end
   if not skipcss then
     css:write(string.format([[
@@ -52,12 +52,12 @@ function addsubset(subset, name, skipcss)
   font-family: 'AaKaiSong';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  font-display: block;
   src: url(/bin/fonts-zh/AaKaiSong.%s.woff2) format('woff2');
   unicode-range: %s;
 }
 ]],
-    name, table.concat(terms, ',')))
+    name .. '.' .. h, table.concat(terms, ',')))
   end
 end
 
@@ -72,14 +72,12 @@ end
 -- Page-curated subset
 for line in io.open('stray.txt'):lines() do
   local tabpos = line:find('\t')
-  local docpath = line:sub(1, tabpos - 1)
+  local docid = line:sub(1, tabpos - 1)
   local cps = {}
   for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
     cps[#cps + 1] = tonumber(w, 16)
   end
-  docpath = docpath:gsub('^.+build/(.+)/index.zh.html$', '%1')
-  print(docpath)
-  addsubset(cps, 'stray-' .. basehash(docpath), true)
+  addsubset(cps, 'stray', true, docid)
 end
 
 -- Precalculated subset
@@ -102,7 +100,7 @@ for i = 1, #cpseq do
   subset[#subset + 1] = cpseq[i]
   codepoints[cpseq[i]] = nil
   if sep:byte(i) == sepmarker then
-    addsubset(subset, 'common-' .. basehash(table.concat(subset, ',')))
+    addsubset(subset, 'common')
     subset = {}
   end
 end

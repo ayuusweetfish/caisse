@@ -152,11 +152,11 @@ Current page belongs to the category of {{cats[curcat].title}}
 <style>
 {{@ distbuild }}
 @font-face {
-  font-family: 'AaKaiSong Stray {{ basehash(savepath) }}';
+  font-family: 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/fonts-zh/AaKaiSong.stray-{{ basehash(savepath) }}.woff2) format('woff2');
+  src: url(/bin/fonts-zh/AaKaiSong.stray.{{ AaKaiSong_subsethash(savepath) }}.woff2) format('woff2');
 }
 {{@ end }}
 {{@ not distbuild }}

@@ -1,7 +1,7 @@
 /*
   g++ solve.cc -std=c++11 -O2
-  find ../../build -name "index.zh.html" | ./a.out > common.txt
-  find ../../build -name "index.zh.html" | INC=1 ./a.out > stray.txt
+  find ../../build -name "index.zh.html" | awk -F/ '{ print $0; print $(NF-1) }' | ./a.out > common.txt
+  find ../../build -name "index.zh.html" | awk -F/ '{ print $0; print $(NF-1) }' | INC=1 ./a.out > stray.txt
 */
 
 #include <cstdint>    // uint64_t
@@ -180,6 +180,10 @@ int main()
     size_t len = strlen(s);
     if (s[len - 1] == '\n') s[len - 1] = '\0';
     FILE *f = fopen(s, "r");
+
+    fgets(s, sizeof s, stdin);  // Read an identifier on a new line
+    len = strlen(s);
+    if (s[len - 1] == '\n') s[len - 1] = '\0';
     docnames.push_back(strdup(s));
 
     std::unordered_set<int> cpset;
@@ -216,8 +220,11 @@ int main()
 
     for (int i = 0; i < K; i++) {
       printf("%s\t", docnames[i]);
+      std::vector<codepoint> cps;
       for (const auto c : docs[i])
-        if (commoncps.count(c) == 0) printf(" %04x", c);
+        if (commoncps.count(c) == 0) cps.push_back(c);
+      std::sort(cps.begin(), cps.end());
+      for (codepoint c : cps) printf(" %04x", c);
       printf("\n");
     }
     return 0;
