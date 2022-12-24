@@ -3,8 +3,8 @@ local rendermarkup = require('caisse/markup')
 
 os.setlocale('C')
 
-caisse.envadditions.siteroot = 'http://localhost:1123'
-caisse.envadditions.domain = 'ayuu.ink'
+caisse.envadditions.siteroot = 'https://ayu.land'
+caisse.envadditions.domain = 'ayu.land'
 caisse.envadditions.distbuild = (os.getenv('DIST') == '1')
 
 local postproc = require('postproc')
