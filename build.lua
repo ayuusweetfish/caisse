@@ -233,8 +233,25 @@ local function renderdate(datestr, nolink)
 end
 caisse.envadditions.renderdate = renderdate
 
+-- Chinese font subsetting
 local AaKaiSong_css = io.open('misc/typeface-zh/AaKaiSong.css'):read('a')
 caisse.envadditions.AaKaiSong_css = AaKaiSong_css
+local AaKaiSong_subsethashes = {}
+for line in io.open('misc/typeface-zh/stray.txt'):lines() do
+  local tabpos = line:find('\t')
+  local docid = line:sub(1, tabpos - 1)
+  local h = 0
+  for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
+    h = h * 100019 + tonumber(w, 16) + 1
+  end
+  AaKaiSong_subsethashes[docid] =
+    string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+end
+local function AaKaiSong_subsethash(docid)
+  local hash = AaKaiSong_subsethashes[docid]
+  return hash
+end
+caisse.envadditions.AaKaiSong_subsethash = AaKaiSong_subsethash
 
 local cats = render('categories.txt').cats
 
