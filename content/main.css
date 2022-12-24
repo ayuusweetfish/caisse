@@ -248,23 +248,20 @@ body.dark #table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   border-image-repeat: stretch;
   border-image-slice: 16 fill;
   border-image-width: 0.24em;
-  border-image-outset: 0.28em 0;
+  border-image-outset: 0.20em 0;
   transition: border-image 0.2s ease;
-}
-/* Chrome/Chromium determines box heights of inline elements
-   differently from Firefox/Safari.
-  "The height of the content area should be based on the font,
-   but this specification does not specify how." */
-body.ua-inline-height .pastel:not(.little-icons) {
-  border-image-outset: 0.24em 0;
 }
 .pastel:hover,
 .pastel:focus {
   border-image-width: 0.48em;
-  border-image-outset: 0.40em 0;
+  border-image-outset: 0.32em 0;
 }
-body.ua-inline-height .pastel:not(.little-icons):hover,
-body.ua-inline-height .pastel:not(.little-icons):focus {
+
+html:lang(zh) .pastel {
+  border-image-outset: 0.24em 0;
+}
+html:lang(zh) .pastel:hover,
+html:lang(zh) .pastel:focus {
   border-image-outset: 0.36em 0;
 }
 
@@ -310,7 +307,11 @@ body.dark .pastel.miscellaneous {
 #dark-toggle {
   cursor: pointer;
   display: inline-block;
-  line-height: 1;
+  line-height: 1.1;
+}
+body.ua-inline-height #lang-container > summary,
+body.ua-inline-height #dark-toggle {
+  line-height: 1.25;
 }
 
 footer > span:first-child > *:not(:last-child)::after {
@@ -567,7 +568,7 @@ section h3 { font-size: 1.08rem; margin-block-end: 1rem; }
 blockquote {
   margin-block: -0.1em;
   margin-inline: 1em;
-  padding-block: 0.6em;
+  padding-block: 0.6em 0.675em;
   padding-inline: 1em;
 }
 blockquote *:first-child { margin-block-start: 0; }
