@@ -181,6 +181,23 @@ const negotiateLang = (accept, supported) => {
   return bestLang
 }
 
+// <Uint8Array, Uint8Array>
+class Truncate extends TransformStream {
+  constructor(limit) {
+    super({
+      transform(chunk, controller) {
+        if (chunk.length >= limit) {
+          chunk = chunk.slice(0, limit)
+          limit = 0
+        } else {
+          limit -= chunk.length
+        }
+        controller.enqueue(chunk)
+      },
+    })
+  }
+}
+
 const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
   headers.set('Accept-Ranges', 'bytes')
@@ -248,6 +265,10 @@ const staticFile = async (req, opts, headers, path) => {
     const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
     const byteStart = (result && result[1]) ? +result[1] : 0
     const byteEnd = (result && result[2]) ? +result[2] : fileSize - 1;
+    if (byteStart < 0 || byteEnd >= fileSize || byteStart > byteEnd) {
+      status = 416
+      return new Response(null, { status, headers })
+    }
     if (result) {
       headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
       file.seek(byteStart, Deno.SeekMode.Start)
@@ -266,7 +287,10 @@ const staticFile = async (req, opts, headers, path) => {
       status = 304
       return new Response(null, { status, headers })
     }
-    return new Response(file.readable, { status, headers })
+    return new Response(
+      file.readable.pipeThrough(new Truncate(byteEnd - byteStart + 1)),
+      { status, headers }
+    )
   }
 }
 
