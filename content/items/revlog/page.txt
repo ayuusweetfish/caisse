@@ -1,27 +1,33 @@
 {{title.zh=}}月度修订记录
 {{title.en=}}Monthly Revision Logs
 
-{{list=}}
+{{contents.zh=}}
 {{@ i in seq(revloglatest, revlogfirst, -1) }}
 {{ year = (i - 1) // 12 }}
 {{ month = i - year * 12 }}
 {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
-!<h1 {{ log.title }} <date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
-{{ log.contents }}
+!<h1 {{ log.title.zh }} <date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+{{ log.contents.zh }}
 !<hr windy>
 {{@ end }}
 
-{{contents.zh=}}
-{{ list }}
 !<h1 订阅消息源#feed>
-<list
+!<list
   <li RSS：<tt {{ siteroot }}/rss.zh.xml>>
   <li Atom：<tt {{ siteroot }}/atom.zh.xml>>
 >
 消息源内容与本页一致，每月更新一次。
 
 {{contents.en=}}
-{{ list }}
+{{@ i in seq(revloglatest, revlogfirst, -1) }}
+{{ year = (i - 1) // 12 }}
+{{ month = i - year * 12 }}
+{{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
+!<h1 {{ log.title.en }} <date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+{{ log.contents.en }}
+!<hr windy>
+{{@ end }}
+
 !<h1 Syndication feeds#feed>
 <list
   <li RSS: <tt {{ siteroot }}/rss.en.xml>>

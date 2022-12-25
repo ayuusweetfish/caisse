@@ -6,22 +6,27 @@
 {{fulltitle.zh =}}
 {{ title }} — Ayu
 {{metadescription.zh =}}
-说明说明！
+杂七杂八堆放处——
 
 {{fulltitle.en =}}
-{{ title }} — Site
+{{ title }} — Ayu
 {{metadescription.en =}}
-A Description
+Collection of sundries —
 
 {{siteheading.zh =}}甜鱼/Ayu
 {{siteheading.en =}}Sweetfish Ayu
 
+{{ogimagealt.zh =}}一条简笔画小鱼
+{{ogimagealt.en =}}Line art of a fish
+
 {{=}}
+{{ urlpath = (savepath == 'index' and '' or savepath) }}
   <meta name='description' content='{{ metadescription }}'>
   <meta property='og:title' content='{{ fulltitle }}'>
   <meta property='og:type' content='website'>
-  <meta property='og:image' content=''>
-  <meta property='og:url' content=''>
+  <meta property='og:url' content='{{ siteroot }}/{{ urlpath }}'>
+  <meta property='og:image' content='{{ siteroot }}/bin/favicon.png'>
+  <meta property='og:image:alt' content='{{ ogimagealt }}'>
   <meta property='og:description' content='{{ metadescription }}'>
   <meta property='og:locale' content='{{ lang }}'>
   {{@ otherlang in {'zh', 'en'} }}
@@ -65,7 +70,6 @@ A Description
     href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'><span class='little-icons'>{{utf8.char(cat.icon)}}</span>{{cat.title}}</a></li>
   {{@ end}}
 </ul>
-{{ urlpath = (savepath == 'index' and '' or savepath) }}
 <div id='icon-buttons'>
   <details id='lang-container'>
     <summary class='pastel miscellaneous little-icons' title='语言/Language'>🌐</summary>
