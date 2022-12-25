@@ -43,7 +43,7 @@ end
 {{cats.potpourri.longtitle.en=}}Pieces of Potpourri
 {{cats.pebbles.longtitle.en=}}Pieces of Pebbles
 
-{{cats.potpourri.intro.zh=}}杂七杂八，或者做着玩的——
+{{cats.potpourri.intro.zh=}}零零碎碎或者稀奇古怪的产物——
 {{cats.potpourri.intro.en=}}
 
 {{{

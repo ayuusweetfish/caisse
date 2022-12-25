@@ -114,6 +114,14 @@ end
 local function render(...)
   return caisse.render(...)
 end
+local function renderlang(lang, ...)
+  local origlang = caisse.lang
+  caisse.lang = lang
+  local result = caisse.render(...)
+  caisse.lang = origlang
+  return result
+end
+caisse.envadditions.renderlang = renderlang
 local function renderpage(savepath, templatepath, locals)
   locals = locals or {}
   local contents = render(templatepath, locals)

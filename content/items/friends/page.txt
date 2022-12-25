@@ -3,6 +3,10 @@
 
 {{contents.zh=}}
 
+!<list
+  <li <link https://alicescribbles.github.io/ Alice's scribbles>>
+>
+
 施工中
 
 !<img friends.jpg <= > small>
