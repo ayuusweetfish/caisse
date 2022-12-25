@@ -1,5 +1,5 @@
 {{title.zh=}}关于……
-{{title.en=}}The Host!
+{{title.en=}}The Host
 
 {{contents.zh=}}
 很开心见到你！<<='' {{ renderlang('zh', 'timeofday.html') }}''>>
@@ -19,7 +19,7 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 !<img portrait.jpg <= A portrait under the light in the night> float-end>
 There are many ways of calling me, but I’m Ayu here! The picture is drawn by an AI named “sweet melon” referencing a selfie under a street lamp.
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
-I do a mixture of things, music, games, computing, and a little bit everything. To build this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
+I dip into a mixture of things. Music, games, computing, a little bit of everything. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
 INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to overcome procrastination ; - ;
 !<clearfloat>
 !<hr windy>
@@ -32,10 +32,18 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 笑死，后面两条一点都没动啊！（躺）<date 2022.22>
 
 {{contents.en=}}
-
+!<h1 <= Recently up to> #recent>
+Put up this website, which will probably receive frequent updates recently.
+There is an experimental animation project that I had planned to finish a month ago. Might get to it soon.
+Trying to learn to darw, exploring by the <link https://drawabox.com/ Drawabox> tutorials. <date 2022.21>
+Laught at me, the last two items were not even touched. <date 2022.22>
 
 {{contents.zh=}}
-!<h1 喜欢的东西 #prefs>
+!<h1 喜欢的东西 #likings>
+{{contents.en=}}
+!<h1 Likings #likings>
+
+{{contents.zh=}}
 !<h2 歌单 #playlist>
 !<gridtable music-table
   <= 一些零散的歌>
@@ -48,7 +56,22 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
   <musictrack 夜鹿 Hitchcock <lang ja ヒッチコック> music/hitchcock.jpg 歌曲动画中的画面，一个孩子与一个不明生物站在十字路口中央，各自背对对方。>
   <musictrack <= Humbert Humbert> Message <lang ja メッセージ> music/hundreds.jpg 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
 >
+{{contents.en=}}
+!<h2 Playlist #playlist>
+(TODO)
+!<gridtable music-table
+  <= Songs>
+  <musictrack <= Wataru Sena//Sana> <= Solo Trip> <lang ja ひとり旅> music/hitori.jpg 歌曲动画中的画面，女孩背着包、脖子上挂着相机独自走在路上，由 Mitsuki Sanagi 绘制。>
+  <musictrack 潮汐-tide/冉语优 <= As Seeing Green Hills> 如见青山 music/rjqs.jpg 歌曲动画中的画面，苏东坡站在小船上一手托着碗，衣带随风飘扬，佛印和尚坐在一旁微笑看向苏东坡。>
+  <<~=' by <nobr 喜欢的作者>'>>
+  <musictrack とあ//nameless <= Puzzle Girl> <<~= <lang ja パズルガール>//212>> music/212.jpg 专辑封面，黄绿色的奇幻场景中，身穿白色连衣裙、头上有形似鹿角装饰的仙子背对画面站在水池边，面对着对岸一座由形状奇特的绿色荧光石块组成的山。>
+  <musictrack 春卷饭 萤火虫未曾来过 <lang ja 蛍はいなかった> music/hotaru.jpg 歌曲封面，两位女孩相拥在一起，深绿的夜色被仿佛两人心中照出的黄色光亮划破。>
+  <<~=' by <nobr 喜欢的乐队>'>>
+  <musictrack 夜鹿 Hitchcock <lang ja ヒッチコック> music/hitchcock.jpg 歌曲动画中的画面，一个孩子与一个不明生物站在十字路口中央，各自背对对方。>
+  <musictrack <= Humbert Humbert> Message <lang ja メッセージ> music/hundreds.jpg 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
+>
 
+{{contents.zh=}}
 !<h2 游戏 #games>
 !<list
   <li <b 蔚蓝/Celeste> — Maddy Makes Games>
@@ -70,11 +93,36 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 !<img IMG_20220505_113339_mh1651727711263.jpg 巧克力冰淇淋，上面有彩色糖豆和樱桃和西瓜等水果小块>
 喜欢胡思乱想……（别骂了呜呜呜呜呜呜呜）
 
+{{contents.en=}}
+!<h2 Games #games>
+!<list
+  <li <b Celeste> — Maddy Makes Games>
+  <li <b A Short Hike> — Adam Robinson-Yu>
+  <li <b Rhythm Heaven/リズム天国> — Nintendo SPD>
+>
+!<img games.png Characters in the games: winged strawberries, Claire the bird, Huebirds>
+
+!<h2 Animations #animations>
+!<list
+  <li <b Nichijou: My Ordinary Life>>
+  <li <b Liz and the Blue Bird>>
+  <li <b The Melancholy of Suzumiya Haruhi>>
+>
+!<img nichijou.jpg The three main characters of Nichijou in the opening credits animation>
+
+!<h2 Miscellaneous #miscellaneous>
+Vulnerable to all fancy good-looking trinkets! Interested in all the diverting souls of the world! (Or charming appearances, I take both)
+!<img IMG_20220505_113339_mh1651727711263.jpg Chocolate ice-cream topped with colourful sugar beans and little slices of fruit including cherries and watermelon>
+Loves daydreaming… (stop blaming me, I’m sorry <^= > <>)
+
+{{contents.zh=}}
 !<h1 戳戳 #contact>
 其实不怎么往社交平台发东西，一时也没搭好访客留言板。可以在 <tt knock@ayu.land> 邮件联系呀～
-
 总之谢谢你来！玩得开心！<kao (っ*´∀｀*)っ>
 
 {{contents.en=}}
+!<h1 Knock knock #contact>
+I do not really post much on social media platforms, and have yet to set up a visitors’ message board. I can be reached at <tt knock@ayu.land> by e-mail!
+Thank you for coming! Have a great time here <kao (っ*´∀｀*)っ>
 
 {{toc=}}true

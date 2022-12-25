@@ -19,6 +19,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<list
   <li <link https://github.com/ayuusweetfish GitHub>>
   <li <link https://discord.com/users/707786894213120082 Discord>>
+  <li <catlink mailto:knock@ayu.land home E-mail>>
   <li <link friends 朋友们>>
 >
 
@@ -48,6 +49,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<list
   <li <link https://github.com/ayuusweetfish GitHub>>
   <li <link https://discord.com/users/707786894213120082 Discord>>
+  <li <catlink mailto:knock@ayu.land home E-mail>>
   <li <link friends Friends>>
 >
 
