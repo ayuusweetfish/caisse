@@ -1,4 +1,4 @@
-{{title.zh=}}“伊始”/“Zero”
+{{title.zh=}}“伊始” / “Zero”
 {{intro.zh=}}迷路乐曲收容处，不定期更新
 {{title.en=}}“Zero” Series
 {{intro.en=}}
