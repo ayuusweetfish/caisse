@@ -22,12 +22,28 @@ Game jam 的时候没来得及把音乐和声音加上，一直觉得是比较�
 直到暑假回家才决定重拾这项创作，解开这个心结。在同一个空间揣摩着不久前的心境，回想着被叫进手术室之前浮现在脑海里的、一直觉得是“猫猫托付给自己的”短小旋律，以及十年来与她一起创造的五彩斑斓的回忆，好像我们还像曾经一样一起住在这个家——把内心涌动的这一切记录了下来。99 个小节好像咕哝着永远不会结束的梦话，游戏里的爱莉丝也永远可以在孤单时来这片森林里漫游呀。
 
 {{contents.en=}}
-rt
+Music from the game <link fireflies>.
+
+!<filetable
+  <file Bellflowers_Wonderland.ogg Bellflowers’ Wonderland>
+>
+
+<hr>
+
+I ran out of time on the game jam before adding music and sound, which has been a regret to me. I have always planned to spare time to add the finishing touches after the winter vacation, but I was actually reluctant to face this — the lingering thought of “it will be really over when this is done” worsened the already-serious perfectionism; soon came the postgraduate admission interviews, concert performances, bachelor’s thesis, club projects, and everything else, forcing me to put this on hold for a while.
+
+It was only when I returned home during the summer vacation that I decided to pick this up and untie the knot. In the same room, I was able to reflect on my feelings not long ago. Mulling over the melody that came to my mind shortly before I was called into the operating room — the one I always felt was “entrusted to me” by the cat — and the colourful memories we had created together over the decade, as if we were still living together in this home as we once were — I poured all the surges into the sounds. The 99 bars mumble in a dream that never ends; Alice in the game will never lose the forest flowers and will be returning whenever she is lonely.
 
 {{rellinks.zh=}}
 !<list
   <li <link fireflies 游戏《%》>>
   <li <subpagelink fireflies/play 游玩链接（本站）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link fireflies Game “%”>>
+  <li <subpagelink fireflies/play Link to the game (this site)>>
 >
 
 {{rellinks.en=}}
