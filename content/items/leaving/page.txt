@@ -1,7 +1,7 @@
 {{title.zh=}}我已经要走了哦・打击乐二重奏
 {{intro.zh=}}日本民谣双人组 Humbert Humbert 的歌曲，键盘打击乐改编
 {{title.en=}}I’m Leaving Already
-{{intro.en=}}Rearrangement
+{{intro.en=}}Song by the Japanese folk duo Humbert Humbert; rearrangement for percussion duet
 
 {{bannerimg=}}IMG_20221130_151158.jpg
 {{!-- GIMP adjust sat. & filter; convert -scale 25% -brightness-contrast 0x-12 -modulate 135,160 }}
@@ -24,11 +24,26 @@
 第二天回家的时候把非常喜欢的手套弄丢了一只，于是一路上都在伤心地画画，还把手机画没电了。起了个标题叫<link adventure 《%》>，意外地和这首歌也挺贴切的。所以也就拿路上随便拍的（唯一）一张照片作封面啦。
 
 {{contents.en=}}
-rt
+As the atmosphere be stirred with quarantines going on in the school buildings, I finally settled down my hesitation to pack my luggage and prepare for the leave. The rehearsal hall was probably the one I was most upset about, but I was in too much of a mess to make up time for it, and it was only when I saw friends in the group asking whether there was a rehearsal that I remembered that had the concert not been cancelled, I would have been enjoying a part rehearsal today. Add to this the separation anxiety coming from nowhere mixing up with everything and everybody, and I only had enough effort to sketch out a piece of rearrangement. I always get this reluctant before leaving anywhere, so incompetant ; - ;
+To quote the lyrics, “After all if I see your eyes, the farewell will be so, so, so, so, so…” I still don’t seem able to say this kind of scheduled goodbyes.
+The instrumentation is a vibraphone and a marimba, both theoretically playable with double mallets though I have not tried. The vibraphone player also needs to blow whistles. The preview audio is exported from MuseScore without adjustmets, rendering the rolls and appoggiature a bit weird. Hoping to get back to school as planned and get my hands on it.
+
+!<filetable
+  <file <= deteiku.pdf> Score>
+  <file <= deteiku.ogg> Preview audio>
+  <file <= deteiku.mscz> MuseScore document>
+>
+
+On my way home the next day I lost one of my cherished gloves and was doodling sadly all the way until the phone ran out of battery. Titled it <link adventure>, which unexpectedly fit the song’s title well; and went forward to use a photo (the only one) taken on the way as the cover.
 
 {{rellinks.zh=}}
 !<list
   <li <link adventure 一些画：《%》>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link adventure Some doodles: %>>
 >
 
 {{rellinks.en=}}

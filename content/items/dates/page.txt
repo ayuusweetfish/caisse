@@ -37,9 +37,9 @@
 本站惯例取建寅之月（立春）为岁首；简洁起见，年份取立春所在公历年份末二位。如公历 2022 年 1 月末记为 <date 2021.24>，2 月中旬为 <date 2022.01>。
 
 {{contents.en=}}
-Dates on this site are denoted by the 24 solar terms.
+Dates on this site are denoted by the 24 <link https://en.wikipedia.org/wiki/Solar_term solar terms>.
 Quite often, exact dates and hours are more of a disturbance. The ever-changing numbers inevitably create a slight sense of urgency, and many of life’s events do not fit into a specific moment. Recording dates in terms of time periods represented by the solar terms while maintaining a log of recent revisions, therefore, is more ideal for this site.
-This system is a solar calendar. According to the position of the Sun on the ecliptic, a return year (the time the Earth takes for one revolution around the Sun) is divided into twelve parts, which are known as the twelve solar months, numbered with the twelve Earthly Branches. Each month is divided into two halves, the first named “Jie” (season) and the second named “Qi” (climate), totalling 24 periods, which are named according to the patterns in weather and natural phenomena that the ancient Chinese had drawn from their farming experience, and are now collectively named “the solar terms”.
+This is a solar calendar system. According to the position of the Sun on the ecliptic, a tropical year (the time the Earth takes for one revolution around the Sun) is divided into twelve parts, which are known as the twelve solar months, numbered with the twelve <link https://en.wikipedia.org/wiki/Earthly_Branches Earthly Branches>. Each month is divided into two halves, the first named “Jie” (season) and the second named “Qi” (climate), totalling 24 periods, which are named according to the patterns in weather and natural phenomena that the ancient Chinese had drawn from their farming experience, and are now collectively named “the solar terms”.
 
 !<table
   <tr <th Season> <th Solar Term> <th Abbr.> <th Gregorian Calendar> <th Solar Month>>

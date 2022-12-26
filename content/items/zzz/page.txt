@@ -16,7 +16,7 @@
 {{date=}}2021.07
 
 {{contents.zh=}}
-清华大学学生艺术团军乐队 2021 年二队沙龙音乐会演出・打击声部小重奏节目！是动画片《日常》片尾曲的改编。
+学生艺术团军乐队 2021 年二队沙龙音乐会演出・打击声部小重奏节目！是动画片《日常》片尾曲的改编。
 吹爆一起努力一起发光的大家！！
 <b 声部配置>
 !<list
@@ -38,4 +38,23 @@
 之后自然是还没有过瘾，于是自己动手改了一份完整版（不过没有亲自练完，写了就是练了x）。当时写下的许多元素以及 A 叔改编中的一些处理最后都融入到这份改编里啦！想想也真是神奇，几年前在钢琴前摇摇晃晃地按下这些音符的时候，如果看到现在的自己一定会觉得超级超级——Super Ultra Great Delicious Wonderful 幸福吧~
 
 {{contents.en=}}
-rt
+Performance of the percussion ensemble on the 2021 juniors’ salon concert of the wind band of the university students’ art troupe. An adaptation of the ending theme of the animated series “Nichijou: My Ordinary Life”.
+Compliments to friends who work hard and shine together!
+<b Instrumentation>
+!<list
+  <li ①  glockenspiel, xylophone>
+  <li ②  vibraphone>
+  <li ③  marimba (upper voice)>
+  <li ④  marimba (lower voice)>
+  <li ⑤  piano>
+  <li ⑥  drumset>
+  <li ⑦  tubular bells, xylophone, auxiliary percussion (tambourine, vibra slap, wood blocks, triangle, whip, mark tree/bar chimes, shaker/maracas)>
+>
+!<filetable
+  <file Zzz.pdf Full score and parts>
+  <file Zzz.ogg Preview audio>
+  <file Zzz.mscz MuseScore document>
+>
+
+I have been digging this song since high school years. My first attempt at recreating an entire track was attempted at it, although it was likely a disaster. I jumped into practice when I found a piano arrangement in a sheet book purchased at a concert by Animenz. (Turns out <link https://youtu.be/r4_w-_YxWmU the video> by Animenz is over a decade old, wow ; - ;
+rf course I did not get enough after this, so I rearranged the full-length version of the song myself (without actually practising it). Many details I wrote down at the time, as well as some touches in the version of Animenz, ended up in this arrangement! It’s amazing to think about it — when I stumble through these notes in front a piano several years ago, I must be Super Ultra Great Delicious Wonderful thrilled to see how I would have been doing in the years to come!
