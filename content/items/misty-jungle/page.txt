@@ -1,7 +1,7 @@
 {{title.zh=}}岚烟丛林的薄暮至拂晓
 {{intro.zh=}}管弦小乐队的短小奏鸣曲；《作曲与配器》结课作业
 {{title.en=}}Dusk till Dawn in a Misty Jungle
-{{intro.en=}}Assignment
+{{intro.en=}}A short sonata for a small orchestra; “Composition and Orchestration” course assignment
 
 {{bannerimg=}}cover.jpg
 {{bannerimgalt.zh=}}薄雾笼罩的高耸树木间点缀着些许粉红色的花丛。
@@ -23,10 +23,14 @@ cy 老师锐评：竖琴演奏员肯定觉得你没招了（掩面
 封面是玩 Disco Diffusion 的时候让它画的，可惜好像把提示语弄丢了呜呜。
 
 {{contents.en=}}
-rt
+The first serious attempt at orchestral composition. There are problems with balancing, but I’ve left them unedited.
+Comment from the teacher Chen: “The harp player must think you’ve run out of ideas.”
+When I showed the beginning to a friend, I was too timorous as it was the very first time for me and insisted that it was “strange”. The friend could only be puzzled and say that it “looked perfectly normal”. Seems unhelpful to be fearful like this, I suppose.
 
 !<filetable
   <file <= Misty Jungle.mp3> Audio>
   <file <= Misty Jungle.pdf> Score>
   <file <= Misty Jungle.mscz> MuseScore document>
 >
+
+The cover was painted by Disco Diffusion when I was fiddling around with it, but I seem to have lost the prompt ._.
