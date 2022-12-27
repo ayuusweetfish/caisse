@@ -1,7 +1,7 @@
 {{title.zh=}}飞花小令
 {{intro.zh=}}玩法多样的双人诗词游戏
-{{title.en=}}飞花小令
-{{intro.en=}}Game
+{{title.en=}}Fei Hua Xiao Ling / Floral Ditties
+{{intro.en=}}A game based on classical Chinese poetry
 
 {{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,72
@@ -28,6 +28,16 @@
 从后台统计数据看玩家数量出乎意料地多，有点惊喜www
 
 {{contents.en=}}
+A game based on an ancient Chinese drinking game based on poetry, with added innovations.
+The game is hosted on the WeChat applet platform, but I am also interested in porting it to the web.
+!<img gh_a77036b8112b.jpg <= > small>
+
+<hr>
+A collaborative effort with Kuriko as our entry in the 2021 students’ WeChat applet development contest.
+Fei Hua Ling (飞花令) is a game where players recite or compose poetry given a theme, which is usually a Chinese character (it was originally fixed to be “花”, “flower”; but variations exist). The verses should also adhere to metrical rules. Inspired by the Chinese Poetry Congress television programme, a set of new gameplay rules were implemented in the game, including themes of two-syllable words or verses, and pools of words.
+
+We merged several Chinese poetry collections on the Internet and added emendations, resulting in a library of hundres of thousands of works. We curated a set of frequent words and phrases as well as well-known verses for automatic theme generation, trying our best to improve the playability of the game.
+According to the analytics, the number of players was unexpectedly high. This was surprising.
 
 {{rellinks.zh=}}
 !<list
@@ -35,3 +45,6 @@
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link https://github.com/kuriko1023/fhl Source repository (GitHub)>>
+>

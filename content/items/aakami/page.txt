@@ -1,7 +1,7 @@
 {{title.zh=}}AAKAMI
 {{intro.zh=}}射击游戏：小红帽与大灰狼大战可乐、椰奶和咖啡
 {{title.en=}}AAKAMI
-{{intro.en=}}Game
+{{intro.en=}}A shooter game; Little Red Riding Hood and the wolf fighting cola, coconut milk and coffee.
 
 {{bannerimg=}}illustration20.png
 {{bannerimgpos=}}50,80
@@ -29,6 +29,22 @@ BOOOM! The 3rd GameShell Game Jam 队伍“未来网吧”作品。
 但是它的显卡好像比想象中菜一点，在电脑上流畅运行的像素画风游戏放在上面只有 2 帧的帧率，后来想了想加上了 sprite batch 的优化，居然回到了 50 帧以上，快乐。
 
 {{contents.en=}}
+Entry of the team “Future Internet Cafe” to BOOOM! The 3rd GameShell Game Jam.
+Play it <subpagelink aakami/play here>!
+Move with W/S/A/D or the arrow keys; I/K/J/U corresponds to the triangle/circle/cross/square buttons.
+
+!<filetable
+  <file AAKAMI.love LOVE2D game package>
+>
+
+A teamed game jam with the Future ACG Group. The theme being “SHIFT”, the game’s interpretation is that the protagonist can flip (shift) between Little Red Riding Hood and the wolf, being damaged by bullets of the different colour while absorbing energy from same-coloured ones. I was mainly responsible for the programs.
+
+The enemies are C×ca Cola, P×psi Cola, C×conut Palm (Ye-shu) Coconut Milk, and St×rbucks Coffee. I liked the setting!
+
+<hr>
+The organizer, Game Cores, distributed a GameShell for development use to each team. <link https://www.clockworkpi.com/gameshell GameShell> is a (seemingly) retro gaming console, with a complete modern computer system under its 320×240 screen. The rare surviving photo below shows a player for music games I previously made ported to it.
+!<img IMG_20190825_181704.jpg>
+However, the graphics card seems to be a little bit less capable than expected, with the game in pixel graphics that run smoothly on laptops achieving only 2 frames per second on it. I later thought over it and incorporated the sprite batch optimisation, and it went back to over 50 FPS. Great!
 
 {{rellinks.zh=}}
 !<list
@@ -38,3 +54,8 @@ BOOOM! The 3rd GameShell Game Jam 队伍“未来网吧”作品。
 >
 
 {{rellinks.en=}}
+!<list
+  <li <subpagelink aakami/play Play the game>>
+  <li <link https://github.com/ayuusweetfish/AAKAMI Source repository (GitHub)>>
+  <li <link https://xiashj96.itch.io/aakami itch.io page>>
+>
