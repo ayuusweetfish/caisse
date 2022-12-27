@@ -1,7 +1,7 @@
 {{title.zh=}}百合怒放
 {{intro.zh=}}电影《丹麦女孩》配乐练习；《应用作曲与电子音乐设计》结课作业
 {{title.en=}}Lili: Into a Blossom
-{{intro.en=}}Assignment; practice composition for the film “Danish Girl”.
+{{intro.en=}}Assignment; composition practice for the film “Danish Girl”.
 
 {{!--[[
 ~/Downloads/ffmpeg-5.0.1
