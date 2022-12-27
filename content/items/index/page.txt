@@ -36,7 +36,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 <link revlog>
 
 {{contents.en=}}
-!<note You are viewing English content as hinted by your preferences, but it is largely incomplete. For now, please consider <catlink /?lang=zh home switching the language to Chinese>.>
+!<note You are viewing English content as hinted by your preferences, but it is fairly incomplete. For now, please consider <catlink /?lang=zh home switching the language to Chinese>.>
 !<list
   <li <link about About>>
   <li <link fireflies Fireflies>>
