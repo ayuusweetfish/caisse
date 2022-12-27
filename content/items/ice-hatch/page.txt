@@ -22,13 +22,28 @@
 后来还是没想出好的中文标题，就草率地双关了一下“忙碌地繁殖”这个含义（？
 
 {{contents.en=}}
-Mini Jam #99 entry.
+Curling, but penguins —— guide the penguins to hatch their stray eggs on slippery thin ice.
+Play <subpagelink ice-hatch/play here>!
+Inspired by the sport of curling which gained popularity in the 2022 Winter Olympics in Beijing, I created the game in <link https://itch.io/jam/mini-jam-99-birds Mini Jam #99>. The theme was “Birds” with an extra limitation “Can't stop moving”; they were combined into these fat birdies that fall into the ice unless they move from time to time.
+
+!<img screenshot1.png <= Game screenshot>>
+!<img screenshot2.png <= Game screenshot>>
+
+During the peer rating period, there was a lot of concern about the little anserine creatures in the water — which was indeed a blind spot of me, but the penguins can swim! No penguins were hurt in this game!
+Halfway done with the music but did not finish it as the game was already submitted late. Will update it sometime!
 
 {{rellinks.zh=}}
 !<list
   <li <subpagelink ice-hatch/play 游玩链接（本站）>>
   <li <link https://ayuusweetfish.itch.io/ice-hatch 游玩链接（itch.io）>>
   <li <link https://github.com/ayuusweetfish/Ice-Hatch 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <subpagelink ice-hatch/play Play (this site)>>
+  <li <link https://ayuusweetfish.itch.io/ice-hatch Play (itch.io)>>
+  <li <link https://github.com/ayuusweetfish/Ice-Hatch Source repository (GitHub)>>
 >
 
 {{rellinks.en=}}

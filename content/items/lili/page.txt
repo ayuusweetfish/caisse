@@ -29,4 +29,13 @@
 >
 
 {{contents.en=}}
-rt
+Can be seen as a graduation project for my minor, where I took the opportunity to give myself a reason to see this film that I had always wanted to see.
+I was about to finish it at the three-minute mark, but it coincided with the incident of the mass ban of WeChat public profiles of sexual-minority-related clubs in Chinese universities, which made me indignant. As a response, I spontaneously made the decision to add an extra excerpt — the enthusiasm for life and the world, the pursuit of ideals and future, such a burning flame cannot be sealed in!
+But it also added to the already-disastrous late submission time, and turned the teachers into deadline warriors, grading assignments hours before the submission of grades was closed (I’m sorry…).
+
+!<filetable
+  <file Lili__Into_a_Blossom.mp4 Video>
+  <file Lili__Into_a_Blossom.pdf Score>
+  <file Lili__Call_you_Lili.mscz MuseScore document of part 1>
+  <file Lili__Good_morning.mscz MuseScore document of part 2>
+>
