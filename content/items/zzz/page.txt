@@ -1,7 +1,7 @@
 {{title.zh=}}Zzz・打击乐七重奏
 {{intro.zh=}}动画《日常》片尾曲打击乐改编
 {{title.en=}}Zzz — Percussion septet
-{{intro.en=}}Adaptation
+{{intro.en=}}Ending theme of “Nichijou: My Ordinary Life”; adaptation for percussion septet
 
 {{!--[[
 ~/Downloads/ffmpeg-5.0.1
@@ -57,4 +57,4 @@ Compliments to friends who work hard and shine together!
 >
 
 I have been digging this song since high school years. My first attempt at recreating an entire track was attempted at it, although it was likely a disaster. I jumped into practice when I found a piano arrangement in a sheet book purchased at a concert by Animenz. (Turns out <link https://youtu.be/r4_w-_YxWmU the video> by Animenz is over a decade old, wow ; - ;
-rf course I did not get enough after this, so I rearranged the full-length version of the song myself (without actually practising it). Many details I wrote down at the time, as well as some touches in the version of Animenz, ended up in this arrangement! It’s amazing to think about it — when I stumble through these notes in front a piano several years ago, I must be Super Ultra Great Delicious Wonderful thrilled to see how I would have been doing in the years to come!
+Of course I did not get enough after this, so I rearranged the full-length version of the song myself (without actually practising it). Many details I wrote down at the time, as well as some touches in the version of Animenz, ended up in this arrangement! It’s amazing to think about it — when I stumble through these notes in front a piano several years ago, I must be Super Ultra Great Delicious Wonderful thrilled to see how I would have been doing in the years to come!

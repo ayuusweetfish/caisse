@@ -17,11 +17,18 @@
 这次的主题不出意外还是图片，虽然实在是越来越抽象了。
 !<img CiGAGJ-2021.jpg 拉火车>
 讨论了一晚上决定用“接水管”游戏作为启发，加入“岔路引导”的机制，贴合图中“拉回正轨”的含义——玩家铺设道路，设置牧羊犬指引岔路口的方向，将小羊引导至正确的羊圈。
-时间相关的解谜出乎意料地有深度，绞尽脑汁设计了一堆不那么简单的谜题。后来试玩的玩家都反映真的有点难，但是想想感觉太难总比太简单好，加点提示就好嘛hhh
+时间相关的解谜出乎意料地有深度，绞尽脑汁设计了一堆不那么简单的谜题。后来试玩的玩家都反映真的有点难，但是想想感觉太难总比太简单好，加点提示就好嘛 ^ ^
 制作过程十分波折，大量机制是躺在紫操上讨论确定的，也熬夜紧赶慢赶，在提交截止后几天的线上直播环节之前更新了好几版（虽然没看直播orz）。做完之后栗子同学忽然想起之前想做的“往反方向走的黑羊（black sheep）”机制忘记加了，也算是一个小遗憾啦。
 
 {{contents.en=}}
-2021 CiGA Game Jam Entry
+<subpagelink sheepdogs/play Play online>!
+
+A puzzle game co-produced with Kuriko at the 2021 CiGA Game Jam. Kuriko was responsible for visual design, Ayu for music and most of the programming, while the rest was a collaborative effort.
+The theme was unsurprisingly a picture again, although it was getting really abstract.
+!<img CiGAGJ-2021.jpg Pulling a train>
+A night’s discussion led to the decision to draw inspiration from the Pipes (FreeNet) puzzles and add the “guides at crossroads” mechanic to fit into the “pulling things to get them on track” interpretation of the image. The player lays out paths and place sheepdogs as guides at crossroads, directing the sheep to their correct sheepfolds.
+The time-related puzzles turned out surprisingly deep, with a bunch of not-so-simple puzzles produced with my own brain racked. Playtesters later reported that it was a bit hard, but at least it felt better to have puzzles too hard than too easy, as a few hints would resolve the problem ^ ^
+The production process was filled with twists, with lots of mechanics discussed and decided upon while lying on the playground. Late-night rushes led to quite a few updates between the submission deadline and the online live video session (I did not watch it though). After it was done, Kuriko suddenly remembered that the originally planned “black sheep that go contrariwise” was forgotten, which became a little regret.
 
 {{rellinks.zh=}}
 !<list
@@ -31,3 +38,8 @@
 >
 
 {{rellinks.en=}}
+!<list
+  <li <subpagelink sheepdogs/play Play the game (this site)>>
+  <li <link https://github.com/ayuusweetfish/sheepdog Source repository (GitHub)>>
+  <li <link sheepdogs-work Music “%”>>
+>

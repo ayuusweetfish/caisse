@@ -18,12 +18,21 @@
 >
 
 {{contents.en=}}
-rt
+Music from the game <link sheepdogs>. The first version received the feedback that “it was too adult-like and un-childish; expected more childishness”. So I went on to write the track used in the game, “Sheepdogs at Work”. The original version was put here as a bonus, “Sheepdogs on Vacation”.
+
+!<filetable
+  <file Sheepdogs_at_Work.ogg Sheepdogs at Work>
+  <file Sheepdogs_on_Vacation.ogg Sheepdogs on Vacation>
+>
 
 {{rellinks.zh=}}
 !<list
-  <li <link sheepdogs 游戏《%》>>
+  <li <link sheepdogs 关于游戏《%》>>
   <li <subpagelink sheepdogs/play 游玩链接（本站）>>
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link sheepdogs About the game “%”>>
+  <li <subpagelink sheepdogs/play Play the game (this site)>>
+>
