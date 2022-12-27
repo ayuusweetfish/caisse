@@ -1,7 +1,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
-bannerlist.html	1219	unknown
-categories.txt	2581	document
+bannerlist.html	1289	unknown
+categories.txt	2587	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4243	unknown
@@ -10,8 +10,8 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	5453	unknown
-item.html	985	unknown
+framework.html	6387	unknown
+item.html	977	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
 items/aakami/illustration20.png	8290	image	320	240
@@ -31,7 +31,7 @@ items/about/music/hundreds.jpg	18600	image	250	250
 items/about/music/rjqs.jpg	22004	image	300	300
 items/about/nichijou.jpg	51732	image	640	360
 items/about/page.css	2213	unknown
-items/about/page.txt	3496	document
+items/about/page.txt	8317	document
 items/about/portrait.jpg	98017	image	672	756
 items/adventure/.gitignore	32	unknown
 items/adventure/Azu1.png	20386	image	360	640
@@ -50,7 +50,7 @@ items/adventure/Vio2.png	27643	image	360	640
 items/adventure/Vio3.png	15507	image	360	640
 items/adventure/Vio4.png	19045	image	360	640
 items/adventure/notes.txt	111	document
-items/adventure/page.txt	3241	document
+items/adventure/page.txt	3153	document
 items/adventure/run.sh	548	unknown
 items/adventure/stb_image.h	279339	code
 items/adventure/stb_image_write.h	71221	code
@@ -58,7 +58,7 @@ items/adventure/unifystrokes.c	6617	code
 items/amusing/page.txt	10953	document
 items/bellflowers/Bellflowers_Wonderland.ogg	4340151	audio	252
 items/bellflowers/Bellflowers_Wonderland.tracktionedit	334735	musicnotes
-items/bellflowers/page.txt	1554	document
+items/bellflowers/page.txt	2991	document
 items/colophon/page.txt	1433	document
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
@@ -69,8 +69,8 @@ items/courses-21/Sound_Design_Suspense.mp3	1748178	audio	87
 items/courses-21/Sound_Design_Travel.mp4	3125577	video	63	640	360
 items/courses-21/page.txt	742	document
 items/courses-21/scripts.sh	694	unknown
-items/dates/page.css	510	unknown
-items/dates/page.txt	2849	document
+items/dates/page.css	984	unknown
+items/dates/page.txt	6251	document
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/page.txt	1271	document
 items/daytime-cat/play/game.data	48550	unknown
@@ -93,13 +93,13 @@ items/fireflies/play/index.js	206390	code
 items/fireflies/play/index.wasm	613680	unknown
 items/fireflies/screenshot.jpg	34780	image	800	500
 items/friends/friends.jpg	28474	image	540	480
-items/friends/page.txt	133	document
+items/friends/page.txt	215	document
 items/gradatim/Gradatim_1.jpg	75030	image	1080	720
 items/gradatim/Gradatim_2.jpg	135756	image	1080	720
 items/gradatim/Gradatim_trailer.mp4	1257564	video	32	540	360
 items/gradatim/page.txt	1575	document
 items/ice-hatch/cover.png	22420	image	650	500
-items/ice-hatch/page.txt	1622	document
+items/ice-hatch/page.txt	2740	document
 items/ice-hatch/play/game.data	84924	unknown
 items/ice-hatch/play/game.js	11416	code
 items/ice-hatch/play/index.html	4717	unknown
@@ -109,20 +109,20 @@ items/ice-hatch/screenshot1.png	14400	image	540	360
 items/ice-hatch/screenshot2.png	19453	image	540	360
 items/index/fish.png	2116	image	60	60
 items/index/page.css	1645	unknown
-items/index/page.txt	773	document
+items/index/page.txt	1811	document
 items/inner-prod/page.txt	7750	document
 items/into/page.txt	6186	document
 items/leaving/IMG_20221130_151158.jpg	57870	image	912	684
 items/leaving/deteiku.mscz	52697	score
 items/leaving/deteiku.ogg	2269069	audio	194
 items/leaving/deteiku.pdf	258873	document	13
-items/leaving/page.txt	2246	document
+items/leaving/page.txt	4032	document
 items/lili/Lili__Call_you_Lili.mscz	30589	score
 items/lili/Lili__Good_morning.mscz	26240	score
 items/lili/Lili__Into_a_Blossom.mp4	15047848	video	268	720	390
-items/lili/Lili__Into_a_Blossom.pdf	338482	document	17
+items/lili/Lili__Into_a_Blossom.pdf	612314	document	27
 items/lili/cover.jpg	22340	image	720	240
-items/lili/page.txt	1527	document
+items/lili/page.txt	2501	document
 items/maylove-ex-22/IMG_4659.jpg	118075	image	642	950
 items/maylove-ex-22/IMG_4661.jpg	206570	image	642	418
 items/maylove-ex-22/cover.jpg	37199	image	720	420
@@ -134,7 +134,7 @@ items/maylove-ex-22/play/index.html	4721	unknown
 items/maylove-ex-22/play/love.js	325312	code
 items/maylove-ex-22/play/love.wasm	4702493	unknown
 items/medle/cover.png	24623	image	960	360
-items/medle/page.txt	3073	document
+items/medle/page.txt	6112	document
 items/misty-jungle/Misty Jungle.mp3	5333994	audio	333
 items/misty-jungle/Misty Jungle.mscz	58927	score
 items/misty-jungle/Misty Jungle.pdf	401794	document	17
@@ -153,22 +153,22 @@ items/rabbit-hole/page.txt	3267	document
 items/rabbit-hole/particles.jpg	100074	image	1280	720
 items/rabbit-hole/pbr-ibl.jpg	60758	image	770	376
 items/rabbit-hole/squirrel.jpg	84714	image	958	538
-items/revlog/2022-10.txt	1493	document
+items/revlog/2022-10.txt	3085	document
 items/revlog/2022-11.txt	175	document
-items/revlog/atom.xml	1381	unknown
-items/revlog/page.css	68	unknown
-items/revlog/page.txt	885	document
-items/revlog/rss.xml	1065	unknown
+items/revlog/atom.xml	1357	unknown
+items/revlog/page.css	161	unknown
+items/revlog/page.txt	1236	document
+items/revlog/rss.xml	1079	unknown
 items/sheepdogs-work/Sheepdogs_at_Work.ogg	1781851	audio	98
 items/sheepdogs-work/Sheepdogs_at_Work.tracktionedit	502306	musicnotes
 items/sheepdogs-work/Sheepdogs_on_Vacation.ogg	1591811	audio	84
 items/sheepdogs-work/Sheepdogs_on_Vacation.tracktionedit	2325982	musicnotes
-items/sheepdogs-work/page.txt	932	document
+items/sheepdogs-work/page.txt	1480	document
 items/sheepdogs/CiGAGJ-2021.jpg	132316	image	860	704
 items/sheepdogs/cover.jpg	110412	image	1351	550
-items/sheepdogs/page.txt	1965	document
+items/sheepdogs/page.txt	3569	document
 items/sheepdogs/play/.caisse.json	19	unknown
-items/sheepdogs/play/game.data	4715048	unknown
+items/sheepdogs/play/game.data	4715054	unknown
 items/sheepdogs/play/game.js	11420	code
 items/sheepdogs/play/index.html	4723	unknown
 items/sheepdogs/play/love.js	385958	code
@@ -207,7 +207,7 @@ items/traviata/process.sh	308	unknown
 items/wings/Broken Angel Wings.ogg	3811350	audio	280
 items/wings/Broken Angel Wings.pdf	158973	document	4
 items/wings/cover.jpg	134210	image	800	800
-items/wings/page.txt	2537	document
+items/wings/page.txt	4449	document
 items/zero/Adornment.ogg	5160906	audio	294
 items/zero/Concoction.ogg	12191586	audio	96
 items/zero/Concoction_a10-a.zip	20134894	unknown
@@ -228,14 +228,14 @@ items/zero/Intersection.ogg	4442693	audio	219
 items/zero/Juvenile.ogg	3000712	audio	176
 items/zero/Juvenile.tracktionedit	183715	musicnotes
 items/zero/cover.svg	1535	image	220	220
-items/zero/page.txt	4164	document
+items/zero/page.txt	4166	document
 items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-items/zzz/page.txt	2055	document
-main.css	21593	unknown
+items/zzz/page.txt	3704	document
+main.css	21240	unknown
 main.js	2004	code
 puffs.svg	2337	image	1200	120
-timeofday.html	890	unknown
+timeofday.html	1771	unknown
 top-fleuron.svg	19723	image	960	90
