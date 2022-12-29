@@ -18,7 +18,12 @@
 Trijam #152 参赛作品。这个系列的 jam 要求在三小时内完成制作，不过最后画画还是严重超时了一两个小时，而且声音也没有做，心痛。单人作战的话可能只能用现成素材吧（躺
 
 {{contents.en=}}
-Trijam #152 entry.
+“It’s not easy being a cat that comes out by day, but ordinary cats don’t get to appreciate the niceties of sunshine.”
+Daytime cat simulator. Follow the pawprints to find other cats (and also fish!). Playable <subpagelink daytime-cat/play here>!
+
+!<img screenshot.png <= Screenshot of the game>>
+
+Trijam #152 entry. This series of jams demands that games be produced in a timeframe of three hours, but I went wildly overtime by hours drawing. It was also regretful not being able to make the music. It’s robably unfeasible to do this solo without using pre-made assets…
 
 {{rellinks.zh=}}
 !<list
@@ -28,3 +33,8 @@ Trijam #152 entry.
 >
 
 {{rellinks.en=}}
+!<list
+  <li <subpagelink daytime-cat/play Play the game (this site)>>
+  <li <link https://ayuusweetfish.itch.io/daytime-cat Play the game (itch.io)>>
+  <li <link https://github.com/ayuusweetfish/Daytime-Cat Source repository (GitHub)>>
+>

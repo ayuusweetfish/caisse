@@ -43,7 +43,7 @@ On my way home the next day I lost one of my cherished gloves and was doodling s
 
 {{rellinks.en=}}
 !<list
-  <li <link adventure Some doodles: %>>
+  <li <link adventure Doodles: %>>
 >
 
 {{rellinks.en=}}

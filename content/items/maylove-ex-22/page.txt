@@ -1,7 +1,7 @@
 {{title.zh=}}我从哪里来/身体红绿灯
 {{intro.zh=}}《我向许多人打听过你》展会互动道具
-{{title.en=}}
-{{intro.en=}}
+{{title.en=}}Origin of Me / Lights of the Body
+{{intro.en=}}Interactive installation on a sex-ed exhibition
 
 {{bannerimg=}}cover.jpg
 {{bannerimginpage=}}false
@@ -33,6 +33,26 @@
 但是远程工作遇到的困难比预想中多得多，自己在这方面的经验也有限，出现了各种难以解决的问题，最后大部分的手势交互还是不太能正常工作，只好改成了常亮的彩灯。好像也白给人添了不少麻烦，挺难过的 ._.
 
 {{contents.en=}}
+Two interactive installations in the sexual education exhibition organized by MAYLOVE and sponsored by PLUCK.
+
+!<img IMG_4659.jpg <= Photo of the exhibition icon by PLUCK/MAYLOVE> <= vertical caption>>
+
+!<h1 “The Origin of Me” —— Understanding Contraception>
+
+An interactive exploration helping the audience gain an understanding of different contraceptive methods through a hands-on gaming experience, acquiring awareness of safety in the explorations of life in the future. Mainly worked on redesigning interactive processes based on existing ideas and the technical implementation.
+
+After the finish of the exhibition, the game was published under the <link https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en CC BY-NC-SA 4.0> licence. It can be played <subpagelink maylove-ex-22/play here>.
+
+!<img game.jpg <= A few screenshots> caption>
+
+!<h1 “Traffic Lights of the Body” —— Awareness of Privacy in Physical Contact>
+
+An interactive device where parts of “the body textbook” can be lit by waving hands in front of it. The different colours of light reveal the understandings by the children regarding the privacy of their own bodies. Mainly worked on the technical implementation.
+
+!<img IMG_4661.jpg <= Onsite photo by PLUCK/MAYLOVE> caption>
+
+The hardware was implemented by STM32 with infrared proximity sensors, assembled in the school and mailed to Shenzhen. Later into the project I got distressed due to the tight time schedule, so I invited a friend Bw as the external assistance as a welder. Through the project was also a lot of help from the club next door as well as the support from friends. Trying hard to think of ways to repay them.
+However, remote collaboration was way more challenging then expected. Due to my own lack of experience, a lot of tough problems arose and the gestural interactions did not work out in the end. The light belts were replaced with always-on ones. It was regretful to have created tremendous hassle (especially for others) without a satisfying outcome ._.
 
 {{rellinks.zh=}}
 !<list
@@ -41,3 +61,7 @@
 >
 
 {{rellinks.en=}}
+!<list
+  <li <subpagelink maylove-ex-22/play Play “The Origin of Me”>>
+  <li <link https://github.com/ayuusweetfish/MAYLOVE2022_Contraception “The Origin of Me” source repository (GitHub)>>
+>

@@ -1,7 +1,7 @@
 {{title.zh=}}“伊始” / “Zero”
 {{intro.zh=}}迷路乐曲收容处，不定期更新
 {{title.en=}}“Zero” Series
-{{intro.en=}}
+{{intro.en=}}Collection of random music pieces, updated irregularly
 
 {{bannerimg=}}cover.svg
 {{bannerimgalt.zh=}}带有格子背景的纸张图案，包含五行五列方格。
@@ -12,18 +12,16 @@
 {{contents.zh=}}
 写的一些奇奇怪怪零零碎碎的曲子，或许更像是黑历史留存。
 
-!<h1 Adornment>
-<date 2017.24>
+!<h1 Adornment<date 2017.24>>
 
 高中最后一个寒假终于决定开始认真地完整制作乐曲，于是拿着手上仅有的 LMMS 自带的合成器和一些从 <link https://trisamples.com/ TriSamples> 拿到的架子鼓采样缝合出了一首电子音乐。
 
 !<filetable <file Adornment.ogg Adornment>>
 
-!<h1 Concoction>
-<date 2018.04>
+!<h1 Concoction<date 2018.04>>
 
 其实是鬼畜乐曲哒！
-Coursera 课程<link https://www.coursera.org/learn/audio-signal-processing 《音乐应用的音频信号处理》>结课作业。作业要求从 <link freesound.org Freesound> 上寻找声音，并使用课程提供的 Python 软件包进行信号处理操作（如频谱拆分、移调等），在此基础上创作一首乐曲。
+Coursera 课程<link https://www.coursera.org/learn/audio-signal-processing 《音乐应用的音频信号处理》>结课作业。作业要求从 <link https://freesound.org/ Freesound> 上寻找声音，并使用课程提供的 Python 软件包进行信号处理操作（如频谱拆分、移调等），在此基础上创作一首乐曲。
 提交作业原标题为《Kitchraensform》。说明文档中解释了制作过程，原始文件包包含了音频素材与所用的程序代码。
 
 !<filetable
@@ -32,8 +30,7 @@ Coursera 课程<link https://www.coursera.org/learn/audio-signal-processing 《�
   <file Concoction_a10-a.zip 提交作业原始文件包>
 >
 
-!<h1 Epigone>
-<date 2018.06>
+!<h1 Epigone<date 2018.06>>
 
 Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫扎特一样作曲：古典音乐作曲概论》>结课作业。作业内容是为钢琴与一件独奏乐器创作 20—30 小节的乐曲，并对音乐的和声与织体作了一定的限制。算是戴着镣铐跳舞嘛？
 
@@ -42,8 +39,7 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
   <file Epigone.pdf Epigone — 乐谱>
 >
 
-!<h1 Frivolity>
-<date 2018.13>
+!<h1 Frivolity<date 2018.13>>
 
 使用 <link https://warmplace.ru/soft/pixitracker/ PixiTracker> 制作的一段 chiptune 风格乐曲。是暑假被拖去给小朋友讲课时待在宾馆无聊做着玩的，主要是房间里有个投影仪还可以放声音就玩起来了ww 后来想想既然自己听得见隔壁房间的讲话声，说不定这个也成了隔壁夜聊的背景音乐……（？？）
 
@@ -52,8 +48,7 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
   <file Frivolity.piximod Frivolity — PixiTracker 序列>
 >
 
-!<h1 Gradus>
-<date 2018.18, 2019.12>
+!<h1 Gradus<date 2018.18, 2019.12>>
 
 尝试为小游戏 <link gradatim> 写配乐，结果没来得及写完（当时也不怎么会写）。过了好长时间才终于补完了，但还是好单薄啊 <= (/- <)>
 
@@ -62,8 +57,7 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
   <file Gradus.mscz Gradus — MuseScore 2 乐谱文档>
 >
 
-!<h1 Heptadekka #Heptadekka>
-<date 2019.16>
+!<h1 Heptadekka<date 2019.16> #Heptadekka>
 
 2019 年参与了建国 70 周年庆典的广场合唱活动，排练临近结束、正式活动即将到来时用 <link tilde>把几个月来唱了无数遍的歌们编进混成曲，活动结束后在回家的火车上完成了制作。
 
@@ -78,8 +72,7 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
 
 !<img IMG_20190929_125506.jpg 地面的井盖上绘制着一架阳光下的飞机，旁边写有“70”与“中华腾飞”字样。>
 
-!<h1 Intersection>
-<date 2020.04>
+!<h1 Intersection<date 2020.04>>
 
 或许是一些人生转折？网课期间在自己的小房间对着窗外的夕阳写下的曲子。
 
@@ -88,14 +81,92 @@ Coursera 课程<link https://coursera.org/learn/classical-composition 《像莫�
   <file Intersection.mmpz Intersection — LMMS 工程>
 >
 
-!<h1 Juvenile>
-<date 2020.06>
+!<h1 Juvenile<date 2020.06>>
 
 不知为何写的时候就觉得是给无忧无虑的小孩子的。不想长大呀——
 
 !<filetable
   <file Juvenile.ogg Juvenile — 音频>
-  <file Juvenile.tracktionedit Juvenile — Waveform 工程>
+  <file Juvenile.tracktionedit Juvenile — Tracktion/Waveform 工程>
 >
 
 {{contents.en=}}
+Odds and ends of music pieces, more like an archive of embarassing history.
+
+!<h1 Adornment<date 2017.24>>
+
+In the final winter holiday of high school I finally decided to start making music on my own. I pieced together some electronic music with the only things I had at the time — bundled synthesizers in LMMS and drum samples obtained from <link https://trisamples.com/ TriSamples>.
+
+!<filetable <file Adornment.ogg Adornment>>
+
+!<h1 Concoction<date 2018.04>>
+
+Actually an autotune remix!
+Final assignment of the Coursera course <link https://www.coursera.org/learn/audio-signal-processing Audio Signal Processing for Music Applications>. The assignment requests that students collect sounds from <link https://freesound.org/ Freesound> and process them with the Python package provided in the course, carrying out operations such as spectrum separation and transposition, creating a music piece.
+The original title was “Kitchraensform”. The document explains the making process; the submission package contains the audio assets and the program sources used.
+
+!<filetable
+  <file Concoction.ogg Concoction>
+  <file Concoction_notes.txt Submission document>
+  <file Concoction_a10-a.zip Submission package>
+>
+
+!<h1 Epigone<date 2018.06>>
+
+Final assignment of the Coursera course <link https://coursera.org/learn/classical-composition Write Like Mozart: An Introduction to Classical Music Composition>. The assignment asks for a music piece of 20—30 bars composed for the piano and another solo instrument, adhering to a set of constraints regarding harmony and texture of the music. Dancing in shackles, to an extent.
+
+!<filetable
+  <file Epigone.mp3 Epigone — audio>
+  <file Epigone.pdf Epigone — score>
+>
+
+!<h1 Frivolity<date 2018.13>>
+
+Chiptune-style music made with <link https://warmplace.ru/soft/pixitracker/ PixiTracker>. Made for self-entertainment when giving lectures in the summer vacation, due to a sound-enabled projector being present in the hotel room. The thought later struck me that, since I could hear the next-door conversations, there was a decent chance that this became the background music for their overnight chats…
+
+!<filetable
+  <file Frivolity.mp4 Frivolity — audio and video>
+  <file Frivolity.piximod Frivolity — PixiTracker sequence>
+>
+
+!<h1 Gradus<date 2018.18, 2019.12>>
+
+The unfinished attempt at creating music for the game <link gradatim> (did not know how to write music at that time, anyway). It was long before I eventually went on completing it, though it was still quite insubstantial <= (/- <)>
+
+!<filetable
+  <file Gradus.ogg Gradus — preview audio>
+  <file Gradus.mscz Gradus — MuseScore 2 score document>
+>
+
+!<h1 Heptadekka<date 2019.16> #Heptadekka>
+
+I participated in the choir on the square in 2019, on the ceremony of the 70th anniversary of PRC. Approaching the end of the rehearsal and the unfolding of the main event, I arranged the songs repeated countless times over the past few months into a medley in <link tilde>, finishing the composition on the train back home.
+
+!<filetable
+  <file Heptadekka.mp4 Heptadekka — audio and video>
+  <file Heptadekka.org Heptadekka — Organya sequence>
+>
+
+!<img Heptadekka.png <= The icon of the anniversary resembling the digits “70” depicted inside the editor with musical notes.>>
+
+At that time, everything seemed bright, portraying a vibrant future; after a thousand days and nights, things are not such a misfortune, with ideals and beliefs surviving; there are just things that do not seem able to be relied upon anymore.
+
+!<img IMG_20190929_125506.jpg An aircraft under the sunlight, painted on a manhole cover on the ground, with the texts “70” and “China’s soaring” written aside.>
+
+!<h1 Intersection<date 2020.04>>
+
+Might be soem twists of life? A tune written facing the sunset outside the window of my little room, during the period of online lectures.
+
+!<filetable
+  <file Intersection.ogg Intersection — audio>
+  <file Intersection.mmpz Intersection — LMMS project>
+>
+
+!<h1 Juvenile<date 2020.06>>
+
+It just felt like it was for the carefree little children when it was written. Always reluctant to grow up.
+
+!<filetable
+  <file Juvenile.ogg Juvenile — audio>
+  <file Juvenile.tracktionedit Juvenile — Tracktion/Waveform project>
+>
