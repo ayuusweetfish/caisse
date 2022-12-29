@@ -1,7 +1,7 @@
 {{title.zh=}}Tilde 音乐序列器
 {{intro.zh=}}《洞窟物语》Organya 音乐编辑工具
 {{title.en=}}Tilde Sequencer
-{{intro.en=}}
+{{intro.en=}}Music editor for Cave Story’s Organya format
 
 {{bannerimg=}}screenshot.png
 {{bannerimginpage=}}false

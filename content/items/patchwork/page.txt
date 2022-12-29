@@ -1,7 +1,7 @@
 {{title.zh=}}Patchwork Girl
 {{intro.zh=}}Wizard of Oz 用户测试原型工具包
 {{title.en=}}Patchwork Girl
-{{intro.en=}}
+{{intro.en=}}A toolkit for Wizard of Oz software prototypes
 
 {{bannerimg=}}illust.png
 {{bannerimgpos=}}50,72
@@ -19,6 +19,11 @@ Patchwork Girl 定义了一个基于 WebSocket 的应用层协议，并提供了
 具体可参见<link https://github.com/ayuusweetfish/PatchworkGirl 源码仓库>中的 README 说明文档。
 
 {{contents.en=}}
+Patchwork Girl is a toolkit for the Wizard of Oz methodology, aiding the development of software prototypes for early-stage usability tests.
+The intended audience of this project are developers looking forward to building software prototypes for use in Wizard of Oz experiments, i.e. programs that need to be remote-controlled manually by human observers. With this toolkit, such functionalities can be implemented with more ease.
+!<img illust.png <= Diagram: the software operated by the participant and the web interface used by a human observer both communicate with a server through WebSocket. The observer sends remote control commands via buttons and sliders on the interface, and the participant’s software receives these signals and applies the corresponding changes, enabling remote control.> caption>
+Patchwork Girl defines an application-level protocol based on WebSocket and provides a server application with a web interface. Programs being controlled can employ any programming language/framework/library. By establishing a standard WebSocket connection to the server and processing simple JSON messages transmitted, they can obtain an interface for remotely control available to the experiment operators.
+For details, please refer to the README document in the <link https://github.com/ayuusweetfish/PatchworkGirl source repository>.
 
 {{rellinks.zh=}}
 !<list
@@ -26,3 +31,6 @@ Patchwork Girl 定义了一个基于 WebSocket 的应用层协议，并提供了
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/PatchworkGirl Source repository (GitHub)>>
+>

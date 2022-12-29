@@ -79,11 +79,75 @@
 !<cen 跟伙伴道个别 <kao ₍˄·͈༝·͈˄*₎◞ ̑̑>>
 
 {{contents.en=}}
-<kao ₍˄·͈༝·͈˄*₎◞ ̑̑>
+!<cen “The girl over there, please hurry onto the train before the door closes!”>
+!<img Tan1.png <= > vertical>
+!<cen “Oh, thanks!”>
+!<hr cloudy>
+
+!<cen …>
+!<img Tan2.png <= > vertical>
+!<cen … it’s finally time for a goodbye.>
+!<hr windy>
+
+!<cen I’ve been thinking this way since early childhood — each object is a little spirit,>
+!<img Vio1.png <= > vertical>
+!<cen that loves, suffers, adapts, misses, that deserves to be together with everything gorgeous in this world.>
+!<hr cloudy>
+
+!<cen I thus weep in the night, mulling over the yearnings of the homeless highlighter pen to its fellow friends;>
+!<img Vio2.png <= > vertical>
+!<cen mourn over the lost red scarf, well-kept at home for decades, whose plight I could not see.>
+!<hr cloudy>
+
+!<cen I constantly get irritated at my own forgetfulness.>
+!<img Vio3.png <= > vertical>
+!<cen Searching around in upset, I cry silently in the heart for apologies and compensation from the fool that lost the thing just now.>
+!<hr cloudy>
+
+!<cen When a smile comes out from tables and chairs, the dark clouds of emotions clears up at once;>
+!<img Vio4.png <= > vertical>
+!<cen But more often than not, nightfull knocks over the bottles of flavours, leaving them soaking every corner of the heart.>
+!<hr windy>
+
+!<cen Once, I pass by a sad soul online, who feels guilty for unexpectedly breaking stress balls and was at a loss.>
+!<img Azu1.png <= > vertical>
+!<cen I hurried to reply that she had helped the ball graduate and start a whole new adventure in this world. It received many likes.>
+!<hr cloudy>
+
+!<cen Since then, I seem to have learned about ways to get along with the world, with this corner of self.>
+!<img Azu2.png <= > vertical>
+!<cen But sometimes the regret keeps overflowing. In the bubbly night I reunite with them, only to wake up to the mild, lingering loneliness at day.>
+!<hr cloudy>
+
+!<cen I still get annoyed at my clumsy self.>
+!<img Azu3.png <= > vertical>
+!<cen … still cherish so much about everything I own — so insecure.>
+!<hr windy>
+
+!<cen If I’m leaving for an adventure tomorrow,>
+!<img Oli1.png <= > vertical>
+!<cen will you miss me?>
+!<hr cloudy>
+
+!<img Oli2.png <= > vertical>
+!<hr windy>
+
+!<cen Life is like a train,>
+!<img Tan3.png <= > vertical>
+!<cen everything in the world has its own departures and transfers.>
+!<hr cloudy>
+
+!<cen Therefore, although it’s hard to let go, althouh I might still miss you at night…>
+!<img Tan4.png <= > vertical>
+!<cen for now, I should quietly wish you a pleasant journey.>
+!<hr>
+
+!<img IMG_20221130_145907.jpg <= > vertical>
+!<cen Wave goodbye to the friend <kao ₍˄·͈༝·͈˄*₎◞ ̑̑>>
 
 {{rellinks.zh=}}
 !<list
-  <li <link leaving 一些音乐：《%》>>
+  <li <link leaving Music: %>>
 >
 
 {{rellinks.en=}}

@@ -19,13 +19,24 @@
 
 !<img screenshot.jpg <= 游戏截图>>
 
+{{contents.en=}}
+Playable <subpagelink fireflies/play on this site>.
+I’ve been pondering over this for long: when living beings depart from this world, where do they go? I am tempted to believe that they return to the universe, dwelling in every star, every grain of sand, every flower, every person; every corner of the world will be filled with them ever since. They no longer live here, but the footprints of what once was will always be there for those who are still in this place.
+Then, we don’t need to grieve. If we build connexions with our hearts, everything we love has never been away; if we engrave there what has left us and carry it along the way, we will never be alone.
+
+!<hr>
+An entry to Raylib 5K game jam. This was the first time I’ve participated in a weeklong jam, and I worked hard with a few stay-ups. Despite missing the prizes due to misinterpretations of the theme and the delivery hindered by the lack of polish, I received a great amount of kindness. Will always be moved by earnest appreciation ; - ;
+是 Raylib 5K game jam 的参赛作品。第一次参与持续一周的长 jam，于是使劲卷了起来，熬夜做了大量工作。最后虽然因为解题出现偏差以及被完成度阻碍的表现力而错过了奖品，但是收获了许多许多善意，永远会因为认真被欣赏而感动 ; - ;
+
+!<img screenshot.jpg <= 游戏截图>>
+{{contents.zh=}}
 以下含有极少量剧透。
 
 !<h1 离别的故事>
 Jam 结束之后不久，家里的猫猫之一，窝窝，被紧急送往附近一家大的宠物医院。窝窝已经生了一个寒假的病，但是看着它这天被医生紧张地围起来的样子，终究是揪紧了心。回家的路上就没法控制自己的情绪闹了脾气；晚上在家崩溃大哭了一场。
 可是忽然想到，如果她真的要离开，那我不能让她在这个世界的最后一晚让这里发生这种一团糟的事。于是给妈咪道了歉，努力平静下来睡着了。
 第二天下着雨，在去医院的公交车上恰好接到了医院打来的电话，让我们去看看她。医院里，医生克制着自己的低落，说着情况并不乐观；我不知道窝窝熬过了一个怎样的夜晚，也没有太多勇气去看着箱子里虚弱的她。
-我们决定亲自送她一程。在此之前给另一位养猫的爷爷通了电话，第一次看着自己生命中的 heroine 哽咽到说不出话，不知为何感觉从未如此深刻地体会到自己没法一直像从前那样当无忧无虑的小朋友了。这次是我去摸她的头——好像至少现在我不是那个任性的小孩了。窝窝也会很欣慰的吧？
+我们艰难地决定亲自送她一程。在此之前给另一位养猫的爷爷通了电话，第一次看着自己生命中的 heroine 哽咽到说不出话，不知为何感觉从未如此深刻地体会到自己没法一直像从前那样当无忧无虑的小朋友了。这次是我去摸她的头——好像至少现在我不是那个任性的小孩了。窝窝也会很欣慰的吧？
 不久便被拉进手术室，在周围仪器一片吵闹的嘟嘟声中看着床上的窝窝。还是那么惹人怜爱，只是好像在艰难地和自己的身体相处，仿佛回到了出生时一样。我不知道她会不会嫌环境吵闹，便努力说了许多话，期望着能创造一些安全感。想起几天前一个平常的下午她在我脚边撒娇的时候没有让她跳上我的腿，带着后悔认真道了个歉。当声音归于平静，我们最后一次在这个世界拥抱，然后沿着冬日湿冷的街道离开。
 妈咪感慨道，“她就在天上保佑你啦。”可是我觉得这种事完全不是需要用“保佑”之类的话来抚慰的，于是说了自己在 jam 之前的那些没来由的直觉。万物的波动大概确实是会共振的吧。
 经常听说灵魂在离开之前可以在这个世界继续逗留一会儿，所以晚上睡觉的时候没有关门。但是怎么也睡不着，被 mafu 的《Nighty Night》歌声陪着在被窝里流眼泪，在社交媒体上写了写才昏沉睡去。
@@ -45,7 +56,30 @@ Jam 结束之后不久，家里的猫猫之一，窝窝，被紧急送往附近�
 直到暑假回到家，在同一个空间里找回那样的心境，做完了音乐<link bellflowers 《%》>，加上了音效，还经过友人的试玩调整了一下关卡设置和引导流程，也给妈咪玩了。虽然还是对人说着“家里有三只猫——有一只在喵星”，但是不会那么难过了。主角爱莉丝在这片仙境与完成了她给奈奈的一次告别，或许我也该继续走下去啦。
 
 {{contents.en=}}
-Raylib 5K game jam entry
+Tiny bits of spoilers follow.
+
+!<h1 The Story of Letting Go>
+Shortly after the jam has ended, one of the cats in our family, Dimp, was rushed to a large vet hospital nearby. She has been sick all winter, but watching her being surrounded by the doctors that day was heartbreaking. I lost my temper on the way home; I broke down and cried at home on that night.
+It suddenly occurred to me that if she was really leaving, it would be regretful to mess up here on her last night in this world. I gave Mum an apology and managed to calm down and fall asleep.
+We woke up to a rainy day. On the bus to the hospital, we happened to get a call from the hospital asking that we come and see her. At the hospital, the doctor told us that things were not looking good, under her voice a restrained sense of regret. I did not know what the night has been like for Dimp, and did not have enough courage to look at her frail in the sickbed.
+We finally came to the hard decision to give her a relief. Before that, we called a senior friend who also had raised cats, and for the first time ever I witnessed the heroine in my life choke up. For some reason, I felt more profoundly that I was no longer able to be the carefree little child that I used to be. This time I was the one to pet her head — as if at least now, I wasn’t that willful child any more. Will Dimp be relieved as well?
+It wasn’t long before we were called into the operating room and saw Dimp on the bed amidst the noisy beeps of the machines. Still as endearing as ever, she just seemed to be struggling to get along with her body, as if she was back at the time of birth. I was worried that she would be disturbed by the environment, and made an effort to say a lot, in the hope of creating some sense of security. The scene of an ordinary afternoon a few days ago came to my mind, when I did not let her hop onto my lap when she pleaded at my feet. I apologized sincerely with regret. When the sounds fell silent, we embraced her for the last time in this world, and left along the cold, wet winter street.
+“She will be watching over you from heaven,” Mum lamented. But I didn’t think such things needed to be soothed by words of “blessings” and such, so I revealed my unexplained intuitions before the jam. The pulses of all things probably do resonate.
+I had often heard that spirits could linger in this world for a while before leaving, so I left the door open when I went to bed at night. I could not fall asleep, and wept under the covers with mafu’s “Nighty Night”. It was long before I wrote something on social media and then drifted off to the dreams.
+
+!<blockquote <~~=
+  In “Coco”, it is mentioned that when a departed one is forgotten by all in this world, they will be truly “gone”.
+  But is the impact of a spirit only “to be remembered”? The words said, the things done, or the mere existence itself, are all changing countless beings around them, shaping the world as they see it, and becoming part of each other. Even when one of them passes away, the imprint it leaves behind lives on in the world, going further and further into the future as other souls collide and merge with each other.
+  Just as the part that is talking now might be a black cat in white boots and a white bib. If you are willing to listen to her, she can be a part of you too.
+  All beings in the world are like a sea of stars, and each individual among them might be a droplet as well as a ripple, or even a whole river mingled with the thousands of spirits that have come and gone. A flower is a world — this is probably one interpretation of it, right?
+>>
+
+After everything had been settled, I had a day’s rest before leaving for the school for the training of the wind band. I was flooded with thoughts the moment the train sets off — the physical distance between me and her would never be the same again.
+!<img IMG_20220214_132810.jpg <= Landscape outside the train window, with patches of unmelted snow on the ground>>
+
+Shortly after I returned to school, I had a dream. I saw Dimp sitting on the sink of our balcony; I reached out to touch her, and she happily came over and rubbed against me before dissipating into a cloud of black smoke into the air. She has never visited my dreams since then — had she fulfilled all her wishes?
+But sometimes I still missed her, accidentally shedding tears when talking with others about it. I was still so reluctant to face the last little step of saying goodbye.
+It was when I came home in the summer vacation, finding the same state of mind in the same space, that I was able to finish the music <link bellflowers “%”> and add the sounds. With the help from a friend’s playtesting, I adjusted the levels and tutorials before letting Mum play it. I still tell people that “there are three cats in our house — one is on the stars”, but I do not weep over it any more. The protagonist of the game, Alice, has finished a farewell to Nana in this wonderland; maybe it’s time that I move on too.
 
 {{rellinks.zh=}}
 !<list
@@ -56,3 +90,9 @@ Raylib 5K game jam entry
 >
 
 {{rellinks.en=}}
+!<list
+  <li <subpagelink fireflies/play Play the game (this site)>>
+  <li <link https://ayuusweetfish.itch.io/fireflies-in-forest-flowers Play the game (itch.io)>>
+  <li <link https://github.com/ayuusweetfish/Fireflies-in-Forest-Flowers Source repository (GitHub)>>
+  <li <link bellflowers Music “%”>>
+>
