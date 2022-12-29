@@ -1,7 +1,7 @@
 {{title.zh=}}兔子洞
 {{intro.zh=}}三维渲染与物理模拟动画
 {{title.en=}}Rabbit Hole
-{{intro.en=}}
+{{intro.en=}}3-D rendering and animated physical simulation
 
 {{bannerimg=}}cover.jpg
 {{bannerimginpage=}}false
@@ -31,6 +31,24 @@
 在这段物理模拟的动画中，星号形状的物体混杂在对二氯苯之间，搅成了一团彻底的混沌；有时星号旋转直指观众，可是出现在屏幕上的分明是一个个“叉”。点燃所谓正义的火焰却将其投向无辜的人群，那在说出“我对你错”时是否还对得起自己的良知呢？
 
 {{contents.en=}}
+A collection of coursework for “Computer Graphics Fundamentals” and “Algorithms and Technologies for Computer Animation”. Program sources and lab reports have been published on <link https://github.com/ayuusweetfish/graphics-lab-THSS GitHub>.
+
+!<h1 PBR/IBL rendering>
+!<img pbr-ibl.jpg Rendered image: in the same environment, spheres of different materials give different visual effects. The one on the left is more metallic, while the one on the right resembles a smooth stone.>
+Implemented the physically based rendering (PBR) algorithm for simple physically authentic renderings of materials. Image-based lighting (IBL) was incorporated for global illumination. Implemented in the Rust language with the OpenGL application interface. <link https://github.com/ayuusweetfish/graphics-lab-THSS/blob/5167b490671e80a57b5c39766400db811f0ea02f/rabbit_hole/report.pdf Lab report>.
+
+!<h1 Path tracer rendering>
+!<img squirrel.jpg Rendered image: a squirrel looking into the mirror with a teapot and a teacup on its side.>
+!<img cover.jpg Rendered image: trees of low-poly style with a squirrel and many objects scattered among them.>
+!<img cat.jpg Rendered image: orange-furred kitten standing in front of a mirror,looking at the potted plants, sofa, transparent table and other furniture in front of it.>
+The path tracer is implemented in the Rust language.
+
+!<h1 GPU-accelerated rigid body physics simulation>
+!<img particles.jpg Wireframe image, many irregular objects composed of spherical particles laid out in space.>
+Implemented a highly parallel rigid body physics simulation algorithm on GPU with <link https://taichi.graphics/ Taichi>. <link https://github.com/ayuusweetfish/graphics-lab-THSS/blob/5167b490671e80a57b5c39766400db811f0ea02f/particles/report.pdf Lab report>; <link https://github.com/ayuusweetfish/graphics-lab-THSS/releases/download/video-demo/demo.mp4 demonstration video>.
+The second simulation animtion in the video is dubbed “Antichlorobenzene”, which originates from the <link https://www.nicovideo.jp/watch/sm12154467 song> in 2010 by Owata-P. Being the second in the “dicholrobenzene doublet”, the song insinuates that a seemingly righteous warrior in an online opinion war is in fact wreaking havoc under the banner of opposing evil — “for justice, no evil is too much”.
+In the second half of the song, the protagonist repeatedly calls “Para-dichlorobenzene”, which is her “opponent”; but the lyrics simply shows a run of asterisks “*”: what is the point of such violent “justice”? It is just a superficial and indulgent orgy of chaos, leaving only a chilling wreck.
+In the simulation animation, objects in the shape of asterisks are mixed with para-dichlorobenzene, creating a mixture of complete chaos. Occasionally, the asterisks rotate to an angle that points at the viewer, but what appears on the screen becomes clear images of the cross “×”. When the flames of so-called justice are being thrown at innocent people, is it up to one’s conscience to insist that “I am right and you are wrong”?
 
 {{rellinks.zh=}}
 !<list
@@ -38,3 +56,6 @@
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/graphics-lab-THSS Source repository (GitHub)>>
+>
