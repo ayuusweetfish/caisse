@@ -23,3 +23,20 @@
 标题是受拉丁短语 <lang lat gradus ad Parnassum>（登上帕那索斯山的台阶）启发。在古希腊神话中，帕那索斯山脉的两座高峰之一是太阳神阿波罗和文艺女神缪斯们的家乡，另一座则是酒神狄俄尼索斯的；因此这个短语多次被用于艺术领域的教材名字，象征通往更高水平的台阶。游戏标题 <lang lat gradatim> 在拉丁语中的含义是“一步步、逐渐”。
 
 {{contents.en=}}
+A platformer/rhythmic game. The moments available for jumps and dashes are dictated by rhythms of the music, adding a few puzzles to it.
+!<filetable
+  <file Gradatim_trailer.mp4 Video>
+>
+!<img Gradatim_1.jpg Screenshot of the level selection screen>
+!<img Gradatim_2.jpg Screenshot of the gameplay screen>
+
+The final project of the course “Fundamentals of Programming”. A hybrid-genre game inspired by Patapon and Celeste. I was quite absorbed, spending all the time on it without sparing efforts for other courses. I even had a serious idea of a story about a catastrophe-stricken tribe which lost all their arts and a passionate apprentice who went off travelling the world learning from maestri.
+!<blockquote <~~=
+  The course project is not a game jam — one and a half months is enough for one to become associated with a messy pile of code, images, sounds, and configuration files.
+>>
+
+Only a video was put up, since the content of the game was not rich enough and the difficulty curve was odd. It was not a polished project anyway.
+
+!<hr>
+
+The title was inspired by the Latin phrase <lang lat gradus ad Parnassum> (steps to Parnassus). In ancient Greek mythology, one of the two peaks of the Parnassus Mountains was home to Apollo, the god of the sun, and the Muses, the goddesses of arts; while the other to Dionysus, the god of wines. The phrase has therefore been used multiple times as titles of textbooks in arts, symbolising the stepping stones to higher levels. The game’s title <lang lat gradatim> means “step by step, gradually” in Latin.

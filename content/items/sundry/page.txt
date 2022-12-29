@@ -1,5 +1,0 @@
-{{contents.zh=}}
-<link adventure>！
-
-{{contents.en=}}
-Check <link dates>?

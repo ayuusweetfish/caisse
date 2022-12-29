@@ -1,5 +1,5 @@
 {{title.zh=}}课程习作集合（2021）
-{{title.en=}}
+{{title.en=}}Practice compositions in courses (2021)
 
 {{date=}}2021.07, 2021.22
 
@@ -34,3 +34,31 @@
 >
 
 {{contents.en=}}
+
+!<h1 Sound Design>
+
+Sound design exercises in different themes.
+
+!<filetable
+  <file Sound_Design_Travel.mp4 Travel>
+  <file Sound_Design_Suspense.mp3 Suspense>
+  <file Sound_Design_Love.mp4 Love>
+  <file Sound_Design_Spy.mp4 Spy>
+>
+
+!<h1 Song Arrangement>
+
+Rearrangement of the song “A Crescent Moon” (弯弯的月亮) by Li Haiying with vocals by Liu Huan. The lyrics and the title were not unveiled during the practice.
+
+!<filetable
+  <file Crescent_Moon.mp3 A Crescent Moon>
+>
+
+!<h1 Musical Engineering>
+
+A proposal essay: select an excerpt from the film “Iron Man” and compose as well as produce the music for it.
+
+!<filetable
+  <file Iron_Man.mp4 Iron Man>
+  <file Iron_Man.mscz MuseScore document>
+>

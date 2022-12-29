@@ -1,7 +1,7 @@
 {{title.zh=}}阳光之下
 {{intro.zh=}}一只吸血鬼与无法触及的心上人的故事；平台跳跃游戏
 {{title.en=}}Under Sunshine
-{{intro.en=}}Game
+{{intro.en=}}Story of a vampire and her untouchable beloved; platformer game
 
 {{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,90
@@ -32,6 +32,25 @@
 四舍五入还是程序（为什么没贴照片还是要煞有介事地抹几笔呢？我也记不得了。
 
 {{contents.en=}}
+Entry of the team “Risk of Rain” to the 2019 CiGA Game Jam.
+A story of a vampire and her untouchable beloved. Technically it is indeed a girls’ love game.
+As people run towards their ideals, will something beyond their imagination be quietly going on, on the other side of the world?
+
+!<filetable
+  <file UnderSunshine_trailer.mp4 Video>
+>
+
+<hr>
+A teamed game jam with the Future ACG Group. The game engine has become a bit dated and the version produced for the jam has not been kept, so only the video and the repository have been put up.
+Having travelled through the rain to the venue, we didn’t wait long before the theme was revealed — this cartoon.
+!<img IMG_20190705_175742.jpg>
+We then decided to take a taxi back to school. Everyone pondered a lot in the cars but none of us had a complete idea. At one point we even considered quitting, and it was only until the following morning that we settled on a narrative — the reclusive vampire vulnerable to sunlight, and her helplessness facing the demolition of her crumbling residence for the construction of a park.
+Then, for some reason, I was assigned the role of puzzle design, which put me in a flustered mood. To my relief, there was a teammate Haoyuan doing it together with me. By the night of the second day (with more than half of a day left for the jam) I was already wandering with boredom in our studio. Is this the life of a designer who exploit labour…?
+
+!<img IMG_20190707_173644.jpg <= > vertical>
+
+!<img IMG_20190708_010812.jpg>
+Rounding off, I was still a programming member. I do not recall the reason for the masks despite there not being an actual photo.
 
 {{rellinks.zh=}}
 !<list
@@ -39,3 +58,6 @@
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link https://github.com/simonkorl/UnderSunshine Source repository (GitHub)>>
+>
