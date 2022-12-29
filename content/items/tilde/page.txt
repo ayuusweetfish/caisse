@@ -24,6 +24,17 @@ Tilde 是一个朴素的音乐编辑与播放工具，或者也可以按照习�
 《洞窟物语》的两位主角名字都是标点符号（结尾才公布名字的主人公和 Curly Brace 小姐姐），所以这个小玩意也跟着用标点符号作名字啦～
 
 {{contents.en=}}
+Tilde is a plain tool for music editing and playback; or a sequencer by conventional jargon.
+!<filetable
+  <file tilde-seq-7df9714.zip Pixilang program package>
+>
+!<img screenshot.png Screenshot>
+
+<link https://cavestory.fandom.com/wiki/Soundtrack Organya> is the music format in the game <link https://www.cavestory.org/ Cave Story> by the Japanese designer <link https://studiopixel.jp/ Pixel>. It comprises a chiptune synthesizer with 16 tracks as well as a complete <link https://github.com/shbow/organya editor tool>.
+The language it is developed in, <link https://www.warmplace.ru/soft/pixilang/ Pixilang>, is created by the Russian musician Alexander Zolotov, targeting cross-platform multimedia development.
+The tool is feature-complete and supports a range of editing operations and shortcut key combinations. The audio synthesis algorithm has differences in nuances from the original game (Tilde uses the Lanczos filter for waveform stretching; did not look into the implementation of the game) that become more noticeable in lower-frequency percussion instruments, though I did not have much motivation to fine-tune it. I later made a <link zero#Heptadekka piece of music> in it.
+!<img icon_large.png Icon <= small syncdark>>
+The two main characters of Cave Story are both named after punctuation marks (the protagonist with the name revealed at the end, and Curly Brace). This little thing follows this convention and uses a punctuation as its name.
 
 {{rellinks.zh=}}
 !<list
@@ -34,3 +45,9 @@ Tilde 是一个朴素的音乐编辑与播放工具，或者也可以按照习�
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link zero#Heptadekka Music composed in Tilde, “Heptadekka”>>
+  <li <link https://www.warmplace.ru/soft/pixilang/ Pixilang>>
+  <li <link https://www.cavestory.org/ Cave Story community website>>
+  <li <link https://studiopixel.jp/ Studio Pixel>>
+>

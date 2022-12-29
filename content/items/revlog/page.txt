@@ -6,7 +6,7 @@
 {{ year = (i - 1) // 12 }}
 {{ month = i - year * 12 }}
 {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
-!<h1 {{ log.title.zh }} <date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+!<h1 {{ log.title.zh }}<date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
 {{ log.contents.zh }}
 !<hr windy>
 {{@ end }}
@@ -23,7 +23,7 @@
 {{ year = (i - 1) // 12 }}
 {{ month = i - year * 12 }}
 {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
-!<h1 {{ log.title.en }} <date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+!<h1 {{ log.title.en }}<date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
 {{ log.contents.en }}
 !<hr windy>
 {{@ end }}

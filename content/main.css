@@ -848,3 +848,13 @@ img.item-banner,
 .item-contents div.table-container table {
   border-block: 0.15em solid #60605c;
 }
+
+.item-contents h1 a.date-term-link {
+  margin-inline-start: 1em;
+  float: right;
+}
+.item-contents h1::after {
+  content: '';
+  display: block;
+  clear: both;
+}
