@@ -44,7 +44,7 @@ The enemies are C×ca Cola, P×psi Cola, C×conut Palm (Ye-shu) Coconut Milk, an
 <hr>
 The organizer, Game Cores, distributed a GameShell for development use to each team. <link https://www.clockworkpi.com/gameshell GameShell> is a (seemingly) retro gaming console, with a complete modern computer system under its 320×240 screen. The rare surviving photo below shows a player for music games I previously made ported to it.
 !<img IMG_20190825_181704.jpg>
-However, the graphics card seems to be a little bit less capable than expected, with the game in pixel graphics that run smoothly on laptops achieving only 2 frames per second on it. I later thought over it and incorporated the sprite batch optimisation, and it went back to over 50 FPS. Great!
+However, the graphics card seems to be a little bit less capable than expected, with the game in pixel graphics that run smoothly on laptops achieving only 2 frames per second on it. I later thought over it and incorporated the sprite batch optimisation, and it went back to over 50 FPS, giving a gratifying end result.
 
 {{rellinks.zh=}}
 !<list

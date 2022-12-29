@@ -13,3 +13,10 @@
 >
 
 {{contents.en=}}
+Struggling to come up with lyrics for the songwriting course assignment, I asked my friend C, who loved adapting and writing lyrics, for help. The lyrics were written in the usual waggish, funny style, which I followed with my own ideas to finish this self-deprecating story. The demo is piano-only and quite scrappy.
+
+!<filetable
+  <file lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf Lead sheet>
+  <file instr_CONFESSION_OF_A_NE'ER_DO_WELL.mp3 Preview audio>
+  <file instr_CONFESSION_OF_A_NE'ER_DO_WELL.mid Preview audio MIDI>
+>

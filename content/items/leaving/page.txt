@@ -1,7 +1,7 @@
 {{title.zh=}}我已经要走了哦・打击乐二重奏
 {{intro.zh=}}日本民谣双人组 Humbert Humbert 的歌曲，键盘打击乐改编
-{{title.en=}}I’m Leaving Already
-{{intro.en=}}Song by the Japanese folk duo Humbert Humbert; rearrangement for percussion duet
+{{title.en=}}I’m Leaving Already — Percussion duet
+{{intro.en=}}Song by the Japanese folk duo Humbert Humbert; rearranged for percussion duet
 
 {{bannerimg=}}IMG_20221130_151158.jpg
 {{!-- GIMP adjust sat. & filter; convert -scale 25% -brightness-contrast 0x-12 -modulate 135,160 }}
