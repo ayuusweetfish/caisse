@@ -1,7 +1,7 @@
 {{title.zh=}}《娱乐至死》阅读笔记
 {{intro.zh=}}如何使媒体科技发挥积极的社会价值？
-{{title.en=}}
-{{intro.en=}}
+{{title.en=}}“Amusing Ourselves to Death” Reading Notes
+{{intro.en=}}How can create a positive social value from media technology?
 
 {{date=}}2022.03
 
@@ -84,5 +84,82 @@ Ch 7 曾提到过，电视剥夺了话语的上下文，因而不具推论性，
 “人们感到痛苦的不是他们用笑声代替了思考，而是他们不知道自己为什么笑、为什么不再思考。”
 
 {{contents.en=}}
+!<note The book is authored by Neil Postman. The referenced edition is translated by Zhang Yan, CITIC Press, 2019.>
+!<note Auto-translated from Chinese by <link https://www.deepl.com/ DeepL>. Inaccuracies may arise.>
+
+!<h1 Summary of Content>
+An analysis of how television has had a profoundly negative impact on 20th century American culture, starting with the universal nature of the medium (i.e. the vehicle of information). As the Internet and multimedia technologies have matured and "television culture" has expanded, how should people in it navigate the boundaries of "entertainment" and how can media technology be used for positive social value? The book's discussion will be of some interest.
+
+
+!<h1 Part I #Part-1>
+!<h2 Ch 1 The Medium Is the Metaphor #Ch-1>
+The author points out that his own environment — the United States in the second half of the 20th century — was already steeped in performance and entertainment, and that this was all brought about by the medium known as 'television'. The medium.
+(Note: A medium is any material that carries a message, such as the spoken word, the printed word, television.)
+Marshall McLuhan argues that 'the medium is the message', which means that it is the dominant medium in a culture that determines its content, rather than the content it carries. For example, pictures deprive people of the ability to worship abstract gods; clocks and watches take people's activities away from the natural guidance of day and night. When the author says that the medium is a 'metaphor', he means that it provides the framework for thinking and shapes the basic way in which people think about anything.
+
+!<h2 Ch 2 Media as Epistemology #Ch-2>
+The authors wish to demonstrate that "the definition of truth derives at least in part from the nature of the medium that conveys the message". This means that the nature of the medium itself, which is used to carry the message, influences the expression and judgement of truth, i.e. epistemology.
+The author cites the notion of 'resonance' by literary critic Northrop Frye, who states that 'any medium has resonance, for resonance is an expanded metaphor ". In simple terms, resonance can be understood as "consensus in the context/environment that the medium touches". To this end, the author gives the example of an academic context where information in published works or scholarly articles is considered more credible, while accounts of what one has seen should not be used as an argument, regardless of the true credibility of either. This is the consensus contained in the medium of 'academic writing', the so-called 'resonance'.
+The author concludes that "the knowledge of truth is closely linked to the way it is expressed. Truth cannot, and never has, existed without embellishment. [...] 'Truth' is a cultural prejudice."
+The medium of television (note: from a contemporary perspective, this also includes media that focus on sensory experiences such as online social media and short videos) is gradually replacing the medium of print to influence people's epistemology.
+In response to the possible controversies, the author concludes as follows.
+!<list
+  <li 1. the book is concerned with the changes in the structure of discourse (rather than in thinking itself) brought about by the media; >
+  <li 2. although lead still exists, its influence on people's epistemology is much less than it used to be, and television has become dominant; >
+  <li 3. the epistemological pollution of television is rational communication, but has a positive effect in terms of emotional support etc. that cannot be ignored. >
+>
+In summary, the author examines the real threat that the medium poses to the "seriousness of public discourse", but does not wish to reject it in its entirety.
+
+!<h2 Ch 3 Typographic America #Ch-3>
+The linear thinking of the printed word influenced language, and this was particularly evident in the United States, whose early builders were mostly intellectuals. American public discourse often has the logic of a thesis.
+The author suggests that 'form determines the substance of content'. This is largely in line with McLuhan's view that 'the medium is the message'. As an example, Karl Marx mentions in The German Ideology that the printing press destroyed the conditions for the existence of the Iliad's epic, eliminating the modes of thought (discursive structures) carried by chant and legend. The author concludes that "the printing press is not only a machine, but a structure of discourse that excludes or selects certain types of content and then inevitably a certain type of audience."
+
+!<h2 Ch 4 The Typographic Mind #Ch-4>
+The author gives the example of 19th century America, where people could listen to and understand hours-long public speeches or debates, and where the spoken word followed the complex and sophisticated line logic of written language. Newspaper advertisements were also objective, descriptive texts. It may be difficult for people today to imagine this, but it is true.
+The printed word is rich in meaning and serious in content, because each paragraph is written with care and meaning, and the reader can only read it according to his or her own knowledge and understanding, even to the point of distancing himself or herself from the text and avoiding emotion.
+In 18th and 19th century America, the majority of people learned to read and joined in cultural conversations without being overly concerned with 'entertainment', creating an 'age of interpretation'. This demonstrates the influence of a dominant medium on culture and thought.
+
+!<h2 Ch 5 The Peek-a-Boo World #Ch-5>
+Peek-a-Boo is a game in which faces appear and disappear to amuse children. The author uses it as a metaphor for the low-value pleasures of the instantaneous fragmentation of information in a time of information explosion.
+The reason behind this is that the advent of the telegraph has made it possible to carry far more information than is necessary, making the 'news' full of fragmented details and reducing the 'information-action ratio', i.e. people do not have much influence over what they know Even if they do offer opinions and take action, they are simply drowned in the vastness of information and data. The telegraph has also combined with photographs to create a false sense of 'context' for fragmented information. The proliferation of fragmented information has also led to the creation of new forms of diversion, such as crossword puzzles and fun quizzes, to consume fragmented information.
+The author points out that there is nothing wrong with the game of hide and seek per se, but television has turned the entire communicative environment into it. "Each of us builds our own skybox, but if we want to live in it, the problem arises."
+
+!<h1 Part II #Part-2>
+!<h2 Ch 6 The Age of Show Business #Ch-6>
+The author begins by refuting McLuhan's "rear-view mirror thinking": new media often overturn old ones, rather than extend them.
+Each technology is a metaphor waiting to be revealed, with its own propensity for use, suggesting how it will be used and what it will do. Technology is only a machine, and the medium is the social and cultural environment it creates.
+In the environment created by the medium of television, all discourse becomes entertaining, turning debate into entertainment that provides sensual pleasure, in which everyone plays a role rather than thinking rationally. For serious activities such as sermons, surgery and law, television has turned them into entertainment. This gradually creeps into other aspects of life, such as air safety (where flight attendants take passengers through games while ignoring safety tips) and the classroom (where students are attracted by eye-catching formats and showmanship). Everyone is trying to attract attention, to create visual pleasure and often meaningless novelty. The contemporary American culture in which the author lives has begun to approach everything in an entertaining way.
+
+!<h2 Ch 7 “Now… This” #Ch-7>
+The author considers the phrase of the title to be the most frightening language of the television age, as it can connect any two unrelated things and marks the extreme fragmentation of discourse.
+People want books and films to remain coherent in content, tone and mood, but have long become accustomed to the fragmented language of television. The consequences of fragmented discourse are as follows.
+!<list
+  <li 1. the loss of seriousness in the news and its entertainment, as Ch 6 suggests, in the pursuit of visual sensory stimulation by images and announcers;>
+  <li 2. the seriousness of the facts is completely dissipated, with the announcer forever saying "see you next time" (the author points out that why should some distressing news emphasise the need for people to come back next time?) There will always be the adage that nothing is happening, as if everything in the news is irrelevant and not to be taken seriously;>
+  <li 3. the creation of a false sense of control over the news among viewers, making the so-called "polls" essentially a collection of wavering emotions;>
+  <li 4. depriving the discourse of its context, so that people have no time to distinguish between the coherence or truth of the words, making it difficult to synthesise information for effective analysis.>
+>
+
+!<h2 Ch 8 Shuffle Off to Bethlehem #Ch-8>
+Bethlehem is the birthplace of Jesus. This chapter combines case studies with various perspectives on how television can turn religion into entertainment that creates sensory stimulation.
+
+!<h2 Ch 9 Reach Out and Elect Someone #Ch-9>
+This chapter is about the entertainment of television politics.
+!<blockquote "The past is a world, not a grey chaos." [...] A book is history, everything about it takes us back in time [...] But television [...] is centred on the present. >
+!<blockquote In the age of the entertainment industry and image politics, political discourse has shed not only ideas, but also history. [...] Our time is characterised by a "refusal of memory". [...] In a medium whose very structure is biased towards images and fragments, we are doomed to lose our historical perspective. >
+The author points out that George Orwell's predictions (dictatorship, strict control of public opinion) were wrong because he believed that the printed word would continue to be the dominant medium. But Aldous Huxley was prescient in suggesting that if people were entertained to death, there would be no need for print at all, no need for a so-called 'ban'.
+
+!<h2 Ch 10 Teaching as an Amusing Activity #Ch-10>
+This chapter is about the impact of educational programmes, led by Sesame Street, on learning.
+!<blockquote "Perhaps the biggest misconception about education is that all one learns is what one is learning at the time. In fact, the process of forming lasting attitudes that accompany learning ...... is perhaps more important than spelling lessons or geography and history lessons" [...] In other words, the most important thing a person learns is how to learn. >
+And the author points out that television has made the way people learn entertaining as well. However, no educational theories suggest that learning has to be entertaining; on the contrary, they agree that learning is a difficult thing to do.
+There are three commandments in television education: no pre-requisite, no confusion, no explanation. But in this way, what is called 'education' is nothing but entertainment.
+As mentioned in Ch 7, television deprives discourse of its context and is therefore not inferential and unsuitable for interpreting meaning, unlike lead.
+The chapter concludes with a critique of the popular science programme Mimi's Tales, which introduces whales and provides a lot of fragmentary information that is not only less universal but also efficiently available in other ways, while subliminally instilling the view that 'learning is entertainment'.
+
+!<h2 Ch 11 The Huxleyan Warning #Ch-11>
+In the United States in the second half of the 20th century, television had become so embedded in the culture that Huxley's prophecy of a 'beautiful new world' seemed to be coming true.
+No technology was neutral, and they were bound to bring about social change. Television was already revolutionising culture in America at this time, and people were on the road to nowhere. Its greatest threat to culture was the dismantling of serious discourse. The author adds, however, that "a medium is not too dangerous if its users have understood its dangers." Ultimately, people need to go back to school and books and find ways to break the curse of entertainment through rational thought, so that they can make peace with television.
+"What people feel pained about is not that they are replacing thinking with laughter, but that they don't know why they are laughing or why they are no longer thinking."
 
 {{toc=}}true

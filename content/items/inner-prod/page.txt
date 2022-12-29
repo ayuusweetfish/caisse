@@ -1,7 +1,7 @@
 {{title.zh=}}溯源：复空间内积中的共轭
 {{intro.zh=}}复空间内积与二次型中共轭元素位置的不一致现象。
-{{title.en=}}Digging into the Inner Product?
-{{intro.en=}}a
+{{title.en=}}Digging into the Conjugation in Complex Inner Products
+{{intro.en=}}The inconsistency between the inner product of complex spaces and the quadratic forms regarding the positions of conjugate elements.
 
 {{date=}}2019.09
 {{usemath=}}true
@@ -97,7 +97,94 @@ f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u} &= \sum_{j=1}^n \sum_{
 从而共轭之所以取在 <math \mathbf{v}> 上，是因为我们希望 <math \mathbf{u}> 作为被变换的元素保留其原始状态，而将所有的运算放进 <math \mathbb{C}^n \rightarrow \mathbb{C}> 这个线性变换中去。至于 <math \mathbf{u}> 放在 <math \mathbf{v}> 前面的原因，大概也是觉得“先写被变换的元素，再指出变换”在这个二元运算当中比较符合直觉吧。
 
 {{contents.en=}}
-Yes?
+There is a phenomenon in linear algebra textbooks that is difficult to understand at first glance.
+
+By common mathematical convention, the standard inner product <math \langle \cdot, \cdot \rangle> on an <math n>-dimensional complex space <math \mathbb{C}^n> is defined as:
+
+!<dispmath
+\langle \mathbf{u}, \mathbf{v} \rangle = \sum_{k=1}^n u_k \overline {v_k\raisebox{0.67em}{}}
+>
+
+And at the same time there is the definition of the Hermitian quadratic forms:
+
+!<dispmath
+f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em}{}} u_k
+>
+
+These two definitions, which are supposed to be closely related, take conjugates on different elements — for the inner product, it is the latter, <math v_k>; for the quadratic form, it is the former, <math u_j>.
+
+It is of course possible to use another set of definitions, where the elements of <math \langle \mathbf{u}, \mathbf{v} \rangle> and <math f(\mathbf{u})> both take the conjugate on the other element, and the “inconsistency” seen above is still present.
+
+After wrestling with this strange question for a long time, I had some wonderful thoughts, which are recorded in detail here.
+
+!<hr>
+
+!<note <~~=''
+Unless otherwise specified, we establish the following convention:
+!<listcompact
+  <li <math u_k>, <math v_k> stands for the <math k>-th component of the vectors <math \mathbf{u}> and <math \mathbf{v}> in <math \mathbb{C}^n>, respectively;>
+  <li <math a_{j,k}> stands for the element at the <math j>-th row and the <math k>-th column of the positive definite Hermitian matrix <math \mathbf{A}>.>
+>
+''>>
+
+!<h1 The Simple Explanation #simple>
+
+In fact, <math \langle \mathbf{\mathbf{u}}, \mathbf{v} \rangle = \mathbf{v}^\mathsf{H}\mathbf{u}>, and <math f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u}>; hence they are both specialisations of the generalised quadratic form <math Q_\mathbf{A}(\mathbf{u}, \mathbf{v}) = \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}>.
+
+As for the difference in the “position” of the conjugation, it is merely an illusion created by the way it is written. It is easy to see this in the following form.
+
+!<dispmath
+\begin{aligned}
+\langle \mathbf{u}, \mathbf{v} \rangle = \mathbf{v}^\mathsf{H}\mathbf{I}\mathbf{u} &= \sum_{j=1}^n \sum_{k=1}^n \overline {v_j\raisebox{0.67em}{}} \delta_{j,k} u_k \\
+
+f(\mathbf{u}) = \mathbf{u}^\mathsf{H}\mathbf{A}\mathbf{u} &= \sum_{j=1}^n \sum_{k=1}^n \overline {u_j\raisebox{0.67em}{}} a_{j,k} u_k
+\end{aligned}
+>
+
+(where the Kronecker function <math \delta_{j,k}> equals the element at the <math j>-th row and the <math k>-th column of the identity matrix <math \mathbf{I}>.)
+
+!<h1 The Detailed Explanation #detailed>
+
+The form <math \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}> is not randomly chosen. There is a more fundamental reason behind the mathematicians’ preference for it. [The physics convention seems to be the opposite, but the reason for this (the Dirac notation of quantum mechanics) is irrelevant to our topic here.]
+
+!<h2 Why Is There the Conjugate and Conjugate Symmetry? #why-conjugate>
+
+First, why is there a conjugate in the standard inner product?
+
+Looking back at the dot product on real space, it is essentially a generalisation of the Euclidean norm <math \Vert \mathbf{u} \Vert^2 = \sum_k u_k^2> to the case of two vectors.
+
+On the complex space there needs to be a similar operation, satisfying positive definiteness <math \Vert \mathbf{u} \Vert^2 \geq 0>. In the case of one dimension, the modulus of the complex number <math |z|^2 = z \cdot \overline {z\raisebox{0.67em}{}}> is clearly a first choice. Generalising it to <math n> dimensions, the definition <math \Vert \mathbf{u} \Vert^2 = \sum_k |u_k|^2 = u_k \cdot \overline {u_k\raisebox{0.67em}{}}> arises. The conjugation comes from here.
+
+From another perspective, why does the inner product satisfy the conjugate symmetry <math \langle \mathbf{u}, \mathbf{v} \rangle = \overline {\langle \mathbf{v}, \mathbf{u} \rangle \raisebox{0.82em}{}}>, rather than the plain symmetry <math \langle \mathbf{u}, \mathbf{v} \rangle = \langle \mathbf{v}, \mathbf{u} \rangle>?
+
+Let us return to the standard inner product and try to separate the real part of the expression from the imaginary part.
+
+!<dispmath
+\begin{aligned}
+\operatorname{Re} {\langle \mathbf{u}, \mathbf{v} \rangle} = \sum_{k=1}^n \operatorname{Re} u_k \operatorname{Re} v_k + \operatorname{Im} u_k \operatorname{Im} v_k \\
+\operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle} = \sum_{k=1}^n \operatorname{Im} u_k \operatorname{Re} v_k - \operatorname{Re} u_k \operatorname{Im} v_k
+\end{aligned}
+>
+
+It can be observed that the real part <math \operatorname{Re} {\langle \mathbf{u}, \mathbf{v} \rangle}> is equivalent to the sum of <math n> dot products on <math \mathbb{R}^2>, while the imaginary part <math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle}> equals the sum of <math n> cross products on <math \mathbb{R}^2>, giving the “rotation angle in the <math n>-dimensional complex space from <math \mathbf{v}> to <math \mathbf{u}>” — for instance, when the arguments (polar angles) of each component are equal for both vectors, <math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle} = 0>; when the argument of the component of <math \mathbf{u}> is that of the component of <math \mathbf{v}> rotated by <math 90> degrees for each component, <math \operatorname{Im} {\langle \mathbf{u}, \mathbf{v} \rangle}> reaches its maximal possible value <math \Vert \mathbf{u} \Vert \cdot \Vert \mathbf{v} \Vert>.
+
+And in the more general definition of the inner product, it is natural to expect the real and imaginary parts of the result to have corresponding properties respectively. Conjugate symmetry is derived from the anticommutative property of the cross product, or more generally, the anticommutative property for “rotation angles in complex spaces”.
+
+In this way, the property of the conjugate is indeed excellent.
+
+!<h2 Why the Conjugate Is Taken on the Second Vector? #why-conjugate-on-latter>
+
+To solve this problem, one has to explore another layer of the nature of inner products, and it is never wrong to start with the simplest dot product. What is the nature of the dot product?
+
+We can of course say that it represents “the projection of <math \mathbf{u}> on <math \mathbf{v}>, multiplied by the length of <math \mathbf{v}>”, but this is not deep enough.
+
+3Blue1Brown explained in depth in the <link https://www.youtube.com/watch?v=LyGKycYT2v0 video> about a viewpoint: the dot product is the application of a linear transformation on <math \mathbb{R}^n \rightarrow \mathbb{R}> defined by <math \mathbf{v}> to <math \mathbf{u}>. This transformation turns any vector <math \mathbf{u}> into a scalar value <math \mathbf{v}^\mathsf{T}\mathbf{u}>.
+
+From this perspective, an inner product function and a vector together also determines a transformation. That is to say, an “inner product” is an operator that maps vectors onto linear transformations. In a more abstractive manner, this is an instance of currying: a binary function <math \mathbb{C}^n \rightarrow \mathbb{C}^n \rightarrow \mathbb{C}> can be seen as an operator that maps an argument to a unary function, <math \mathbb{C}^n \rightarrow (\mathbb{C}^n \rightarrow \mathbb{C})>.
+
+A positive definite Hermitian matrix <math \mathbf{A}> defines such an operator, which maps a vector <math \mathbf{v}> onto a transformation based on the standard basis <math \mathbf{v}^\mathsf{H}\mathbf{A}>. Applying the transformation to <math \mathbf{u}> results in the previously seen form of <math \mathbf{v}^\mathsf{H}\mathbf{A}\mathbf{u}>. This is actually a general form of inner products on <math \mathbb{C}^n> (the Hermitian form).
+
+Hence, the reason why the conjugate is taken for <math \mathbf{v}> is because we expect that <math \mathbf{u}>, as the element being transformed, keep its original form, and all computations be put inside the linear transformation <math \mathbb{C}^n \rightarrow \mathbb{C}>. As for why <math \mathbf{u}> is written before <math \mathbf{v}>, it’s probably because it’s more intuitive to first specify the element being transformed and then specify the transformation in this binary operation.
 
 {{toc=}}true
 
@@ -109,3 +196,8 @@ Yes?
 >
 
 {{rellinks.en=}}
+!<list
+  <li <link https://www.youtube.com/watch?v=LyGKycYT2v0 3B1B: Dot products and duality>>
+  <li <link https://en.wikipedia.org/wiki/Sesquilinear_form Wikipedia: Sesquilinear form>>
+  <li <link https://mathoverflow.net/a/80014 MathOverflow: the answer to the question “What is a complex inner product space ‘really’?”>>
+>
