@@ -26,7 +26,6 @@ Then, we don’t need to grieve. If we build connexions with our hearts, everyth
 
 !<hr>
 An entry to Raylib 5K game jam. This was the first time I’ve participated in a weeklong jam, and I worked hard with a few stay-ups. Despite missing the prizes due to misinterpretations of the theme and the delivery hindered by the lack of polish, I received a great amount of kindness. Will always be moved by earnest appreciation ; - ;
-是 Raylib 5K game jam 的参赛作品。第一次参与持续一周的长 jam，于是使劲卷了起来，熬夜做了大量工作。最后虽然因为解题出现偏差以及被完成度阻碍的表现力而错过了奖品，但是收获了许多许多善意，永远会因为认真被欣赏而感动 ; - ;
 
 !<img screenshot.jpg <= 游戏截图>>
 {{contents.zh=}}

@@ -553,10 +553,13 @@ ul {
 }
 ul > li::before {
   content: '–';
-  margin-inline: -1.25em 0.75em;
+  margin-inline: -1.1em 1em;
   display: inline-block;
   position: relative;
   inset-block-start: 0.075em;
+}
+html:lang(zh) ul > li::before {
+  margin-inline: -1.25em 0.75em;
 }
 ul.compact {
   margin-block-start: -1em;

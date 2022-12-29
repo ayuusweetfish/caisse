@@ -1,7 +1,7 @@
 {{title.zh=}}从《茶花女》的序曲探索其音乐结构设计
 {{intro.zh=}}歌剧中的动机再现引出隐藏在表面之下精巧的宏观结构。
-{{title.en=}}
-{{intro.en=}}
+{{title.en=}}Exploring the Musical Structure Design of “La Traviata” Through Its Overture
+{{intro.en=}}Recapitulation of motifs in the opera reveals its intricate macroscopic structures hidden under the surface.
 
 {{date=}}2021.09
 
@@ -94,3 +94,90 @@ Violetta 对 Alfredo 的深情只增不减，但她不得不离开 Alfredo 而�
 在这首序曲的结尾，会不会是 Violetta 在病床上从内心向 Alfredo 道别呢？Violetta 离开 Alfredo 之后所去的地方，一定没有病痛折磨，也再无人世间的苦难了。而 Alfredo 如果知道这一切，一定也会生活得更加幸福吧。
 
 {{contents.en=}}
+!<note <~~=
+  This is an assignment for the course “Appreciation and Analysis of Western Classical Opera”.
+  The referenced edition of the score is G. Ricordi & Co. (1914); the performance by La Scala, Milan (2007).
+>>
+!<note Auto-translated from Chinese by <link https://www.deepl.com/ DeepL>. Inaccuracies may arise.>
+
+The music of <it La Traviata>, the masterpiece of Verdi, is impeccably depicted and structured. The details of the descriptions may not be difficult for the listener to notice, but the musical structure of the opera is a more subtle design that lies beneath the surface. In operatic music, the macro-structure of the music itself takes a back seat to the deeper levels as the stage and the lines dominate the audience's attention. Excellent conception seeks to unwittingly guide the audience's emotional direction, whereas a lack of such design can make the music feel more like a simple pile of emotional fragments, making it much less expressive. In the music of <it La Traviata>, Verdi's thoughtfulness in this regard is evident in the way in which the emotions of the play are coherently and carefully conveyed to both performer and listener.
+
+The structure of the music is mainly expressed in the form of 'recapitulation', where the repetition or variation of motifs is used to emphasise feelings or to guide the listener's recollection, thus providing coherence and unity throughout the piece. In <it La Traviata>, many of the recurring motifs intermingle in the overture before the first act, which reflects its role as a summary of the plot and atmosphere, and also makes it a gateway to an exploration of the musical structure of the play.
+
+!<hr>
+
+The overture is introduced by a motif in B minor played slowly in the upper register by half a dozen violins, the first major theme of the play, which we shall provisionally call 'The Sick Bed'.
+
+!<img image-01.png <= p. 1, the "sickbed" theme> <= orig-size caption syncdark>>
+
+This represents the scene in which the main character, Violetta, is bedridden by illness. It later appears in its original form (moved to C minor) in the Prelude to Act III and in the first scene with Violetta in bed, when the listener will be clearly aware of the meaning of the theme. The high register of the melody, the tempo of the adagio, the gloomy colouring of the harmonic minor, the very weakness with a sudden, morbid intensity, and the discreet vocal progressions all bring to light Violetta's suffering and frail state, taking one's breath away as if one were witnessing it in Violetta's room and feeling pity for her.
+
+But as an introduction to the overture, this seems at odds with the scene depicted in the first act of the play: the latter includes a joyous scene at a party, with songs and tangents about love. What does this have to do with Violetta's illness? This has been interpreted in various ways, either as a prelude to 'Violetta's recent recovery from her illness', or <link https://webcache.googleusercontent.com/search?q=cache:5TrVxjPIG2MJ:https://operalively.com/forums/content.php/166-Opera-In-Depth-La-Traviata-5-Musical-Analysis-opera by some> as a flashback to the original Dumas novel. The placement of the 'sick-bed' theme at the beginning of the prelude creates a back-and-forth between the two acts, which, although a mere repetition, is a great deal more consistent with the emotions of the play. The listener is transported back to the beginning of the Prelude in Act III, and the dance-like, joyful scenes that follow the Prelude return to the listener's mind, as if the suffering of the present were in stark contrast to the joy of the memory, making one sigh with sorrow at the impermanence of the world - and isn't that what Violetta was thinking when she was in bed? The power of musical structure in opera is evident in the seemingly simple repetition that draws the listener into the inner world of the protagonist.
+
+!<hr>
+
+The overture goes on to add instruments and change key, gradually brightening up in colour, until it finally moves into a lively and joyful rhythm through a clear dominant-tonic progression in E major. A bar later a second important theme emerges, tentatively called "Love".
+
+!<img image-02.png <= p. 2, "Love" theme> <= orig-size syncdark>>
+!<img image-03.png <= p. 2, "Love" theme> <= orig-size caption syncdark>>
+
+This theme is reproduced in Act 2, Scene 1, when Violetta sings "Love me, Alfredo" in a heartfelt and resolute manner at the request of Alfredo's father when he decides to leave Alfredo.
+
+!<img image-04.png <= p. 190, "Love me, Alfredo"> <= orig-size caption syncdark>>
+
+Violetta's love for Alfredo only grows, but she has to leave him and face an unknown future for both of them. A myriad of emotions - deep love, reluctance, helplessness, urgency, pain, determination - are woven together in a moving way, and tie this theme to a deep but troubled love.
+
+This theme is repeated for the second time in Act III, after Violetta and Alfredo have reunited, when Violetta collapses from exhaustion and Alfredo sings "Let us go away from Paris, my love", repeated by the woodwind section in a slower and very ethereal vocal configuration.
+
+!<img image-05.png <= p. 378, reproduction of the woodwind theme> <= orig-size caption syncdark>>
+
+There is no direct evidence that Verdi's intention here was to reproduce the theme of 'love', but the melodic line makes it difficult not to associate it with this theme. The phrase is situated in the middle of two plenary rests, after the joy of reunion and before Alfredo's genuine concern in the plot, and echoes Violetta's genuine emotion at the time of parting, when she seems to be reminiscing about the past and lamenting her ill fortune.
+
+The theme of "love" highlights the intense conflict between the two men's profound love and their unforgiving fate, and is a key theme in the last two acts. In the overture, however, this theme is presented in a relatively bright tempo and orchestration, which gives a sense of the sweetness of love, but when one returns to the overture after the entire play, one can taste a different bitterness in this upbeat melody, which is very subtle.
+
+An interesting detail is the short 'trill followed by a second down' motif that appears in the second half of the overture. This repertoire appears after the 'love' theme in the overture and before the 'Love me, Alfredo' melody in Act II above, where this motif and the preceding repeated skipping notes are stacked to form a weave that pushes the mood to a dense note The climax of the melody is the unexplainable bitterness of Violetta's inner turmoil - "Do you see? I'm smiling at you!" Perhaps this is a depiction of Violetta's sobbing?
+
+!<img image-06.png <= p. 4, motif from the overture> <= orig-size caption syncdark>>
+!<img image-07.png <= p. 188, Violetta's sobs> <= orig-size caption syncdark>>
+
+In addition, after these lines by Violetta (before "Love me, Alfredo" is spoken), one can hear not only the variations on the theme of "love" preceded by the viola and cello, but also the echoes of the two musical ideas of the overture, "octave down with homophonic repetition" and "second up and down". (before the 'Alfredo' is called out). This tension is particularly strong in the former, which may suggest the relentless blow to sweet love, the majesty of a father or the torment of an illness, which can make one's heart clench. In the overture, after a brief hesitation, it returns to the theme of "love", with a sense of happiness at being free from suffering. It is saddening to revisit it after the harshness of reality has been revealed in the third act. As mentioned earlier, this overture may be a reminder of Violetta's past as she lies in bed, but did she also lament this happiness before she died?
+
+!<img image-08.png <= p. 189, "octave down with homophonic repetition" motif and "love" theme anticipation> <= orig-size caption syncdark>>
+!<img image-09.png <= p. 189, "upward and downward runs of seconds"> <= orig-size caption syncdark>>
+!<img image-10.png <= p. 3, the two preceding motifs in the prologue> <= orig-size caption syncdark>>
+
+The transition between the themes of "Sickbed" and "Love" in the overture is also preceded by a change in the latter and a slight hint of the "sobbing" motif.
+
+!<img image-11.png <= p. 1, the change to "love" in the viola is preceded by a second downward movement in the first violin> <= orig-size caption syncdark>>
+
+In addition, the arpeggios and rapid second downward movement at the end of the overture also appear at the moment of separation between Violetta and Alfredo.
+
+!<img image-12.png <= p. 6, motif at the end of the overture> <= orig-size caption syncdark>>
+!<img image-13.png <= p. 191, Violetta's farewell to Alfredo at the end of Act II Scene 1> <= orig-size syncdark
+!<img image-14.png <= p. 191, Act II, scene 1, end Violetta's farewell to Alfredo> <= orig-size caption syncdark>>
+
+It seems that the theme of 'love' is in fact much more than just the melody of 'Love me, Alfredo', but contains a series of recurring fragments of these repertoires. This larger theme forms the second half of the overture.
+
+It is worth noting that there is another theme of love that appears in the play when Alfredo woos Violetta, tentatively called 'Bittersweet'. Although it does not appear in the overture, it is also an important theme that recurs several times in the play.
+
+!<img image-15.png <= p. 55, Alfredo "Happy Day"> <= orig-size caption syncdark>>
+!<img image-16.png <= p. 84, Violetta seems moved by Alfredo's genuine emotions> <= orig-size caption syncdark>>
+!<img image-17.png <= p. 352, Violetta's recreation of the theme as she reads the letter> <= orig-size caption syncdark>>
+
+In contrast to the 'love' theme developed earlier in the analysis, the 'bittersweet' theme emphasises the sincerity and entanglement of love itself, not only in the face of Violetta's wooing, but also in Alfredo's hesitation and reflection when he finds himself in love --The term 'misterioso' is an apt description of love. However, the theme is ultimately symbolic of happiness, and in Act III, Scene IV, when Violetta reads her letter, it appears on a disturbing string vibrato, culminating in Violetta's "It's too late! The theme is ultimately a symbol of happiness, but in Act III, Scene IV, when Violetta reads the letter, it appears to fall apart in a lament. So much for "destroying what is valuable in life for others to see"!
+
+!<hr>
+
+Back to the two themes of the overture. The overall structure of the overture has been clear so far.
+!<list
+  <li Introduction from the theme of "Sickbed" (bars 1-7);>
+  <li Crescendo and transposition, including the first appearance of the melody "Love me, Alfredo" (bars 8-16);>
+  <li The melody "Love me, Alfredo" on the violin (bars 17-24);>
+  <li Interrupted and returned by the "octave down vibrato" (bars 25-28);>
+  <li The melody "Love me, Alfredo" on the cello (bars 29-35);>
+  <li Recapitulation of the melodic variation of "Love me, Alfredo" and the appearance of the "sobbing" motif (bars 36-43);>
+  <li "Parting" motif and coda (bars 44-49). >
+>
+Almost every tiny phrase in the piece is present in the play, and the structural echoes subtly draw the listener into the emotions of the characters without them realising it, while the overture itself forms a short story. It is possible to detect the way in which many of the masters thought about and composed their works, which is very clever.
+
+The overture ends with Violetta saying goodbye to Alfredo from her sickbed, in a place where there must be no more suffering and no more human misery. Violetta leaves Alfredo, and Alfredo would have been happier if he had known this.
