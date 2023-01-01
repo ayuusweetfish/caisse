@@ -202,6 +202,11 @@ items/traviata/image-16.png	29416	image	639	345
 items/traviata/image-17.png	24868	image	473	278
 items/traviata/page.txt	22583	document
 items/traviata/process.sh	308	unknown
+items/vividness/Vividness.mscz	58845	score
+items/vividness/Vividness.pdf	452672	document	21
+items/vividness/links.lua	2037	code
+items/vividness/links.sh	351	unknown
+items/vividness/main.lua	2796	code
 items/wings/Broken Angel Wings.ogg	3811350	audio	280
 items/wings/Broken Angel Wings.pdf	158973	document	4
 items/wings/cover.jpg	134210	image	800	800
