@@ -1,3 +1,7 @@
+-- convert -density 150 Vividness.pdf -channel rgba -alpha on Vividness.png
+-- record=1 ~/Downloads/love-11.4.app/Contents/MacOS/love . && lua links.lua
+-- sh links.sh
+
 local W = 960 * 2
 local H = 600 * 2
 love.window.setMode(
