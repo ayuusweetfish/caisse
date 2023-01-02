@@ -179,6 +179,9 @@ body:lang(en), *[lang='en'] {
 body:lang(zh), *[lang='zh'] {
   font-family: 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', 'Livvic — Lighter Bold', sans-serif;
 }
+pre, code, .tt {
+  font-family: 'Sono', 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', monospace;
+}
 
 {{@ curcat}}
 {{ hue, sat, val1, val2 = table.unpack(cats[curcat].tint) }}
