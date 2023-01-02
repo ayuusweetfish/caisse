@@ -1,13 +1,13 @@
 {{title.zh=}}一种很新的中文字体网页嵌入方案
-{{intro.zh=}}每页 20 KiB 以内、纯静态字形嵌入，支持灵活修改与动态内容
-{{title.en=}}
-{{intro.en=}}
+{{intro.zh=}}每页 20 KiB 以内、纯静态字形嵌入，不妨碍灵活修改与动态内容
+{{title.en=}}A New Method for Chinese Web Font Embedding
+{{intro.en=}}Within 20 KiB for each page, statically embedded, without hindering text modifications and dynamic content
 
 {{date=}}2022.22
 {{usemath=}}true
 
 {{contents.zh=}}
-!<note 太长不看版：直接跳至“方法”下的“原理”一节。>
+!<note 太长不看版：直接跳至<link webfont#principle “原理”>一节。>
 
 浩瀚深邃的汉字记载着中华文化的博大精深，也伤透了工程师们的脑筋。汉字字形的数字化存储与表达曾是一个世界性难题。王选前辈在汉字照排系统研究中费尽心思将汉字字形的大小压缩了百倍；至今不过半个世纪，我们已可以在众多的字形库中对比挑选，可是复杂多变的个性化字形设计又一次将数据量的问题摆在了人们面前。
 
@@ -19,7 +19,7 @@
 后一种方案是目前大部分网站的策略。但是它的冗余仍然可观，尤其在首次访问时体现。一个包含百余字的子集只有在每个字都未被使用时才不被加载，对于前两三千个常用字，这一概率很低，而对于非常用字，极端情况下一个字就会造成整个子集的加载。由此可以估算一个文字量中等的页面所需的子集数在 30 左右，首次访问的开销可能仍然接近 MiB 级，与理想情况还有一定差距。
 基于子集化的思路，可以针对网站设计更优的字形嵌入方案。
 
-!<h1 方法 #method>
+!<h1 方法 #approach>
 此方案面向静态内容为主，且具有一定文字量的网站。笔者在使用这一方法优化站点时，有 30 余个页面，平均包含约数百字。
 
 !<h2 原理 #principle>
@@ -89,6 +89,39 @@ f[i] = \min_{j<i} \left\{ f[j] + (i-j+K) \cdot \sum_{\substack{p \in P,\ \mathrm
 此方案的主要局限性在于要求单独的构建步骤，且可选的遗传算法步骤耗时较长。但是对于文字内容较多的网站如博客、百科等，这一方案或许能起到不错的效果。
 
 {{contents.en=}}
+!<note Auto-translated from Chinese by <link https://www.deepl.com/ DeepL>. Inaccuracies may arise.>
+!<note TL;DR: skip to the <link webfont#principle Principle> section.>
+
+The vastness and depth of Chinese characters are a record of the profundity of Chinese culture, but they have also broken the minds of engineers. The digital storage and representation of Chinese characters was once a worldwide problem. A senior of ours, Wang Xuan, took great pains to compress the size of Chinese characters by a factor of a hundred in his research on Chinese character typesetting systems; it is only half a century since we were able to compare and select from a large number of character libraries, but once again the problem of data volume has been brought to the fore by the complex and ever-changing design of individual characters.
+
+!<h1 Background #background>
+The size of a Chinese character font library typically ranges from a few MiB to tens of MiB; therefore, when embedding fonts in a document or web page, it is common to subset the complete font library, keeping only the characters that appear in the document or page. After compression (often gzip, WOFF2, etc.), the average space required for a word is about a hundred bytes, while the average Chinese character is about two to three thousand (for thousands of words, it is likely to be less than a thousand), thus keeping the amount of data brought by the font within a reasonable range of a hundred KiB.
+
+For websites, one of two options is generally adopted.
+
+One is to take a subset of all the words that appear on the whole site. This solution is easy to implement and maintain, but it has three problems: firstly, for sites with a large amount of content, the words used may cover most of the commonly used words (around three thousand), which still creates a MiB amount of data on the first visit to the site and prolongs the load time; secondly, the content on many sites is often not fixed but updated from time to time, and if a new word is used in an update, the subset will need to be added, causing the previous If a new word is used in a single update, a subset of the words will need to be added, causing the previous font cache to be invalidated; at the same time, dynamic content on the site such as comments cannot be guaranteed to be covered.
+
+The second option is to split the entire font into a number of subsets, each containing a series of words, which are specified by the unicode-range attribute under the @font-face rule in the style sheet, allowing the browser to take them on demand depending on the content of the page. This solution has been adopted by Google Fonts, which splits Chinese characters into more than a hundred subsets, each containing more than a hundred characters, according to their frequency of use, with a data size of about tens of KiB (on average about 30-40 KiB for Siyuan Song font, for example). This solution, although somewhat redundant (as soon as one character is used in a subset, the entire subset containing more than a hundred characters needs to be loaded), effectively reduces the amount of data transferred and relies on the browser to automatically fetch the required subset of characters according to the entire content on the page. In addition, any previously loaded subsets can go into the cache, avoiding a waste of network resources.
+
+The latter option is the current strategy for most websites. However, it still has considerable redundancy, especially on the first visit. A subset containing more than a hundred words is only not loaded if each word is not used, which is a low probability for the first two or three thousand commonly used words, while for very used words, in extreme cases a single word can cause the entire subset to be loaded. The number of subsets required for a page with a moderate amount of text can thus be estimated at around 30, and the overhead for the first visit may still be close to the MiB level, which is still somewhat short of the ideal case.
+
+Based on the idea of subsetting, a better glyph embedding solution can be designed for the website.
+
+!<h1 Approach #approach>
+This solution is intended for sites with predominantly static content and a certain amount of text. The author used this approach to optimise a site with over 30 pages containing an average of around a few hundred words.
+Principle
+
+Static text content is considered first. The core idea of the algorithm is to divide all the Chinese characters that appear on the site into "common site words" and "non-common words", with the former being a large subset and the latter creating a small subset for each page. Each page contains a subset of the "site common words" for the browser to access on demand, and also specifies a special subset of words on the page that are not covered by the common subset.
+
+!<h2 Principle #principle>
+The first consideration is static text content. The core idea of the algorithm is to divide all occurrences of Chinese characters across the site into "site common words", which are used as a large subset, and "non-common words", which are created as a dedicated subset for each page. Each page contains information on a subset of the "site common words" for the browser to access on demand, and also specifies a special subset of words on the page that are not covered by the common subset.
+
+!<img webfont-en.svg <= Diagram. The stylesheet of each page contains a common subset and a page-specific subset.> syncdark>
+
+The delineation of "site common words" is a one-off, but can be recalculated occasionally as content changes. The rules can be heuristic - for example, the rule I have adopted is "words that appear on at least three pages", taking into account that the site has a table of contents page, containing the title and introduction of each sub-page, in which the words will appear on two pages If a character appears on at least three pages, this is broadly enough to indicate that the character is used in different topics.
+
+After delineating the set of commonly used words, the commonly used words are first extracted as a subset and added to a style sheet common to all pages; each page is then examined to find the words that are not covered, and the subset is removed from the glyph library to form a file that is written into a style sheet dedicated to this page. Example:
+
 !<<code= css
 /* Common stylesheet */
 @font-face {
@@ -112,6 +145,42 @@ body {
 }
 >>
 
-!<img webfont-en.svg <= Diagram. The stylesheet of each page contains a common subset and a page-specific subset.> syncdark>
+!<h2 Optimisation for Landing Pages #landing>
+Some optimisation can also be continued for common word collections by splitting them into a small number of smaller subsets. This is due to the fact that pages that do not have a large amount of text, such as the home page and the contents page, are often the first pages visited and it is hoped that the total amount of data on these pages can be further reduced.
+
+Since the common word set is divided with reference to the specific content on each page, it is worth continuing to make use of it. Let <math C> be the set of commonly used characters, <math P> be the set of pages, and the set of characters contained in the page <math p \in P> be <math \mathrm{Con}(p)>.
+The problem is in fact to solve for such a partition of <math C>, <math s_1, s_2, \dots, s_k>:
+
+!<dispmath
+\argmin_{s_1,\ s_2,\ \dots,\ s_k} \ \sum_{p \in P}
+\sum_{s_i \cap \mathrm{Con}(p) \neq \varnothing} |s_i| + K
+>
+
+The above equation portrays the sum of the overheads, in terms of number of characters, for all pages to load their respective subsets. Where <<math K > 0>> is the constraint term that portrays the additional overhead required for a page to load a subset (e.g. a network request).
+This problem is difficult, but can be described and solved by a dynamic programming model if the objective is transformed into a problem of sequential segmentation by giving these common characters an artificially arbitrary fixed order. Since the optimal solution can be found for a fixed permutation, an evolutionary algorithm can be used to find a permutation that leads to a fairly good solution.
+Dynamic programming model: note the order of the commonly used words as <math c_1, c_2, \dots, c_n>. Denote by <math f[i]> the minimum value of the sum of all page loading overheads for <math c_1, \dots, c_i> divided into a number of consecutive segments. The state transfer equation is
+
+!<dispmath=
+f[i] = \min_{j<i} \left\{ f[j] + (i-j+K) \cdot \sum_{\substack{p \in P,\ \mathrm{Con}(p) \cap \{c_j, \dots, c_i\} \neq \varnothing}} 1 \right\}
+>
+
+According to this equation the optimal solution can be computed in <math \mathcal O(n^2 + n \cdot |P|)> time, but since <math n> often reaches the order of thousands and this process is heavily invoked by the evolutionary algorithm, the time consumption remains unacceptable. In practice, due to the adaptability of evolutionary algorithms, it is not necessary to find a strictly optimal solution in this subproblem; as long as a relatively optimal solution is found, the evolutionary algorithm has the ability to optimise the found permutation for the properties exhibited by the suboptimal algorithm. For example, considering only the position of the later summation change in state transfer, i.e. "the last occurrence of the character <math c_j> on a page before the <math i>-th character <math c_i>", a good solution can be obtained in <math \mathcal O(n \cdot |P|)> time.
+
+!<note
+  The above dynamic planning process can also be optimised to <math \mathcal O\left(\sum_p |\mathrm{Con}(p)| \cdot \log n\right)> using a segment tree data structure. The usual 1D/1D optimizations don't seem to work very well, I wonder if there's a better way T-T
+>
+Solving the problem on this sequence as a valuation function by a genetic algorithm to find an alignment of common words <math c_1, c_2, \dots, c_n> is sufficient. For mating reproduction between permutations, the PMX (partially-mapped crossover) operator can be adopted.
+In the author's implementation, the common word contains about 1000 words and the value of <math K> is taken to be 5; the population size of the genetic algorithm is 250 and the number of offspring produced in each generation is 150, for a total of 5000 generations calculated.
+
+!<h2 Supporting Dyanmic Content #dynamic>
+On the basis of the above, if dynamic content on the page needs to be overridden, all words other than the usual ones can be split into subsets, in line with Option 2 described in the section on Background.
+
+!<h2 Maintenance #maintenance>
+This option requires the subset of modified pages to be recalculated each time the content is modified. In addition, if elements common to all pages (e.g. headers, sidebars, etc.) are modified, they will be recalculated for all pages. When modifications have accumulated to a certain point, the original set of common words may not fit well with the site content and a refactoring of the common word set may be considered. The original cache will be invalidated after the refactoring, and each visitor will need to re-download the subset of common words; however, given its small size (around a few hundred KiBs) and the fact that it will remain cached for a long time after re-downloading, the impact will be limited.
+
+!<h1 Conclusion #conclusion>
+With this method, the author's site splits about 1000 commonly used characters into five subsets, totaling about 320 KiB; The average subset loaded on each page contains about a dozen characters, most of which are under 20 KiB in size, with the maximum size not exceeding 50 KiB. The Chinese font consumes approximately 220 KiB of network traffic when visiting the homepage, and the site uses a font shape close to the regular script, which could be further reduced if typefaces with upright strokes such as Hei (black; gothic) and Song (Ming; regular serif) were used.
+
+The main limitations of this solution are that it requires a separate construction step and the optional genetic algorithm step is time-consuming. However, it may work well for websites with more textual content, such as blogs and encyclopaedias.
 
 {{toc=}}true
