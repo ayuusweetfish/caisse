@@ -426,7 +426,7 @@ body.dark #top-fleuron { opacity: 45%; }
 *[lang='lat'] { font-style: italic; }
 
 pre, code, .tt {
-  font-family: 'Sono', monospace;
+  font-family: monospace;
   font-size: 0.9rem;
 }
 .little-icons {
@@ -872,4 +872,5 @@ img.item-banner,
 .item-contents pre.code > span {
   text-indent: 5%;
   display: block;
+  min-height: 1.5em;
 }

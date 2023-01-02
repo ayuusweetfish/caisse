@@ -7,7 +7,7 @@
 {{usemath=}}true
 
 {{contents.zh=}}
-!<note 太长不看版：直接跳至“方法”下的“主要思路”一节。>
+!<note 太长不看版：直接跳至“方法”下的“原理”一节。>
 
 浩瀚深邃的汉字记载着中华文化的博大精深，也伤透了工程师们的脑筋。汉字字形的数字化存储与表达曾是一个世界性难题。王选前辈在汉字照排系统研究中费尽心思将汉字字形的大小压缩了百倍；至今不过半个世纪，我们已可以在众多的字形库中对比挑选，可是复杂多变的个性化字形设计又一次将数据量的问题摆在了人们面前。
 
@@ -22,15 +22,15 @@
 !<h1 方法 #method>
 此方案面向静态内容为主，且具有一定文字量的网站。笔者在使用这一方法优化站点时，有 30 余个页面，平均包含约数百字。
 
-!<h2 主要思路 #principle>
+!<h2 原理 #principle>
 首先考虑静态文字内容。算法的核心思路是将全站所有出现的汉字分为“站点常用字”与“非常用字”，前者作为一个大子集，后者则为每个页面建立专门的小子集。每个页面包含“站点常用字”的子集信息，供浏览器按需获取，同时也指明一个专门的小子集，包含此页面上未被常用子集覆盖的字。
 
-(image: 的一不是了 —— 铃萤 笨鹅)
+!<img webfont-zh.svg <= 示意图，每个页面的样式表中都包含一个常用字子集与一个页面子集。> syncdark>
 
 “站点常用字”的划定是一次性的，但随着内容的更迭，也可间或重新计算。具体规则可以结合实际，采取启发式方法——例如笔者采取的规则为“出现在至少三个页面的字”，这是考虑到站点有目录页，包含每一个子页面的标题与简介，其中的字都会在两个页面中出现，草率地将其归为常用字并不合理；而如果一个汉字在至少三个页面出现，则大致足以说明这个字在不同话题中都会使用。
 在划定常用字集合后，首先将常用字提取为一个子集，加入所有页面共用的样式表；然后检查每个页面，找出其中未被覆盖的字，在字形库中取出子集形成文件，写入此页专门的样式表中。例如：
 !<<code= css
-/* Common stylesheet */
+/* 共用样式表 */
 @font-face {
   font-family: 'Noto Serif SC';
   font-style: normal;
@@ -39,7 +39,7 @@
   src: url(NotoSerifSC.common.woff2) format('woff2');
 }
 
-/* Page-specific stylesheet */
+/* 页面专用样式表 */
 @font-face {
   font-family: 'Noto Serif SC — Page <Fireflies>';
   font-style: normal;
@@ -89,5 +89,29 @@ f[i] = \min_{j<i} \left\{ f[j] + (i-j+K) \cdot \sum_{\substack{p \in P,\ \mathrm
 此方案的主要局限性在于要求单独的构建步骤，且可选的遗传算法步骤耗时较长。但是对于文字内容较多的网站如博客、百科等，这一方案或许能起到不错的效果。
 
 {{contents.en=}}
+!<<code= css
+/* Common stylesheet */
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(NotoSerifSC.common.woff2) format('woff2');
+}
+
+/* Page-specific stylesheet */
+@font-face {
+  font-family: 'Noto Serif SC — Page <Fireflies>';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(NotoSerifSC.page-1.woff2) format('woff2');
+}
+body {
+  font-family: 'Noto Serif SC — Page <Fireflies>', 'Noto Serif SC';
+}
+>>
+
+!<img webfont-en.svg <= Diagram. The stylesheet of each page contains a common subset and a page-specific subset.> syncdark>
 
 {{toc=}}true
