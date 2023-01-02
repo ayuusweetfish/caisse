@@ -861,3 +861,15 @@ img.item-banner,
   display: block;
   clear: both;
 }
+
+.item-contents pre {
+  line-break: anywhere;
+  white-space: pre-wrap;
+}
+.item-contents pre.code {
+  width: 95%;
+}
+.item-contents pre.code > span {
+  text-indent: 5%;
+  display: block;
+}

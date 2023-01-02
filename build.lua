@@ -445,6 +445,24 @@ markupfns = {
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
   end,
+  code = function (text)
+    local pos = text:find('\n')
+    local lang = text:sub(1, pos - 1)
+    local lines = {}
+    local fin = text:find('\n*$')
+    while true do
+      local nextpos = text:find('\n', pos + 1)
+      if not nextpos then
+        if pos >= #text then break end
+        nextpos = #text + 1
+      end
+      if nextpos > fin then break end
+      lines[#lines + 1] = htmlescape(text:sub(pos + 1, nextpos - 1))
+      pos = nextpos
+    end
+    return '<pre class="code"><span>' ..
+      table.concat(lines, '</span><span>') .. '</span></pre>'
+  end,
   tt = function (text)
     return '<span class="tt">' .. text .. '</span>'
   end,

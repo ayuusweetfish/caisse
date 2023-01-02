@@ -71,6 +71,7 @@ cats.murmurs.pagelist = {
   {name = 'moon-river'},
   {name = 'why-comp-engr'},
 ]]
+  {name = 'webfont'},
   {name = 'diversity'},
   {name = 'into'},
   {name = 'amusing'},
