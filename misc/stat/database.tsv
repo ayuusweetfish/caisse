@@ -169,8 +169,8 @@ items/traviata/image-15.png	17242	image	351	253
 items/traviata/image-16.png	29416	image	639	345
 items/traviata/image-17.png	24868	image	473	278
 items/traviata/process.sh	308	unknown
-items/vividness/Vividness.mp4	16195360	video	346	1920	1200
-items/vividness/Vividness.mscz	59079	score
+items/vividness/Vividness_Damped.mp4	16195360	video	346	1920	1200
+items/vividness/Vividness_Damped.mscz	59079	score
 items/vividness/cover.jpg	31684	image	640	384
 items/vividness/links.lua	2037	code
 items/vividness/links.sh	372	unknown
