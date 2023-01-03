@@ -23,7 +23,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link friends 朋友们>>
 >
 
-!<img fish.png 一条简笔画小鱼 <= orig-size more-margin>>
+!<img fish.png 一条简笔画小鱼 orig-size>
 
 !<hr windy>
 
@@ -53,7 +53,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link friends Friends>>
 >
 
-!<img fish.png Line art of a fish <= orig-size more-margin>>
+!<img fish.png Line art of a fish orig-size>
 
 !<hr windy>
 
