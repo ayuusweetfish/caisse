@@ -48,6 +48,7 @@ end
 
 {{{
 cats.music.pagelist = {
+  {name = 'vividness', dark = true},
   {name = 'leaving', dark = true},
   {name = 'bellflowers', dark = true},
   {name = 'wings', dark = true},

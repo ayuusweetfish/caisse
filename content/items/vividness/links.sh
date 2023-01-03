@@ -3,6 +3,7 @@
   -i Vividness.wav \
   -filter_complex '[1]adelay=2850|2850' \
   -vcodec libx264 -crf 32 -pix_fmt yuv420p \
+  -tune stillimage \
   Vividness.mp4
 
 # To replace audio:

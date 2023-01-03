@@ -45,5 +45,3 @@ It was only when I returned home during the summer vacation that I decided to pi
   <li <link fireflies About “%”>>
   <li <subpagelink fireflies/play Play the game (this site)>>
 >
-
-{{rellinks.en=}}
