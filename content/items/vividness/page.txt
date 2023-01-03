@@ -18,8 +18,8 @@
 黄昏里走来走去的小狗、天空上泼洒的深蓝色颜料、奇妙世界的入口、不眠之夜的故事。在乐队之外悄悄与它结下的不解之缘。
 
 !<filetable
-  <file Vividness.mp4 音频与乐谱>
-  <file Vividness.mscz MuseScore 3 文档>
+  <file Vividness_Damped.mp4 音频与乐谱>
+  <file Vividness_Damped.mscz MuseScore 3 文档>
 >
 
 !<img cover.jpg 浅紫色天空下的彩色云朵与其上的闪烁星点。>
@@ -31,8 +31,8 @@ Dedicated to a friend. (Who delays a present for a birthday in summer all the wa
 Little dogs roaming in the dusk, indigo paint splashed on the sky, entrance to a mysterious world, stories of the sleepless nights. A secret bond with the band, quitely taking place outside.
 
 !<filetable
-  <file Vividness.mp4 Audio with score>
-  <file Vividness.mscz MuseScore 3 document>
+  <file Vividness_Damped.mp4 Audio with score>
+  <file Vividness_Damped.mscz MuseScore 3 document>
 >
 
 !<img cover.jpg Colourful clouds under a lilac-coloured sky with twinkling stars.>
@@ -40,3 +40,14 @@ Little dogs roaming in the dusk, indigo paint splashed on the sky, entrance to a
 {{rellinks.zh=}}
 
 {{rellinks.en=}}
+
+{{!--[[
+Disco Diffusion configuration for the cover image:
+  text_prompts:
+    - A beautiful illustration of a serene sea of colorful stars
+    - Pastel colors
+  width: 640
+  height: 384
+  seed: 134825529
+Other kept at default (512x512_diffusion_uncond_finetune_008100, ViT/B32+ViT/B16+RN50)
+]]}}
