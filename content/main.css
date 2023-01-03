@@ -775,7 +775,8 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 }
 div.image-container {
   text-align: center;
-  margin-block: 1em;
+  margin-block: 1.5em;
+  line-height: 1;
 }
 img.item-banner, .item-contents img {
   object-fit: contain;
@@ -821,7 +822,8 @@ img.item-banner,
   }
 }
 .item-contents div.image-container p {
-  margin-block: 0.25em 0;
+  margin-block: 0.25em -0.5em;
+  line-height: 1.5;
 }
 .item-date {
   margin-block-start: 1em;
