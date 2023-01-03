@@ -803,9 +803,6 @@ img.item-banner,
   max-inline-size: 80%;
   block-size: auto;
 }
-.item-contents div.image-container img.more-margin {
-  margin-block: 1.5em;
-}
 .item-contents div.image-container img.float-end {
   inline-size: auto;
   max-inline-size: 45%;
