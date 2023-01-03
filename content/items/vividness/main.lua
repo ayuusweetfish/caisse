@@ -9,6 +9,10 @@ love.window.setMode(
   { fullscreen = false, highdpi = false }
 )
 
+local bgImg = love.graphics.newImage('stars.png', { mipmaps = true })
+local bgW, bgH = bgImg:getDimensions()
+local bgScale = math.max(W / bgW, H / bgH)
+
 local imgs = {}
 for i = 0, 20 do
   imgs[i] = love.graphics.newImage(
@@ -43,6 +47,9 @@ end
 
 local function drawTransition(fromIdx, toIdx, progress, reversed)
   love.graphics.clear(0.99, 0.99, 0.99)
+  -- love.graphics.clear(1, 1, 1)
+  -- love.graphics.setColor(1, 1, 1, 0.0156)
+  -- love.graphics.draw(bgImg, W / 2, H / 2, 0, bgScale, bgScale, bgW / 2, bgH / 2)
   local movt = 1 - math.exp(-3 * progress) * (1 - progress)
   local alphaA = (1 - movt) ^ 2
   local alphaB = movt ^ 2

@@ -1,0 +1,42 @@
+{{title.zh=}}无声绘有色
+{{intro.zh=}}给打击乐十人组的乐曲
+{{title.en=}}Vividness Damped
+{{intro.en=}}A piece for a percussion ensemble of 10
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,15
+{{bannerimginpage=}}false
+{{bannerimgalt.zh=}}浅紫色天空下的彩色云朵与其上的闪烁星点。
+{{bannerimgalt.en=}}Colourful clouds under a lilac-coloured sky with twinkling stars.
+
+{{date=}}2022.12, 2022.22
+
+{{contents.zh=}}
+
+写给一位友人。（是谁把一个生日礼物从夏天拖到冬天我不说）
+
+黄昏里走来走去的小狗、天空上泼洒的深蓝色颜料、奇妙世界的入口、不眠之夜的故事。在乐队之外悄悄与它结下的不解之缘。
+
+!<filetable
+  <file Vividness.mp4 音频与乐谱>
+  <file Vividness.mscz MuseScore 3 文档>
+>
+
+!<img cover.jpg 浅紫色天空下的彩色云朵与其上的闪烁星点。>
+
+{{contents.en=}}
+
+Dedicated to a friend. (Who delays a present for a birthday in summer all the way until winter?)
+
+Little dogs roaming in the dusk, indigo paint splashed on the sky, entrance to a mysterious world, stories of the sleepless nights. A secret bond with the band, quitely taking place outside.
+
+!<filetable
+  <file Vividness.mp4 Audio with score>
+  <file Vividness.mscz MuseScore 3 document>
+>
+
+!<img cover.jpg Colourful clouds under a lilac-coloured sky with twinkling stars.>
+
+{{rellinks.zh=}}
+
+{{rellinks.en=}}
