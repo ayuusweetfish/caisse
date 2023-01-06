@@ -15,7 +15,7 @@
   <item>
     <title>{{ log.title[lang]}}</title>
     <link>{{ siteroot }}/revlog#{{ string.format('%d%02d', year, month) }}</link>
-    <description>{{ htmlescape(rendermarkup(log.contents[lang])) }}</description>
+    <description>{{ htmlescape(rendermarkupabslink(log.contents[lang])) }}</description>
     <pubDate>{{*
       local y, m, d, h = table.unpack(split(log.timestamp, '.'))
       return os.date('%a, %d %b %Y %T %z', os.time({ year = y, month = m, day = d, hour = h }))
