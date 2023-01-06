@@ -26,11 +26,8 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-最近把这个网站搭了起来，短期内应该会比较频繁地更新。
-有一个上个月就想做完的实验性小动画还差一些工作，可能这段时间也会做一下吧。
 在尝试学画画，跟着 <link https://drawabox.com/ Drawabox> 的教程摸索中。<date 2022.21>
-笑死，后面两条一点都没动啊！（躺）
-公历年末应该会做些音乐，给之前的一些工作收个尾，也有一首正在进行的改编。<date 2022.22>
+Drawabox 完成了第一课。寒假伊始计划把公历年前的一首改编乐曲收尾，然后看一些之前被推荐但一直没看的动画或者书。或许也可以试着画些画或者做点游戏什么的？<kao （´-`）.｡oO（> <date 2022.23>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>

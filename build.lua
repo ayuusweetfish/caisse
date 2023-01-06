@@ -408,6 +408,9 @@ local filetypeextrainfo = {
   end,
 }
 
+local markupfnsenvitem  -- Item name of the item currently being processed
+local markupfns
+
 local function splitheading(text)
   local bodytext, anchor = text:match('^(.+[^%s])%s*#([^#]*)$')
   if bodytext then return bodytext, anchor
@@ -420,8 +423,38 @@ local function heading(tag, text)
     '>' .. bodytext .. '</' .. tag .. '>'
 end
 
-local markupfnsenvitem  -- Item name of the item currently being processed
-local markupfns
+local function itemlink(path, text, israw)
+  local itemname = path
+  local anchor
+  local hashpos = path:find('#')
+  if hashpos ~= nil then
+    itemname = path:sub(1, hashpos - 1)
+    anchor = path:sub(hashpos + 1)
+    if text == '' then text = anchor end
+  end
+  local item = itemreg[itemname]
+  if not item then
+    text = (text ~= '' and text or path)
+    if israw then
+      return '<a href="' .. path .. '">' .. text .. '</a>'
+    else
+      return markupfns.extlink(path, text)
+    end
+  end
+  if text == '' then text = '%' end
+  text = text:gsub('%%%%?', function (s)
+    if s == '%%' then return '%'
+    else return caisse.envadditions.tr(item.locals.title) end
+  end)
+  if israw then
+    return '<a href="' .. caisse.envadditions.siteroot .. '/' .. path .. '">'
+      .. text .. '</a>'
+  else
+    return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
+      .. text .. '</a>'
+  end
+end
+
 markupfns = {
   ['-'] = function (line)
     if line == '' then return ''
@@ -485,25 +518,7 @@ markupfns = {
     return '<a class="pastel ' .. cat .. '" href="' .. path .. '">'
       .. text .. '</a>'
   end,
-  link = function (path, text)
-    local itemname = path
-    local anchor
-    local hashpos = path:find('#')
-    if hashpos ~= nil then
-      itemname = path:sub(1, hashpos - 1)
-      anchor = path:sub(hashpos + 1)
-      if text == '' then text = anchor end
-    end
-    local item = itemreg[itemname]
-    if not item then return markupfns.extlink(path, text ~= '' and text or path) end
-    if text == '' then text = '%' end
-    text = text:gsub('%%%%?', function (s)
-      if s == '%%' then return '%'
-      else return caisse.envadditions.tr(item.locals.title) end
-    end)
-    return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
-      .. text .. '</a>'
-  end,
+  link = function (path, text) return itemlink(path, text, false) end,
   subpagelink = function (path, text)
     local itemname = split(path, '/')[1]
     local item = itemreg[itemname]
@@ -629,6 +644,14 @@ markupfns = {
 }
 caisse.envadditions.rendermarkup = function (s)
   return rendermarkup(s, markupfns)
+end
+-- Used by XML feeds
+caisse.envadditions.rendermarkupabslink = function (s)
+  local oldlinkfn = markupfns.link
+  markupfns.link = function (path, text) return itemlink(path, text, true) end
+  local result = rendermarkup(s, markupfns)
+  markupfns.link = oldlinkfn
+  return result
 end
 
 local function markupheadings(s)
