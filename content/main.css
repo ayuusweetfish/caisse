@@ -873,3 +873,8 @@ img.item-banner,
   display: block;
   min-height: 1.5em;
 }
+
+.item-contents span.katex {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
