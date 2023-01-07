@@ -3,6 +3,7 @@ local rendermarkup = require('caisse/markup')
 
 os.setlocale('C')
 
+caisse.envadditions.sitename = { zh = '甜鱼/Ayu', en = 'Sweetfish Ayu' }
 caisse.envadditions.siteroot = 'https://ayu.land'
 caisse.envadditions.domain = 'ayu.land'
 caisse.envadditions.distbuild = (os.getenv('DIST') == '1')
