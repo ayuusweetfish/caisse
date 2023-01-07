@@ -153,14 +153,20 @@ body.dark #table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   }
   aside {
     padding-block: 0;
+    position: unset;  /* For #curcat-icon */
   }
   #related-links ul li::before {
     display: inline-block;
     margin-inline-start: 0;
   }
-  #aside-date, #curcat-icon, #table-of-contents,
+  #aside-date, #table-of-contents,
   aside div[role='separator'] {
     display: none;
+  }
+  #curcat-icon {
+    inset-block-start: 10rem;
+    opacity: 30%;
+    z-index: -10;
   }
 }
 
