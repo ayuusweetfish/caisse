@@ -1,11 +1,26 @@
-{{title.zh=}}22 子月 —— 嘿嘿嘿！
-{{title.en=}}22 Month of the Rat — Heiheihei!
+{{title.zh=}}22 子月 —— 旧年拾遗
+{{title.en=}}22, Month of the Rat — Filling in the Holes
 
-{{timestamp=}}2023.01.06.00
+{{timestamp=}}2023.01.07.13
 
 {{contents.zh=}}
-<link vividness>
-<link webfont>
+这里渐渐有了一些朋友，也是时候第一次作真正的修订记录啦。
+回顾一下发现最近做的事情大都符合一个“填”字。公历新年到来之际确实很适合用来填补一些过往的遗憾呢！
+<list
+  <li 最重要的是把断断续续写了好久的打击乐合奏乐曲<link vividness 《%》>完成了。看到乐队的伙伴们说想“整个大活”，有点期待～>
+  <li 通过大量机翻补全了网站的多语言内容，然后整理出了<link webfont 中文字体嵌入方案>。>
+  <li 游戏<link sheepdogs 《%》>网页版的 bug 导致第二关卡无法通过，已修复。>
+>
+
+世界上并不是只有公历，也不止有一个新年，比如这个小站还要按照它的<link dates 历法>在旧年再待上一个月。时间总是不断流动的，一个人为任意规定的仪式并不能说明什么。但重要的是，这样的仪式创造了向重视的人释放美好情感的难得机会，所以无论如何都值得珍惜。也祝看到这里的朋友们新年快乐！
 
 {{contents.en=}}
-English content
+This place has been seeing quite a few friends, and it’s time to make the first actual revision log.
+Looking back, most of the things I’ve done recently fit the idea of “filling in”. The advent of a Gregorian new year makes a good time to fill in some past regrets!
+<list
+  <li The most important thing is to have finished the percussion ensemble piece <link vividness>. Seeing friends in the band talking about “doing something big”, I’m looking forward to it!>
+  <li Completed the multilingual content of the website with enormous help from machine translation. The <link webfont method for Chinese font embedding> has been summarised into an article.>
+  <li The game <link sheepdogs> has a bug in its web version that caused the second level to be unpassable. This has been fixed.>
+>
+
+There is not only the Gregorian calendar, nor is there just one New Year. This site, for instance, will stay in the old year for another month according to its <link dates calendar>. Time is a continuous flow, and an artificially, arbitrarily prescribed ritual does not carry that much meaning with it. But what is important is that such rituals create rare opportunities to send our good wills to the people we care about, which is why they are worth cherishing nevertheless. A Happy New Year to all reading this!

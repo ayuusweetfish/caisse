@@ -1,5 +1,5 @@
 {{title.zh=}}22 亥月 —— 不安定感的赛博慰藉
-{{title.en=}}22 Month of the Pig — A Cyber Comfort for Insecurity
+{{title.en=}}22, Month of the Pig — A Cyber Comfort for Insecurity
 
 {{timestamp=}}2022.12.14.12
 

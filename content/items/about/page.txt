@@ -31,11 +31,8 @@ Drawabox 完成了第一课。寒假伊始计划把公历年前的一首改编�
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Put up this website, which will probably receive frequent updates recently.
-There is an experimental animation project that I had planned to finish a month ago. Might get to it soon.
 Trying to learn to draw, exploring by the <link https://drawabox.com/ Drawabox> tutorials. <date 2022.21>
-Laught at me, the last two items were not even touched.
-Will probably be involved with music at the end of the Gregorian calendar year. Some finishing touches on previous works, and also a rearrangement in progress. <date 2022.22>
+Made through the first lesson of Drawabox. At the beginning of the winter break I plan to finish up a music adaptation from the last Gregorian calendar year, and then get to the animations and books that have been recommended by friends before. Maybe also try to draw something or make games? <kao （´-`）.｡oO（> <date 2022.23>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
