@@ -11,7 +11,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about 关于自己>>
   <li <link fireflies 萤火虫>>
   <li <link medle 旋律猜谜>>
-  <li <link zzz 打击乐小节目>>
+  <li <link zzz 打击乐小合奏>>
   <li <link traviata 《茶花女》序曲>>
   <li <link adventure 去冒险的伙伴>>
 >
@@ -41,7 +41,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about About>>
   <li <link fireflies Fireflies>>
   <li <link medle Melody puzzles>>
-  <li <link zzz Piece for percussion>>
+  <li <link zzz Piece for percussion ensemble>>
   <li <link traviata <it La Traviata> Overture>>
   <li <link adventure Friends on Adventure>>
 >

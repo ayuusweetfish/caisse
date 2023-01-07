@@ -209,6 +209,9 @@ blockquote.quote::after {
 #curcat-icon {
   color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 30%);
 }
+body.dark #curcat-icon {
+  color: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.35}}%, 40%);
+}
 #bottom-fleuron {
   filter: hue-rotate({{hue}}deg);
 }
