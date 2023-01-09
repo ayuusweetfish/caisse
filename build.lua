@@ -172,13 +172,17 @@ end
 caisse.envadditions.split = split
 
 local filedb = {}
-for line in io.open('misc/stat/database.tsv', 'r'):lines() do
-  local fields = split(line, '\t')
-  filedb[fields[1]] = {
-    size = tonumber(fields[2]),
-    type = fields[3],
-    args = {table.unpack(fields, 4)},
-  }
+for _, path in ipairs({
+  'misc/stat/database.tsv', 'content/items/backyard/stat_database.tsv'
+}) do
+  for line in io.open(path, 'r'):lines() do
+    local fields = split(line, '\t')
+    filedb[fields[1]] = {
+      size = tonumber(fields[2]),
+      type = fields[3],
+      args = {table.unpack(fields, 4)},
+    }
+  end
 end
 local function fileinfo(src)
   if not filedb[src] then error('File ' .. src .. ' not recorded') end
