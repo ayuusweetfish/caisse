@@ -1,8 +1,8 @@
-/*
+#if 0 // due to /* inside comments
   g++ solve.cc -std=c++11 -O2
-  find ../../build -name "index.zh.html" | awk -F/ '{ print $0; print $(NF-1) }' | ./a.out > common.txt
+  find ../../build -name "index.zh.html" -not -path "../../build/backyard/*" | awk -F/ '{ print $0; print $(NF-1) }' | ./a.out > common.txt
   find ../../build -name "index.zh.html" | awk -F/ '{ print $0; print $(NF-1) }' | INC=1 ./a.out > stray.txt
-*/
+#endif
 
 #include <cstdint>    // uint64_t
 #include <cstdio>     // fgets, fopen, fgetc
