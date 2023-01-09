@@ -19,7 +19,7 @@
 {{contents.en=}}
 Unless otherwise specified, all content published on this site is licensed under a <link https://creativecommons.org/licenses/by-sa/4.0/deed.en Creative Commons Attribution-ShareAlike 4.0 International Licence>.
 
-According to the grants of use or the open-source licences of the owners, this site incorporates the following image and fonts as resources:
+According to the grants of use or the open-source licences of the owners, this site incorporates the following resources of images and fonts:
 !<list
   <li <link https://www.freepik.com/free-vector/ornament-divider-collection_4187066.htm Ornament divider collection> — Freepik (unsubscribed user licence)>
   <li <link https://commons.wikimedia.org/wiki/File:Feed-icon.svg Web feed icon> — Matt Brett (MPL v1.1)>
@@ -29,4 +29,4 @@ According to the grants of use or the open-source licences of the owners, this s
   <li <link https://www.aafont.com.cn/detail.html?fontId=s9K1vqVZ Aa Kai Song> — Aa Fonts (non-commercial licence)>
 >
 
-The programs that assemble these pages and send them to the reader is named “Caisse”. The parts responsible for page building is written in the Lua language; the daemons on the cloud have their incantation in JavaScript and currently live on the <link https://deno.land/ Deno Deploy> platform. The <link https://github.com/ayuusweetfish/caisse source repository> can be accessed on GitHub.
+The programs that assemble these pages and send them to the reader are named “Caisse”. The parts responsible for page content are written in the Lua language; the daemons on the cloud have their incantation in JavaScript and currently live on the <link https://deno.land/ Deno Deploy> platform. The <link https://github.com/ayuusweetfish/caisse source repository> can be accessed on GitHub.
