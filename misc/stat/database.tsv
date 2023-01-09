@@ -10,7 +10,7 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	6509	unknown
+framework.html	6541	unknown
 item.html	977	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
@@ -93,7 +93,7 @@ items/ice-hatch/play/love.wasm	4702493	unknown
 items/ice-hatch/screenshot1.png	14400	image	540	360
 items/ice-hatch/screenshot2.png	19453	image	540	360
 items/index/fish.png	2116	image	60	60
-items/index/page.css	1645	unknown
+items/index/page.css	1727	unknown
 items/leaving/IMG_20221130_151158.jpg	57870	image	912	684
 items/leaving/deteiku.mscz	52697	score
 items/leaving/deteiku.ogg	2269069	audio	194
@@ -126,10 +126,10 @@ items/rabbit-hole/cover.jpg	56098	image	958	539
 items/rabbit-hole/particles.jpg	100074	image	1280	720
 items/rabbit-hole/pbr-ibl.jpg	60758	image	770	376
 items/rabbit-hole/squirrel.jpg	84714	image	958	538
-items/revlog/2022-10.txt	3085	document
-items/revlog/2022-11.txt	175	document
-items/revlog/atom.xml	1357	unknown
-items/revlog/rss.xml	1079	unknown
+items/revlog/2022-10.txt	3086	document
+items/revlog/2022-11.txt	2531	document
+items/revlog/atom.xml	1374	unknown
+items/revlog/rss.xml	1096	unknown
 items/sheepdogs-work/Sheepdogs_at_Work.ogg	1781851	audio	98
 items/sheepdogs-work/Sheepdogs_at_Work.tracktionedit	502306	musicnotes
 items/sheepdogs-work/Sheepdogs_on_Vacation.ogg	1591811	audio	84
@@ -205,8 +205,8 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	21709	unknown
+main.css	21886	unknown
 main.js	2004	code
-puffs.svg	2337	image	1200	120
+puffs.svg	2343	image	1200	120
 timeofday.html	1756	unknown
 top-fleuron.svg	19723	image	960	90

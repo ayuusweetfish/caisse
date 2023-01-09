@@ -1,4 +1,4 @@
--- find ../../content -type f | lua build.lua ../../content/
+-- find ../../content -type f | lua build.lua database.tsv ../../content/
 
 local filetypes = {
   -- Music and audio
@@ -66,11 +66,12 @@ local function filesize(path)
   return io.popen('stat -f "%z" "' .. path .. '" 2>/dev/null'):read('n')
 end
 
-local prefix = arg[1] or ''
+local databasetsv = arg[1] or 'database.tsv'
+local prefix = arg[2] or ''
 
 local existingfiles = {}
 local lines = {}
-local inf = io.open('database.tsv', 'r')
+local inf = io.open(databasetsv, 'r')
 if inf then
   for line in inf:lines() do
     local tabpos1 = line:find('\t') or (#line + 1)
@@ -106,6 +107,6 @@ for path in io.lines() do
   end
 end
 table.sort(lines)
-local outf = io.open('database.tsv', 'w')
+local outf = io.open(databasetsv, 'w')
 for i = 1, #lines do outf:write(lines[i], '\n') end
 outf:close()
