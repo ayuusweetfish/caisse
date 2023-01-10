@@ -539,10 +539,11 @@ table.file-table {
   border-spacing: 1em 0.4em;
 }
 table.file-table > tbody {
-  word-wrap: anywhere;
+  word-break: break-word;
 }
 table.file-table .file-table-name {
   margin-inline: 0.2em 0.33em;
+  word-break: break-all;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
   table.file-table {
@@ -871,7 +872,7 @@ img.item-banner,
 }
 
 .item-contents pre {
-  line-break: anywhere;
+  word-break: break-all;
   white-space: pre-wrap;
 }
 .item-contents pre.code {
