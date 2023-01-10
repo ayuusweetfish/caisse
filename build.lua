@@ -480,6 +480,7 @@ markupfns = {
       (class ~= '' and ' class="' .. class .. '"' or '') ..
       '></div>'
   end,
+  marker = function (class) return '<span class="' .. class .. '"></span>' end,
   pre = function (text)
     return '<pre>' .. text .. '</pre>'
   end,
@@ -503,6 +504,9 @@ markupfns = {
   end,
   tt = function (text)
     return '<span class="tt">' .. text .. '</span>'
+  end,
+  wbrs = function (text)
+    return text:gsub('/', '<wbr>/<wbr>')
   end,
   lang = function (lang, text)
     return '<span lang="' .. lang .. '">' .. text .. '</span>'
