@@ -345,7 +345,7 @@ const serveReq = async (req) => {
     }
     // Set cookies
     for (const [key, value] of Object.entries(newCookies))
-      headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Max-Age=2592000`)
+      headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Path=/; Secure; Max-Age=2592000`)
     // Redirect to remove query string
     if (optsUpdatedByQuery) {
       url.search = ''
