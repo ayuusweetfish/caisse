@@ -62,10 +62,10 @@ Collection of sundries —
 <nav>
 <h1><a href='/'>{{ sitename }}</a></h1>
 <ul>
-  {{@ cat in cats}}
+  {{@ cat in cats}}{{@ cat.name ~= 'backyard'}}
   <li><a class='pastel {{cat.name}}'
     href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'><span class='little-icons'>{{utf8.char(cat.icon)}}</span>{{cat.title}}</a></li>
-  {{@ end}}
+  {{@ end}}{{@ end}}
 </ul>
 <div id='icon-buttons'>
   <details id='lang-container'>
