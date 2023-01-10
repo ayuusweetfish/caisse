@@ -41,7 +41,7 @@ Collection of sundries —
     const initial = (matched && matched[1])
     const tz = (new Date().getTimezoneOffset()).toString()
     if (initial !== tz) {
-      document.cookie = 'tz=' + tz + '; SameSite=Strict; Max-Age=2592000'
+      document.cookie = 'tz=' + tz + '; SameSite=Strict; Path=/; Secure; Max-Age=2592000'
       window.location = window.location
     }
   })()
