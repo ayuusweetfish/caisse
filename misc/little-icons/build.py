@@ -8,7 +8,7 @@ NotoEmojiSubset = sorted(set([
   # Internationalization, dark mode
   0x1f310, 0x1f319, 0x26aa,
   # Categories
-  0x1fab8, 0x1fa87, 0x1fa81, 0x1fab6, 0x2618, 0x1fae7,
+  0x1fab8, 0x1fa87, 0x1fa81, 0x1fab6, 0x2618, 0x1fae7, 0x1fabb,
   # External link, star
   0x1fa90, 0x1f31f,
   # File types
@@ -61,6 +61,8 @@ tr(0x1f33e, r(15), s(0.99))
 tr(0x1f343, r(25), s(1.02))
 tr(0x2744, r(-8), s(0.97))
 tr(0x1f9ca, r(-5))
+# Backyard icon
+tr(0x1fabb, r(7), s(1.05))
 
 # Web feed icon
 glyph = font.createChar(0x1f5de)

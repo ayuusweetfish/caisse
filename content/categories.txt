@@ -7,6 +7,7 @@ cats = {
   {'murmurs',   {204, 100, 40, 90}, 0x1fab6},
   {'potpourri', {163,  75, 35, 89}, 0x2618},
   {'pebbles',   { 80,  40, 40, 85}, 0x1fae7},
+  {'backyard',  {258,  70, 42, 90}, 0x1fabb},
 }
 for i = 1, #cats do
   local name, tint, icon = table.unpack(cats[i])
@@ -28,6 +29,7 @@ end
 {{cats.murmurs.title.zh=}}梦话集
 {{cats.potpourri.title.zh=}}繁花丛
 {{cats.pebbles.title.zh=}}碎石堆
+{{cats.backyard.title.zh=}}后花园
 
 {{cats.home.title.en=}}Home
 {{cats.music.title.en=}}Music
@@ -35,6 +37,7 @@ end
 {{cats.murmurs.title.en=}}Murmurs
 {{cats.potpourri.title.en=}}Potpourri
 {{cats.pebbles.title.en=}}Pebbles
+{{cats.backyard.title.en=}}Backyard
 
 {{cats.home.longtitle.en=}}Home
 {{cats.music.longtitle.en=}}Pieces of Music
@@ -42,6 +45,7 @@ end
 {{cats.murmurs.longtitle.en=}}Pieces of Murmurs
 {{cats.potpourri.longtitle.en=}}Pieces of Potpourri
 {{cats.pebbles.longtitle.en=}}Pieces of Pebbles
+{{cats.backyard.longtitle.en=}}Backyard
 
 {{cats.potpourri.intro.zh=}}零零碎碎或者稀奇古怪的产物——
 {{cats.potpourri.intro.en=}}
@@ -101,5 +105,7 @@ cats.pebbles.pagelist = {
   {name = 'mikabox'},
   {name = 'bmflat'},
 ]]
+}
+cats.backyard.pagelist = {
 }
 }}}

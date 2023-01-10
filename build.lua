@@ -756,7 +756,7 @@ registeritemmarkup('colophon', 'home')
 
 local backyarditems = require('content/items/backyard/list')
 for i = 1, #backyarditems do
-  registeritemmarkup('backyard/' .. backyarditems[i], 'home')
+  registeritemmarkup('backyard/' .. backyarditems[i], 'backyard')
 end
 
 local revloglatest = 2022*12 + 11
