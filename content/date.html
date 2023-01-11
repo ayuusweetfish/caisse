@@ -96,8 +96,22 @@
 {{T[23].hint.en=}}Mild cold; mid-January (B)
 {{T[24].hint.en=}}Intense cold; January — February (B)
 
+{{throughdelim.zh=}}至
+{{throughdelim.en=}} through
+
+{{ termtext = function (year, term)
+  return string.format('%02d', year % 100) .. '-' .. tr(T[term].name)
+end }}
+
 {{builder =}}
-<span class='date-term'>
+<span class='date-term' aria-label='{{*
+  local s = {}
+  for _, d in ipairs(dates) do
+    if #s > 0 then s[#s + 1] = tr(throughdelim) .. ' ' end
+    s[#s + 1] = termtext(d.year, d.term)
+  end
+  return table.concat(s)
+}}'>
 <span class='date-term-single'>
 <span class='date-bracket-start'>&lt;</span>
 {{ first = true }}
@@ -109,7 +123,7 @@
   {{@ end }}
   <span
       title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
-    {{ string.format('%02d', year % 100) }}-{{ T[term].name }}
+    {{ termtext(year, term) }}
     <sup class='season-{{ math.ceil(term / 3) }}'></sup>
   </span>
   {{ first = false }}

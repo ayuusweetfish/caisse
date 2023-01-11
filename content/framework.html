@@ -100,7 +100,9 @@ Collection of sundries —
 Current page belongs to the category of {{cats[curcat].title}}
 {{=}}
 <div id='curcat-icon' class='little-icons'
-  title='{{curcatdesc}}'>{{utf8.char(cats[curcat].icon)}}</div>
+  title='{{curcatdesc}}'
+  role='img' aria-label='{{utf8.char(cats[curcat].icon)}} {{curcatdesc}}'
+  >{{utf8.char(cats[curcat].icon)}}</div>
 {{@ end }}
 
 {{@ not not aside.date }}
