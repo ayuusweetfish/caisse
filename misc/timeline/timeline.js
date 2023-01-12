@@ -9,8 +9,93 @@ const methods_test = {
     }
   },
   desc: (item) => item.text,
-  stop: (item, existing) => {
-    return item.my_id <= existing[0].my_id
+  stop: (item, first) => item.my_id <= first.my_id,
+}
+
+const getJson = async (url, cookie) => {
+  for (let i = 0; i < 5; i++) {
+    try {
+      const text = await (await fetch(
+        url,
+        { headers: { 'Cookie': cookie } },
+      )).text()
+      return JSON.parse(text)
+    } catch (e) {
+      console.log(`Retrying ${url}`)
+    }
+  }
+  throw new Error(`Cannot fetch JSON from ${url}`)
+}
+
+const downloadWeiboPics = async (ids, cookie) => {
+  for (const id of ids) {
+    const resp = (await fetch(
+      `https://weibo.com/ajax/common/download?pid=${id}`,
+      { headers: { 'Cookie': cookie } },
+    ))
+    try {
+      await Deno.mkdir('weibo_pics')
+    } catch (e) {
+      if (!(e instanceof Deno.errors.AlreadyExists)) throw e
+    }
+    const f = await Deno.open(`weibo_pics/${id}`, {create: true, write: true})
+    await resp.body.pipeTo(f.writable)
+  }
+}
+
+const methods_weibo = {
+  async* get(args) {
+    const cookie = (await Deno.readTextFile('cookie.txt')).trim()
+    for (let i = 1; ; i++) {
+      console.log(`==== page ${i} ====`)
+      const respObj = await getJson(
+        `https://weibo.com/ajax/statuses/mymblog?uid=${args.uid}&page=${i}`,
+        cookie,
+      )
+      if (respObj.data.list.length === 0) break
+      for (const item of respObj.data.list) if (item.visible.type === 0) {
+        // Full text
+        const respObjDetail = await getJson(
+          `https://weibo.com/ajax/statuses/longtext?id=${item.mblogid}`,
+          cookie,
+        )
+        const itemObj = {
+          id: item.id,
+          created_at: new Date(item.created_at),
+          text: respObjDetail.data.longTextContent || item.text_raw,
+          pic_ids: item.pic_ids || [],
+        }
+        downloadWeiboPics(itemObj.pic_ids, cookie)
+
+        // Repost?
+        if (item.retweeted_status) {
+          const respObjRepostDetail = await getJson(
+            `https://weibo.com/ajax/statuses/longtext?id=${item.retweeted_status.mblogid}`,
+            cookie,
+          )
+          itemObj.repost = {
+            id: item.retweeted_status.id,
+            created_at: new Date(item.retweeted_status.created_at),
+            user: {
+              id: item.retweeted_status.user ? item.retweeted_status.user.id : 0,
+              name: item.retweeted_status.user ? item.retweeted_status.user.screen_name : '',
+            },
+            text: (respObjRepostDetail.data && respObjRepostDetail.data.longTextContent)
+              || item.retweeted_status.text_raw,
+            pic_ids: item.retweeted_status.pic_ids || [],
+          }
+          downloadWeiboPics(itemObj.repost.pic_ids, cookie)
+        }
+
+        yield itemObj
+      }
+    }
+  },
+  desc(item) {
+    return `${item.created_at} ${item.text.substring(0, 40).replace(/\n/g, ' ')}`
+  },
+  stop(item, first) {
+    return item.id < first.id
   },
 }
 
@@ -18,7 +103,7 @@ const run = async (methods, args, existing) => {
   const itr = methods.get(args)
   const newList = []
   for await (const item of itr) {
-    if (existing.length > 0 && methods.stop(item, existing)) {
+    if (existing.length > 0 && methods.stop(item, existing[0])) {
       break
     } else {
       if (methods.desc) console.log(methods.desc(item))
@@ -37,5 +122,5 @@ const existing = await (async () => {
   }
 })()
 
-const newList = await run(methods_test, {N: 25}, existing)
+const newList = await run(methods_weibo, {uid: +Deno.env.get('uid')}, existing)
 await Deno.writeTextFile(savePath, JSON.stringify(newList))
