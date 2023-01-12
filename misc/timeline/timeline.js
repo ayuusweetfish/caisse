@@ -28,7 +28,7 @@ const getJson = async (url, cookie) => {
 }
 
 const downloadWeiboPics = async (ids, cookie) => {
-  for (const id of ids) {
+  for (const [i, id] of Object.entries(ids)) {
     const resp = (await fetch(
       `https://weibo.com/ajax/common/download?pid=${id}`,
       { headers: { 'Cookie': cookie } },
@@ -38,8 +38,10 @@ const downloadWeiboPics = async (ids, cookie) => {
     } catch (e) {
       if (!(e instanceof Deno.errors.AlreadyExists)) throw e
     }
-    const f = await Deno.open(`weibo_pics/${id}`, {create: true, write: true})
+    const fileName = resp.headers.get('Content-Disposition').match(/filename=(.+)/)[1]
+    const f = await Deno.open(`weibo_pics/${fileName}`, {create: true, write: true})
     await resp.body.pipeTo(f.writable)
+    ids[i] = fileName
   }
 }
 
@@ -65,7 +67,8 @@ const methods_weibo = {
           text: respObjDetail.data.longTextContent || item.text_raw,
           pic_ids: item.pic_ids || [],
         }
-        downloadWeiboPics(itemObj.pic_ids, cookie)
+        if (itemObj.pic_ids.length === 0) delete itemObj.pic_ids
+        else downloadWeiboPics(itemObj.pic_ids, cookie)
 
         // Repost?
         if (item.retweeted_status) {
@@ -84,7 +87,50 @@ const methods_weibo = {
               || item.retweeted_status.text_raw,
             pic_ids: item.retweeted_status.pic_ids || [],
           }
-          downloadWeiboPics(itemObj.repost.pic_ids, cookie)
+          if (itemObj.repost.pic_ids.length === 0) delete itemObj.repost.pic_ids
+          else downloadWeiboPics(itemObj.repost.pic_ids, cookie)
+        }
+
+        // Quick repost?
+        if (item.user.id !== args.uid) {
+          itemObj.repost = {
+            id: itemObj.id,
+            created_at: itemObj.created_at,
+            user: {
+              id: item.user.id,
+              name: item.user.screen_name,
+            },
+            text: itemObj.text,
+            pic_ids: itemObj.pic_ids,
+          }
+          itemObj.text = ''
+          itemObj.pic_ids = undefined
+        }
+
+        // Comments?
+        if (item.comments_count > 0) {
+          const respObjComments = await getJson(
+            `https://weibo.com/ajax/statuses/buildComments?is_reload=1&id=${item.id}&is_show_bulletin=2&is_mix=0&count=20&type=feed`,
+            cookie,
+          )
+          itemObj.comments = []
+          const addComment = (itemComment) => {
+            if (itemComment.user.id === args.uid) {
+              itemObj.comments.push({
+                id: itemComment.id,
+                root_id: itemComment.rootid,
+                created_at: new Date(itemComment.created_at),
+                text: itemComment.text_raw,
+              })
+            }
+          }
+          for (const itemComment of respObjComments.data) {
+            addComment(itemComment)
+            if (itemComment.comments)
+              for (const itemCommentReply of itemComment.comments)
+                addComment(itemCommentReply)
+          }
+          if (itemObj.comments.length === 0) delete itemObj.comments
         }
 
         yield itemObj
