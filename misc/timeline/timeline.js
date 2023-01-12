@@ -9,15 +9,15 @@ const methods_test = {
     }
   },
   desc: (item) => item.text,
-  stop: (item, first) => item.my_id <= first.my_id,
+  stop: (item, existing) => item.my_id <= existing[0].my_id,
 }
 
-const getJson = async (url, cookie) => {
+const getJson = async (url, headers) => {
   for (let i = 0; i < 5; i++) {
     try {
       const text = await (await fetch(
         url,
-        { headers: { 'Cookie': cookie } },
+        { headers },
       )).text()
       return JSON.parse(text)
     } catch (e) {
@@ -25,6 +25,19 @@ const getJson = async (url, cookie) => {
     }
   }
   throw new Error(`Cannot fetch JSON from ${url}`)
+}
+
+const downloadFile = async (url, headers, dir) => {
+  try {
+    await Deno.mkdir(dir)
+  } catch (e) {
+    if (!(e instanceof Deno.errors.AlreadyExists)) throw e
+  }
+  const resp = await fetch(url, { headers })
+  const fileName = url.match(/\/([^\/]+)$/)[1]
+  const f = await Deno.open(`${dir}/${fileName}`, {create: true, write: true})
+  await resp.body.pipeTo(f.writable)
+  return fileName
 }
 
 const downloadWeiboPics = async (ids, cookie) => {
@@ -52,14 +65,14 @@ const methods_weibo = {
       console.log(`==== page ${i} ====`)
       const respObj = await getJson(
         `https://weibo.com/ajax/statuses/mymblog?uid=${args.uid}&page=${i}`,
-        cookie,
+        { 'Cookie': cookie },
       )
       if (respObj.data.list.length === 0) break
       for (const item of respObj.data.list) if (item.visible.type === 0) {
         // Full text
         const respObjDetail = await getJson(
           `https://weibo.com/ajax/statuses/longtext?id=${item.mblogid}`,
-          cookie,
+          { 'Cookie': cookie },
         )
         const itemObj = {
           id: item.id,
@@ -74,7 +87,7 @@ const methods_weibo = {
         if (item.retweeted_status) {
           const respObjRepostDetail = await getJson(
             `https://weibo.com/ajax/statuses/longtext?id=${item.retweeted_status.mblogid}`,
-            cookie,
+            { 'Cookie': cookie },
           )
           itemObj.repost = {
             id: item.retweeted_status.id,
@@ -111,7 +124,7 @@ const methods_weibo = {
         if (item.comments_count > 0) {
           const respObjComments = await getJson(
             `https://weibo.com/ajax/statuses/buildComments?is_reload=1&id=${item.id}&is_show_bulletin=2&is_mix=0&count=20&type=feed`,
-            cookie,
+            { 'Cookie': cookie },
           )
           itemObj.comments = []
           const addComment = (itemComment) => {
@@ -140,8 +153,58 @@ const methods_weibo = {
   desc(item) {
     return `${item.created_at} ${item.text.substring(0, 40).replace(/\n/g, ' ')}`
   },
-  stop(item, first) {
-    return item.id < first.id
+  stop(item, existing) {
+    return item.id > existing[0].id // Short-circuit quickly
+      || existing.filter((i) => i.id === item.id).length > 0
+  },
+}
+
+const methods_mastodon = {
+  async* get(args) {
+    const token = (await Deno.readTextFile('mastodon_token.txt')).trim()
+    const account = await getJson(
+      `${args.server}/api/v1/accounts/verify_credentials`,
+      { 'Authorization': `Bearer ${token}` },
+    )
+    const uid = account.id
+    let max_id = undefined
+    while (true) {
+      const list = await getJson(
+        `${args.server}/api/v1/accounts/${uid}/statuses?limit=40&exclude_replies=true&exclude_reblogs=true`
+        + (max_id !== undefined ? `&max_id=${max_id}` : ''),
+        { 'Authorization': `Bearer ${token}` },
+      )
+      if (list.length === 0) break
+      for (const item of list) {
+        const respObjDetail = await getJson(
+          `${args.server}/api/v1/statuses/${item.id}`,
+          { 'Authorization': `Bearer ${token}` },
+        )
+        const itemObj = {
+          id: item.id,
+          created_at: new Date(respObjDetail.created_at),
+          spoiler_text: respObjDetail.spoiler_text !== '' ? respObjDetail.spoiler_text : undefined,
+          content: respObjDetail.content,
+        }
+        itemObj.media = []
+        for (const m of respObjDetail.media_attachments) {
+          const fileName = await downloadFile(
+            m.url,
+            { 'Authorization': `Bearer ${token}` },
+            'mastodon_media',
+          )
+          itemObj.media.push(fileName)
+        }
+        yield itemObj
+      }
+      max_id = list[list.length - 1].id
+    }
+  },
+  desc(item) {
+    return `${item.created_at} ${item.content.substring(0, 40)}`
+  },
+  stop(item, existing) {
+    return item.id <= existing[0].id
   },
 }
 
@@ -149,7 +212,7 @@ const run = async (methods, args, existing) => {
   const itr = methods.get(args)
   const newList = []
   for await (const item of itr) {
-    if (existing.length > 0 && methods.stop(item, existing[0])) {
+    if (existing.length > 0 && methods.stop(item, existing)) {
       break
     } else {
       if (methods.desc) console.log(methods.desc(item))
@@ -168,5 +231,6 @@ const existing = await (async () => {
   }
 })()
 
-const newList = await run(methods_weibo, {uid: +Deno.env.get('uid')}, existing)
+// const newList = await run(methods_weibo, {uid: +Deno.env.get('uid')}, existing)
+const newList = await run(methods_mastodon, {server: 'https://thu.closed.social'}, existing)
 await Deno.writeTextFile(savePath, JSON.stringify(newList))
