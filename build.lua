@@ -652,8 +652,12 @@ markupfns = {
   math = function (string) return katexrender(string, false) end,
   dispmath = function (string) return katexrender(string, true) end,
 }
-caisse.envadditions.rendermarkup = function (s)
-  return rendermarkup(s, markupfns)
+caisse.envadditions.rendermarkup = function (s, item)
+  local oldmarkupfnsenvitem = markupfnsenvitem
+  if item then markupfnsenvitem = item end
+  local result = rendermarkup(s, markupfns)
+  if item then markupfnsenvitem = oldmarkupfnsenvitem end
+  return result
 end
 -- Used by XML feeds
 caisse.envadditions.rendermarkupabslink = function (s)
