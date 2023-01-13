@@ -4,7 +4,7 @@
 {{contents.zh=}}
 
 !<list
-  <li <link https://alicescribbles.github.io/ Alice's scribbles>>
+  <li <link https://alicez.ink/ Alice's scribbles>>
   <li <link https://chiyuru.github.io/ 『姑妄言之姑妄听之』>>
 >
 
