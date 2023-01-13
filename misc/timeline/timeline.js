@@ -179,10 +179,14 @@ const methods_mastodon = {
       )
       if (list.length === 0) break
       for (const item of list) if (item.account.id === uid && args.acceptedVisibility.indexOf(item.visibility) !== -1) {
-        const respObjDetail = await getJson(
+        let respObjDetail = await getJson(
           `${args.server}/api/v1/statuses/${item.id}`,
           { 'Authorization': `Bearer ${args.token}` },
         )
+        if (respObjDetail.reblog) {
+          if (respObjDetail.reblog.account.id !== uid) continue
+          respObjDetail = respObjDetail.reblog
+        }
         const itemObj = {
           id: item.id,
           timestamp: new Date(respObjDetail.created_at),

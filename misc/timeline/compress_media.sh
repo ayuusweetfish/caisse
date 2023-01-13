@@ -1,6 +1,6 @@
 CONVERT="${CONVERT:-convert}"
 FFMPEG="${FFMPEG:-ffmpeg}"
-IMAGEOPTIM="${IMAGEOPTIM:-ImageOoptim}"
+IMAGEOPTIM="${IMAGEOPTIM:-ImageOptim}"
 
 echo "Using convert = ${CONVERT}"
 echo "Using ffmpeg = ${FFMPEG}"
