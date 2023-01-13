@@ -56,9 +56,9 @@ const downloadFile = async (url, headers, dir, bannedType) => {
 const methods_weibo = {
   async* get(args) {
     const cookie = args.cookie
-    const downloadPics = (ids) => {
+    const downloadPics = async (ids) => {
       for (const [i, id] of Object.entries(ids))
-        ids[i] = downloadFile(
+        ids[i] = await downloadFile(
           `https://weibo.com/ajax/common/download?pid=${id}`,
           { 'Cookie': cookie },
           args.picsDir,
@@ -85,7 +85,7 @@ const methods_weibo = {
           pics: item.pic_ids || [],
         }
         if (itemObj.pics.length === 0) delete itemObj.pics
-        else downloadPics(itemObj.pics)
+        else await downloadPics(itemObj.pics)
 
         // Repost?
         if (item.retweeted_status) {
@@ -105,7 +105,7 @@ const methods_weibo = {
             pics: item.retweeted_status.pic_ids || [],
           }
           if (itemObj.repost.pics.length === 0) delete itemObj.repost.pics
-          else downloadPics(itemObj.repost.pics)
+          else await downloadPics(itemObj.repost.pics)
         }
 
         // Quick repost?
