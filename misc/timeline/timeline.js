@@ -1,16 +1,11 @@
-const methods_test = {
-  get: async function* (args) {
-    const N = args.N
-    for (let i = 0; i < N; i++) {
-      yield {
-        my_id: N - i,
-        text: `text ${N - i}`,
-      }
-    }
-  },
-  desc: (item) => item.text,
-  stop: (item, existing) => item.my_id <= existing[0].my_id,
-}
+// deno run -A timeline.js <config.txt>
+/* config format:
+  <service name>
+  <database.json>
+  <service-specific arg>
+  <service-specific arg>
+  <...>
+*/
 
 const getJson = async (url, headers) => {
   for (let i = 0; i < 5; i++) {
@@ -27,40 +22,38 @@ const getJson = async (url, headers) => {
   throw new Error(`Cannot fetch JSON from ${url}`)
 }
 
-const downloadFile = async (url, headers, dir) => {
+const downloadFile = async (url, headers, dir, bannedType) => {
   try {
     await Deno.mkdir(dir)
   } catch (e) {
     if (!(e instanceof Deno.errors.AlreadyExists)) throw e
   }
   const resp = await fetch(url, { headers })
-  const fileName = url.match(/\/([^\/]+)$/)[1]
+  if (bannedType && resp.headers.get('Content-Type').indexOf(bannedType) !== -1) {
+    throw new Error(`File download returned unexpected type ${bannedType}. Please check cookies or tokens. Link: ${url}`)
+  }
+  let fileName = url.match(/\/([^\/]+)$/)[1]
+  if (resp.headers.get('Content-Disposition')) {
+    const fileNameInHeader = resp.headers.get('Content-Disposition').match(/filename=(.+)/)[1]
+    if (fileNameInHeader) fileName = fileNameInHeader
+  }
   const f = await Deno.open(`${dir}/${fileName}`, {create: true, write: true})
   await resp.body.pipeTo(f.writable)
   return fileName
 }
 
-const downloadWeiboPics = async (ids, cookie) => {
-  for (const [i, id] of Object.entries(ids)) {
-    const resp = (await fetch(
-      `https://weibo.com/ajax/common/download?pid=${id}`,
-      { headers: { 'Cookie': cookie } },
-    ))
-    try {
-      await Deno.mkdir('weibo_pics')
-    } catch (e) {
-      if (!(e instanceof Deno.errors.AlreadyExists)) throw e
-    }
-    const fileName = resp.headers.get('Content-Disposition').match(/filename=(.+)/)[1]
-    const f = await Deno.open(`weibo_pics/${fileName}`, {create: true, write: true})
-    await resp.body.pipeTo(f.writable)
-    ids[i] = fileName
-  }
-}
-
 const methods_weibo = {
   async* get(args) {
-    const cookie = (await Deno.readTextFile('cookie.txt')).trim()
+    const cookie = args.cookie
+    const downloadPics = (ids) => {
+      for (const [i, id] of Object.entries(ids))
+        ids[i] = downloadFile(
+          `https://weibo.com/ajax/common/download?pid=${id}`,
+          { 'Cookie': cookie },
+          args.picsDir,
+          'text/html',
+        )
+    }
     for (let i = 1; ; i++) {
       console.log(`==== page ${i} ====`)
       const respObj = await getJson(
@@ -76,12 +69,12 @@ const methods_weibo = {
         )
         const itemObj = {
           id: item.id,
-          created_at: new Date(item.created_at),
+          timestamp: new Date(item.created_at),
           text: respObjDetail.data.longTextContent || item.text_raw,
-          pic_ids: item.pic_ids || [],
+          pics: item.pic_ids || [],
         }
-        if (itemObj.pic_ids.length === 0) delete itemObj.pic_ids
-        else downloadWeiboPics(itemObj.pic_ids, cookie)
+        if (itemObj.pics.length === 0) delete itemObj.pics
+        else downloadPics(itemObj.pics)
 
         // Repost?
         if (item.retweeted_status) {
@@ -91,33 +84,33 @@ const methods_weibo = {
           )
           itemObj.repost = {
             id: item.retweeted_status.id,
-            created_at: new Date(item.retweeted_status.created_at),
+            timestamp: new Date(item.retweeted_status.created_at),
             user: {
               id: item.retweeted_status.user ? item.retweeted_status.user.id : 0,
               name: item.retweeted_status.user ? item.retweeted_status.user.screen_name : '',
             },
             text: (respObjRepostDetail.data && respObjRepostDetail.data.longTextContent)
               || item.retweeted_status.text_raw,
-            pic_ids: item.retweeted_status.pic_ids || [],
+            pics: item.retweeted_status.pic_ids || [],
           }
-          if (itemObj.repost.pic_ids.length === 0) delete itemObj.repost.pic_ids
-          else downloadWeiboPics(itemObj.repost.pic_ids, cookie)
+          if (itemObj.repost.pics.length === 0) delete itemObj.repost.pics
+          else downloadPics(itemObj.repost.pics)
         }
 
         // Quick repost?
         if (item.user.id !== args.uid) {
           itemObj.repost = {
             id: itemObj.id,
-            created_at: itemObj.created_at,
+            timestamp: itemObj.timestamp,
             user: {
               id: item.user.id,
               name: item.user.screen_name,
             },
             text: itemObj.text,
-            pic_ids: itemObj.pic_ids,
+            pics: itemObj.pics,
           }
           itemObj.text = ''
-          itemObj.pic_ids = undefined
+          itemObj.pics = undefined
         }
 
         // Comments?
@@ -132,7 +125,7 @@ const methods_weibo = {
               itemObj.comments.push({
                 id: itemComment.id,
                 root_id: itemComment.rootid,
-                created_at: new Date(itemComment.created_at),
+                timestamp: new Date(itemComment.created_at),
                 text: itemComment.text_raw,
               })
             }
@@ -151,20 +144,19 @@ const methods_weibo = {
     }
   },
   desc(item) {
-    return `${item.created_at} ${item.text.substring(0, 40).replace(/\n/g, ' ')}`
+    return `${item.timestamp.toISOString()} ${item.text.substring(0, 40).replace(/\n/g, ' ')}`
   },
   stop(item, existing) {
-    return item.id > existing[0].id // Short-circuit quickly
-      || existing.filter((i) => i.id === item.id).length > 0
+    return item.id <= existing[0].id // Short-circuit quickly
+      && existing.filter((i) => i.id === item.id).length > 0
   },
 }
 
 const methods_mastodon = {
   async* get(args) {
-    const token = (await Deno.readTextFile('mastodon_token.txt')).trim()
     const account = await getJson(
       `${args.server}/api/v1/accounts/verify_credentials`,
-      { 'Authorization': `Bearer ${token}` },
+      { 'Authorization': `Bearer ${args.token}` },
     )
     const uid = account.id
     let max_id = undefined
@@ -172,13 +164,13 @@ const methods_mastodon = {
       const list = await getJson(
         `${args.server}/api/v1/accounts/${uid}/statuses?limit=40&exclude_replies=true&exclude_reblogs=true`
         + (max_id !== undefined ? `&max_id=${max_id}` : ''),
-        { 'Authorization': `Bearer ${token}` },
+        { 'Authorization': `Bearer ${args.token}` },
       )
       if (list.length === 0) break
       for (const item of list) {
         const respObjDetail = await getJson(
           `${args.server}/api/v1/statuses/${item.id}`,
-          { 'Authorization': `Bearer ${token}` },
+          { 'Authorization': `Bearer ${args.token}` },
         )
         const itemObj = {
           id: item.id,
@@ -190,8 +182,8 @@ const methods_mastodon = {
         for (const m of respObjDetail.media_attachments) {
           const fileName = await downloadFile(
             m.url,
-            { 'Authorization': `Bearer ${token}` },
-            'mastodon_media',
+            { 'Authorization': `Bearer ${args.token}` },
+            args.mediaDir,
           )
           itemObj.media.push(fileName)
         }
@@ -222,7 +214,12 @@ const run = async (methods, args, existing) => {
   return newList.concat(existing)
 }
 
-const savePath = Deno.args[0]
+const serviceCfg = Deno.args[0]
+const serviceArgs = (await Deno.readTextFile(serviceCfg)).split('\n').filter((s) => s.length > 0)
+
+const serviceName = serviceArgs[0]
+const savePath = serviceArgs[1]
+serviceArgs.splice(0, 2)
 const existing = await (async () => {
   try {
     return JSON.parse(await Deno.readTextFile(savePath))
@@ -231,6 +228,20 @@ const existing = await (async () => {
   }
 })()
 
-// const newList = await run(methods_weibo, {uid: +Deno.env.get('uid')}, existing)
-const newList = await run(methods_mastodon, {server: 'https://thu.closed.social'}, existing)
-await Deno.writeTextFile(savePath, JSON.stringify(newList))
+let newList
+if (serviceName === 'weibo') {
+  newList = await run(methods_weibo, {
+    picsDir: serviceArgs[0],
+    uid: +serviceArgs[1],
+    cookie: serviceArgs[2],
+  }, existing)
+} else if (serviceName === 'mastodon') {
+  newList = await run(methods_mastodon, {
+    mediaDir: serviceArgs[0],
+    server: serviceArgs[1],
+    token: serviceArgs[2],
+  }, existing)
+} else {
+  throw new Error(`Unknown service ${service}`)
+}
+await Deno.writeTextFile(savePath, '[\n' + newList.map((item) => JSON.stringify(item)).join(',\n') + '\n]\n')
