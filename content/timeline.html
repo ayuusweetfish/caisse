@@ -57,18 +57,23 @@ span.newline {
   text-align: end;
   padding-inline-end: 0.5em;
 }
+img.mastodon-em {
+  max-block-size: 1em;
+  inline-size: auto;
+}
 </style>
 
 {{ pagenav }}
 
 <section class='item-contents'>
 {{first = true}}
-{{@ timeline}}
+{{@ item in timeline}}
 {{@ not first}}
 <div role='separator' class='cloudy'></div>
 {{@ end}}
 
 {{@ timelinetype == 'mastodon'}}
+  {{@ {item, table.unpack(item.replies or {})} }}
   {{@ spoiler_text}}
   <blockquote class='note'>{{ spoiler_text }}</blockquote>
   {{@ end}}
@@ -78,6 +83,8 @@ span.newline {
     if tag == 'p' or tag == '/p' then return '<' .. tag .. '>'
     elseif tag == 'br' then return "<br><span class='newline'></span>"
     else return '' end
+  end):gsub(':([A-Za-z0-9_]+):', function (shortcode)
+    return image(file('em/' .. shortcode .. '.png', 'items/' .. mainsavepath), ':' .. shortcode .. ':', 'mastodon-em')
   end) }}
   {{@ m in media}}
     {{@ m:sub(-4) ~= '.mp4' }}
@@ -90,6 +97,7 @@ span.newline {
     {{@ end}}
   {{@ end}}
   <p class='post-timestamp'>{{ timestamp }}</p>
+  {{@ end}}
 {{@ end}}
 
 {{first = false}}
