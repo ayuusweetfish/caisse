@@ -37,8 +37,16 @@ const downloadFile = async (url, headers, dir, bannedType) => {
     const fileNameInHeader = resp.headers.get('Content-Disposition').match(/filename=(.+)/)[1]
     if (fileNameInHeader) fileName = fileNameInHeader
   }
-  const f = await Deno.open(`${dir}/${fileName}`, {create: true, write: true})
-  await resp.body.pipeTo(f.writable)
+  console.log(`%cDownload file ${fileName} -- ${url}`, 'color: grey')
+  let cached = false
+  try {
+    const f = await Deno.open(`${dir}/${fileName}`, {write: true, create: true, createNew: true})
+    await resp.body.pipeTo(f.writable)
+  } catch (e) {
+    if (e instanceof Deno.errors.AlreadyExists) cached = true
+    else throw e
+  }
+  console.log(`%cDownload file ${fileName} -- ` + (cached ? 'Cached, skipping' : 'Finished'), 'color: grey')
   return fileName
 }
 
@@ -162,38 +170,70 @@ const methods_mastodon = {
     let max_id = undefined
     while (true) {
       const list = await getJson(
-        `${args.server}/api/v1/accounts/${uid}/statuses?limit=40&exclude_replies=true&exclude_reblogs=true`
+        `${args.server}/api/v1/accounts/${uid}/statuses?limit=40&exclude_replies=true`
         + (max_id !== undefined ? `&max_id=${max_id}` : ''),
         { 'Authorization': `Bearer ${args.token}` },
       )
       if (list.length === 0) break
-      for (const item of list) {
+      for (const item of list) if (item.account.id === uid && args.acceptedVisibility.indexOf(item.visibility) !== -1) {
         const respObjDetail = await getJson(
           `${args.server}/api/v1/statuses/${item.id}`,
           { 'Authorization': `Bearer ${args.token}` },
         )
         const itemObj = {
           id: item.id,
-          created_at: new Date(respObjDetail.created_at),
+          timestamp: new Date(respObjDetail.created_at),
           spoiler_text: respObjDetail.spoiler_text !== '' ? respObjDetail.spoiler_text : undefined,
           content: respObjDetail.content,
         }
-        itemObj.media = []
-        for (const m of respObjDetail.media_attachments) {
-          const fileName = await downloadFile(
-            m.url,
-            { 'Authorization': `Bearer ${args.token}` },
-            args.mediaDir,
-          )
-          itemObj.media.push(fileName)
+
+        // Media
+        const processMediaList = async (media_attachments) => {
+          const mediaFileList = []
+          for (const m of media_attachments) {
+            const fileName = await downloadFile(
+              m.url,
+              { 'Authorization': `Bearer ${args.token}` },
+              args.mediaDir,
+            )
+            mediaFileList.push(fileName)
+          }
+          return mediaFileList.length === 0 ? undefined : mediaFileList
         }
+        itemObj.media = await processMediaList(respObjDetail.media_attachments)
+
+        // Replies (self only)
+        itemObj.replies = []
+        if (respObjDetail.replies_count > 0) {
+          const respObjReplies = await getJson(
+            `${args.server}/api/v1/statuses/${item.id}/context`,
+            { 'Authorization': `Bearer ${args.token}` },
+          )
+          const addReplySubtree = async (postId) => {
+            for (const reply of respObjReplies.descendants)
+              if (reply.in_reply_to_id === postId && reply.account.id === uid) {
+                const replyItem = {
+                  id: reply.id,
+                  timestamp: new Date(reply.created_at),
+                  spoiler_text: reply.spoiler_text !== '' ? reply.spoiler_text : undefined,
+                  content: reply.content,
+                  media: await processMediaList(reply.media_attachments),
+                }
+                itemObj.replies.push(replyItem)
+                await addReplySubtree(reply.id)
+              }
+          }
+          await addReplySubtree(item.id)
+        }
+        if (itemObj.replies.length === 0) delete itemObj.replies
+
         yield itemObj
       }
       max_id = list[list.length - 1].id
     }
   },
   desc(item) {
-    return `${item.created_at} ${item.content.substring(0, 40)}`
+    return `${item.timestamp.toISOString()} ${item.content.substring(0, 40)}`
   },
   stop(item, existing) {
     return item.id <= existing[0].id
@@ -239,7 +279,8 @@ if (serviceName === 'weibo') {
   newList = await run(methods_mastodon, {
     mediaDir: serviceArgs[0],
     server: serviceArgs[1],
-    token: serviceArgs[2],
+    acceptedVisibility: serviceArgs[2].split(',').map((s) => s.trim()),
+    token: serviceArgs[3],
   }, existing)
 } else {
   throw new Error(`Unknown service ${service}`)
