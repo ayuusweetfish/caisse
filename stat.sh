@@ -8,6 +8,7 @@ find ../../content -type f \
   -not -name "page.txt" \
   | lua build.lua database.tsv ../../content/
 
-find ../../content/items/backyard/*/* -type f \
+find -L ../../content/items/backyard/*/* -type f \
+  -not -path "../../content/items/backyard/timeline/*" \
   -not -name "page.txt" \
   | lua build.lua ../../content/items/backyard/stat_database.tsv ../../content/
