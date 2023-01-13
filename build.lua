@@ -791,6 +791,7 @@ for i = 1, #backyarditems do
     registeritemmarkup('backyard/' .. backyarditems[i].name, 'backyard')
   end
 end
+registeritemmarkup('backyard', 'backyard')
 
 local revloglatest = 2022*12 + 11
 local revlogfirst = 2022*12 + 10
