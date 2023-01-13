@@ -29,6 +29,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2022.23> <link backyard>～>
   <li <date 2022.22> 近期一直在做的曲子！<link vividness 《%》>>
   <li <date 2022.22> <link webfont>>
   <li <date 2022.22> 加上了大量机翻英文废话>
@@ -59,6 +60,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2022.23> <link backyard>.>
   <li <date 2022.22> <link vividness>, a piece I’ve been working on recently.>
   <li <date 2022.22> <link webfont>.>
   <li <date 2022.22> Added an amount of machine-translated gibberish English content.>
