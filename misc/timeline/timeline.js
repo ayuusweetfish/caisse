@@ -43,7 +43,10 @@ const downloadFile = async (url, headers, dir, bannedType) => {
     const f = await Deno.open(`${dir}/${fileName}`, {write: true, create: true, createNew: true})
     await resp.body.pipeTo(f.writable)
   } catch (e) {
-    if (e instanceof Deno.errors.AlreadyExists) cached = true
+    if (e instanceof Deno.errors.AlreadyExists) {
+      cached = true
+      await resp.body.cancel()
+    }
     else throw e
   }
   console.log(`%cDownload file ${fileName} -- ` + (cached ? 'Cached, skipping' : 'Finished'), 'color: grey')
