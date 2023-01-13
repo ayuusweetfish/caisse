@@ -57,14 +57,25 @@ span.newline {
   text-align: end;
   padding-inline-end: 0.5em;
 }
+blockquote .post-timestamp {
+  padding-inline-end: 0;
+}
+
 img.mastodon-em {
   max-block-size: 1em;
   inline-size: auto;
+}
+
+.item-contents p.weibo-repost-author {
+  text-indent: 0;
+  font-weight: bold;
 }
 </style>
 
 {{ pagenav }}
 
+{{noalt.zh=}}发布的内容，未提供特定文字描述
+{{noalt.en=}}Post content without specific alt-text
 {{videotext.zh=}}视频
 {{videotext.en=}}Video
 
@@ -76,7 +87,7 @@ img.mastodon-em {
 {{@ end}}
 
 {{@ timelinetype == 'mastodon'}}
-  {{@ {item, table.unpack(item.replies or {})} }}
+{{@ {item, table.unpack(item.replies or {})} }}
   {{@ spoiler_text}}
   <blockquote class='note'>{{ spoiler_text }}</blockquote>
   {{@ end}}
@@ -92,7 +103,7 @@ img.mastodon-em {
   {{@ m in media}}
     {{@ m:sub(-4) ~= '.mp4' }}
       <div class='image-container'>
-        {{ image(file('media/' .. m, 'items/' .. mainsavepath), 'Post content without specific alt-text') }}
+        {{ image(file('media/' .. m, 'items/' .. mainsavepath), tr(noalt)) }}
       </div>
     {{@ end}}
     {{@ m:sub(-4) == '.mp4' }}
@@ -106,7 +117,39 @@ img.mastodon-em {
     {{@ end}}
   {{@ end}}
   <p class='post-timestamp'>{{ timestamp }}</p>
+{{@ end}}
+{{@ end}}
+
+{{@ timelinetype == 'weibo'}}
+{{ item.isitem = true }}
+{{ processtext = function (text)
+  return htmlescape(text)
+    :gsub('\n', "<br><span class='newline'></span>")
+    :gsub('  +', function (s) return string.rep('&nbsp;', #s) end)
+end }}
+{{@ {item, table.unpack(item.comments or {})} }}
+  <p>{{ processtext(text) }}</p>
+  <p class='post-timestamp'>{{ timestamp }}</p>
+
+  {{@ pic in pics}}
+    <div class='image-container'>
+      {{ image(file('pics/' .. pic, 'items/' .. mainsavepath), tr(noalt)) }}
+    </div>
   {{@ end}}
+
+  {{@ isitem and repost}}
+  <blockquote>
+    <p class='weibo-repost-author'>@{{ repost.user.name }}</p>
+    <p>{{ processtext(repost.text) }}</p>
+    {{@ pic in repost.pics}}
+      <div class='image-container'>
+        {{ image(file('pics/' .. pic, 'items/' .. mainsavepath), tr(noalt)) }}
+      </div>
+    {{@ end}}
+    <p class='post-timestamp'>{{ repost.timestamp }}</p>
+  </blockquote>
+  {{@ end}}
+{{@ end}}
 {{@ end}}
 
 {{first = false}}
