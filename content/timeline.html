@@ -1,0 +1,80 @@
+<header>
+  <h1>{{ title }}</h1>
+  {{@ intro }}
+    <p>{{ intro }}</p>
+  {{@ end }}
+</header>
+
+{{navtext.prev.zh=}}上一页
+{{navtext.prev.en=}}Prev
+{{navtext.next.zh=}}下一页
+{{navtext.next.en=}}Next
+{{pagetext.prefix.zh=}}第
+{{pagetext.prefix.en=}}Page
+{{pagetext.infix.zh=}}页，共
+{{pagetext.infix.en=}}of
+{{pagetext.suffix.zh=}}页
+{{pagetext.suffix.en=''}}
+{{pagenav =}}
+<div role='separator' class='windy'></div>
+<div class='pagenav'>
+<span>{{@ pagenum > 1}}<a
+  class='pastel {{curcat}}'
+  href='/{{mainsavepath}}{{ if pagenum - 1 == 1 then return '' else return '/p' .. tostring(pagenum-1) end }}'
+>{{ navtext.prev }}</a>{{@ end}}</span>
+<span>{{ pagetext.prefix }} {{ pagenum }} {{ pagetext.infix }} {{ pagenumtotal }} {{ pagetext.suffix }}</span>
+<span>{{@ pagenum < pagenumtotal}}<a
+  class='pastel {{curcat}}'
+  href='/{{mainsavepath}}/p{{pagenum+1}}'>{{ navtext.next }}</a>{{@ end}}</span>
+</div>
+<div role='separator' class='windy'></div>
+
+{{=}}
+
+<style>
+.pagenav {
+  display: flex;
+  text-align: center;
+  margin-block-start: -1em;
+  margin-block-end: -1em;
+}
+.pagenav span:nth-child(1),
+.pagenav span:nth-child(3) {
+  flex: 1;
+}
+.pagenav span:nth-child(2) {
+  flex: 3;
+}
+</style>
+
+{{ pagenav }}
+
+<section class='item-contents'>
+{{first = true}}
+{{@ timeline}}
+{{@ not first}}
+<div role='separator' class='cloudy'></div>
+{{@ end}}
+
+{{@ timelinetype == 'mastodon'}}
+  {{ content:gsub('<([A-Za-z/]+).->', function (tag)
+    if tag == 'br' or tag == 'p' or tag == '/p' then return '<' .. tag .. '>'
+    else return '' end
+  end) }}
+  {{@ m in media}}
+    {{@ m:sub(-4) ~= '.mp4' }}
+      <div class='image-container'>
+        {{ image(file('media/' .. m, 'items/' .. mainsavepath), 'Post content without specific alt-text') }}
+      </div>
+    {{@ end}}
+    {{@ m:sub(-4) == '.mp4' }}
+      (video)
+    {{@ end}}
+  {{@ end}}
+{{@ end}}
+
+{{first = false}}
+{{@ end}}
+</section>
+
+{{ pagenav }}

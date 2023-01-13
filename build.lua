@@ -283,11 +283,12 @@ local function registeritemmarkup(path, curcat, extralocals, pageextralocals)
     locals = locals,
   }
 end
-local function registeritemtempl(path, curcat, templatepath, extralocals)
+local function registeritemtempl(path, curcat, templatepath, extralocals, pagination)
   itemreg[path] = {
     cat = curcat,
     locals = extralocals or {},
     template = templatepath,
+    pagination = pagination,
   }
 end
 local function registeritemfile(path, curcat)
@@ -688,7 +689,25 @@ local function renderallitems()
       locals.curcat = item.cat
       print(item.cat, caisse.envadditions.tr(locals.title))
       if item.template ~= nil then
-        renderpage(path, item.template, item.locals)
+        if item.pagination ~= nil then
+          local list = item.pagination.list
+          local perpage = item.pagination.perpage
+          local var = item.pagination.name
+          local pagestotal = math.ceil(#list / perpage)
+          locals.pagenumtotal = pagestotal
+          locals.mainsavepath = path
+          for i = 1, pagestotal do
+            local locals2 = {}
+            for k, v in pairs(locals) do locals2[k] = v end
+            local listseg = {}
+            for j = 1, perpage do listseg[j] = list[(i - 1) * perpage + j] end
+            locals2.pagenum = i
+            locals2[var] = listseg
+            renderpage(path .. (i == 1 and '' or '/p' .. i), item.template, locals2)
+          end
+        else
+          renderpage(path, item.template, locals)
+        end
       else
         -- Markup
         markupfnsenvitem = path
@@ -760,7 +779,13 @@ registeritemmarkup('colophon', 'home')
 
 local backyarditems = require('content/items/backyard/list')
 for i = 1, #backyarditems do
-  registeritemmarkup('backyard/' .. backyarditems[i], 'backyard')
+  if backyarditems[i].templ then
+    registeritemtempl('backyard/' .. backyarditems[i].name, 'backyard', backyarditems[i].templ,
+      render('items/backyard/' .. backyarditems[i].name .. '/page.txt'),
+      backyarditems[i].pagination)
+  else
+    registeritemmarkup('backyard/' .. backyarditems[i].name, 'backyard')
+  end
 end
 
 local revloglatest = 2022*12 + 11
