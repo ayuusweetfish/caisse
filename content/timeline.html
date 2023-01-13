@@ -20,7 +20,7 @@
 <div class='pagenav'>
 <span>{{@ pagenum > 1}}<a
   class='pastel {{curcat}}'
-  href='/{{mainsavepath}}{{ if pagenum - 1 == 1 then return '' else return '/p' .. tostring(pagenum-1) end }}'
+  href='/{{mainsavepath}}{{* if pagenum - 1 == 1 then return '' else return '/p' .. tostring(pagenum-1) end }}'
 >{{ navtext.prev }}</a>{{@ end}}</span>
 <span>{{ pagetext.prefix }} {{ pagenum }} {{ pagetext.infix }} {{ pagenumtotal }} {{ pagetext.suffix }}</span>
 <span>{{@ pagenum < pagenumtotal}}<a
@@ -45,6 +45,18 @@
 .pagenav span:nth-child(2) {
   flex: 3;
 }
+
+span.newline {
+  display: inline-block;
+  width: 2em;
+}
+
+.post-timestamp {
+  font-size: 0.9rem;
+  opacity: 0.5;
+  text-align: end;
+  padding-inline-end: 0.5em;
+}
 </style>
 
 {{ pagenav }}
@@ -57,8 +69,14 @@
 {{@ end}}
 
 {{@ timelinetype == 'mastodon'}}
-  {{ content:gsub('<([A-Za-z/]+).->', function (tag)
-    if tag == 'br' or tag == 'p' or tag == '/p' then return '<' .. tag .. '>'
+  {{@ spoiler_text}}
+  <blockquote class='note'>{{ spoiler_text }}</blockquote>
+  {{@ end}}
+  {{ content:gsub('<a .-href=".-/@([A-Za-z0-9_.]-)".->.-</a>', function (uid)
+    return '@' .. uid
+  end):gsub('<([A-Za-z/]+).->', function (tag)
+    if tag == 'p' or tag == '/p' then return '<' .. tag .. '>'
+    elseif tag == 'br' then return "<br><span class='newline'></span>"
     else return '' end
   end) }}
   {{@ m in media}}
@@ -71,6 +89,7 @@
       (video)
     {{@ end}}
   {{@ end}}
+  <p class='post-timestamp'>{{ timestamp }}</p>
 {{@ end}}
 
 {{first = false}}
