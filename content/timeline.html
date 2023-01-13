@@ -91,9 +91,9 @@ img.mastodon-em {
   {{@ spoiler_text}}
   <blockquote class='note'>{{ spoiler_text }}</blockquote>
   {{@ end}}
-  {{ content:gsub('<a .-href=".-/@([A-Za-z0-9_.]-)".->.-</a>', function (uid)
+  {{ content:gsub('<a [^>]-href="[^"]-/@([A-Za-z0-9_.]-)"[^>]->[^<]-</a>', function (uid)
     return '@' .. uid
-  end):gsub('<([A-Za-z/]+).->', function (tag)
+  end):gsub('<([A-Za-z/]+)[^>]->', function (tag)
     if tag == 'p' or tag == '/p' then return '<' .. tag .. '>'
     elseif tag == 'br' then return "<br><span class='newline'></span>"
     else return '' end
