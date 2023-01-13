@@ -65,6 +65,9 @@ img.mastodon-em {
 
 {{ pagenav }}
 
+{{videotext.zh=}}视频
+{{videotext.en=}}Video
+
 <section class='item-contents'>
 {{first = true}}
 {{@ item in timeline}}
@@ -93,7 +96,13 @@ img.mastodon-em {
       </div>
     {{@ end}}
     {{@ m:sub(-4) == '.mp4' }}
-      (video)
+      {{rendermarkup(
+[[
+!<filetable
+  <file ]] .. ('media/' .. m) ..
+  ' ' .. tr(videotext) .. [[>
+>
+]], mainsavepath)}}
     {{@ end}}
   {{@ end}}
   <p class='post-timestamp'>{{ timestamp }}</p>
