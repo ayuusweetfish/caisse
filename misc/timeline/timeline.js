@@ -7,6 +7,9 @@
   <...>
 */
 
+// Required only by Douban
+import { DOMParser } from 'https://deno.land/x/deno_dom@v0.1.36-alpha/deno-dom-wasm.ts'
+
 const getJson = async (url, headers) => {
   for (let i = 0; i < 5; i++) {
     try {
@@ -22,7 +25,7 @@ const getJson = async (url, headers) => {
   throw new Error(`Cannot fetch JSON from ${url}`)
 }
 
-const downloadFile = async (url, headers, dir, bannedType) => {
+const downloadFile = async (url, headers, dir, fileName, bannedType) => {
   try {
     await Deno.mkdir(dir)
   } catch (e) {
@@ -32,10 +35,12 @@ const downloadFile = async (url, headers, dir, bannedType) => {
   if (bannedType && resp.headers.get('Content-Type').indexOf(bannedType) !== -1) {
     throw new Error(`File download returned unexpected type ${bannedType}. Please check cookies or tokens. Link: ${url}`)
   }
-  let fileName = url.match(/\/([^\/]+)$/)[1]
-  if (resp.headers.get('Content-Disposition')) {
-    const fileNameInHeader = resp.headers.get('Content-Disposition').match(/filename=(.+)/)[1]
-    if (fileNameInHeader) fileName = fileNameInHeader
+  if (!fileName) {
+    fileName = url.match(/\/([^\/]+)$/)[1]
+    if (resp.headers.get('Content-Disposition')) {
+      const fileNameInHeader = resp.headers.get('Content-Disposition').match(/filename=(.+)/)[1]
+      if (fileNameInHeader) fileName = fileNameInHeader
+    }
   }
   console.log(`%cDownload file ${fileName} -- ${url}`, 'color: grey')
   let cached = false
@@ -53,6 +58,8 @@ const downloadFile = async (url, headers, dir, bannedType) => {
   return fileName
 }
 
+const sleep = (ms) => new Promise((rslv, rj) => setTimeout(rslv, ms))
+
 const methods_weibo = {
   async* get(args) {
     const cookie = args.cookie
@@ -62,6 +69,7 @@ const methods_weibo = {
           `https://weibo.com/ajax/common/download?pid=${id}`,
           { 'Cookie': cookie },
           args.picsDir,
+          undefined,
           'text/html',
         )
     }
@@ -247,6 +255,109 @@ const methods_mastodon = {
   },
 }
 
+const methods_douban = {
+  async* get(args) {
+    const { imgDir, uid, cookie } = args
+
+    const recurseMod = (el) => {
+      if (!el.classList) return
+
+      // Prefix classes
+      const modClassList = []
+      for (const kl of el.classList) modClassList.push('douban--' + kl)
+      el.setAttribute('class', modClassList.join(' '))
+
+      // Remove unused attributes
+      const attrsToRemove = []
+      for (const { name } of el.attributes)
+        if (name.startsWith('on') || name.startsWith('data-'))
+          attrsToRemove.push(name)
+      for (const attr of attrsToRemove) el.removeAttribute(attr)
+
+      // Recurse
+      for (const ch of el.childNodes) {
+        recurseMod(ch)
+        if (el.tagName === 'STYLE') el.remove()
+      }
+    }
+
+    /*
+      cyrb53 (c) 2018 bryc (github.com/bryc)
+      A fast and simple hash function with decent collision resistance.
+      Largely inspired by MurmurHash2/3, but with a focus on speed/simplicity.
+      Public domain. Attribution appreciated.
+    */
+    const hash_cyrb_hex64 = (str, seed = 0) => {
+      let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed
+      for (let i = 0, ch; i < str.length; i++) {
+        ch = str.charCodeAt(i)
+        h1 = Math.imul(h1 ^ ch, 2654435761)
+        h2 = Math.imul(h2 ^ ch, 1597334677)
+      }
+      h1 = Math.imul(h1 ^ (h1>>>16), 2246822507) ^ Math.imul(h2 ^ (h2>>>13), 3266489909)
+      h2 = Math.imul(h2 ^ (h2>>>16), 2246822507) ^ Math.imul(h1 ^ (h1>>>13), 3266489909)
+      return (h2>>>0).toString(16).padStart(8, '0') +
+             (h1>>>0).toString(16).padStart(8, '0')
+    }
+
+    for (let p = 1; ; p++) {
+      const resp = await fetch(
+        `https://www.douban.com/people/${uid}/statuses?p=${p}`,
+        { headers: { 'Cookie': cookie } },
+      )
+      if (resp.status !== 200) {
+        const msg = `Status ${resp.status}. Retry later.`
+        console.log(`%c${msg}`, 'color: red')
+        throw new Error(msg)
+      }
+      const html = await resp.text()
+
+      const doc = new DOMParser().parseFromString(html, 'text/html')
+      const els = doc.querySelectorAll('.stream-items > .new-status')
+      if (els.length === 0) break
+      console.log(`==== page ${p}, count ${els.length} ====`)
+
+      for (const wrapper of els) {
+        const sid = +wrapper.getAttribute('data-sid')
+
+        recurseMod(wrapper)
+
+        let html = wrapper.outerHTML
+
+        const imagesToDownload = []
+        html = html.replace(/https?:\/\/img(.+)\.doubanio\.com([A-Za-z0-9-_%\/.@]+)/g,
+          (s) => {
+            const hashStr = hash_cyrb_hex64(s)
+            const ext = s.match(/\.([^.]+)$/)[1]
+            const fileName = `${hashStr}.${ext}`
+            imagesToDownload.push([s, fileName])
+            return `${imgDir}/${fileName}`
+          })
+
+        for (const [url, fileName] of imagesToDownload)
+          await downloadFile(url, { 'Cookie': cookie }, imgDir, fileName)
+
+        yield {
+          id: sid,
+          content: html,
+        }
+      }
+
+      if (p % 5 === 4) {
+        console.log(`%c==== Pausing for 2s to avoid flooding ====`, 'color: grey')
+        await sleep(2000)
+      }
+    }
+  },
+  desc(item) {
+    return `${item.id} ${item.content.match(/[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}/) || ''}`
+  },
+  stop(item, existing) {
+    return item.id <= existing[0].id // Short-circuit quickly
+      && existing.filter((i) => i.id === item.id).length > 0
+  },
+}
+
 const run = async (methods, args, existing) => {
   const itr = methods.get(args)
   const newList = []
@@ -288,6 +399,12 @@ if (serviceName === 'weibo') {
     server: serviceArgs[1],
     acceptedVisibility: serviceArgs[2].split(',').map((s) => s.trim()),
     token: serviceArgs[3],
+  }, existing)
+} else if (serviceName === 'douban') {
+  newList = await run(methods_douban, {
+    imgDir: serviceArgs[0],
+    uid: serviceArgs[1],
+    cookie: serviceArgs[2],
   }, existing)
 } else {
   throw new Error(`Unknown service ${service}`)

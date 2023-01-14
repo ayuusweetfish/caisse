@@ -49,18 +49,22 @@ const imagesToDownload = []
 
 for (const wrapper of els) {
   const sid = +wrapper.getAttribute('data-sid')
+  const timestampStr = wrapper.querySelector('.created_at').getAttribute('title')
+  const timestamp = new Date(timestampStr.replace(' ', 'T') + '+08:00')
+
   recurseMod(wrapper)
 
   let html = wrapper.outerHTML
   html = html.replace(/https?:\/\/img(.+)\.doubanio\.com([A-Za-z0-9-_%\/.@]+)/g,
     (s) => {
       const hashStr = hash_cyrb_hex64(s)
-      imagesToDownload.push([s, hashStr])
       const ext = s.match(/\.([^.]+)$/)[1]
-      return `/img-douban/${hashStr}.${ext}`
+      const fileName = `${hashStr}.${ext}`
+      imagesToDownload.push([s, fileName])
+      return `/img-douban/${fileName}`
     })
 
-  console.log(html)
+  console.log(html, sid, timestamp)
 
 /*
   const isReshared = !!wrapper.querySelector('.reshared_by')
@@ -121,3 +125,5 @@ for (const wrapper of els) {
     另外，转发的小组讨论包含 data-atype = "group/topic" 等额外参数，但并不含 data-object-kind 等。
 */
 }
+
+console.log(imagesToDownload)
