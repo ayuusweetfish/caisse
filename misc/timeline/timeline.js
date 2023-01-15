@@ -325,7 +325,7 @@ const methods_douban = {
         let html = wrapper.outerHTML
 
         const imagesToDownload = []
-        html = html.replace(/https?:\/\/img(.+)\.doubanio\.com([A-Za-z0-9-_%\/.@]+)/g,
+        html = html.replace(/https?:\/\/img([0-9]+)\.doubanio\.com([A-Za-z0-9-_%\/\.@]+)/g,
           (s) => {
             const hashStr = hash_cyrb_hex64(s)
             const ext = s.match(/\.([^.]+)$/)[1]
