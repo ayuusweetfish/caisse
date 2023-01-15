@@ -1,7 +1,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1289	unknown
-categories.txt	2834	document
+categories.txt	2857	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4576	unknown
@@ -181,6 +181,7 @@ items/webfont/webfont-zh.svg	29148	image	720	360
 items/wings/Broken Angel Wings.ogg	3811350	audio	280
 items/wings/Broken Angel Wings.pdf	158973	document	4
 items/wings/cover.jpg	134210	image	800	800
+items/yukisora/cover.jpg	22753	image	280	280
 items/zero/Adornment.ogg	5160906	audio	294
 items/zero/Concoction.ogg	12191586	audio	96
 items/zero/Concoction_a10-a.zip	20134894	unknown
@@ -205,9 +206,9 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	21915	unknown
+main.css	22082	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
-timeline.html	2670	unknown
+timeline.html	4005	unknown
 timeofday.html	1756	unknown
 top-fleuron.svg	19723	image	960	90
