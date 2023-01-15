@@ -888,3 +888,11 @@ img.item-banner,
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
+.item-contents .chord-tab .chord-tab-row {
+  margin-block: 1em;
+}
+.item-contents .chord-tab .chord-tab-item {
+  display: inline-block;
+  margin-inline-end: 0.25em;
+}

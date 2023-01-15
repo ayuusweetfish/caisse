@@ -649,8 +649,56 @@ markupfns = {
       artiststr ..
       '</div></div>'
   end,
+
   math = function (string) return katexrender(string, false) end,
   dispmath = function (string) return katexrender(string, true) end,
+
+  chordtab = function (s)
+    local lines = split(s, '\n')
+    local list = {}
+    local paropen = false
+    local firstpar = true
+    for i = 1, #lines do
+      local line = lines[i]
+      if line == '' then
+        if paropen then
+          list[#list + 1] = '</div>'
+          paropen = false
+          firstpar = false
+        end
+      else
+        local p = 1
+        local nextchord = ''
+        local first = true
+        while p <= #line + 1 do
+          local q = line:find('[', p, true) or (#line + 1)
+          if p ~= 1 or p < q then
+            if not paropen then
+              if not firstpar then
+                list[#list + 1] = '<div role="separator" class="cloudy"></div>'
+              end
+              list[#list + 1] = '<div class="chord-tab-par">'
+              paropen = true
+            end
+            if first then
+              list[#list + 1] = '<div class="chord-tab-row">'
+              first = false
+            end
+            list[#list + 1] = '<div class="chord-tab-item">' ..
+              nextchord:gsub('[()M7913o+]+', '<sup>%1</sup>')
+              .. '<br>' .. (p == q and '&nbsp;' or line:sub(p, q - 1)) .. '</div>'
+          end
+          local r = line:find(']', q + 1, true) or (#line + 1)
+          nextchord = line:sub(q + 1, r - 1)
+          p = r + 1
+        end
+        if not first then list[#list + 1] = '</div>' end
+      end
+    end
+    if paropen then list[#list + 1] = '</div>' end
+    return '<div class="chord-tab">' ..
+      table.concat(list) .. '</div>'
+  end,
 }
 caisse.envadditions.rendermarkup = function (s, item)
   local oldmarkupfnsenvitem = markupfnsenvitem
