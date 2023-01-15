@@ -337,9 +337,25 @@ const methods_douban = {
         for (const [url, fileName] of imagesToDownload)
           await downloadFile(url, { 'Cookie': cookie }, imgDir, fileName)
 
+        // Interactions
+        const respObjIntx = await getJson(
+          `https://www.douban.com/j/status/comments?sid=${sid}&resp_type=c_dict`,
+          { 'Cookie': cookie },
+        )
+        const likes = respObjIntx.likers.map((u) => ({ name: u.name, url: u.url }))
+        const comments = respObjIntx.comments.map((c) => ({
+          author: { name: c.author.name, url: c.author.url },
+          text: c.text,
+          reply: (c.ref_comment.author ?
+            { name: c.ref_comment.author.name, url: c.ref_comment.author.url } :
+            undefined),
+        }))
+
         yield {
           id: sid,
           content: html,
+          likes,
+          comments,
         }
       }
 
