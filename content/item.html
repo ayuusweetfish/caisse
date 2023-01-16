@@ -10,13 +10,24 @@
     {{ image(file(bannerimg, 'items/' .. name), tr(bannerimgalt or ''), 'item-banner') }}
   </div>
 {{@ end }}
-{{@ (intro and intro ~= '') or bannerimg }}
+{{@ toc == 'true' }}
+  {{ tableofcontents = {} }}
+  {{ tableofcontents.zh = '目录'}}
+  {{ tableofcontents.en = 'Table of Contents'}}
+  {{ aside.headinglist = markupheadings(tr(contents)) }}
+  <details class='details-toc'>
+    <summary>{{ tableofcontents }}</summary>
+    <section class='table-of-contents'>
+      {{@ h in aside.headinglist }}
+      <p class='toc-h{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
+      {{@ end }}
+    </section>
+  </details>
+{{@ end }}
+{{@ (intro and intro ~= '') or bannerimg or toc == 'true' }}
   <div role='separator' class='item-separator'></div>
 {{@ end }}
 <section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
-{{@ toc == 'true' }}
-{{ aside.headinglist = markupheadings(tr(contents)) }}
-{{@ end }}
 {{@ date }}
 <div class='item-date'>
   {{ renderdate(date) }}
