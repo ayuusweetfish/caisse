@@ -685,8 +685,12 @@ markupfns = {
               first = false
             end
             list[#list + 1] = '<div class="chord-tab-item">' ..
-              nextchord:gsub('[()M7913o+]+', '<sup>%1</sup>')
-              .. '<br>' .. (p == q and '&nbsp;' or line:sub(p, q - 1)) .. '</div>'
+              '<span class="chord-tab-chord">' ..
+                nextchord:gsub('*', 'ø')
+                  :gsub('[()M7913o+%-,ø]+', '<sup>%1</sup>') ..
+              '</span><span class="chord-tab-text">' ..
+                line:sub(p, q - 1) ..
+              '</span></div>'
           end
           local r = line:find(']', q + 1, true) or (#line + 1)
           nextchord = line:sub(q + 1, r - 1)

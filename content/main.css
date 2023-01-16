@@ -890,9 +890,20 @@ img.item-banner,
 }
 
 .item-contents .chord-tab .chord-tab-row {
-  margin-block: 1em;
+  margin-block: 0.5em;
 }
 .item-contents .chord-tab .chord-tab-item {
   display: inline-block;
-  margin-inline-end: 0.25em;
+  margin-inline: 0 0.125em;
+  margin-block: 0.25em;
+  vertical-align: middle;
+  border-left: 0.1em rgba(192, 180, 180, 12%) solid;
+  padding-left: 0.125em;
+}
+.item-contents .chord-tab .chord-tab-item span {
+  display: block;
+  block-size: 1.5em;
+}
+.item-contents .chord-tab div[role='separator'] {
+  margin-block: 0.5em;
 }
