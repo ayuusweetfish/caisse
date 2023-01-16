@@ -730,6 +730,7 @@ local function markupheadings(s)
     h1 = function (w) fn(1, w) return '' end,
     h2 = function (w) fn(2, w) return '' end,
     h3 = function (w) fn(3, w) return '' end,
+    lang = markupfns.lang,
   }, true)
   return list
 end
