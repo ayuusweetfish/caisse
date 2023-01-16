@@ -342,8 +342,8 @@ const methods_douban = {
           `https://www.douban.com/j/status/comments?sid=${sid}&resp_type=c_dict`,
           { 'Cookie': cookie },
         )
-        const likes = respObjIntx.likers.map((u) => ({ name: u.name, url: u.url }))
-        const comments = respObjIntx.comments.map((c) => ({
+        const likes = (respObjIntx.likers || []).map((u) => ({ name: u.name, url: u.url }))
+        const comments = (respObjIntx.comments || []).map((c) => ({
           author: { name: c.author.name, url: c.author.url },
           text: c.text,
           reply: (c.ref_comment.author ?
