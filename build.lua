@@ -684,7 +684,8 @@ markupfns = {
               list[#list + 1] = '<div class="chord-tab-row">'
               first = false
             end
-            list[#list + 1] = '<div class="chord-tab-item">' ..
+            list[#list + 1] = '<div class="chord-tab-item' ..
+                (nextchord == '' and ' chord-tab-item-empty' or '') .. '">' ..
               '<span class="chord-tab-chord">' ..
                 nextchord:gsub('*', 'ø')
                   :gsub('[()M7913o+%-,ø]+', '<sup>%1</sup>') ..
