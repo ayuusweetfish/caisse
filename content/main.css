@@ -904,6 +904,9 @@ img.item-banner,
   border-left: 0.1em rgba(192, 180, 180, 12%) solid;
   padding-left: 0.125em;
 }
+.item-contents .chord-tab .chord-tab-item.chord-tab-item-empty {
+  border-left: none;
+}
 .item-contents .chord-tab .chord-tab-item span {
   display: block;
   block-size: 1.5em;
