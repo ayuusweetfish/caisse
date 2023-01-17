@@ -4,4 +4,5 @@ closed_social.json
 pics_closed_social
 
 https://thu.closed.social
+public, unlisted
 <token redacted>
