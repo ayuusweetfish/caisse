@@ -780,6 +780,7 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 }
 .item-contents > p *,
 .item-contents blockquote.note p,
+.item-contents blockquote p *,
 .item-contents div.image-container p {
   text-indent: 0;
 }
