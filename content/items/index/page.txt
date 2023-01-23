@@ -29,6 +29,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2022.24> 一份最近的打卡日记集合！<link 28-days-22w>>
   <li <date 2022.23> <link fhxl-rehousing>，写点被自己菜哭的纪实>
   <li <date 2022.23> <link yukisora>>
   <li <date 2022.23> <link backyard>～>
@@ -60,6 +61,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2022.24> A log of recent daily activities! <link 28-days-22w>>
   <li <date 2022.23> <link fhxl-rehousing>, documentary of how one cries over her own clumsiness.>
   <li <date 2022.23> <link yukisora>>
   <li <date 2022.23> <link backyard>.>
