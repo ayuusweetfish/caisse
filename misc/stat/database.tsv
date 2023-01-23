@@ -36,8 +36,13 @@ items/28-days-22w/21.jpg	74136	image	1080	810
 items/28-days-22w/22.jpg	33942	image	540	634
 items/28-days-22w/23.jpg	75163	image	540	1102
 items/28-days-22w/24.jpg	105459	image	1080	1080
+items/28-days-22w/25.jpg	32544	image	1074	630
+items/28-days-22w/26.jpg	48421	image	1084	638
 items/28-days-22w/27.jpg	116067	image	540	949
+items/28-days-22w/27a.jpg	30871	image	627	227
 items/28-days-22w/28.jpg	72031	image	540	712
+items/28-days-22w/cover_dandan.jpg	26672	image	400	400
+items/28-days-22w/cover_nonnon.jpg	17865	image	250	250
 items/28-days-22w/kuaile_shouzhang.mp4	17876608	video	117	1078	638
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
@@ -237,7 +242,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	23028	unknown
+main.css	23117	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4005	unknown
