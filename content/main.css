@@ -530,6 +530,8 @@ body.dark div[role='separator']
 .kaomoji {
   display: inline-block;
   vertical-align: middle;
+  height: 1em;
+  line-height: 1;
 }
 .kaomoji > svg {
   block-size: 1em;
