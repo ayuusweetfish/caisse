@@ -13,6 +13,9 @@
   flex-direction: row-reverse;
   text-align: end;
 }
+.music-table .music-track {
+  padding: 0;
+}
 /* Fallback when automatic placement is not implemented */
 .music-table > div:nth-child(1) { grid-row: 1; grid-column: 1; }
 .music-table > div:nth-child(2) { grid-row: 1; grid-column: 2; }
