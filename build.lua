@@ -488,20 +488,19 @@ markupfns = {
   code = function (text)
     local pos = text:find('\n')
     local lang = text:sub(1, pos - 1)
-    local lines = {}
-    local fin = text:find('\n*$')
-    while true do
-      local nextpos = text:find('\n', pos + 1)
-      if not nextpos then
-        if pos >= #text then break end
-        nextpos = #text + 1
-      end
-      if nextpos > fin then break end
-      lines[#lines + 1] = htmlescape(text:sub(pos + 1, nextpos - 1))
-      pos = nextpos
+    local s = text:sub(pos + 1)
+    local hash = basehash(s)
+    local f = io.open('misc/highlight/res.' .. hash .. '.' .. lang .. '.html', 'r')
+    if not f then
+      f = io.open('misc/highlight/src.' .. hash .. '.' .. lang, 'w')
+      f:write(s)
+      f:close()
+      return '<pre class="code">(code not rendered)</pre>'
     end
-    return '<pre class="code"><span>' ..
-      table.concat(lines, '</span><span>') .. '</span></pre>'
+    local result = f:read('a')
+    f:close()
+    local lines = {result}
+    return '<pre class="code chroma">' .. result .. '</pre>'
   end,
   tt = function (text)
     return '<span class="tt">' .. text .. '</span>'
