@@ -1,7 +1,7 @@
 {{title.zh=}}飞花小令出走记
 {{intro.zh=}}笨蛋临时工运维，在线把自己菜哭
 {{title.en=}}Floral Ditties’ Rehousing
-{{intro.en=}}Clumsy Ops sobs over her own incompetance
+{{intro.en=}}Clumsy Ops technician sobs over her own incompetance
 
 {{date=}}2022.23
 
@@ -60,6 +60,59 @@
 服务器它真的好温柔，我哭死。写出来当乐子看，虎年的霉运就留在虎年了 <kao (｡ì _ í｡)>
 
 {{contents.en=}}
-!<note This page is currently <catlink fhxl-rehousing?lang=zh murmurs Chinese-only>.>
+
+Who was it that mentioned mentioned ChatGPT Ops? I really need a bot to supervise myself banging commands!
+
+!<img noclose.jpg <= Meme image, “Do not get close to ssh, you’ll get unfortunate”> <= small caption>>
+
+!<h1 1. Running Away>
+
+Over the past few days I’ve received multiple text messages from A-Cloud (a well-known cloud service provider in China) reminding me that the server I rented will expire soon. This machine is the home of <link fhxl Floral Ditties> and the game will go offline if it collapses, but I, being a deadline warlord, will certainly refrain from taking actions unless it’s the very last day! So that night, with a few hours to go before the expiry, I logged onto the A-Cloud console as planned and found “Renew” —
+
+Why is it asking for over ¥600 a year! This time last year, the offer for new customers was only ¥38 per year, and my memory tells me that it was renewable at the same price for several years. I immediately opened a ticket and was answered by the robot: all prices are subject to the real-time quote. Well well… I probably remembered wrong.
+
+I surely was not going to spend that much. It takes the same amount of work regardless of the destination, so I started to plan for a move to a small server overseas and enable Cloudflare for it; in this way, I would also save the extra rent for this little thing. Perfect! Over to work.
+
+!<h1 2. Drifting Astray>
+
+The small server was really small and the disk was almost full. The game’s library of poetry happened to take up 2 GiB, so I had to find a way to free up some space first.
+
+The first thing to do was to pick a soft target. I saw a huge directory with <link medle medle> written on it — hadn’t it moved to a distributed big house already? <tt= rm -rf>.
+
+The work went on flutently but I suddenly realised that there were months’ worth of access logs in this directory that I hadn’t backed up.
+
+Medle’s logs have always been important to me. It’s nice to occasionally check the number of people who have been playing recently. Whether it’s a lot or not, it gives me a sense of relief that my efforts have not been in vain.
+
+But now I’ve really became Sisyphus myself. If months of logs were lost, all traces of my work being seen will be erased from the world (or at least, my own world). I know there are a lot of people who come to play every day, but it’s quite saddening to lose the visible, tangible records.
+
+At this time I started to cry on the table. (I’m really sobbing over my own stupidity!)
+
+I soon started to realise that I could not appear that useless. I got up and typed “Linux recover rm’ed files” into the search engine, without much hope and prepared to randomly unmount and just forget about it if it did not turn out well. Then something popped up that caught my eye —
+
+!<img stackexchange.png <= A question on StackExchange, whose answer mentioned that if the process was still running, the file could be found in /proc.>>
+
+Gosh, thanks for this design! I rushed off to find it and to see whether I had unknowingly lost any other logs as well.
+
+!<img shell.png <= Interface of ssh; by finding the process ID, the complete content could be recovered by open file descriptors.>>
+
+The content of the file could really be recovered from the file descriptors, and it was indeed complete! Crying tears of joy for reunion (no real tears this time), I backed it up and went on with sorting out — the original residence was half an hour away from expiring!
+
+!<h1 3. Floating Around>
+
+Then I found a few oversized directories tagged with Linux kernel version numbers in <tt= /usr/lib/modules>. A bit of searching led me to the conclusion that the old ones could be uninstalled to free up space. I’ll take it, <tt= apt remove linux-image-5.15.0-43-generic linux-modules-5.15.0-43-generic>.
+
+!<img kernel.png <= Warning that the running kernel will be uninstalled with the suggestion to abort.>>
+
+This Yes/No design seemed terribly error-prone to me; I had to re-read it to make sure that Yes meant to abort. I thought, “let’s reboot, so that we can remove the old version when the kernel is updated!” <tt= sudo reboot>.
+
+This resulted in ssh never connecting (apparently the server did not boot). Even worse, I could not do a Google search by shortcuts and had to switch to other services. I soon realized that I didn't need to search; I visited the web console and connected to VNC to see what was happening, and found this: “Kernel panic — not syncing: System is deadlocked on memory”. Does today’s astrology reveal inappropriateness for moving?
+
+Anyway, I selected the old kernel version from the boot menu and got back in. Quite a bit of storage space miraculously became available after the reboot and was able to accommodate Floral Ditties. Quick, let’s move.
+
+!<h1 4. Waving Goodbye>
+
+While waiting for the data to be uploaded, I revisited the old house at A-Cloud and spent all the remaining time together — it actually had an extra few minutes before being shut down, and at first I thought I’d misread the date (if I had, I’d have been crying over my clumsiness again…). Things went on well after this and the move-in was quite smooth. Anyway, the game is now playable again! The player count had been dwindling recently, and it seemed that no one had noticed the down time (this game probably hadn’t received much attention lately either, teary eyes).
+
+The server it’s so nice and gentle I crying my eyes out. I’m writing this out for fun and leaving the bad luck for the year of the tiger <kao (｡ì _ í｡)>
 
 {{toc=}}true
