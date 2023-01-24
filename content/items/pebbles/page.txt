@@ -12,6 +12,8 @@
 Archive of incomplete or scrappy things made.
 !<hr cloudy>
 
+<link 28-days-22w>, a log of activities at the end of a year. <date 2022.23,2022.24>
+<link yukisora Snowy Sky “Yukisora”>, just a dated chord sheet. <date 2019.23,2022.23>
 <link courses-21> is a collection of immature exercises in cinematic composition and song production.
 <link ne-er-do-well> is a hilarious song (which is large a result of the waggish style of the lyricist).
 <link gradatim> is a platformer/rhythmic game, as the final project in a course on program design. It does not have rich-enough content, hence only a video has been put up.
