@@ -1,0 +1,20 @@
+/* 共用样式表 */
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(NotoSerifSC.common.woff2) format('woff2');
+}
+
+/* 页面专用样式表 */
+@font-face {
+  font-family: 'Noto Serif SC — Page <Fireflies>';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(NotoSerifSC.page-1.woff2) format('woff2');
+}
+body {
+  font-family: 'Noto Serif SC — Page <Fireflies>', 'Noto Serif SC';
+}

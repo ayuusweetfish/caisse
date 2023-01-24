@@ -890,6 +890,12 @@ img.item-banner,
   display: block;
   min-height: 1.5em;
 }
+.chroma .c
+{ color: #58a; }
+.chroma .k
+{ color: #b63; }
+.chroma .s, .chroma .s1
+{ color: #852; }
 
 .item-contents span.katex {
   overflow-x: scroll;
