@@ -55,7 +55,54 @@
 !<hr windy>
 
 {{contents.en=}}
-!<note This page is currently <catlink yukisora?lang=zh pebbles Chinese-only>.>
+
+!<musictrack とあ <= Snowy Sky> <lang ja ユキソラ> cover.jpg Cover of the album. Hatsune Miku in a white costume with decorations in the shape of snowflakes.>
+
+This is a song by <lang ja とあ> (Toa), the Vocaloid producer that I appreciate. Most Japanese songs usually will have chord sheets posted on Japanese websites, but this one was more of a special gift from Toa to the Chinese fans, uploaded to YouTube only over a year later and still absent on Niconico to date. I guess this is why the sites do not have the sheets available, so I made one myself. At the time, I was seeing the first snowfall of 2020 at school and planned to post it on my previous blog site, but then thought it would not make much sense to just post a chord sheet and shelved it.
+Since then, to be honest, I’ve been looking back at this and wondering whether I should post it every time I see a snowfall. Today was my first encounter with the snow in 2023, so I’ll take the opportunity to quietly put it up without much thought about mistakes. I especially like the use of augmented triads of the raised fifth degree.
+
+!<hr windy>
+
+!<chordtab=
+[C]／　[G/B]／　[Eo/Bb]／　[A+]／[A]　[Dm]／　[F/C]／　[Bo]／　[B+]／　
+
+ふ[FM7]わふわ　といきに[Em7][]うつした　お[Dm7]もいでを　[Em7]そっと
+か[FM7]じかむこのてで[Em7][]つつん[Ebm7]でし[Dm7]まった　だけど[Em7]つめたいポッケ
+そ[FM7]わそわのまちの[Em7][]あかりを　な[Dm7]がめ　あ[Em7]るいた
+[F#*7]きみにつながる[FM7][]けしきは　い[Dm7]つも[Em7][]　このき[F(9)]せつ[E+]なん[G#o]だ
+
+[Am(-13)][]こえも　え[G#+]がおも　わ[C(9)/G]すれたく[F#*9]ないよ
+[Dm7]そろそろ　またむかえ[F#*7]ないか[G]な
+
+あ[E7]のユ[A]キソラを[C#m7/G#]あるいて[C#o7/G][]　き[F#+]みを　[Bm]むかえに[Bm7/A]いこっか
+[G#o][G#*7]そ[E7]ん[E(11)/G#]な[A/C#]ゆめにく[D]るまって[E7][]　ねえ　[C#7]ずっと[F#m7]ずっと[F+]
+[Em7][]ね[A(9)]む[E#+]れ[Bm7]たなら　ちょっと[E7][]　しあわ[Bm7]せかな[E7]
+
+き[FM7]らきら　クリスタルに[Em7][]うつした　き[Dm7]おくは　い[Em7]まも
+こ[FM7]ころのすみっこで[Em7][]　そう　あっ[Ebm7]たか[Dm7]　いんだ　まだす[Em7(-9)]こしだけ
+ぴ[FM7]かぴかのまちの[Em7][]　すきまを[Dm7]ぬって　あ[Em7]るいた
+[F#*7]きみとつながる[FM7][]けしきは　い[Dm7]つも[Em7][]　このき[F(9)]せつ[E+]なん[G#o]だ
+
+[Am(-13)][]おとのないし[G#+]ろやみ　ま[C(9)/G]だねむれ[F#*9]ないよ
+[Dm7]もっともっと　あい[F#*7]たいか[G]ら
+
+ねえ　おりて[C]おいでよ　[Em7/B]／　[E*7]／　[A7]／　[Dm]／　[Dm7/C]／　[Bo]／　[G]／[G+]　
+[C/E]／　[F]／　[G]／　[E7]／　[Am7]／　[G#+]／　[Gm7]／　[C]／　[Dm7]／　／　[G]／　／　[E7]／　
+
+しろい[A]くもにつ[C#m7/G#]かまって[C#o7/G][]　き[F#+]みを[Bm]ながめて[Bm7/A]いたくて
+[G#o][G#*7]ど[E7]ん[E(11)/G#]な[A/C#]ちいさな[D]ねがいも[E7][]　ねえ　[C#7]きっと[F#m7]きっと[F+]
+[Em7][]と[A(9)]ど[E#+]い[Bm7]たなら　いつか[Bo7]
+
+ユ[Bb]キソラを[Dm7/A]えがいて[Do7/Ab][]　き[G+]みと　[Cm]どこまで[Cm7/Bb]いこっか
+[Ao][A*7]そ[F9]ん[Bb+]な[Bb/D]ゆめにく[Eb]るまって[F7][]　ねえ　[D7]ずっと[Gm7]ずっと[Gb+]
+[Fm7][]ね[Bb(9)]む[F#+]れ[Cm7]たなら　ちょっと[F7]
+
+しあわ[Bb]せか[Dm7/A]な　[Do/Ab]／　[G+]／[G]　[Cm]／　[Eb/Bb]／　[Ao]／　[F9]／[F+]　
+[Bb/D]／　[Eb]／　[F7]／　[D7]／　[Gm7]／　[F#+]／　[Fm7]／　[Bb]／[F#+]　
+[Cm7]／　／　[F7]／　／　[EbM7]／　
+>
+
+!<hr windy>
 
 {{rellinks.zh=}}
 !<list
@@ -64,3 +111,8 @@
 >
 
 {{rellinks.en=}}
+
+!<list
+  <li <link https://www.bilibili.com/video/BV1Tt41167t8/ Music (Bilibili)>>
+  <li <link https://music.163.com/#/song?id=1410001162 Music (NetEase)>>
+>
