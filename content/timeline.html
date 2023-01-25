@@ -124,7 +124,7 @@ img.mastodon-em {
 ]], mainsavepath)}}
     {{@ end}}
   {{@ end}}
-  <p class='post-timestamp'>{{ timestamp }}</p>
+  <p class='post-timestamp'>{{ accuratetime(timestamp) }}</p>
 {{@ end}}
 {{@ end}}
 
@@ -145,8 +145,10 @@ img.mastodon-em {
      end)
 end }}
 {{@ {item, table.unpack(item.comments or {})} }}
-  <p>{{ processtext(text) }}</p>
-  <p class='post-timestamp'>{{ timestamp }}</p>
+  {{@ text ~= '' }}
+    <p>{{ processtext(text) }}</p>
+    <p class='post-timestamp'>{{ accuratetime(timestamp) }}</p>
+  {{@ end }}
 
   {{@ pic in pics}}
     <div class='image-container'>
@@ -163,7 +165,7 @@ end }}
         {{ image(file('pics/' .. pic, 'items/' .. mainsavepath), tr(noalt)) }}
       </div>
     {{@ end}}
-    <p class='post-timestamp'>{{ repost.timestamp }}</p>
+    <p class='post-timestamp'>{{ accuratetime(repost.timestamp) }}</p>
   </blockquote>
   {{@ end}}
 {{@ end}}
