@@ -184,3 +184,15 @@ With this method, the author's site splits about 1000 commonly used characters i
 The main limitations of this solution are that it requires a separate construction step and the optional genetic algorithm step is time-consuming. However, it may work well for websites with more textual content, such as blogs and encyclopaedias.
 
 {{toc=}}true
+
+{{rellinks.zh=}}
+<list
+  <li <link https://ouuan.moe/post/2023/01/glyph-segregator 延伸阅读：《另一种很新的中文字体网页嵌入方案》 by ouuan>>
+  <li <link https://github.com/ouuan/glyph-segregator glyph-segregator：基于上篇文章原理实现的 TypeScript 程序库>>
+>
+
+{{rellinks.en=}}
+<list
+  <li <link https://ouuan.moe/post/2023/01/glyph-segregator Extended reading: “Another New Method for Chinese Web Font Embedding” by ouuan (Simplified Chinese)>>
+  <li <link https://github.com/ouuan/glyph-segregator glyph-segregator: A TypeScript library based on the principles in the post above>>
+>
