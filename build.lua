@@ -317,6 +317,17 @@ local function katexrender(string, isdisp)
   return katexrendered[hash] or '(formula not rendered)'
 end
 
+-- Dates
+caisse.envadditions.accuratetime = function (utc, tz)
+  local tz = tz or 8
+  local Y, M, D, h, m, s, ms =
+    utc:match('(%d+)-(%d+)-(%d+)T(%d+):(%d+):(%d+).(%d+)Z')
+  return os.date('%F %T', os.time({
+    year = Y, month = M, day = D,
+    hour = h + tz, min = m, sec = s
+  }))
+end
+
 -- Base64
 local base64seq = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 local function base64encode(s)
