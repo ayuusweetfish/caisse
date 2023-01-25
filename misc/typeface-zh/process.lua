@@ -5,10 +5,8 @@ Files to be prepared:
   stray.txt
 Then run without arguments or input:
   lua process.lua
-To copy:
-  for i in AaKaiSong.*.ttf; do woff2_compress $i; rm $i; done
-  rm ../../content/fonts-zh/AaKaiSong.*
-  mv AaKaiSong.*.woff2 ../../content/fonts-zh
+To use the cache:
+  mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
 ]]
 
 local codepoints = {}
@@ -38,14 +36,26 @@ function addsubset(subset, name, skipcss, comment)
   local h = 0
   for i = 1, #subset do h = h * 100019 + subset[i] + 1 end
   h = string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
-  print(string.format(
-    'Subset %s, hash %s, size %d, comment %s',
-    name, h, #subset, comment or '(none)'))
   --print(table.concat(terms, ','))
-  local succeeded = os.execute(string.format(
-    'pyftsubset AaKaiSong2WanZi2.ttf --unicodes=%s --output-file=AaKaiSong.%s.ttf',
-    table.concat(terms, ','), name .. '.' .. h))
-  if not succeeded then os.exit() end
+  -- Check if file exists
+  local woff2path = string.format('AaKaiSong.%s.%s.woff2', name, h)
+  local f = io.open(woff2path, 'r')
+  local exists = (f ~= nil)
+  print(string.format(
+    'Subset %s, hash %s, size %d, comment %s%s',
+    name, h, #subset, comment or '(none)', exists and ' (exists)' or ''))
+  if exists then
+    f:close()
+  else
+    local ttfpath = string.format('AaKaiSong.%s.%s.ttf', name, h)
+    os.execute(string.format(
+      'pyftsubset AaKaiSong2WanZi2.ttf --unicodes=%s --output-file=%s',
+      table.concat(terms, ','), ttfpath))
+    os.execute(string.format(
+      'woff2_compress %s', ttfpath))
+    os.remove(ttfpath)
+  end
+  os.rename(woff2path, '../../content/fonts-zh/' .. woff2path)
   if not skipcss then
     css:write(string.format([[
 @font-face {
