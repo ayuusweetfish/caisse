@@ -1,18 +1,21 @@
 {{contents.zh=}}
-一些不太完整或者比较潦草的产物归档。
-!<hr cloudy>
-
+!<h1 生活碎碎念>
+<link days-rabbit>，农历新年是个全新的起点呀！（多图）<date 2022.24>
 <link 28-days-22w>，年末的打卡日记集合。<date 2022.23,2022.24>
+!<hr>
+
+!<h1 潦草产物>
 <link yukisora 飘雪的天空《ユキソラ》>，只是一份久远的和弦谱。<date 2019.23,2022.23>
 <link courses-21>是一些影视配乐与歌曲制作的不成熟习作。
 <link ne-er-do-well>是一首整活歌曲，主要是拜托的这位词作写的词太整活向了（x
 <link gradatim> 是一个平台跳跃/节奏类游戏，作为之前程序设计课程的结课项目，不过内容不够充实，故只留了一段视频。
 
 {{contents.en=}}
-Archive of incomplete or scrappy things made.
-!<hr cloudy>
-
+!<h1 Life Fragments>
 <link 28-days-22w>, a log of activities at the end of a year. <date 2022.23,2022.24>
+!<hr>
+
+!<h1 Hasty Makings>
 <link yukisora Snowy Sky “Yukisora”>, just a dated chord sheet. <date 2019.23,2022.23>
 <link courses-21> is a collection of immature exercises in cinematic composition and song production.
 <link ne-er-do-well> is a hilarious song (which is large a result of the waggish style of the lyricist).

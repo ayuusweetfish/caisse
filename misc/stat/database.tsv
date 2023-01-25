@@ -1,7 +1,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1289	unknown
-categories.txt	2912	document
+categories.txt	2938	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4576	unknown
@@ -95,6 +95,20 @@ items/courses-21/Sound_Design_Suspense.mp3	1748178	audio	87
 items/courses-21/Sound_Design_Travel.mp4	3125577	video	63	640	360
 items/courses-21/scripts.sh	694	unknown
 items/dates/page.css	984	unknown
+items/days-rabbit/0124a.jpg	138584	image	547	730
+items/days-rabbit/0124b.jpg	148398	image	730	547
+items/days-rabbit/0124c.jpg	140523	image	547	730
+items/days-rabbit/0124d.jpg	142965	image	684	912
+items/days-rabbit/0124e.jpg	91317	image	478	644
+items/days-rabbit/0124f.jpg	142683	image	730	547
+items/days-rabbit/0124g.jpg	124594	image	540	649
+items/days-rabbit/0125a.jpg	127328	image	684	912
+items/days-rabbit/0125b.jpg	78246	image	540	720
+items/days-rabbit/0125c.jpg	185284	image	684	912
+items/days-rabbit/0125d.jpg	23761	image	703	540
+items/days-rabbit/0125e.jpg	140624	image	912	684
+items/days-rabbit/0125f.jpg	184119	image	684	912
+items/days-rabbit/0125g.jpg	111177	image	711	540
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/play/game.data	48550	unknown
 items/daytime-cat/play/game.js	11416	code
@@ -246,6 +260,6 @@ items/zzz/cover.jpg	185995	image	1920	1080
 main.css	23214	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
-timeline.html	4500	unknown
+timeline.html	4582	unknown
 timeofday.html	1756	unknown
 top-fleuron.svg	19723	image	960	90
