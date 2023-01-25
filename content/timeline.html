@@ -71,6 +71,13 @@ img.mastodon-em {
   text-indent: 0;
   font-weight: bold;
 }
+
+.item-contents img.weibo-emotion {
+  display: inline-block;
+  block-size: 1em;
+  inline-size: 1em;
+  vertical-align: middle;
+}
 </style>
 
 {{ pagenav }}
@@ -123,10 +130,19 @@ img.mastodon-em {
 
 {{@ timelinetype == 'weibo'}}
 {{ item.isitem = true }}
+{{ emoimage = require '../misc/timeline/weibo_emotions' }}
 {{ processtext = function (text)
-  return htmlescape(text)
+  return text
     :gsub('\n', "<br><span class='newline'></span>")
     :gsub('  +', function (s) return string.rep('&nbsp;', #s) end)
+    :gsub('%[(.-)%]', function (s)
+      if emoimage[s] then
+        return image(file('weibo_emotions/' .. emoimage[s], 'items/' .. mainsavepath), '[' .. s .. ']', 'weibo-emotion')
+      else
+        print('* Unknown emotion: [' .. s .. ']')
+        return '[' .. s .. ']'
+      end
+     end)
 end }}
 {{@ {item, table.unpack(item.comments or {})} }}
   <p>{{ processtext(text) }}</p>
