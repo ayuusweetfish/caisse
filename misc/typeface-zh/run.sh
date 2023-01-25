@@ -6,5 +6,5 @@ find ../../build -name "index.zh.html" | perl -pe 's/(.+build\/(.+)\/[^\/]+)/\1\
 
 mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
 lua process.lua
-[ -e AaKaiSong.*.woff2 ] && rm AaKaiSong.*.woff2
+test -n "$(find . -maxdepth 1 -name 'AaKaiSong.*.woff2' -print -quit)" && rm AaKaiSong.*.woff2
 rm a.out

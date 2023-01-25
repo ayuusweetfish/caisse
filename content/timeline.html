@@ -139,7 +139,7 @@ img.mastodon-em {
       if emoimage[s] then
         return image(file('weibo_emotions/' .. emoimage[s], 'items/' .. mainsavepath), '[' .. s .. ']', 'weibo-emotion')
       else
-        print('* Unknown emotion: [' .. s .. ']')
+        -- print('* Unknown emotion: [' .. s .. ']')
         return '[' .. s .. ']'
       end
      end)
