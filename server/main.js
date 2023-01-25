@@ -18,7 +18,7 @@ log(`Running at http://localhost:${port}/`)
 
 const siteRootDir = Deno.cwd() + '/build'
 
-const supportedLangs = ['zh', 'en']
+const supportedLangs = ['en', 'zh']
 
 const mime = (s) => {
   const ext = s.substring(s.lastIndexOf('.') + 1).toLowerCase()
