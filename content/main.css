@@ -805,11 +805,14 @@ img.item-banner,
 }
 img.item-banner,
 .item-contents div.image-container img:not(.orig-size) {
-  inline-size: 80%;
+  inline-size: 20em;
+  min-inline-size: 80%;
+  max-inline-size: 100%;
   block-size: auto;
 }
 .item-contents div.image-container img.vertical {
   inline-size: 100%;
+  min-inline-size: unset;
   max-inline-size: 20em;
 }
 .item-contents div.image-container img.small {
@@ -817,7 +820,7 @@ img.item-banner,
   max-inline-size: 15em;
 }
 .item-contents div.image-container img.orig-size {
-  max-inline-size: 80%;
+  max-inline-size: min(max(80%, 20em), 100%); /* clamp() */
   block-size: auto;
 }
 .item-contents div.image-container img.float-end {
