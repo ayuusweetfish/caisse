@@ -10,7 +10,7 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 !<img portrait.jpg 夜晚灯光下的画像 float-end>
 有许多名字和昵称，但在这里叫我甜鱼就可以！图画是一只名叫甜瓜的 AI 根据一张路灯下的自拍绘制的。
 相信世界的美好可能性，永远在学习的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
-做的事情很杂，音乐、游戏、计算机什么的都有一点，整理归类放到这个小站就是敝帚自珍啦，但要是真的被喜欢的话会非常非常开心！
+做的事情很杂，主业音乐/设计学/计算机，副业游戏制作，正在尝试学画画。整理归类放到这个小站就是敝帚自珍啦，但要是真的被喜欢的话会非常非常开心！
 是 INFP/ENFP，外向社恐，无可救药的空想家，重度拖延自救中 ; - ;
 !<clearfloat>
 !<hr windy>
@@ -19,20 +19,20 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 !<img portrait.jpg <= A portrait under the light in the night> float-end>
 There are many ways of calling me, but I’m Ayu here! The picture is drawn by an AI named “sweet melon” referencing a selfie under a street lamp.
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
-I dip into a mixture of things. Music, games, computing, a little bit of everything. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
+I dip into a mixture of things, majoring in music/design/computing, while dabbling in game development and trying to learn to draw. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
 INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to overcome procrastination ; - ;
 !<clearfloat>
 !<hr windy>
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-在尝试学画画，跟着 <link https://drawabox.com/ Drawabox> 的教程摸索中。<date 2022.21>
-Drawabox 完成了第一课。寒假伊始计划把公历年前的一首改编乐曲收尾，然后看一些之前被推荐但一直没看的动画或者书。或许也可以试着画些画或者做点游戏什么的？<kao （´-`）.｡oO（> <date 2022.23>
+Drawabox 盒子练习与第二课同步进行中。
+正在努力思考一些事情，有点难呢 <kao （´-`）.｡oO（> <date 2022.24>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Trying to learn to draw, exploring by the <link https://drawabox.com/ Drawabox> tutorials. <date 2022.21>
-Made through the first lesson of Drawabox. At the beginning of the winter break I plan to finish up a music adaptation from the last Gregorian calendar year, and then get to the animations and books that have been recommended by friends before. Maybe also try to draw something or make games? <kao （´-`）.｡oO（> <date 2022.23>
+Drawabox: boxes challenge and lesson 2 progressing in parallel.
+Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
