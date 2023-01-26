@@ -525,6 +525,9 @@ markupfns = {
   nobr = function (text)
     return '<span class="no-break">' .. text .. '</span>'
   end,
+  title = function (title, text)
+    return '<span title="' .. title .. '">' .. text .. '</span>'
+  end,
   rawlink = function (href, text)
     return '<a href="' .. href .. '">' .. text .. '</a>'
   end,
