@@ -17,10 +17,11 @@ Half-baked polyglot, inquiring into every corner of the world.
 >
 
 !<list
-  <li <link https://github.com/ayuusweetfish GitHub>>
-  <li <link https://discord.com/users/707786894213120082 Discord>>
-  <li <catlink mailto:knock@ayu.land home E-mail>>
+  <li <title ayuusweetfish <link https://github.com/ayuusweetfish GitHub>>>
+  <li <title ayuu#0552 <link https://discord.com/users/707786894213120082 Discord>>>
+  <li <title knock@ayu.land <catlink mailto:knock@ayu.land home E-mail>>>
   <li <link friends 朋友们>>
+  <li <link backyard 后花园>>
 >
 
 !<img fish.png 一条简笔画小鱼 orig-size>
@@ -32,7 +33,6 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <date 2022.24> <link days-rabbit>，新年随缘记录（多图）>
   <li <date 2022.24> 一份最近的打卡日记集合！<link 28-days-22w>>
   <li <date 2022.23> <link fhxl-rehousing>，写点被自己菜哭的纪实>
-  <li <date 2022.23> <link backyard>～>
   <li <date 2022.22> 近期一直在做的曲子！<link vividness 《%》>>
 >
 
@@ -53,6 +53,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link https://discord.com/users/707786894213120082 Discord>>
   <li <catlink mailto:knock@ayu.land home E-mail>>
   <li <link friends Friends>>
+  <li <link backyard Backyard>>
 >
 
 !<img fish.png Line art of a fish orig-size>
@@ -64,7 +65,6 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <date 2022.24> A log of recent daily activities! <link 28-days-22w>>
   <li <date 2022.23> <link fhxl-rehousing>, documentary of how one cries over her own clumsiness.>
   <li <date 2022.23> <link yukisora>>
-  <li <date 2022.23> <link backyard>.>
   <li <date 2022.22> <link vividness>, a piece I’ve been working on recently.>
 >
 
