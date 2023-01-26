@@ -240,7 +240,7 @@ const staticFile = async (req, opts, headers, path) => {
   }
 
   if (realPath.endsWith('.html')) {
-    persistLog(`${req.url} ${JSON.stringify(opts)}`)
+    persistLog(`${req.url}\t${JSON.stringify(opts)}\t${req.headers.get('User-Agent')}\t${req.conn.remoteAddr.hostname}`)
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
     const timeOfDayCur = timeOfDay(opts.tz || 8 * 60)
@@ -370,6 +370,7 @@ const handleConn = async (conn) => {
     for await (const evt of httpConn) (async () => {
       const req = evt.request
       try {
+        req.conn = conn
         await evt.respondWith(await serveReq(req))
       } catch (e) {
         if (!(e instanceof Deno.errors.Http)) {
