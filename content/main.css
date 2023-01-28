@@ -819,6 +819,10 @@ img.item-banner,
   inline-size: 50%;
   max-inline-size: 15em;
 }
+.item-contents div.image-container img.square {
+  inline-size: 25em;
+  max-block-size: 25em;
+}
 .item-contents div.image-container img.orig-size {
   max-inline-size: min(max(80%, 20em), 100%); /* clamp() */
   block-size: auto;
