@@ -43,7 +43,8 @@ Collection of sundries —
     const tz = (new Date().getTimezoneOffset()).toString()
     if (initial !== tz) {
       document.cookie = 'tz=' + tz + '; SameSite=Strict; Path=/; Secure; Max-Age=2592000'
-      window.location = window.location
+      if (document.cookie.indexOf('tz=' + tz) !== -1)
+        window.location = window.location
     }
   })()
   </script>
