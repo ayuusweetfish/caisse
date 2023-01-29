@@ -11,11 +11,13 @@ body {
   padding: 0;
   min-width: 100vw;
   min-height: 100vh;
+  background: hsl(50deg, 100%, 99%); /* fallback */
   background: url(/bin/{{ hashverfile('background.svg') }}), hsl(50deg, 100%, 99%) center;
   color: #181410;
   transition: background ease 0.2s, color ease 0.2s;
 }
 body.dark {
+  background: hsl(36deg, 80%, 7%); /* fallback */
   background: url(/bin/{{ hashverfile('background-dark.svg') }}), hsl(36deg, 80%, 7%) center;
   color: #fefbfa;
 }
@@ -29,12 +31,18 @@ footer {
 }
 
 #main-grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  width: 100%;
+  display: inline-block;
 }
-#main-grid > aside {
-  grid-column: 3;
+nav { width: 20%; }
+main { width: 60%; }
+aside { width: 20%; }
+#main-grid, nav, main, aside {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
 }
+nav, main, aside, footer { padding: 1rem; }
 
 nav > h1 > a {
   text-decoration: none;
@@ -85,8 +93,6 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-nav, main, aside, footer { padding: 1rem; }
-
 aside {
   font-size: 0.9rem;
   padding-block-start: 4rem;
@@ -127,28 +133,16 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   margin-block: 0.5em;
 }
 
-#main-grid > nav {
-  display: block;
-  grid-row: 1;
-  grid-column: 1;
-}
-#main-grid > main {
-  display: block;
-  grid-row: 1;
-  grid-column: 2;
-}
-
 @media (max-width: 60rem) {
-  #main-grid {
-    grid-template-columns: 5fr 16fr;
-  }
   #main-grid > nav {
-    grid-row: 1 / span 2;
-    grid-column: 1;
+    width: 23.8%; /* 5/21 */
+  }
+  #main-grid > main {
+    width: 76.2%; /* 16/21 */
   }
   #main-grid > aside {
-    grid-row: 2;
-    grid-column: 2;
+    width: 76.2%; /* 16/21 */
+    margin-inline-start: 23.8%;
   }
 
   main {
@@ -175,8 +169,11 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
 }
 
 @media (max-width: 115vh), (max-width: 48rem) {
-  #main-grid {
-    display: inline;
+  #main-grid > nav,
+  #main-grid > main,
+  #main-grid > aside {
+    width: 100%;
+    margin-inline-start: 0;
   }
   nav {
     padding-block: 0.5rem 0.25rem;
