@@ -469,7 +469,7 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term .date-term-single {
   display: inline-block;
 }
-.date-term .delim::after { content: '~'; padding-inline: 0.1em 0.2em; }
+.date-term .delim { padding-inline: 0.1em 0.2em; }
 .date-term sup::after {
   font-family: 'Ayuu Little Icons — 221202a';
   line-height: 0;
