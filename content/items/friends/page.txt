@@ -1,26 +1,28 @@
 {{title.zh=}}网上邻居
 {{title.en=}}Network Neighbourhood
 
-{{contents.zh=}}
-
-!<list
-  <li <link https://alicez.ink/ Alice's scribbles>>
-  <li <link https://chiyuru.github.io/ 『姑妄言之姑妄听之』>>
-  <li <link https://pieris05.com/ Pieris' Homepage>>
-  <li <link https://xhhdd.cc/ 邓邓的流水账>>
->
-
-施工中，不会那么草率的ww
-
-!<img friends.jpg <= > small>
-
-{{contents.en=}}
-
-!<list
-  <li (Chinese) <link https://alicez.ink/ Alice's scribbles>>
-  <li (Chinese) <link https://chiyuru.github.io/ 『姑妄言之姑妄听之』>>
-  <li (Chinese) <link https://pieris05.com/ Pieris' Homepage>>
-  <li (Chinese) <link https://xhhdd.cc/ 邓邓的流水账>>
->
-
-Under construction! Should not be this hasty.
+{{{ friendlist = {{
+  title = "Alice's scribbles",
+  name = 'aliceZ',
+  link = 'https://alicez.ink/',
+  tint = {0x00, 0x47, 0xab},
+  image = '1.png',
+}, {
+  title = '『姑妄言之姑妄听之』',
+  name = '驰雨Chiyuru',
+  link = 'https://chiyuru.github.io/',
+  tint = {90, 120, 148},
+  image = '1.png',
+}, {
+  title = "Pieris' Homepage",
+  name = 'Pieris',
+  link = 'https://pieris05.com/',
+  tint = {0x58, 0xb2, 0xdc},
+  image = '1.png',
+}, {
+  title = '邓邓的流水账',
+  name = '邓大胖',
+  link = 'https://xhhdd.cc/',
+  tint = {55, 61, 66},
+  image = '1.png',
+}} }}}

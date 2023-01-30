@@ -1,0 +1,90 @@
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<div role='separator' class='windy'></div>
+
+{{
+hextint = function (r, g, b)
+  if not g then r, g, b = table.unpack(r) end
+  return string.format('#%02x%02x%02x', r, g, b)
+end
+
+normaliselum = function (val, r, g, b)
+  if g then r = {r, g, b}
+  else r = {r[1], r[2], r[3]} end
+  -- https://stackoverflow.com/q/596216
+  for i = 1, 3 do
+    local v = r[i] / 255
+    if v <= 0.04045 then v = v / 12.92
+    else v = ((v + 0.055) / 1.055) ^ 2.4 end
+    r[i] = v
+  end
+  local y = r[1] * 0.1216 + r[2] * 0.7152 + r[3] * 0.0722
+
+  local function invgamma(v)
+    if v <= 0.0031308 then v = v * 12.92
+    else v = 1.055 * (v ^ (1/2.4)) - 0.055 end
+    return math.floor(math.min(1, v) * 255 + 0.5)
+  end
+  local weight = val / y * 0.8 + 0.2
+  return
+    invgamma(r[1] * weight),
+    invgamma(r[2] * weight),
+    invgamma(r[3] * weight)
+end
+}}
+
+{{@ friendlist }}
+<a class='friend-item'
+  style="
+    color: {{ hextint(normaliselum(0.1, tint)) }};
+    border-color: {{ hextint(tint) }};
+    background-image: url({{ file(image, 'items/friends') }});
+  "
+  href='{{ link }}'
+>
+  <h1>{{ title }}</h1>
+  <p>{{ name }}</p>
+  <p>{{ link:match('^https?://(.-)/') }}</p>
+</a>
+{{@ end }}
+
+<style>
+.friend-item {
+  display: block;
+  text-decoration: none;
+  margin-block: 1em;
+  padding-block: 0.25em;
+  margin-inline: 1.5em;
+  padding-inline: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
+}
+.friend-item:nth-of-type(2n+1) {
+  border-inline-start: 0.12em solid black;
+}
+.friend-item:nth-of-type(2n) {
+  text-align: right;
+  border-inline-end: 0.12em solid black;
+  background-position-x: 15%;
+}
+@media (max-width: 115vh), (max-width: 48rem) {
+  .friend-item {
+    margin-inline: 0.5em;
+    padding-inline: 1.5em;
+  }
+  .friend-item:nth-of-type(2n+1) {
+    background-position-x: 90%;
+  }
+  .friend-item:nth-of-type(2n) {
+    background-position-x: 10%;
+  }
+}
+.friend-item h1 {
+  font-size: 1.333rem;
+}
+</style>
+
+<div role='separator' class='windy'></div>

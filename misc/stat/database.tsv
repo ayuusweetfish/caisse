@@ -10,7 +10,7 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	6776	unknown
+framework.html	6946	unknown
 item.html	1398	unknown
 items/28-days-22w/01.jpg	106386	image	912	684
 items/28-days-22w/02.jpg	41088	image	638	500
@@ -147,8 +147,9 @@ items/fireflies/play/index.html	566	unknown
 items/fireflies/play/index.js	206390	code
 items/fireflies/play/index.wasm	613680	unknown
 items/fireflies/screenshot.jpg	34780	image	800	500
-items/friends/friends.jpg	28474	image	540	480
+items/friends/1.png	3541	image	64	64
 items/friends/page.css	45	unknown
+items/friends/page.html	2027	unknown
 items/gradatim/Gradatim_1.jpg	75030	image	1080	720
 items/gradatim/Gradatim_2.jpg	135756	image	1080	720
 items/gradatim/Gradatim_trailer.mp4	1257564	video	32	540	360
@@ -274,7 +275,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	23169	unknown
+main.css	23333	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4582	unknown

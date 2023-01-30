@@ -664,6 +664,7 @@ body.dark img.syncdark { filter: invert(); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0.75em;
 }
 .banner-list .item-banner > h1 {
   position: absolute;
@@ -751,9 +752,6 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
     grid-template-columns: 2fr 3fr;
   }
   a.item-entry:nth-child(4n+3) > section > .item-banner { grid-column: 2; }
-  .item-banner > img {
-    border-radius: 0.75em;
-  }
   .banner-list.compact a.item-entry:nth-child(4n+3) > section > .item-peek { grid-column: 1; grid-row: 1; }
   .banner-list.compact .item-peek {
     max-height: 10rem;
