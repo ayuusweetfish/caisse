@@ -836,17 +836,22 @@ end
 copydir('fonts-zh')
 copydir('vendor/katex-0.16.3')
 
+--[[
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
   for j = 1, #pagelist do
     registeritemmarkup(pagelist[j].name, cats[i].name)
   end
 end
+]]
 registeritemmarkup('index', 'home')
 registeritemmarkup('about', 'home')
-registeritemmarkup('friends', 'home')
+registeritemtempl('friends', 'home',
+  'items/friends/page.html',
+  render('items/friends/page.txt'))
 registeritemmarkup('dates', 'home')
 registeritemmarkup('colophon', 'home')
+--[[
 
 local backyarditems = require('content/items/backyard/list')
 for i = 1, #backyarditems do
@@ -879,6 +884,7 @@ registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true 
 registeritemmarkup('pebbles', 'pebbles', {
   title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
 })
+]]
 
 for _, lang in ipairs({'zh', 'en'}) do
   caisse.lang = lang

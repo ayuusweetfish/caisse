@@ -112,12 +112,12 @@ Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 
 {{contents.zh=}}
 !<h1 戳戳 #contact>
-其实不怎么往社交平台发东西，一时也没搭好访客留言板。可以在 <tt knock@ayu.land> 邮件联系呀～
+其实不怎么往社交平台发东西，一时也没搭好访客留言板。可以在 <tt claire@ayu.land> 邮件联系呀～
 总之谢谢你来！玩得开心！<kao (っ*´∀｀*)っ>
 
 {{contents.en=}}
 !<h1 Knock knock #contact>
-I do not really post much on social media platforms, and have yet to set up a visitors’ message board. I can be reached at <tt knock@ayu.land> by e-mail!
+I do not really post much on social media platforms, and have yet to set up a visitors’ message board. I can be reached at <tt claire@ayu.land> by e-mail!
 Thank you for coming! Have a great time here <kao (っ*´∀｀*)っ>
 
 {{toc=}}true
