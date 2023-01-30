@@ -24,7 +24,7 @@ font = fontforge.font()
 font.fullname = 'Ayuu Little Icons'
 font.familyname = font.fullname
 font.fontname = font.fullname.replace(' ', '')
-font.copyright = '(C) 2022 Ayu'
+font.copyright = '(C) Contributors'
 font.encoding = 'UnicodeFull'
 
 font.em = 2048
@@ -84,5 +84,14 @@ glyph.transform(psMat.translate(
   -font.descent * 0.6
 ))
 glyph.width = w * 3
+
+# Friend links icon (1f517 "link symbol" + 1f495 "two hearts")
+glyph = font.createChar(0x1f517)
+glyph.importOutlines('friend-link.svg')
+glyph.transform(psMat.translate(0, -font.ascent))
+glyph.transform(psMat.scale(1.5))
+w = font.ascent + font.descent
+glyph.transform(psMat.translate(0, font.ascent - font.descent))
+glyph.width = int(w * 1.5)
 
 font.generate('little-icons.ttf')
