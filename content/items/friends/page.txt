@@ -3,26 +3,46 @@
 
 {{{ friendlist = {{
   title = "Alice's scribbles",
-  name = 'aliceZ',
+  author = 'aliceZ',
   link = 'https://alicez.ink/',
+  lang = {'zh'},
   tint = {0x00, 0x47, 0xab},
-  image = '1.png',
+  bgimg = '1.png',
 }, {
   title = '『姑妄言之姑妄听之』',
-  name = '驰雨Chiyuru',
+  author = '驰雨Chiyuru',
   link = 'https://chiyuru.github.io/',
+  lang = {'zh'},
   tint = {90, 120, 148},
-  image = '1.png',
+  bgimg = '1.png',
 }, {
   title = "Pieris' Homepage",
-  name = 'Pieris',
+  author = 'Pieris',
   link = 'https://pieris05.com/',
+  lang = {'zh'},
   tint = {0x58, 0xb2, 0xdc},
-  image = '1.png',
+  bgimg = '1.png',
 }, {
   title = '邓邓的流水账',
-  name = '邓大胖',
+  author = '邓大胖',
   link = 'https://xhhdd.cc/',
+  lang = {'zh'},
   tint = {55, 61, 66},
-  image = '1.png',
+  bgimg = '1.png',
+}, {
+  title = {zh = '样例站点', en = 'Example Site'},
+  author = 'Example',
+  link = 'http://example.com',
+  lang = {'zh', 'en'},
+  tint = {200, 160, 48},
+  pending = true,
+}} }}}
+
+{{{ webringlist = {{
+  title = 'XXIIVV Webring',
+  link = 'https://webring.xxiivv.com/',
+  lang = {'en'},
+  tint = {0x01, 0x01, 0x01},
+  bgimg = '1.png',
+  pending = true,
 }} }}}
