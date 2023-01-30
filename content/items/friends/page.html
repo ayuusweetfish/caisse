@@ -2,8 +2,6 @@
   <h1>{{ title }}</h1>
 </header>
 
-<div role='separator' class='windy'></div>
-
 {{
 hextint = function (r, g, b)
   if not g then r, g, b = table.unpack(r) end
@@ -35,19 +33,28 @@ normaliselum = function (val, r, g, b)
 end
 }}
 
-{{@ friendlist }}
+{{pendingtext.zh=}}等待中～
+{{pendingtext.en=}}Pending~
+
+{{@ list in {friendlist, webringlist} }}
+<div role='separator' class='windy'></div>
+
+{{@ list }}
 <a class='friend-item'
   style="
     color: {{ hextint(normaliselum(0.1, tint)) }};
     border-color: {{ hextint(tint) }};
-    background-image: url({{ file(image, 'items/friends') }});
+    {{@ bgimg }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
   "
   href='{{ link }}'
 >
-  <h1>{{ title }}</h1>
-  <p>{{ name }}</p>
-  <p>{{ link:match('^https?://(.-)/') }}</p>
+<div class='text'>
+  <h1>{{ title }}{{@ pending }} <span title='{{ pendingtext }}'>※</span>{{@ end }}</h1>
+  {{@ author }}<p>{{ author }}</p>{{@ end }}
+  <p>{{ link:match('^https?://([^/]+)') }}</p>
+</div>
 </a>
+{{@ end }}
 {{@ end }}
 
 <style>
@@ -55,7 +62,7 @@ end
   display: block;
   text-decoration: none;
   margin-block: 1em;
-  padding-block: 0.25em;
+  min-block-size: 9.75em;
   margin-inline: 1.5em;
   padding-inline: 2em;
   background-size: contain;
@@ -68,7 +75,7 @@ end
 .friend-item:nth-of-type(2n) {
   text-align: right;
   border-inline-end: 0.12em solid black;
-  background-position-x: 15%;
+  background-position: 15% 50%; /* Spell out fully for NetSurf compatibility */
 }
 @media (max-width: 115vh), (max-width: 48rem) {
   .friend-item {
@@ -76,10 +83,21 @@ end
     padding-inline: 1.5em;
   }
   .friend-item:nth-of-type(2n+1) {
-    background-position-x: 90%;
+    background-position: 90% 50%;
   }
   .friend-item:nth-of-type(2n) {
-    background-position-x: 10%;
+    background-position: 10% 50%;
+  }
+}
+.friend-item .text {
+  padding-block: 0.5em;
+}
+@supports (transform: translateY(-50%)) {
+  .friend-item .text {
+    padding: 0;
+    position: relative;
+    inset-block-start: 4.8em;
+    transform: translateY(-50%);
   }
 }
 .friend-item h1 {
