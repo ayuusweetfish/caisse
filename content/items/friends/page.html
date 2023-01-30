@@ -33,13 +33,25 @@ normaliselum = function (val, r, g, b)
 end
 }}
 
-{{pendingtext.zh=}}等待中～
-{{pendingtext.en=}}Pending~
-
 {{@ list in {friendlist, webringlist} }}
 <div role='separator' class='windy'></div>
 
-{{@ list }}
+{{
+  native, foreign = {}, {}
+  for _, i in ipairs(list) do
+    local found = false
+    for _, sitelang in ipairs(i.lang) do
+      if sitelang == lang then
+        found = true; break
+      end
+    end
+    if found then native[#native + 1] = i
+    else foreign[#foreign + 1] = i end
+  end
+}}
+
+{{@ sublist in {native, foreign} }}
+{{@ sublist }}
 <a class='friend-item'
   style="
     color: {{ hextint(normaliselum(0.1, tint)) }};
@@ -49,7 +61,9 @@ end
   href='{{ link }}'
 >
 <div class='text'>
-  <h1>{{ title }}{{@ pending }} <span title='{{ pendingtext }}'>※</span>{{@ end }}</h1>
+  <h1><span class='title'>{{ title }}</span><!--
+    -->{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span>{{@ end }}<!--
+    --></h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
   <p>{{ link:match('^https?://([^/]+)') }}</p>
 </div>
@@ -57,12 +71,14 @@ end
 {{@ end }}
 {{@ end }}
 
+{{@ end }}
+
 <style>
 .friend-item {
   display: block;
   text-decoration: none;
-  margin-block: 1em;
-  min-block-size: 9.75em;
+  margin-block: 1.5em;
+  min-block-size: 7.5em;
   margin-inline: 1.5em;
   padding-inline: 2em;
   background-size: contain;
@@ -96,12 +112,35 @@ end
   .friend-item .text {
     padding: 0;
     position: relative;
-    inset-block-start: 4.8em;
+    inset-block-start: 3.6em;
     transform: translateY(-50%);
   }
 }
+.friend-item h1,
+.friend-item p {
+  margin-block: 0.5em;
+}
 .friend-item h1 {
   font-size: 1.333rem;
+  display: flex;
+  flex-direction: row;
+}
+.friend-item:nth-of-type(2n) h1 {
+  flex-direction: row-reverse;
+}
+.friend-item h1 > span {
+  display: inline-block;
+}
+.friend-item h1 > span.title {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.friend-item:nth-of-type(2n+1) h1 > span.icon {
+  margin-inline-start: 0.25em;
+}
+.friend-item:nth-of-type(2n) h1 > span.icon {
+  margin-inline-end: 0.25em;
 }
 </style>
 

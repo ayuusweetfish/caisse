@@ -1,6 +1,14 @@
 {{title.zh=}}网上邻居
 {{title.en=}}Network Neighbourhood
 
+{{pendingtext.zh=}}等待中～
+{{pendingtext.en=}}Pending~
+
+{{langnames.zh.zh=}}汉语
+{{langnames.zh.en=}}Chinese
+{{langnames.en.zh=}}英语
+{{langnames.en.en=}}English
+
 {{{ friendlist = {{
   title = "Alice's scribbles",
   author = 'aliceZ',
@@ -30,7 +38,7 @@
   tint = {55, 61, 66},
   bgimg = '1.png',
 }, {
-  title = {zh = '样例站点', en = 'Example Site'},
+  title = {zh = '样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点', en = 'Example Site'},
   author = 'Example',
   link = 'http://example.com',
   lang = {'zh', 'en'},
