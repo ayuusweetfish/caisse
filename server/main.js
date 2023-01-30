@@ -240,7 +240,13 @@ const staticFile = async (req, opts, headers, path) => {
   }
 
   if (realPath.endsWith('.html')) {
-    persistLog(`${req.url}\t${JSON.stringify(opts)}\t${req.headers.get('User-Agent')}\t${req.conn.remoteAddr.hostname}`)
+    persistLog([
+      req.url,
+      JSON.stringify(opts),
+      req.headers.get('User-Agent'),
+      req.conn.remoteAddr.hostname,
+      req.headers.get('Referer'),
+    ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
     const timeOfDayCur = timeOfDay(opts.tz || 8 * 60)
