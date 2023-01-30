@@ -147,9 +147,18 @@ items/fireflies/play/index.html	566	unknown
 items/fireflies/play/index.js	206390	code
 items/fireflies/play/index.wasm	613680	unknown
 items/fireflies/screenshot.jpg	34780	image	800	500
-items/friends/1.png	3541	image	64	64
-items/friends/page.css	45	unknown
-items/friends/page.html	2051	unknown
+items/friends/alicez-bg.png	30117	image	1485	871
+items/friends/alicez.png	33251	image	1485	871
+items/friends/build.sh	337	unknown
+items/friends/chiyuru-bg.png	87596	image	2008	1036
+items/friends/chiyuru.png	98284	image	2008	1036
+items/friends/page.html	3939	unknown
+items/friends/pieris-bg.png	28618	image	1015	727
+items/friends/pieris.png	34082	image	1015	727
+items/friends/webring-bg.png	31492	image	1200	600
+items/friends/webring.png	45959	image	1200	600
+items/friends/xhhdd-bg.png	48178	image	1797	983
+items/friends/xhhdd.png	66368	image	1797	983
 items/gradatim/Gradatim_1.jpg	75030	image	1080	720
 items/gradatim/Gradatim_2.jpg	135756	image	1080	720
 items/gradatim/Gradatim_trailer.mp4	1257564	video	32	540	360

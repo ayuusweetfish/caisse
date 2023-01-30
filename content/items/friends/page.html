@@ -2,6 +2,10 @@
   <h1>{{ title }}</h1>
 </header>
 
+<section class='item-contents'>
+  {{ rendermarkup(tr(intro)) }}
+</section>
+
 {{
 hextint = function (r, g, b)
   if not g then r, g, b = table.unpack(r) end
@@ -52,6 +56,7 @@ end
 
 {{@ sublist in {native, foreign} }}
 {{@ sublist }}
+{{ hash = basehash(name .. link) }}
 <a class='friend-item'
   style="
     color: {{ hextint(normaliselum(0.1, tint)) }};
@@ -65,9 +70,14 @@ end
     -->{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span>{{@ end }}<!--
     --></h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
-  <p>{{ link:match('^https?://([^/]+)') }}</p>
+  <p class='pastel-underline pastel-underline-{{ hash }}'>{{ link:match('^https?://([^/]+)') }}</p>
 </div>
 </a>
+<style>
+.pastel-underline-{{ hash }}::after {
+  background: {{ hextint(normaliselum(0.4, tint)) }};
+}
+</style>
 {{@ end }}
 {{@ end }}
 
@@ -141,6 +151,19 @@ end
 }
 .friend-item:nth-of-type(2n) h1 > span.icon {
   margin-inline-end: 0.25em;
+}
+.friend-item p.pastel-underline {
+  display: inline-block;
+  margin-block-start: 0;
+}
+.friend-item p.pastel-underline::after {
+  content: '';
+  display: block;
+  block-size: 0.12em;
+  margin-block-start: -0.12em;
+  margin-block-end: -0.12em;
+  border-radius: 1em;
+  opacity: 0.2;
 }
 </style>
 

@@ -1,6 +1,12 @@
 {{title.zh=}}网上邻居
 {{title.en=}}Network Neighbourhood
 
+{{intro.zh=}}
+
+{{intro.en=}}
+
+{{=}}
+
 {{pendingtext.zh=}}等待中～
 {{pendingtext.en=}}Pending~
 
@@ -15,28 +21,29 @@
   link = 'https://alicez.ink/',
   lang = {'zh'},
   tint = {0x00, 0x47, 0xab},
-  bgimg = '1.png',
+  bgimg = 'alicez-bg.png',
 }, {
   title = '『姑妄言之姑妄听之』',
   author = '驰雨Chiyuru',
   link = 'https://chiyuru.github.io/',
   lang = {'zh'},
   tint = {90, 120, 148},
-  bgimg = '1.png',
+  bgimg = 'chiyuru-bg.png',
 }, {
   title = "Pieris' Homepage",
   author = 'Pieris',
   link = 'https://pieris05.com/',
   lang = {'zh'},
   tint = {0x58, 0xb2, 0xdc},
-  bgimg = '1.png',
+  bgimg = 'pieris-bg.png',
 }, {
   title = '邓邓的流水账',
   author = '邓大胖',
   link = 'https://xhhdd.cc/',
   lang = {'zh'},
   tint = {55, 61, 66},
-  bgimg = '1.png',
+  bgimg = 'xhhdd-bg.png',
+--[[
 }, {
   title = {zh = '样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点', en = 'Example Site'},
   author = 'Example',
@@ -44,6 +51,7 @@
   lang = {'zh', 'en'},
   tint = {200, 160, 48},
   pending = true,
+]]
 }} }}}
 
 {{{ webringlist = {{
@@ -51,6 +59,6 @@
   link = 'https://webring.xxiivv.com/',
   lang = {'en'},
   tint = {0x01, 0x01, 0x01},
-  bgimg = '1.png',
+  bgimg = 'webring-bg.png',
   pending = true,
 }} }}}
