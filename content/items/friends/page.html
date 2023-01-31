@@ -44,7 +44,7 @@ end
   native, foreign = {}, {}
   for _, i in ipairs(list) do
     local found = false
-    for _, sitelang in ipairs(i.lang) do
+    for _, sitelang in ipairs(i.langs) do
       if sitelang == lang then
         found = true; break
       end
@@ -55,6 +55,7 @@ end
 }}
 
 {{@ sublist in {native, foreign} }}
+<div class='friend-item-container'>
 {{@ sublist }}
 {{ hash = basehash(name .. link) }}
 <a class='friend-item'
@@ -71,6 +72,16 @@ end
     --></h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
   <p class='pastel-underline pastel-underline-{{ hash }}'>{{ link:match('^https?://([^/]+)') }}</p>
+  {{@ #langs > 1 or langs[1] ~= lang }}
+  <p class='langs'>{{*
+    local curlangnames = {}
+    for _, l in ipairs(langs) do
+      table.insert(curlangnames,
+        l == lang and 1 or (#curlangnames + 1), tr(langnames[l]))
+    end
+    return table.concat(curlangnames, '/')
+  }}</p>
+  {{@ end }}
 </div>
 </a>
 <style>
@@ -80,10 +91,14 @@ end
 </style>
 {{@ end }}
 {{@ end }}
-
+</div>
 {{@ end }}
 
 <style>
+.friend-item-container {
+  max-inline-size: 40em;
+  margin: auto;
+}
 .friend-item {
   display: block;
   text-decoration: none;
@@ -155,6 +170,7 @@ end
 .friend-item p.pastel-underline {
   display: inline-block;
   margin-block-start: 0;
+  block-size: 1.5em;
 }
 .friend-item p.pastel-underline::after {
   content: '';
@@ -164,6 +180,23 @@ end
   margin-block-end: -0.12em;
   border-radius: 1em;
   opacity: 0.2;
+}
+.friend-item p.langs {
+  /* float: inline-end; */
+  position: absolute;
+  inset-block-end: 0;
+  /* inset-inline-end: 0; */
+  border: 1px solid;
+  border-radius: 0.4em;
+  padding-inline: 0.5em;
+}
+.friend-item:nth-of-type(2n+1) p.langs {
+  float: right;
+  right: 0;
+}
+.friend-item:nth-of-type(2n) p.langs {
+  float: left;
+  left: 0;
 }
 </style>
 
