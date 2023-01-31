@@ -12,7 +12,7 @@ hextint = function (r, g, b)
   return string.format('#%02x%02x%02x', r, g, b)
 end
 
-normaliselum = function (val, r, g, b)
+lum = function (r, g, b)
   if g then r = {r, g, b}
   else r = {r[1], r[2], r[3]} end
   -- https://stackoverflow.com/q/596216
@@ -23,6 +23,12 @@ normaliselum = function (val, r, g, b)
     r[i] = v
   end
   local y = r[1] * 0.1216 + r[2] * 0.7152 + r[3] * 0.0722
+  return y, r
+end
+
+normaliselum = function (val, r, g, b)
+  local y
+  y, r = lum(r, g, b)
 
   local function invgamma(v)
     if v <= 0.0031308 then v = v * 12.92
@@ -58,12 +64,7 @@ end
 <div class='friend-item-container'>
 {{@ sublist }}
 {{ hash = basehash(name .. link) }}
-<a class='friend-item'
-  style="
-    color: {{ hextint(normaliselum(0.1, tint)) }};
-    border-color: {{ hextint(tint) }};
-    {{@ bgimg }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
-  "
+<a class='friend-item friend-item-{{ hash }}'
   href='{{ link }}'
 >
 <div class='text'>
@@ -71,7 +72,7 @@ end
     -->{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span>{{@ end }}<!--
     --></h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
-  <p class='pastel-underline pastel-underline-{{ hash }}'>{{ link:match('^https?://([^/]+)') }}</p>
+  <p class='pastel-underline'>{{ link:match('^https?://([^/]+)') }}</p>
   {{@ #langs > 1 or langs[1] ~= lang }}
   <p class='langs'>{{*
     local curlangnames = {}
@@ -85,7 +86,17 @@ end
 </div>
 </a>
 <style>
-.pastel-underline-{{ hash }}::after {
+.friend-item-{{ hash }} {
+  color: {{ hextint(normaliselum(0.1, tint)) }};
+  border-color: {{ hextint(tint) }};
+  {{@ bgimg }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
+}
+body.dark .friend-item.friend-item-{{ hash }} {
+  {{ brighten = 1 - lum(normaliselum(0.5, tint)) * 2 }}
+  {{ print(brighten, table.unpack(tint)) }}
+  filter: brightness({{ 180 + brighten * 240 }}%) saturate(50%);
+}
+.friend-item-{{ hash }} .pastel-underline::after {
   background: {{ hextint(normaliselum(0.4, tint)) }};
 }
 </style>
@@ -111,11 +122,11 @@ end
   background-position: 85% 50%;
 }
 .friend-item:nth-of-type(2n+1) {
-  border-inline-start: 0.12em solid black;
+  border-inline-start: 0.12em solid;
 }
 .friend-item:nth-of-type(2n) {
   text-align: right;
-  border-inline-end: 0.12em solid black;
+  border-inline-end: 0.12em solid;
   background-position: 15% 50%; /* Spell out fully for NetSurf compatibility */
 }
 @media (max-width: 115vh), (max-width: 48rem) {
