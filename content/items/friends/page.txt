@@ -10,37 +10,37 @@
 {{pendingtext.zh=}}等待中～
 {{pendingtext.en=}}Pending~
 
-{{langnames.zh.zh=}}汉语
-{{langnames.zh.en=}}Chinese
-{{langnames.en.zh=}}英语
-{{langnames.en.en=}}English
+{{langnames.zh.zh=}}汉
+{{langnames.zh.en=}}CN
+{{langnames.en.zh=}}英
+{{langnames.en.en=}}EN
 
 {{{ friendlist = {{
   title = "Alice's scribbles",
   author = 'aliceZ',
   link = 'https://alicez.ink/',
-  lang = {'zh'},
+  langs = {'zh'},
   tint = {0x00, 0x47, 0xab},
   bgimg = 'alicez-bg.png',
 }, {
   title = '『姑妄言之姑妄听之』',
   author = '驰雨Chiyuru',
   link = 'https://chiyuru.github.io/',
-  lang = {'zh'},
+  langs = {'zh'},
   tint = {90, 120, 148},
   bgimg = 'chiyuru-bg.png',
 }, {
   title = "Pieris' Homepage",
   author = 'Pieris',
   link = 'https://pieris05.com/',
-  lang = {'zh'},
+  langs = {'zh'},
   tint = {0x58, 0xb2, 0xdc},
   bgimg = 'pieris-bg.png',
 }, {
   title = '邓邓的流水账',
   author = '邓大胖',
   link = 'https://xhhdd.cc/',
-  lang = {'zh'},
+  langs = {'zh'},
   tint = {55, 61, 66},
   bgimg = 'xhhdd-bg.png',
 --[[
@@ -48,7 +48,7 @@
   title = {zh = '样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点', en = 'Example Site'},
   author = 'Example',
   link = 'http://example.com',
-  lang = {'zh', 'en'},
+  langs = {'zh', 'en'},
   tint = {200, 160, 48},
   pending = true,
 ]]
@@ -57,7 +57,7 @@
 {{{ webringlist = {{
   title = 'XXIIVV Webring',
   link = 'https://webring.xxiivv.com/',
-  lang = {'en'},
+  langs = {'en'},
   tint = {0x01, 0x01, 0x01},
   bgimg = 'webring-bg.png',
   pending = true,
