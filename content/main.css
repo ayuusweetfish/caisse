@@ -820,7 +820,13 @@ img.item-banner,
 }
 .item-contents div.image-container img.small {
   inline-size: 50%;
+  min-inline-size: unset;
   max-inline-size: 15em;
+}
+.item-contents div.image-container img.xsmall {
+  inline-size: 8em;
+  min-inline-size: 25%;
+  max-inline-size: 100%;
 }
 .item-contents div.image-container img.square {
   inline-size: 25em;
