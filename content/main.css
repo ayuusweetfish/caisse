@@ -641,6 +641,10 @@ blockquote.quote::after {
   block-size: 4.75em;
   object-fit: cover;
 }
+.music-track .music-track-artist {
+  display: inline-block;
+  line-height: 1.1;
+}
 .music-track .orig-title {
   font-size: 0.75em;
   color: #886;

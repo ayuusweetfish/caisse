@@ -659,7 +659,7 @@ markupfns = {
       '<div class="music-track-gap"></div>' ..
       '<div><strong>' .. title .. '</strong><br>' ..
       (origtitle ~= '' and ('<span class="orig-title">' .. origtitle .. '</span>') or '') ..
-      artiststr ..
+      '<span class="music-track-artist">' .. artiststr .. '</span>' ..
       '</div></div>'
   end,
 
