@@ -2,7 +2,7 @@
 {{title.en=}}Network Neighbourhood
 
 {{intro.zh=}}
-现实中与网络上的友人们。每十分钟打乱一次顺序。
+现实中与网络上的友人们。每十分钟变换一次顺序。
 
 {{intro.en=}}
 Friends in reality and online. Orders change every 10 minutes.
@@ -60,7 +60,7 @@ Friends in reality and online. Orders change every 10 minutes.
   title = 'XXIIVV webring',
   link = 'https://webring.xxiivv.com/',
   langs = {'en'},
-  tint = {0x01, 0x01, 0x01},
+  tint = {0x30, 0x30, 0x30},
   bgimg = 'xxiivv-webring-bg.png',
   pending = true,
 }} }}}
