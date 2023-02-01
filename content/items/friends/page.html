@@ -62,15 +62,18 @@ end
 
 {{@ sublist in {native, foreign} }}
 <div class='friend-item-container'>
+{{ sublistid = (list == friendlist and 0 or 2) + (sublist == native and 0 or 1) }}
+<!-- (shuffle) {{ 20230201 + sublistid * 202321 }} {{ list == friendlist and 0 or 0.5 }}
 {{@ sublist }}
+====
 {{ hash = basehash(name .. link) }}
 <a class='friend-item friend-item-{{ hash }}'
   href='{{ link }}'
 >
 <div class='text'>
-  <h1><span class='title'>{{ title }}</span><!--
-    -->{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span>{{@ end }}<!--
-    --></h1>
+  <h1><span class='title'>{{ title }}</span
+    >{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span
+    >{{@ end }}</h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
   <p class='pastel-underline'>{{ link:match('^https?://([^/]+)') }}</p>
   {{@ #langs > 1 or langs[1] ~= lang }}
@@ -93,7 +96,6 @@ end
 }
 body.dark .friend-item.friend-item-{{ hash }} {
   {{ brighten = 1 - lum(normaliselum(0.5, tint)) * 2 }}
-  {{ print(brighten, table.unpack(tint)) }}
   filter: brightness({{ 180 + brighten * 240 }}%) saturate(50%);
 }
 .friend-item-{{ hash }} .pastel-underline::after {
@@ -101,13 +103,14 @@ body.dark .friend-item.friend-item-{{ hash }} {
 }
 </style>
 {{@ end }}
-{{@ end }}
+-->
 </div>
+{{@ end }}
 {{@ end }}
 
 <style>
 .friend-item-container {
-  max-inline-size: 40em;
+  max-inline-size: 36em;
   margin: auto;
 }
 .friend-item {

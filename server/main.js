@@ -124,8 +124,15 @@ const redirectResponse = (url, headers, isPerm, isNoCache) => {
   )
 }
 
-const timeOfDay = (timezoneOffsetMin) => {
-  const timestampMinute = Math.floor(Date.now() / 60000) + timezoneOffsetMin
+const randNext = ({seed, sum}) => {
+  seed = (Math.imul(seed, 1664525) + 1013904223) & 0x7fffffff
+  sum = (sum || 0) ^ seed
+  return {seed, sum}
+}
+
+const timeInMin = (timezoneOffsetMin) =>
+  Math.floor(Date.now() / 60000) + timezoneOffsetMin
+const timeOfDay = (timestampMinute) => {
   const minuteInDay = timestampMinute % 1440
   const day = (timestampMinute - minuteInDay) / 1440
 
@@ -144,13 +151,10 @@ const timeOfDay = (timezoneOffsetMin) => {
     return period
   } else {
     // LCG
-    let seed = timestampMinute & 0xffffffff   // Works for 8166 years
-    let rand = 0
-    for (let i = 0; i < 5; i++) {
-      seed = (seed * 1664525 + 1013904223) & 0x7fffffff // Avoid negative values
-      rand ^= seed
-    }
-    return (rand % 60 <= phase ? period : (period + 11) % 12)
+    const seed = timestampMinute & 0xffffffff   // Works for 8166 years
+    let g = { seed }
+    for (let i = 0; i < 5; i++) g = randNext(g)
+    return (g.sum % 60 <= phase ? period : (period + 11) % 12)
   }
 }
 
@@ -249,7 +253,8 @@ const staticFile = async (req, opts, headers, path) => {
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
-    const timeOfDayCur = timeOfDay(opts.tz || 8 * 60)
+    const timeInMinCur = timeInMin(opts.tz || 8 * 60)
+    const timeOfDayCur = timeOfDay(timeInMinCur)
     text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
       if (key === 'dark') {
         const spacePos = value.indexOf(' ')
@@ -257,8 +262,26 @@ const staticFile = async (req, opts, headers, path) => {
           return (opts.isDark ? value.substring(0, spacePos) : value.substring(spacePos + 1))
         else
           return (opts.isDark ? value : '')
-      } else if (key == 'timeofday') {
+      } else if (key === 'timeofday') {
         return value.split('\n')[timeOfDayCur].substring(3)
+      } else if (key === 'shuffle') {
+        const [_, seedBase, phase, content] =
+          /^\s*(\d+)\s+([\d.]+)\s*((?:.|\n)*)$/.exec(value)
+        const lineEnd = content.indexOf('\n')
+        const sep = content.substring(0, lineEnd)
+        if (sep === '') return ''
+        const items = content.substring(lineEnd + 1).split(sep)
+        const seed = (+seedBase) + Math.floor(timeInMinCur / 10 + (+phase))
+        let g = { seed }
+        for (let i = 0; i < 6; i++) g = randNext(g)
+        for (let i = 1; i < items.length; i++) {
+          g = randNext(g)
+          const j = g.sum % (i + 1)
+          const t = items[i]
+          items[i] = items[j]
+          items[j] = t
+        }
+        return items.join('\n')
       }
     })
     headers.set('Cache-Control', 'no-store')

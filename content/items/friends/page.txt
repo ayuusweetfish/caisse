@@ -2,8 +2,10 @@
 {{title.en=}}Network Neighbourhood
 
 {{intro.zh=}}
+现实中与网络上的友人们。每十分钟打乱一次顺序。
 
 {{intro.en=}}
+Friends in reality and online. Orders change every 10 minutes.
 
 {{=}}
 
