@@ -94,4 +94,13 @@ w = font.ascent + font.descent
 glyph.transform(psMat.translate(0, font.ascent - font.descent))
 glyph.width = int(w * 1.5)
 
+# XXIIVV Webring
+glyph = font.createChar(0x1f48d)
+glyph.importOutlines('xxiivv-webring.svg')
+glyph.transform(psMat.translate(0, -font.ascent))
+w = font.ascent + font.descent
+glyph.transform(psMat.scale(w / 300 * 1.2))
+glyph.transform(psMat.translate(-w * 0.1, font.ascent * 1.2))
+glyph.width = w
+
 font.generate('little-icons.ttf')

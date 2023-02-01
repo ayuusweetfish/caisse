@@ -57,10 +57,10 @@ Friends in reality and online. Orders change every 10 minutes.
 }} }}}
 
 {{{ webringlist = {{
-  title = 'XXIIVV Webring',
+  title = 'XXIIVV webring',
   link = 'https://webring.xxiivv.com/',
   langs = {'en'},
   tint = {0x01, 0x01, 0x01},
-  bgimg = 'webring-bg.png',
+  bgimg = 'xxiivv-webring-bg.png',
   pending = true,
 }} }}}
