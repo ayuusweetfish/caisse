@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="none"
+   height="300"
+   stroke="#000"
+   stroke-linecap="square"
+   stroke-width="28"
+   width="300"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="xxiivv-webring.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.69813196"
+     inkscape:cx="191.94079"
+     inkscape:cy="122.46968"
+     inkscape:window-width="699"
+     inkscape:window-height="480"
+     inkscape:window-x="0"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
+  <path
+     id="path2"
+     style="color:#000000;fill:#000000;stroke:none;-inkscape-stroke:none"
+     d="m 157.08594,44.273438 c -8.08268,4.666667 -16.16537,9.333333 -24.24805,14 9.18607,15.908177 18.36984,31.817679 27.55469,47.726562 -17.89726,-0.78737 -36.49614,1.8965 -51.42969,12.51172 -18.311926,11.22944 -26.589504,31.54929 -37.277379,49.13313 -14.257239,24.69385 -28.513211,49.38844 -42.771449,74.08171 8.082682,4.66667 16.165365,9.33333 24.248047,14 C 62.348125,239.81798 71.533223,223.90887 80.71875,208 c 8.14571,15.59988 19.42143,30.14744 35.67947,37.87048 19.25923,10.78546 41.60109,7.63763 62.69151,8.12952 28.30342,0 56.60685,0 84.91027,0 0,-9.33333 0,-18.66667 0,-28 -18.36979,0 -36.73959,0 -55.10938,0 9.43577,-14.85847 16.40053,-31.89992 14.95478,-49.84488 -0.29207,-22.06793 -14.18672,-39.83948 -24.3042,-58.34764 C 185.38936,93.296186 171.23877,68.784162 157.08594,44.273438 Z M 150,134 c 24.56874,-0.6583 46.67289,21.40764 46.03511,46 0.64303,24.59654 -21.46736,46.65698 -46.03511,46 -25.1364,0.75814 -47.4639,-22.38382 -45.97798,-47.44195 C 104.22566,154.44941 125.83669,133.38465 150,134 Z" />
+</svg>
