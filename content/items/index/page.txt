@@ -19,7 +19,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<list
   <li <title ayuusweetfish <link https://github.com/ayuusweetfish GitHub>>>
   <li <title ayuu#0552 <link https://discord.com/users/707786894213120082 Discord>>>
-  <li <title knock@ayu.land <catlink mailto:knock@ayu.land home E-mail>>>
+  <li <title claire@ayu.land <catlink mailto:claire@ayu.land home E-mail>>>
   <li <link friends 朋友们>>
   <li <link backyard 后花园>>
 >
@@ -51,7 +51,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<list
   <li <title ayuusweetfish <link https://github.com/ayuusweetfish GitHub>>>
   <li <title ayuu#0552 <link https://discord.com/users/707786894213120082 Discord>>>
-  <li <title knock@ayu.land <catlink mailto:knock@ayu.land home E-mail>>>
+  <li <title claire@ayu.land <catlink mailto:claire@ayu.land home E-mail>>>
   <li <link friends Friends>>
   <li <link backyard Backyard>>
 >
@@ -62,9 +62,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
-  <li <date 2022.24> A log of recent daily activities! <link 28-days-22w> (Image-rich)>
+  <li <date 2022.24> A log of recent daily activities! <link 28-days-22w> (Image-rich, currently Chinese-only)>
   <li <date 2022.23> <link fhxl-rehousing>, documentary of how one cries over her own clumsiness.>
-  <li <date 2022.22> <link vividness>, a piece I’ve been working on recently.>
+  <li <date 2022.22> <link vividness>, a musical piece I’ve been working on recently.>
 >
 
 <link revlog>
