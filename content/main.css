@@ -545,6 +545,12 @@ div.item-separator:nth-child(5n+5) { background-position-x: 8em; }
 body.dark div[role='separator']
 { opacity: 60%; }
 
+@media not (max-width: 60rem) {
+  .hidden-in-widest {
+    display: none;
+  }
+}
+
 .kaomoji {
   display: inline-block;
   vertical-align: middle;
