@@ -250,6 +250,19 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   margin-inline-start: 0;
 }
 
+.hovernote {
+  display: inline-block;
+}
+.hovernote::after {
+  content: '';
+  display: block;
+  block-size: 0.12em;
+  margin-block-start: -0.12em;
+  margin-block-end: -0.12em;
+  border-radius: 1em;
+  background: rgba(180, 180, 180, 20%);
+}
+
 .pastel {
   text-decoration: none;
   color: inherit;
