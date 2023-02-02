@@ -1,13 +1,13 @@
 {{title.zh=}}小白兔游记
-{{intro.zh=}}农历新年是个全新的起点呀！开个新坑随缘记录一些东西。
+{{intro.zh=}}在农历新年的全新起点开个新坑，随缘记录一些东西！
 {{title.en=}}Little White Bunny’s Travels
-{{intro.en=}}The lunisolar new year is a new start! Digging a hole and dropping random stuff inside.
+{{intro.en=}}Digging a hole and dropping random stuff inside, at the new start of the lunisolar new year!.
 
 {{date=}}2022.24
 
 {{contents.zh=}}
 
-!<note 最近更新：<catlink #0201 pebbles 02.01【散步】>>
+!<note 最近更新：<catlink #0201 pebbles 02.01【散步】>（02.02 尽快补~）>
 
 !<h1 01.24—01.25【城隍阁】 #0124-25>
 
