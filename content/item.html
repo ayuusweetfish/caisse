@@ -24,8 +24,11 @@
     </section>
   </details>
 {{@ end }}
-{{@ (intro and intro ~= '') or bannerimg or toc == 'true' }}
+{{@ (intro and intro ~= '') or bannerimg }}
   <div role='separator' class='item-separator'></div>
+{{@ end }}
+{{@ not ((intro and intro ~= '') or bannerimg) and toc == 'true' }}
+  <div role='separator' class='item-separator hidden-in-widest'></div>
 {{@ end }}
 <section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
 {{@ date }}
