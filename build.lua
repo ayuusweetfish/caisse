@@ -528,6 +528,9 @@ markupfns = {
   title = function (title, text)
     return '<span title="' .. title .. '">' .. text .. '</span>'
   end,
+  hovernote = function (text, note)
+    return '<span title="' .. note .. '" class="hovernote">' .. text .. '</span>'
+  end,
   rawlink = function (href, text)
     return '<a href="' .. href .. '">' .. text .. '</a>'
   end,

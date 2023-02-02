@@ -8,18 +8,18 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.zh=}}
 !<img portrait.jpg 夜晚灯光下的画像 float-end>
-有许多名字和昵称，但在这里叫我甜鱼就可以！图画是一只名叫甜瓜的 AI 根据一张路灯下的自拍绘制的。
+有许多名字和昵称，但在这里叫我甜鱼就可以！图画是一只 <hovernote AI 6pen.art 甜瓜；学习过程中未接触有版权争议的材料。> 根据一张路灯下的自拍绘制的。
 相信世界的美好可能性，永远在学习的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
-做的事情很杂，主业音乐/设计学/计算机，副业游戏制作，正在尝试学画画。整理归类放到这个小站就是敝帚自珍啦，但要是真的被喜欢的话会非常非常开心！
+做的事情很杂，主业设计学/计算机，副业音乐/游戏制作，正在尝试学画画。整理归类放到这个小站就是敝帚自珍啦，但要是真的被喜欢的话会非常非常开心！
 是 INFP/ENFP，外向社恐，无可救药的空想家，重度拖延自救中 ; - ;
 !<clearfloat>
 !<hr windy>
 
 {{contents.en=}}
 !<img portrait.jpg <= A portrait under the light in the night> float-end>
-There are many ways of calling me, but I’m Ayu here! The picture is drawn by an AI named “sweet melon” referencing a selfie under a street lamp.
+There are many ways of calling me, but I’m Ayu here! The picture is drawn by an <hovernote AI “sweet melon” on 6pen.art. Content with disputable copyright has been avoided during learning.> referencing a selfie under a street lamp.
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
-I dip into a mixture of things, majoring in music/design/computing, while dabbling in game development and trying to learn to draw. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
+I dip into a mixture of things, majoring in design and computing, while dabbling in music and game development as well as trying to learn to draw. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
 INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to overcome procrastination ; - ;
 !<clearfloat>
 !<hr windy>

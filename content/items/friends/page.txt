@@ -2,10 +2,18 @@
 {{title.en=}}Network Neighbourhood
 
 {{intro.zh=}}
-现实中与网络上的友人们。每十分钟变换一次顺序。
+每个灵魂都是一片独特的世界，在这里收集一些传送门。每十分钟打乱一次顺序。
 
 {{intro.en=}}
-Friends in reality and online. Orders change every 10 minutes.
+Every spirit is a unique world; here are some portals to them. Orders change every 10 minutes.
+
+{{outro.zh=}}
+!<h1 交换友链>
+希望接收的网站不仅包含计算机技术的内容。可以通过邮件 <tt claire@ayu.land> 联系～
+另外，在可能的情况下，请尽量不要将本站称呼为“博客”；可以叫它“网站”、“赛博小屋”、“作品集”、“<hovernote memex memory expansion，延伸记忆>”、“<hovernote <= personal wiki> 个人百科>”，或者其他你觉得合适的称呼。
+
+{{outro.en=}}
+{{-- todo }}
 
 {{=}}
 
