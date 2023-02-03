@@ -842,6 +842,10 @@ img.item-banner,
   min-inline-size: 25%;
   max-inline-size: 100%;
 }
+.item-contents div.image-container img.xsmall.vertical {
+  inline-size: auto;
+  block-size: 8em;
+}
 .item-contents div.image-container img.square {
   inline-size: 25em;
   max-block-size: 25em;
