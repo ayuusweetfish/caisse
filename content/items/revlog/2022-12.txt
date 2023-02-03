@@ -1,0 +1,36 @@
+{{title.zh=}}22 丑月 —— 碎碎岁岁
+{{title.en=}}22, Month of the Ox — Fragments for a Year
+
+{{timestamp=}}2023.02.04.11
+
+{{contents.zh=}}
+是被碎片填满的一个月，在涂涂画画与新年出游中度过。
+!<list
+  <li
+    增加了两份长长的日常记录。其实原本没有设想过放这类生活化的内容，但是看上去也不错的样子！
+    <list
+      <li <link 28-days-22w 打卡日记>，期间心血来潮试了试通过 AI 扒谱为音乐生成视觉效果，做了一段小动画。>
+      <li <link days-rabbit 新年游记>，堆放了许多出游照片与胡思乱想的文字。>
+    >
+  >
+  <li 生产了一篇笨蛋运维纪实，<link fhxl-rehousing>。>
+  <li 超级开心地认识了<link friends 新朋友>，也加入了 XXIIVV webring。>
+>
+
+本站的 22 年到这里就结束啦！期待在新的一年可以有更多内容，也可以认识更多朋友！
+
+{{contents.en=}}
+A month filled with fragments, spent in painting and New Year’s outings.
+!<list
+  <li
+    Added two lengthy dumps of daily life. I actually had not envisaged putting up such life-related content here, but it turned out decent!
+    <list
+      <li <link 28-days-22w Daily activity records>, during which I impulsively tried creating visualisations for music through AI-based transcription, and made a short demonstrative animation.>
+      <li <link days-rabbit New Year’s outings>, a collection of photos and rambling words.>
+    >
+  >
+  <li Wrote a record of a bumbling Ops experience, <link fhxl-rehousing>.>
+  <li Joyful encounters with <link friends new friends> as well as the acceptance into the XXIIVV webring.>
+>
+
+And that’s the end of the year 22 on this site! Looking forward to having more content and more friends in the new year!

@@ -10,7 +10,7 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	7148	unknown
+framework.html	7191	unknown
 item.html	1531	unknown
 items/28-days-22w/01.jpg	106386	image	912	684
 items/28-days-22w/02.jpg	41088	image	638	500
@@ -228,7 +228,8 @@ items/rabbit-hole/particles.jpg	100074	image	1280	720
 items/rabbit-hole/pbr-ibl.jpg	60758	image	770	376
 items/rabbit-hole/squirrel.jpg	84714	image	958	538
 items/revlog/2022-10.txt	3086	document
-items/revlog/2022-11.txt	2531	document
+items/revlog/2022-11.txt	2533	document
+items/revlog/2022-12.txt	1779	document
 items/revlog/atom.xml	1374	unknown
 items/revlog/rss.xml	1096	unknown
 items/sheepdogs-work/Sheepdogs_at_Work.ogg	1781851	audio	98
