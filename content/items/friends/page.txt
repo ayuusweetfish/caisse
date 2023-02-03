@@ -9,8 +9,8 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.zh=}}
 !<h1 交换友链>
-希望接收的网站不仅包含计算机技术的内容。可以通过邮件 <tt claire@ayu.land> 联系～
-另外，在可能的情况下，请尽量不要将本站称呼为“博客”；可以叫它“网站”、“赛博小屋”、“作品集”、“<hovernote memex memory expansion，延伸记忆>”、“<hovernote <= personal wiki> 个人百科>”，或者其他你觉得合适的称呼。
+希望你的网站可以映出你自己的一部分！可以通过邮件 <tt claire@ayu.land> 联系～
+如果可以的话，请尽量不要将本站称呼为“博客”；可以叫它“网站”、“赛博小屋”、“作品集”、“<hovernote memex memory expansion，延伸记忆>”、“<hovernote <= personal wiki> 个人百科>”，或者其他你觉得合适的称呼。
 
 {{outro.en=}}
 {{-- todo }}
@@ -53,6 +53,13 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
   langs = {'zh'},
   tint = {55, 61, 66},
   bgimg = 'xhhdd-bg.png',
+}, {
+  title = {zh = '天仙子', en = '天仙子 / Song of Hyoscyamus'},
+  author = '秦海碗',
+  link = 'https://tianxianzi.me',
+  langs = {'zh'},
+  tint = {231, 225, 210},
+  --bgimg = 'tianxianzi-bg.png',
 --[[
 }, {
   title = {zh = '样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点', en = 'Example Site'},
