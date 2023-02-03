@@ -442,12 +442,16 @@ end
 
 local function itemlink(path, text, israw)
   local itemname = path
-  local anchor
-  local hashpos = path:find('#')
-  if hashpos ~= nil then
-    itemname = path:sub(1, hashpos - 1)
-    anchor = path:sub(hashpos + 1)
-    if text == '' then text = anchor end
+  if path:sub(1, 1) == '#' or path:sub(1, 1) == '?' then
+    itemname = markupfnsenvitem
+    path = itemname .. path
+  else
+    local hashpos = path:find('#')
+    if hashpos ~= nil then
+      itemname = path:sub(1, hashpos - 1)
+      local anchor = path:sub(hashpos + 1)
+      if text == '' then text = anchor end
+    end
   end
   local item = itemreg[itemname]
   if not item then
