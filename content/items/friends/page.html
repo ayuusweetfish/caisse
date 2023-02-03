@@ -125,11 +125,14 @@ body.dark .friend-item.friend-item-{{ hash }} {
   background-position: 85% 50%;
 }
 .friend-item:nth-of-type(2n+1) {
-  border-inline-start: 0.12em solid;
+  text-align: left;
+  border-left-width: 0.12em;
+  border-left-style: solid;
 }
 .friend-item:nth-of-type(2n) {
   text-align: right;
-  border-inline-end: 0.12em solid;
+  border-right-width: 0.12em;
+  border-right-style: solid;
   background-position: 15% 50%; /* Spell out fully for NetSurf compatibility */
 }
 @media (max-width: 115vh), (max-width: 48rem) {
