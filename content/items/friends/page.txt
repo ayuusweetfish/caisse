@@ -77,5 +77,4 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
   langs = {'en'},
   tint = {0x30, 0x30, 0x30},
   bgimg = 'xxiivv-webring-bg.png',
-  pending = true,
 }} }}}
