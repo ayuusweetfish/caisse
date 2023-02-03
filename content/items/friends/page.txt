@@ -59,7 +59,7 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
   link = 'https://tianxianzi.me',
   langs = {'zh'},
   tint = {231, 225, 210},
-  --bgimg = 'tianxianzi-bg.png',
+  bgimg = 'tianxianzi-bg.png',
 --[[
 }, {
   title = {zh = '样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点样例站点', en = 'Example Site'},
