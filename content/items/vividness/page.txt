@@ -24,10 +24,9 @@
 
 !<img cover.jpg <= 浅紫色天空下的彩色云朵与其上的闪烁星点。//由 Disco Diffusion 制作。> caption>
 
-!<blockquote
+!<blockquoteby <link friends#Mier 秦海碗>
 今天的晚霞看着很美味，葡萄味的紫色云霞与草莓味的粉色云霞团在一起，像是正被揉捏的软乎乎的棉花糖，而云层暗暗的底边像是以蓝莓做底的。一时天光大盛，在粉紫色的云糖上撒上一层蛋皮，边沿处的一小团云好像要从杯口满溢出来，我能想象到那滴落的甜味会招惹远山中的不少蚂蚁。
 >
-（<link friends#Mier 秦海碗>）
 
 {{contents.en=}}
 
