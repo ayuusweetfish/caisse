@@ -606,10 +606,14 @@ markupfns = {
     return '<p class="text-center">' .. text .. '</p>'
   end,
   blockquote = function (text)
-    return '<blockquote class="quote">' .. text .. '</blockquote>'
+    return '<blockquote class="quote"><div class="quote-main">' .. text .. '</div></blockquote>'
+  end,
+  blockquoteby = function (by, text)
+    return '<blockquote class="quote"><div class="quote-main">' .. text .. '</div>' ..
+      '<div class="quote-by">' .. by .. '</div></blockquote>'
   end,
   note = function (text)
-    return '<blockquote class="note">' .. text .. '</blockquote>'
+    return '<blockquote class="note"><div class="quote-main">' .. text .. '</div></blockquote>'
   end,
   clearfloat = function ()
     return '<div style="clear: both"></div>'
