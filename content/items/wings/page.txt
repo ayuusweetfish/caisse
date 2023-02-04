@@ -82,6 +82,8 @@
 
 !<hr windy>
 
+!<note 封面图画在 6pen.art 的人工智能“甜瓜”帮助下绘制。>
+
 {{contents.en=}}
 
 A song dedicated to Kuriko, who has been accompanying me for a long time.
@@ -147,3 +149,5 @@ A song dedicated to Kuriko, who has been accompanying me for a long time.
 <lang en But there’s so much, so much, so much, so much to see on this wonderland>
 
 !<hr windy>
+
+!<note Cover image created under the aid of the AI “Sweet Melon” at 6pen.art.>
