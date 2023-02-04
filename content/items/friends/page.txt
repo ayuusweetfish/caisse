@@ -77,12 +77,12 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   bgimg = 'tianxianzi-bg.png',
 }, {
   shortname = 'miyehn',
-  title = {zh = '槽', en = 'Rain'},
+  title = {zh = '槽', en = 'Rain Du'},
   author = {zh = 'miyehn/小雨', en = 'miyehn/Rain'},
-  link = 'https://miyehn.me/blog/',
+  link = {zh = 'https://miyehn.me/blog/', en = 'https://miyehn.me'},
   langs = {'zh', 'en'},
   tint = {57, 65, 52},
-  bgimg = '',
+  bgimg = 'miyehn-bg.png',
 --[[
 }, {
   shortname = 'Example',
