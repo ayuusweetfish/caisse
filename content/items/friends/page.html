@@ -78,8 +78,14 @@ end
     >{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span
     >{{@ end }}</h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
-  <p class='pastel-underline'>{{ link:match('^https?://([^/]+)') }}</p>
-  {{@ #langs > 1 or langs[1] ~= lang }}
+  <p class='pastel-underline'>{{ tr(link):match('^https?://([^/]+)') }}</p>
+  {{
+    hascurlang = false
+    for i = 1, #langs do if langs[i] == lang then
+      hascurlang = true; break
+    end end
+  }}
+  {{@ not hascurlang }}
   <p class='langs'>{{*
     local curlangnames = {}
     for _, l in ipairs(langs) do
@@ -127,20 +133,20 @@ body.dark .friend-item.friend-item-{{ hash }} {
   padding-inline: 2em;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 85% 50%;
 }
 .friend-item-container.parity-even .friend-item:nth-of-type(2n+1),
 .friend-item-container.parity-odd .friend-item:nth-of-type(2n) {
   text-align: left;
   border-left-width: 0.12em;
   border-left-style: solid;
+  background-position: 85% 50%;
 }
 .friend-item-container.parity-even .friend-item:nth-of-type(2n),
 .friend-item-container.parity-odd .friend-item:nth-of-type(2n+1) {
   text-align: right;
   border-right-width: 0.12em;
   border-right-style: solid;
-  background-position: 15% 50%; /* Spell out fully for NetSurf compatibility */
+  background-position: 15% 50%;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
   .friend-item {
@@ -148,11 +154,11 @@ body.dark .friend-item.friend-item-{{ hash }} {
     padding-inline: 1.5em;
   }
   .friend-item-container.parity-even .friend-item:nth-of-type(2n+1),
-  .friend-item-container.parity-even .friend-item:nth-of-type(2n) {
+  .friend-item-container.parity-odd .friend-item:nth-of-type(2n) {
     background-position: 90% 50%;
   }
   .friend-item-container.parity-even .friend-item:nth-of-type(2n),
-  .friend-item-container.parity-even .friend-item:nth-of-type(2n+1) {
+  .friend-item-container.parity-odd .friend-item:nth-of-type(2n+1) {
     background-position: 10% 50%;
   }
 }

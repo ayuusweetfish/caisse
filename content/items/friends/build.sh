@@ -17,4 +17,5 @@ process chiyuru '#5a7894'
 process pieris '#58b2dc'
 process xhhdd '#333d42'
 process tianxianzi '#ada99e'  # dimmed to 75%
+process miyehn '#394134'
 process xxiivv-webring '#303030'
