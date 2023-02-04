@@ -75,6 +75,14 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   langs = {'zh'},
   tint = {231, 225, 210},
   bgimg = 'tianxianzi-bg.png',
+}, {
+  shortname = 'miyehn',
+  title = {zh = '槽', en = 'Rain'},
+  author = {zh = 'miyehn/小雨', en = 'miyehn/Rain'},
+  link = 'https://miyehn.me/blog/',
+  langs = {'zh', 'en'},
+  tint = {57, 65, 52},
+  bgimg = '',
 --[[
 }, {
   shortname = 'Example',
