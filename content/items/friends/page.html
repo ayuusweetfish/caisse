@@ -43,6 +43,8 @@ normaliselum = function (val, r, g, b)
 end
 }}
 
+{{ parity = 0 }}
+
 {{@ list in {friendlist, webringlist} }}
 <div role='separator' class='windy'></div>
 
@@ -61,12 +63,12 @@ end
 }}
 
 {{@ sublist in {native, foreign} }}
-<div class='friend-item-container'>
+<div class='friend-item-container parity-{{ parity == 1 and "odd" or "even" }}'>
 {{ sublistid = (list == friendlist and 0 or 2) + (sublist == native and 0 or 1) }}
 <!-- (shuffle) {{ 20230201 + sublistid * 202321 }} {{ list == friendlist and 0 or 0.5 }}
 {{@ sublist }}
 ====
-{{ hash = basehash(name .. link) }}
+{{ hash = basehash(shortname) }}
 <a class='friend-item friend-item-{{ hash }}'
   id='{{ shortname }}'
   href='{{ link }}'
@@ -93,7 +95,7 @@ end
 .friend-item-{{ hash }} {
   color: {{ hextint(normaliselum(0.1, tint)) }};
   border-color: {{ hextint(tint) }};
-  {{@ bgimg }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
+  {{@ bgimg ~= '' }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
 }
 body.dark .friend-item.friend-item-{{ hash }} {
   {{ brighten = 1 - lum(normaliselum(0.5, tint)) * 2 }}
@@ -106,7 +108,9 @@ body.dark .friend-item.friend-item-{{ hash }} {
 {{@ end }}
 -->
 </div>
+{{ parity = (parity + #sublist) % 2 }}
 {{@ end }}
+
 {{@ end }}
 
 <style>
@@ -125,12 +129,14 @@ body.dark .friend-item.friend-item-{{ hash }} {
   background-repeat: no-repeat;
   background-position: 85% 50%;
 }
-.friend-item:nth-of-type(2n+1) {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n+1),
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n) {
   text-align: left;
   border-left-width: 0.12em;
   border-left-style: solid;
 }
-.friend-item:nth-of-type(2n) {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n),
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n+1) {
   text-align: right;
   border-right-width: 0.12em;
   border-right-style: solid;
@@ -141,10 +147,12 @@ body.dark .friend-item.friend-item-{{ hash }} {
     margin-inline: 0.5em;
     padding-inline: 1.5em;
   }
-  .friend-item:nth-of-type(2n+1) {
+  .friend-item-container.parity-even .friend-item:nth-of-type(2n+1),
+  .friend-item-container.parity-even .friend-item:nth-of-type(2n) {
     background-position: 90% 50%;
   }
-  .friend-item:nth-of-type(2n) {
+  .friend-item-container.parity-even .friend-item:nth-of-type(2n),
+  .friend-item-container.parity-even .friend-item:nth-of-type(2n+1) {
     background-position: 10% 50%;
   }
 }
@@ -168,7 +176,8 @@ body.dark .friend-item.friend-item-{{ hash }} {
   display: flex;
   flex-direction: row;
 }
-.friend-item:nth-of-type(2n) h1 {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n) h1,
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n+1) h1 {
   flex-direction: row-reverse;
 }
 .friend-item h1 > span {
@@ -179,10 +188,12 @@ body.dark .friend-item.friend-item-{{ hash }} {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.friend-item:nth-of-type(2n+1) h1 > span.icon {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n+1) h1 > span.icon,
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n+1) h1 > span.icon {
   margin-inline-start: 0.25em;
 }
-.friend-item:nth-of-type(2n) h1 > span.icon {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n) h1 > span.icon,
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n) h1 > span.icon {
   margin-inline-end: 0.25em;
 }
 .friend-item p.pastel-underline {
@@ -212,11 +223,13 @@ body.dark .friend-item.friend-item-{{ hash }} {
 body.dark .friend-item p.langs {
   background: rgba(48, 48, 48, 20%);
 }
-.friend-item:nth-of-type(2n+1) p.langs {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n+1) p.langs,
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n) p.langs {
   float: right;
   right: 0;
 }
-.friend-item:nth-of-type(2n) p.langs {
+.friend-item-container.parity-even .friend-item:nth-of-type(2n) p.langs,
+.friend-item-container.parity-odd .friend-item:nth-of-type(2n+1) p.langs {
   float: left;
   left: 0;
 }
