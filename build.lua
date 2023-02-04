@@ -557,11 +557,13 @@ markupfns = {
       .. htmlescape(text) .. '</a>'
   end,
   img = function (src, alt, class)
+    local altmain, altcap = alt:match('^([^/]*)//(.*)$')
+    if altmain then alt = altmain end
     return '<div class="image-container">' ..
       caisse.envadditions.image(
         caisse.envadditions.file(src, 'items/' .. markupfnsenvitem),
         alt, class) ..
-      (class:find('caption') and ('<p>' .. htmlescape(alt) .. '</p>') or '') ..
+      (class:find('caption') and ('<p>' .. htmlescape(altcap or alt) .. '</p>') or '') ..
       '</div>'
   end,
   filetable = function (contents)
