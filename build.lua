@@ -763,8 +763,15 @@ local function markupheadings(s)
 end
 caisse.envadditions.markupheadings = markupheadings
 
+local renderlist = split(os.getenv('render') or '', ',')
+local renderquery = nil
+if renderlist[1] ~= '' then
+  renderquery = {}
+  for _, item in ipairs(renderlist) do renderquery[item] = true end
+end
+
 local function renderallitems()
-  for path, item in pairs(itemreg) do
+  for path, item in pairs(itemreg) do if renderquery == nil or renderquery[path] then
     if item.isempty then  -- No-op
     elseif item.isfile then copyfile(path)
     else
@@ -799,7 +806,7 @@ local function renderallitems()
         markupfnsenvitem = nil
       end
     end
-  end
+  end end
 end
 
 local function trmerge(...)
