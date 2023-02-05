@@ -30,7 +30,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2022.24> <link days-rabbit>，新年随缘记录（多图）>
+  <li <date 2023.01> <link days-rabbit>，完结撒花！（多图）>
   <li <date 2022.24> 一份最近的打卡日记集合！<link 28-days-22w>（多图）>
   <li <date 2022.23> <link fhxl-rehousing>，写点被自己菜哭的纪实>
   <li <date 2022.22> 近期一直在做的曲子！<link vividness 《%》>>
