@@ -78,7 +78,7 @@ end
     >{{@ pending }}<span class='icon' title='{{ pendingtext }}'>※</span
     >{{@ end }}</h1>
   {{@ author }}<p>{{ author }}</p>{{@ end }}
-  <p class='pastel-underline'>{{ tr(link):match('^https?://([^/]+)') }}</p>
+  <p class='pastel-underline'>{{ (tr(link):match('^([^#]+)') or tr(link)):match('^https?://(.-)/*$') }}</p>
   {{
     hascurlang = false
     for i = 1, #langs do if langs[i] == lang then
