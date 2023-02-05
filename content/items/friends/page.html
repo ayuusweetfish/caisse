@@ -41,6 +41,11 @@ normaliselum = function (val, r, g, b)
     invgamma(r[2] * weight),
     invgamma(r[3] * weight)
 end
+
+capchannel = function (val, r, g, b)
+  if not g then r, g, b = table.unpack(r) end
+  return math.min(val, r), math.min(val, g), math.min(val, b)
+end
 }}
 
 {{ parity = 0 }}
@@ -99,7 +104,7 @@ end
 </a>
 <style>
 .friend-item-{{ hash }} {
-  color: {{ hextint(normaliselum(0.1, tint)) }};
+  color: {{ hextint(capchannel(204, normaliselum(0.12, tint))) }};
   border-color: {{ hextint(tint) }};
   {{@ bgimg ~= '' }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
 }
