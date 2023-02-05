@@ -5,7 +5,7 @@
 !<hr>
 
 !<h1 潦草产物>
-<link solo-boot>。<date 2023.01>
+<link solo-boot>，带些什么去一个没有音乐的世界。<date 2023.01>
 <link yukisora 飘雪的天空《ユキソラ》>，只是一份久远的和弦谱。<date 2019.23,2022.23>
 <link courses-21>是一些影视配乐与歌曲制作的不成熟习作。
 <link ne-er-do-well>是一首整活歌曲，主要是拜托的这位词作写的词太整活向了（x
