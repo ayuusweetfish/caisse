@@ -1,0 +1,43 @@
+{{title.zh=}}一场孤独的独奏
+{{title.en=}}
+
+{{date=}}2023.01
+
+{{contents.zh=}}
+!<blockquoteby 村上春树《世界尽头与冷酷仙境》 <~~='
+  风本身。
+  做出能发各种声音的风，再加以组合。
+'>>
+
+如果有一天，我独自一人来到一个没有音乐的孤岛上，要怎样开始拨动这个世界的风呢？
+
+几年来的天翻地覆，将曾经的美丽幻想冷冰冰地一个个戳破。我们美好的一切终究建立在沙丘之上，永远的黄金时代依然只是奢望。人们意识到，对抗永恒的努力都是徒劳的，于是怀着心中的惶恐一笔一画写下文字与程序，指望着即使灾难到来，我们曾经的努力也不至于枉费——
+!<list
+  <li <link https://github.com/civboot/civboot Civboot>，从头开始一步步构建现代文明技术所需的资料。>
+  <li <link https://wiki.xxiivv.com/site/uxn.html Uxn>，极简计算机。>
+  <li <link http://collapseos.org/ Collapse OS>，极简操作系统软件。>
+>
+
+人文艺术可能会幸免于难，可是谁知道呢？更何况，世界上有那么多的角落，是这些人类文明的灿烂星光未曾照进的呀？又或者，假如一场意外夺去大部分我所珍视的事物，却仍然留下了我的声音或是一把乐器呢？
+这里收集一些我刻在心里的旋律，如果真的有这样一天，我也可以教空气跳起这几支舞。这是一场孤独的独奏。或者现实一点来说——我会唱什么给小朋友们和小动物们听。
+持续更新。
+
+<hr windy>
+
+!<list
+<li <b Moon River>（月河），Henry Mancini —— 电影《蒂凡尼的早餐》插曲>
+<li <b Edelweiss>（雪绒花），Richard Rodgers —— 音乐剧《音乐之声》插曲>
+<li <b Danny Boy>（少年丹尼），爱尔兰传统曲调>
+<li <b <lang fr Ah! vous dirai-je, maman>>（啊！妈妈我要告诉你），法国童谣 —— “小星星”>
+<li <b <lang de Auf Flügeln des Gesanges>>（乘着歌声的翅膀），Felix Mendelssohn>
+<li
+  <b 梦之船>
+  <list
+    <li 暂时没法确定出处……>
+    <li “可爱的小矮人正在岸上快乐跳舞歌唱”>
+  >
+>
+<li <b 真善美的小世界>>
+>
+
+{{contents.en=}}
