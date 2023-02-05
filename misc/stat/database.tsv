@@ -1,7 +1,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1289	unknown
-categories.txt	2938	document
+categories.txt	2962	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -152,6 +152,16 @@ items/days-rabbit/0204b.jpg	34655	image	405	472
 items/days-rabbit/0204c.jpg	151044	image	684	912
 items/days-rabbit/0204d.jpg	144321	image	912	684
 items/days-rabbit/0204e.jpg	94369	image	684	912
+items/days-rabbit/0205a.jpg	125141	image	684	912
+items/days-rabbit/0205b.jpg	115210	image	684	912
+items/days-rabbit/0205c.jpg	64849	image	912	684
+items/days-rabbit/0205d.jpg	80424	image	912	684
+items/days-rabbit/0205e.jpg	79689	image	912	684
+items/days-rabbit/0205f.jpg	134290	image	912	684
+items/days-rabbit/0205g.jpg	27427	image	365	274
+items/days-rabbit/0205h.jpg	125776	image	912	684
+items/days-rabbit/20230205_192145.mp3	261120	audio	16
+items/days-rabbit/fin.jpg	68736	image	1368	1824
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/play/game.data	48550	unknown
 items/daytime-cat/play/game.js	11416	code
