@@ -3,11 +3,9 @@
 
 {{intro.zh=}}
 每个灵魂都是一片独特的世界，在这里收集一些传送门。每十分钟打乱一次顺序。
-新朋友的图还没有加上，一定尽快加！滑跪 <kao=' (>﹏<)'>
 
 {{intro.en=}}
 Every spirit is a unique world; here are some portals to them. Orders change every 10 minutes.
-Banners for new friends have not yet been uploaded, will make them very soon <kao=' (>﹏<)'>
 
 {{outro.zh=}}
 !<h1 交换友链>
@@ -88,11 +86,11 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
 }, {
   shortname = 'gregueria',
   title = '谢谢所有的鱼',
-  author = '谢谢所有的鱼',
+  author = '小鱼',
   link = 'https://gregueria.icu/',
   langs = {'zh'},
   tint = {0x4e, 0x4b, 0x5f},
-  bgimg = '',
+  bgimg = 'gregueria-bg.png',
 }, {
   shortname = 'orangii',
   title = '一只橙梓一个窝',
@@ -100,7 +98,7 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   link = 'https://orangii.cn',
   langs = {'zh'},
   tint = {0xff, 0x97, 0x00},
-  bgimg = '',
+  bgimg = 'orangii-bg.png',
 --[[
 }, {
   shortname = 'Example',
