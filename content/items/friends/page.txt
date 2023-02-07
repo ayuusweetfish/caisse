@@ -126,4 +126,11 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   langs = {'en'},
   tint = {0xff, 0x5c, 0x00},
   bgimg = '',
+}, {
+  shortname = 'travellings',
+  title = '开往 · 友链接力',
+  link = 'https://www.travellings.cn',
+  langs = {'zh'},
+  tint = {0x30, 0x30, 0x30},
+  bgimg = '',
 }} }}}
