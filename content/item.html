@@ -1,8 +1,9 @@
 {{ aside = {} }}
+{{ h_entry = true }}
 <header>
-  <h1>{{ title }}</h1>
+  <h1 class='p-name'>{{ title }}</h1>
   {{@ intro }}
-    <p>{{ intro }}</p>
+    <p class='p-summary'>{{ intro }}</p>
   {{@ end }}
 </header>
 {{@ bannerimg and bannerimginpage ~= 'false' }}
@@ -30,7 +31,7 @@
 {{@ not ((intro and intro ~= '') or bannerimg) and toc == 'true' }}
   <div role='separator' class='item-separator hidden-in-widest'></div>
 {{@ end }}
-<section class='item-contents'>{{ rendermarkup(tr(contents)) }}</section>
+<section class='item-contents e-content'>{{ rendermarkup(tr(contents)) }}</section>
 {{@ date }}
 <div class='item-date'>
   {{ renderdate(date) }}
@@ -53,3 +54,8 @@
 {{ extrastyle }}
 {{@ end }}
 </style>
+
+<div style='display: none'>
+<a class='u-url' href='/{{ name }}'>permalink</a>
+| by <a class='p-author h-card' href='/'>Ayu</a>
+</div>
