@@ -135,6 +135,7 @@ local function renderpage(savepath, templatepath, locals)
       curcat = locals.curcat,
       contents = contents,
       aside = locals.aside or {},
+      h_entry = locals.h_entry,
     })))
 end
 local function renderraw(savepath, templatepath, locals, ishashver, filter)
