@@ -22,7 +22,6 @@ const authEndpointGet = async (req) => {
   ]) {
     arg[key] = url.searchParams.get(key)
   }
-  console.log(arg)
   // Validity checks
   if (arg.response_type && arg.response_type !== 'code' && arg.response_type !== 'id')
     return fail('response_type')
@@ -39,7 +38,22 @@ const authEndpointGet = async (req) => {
     const [_, key, value] = result
     cookies[decodeURIComponent(key)] = decodeURIComponent(value)
   }
-  if (cookies.pw === Deno.env.get('INDIEAUTH_PW')) {
+  let pwChecked = false
+  const masterPw = Deno.env.get('INDIEAUTH_PW')
+  const time = Math.floor(+new Date() / (30 * 1000))
+  if (cookies.pw) {
+    const cur = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-512',
+      (new TextEncoder()).encode(`${masterPw}${time}${masterPw}`))))
+      .map((b) => b.toString(16).padStart(2, '0')).join('')
+    if (cookies.pw === cur) pwChecked = true
+    if (!pwChecked) {
+      const last = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-512',
+        (new TextEncoder()).encode(`${masterPw}${time - 1}${masterPw}`))))
+        .map((b) => b.toString(16).padStart(2, '0')).join('')
+      if (cookies.pw === last) pwChecked = true
+    }
+  }
+  if (pwChecked) {
     // Generate a new code
     const code = crypto.randomUUID()
     codes[code] = {
@@ -58,6 +72,7 @@ const authEndpointGet = async (req) => {
     })
   } else {
     // Client information discovery
+    // XXX: Neither IndieWebRing not IndieLogin.com implemented the h-app Microformat
     const clientUrl = new URL(arg.client_id)
     // Check against loopback ranges
     let recordFound = false
@@ -75,23 +90,26 @@ const authEndpointGet = async (req) => {
     }
     if (!recordFound) return fail('DNS resolution of client_id')
     // Fetch and parse
-    if (arg.redirect_uri !== arg.client_id) {
-      const redirects = []
+    if ((new URL(arg.redirect_uri)).hostname !== clientUrl.hostname) {
       const clientReq = await fetch(arg.client_id)
+      const text = await clientReq.text()
+      const redirects = []
       for (const [name, val] of clientReq.headers) if (name === 'Link') {
         for (const link of val.split(',')) {
           const result = link.match(/^\s*<(.+)>;(.*;)*\s*rel="?redirect_uri"?(?:$| |;)/)
           if (result) redirects.push(result[1])
         }
       }
-      const text = await clientReq.text()
-      for (const [_, href] of text.matchAll(/<link\s.*(?:(?<=["'\s])rel=["']?redirect_uri["'\s])?.*(?<=["'\s])href=["']?(.+?)["'\s].*(?:(?<=["'\s])rel=["']?redirect_uri["'\s])?.*>/g)) {
-        redirects.push(href)
+      // Very crude matches
+      for (const [el] of text.matchAll(/<link[^>]*?(?:(?<=["'\s])rel=["']?redirect_uri["']?).*?>/g)) {
+        const match = el.match(/href=["']([^>]+)['"]/)
+        if (match) redirects.push(match[1])
       }
+      console.log(redirects)
       if (redirects.indexOf(arg.redirect_uri) === -1)
         return fail('redirect_uri')
     }
-    return new Response('waiting auth')
+    return new Response(`Pending auth from ${arg.client_id}`)
   }
 }
 
@@ -104,7 +122,6 @@ const authEndpointPost = async (req) => {
   ]) {
     arg[key] = form.get(key)
   }
-  console.log(arg)
   // Validity checks
   if (arg.grant_type && arg.grant_type !== 'authorization_code') return fail('grant_type')
   const codeArg = codes[arg.code]
