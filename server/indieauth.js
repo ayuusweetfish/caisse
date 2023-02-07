@@ -3,6 +3,7 @@ const meRe = (host) => new RegExp(`^(?:https?://)?${host}/?$`)
 const meUrl = (origin) => `${origin}`
 
 // https://indieauth.spec.indieweb.org/
+// Legacy, without PKCE: https://indieauth.spec.indieweb.org/20200125/
 
 import * as base64 from 'https://deno.land/std@0.177.0/encoding/base64.ts'
 
@@ -23,8 +24,10 @@ const authEndpointGet = async (req) => {
   }
   console.log(arg)
   // Validity checks
-  if (arg.response_type && arg.response_type !== 'code') return fail('response_type')
-  if (arg.code_challenge_method !== 'S256') return fail('code_challenge_method')
+  if (arg.response_type && arg.response_type !== 'code' && arg.response_type !== 'id')
+    return fail('response_type')
+  const legacy = (arg.response_type === 'id')
+  if (!legacy && arg.code_challenge_method !== 'S256') return fail('code_challenge_method')
   if (!arg.me.match(meRe(url.host))) return fail('me')
   // Check dynamic password
   // Parse cookies
@@ -40,6 +43,7 @@ const authEndpointGet = async (req) => {
     // Generate a new code
     const code = crypto.randomUUID()
     codes[code] = {
+      legacy: legacy,
       client_id: arg.client_id,
       redirect_uri: arg.redirect_uri,
       code_challenge: arg.code_challenge,
@@ -84,7 +88,7 @@ const authEndpointGet = async (req) => {
       for (const [_, href] of text.matchAll(/<link\s.*(?:(?<=["'\s])rel=["']?redirect_uri["'\s])?.*(?<=["'\s])href=["']?(.+?)["'\s].*(?:(?<=["'\s])rel=["']?redirect_uri["'\s])?.*>/g)) {
         redirects.push(href)
       }
-      if (redirects.indexOf(arg.redirect_uri) === -1&&false)
+      if (redirects.indexOf(arg.redirect_uri) === -1)
         return fail('redirect_uri')
     }
     return new Response('waiting auth')
@@ -107,25 +111,30 @@ const authEndpointPost = async (req) => {
   if (!codeArg) return fail('code')
   if (arg.client_id !== codeArg.client_id) return fail('client_id')
   if (arg.redirect_uri !== codeArg.redirect_uri) return fail('redirect_uri')
-  const digest = await crypto.subtle.digest(
-    'SHA-256', (new TextEncoder()).encode(arg.code_verifier))
-  const digestBase64 = base64.encode(digest)
-    .split('=')[0].replaceAll('+', '-').replaceAll('/', '_')
-  if (codeArg.code_challenge !== digestBase64) return fail('code_verifier')
+  if (!codeArg.legacy) {
+    const digest = await crypto.subtle.digest(
+      'SHA-256', (new TextEncoder()).encode(arg.code_verifier))
+    const digestBase64 = base64.encode(digest)
+      .split('=')[0].replaceAll('+', '-').replaceAll('/', '_')
+    if (codeArg.code_challenge !== digestBase64) return fail('code_verifier')
+  }
   // Successful, invalidate authorisation code
   delete codes[arg.code]
   const url = new URL(req.url)
-  return new Response(JSON.stringify({ me: meUrl(url.origin) }))
+  return Response.json({
+    me: meUrl(url.origin),
+    scope: (codeArg.legacy ? 'read' : undefined),
+  })
 }
 
 const indieAuth = async (req) => {
   const url = new URL(req.url)
   if (url.pathname === '/indieauth/metadata') {
-    return new Response(JSON.stringify({
+    return Response.json({
       issuer: issuer(url.origin),
       authorization_endpoint: `${url.origin}/indieauth/auth`,
       code_challenge_methods_supported: ['S256'],
-    }))
+    })
   } else if (url.pathname === '/indieauth/auth') {
     if (req.method === 'GET') return await authEndpointGet(req)
     else if (req.method === 'POST') return await authEndpointPost(req)
