@@ -1,6 +1,9 @@
-const issuer = (origin) => `${origin}/indieauth`
-const meRe = (host) => new RegExp(`^(?:https?://)?${host}/?$`)
-const meUrl = (origin) => `${origin}`
+const issuer = (origin) => `${origin}/`
+const host = Deno.env.get('ME')
+const meRe = new RegExp(`^(?:https?://)?${host}/?$`)
+const meUrl = `https://${host}`
+
+const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
 // https://indieauth.spec.indieweb.org/
 // Legacy, without PKCE: https://indieauth.spec.indieweb.org/20200125/
@@ -27,7 +30,7 @@ const authEndpointGet = async (req) => {
     return fail('response_type')
   const legacy = (arg.response_type === 'id')
   if (!legacy && arg.code_challenge_method !== 'S256') return fail('code_challenge_method')
-  if (!arg.me.match(meRe(url.host))) return fail('me')
+  if (!arg.me.match(meRe)) return fail('me')
   // Check dynamic password
   // Parse cookies
   const cookies = {}
@@ -39,7 +42,7 @@ const authEndpointGet = async (req) => {
     cookies[decodeURIComponent(key)] = decodeURIComponent(value)
   }
   let pwChecked = false
-  const masterPw = Deno.env.get('INDIEAUTH_PW')
+  const masterPw = Deno.env.get('PW')
   const time = Math.floor(+new Date() / (30 * 1000))
   if (cookies.pw) {
     const cur = Array.from(new Uint8Array(await crypto.subtle.digest('SHA-512',
@@ -138,27 +141,66 @@ const authEndpointPost = async (req) => {
   delete codes[arg.code]
   const url = new URL(req.url)
   return Response.json({
-    me: meUrl(url.origin),
+    me: meUrl,
     scope: (codeArg.legacy ? 'read' : undefined),
   })
 }
 
-const indieAuth = async (req) => {
+const serveReq = async (req) => {
   const url = new URL(req.url)
-  if (url.pathname === '/indieauth/metadata') {
+  if (url.pathname === '/') return new Response(
+`<!DOCTYPE html>
+<html><head>
+  <link rel='indieauth-metadata' href='/metadata'>
+  <link rel='authorization_endpoint' href='/auth'>
+</head><body>
+</body>`, { headers: { 'Content-Type': 'text/html; charset=utf-8' } })
+  if (url.pathname === '/metadata') {
     return Response.json({
       issuer: issuer(url.origin),
-      authorization_endpoint: `${url.origin}/indieauth/auth`,
+      authorization_endpoint: `${url.origin}/auth`,
       code_challenge_methods_supported: ['S256'],
     })
-  } else if (url.pathname === '/indieauth/auth') {
+  } else if (url.pathname === '/auth') {
     if (req.method === 'GET') return await authEndpointGet(req)
     else if (req.method === 'POST') return await authEndpointPost(req)
   }
   return new Response('', { status: 404 })
 }
 
-export { indieAuth }
+const port = +Deno.env.get('PORT') || 23207
+const server = Deno.listen({ port })
+log(`Running at http://localhost:${port}/`)
+
+const handleConn = async (conn) => {
+  const httpConn = Deno.serveHttp(conn)
+  try {
+    for await (const evt of httpConn) (async () => {
+      const req = evt.request
+      try {
+        req.conn = conn
+        await evt.respondWith(await serveReq(req))
+      } catch (e) {
+        if (!(e instanceof Deno.errors.Http)) {
+          log(`Internal server error: ${e}`)
+          try {
+            await evt.respondWith(new Response('', { status: 500 }))
+          } catch (e) {
+            log(`Error writing 500 response: ${e}`)
+          }
+        }
+      }
+    })()
+  } catch (e) {
+    if (!(e instanceof Deno.errors.Http)) {
+      log(`Unhandled error: ${e}`)
+    }
+  }
+}
+while (true) {
+  const conn = await server.accept()
+  handleConn(conn)
+}
 
 /*
 curl -v 'http://localhost:1123/indieauth/auth?response_type=code&client_id=https://example.com/&redirect_uri=https://example.com/redirect&state=1234567890&code_challenge=OfYAxt8zU2dAPDWQxTAUIteRzMsoj9QBdMIVEDOErUo&code_challenge_method=S256&me=https://ayu.land'
