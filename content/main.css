@@ -331,12 +331,20 @@ body.ua-inline-height #dark-toggle {
 footer > span:first-child {
   display: inline-block;
   margin-block-end: 0.075em;
+  padding-inline-start: 1.75em;
+  text-indent: -1.75em;
 }
-footer > span:first-child > *:not(:last-child)::after {
+footer > span:first-child * {
+  text-indent: 0;
+}
+footer > span:first-child > span.group {
+  display: inline-block;
+}
+footer > span:first-child > span.group > *:not(:last-child)::after {
   content: '·';
   margin-inline: 0.5em;
 }
-footer > span:first-child > *.group-sep:not(:last-child)::after {
+footer > span:first-child > span.group:not(:first-child)::before {
   content: '|';
   margin-inline: 0.6em;
 }

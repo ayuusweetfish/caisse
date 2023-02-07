@@ -15,6 +15,8 @@ NotoEmojiSubset = sorted(set([
   0x1f4e6, 0x1f3a7, 0x1f3b6, 0x1f3bc, 0x1f5bc, 0x1f39e, 0x1f4c3, 0x1f47e,
   # Music track
   0x1f58c, 0x1f3a4, 0x1f4bf,
+  # Web ring
+  0x1f578, 0x1f48d,
 ]))
 NotoEmoji = fontforge.open('NotoEmoji-Regular.ttf')
 NotoEmoji.selection.select(*NotoEmojiSubset)
@@ -95,12 +97,25 @@ glyph.transform(psMat.translate(0, font.ascent - font.descent))
 glyph.width = int(w * 1.5)
 
 # XXIIVV Webring
-glyph = font.createChar(0x1f48d)
+glyph = font.createChar(0x2b55)
 glyph.importOutlines('xxiivv-webring.svg')
 glyph.transform(psMat.translate(0, -font.ascent))
 w = font.ascent + font.descent
 glyph.transform(psMat.scale(w / 300 * 1.2))
 glyph.transform(psMat.translate(-w * 0.1, font.ascent * 1.2))
 glyph.width = w
+
+# Left and right arrows
+w = font.ascent + font.descent
+glyph = font.createChar(0x2192)
+glyph.importOutlines('arrowright.svg')
+glyph.transform(psMat.translate(w * 0.1, 0))
+glyph.width = w * 1.2
+
+glyph = font.createChar(0x2190)
+glyph.importOutlines('arrowright.svg')
+glyph.transform(psMat.scale(-1, 1))
+glyph.transform(psMat.translate(w * 1.1, 0))
+glyph.width = w * 1.2
 
 font.generate('little-icons.ttf')

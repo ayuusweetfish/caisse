@@ -105,7 +105,6 @@ const authEndpointGet = async (req) => {
         const match = el.match(/href=["']([^>]+)['"]/)
         if (match) redirects.push(match[1])
       }
-      console.log(redirects)
       if (redirects.indexOf(arg.redirect_uri) === -1)
         return fail('redirect_uri')
     }
@@ -162,9 +161,9 @@ const indieAuth = async (req) => {
 export { indieAuth }
 
 /*
-curl -v 'http://localhost:1123/indieauth/auth?response_type=code&client_id=https://app.example.com/&redirect_uri=https://app.example.com/redirect&state=1234567890&code_challenge=OfYAxt8zU2dAPDWQxTAUIteRzMsoj9QBdMIVEDOErUo&code_challenge_method=S256&me=https://ayu.land'
+curl -v 'http://localhost:1123/indieauth/auth?response_type=code&client_id=https://example.com/&redirect_uri=https://example.com/redirect&state=1234567890&code_challenge=OfYAxt8zU2dAPDWQxTAUIteRzMsoj9QBdMIVEDOErUo&code_challenge_method=S256&me=https://ayu.land'
 
-curl -v 'http://localhost:1123/indieauth/auth?response_type=code&client_id=https://app.example.com/&redirect_uri=https://app.example.com/redirect&state=1234567890&code_challenge=OfYAxt8zU2dAPDWQxTAUIteRzMsoj9QBdMIVEDOErUo&code_challenge_method=S256&me=https://ayu.land' -H 'Cookie: pw=11'
+curl -v 'http://localhost:1123/indieauth/auth?response_type=code&client_id=https://example.com/&redirect_uri=https://example.com/redirect&state=1234567890&code_challenge=OfYAxt8zU2dAPDWQxTAUIteRzMsoj9QBdMIVEDOErUo&code_challenge_method=S256&me=https://ayu.land' -H 'Cookie: pw=11'
 
-curl -v 'http://localhost:1123/indieauth/auth' -d 'grant_type=authorization_code&client_id=https://app.example.com/&redirect_uri=https://app.example.com/redirect&code_verifier=a6128783714cfda1d388e2e98b6ae8221ac31aca31959e59512c59f5&code=...'
+curl -v 'http://localhost:1123/indieauth/auth' -d 'grant_type=authorization_code&client_id=https://example.com/&redirect_uri=https://example.com/redirect&code_verifier=a6128783714cfda1d388e2e98b6ae8221ac31aca31959e59512c59f5&code=...'
 */
