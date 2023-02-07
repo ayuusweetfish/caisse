@@ -36,6 +36,11 @@ Collection of sundries —
   <link rel='alternate' type='application/rss+xml' href='/rss.{{ lang }}.xml' title='RSS feed'>
   <link rel='alternate' type='application/atom+xml' href='/atom.{{ lang }}.xml' title='Atom feed'>
 
+{{@ urlpath == '' }}
+  <link rel='indieauth-metadata' href='/indieauth/metadata'>
+  <link rel='authorization_endpoint' href='/indieauth/auth'>
+{{@ end }}
+
   <script>
   (() => {
     const matched = document.cookie.match(/(?:^|;\s*)tz=(-?\d+)(?:;|$)/)
