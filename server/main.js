@@ -1,5 +1,4 @@
 import { readAll } from 'https://deno.land/std@0.168.0/streams/read_all.ts'
-import { indieAuth } from './indieauth.js'
 
 const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
@@ -326,10 +325,6 @@ const staticFile = async (req, opts, headers, path) => {
 
 const serveReq = async (req) => {
   const url = new URL(req.url)
-
-  if (url.pathname.startsWith('/indieauth/')) {
-    return await indieAuth(req)
-  }
 
   if (req.method === 'GET') {
     if (url.pathname.endsWith('/') && url.pathname.length > 1) {
