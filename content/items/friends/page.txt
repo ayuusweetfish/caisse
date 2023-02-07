@@ -118,4 +118,12 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   langs = {'en'},
   tint = {0x30, 0x30, 0x30},
   bgimg = 'xxiivv-webring-bg.png',
+}, {
+  shortname = 'IndieWeb',
+  title = 'IndieWebring',
+  link = 'https://xn--sr8hvo.ws/%F0%9F%92%9F%F0%9F%94%A5%F0%9F%8F%90',
+  linkdisp = '<span class="little-icons">🕸💍</span>.ws',
+  langs = {'en'},
+  tint = {0xff, 0x5c, 0x00},
+  bgimg = '',
 }} }}}
