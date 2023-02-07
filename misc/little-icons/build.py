@@ -118,4 +118,17 @@ glyph.transform(psMat.scale(-1, 1))
 glyph.transform(psMat.translate(w * 1.1, 0))
 glyph.width = w * 1.2
 
+# Travellings icon
+w = font.ascent + font.descent
+glyph = font.createChar(0x1f687)
+glyph.importOutlines('travellings.svg')
+glyph.transform(psMat.translate(0, -font.ascent))
+glyph.transform(psMat.scale(w / 40))
+glyph.transform(psMat.translate(0, font.ascent))
+glyph.transform(psMat.translate(0, -font.ascent / 2))
+glyph.transform(psMat.scale(1.4))
+glyph.transform(psMat.translate(0, font.ascent / 2 + font.ascent * 0.06))
+glyph.transform(psMat.translate(w * 1.2 * (1.25 - 1.4) / 2, 0))
+glyph.width = w * 1.2 * 1.25
+
 font.generate('little-icons.ttf')

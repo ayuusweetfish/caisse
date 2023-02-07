@@ -86,7 +86,9 @@ end
   <p class='pastel-underline'>{{*
     if linkdisp then return linkdisp end
     local l = tr(link)
-    return (l:match('^([^#]+)') or l):match('^https?://(.-)/*$')
+    l = (l:match('^([^#]+)') or l):match('^https?://(.-)/*$')
+    l = (l:match('^www.(.+)') or l)
+    return l
   }}</p>
   {{
     hascurlang = false
