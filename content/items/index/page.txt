@@ -17,9 +17,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 >
 
 !<list
-  <li <title ayuusweetfish <link https://github.com/ayuusweetfish GitHub>>>
-  <li <title ayuu#0552 <link https://discord.com/users/707786894213120082 Discord>>>
-  <li <title claire@ayu.land <catlink mailto:claire@ayu.land home E-mail>>>
+  <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
+  <li <title ayuu#0552 <relme <link https://discord.com/users/707786894213120082 Discord>>>>
+  <li <title claire@ayu.land <relme <catlink mailto:claire@ayu.land home E-mail>>>>
   <li <link friends 朋友们>>
   <li <link backyard 后花园>>
 >
@@ -30,6 +30,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.01> 加入了 <link https://xn--sr8hvo.ws IndieWebring>>
   <li <date 2023.01> <link days-rabbit>，完结撒花！（多图）>
   <li <date 2022.24> 一份最近的打卡日记集合！<link 28-days-22w>（多图）>
   <li <date 2022.23> <link fhxl-rehousing>，写点被自己菜哭的纪实>
@@ -49,9 +50,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 >
 
 !<list
-  <li <title ayuusweetfish <link https://github.com/ayuusweetfish GitHub>>>
-  <li <title ayuu#0552 <link https://discord.com/users/707786894213120082 Discord>>>
-  <li <title claire@ayu.land <catlink mailto:claire@ayu.land home E-mail>>>
+  <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
+  <li <title ayuu#0552 <relme <link https://discord.com/users/707786894213120082 Discord>>>>
+  <li <title claire@ayu.land <relme <catlink mailto:claire@ayu.land home E-mail>>>>
   <li <link friends Friends>>
   <li <link backyard Backyard>>
 >
@@ -62,6 +63,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.01> Joined the <link https://xn--sr8hvo.ws IndieWebring>.>
   <li <date 2022.24> A log of recent daily activities! <link 28-days-22w> (Image-rich, currently Chinese-only)>
   <li <date 2022.23> <link fhxl-rehousing>, documentary of how one cries over her own clumsiness.>
   <li <date 2022.22> <link vividness>, a musical piece I’ve been working on recently.>

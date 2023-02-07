@@ -556,6 +556,9 @@ markupfns = {
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
       .. htmlescape(text) .. '</a>'
   end,
+  relme = function (text)
+    return text:gsub('^<a ', '<a rel="me" ')
+  end,
   img = function (src, alt, class)
     local altmain, altcap = alt:match('^([^/]*)//(.*)$')
     if altmain then alt = altmain end
