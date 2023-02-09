@@ -125,12 +125,13 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   linkdisp = '<span class="little-icons">🕸💍</span>.ws',
   langs = {'en'},
   tint = {0xff, 0x5c, 0x00},
-  bgimg = '',
+  bgimg = 'indiewebring-bg.png',
 }, {
   shortname = 'travellings',
   title = '开往 · 友链接力',
   link = 'https://www.travellings.cn',
   langs = {'zh'},
   tint = {0x30, 0x30, 0x30},
-  bgimg = '',
+  bgimg = 'travellings-bg.png',
+  pending = true,
 }} }}}
