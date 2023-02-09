@@ -1,3 +1,5 @@
+# IMAGEOPTIM=~/Downloads/ImageOptim.app/Contents/MacOS/ImageOptim FFMPEG=~/Downloads/ffmpeg-5.0.1 sh %
+
 CONVERT="${CONVERT:-convert}"
 FFMPEG="${FFMPEG:-ffmpeg}"
 IMAGEOPTIM="${IMAGEOPTIM:-ImageOptim}"
