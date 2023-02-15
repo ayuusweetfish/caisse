@@ -206,7 +206,9 @@ Current page belongs to the category of {{cats[curcat].title}}
   unicode-range: U+0800-FFFF;
 }
 {{@ end }}
-body:lang(en), *[lang='en'] {
+body:lang(en), *[lang='en'],
+body:lang(fr), *[lang='fr'],
+body:lang(it), *[lang='it'] {
   font-family: 'Livvic', 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', sans-serif;
 }
 body:lang(zh), *[lang='zh'] {
