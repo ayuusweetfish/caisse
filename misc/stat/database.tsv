@@ -1,7 +1,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1289	unknown
-categories.txt	2962	document
+categories.txt	2991	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -10,7 +10,7 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	8856	unknown
+framework.html	8914	unknown
 item.html	1730	unknown
 items/28-days-22w/01.jpg	106386	image	912	684
 items/28-days-22w/02.jpg	41088	image	638	500
@@ -95,6 +95,18 @@ items/courses-21/Sound_Design_Suspense.mp3	1748178	audio	87
 items/courses-21/Sound_Design_Travel.mp4	3125577	video	63	640	360
 items/courses-21/scripts.sh	694	unknown
 items/dates/page.css	984	unknown
+items/days-drumbeats/0209a.jpg	93329	image	762	492
+items/days-drumbeats/0209b.jpg	110012	image	985	809
+items/days-drumbeats/0210a.jpg	174823	image	912	684
+items/days-drumbeats/0210b.jpg	182213	image	684	912
+items/days-drumbeats/0210c.jpg	194224	image	912	684
+items/days-drumbeats/0210d.jpg	174160	image	912	684
+items/days-drumbeats/0210e.jpg	160912	image	912	684
+items/days-drumbeats/0211a.jpg	129381	image	912	595
+items/days-drumbeats/0212a.jpg	102748	image	730	547
+items/days-drumbeats/0214a.jpg	77726	image	550	978
+items/days-drumbeats/0214b.jpg	106138	image	912	684
+items/days-drumbeats/0214c.jpg	60975	image	730	547
 items/days-rabbit/0124a.jpg	138584	image	547	730
 items/days-rabbit/0124b.jpg	148398	image	730	547
 items/days-rabbit/0124c.jpg	140523	image	547	730
