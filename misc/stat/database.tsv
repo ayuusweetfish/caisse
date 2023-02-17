@@ -107,6 +107,8 @@ items/days-drumbeats/0212a.jpg	102748	image	730	547
 items/days-drumbeats/0214a.jpg	77726	image	550	978
 items/days-drumbeats/0214b.jpg	106138	image	912	684
 items/days-drumbeats/0214c.jpg	60975	image	730	547
+items/days-drumbeats/0216a.jpg	20176	image	592	320
+items/days-drumbeats/0217-line1.png	43725	image	738	350
 items/days-rabbit/0124a.jpg	138584	image	547	730
 items/days-rabbit/0124b.jpg	148398	image	730	547
 items/days-rabbit/0124c.jpg	140523	image	547	730
@@ -345,7 +347,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	24262	unknown
+main.css	24387	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4582	unknown

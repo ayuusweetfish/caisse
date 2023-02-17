@@ -844,6 +844,11 @@ img.item-banner,
   min-inline-size: unset;
   max-inline-size: 20em;
 }
+.item-contents div.image-container img.medsmall {
+  inline-size: 75%;
+  min-inline-size: unset;
+  max-inline-size: 17.5em;
+}
 .item-contents div.image-container img.small {
   inline-size: 50%;
   min-inline-size: unset;
