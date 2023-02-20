@@ -87,7 +87,85 @@ Medle 的路还要继续走下去，它当然也不会是我最后一次尝试�
 音乐是属于所有人的。如果愿意的话，请尽情地去倾听、去触摸，去喜爱、去挑剔，去评论、去制造。再让我听到“我不懂乐理”我会伤心的 ok？
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>. This will be updated soon.>
+
+!<h1 Pebbles in Cocktails #cocktail>
+
+Since some point, time seemed to be divided into little cubicles. I ride a train through this long swirl of sinks, pouring coloured paint into each cubicle, mixing the cocktail of life — and more importantly, finishing by putting in a meticulously carved, flower-stained pebble.
+
+!<img medle-01.png <= > syncdark>
+
+!<hr cloudy>
+
+!<img medle-02.png <= > syncdark>
+
+The pebble is named Medle. A puzzle of melody for each day — these have been accompanying me through my entire twenty-second year in this world, as well as a few hours for a handful of players.
+
+!<hr cloudy>
+
+I am the Ayu, signed at the end of many puzzles.
+
+!<img medle-03.png <= > syncdark>
+
+There are times when I feel like Sisyphus in the myths — pressing the enter button against the midnight footsteps, breathing a sigh of relief that the game is still alive today; but everything just comes back to square one. The job seems endless.
+
+!<hr cloudy>
+
+!<img medle-04.png <= > syncdark>
+
+There are times when I feel exhausted from all these digits and coloured bubbles. But I did not want to stop.
+
+!<hr cloudy>
+
+Thinking of the joy and inspiration everyone has found from the intimate contact of music here, of the abundant love it has received from the world —
+
+!<img medle-05.png <= > syncdark>
+
+!<hr cloudy>
+
+!<img medle-06.png <= > syncdark>
+
+I want to take it with me and grow up together, day by day.
+
+!<hr cloudy>
+
+But at the end of the day, I am just a bumbling mortal, unlike Sisyphus with the eternal life. Today, I think I have fulfilled my duty.
+
+!<img medle-07.png <= > syncdark>
+
+Holding its hand this far, I will stay and watch it walk the journey ahead.
+
+!<hr windy>
+
+!<h1 Tanabata and Snowflakes #tanabata-snowflakes>
+
+<link medle %> had its birthday with me together today. I will no longer add new puzzles to it — an anniversary, in Chinese, “周年”, means to revolve around for a year; for Medle, each day it gets back to the same point as a year ago. In this way, it can unfold a unique whole year at each player’s first encounter.
+
+It all started when I was at home during the winter holidays last year. I thought I could use the concept of harmony in music to create puzzle games, but I had a hard time finding a balance between learnability and playability, and finally gave up. Later when I had been at school, I had the idea for melody puzzles during the art troupe’s training days and created the game in between rehearsals.
+
+The game’s first puzzle ever was “Tanabata”, which went on to be the puzzle for day 165 in the game. It is a piece for the wind band composed by a Japanese composer, depicting the composer’s love with the high school wind band. This piece, which was being rehearsed at the time, was so close to my heart that it became the exclusive music during development and the first puzzle given to the friends in the band for playtesting.
+
+I even considered the possibility of transcribing a condensed score every day and playing it out with piano sounds, in order to match the sounds during puzzle solving and make it more likely to learn to listen from the game. I was lucky to have given up, otherwise I would have already been exhausted.
+
+!<img 001.svg <= Condensed score for an excerpt from “Tanabata”.> syncdark caption>
+
+The day after the final performance coincided with the closing of the Beijing Winter Olympics, so the programme included a beautiful instrumental and choral rendition of the Olympic theme song “Snowflakes” that moved me. The music was then chosen for the puzzle that opened the games two days later.
+
+!<h1 Medley #medley>
+
+I did my best to absorb the different styles, eras, regions, authors and performers of the music, and have rejected few puzzle proposals; after all, despite music being the language of the world, there are many, many dialects that blossom in various colours.
+
+The game spawned forks. Even though I never finished writing detailed instructions, people have managed to their own puzzles. It even inspired two new games: puzzles of code, <link https://codle.ouuan.moe/ Codle>, and puzzles of chords in music, <link https://43.138.56.99/chordle Chordle>.
+
+I’ve been collecting puzzle proposals from a small group of friends, and I tingle with genuine delight and gratefulness every time I receive one. I thought about opening an online message board to collect proposals; existing platform didn’t match the use case, so I wrote my own program, but due to extreme perfectionism it never went live. It’s a bit of a regret.
+
+How will it end? When I told a close friend about it in the summer half a year, she said she felt regretful for that and wanted me to keep the game going. I was touched at the moment — but I could not be a robot. Neither did I really want to take it too far; it has been a great experience to just get through a year uneventfully.
+
+Recently I’ve been thinking about creating a new game to take over — I thought about <link 28-days-22w#day-24 making maps in musical or rhythmic games with AI>, about puzzles revealing a track in a playlist (the idea of which came to me in a dream), about collaboration in making music with the aid of an algorithm for people without experience, about my earliest idea: a “Medle Medley”, where a selection of music in the game are mixed together into a new piece. But I’m cumbersome at my work, and my time and energy are limited as well, hence after a few days of hesitation and struggles I had to give up and choose to take a curtain call with this nonsense. Nonetheless, these ideas may be brought to life someday in the future!
+
+!<h1 Coda #coda>
+
+Medle’s path continues and it certainly will not be my last attempt at making music-related stuff. But still, I would like to thank everyone here, for every note and melody you have touched.
+Music belongs to all. As long as you are willing to, please be free to listen, to touch; to love, to criticise; to comment, to create. I’ll be sad the next time I hear “I don’t know music theory”, okay?
 
 {{rellinks.zh=}}
 !<list
