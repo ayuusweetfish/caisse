@@ -1,6 +1,6 @@
 {{title.zh=}}谜谜秘密觅
 {{intro.zh=}}有 Medle 的一年，何其有幸。
-{{title.en=}}Medle, Medley, Muddles
+{{title.en=}}Medle Muddle Medley
 {{intro.en=}}So thankful to have had a year of Medle.
 
 {{date=}}2023.02
@@ -11,11 +11,25 @@
 
 不知从什么时候起，时间好像被划成了一小格一小格，我乘着列车走过这圈长长的水槽，在每个格子里倒入彩色的颜料，调成生活的鸡尾酒——更重要的是，在最后放上一块雕刻过的、染上花色的石子。
 
-这颗石子叫 Medle。它有个中文名字“谜谜之音”，但是大家还是喜欢叫它麦兜。每天一个旋律谜题，陪伴了我二十二岁的每一天，也陪伴不多不少的玩家消磨了些许时光。
+!<img medle-01.png <= > syncdark>
 
 !<hr cloudy>
 
+!<img medle-02.png <= > syncdark>
+
+这颗石子叫 Medle。它有个中文名字“谜谜之音”，但是大家喜欢叫它麦兜。每天一个旋律谜题，陪伴了我二十二岁的每一天，也陪伴不多不少的玩家消磨了些许时光。
+
+!<hr cloudy>
+
+我是经常被写在谜题最后的那个 Ayu。
+
+!<img medle-03.png <= > syncdark>
+
 有的时候，我觉得自己像是神话里的那个西西弗斯——贴着午夜的脚步声按下回车键、长出一口气，今天游戏还是没倒闭；但是一切不过是又回到起点罢了，这份工作好像一眼望不到头。
+
+!<hr cloudy>
+
+!<img medle-04.png <= > syncdark>
 
 有的时候，我觉得自己因为这些数字和彩色圆圈变得十分疲惫。但是，我可不愿就这么停下来呀。
 
@@ -23,11 +37,19 @@
 
 想着大家在这里近距离触碰音乐的快乐与感悟，想着它获得的这个世界的那么多的爱——
 
+!<img medle-05.png <= > syncdark>
+
+!<hr cloudy>
+
+!<img medle-06.png <= > syncdark>
+
 我要让它继续和我一起，一天天地长大。
 
 !<hr cloudy>
 
 但我终究只是个碌碌凡人，没有西西弗斯的永生。今天，我想我完成了我的使命。
+
+!<img medle-07.png <= > syncdark>
 
 牵着它的手走到这里，接下来的路我只要远远看着它前行就好啦。
 
@@ -47,7 +69,7 @@
 
 那次训练汇报演出的第二天恰逢北京冬奥会闭幕，因此节目中有一首器乐与合唱演绎的奥运主题曲《雪花》，优美动听，打动了台下的我。于是两天后游戏开幕的谜题就选择了这首歌。
 
-!<h1 Medley，混成曲 #medley>
+!<h1 串烧曲 #medley>
 
 我尽力顾及了不同风格、时代、地域、作者与演绎者的音乐，也基本不会拒稿；毕竟音乐虽是世界的语言，却也有许多许多的方言，绽放着各异的色彩。
 
@@ -61,9 +83,20 @@
 
 !<h1 尾声 #coda>
 
+Medle 的路还要继续走下去，它当然也不会是我最后一次尝试做与音乐相关的小玩意。但还是要在这里谢谢每一位玩家，谢谢你们每一次在这里触碰的音符与旋律。
 音乐是属于所有人的。如果愿意的话，请尽情地去倾听、去触摸，去喜爱、去挑剔，去评论、去制造。再让我听到“我不懂乐理”我会伤心的 ok？
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>.>
+!<note This page is currently <link ?lang=zh Chinese-only>. This will be updated soon.>
+
+{{rellinks.zh=}}
+!<list
+  <li <link medle>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link medle>>
+>
 
 {{toc=}}true
