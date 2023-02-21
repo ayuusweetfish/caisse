@@ -7,6 +7,7 @@ cats = {
   {'murmurs',   {204, 100, 40, 90}, 0x1fab6},
   {'potpourri', {163,  75, 35, 89}, 0x2618},
   {'pebbles',   { 80,  40, 40, 85}, 0x1fae7},
+  {'flow',      {340,  68, 60, 92}, 0x1f390},
   {'backyard',  {258,  70, 42, 90}, 0x1fabb},
 }
 for i = 1, #cats do
@@ -29,6 +30,7 @@ end
 {{cats.murmurs.title.zh=}}梦话集
 {{cats.potpourri.title.zh=}}繁花丛
 {{cats.pebbles.title.zh=}}碎石堆
+{{cats.flow.title.zh=}}流水帐
 {{cats.backyard.title.zh=}}后花园
 
 {{cats.home.title.en=}}Home
@@ -37,6 +39,7 @@ end
 {{cats.murmurs.title.en=}}Murmurs
 {{cats.potpourri.title.en=}}Potpourri
 {{cats.pebbles.title.en=}}Pebbles
+{{cats.flow.title.en=}}Flow
 {{cats.backyard.title.en=}}Backyard
 
 {{cats.home.longtitle.en=}}Home
@@ -45,10 +48,20 @@ end
 {{cats.murmurs.longtitle.en=}}Pieces of Murmurs
 {{cats.potpourri.longtitle.en=}}Pieces of Potpourri
 {{cats.pebbles.longtitle.en=}}Pieces of Pebbles
+{{cats.flow.longtitle.en=}}Pieces of Flowing Time
 {{cats.backyard.longtitle.en=}}Backyard
 
 {{cats.potpourri.intro.zh=}}零零碎碎或者稀奇古怪的产物——
-{{cats.potpourri.intro.en=}}
+{{cats.potpourri.intro.en=}}Miscellaneous odds and ends —
+{{cats.flow.intro.zh=}}
+“逝者如斯夫！不舍昼夜。”“帐，张也，张施于床上也。”
+不同于本站的<link dates 日期格式>，这里会使用公历记载日期。
+!<note 连载中：<link days-drumbeats %>>/
+{{cats.flow.intro.en=}}
+“It passes on like this, ceaseless day and night.” —— <it Analects>
+Different from the <link date date format> throughout the site, dates here will be recorded in the Gregorian calendar.
+!<note Currently running: <link days-drumbeats %>>/
+{{cats.flow.introsep=}}true
 
 {{{
 cats.music.pagelist = {
@@ -98,10 +111,7 @@ cats.potpourri.pagelist = {
 ]]
 }
 cats.pebbles.pagelist = {
-  {name = 'days-drumbeats'},
   {name = 'solo-boot'},
-  {name = 'days-rabbit'},
-  {name = '28-days-22w'},
   {name = 'yukisora'},
   {name = 'ne-er-do-well'},
   {name = 'gradatim'},
@@ -112,6 +122,11 @@ cats.pebbles.pagelist = {
   {name = 'mikabox'},
   {name = 'bmflat'},
 ]]
+}
+cats.flow.pagelist = {
+  {name = 'days-drumbeats'},
+  {name = 'days-rabbit'},
+  {name = '28-days-22w'},
 }
 cats.backyard.pagelist = {
 }

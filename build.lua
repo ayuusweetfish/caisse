@@ -905,6 +905,7 @@ registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true 
 registeritemmarkup('pebbles', 'pebbles', {
   title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
 })
+registeritemtempl('flow', 'flow', 'bannerlist.html')
 
 for _, lang in ipairs({'zh', 'en'}) do
   caisse.lang = lang
