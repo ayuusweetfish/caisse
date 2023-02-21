@@ -307,6 +307,7 @@
 整个白天都独自窝在宿舍。下午在空无一人的浴室开了场演唱会和吹奏（口哨）会，下面是节目单。
 !<list
   <li <b Do-Re-Mi>，Richard Rodgers、Oscar Hammerstein II>
+  <li <b Edelweiss>（雪绒花），Richard Rodgers、Oscar Hammerstein II>
   <li <b 小白船>，尹克荣、金铁男、金正平>
   <li <b Moon River>（月河），Henry Mancini>
   <li <b メッセージ>（音讯），ハンバートハンバート>
