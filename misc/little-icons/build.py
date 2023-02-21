@@ -8,7 +8,7 @@ NotoEmojiSubset = sorted(set([
   # Internationalization, dark mode
   0x1f310, 0x1f319, 0x26aa,
   # Categories
-  0x1fab8, 0x1fa87, 0x1fa81, 0x1fab6, 0x2618, 0x1fae7, 0x1fabb,
+  0x1fab8, 0x1fa87, 0x1fa81, 0x1fab6, 0x2618, 0x1fae7, 0x1f390, 0x1fabb,
   # External link, star
   0x1fa90, 0x1f31f,
   # File types
@@ -45,13 +45,17 @@ def tr(uni, *mats):
   w0 = c.width
   font.selection.select(c)
   font.transform(psMat.translate(-w0 / 2, -(font.ascent + font.descent) / 2))
-  for mat in mats[::-1]: font.transform(mat)
+  for mat in mats[::-1]:
+    if len(mat) == 2:
+      mat = psMat.translate(mat[0] * c.width, mat[1] * (font.ascent + font.descent))
+    font.transform(mat)
   font.transform(psMat.translate(w0 / 2, (font.ascent + font.descent) / 2))
   dx = (w0 - c.width) / 2
   font.transform(psMat.translate(dx, 0))
   c.width = w0
 def r(degs): return psMat.rotate(degs * math.pi / 180)
 def s(scale): return psMat.scale(scale)
+def t(x, y): return (x, y)
 # Star
 tr(0x1f31f, r(8))
 # Seasons
@@ -65,6 +69,8 @@ tr(0x2744, r(-8), s(0.97))
 tr(0x1f9ca, r(-5))
 # Backyard icon
 tr(0x1fabb, r(7), s(1.05))
+# Flow icon
+tr(0x1f390, r(-17), s(1.1), t(0.32, 0))
 
 # Web feed icon
 glyph = font.createChar(0x1f5de)
