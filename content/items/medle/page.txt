@@ -39,11 +39,13 @@ Will go on having fun with all! <kao ♡(*´∀｀*)人(*´∀｀*)♡>
 !<list
   <li <link https://medle.ayu.land/ 游玩链接>>
   <li <link https://github.com/ayuusweetfish/medle 程序仓库（GitHub）>>
+  <li <link medle-postmortem 年终总结与幕后故事>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link https://medle.ayu.land/ Play>>
   <li <link https://github.com/ayuusweetfish/medle Source repository (GitHub)>>
+  <li <link medle-postmortem Postmortem>>
 >
 {{rellinks.en=}}
