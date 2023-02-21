@@ -11,7 +11,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about 关于自己>>
   <li <link fireflies 萤火虫>>
   <li <link medle 旋律猜谜>>
-  <li <link zzz 打击乐小合奏>>
+  <li <link vividness 打击乐合奏>>
   <li <link traviata 《茶花女》序曲>>
   <li <link adventure 去冒险的伙伴>>
 >
@@ -30,11 +30,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2023.01> 重启流水账，<link days-drumbeats>（多图）>
-  <li <date 2023.01> 加入了 <link https://xn--sr8hvo.ws IndieWebring>>
-  <li <date 2023.01> <link days-rabbit>，完结撒花！（多图）>
+  <li <date 2023.02> 新增了<link flow 流水帐>分类！>
+  <li <date 2023.01> 重启日常记录，<link days-drumbeats>（多图）>
   <li <date 2022.23> <link fhxl-rehousing>，写点被自己菜哭的纪实>
-  <li <date 2022.22> 近期一直在做的曲子！<link vividness 《%》>>
 >
 
 <link revlog>
@@ -44,7 +42,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about About>>
   <li <link fireflies Fireflies>>
   <li <link medle Melody puzzles>>
-  <li <link zzz Piece for percussion ensemble>>
+  <li <link vividness Piece for percussion ensemble>>
   <li <link traviata <it La Traviata> Overture>>
   <li <link adventure Friends on Adventure>>
 >
@@ -63,11 +61,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.02> A new <link Flow> category for daily records.>
   <li <date 2023.01> A new notebook of daily logs, <link days-drumbeats>. (Image-rich, currently Chinese-only)>
-  <li <date 2023.01> Joined the <link https://xn--sr8hvo.ws IndieWebring>.>
-  <li <date 2022.24> <link days-rabbit> comes to an end. (Image-rich, currently Chinese-only)>
   <li <date 2022.23> <link fhxl-rehousing>, documentary of how one cries over her own clumsiness.>
-  <li <date 2022.22> <link vividness>, a musical piece I’ve been working on recently.>
 >
 
 <link revlog>
