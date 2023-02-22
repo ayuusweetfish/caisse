@@ -37,6 +37,7 @@ end
 local function render(s, fns, ignoremissingfns)
   fns[''] = fns[''] or function (s) return s end  -- for <= ...>
   fns['-'] = fns['-'] or function (s) return s .. '\n' end
+  fns['--'] = fns['--'] or function (s) return '' end
   fns['^'] = fns['^'] or function (s) return s end
   fns['~'] = fns['~'] or function (s)
     local r = render('!' .. s:gsub('\n', ' '), fns, ignoremissingfns)

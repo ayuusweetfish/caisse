@@ -56,11 +56,13 @@ end
 {{cats.flow.intro.zh=}}
 “逝者如斯夫！不舍昼夜。”“帐，张也，张施于床上也。”
 不同于本站的<link dates 日期格式>，这里会使用公历记载日期。
-!<note 连载中：<link days-drumbeats %>>/
+<-- !<note 连载中：<link days-drumbeats %>>/>
+/
 {{cats.flow.intro.en=}}
 “It passes on like this, ceaseless day and night.” —— <it Analects>
 Different from the <link date date format> throughout the site, dates here will be recorded in the Gregorian calendar.
-!<note Currently running: <link days-drumbeats %>>/
+<-- !<note Currently running: <link days-drumbeats %>>/>
+/
 {{cats.flow.introsep=}}true
 
 {{{
