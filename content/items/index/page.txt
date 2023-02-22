@@ -30,8 +30,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2023.02> 新增了<link flow 流水帐>分类！>
-  <li <date 2023.01> 重启日常记录，<link days-drumbeats>（多图）>
+  <li <date 2023.02> <link days-drumbeats>，完结撒花！（多图）>
+  <li <date 2023.02> 新增了<link flow 流水帐>分类>
   <li <date 2022.23> <link fhxl-rehousing>，写点被自己菜哭的纪实>
 >
 
@@ -61,8 +61,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.02> <link days-drumbeats> concludes. (Image-rich, currently Chinese-only)>
   <li <date 2023.02> A new <link Flow> category for daily records.>
-  <li <date 2023.01> A new notebook of daily logs, <link days-drumbeats>. (Image-rich, currently Chinese-only)>
   <li <date 2022.23> <link fhxl-rehousing>, documentary of how one cries over her own clumsiness.>
 >
 
