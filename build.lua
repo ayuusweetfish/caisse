@@ -775,14 +775,14 @@ if renderlist[1] ~= '' then
 end
 
 local function renderallitems()
-  for path, item in pairs(itemreg) do if renderquery == nil or renderquery[path] then
+  local catalogue = {}
+  for path, item in pairs(itemreg) do if renderquery == nil or renderquery[path] or path:sub(1, 2) == '_/' then
     if item.isempty then  -- No-op
     elseif item.isfile then copyfile(path)
     else
       local locals = item.locals
       locals.name = path
       locals.curcat = item.cat
-      print(item.cat, caisse.envadditions.tr(locals.title))
       if item.template ~= nil then
         if item.pagination ~= nil then
           local list = item.pagination.list
@@ -809,8 +809,14 @@ local function renderallitems()
         renderpage(path, 'item.html', locals)
         markupfnsenvitem = nil
       end
+      if path:sub(1, 9) ~= 'backyard/' and path:sub(1, 2) ~= '_/' then
+        local title = caisse.envadditions.tr(locals.title)
+        print(item.cat, title)
+        catalogue[#catalogue + 1] = path .. '\t' .. title .. '\n'
+      end
     end
   end end
+  writefile(sitepath .. '_/catalogue.' .. caisse.lang .. '.txt', table.concat(catalogue))
 end
 
 local function trmerge(...)
@@ -907,6 +913,8 @@ registeritemmarkup('pebbles', 'pebbles', {
 })
 registeritemtempl('flow', 'flow', 'bannerlist.html')
 
+ensuredir('_/')
+registeritemtempl('_/404', 'home', '404.html')
 for _, lang in ipairs({'zh', 'en'}) do
   caisse.lang = lang
   caisse.envadditions.lang = caisse.lang

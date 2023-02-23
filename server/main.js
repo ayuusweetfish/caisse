@@ -202,6 +202,10 @@ class Truncate extends TransformStream {
   }
 }
 
+const notFoundPage = async (req, opts, headers, path) => {
+  return staticFile(req, opts, headers, '/_/404')
+}
+
 const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
   headers.set('Accept-Ranges', 'bytes')
@@ -234,8 +238,11 @@ const staticFile = async (req, opts, headers, path) => {
     await tryOpenFile(path + `/index.${opts.lang}.html`) ||
     await tryOpenFile(path + `/index.html`) ||
     {}
-  if (realPath === undefined)
-    return new Response('', { status: 404, headers })
+  if (realPath === undefined) {
+    // In case the 404 page is not rendered
+    if (path === '/_/404') return new Response('', { status: 404, headers })
+    return notFoundPage(req, opts, headers, path)
+  }
 
   headers.set('Content-Type', mime(realPath))
   if ((await metaGet(realPath, 'COOP')) === true) {
@@ -282,6 +289,9 @@ const staticFile = async (req, opts, headers, path) => {
           items[j] = t
         }
         return items.join('\n')
+      } else if (key === 'cataloguesearch') {
+        const path = decodeURI((new URL(req.url)).pathname)
+        return value
       }
     })
     headers.set('Cache-Control', 'no-store')
@@ -388,6 +398,9 @@ const serveReq = async (req) => {
     }
     if (url.pathname === '/favicon.ico' || url.pathname === '/favicon.png') {
       return await staticFile(req, opts, headers, '/bin/favicon.png')
+    }
+    if (url.pathname === '/_' || url.pathname.startsWith('/_/')) {
+      return notFoundPage(req, opts, headers, decodeURI(url.pathname))
     }
     return await staticFile(req, opts, headers, decodeURI(url.pathname))
   }
