@@ -322,7 +322,7 @@ const methods_douban = {
       const doc = new DOMParser().parseFromString(html, 'text/html')
       const els = doc.querySelectorAll('.stream-items > .new-status')
       if (els.length === 0) break
-      console.log(`==== page ${p}, count ${els.length} ====`)
+      console.log(`==== page ${p} (${els.length} per page) ====`)
 
       for (const wrapper of els) {
         const sid = +wrapper.getAttribute('data-sid')
