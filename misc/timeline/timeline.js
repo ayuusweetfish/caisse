@@ -10,13 +10,22 @@
 // Required only by Douban
 import { DOMParser } from 'https://deno.land/x/deno_dom@v0.1.36-alpha/deno-dom-wasm.ts'
 
+const sleep = (ms) => new Promise((rslv, rj) => setTimeout(rslv, ms))
+
 const getJson = async (url, headers) => {
   for (let i = 0; i < 5; i++) {
     try {
-      const text = await (await fetch(
+      const req = await fetch(
         url,
         { headers },
-      )).text()
+      )
+      if (req.status === 429) {
+        console.log(`Rate limited, retrying after 5 seconds`)
+        await sleep(5000)
+        i--
+        continue
+      }
+      const text = await req.text()
       return JSON.parse(text)
     } catch (e) {
       console.log(`Retrying ${url}`)
@@ -57,8 +66,6 @@ const downloadFile = async (url, headers, dir, fileName, bannedType) => {
   console.log(`%cDownload file ${fileName} -- ` + (cached ? 'Cached, skipping' : 'Finished'), 'color: grey')
   return fileName
 }
-
-const sleep = (ms) => new Promise((rslv, rj) => setTimeout(rslv, ms))
 
 const methods_weibo = {
   async* get(args) {
