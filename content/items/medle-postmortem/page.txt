@@ -79,7 +79,7 @@
 
 要怎么结束呢？当我在半年前的夏天告诉一位好友时，她说觉得好可惜，希望我一直做下去。在这一瞬间我有些小小的感动——可是，我毕竟不是机器人呀。我也没有太想把它推广到多远的地方，就这样平平淡淡度过一年，已经是很棒的经历了。
 
-前些日子我想过制作一个小游戏来接替它——我想过<link 28-days-22w#day-24 用 AI 制作音乐游戏地图>，想过歌单猜歌小游戏（这个还是某天梦里想出来的），想过通过算法的辅助让没有学习过的大家也能共同创作音乐，也一直保留着最早的想法：做个“Medle Medley”，把出现过的乐曲选择一些拼接在一起，编写一首混成曲。但是我的工作能力没有那么厉害，时间精力也都有限，几番纠结与挣扎后只好作罢，选择用这篇废话来作结。尽管如此，这些想法说不定之后有一天也会和大家见面呢！
+前些日子我想过制作一个小游戏来接替它——我想过<link flow/28-days-22w#day-24 用 AI 制作音乐游戏地图>，想过歌单猜歌小游戏（这个还是某天梦里想出来的），想过通过算法的辅助让没有学习过的大家也能共同创作音乐，也一直保留着最早的想法：做个“Medle Medley”，把出现过的乐曲选择一些拼接在一起，编写一首混成曲。但是我的工作能力没有那么厉害，时间精力也都有限，几番纠结与挣扎后只好作罢，选择用这篇废话来作结。尽管如此，这些想法说不定之后有一天也会和大家见面呢！
 
 !<h1 尾声 #coda>
 
@@ -160,7 +160,7 @@ I’ve been collecting puzzle proposals from a small group of friends, and I tin
 
 How will it end? When I told a close friend about it in the summer half a year, she said she felt regretful for that and wanted me to keep the game going. I was touched at the moment — but I could not be a robot. Neither did I really want to take it too far; it has been a great experience to just get through a year uneventfully.
 
-Recently I’ve been thinking about creating a new game to take over — I thought about <link 28-days-22w#day-24 making maps in musical or rhythmic games with AI>, about puzzles revealing a track in a playlist (the idea of which came to me in a dream), about collaboration in making music with the aid of an algorithm for people without experience, about my earliest idea: a “Medle Medley”, where a selection of music in the game are mixed together into a new piece. But I’m cumbersome at my work, and my time and energy are limited as well, hence after a few days of hesitation and struggles I had to give up and choose to take a curtain call with this nonsense. Nonetheless, these ideas may be brought to life someday in the future!
+Recently I’ve been thinking about creating a new game to take over — I thought about <link flow/28-days-22w#day-24 making maps in musical or rhythmic games with AI>, about puzzles revealing a track in a playlist (the idea of which came to me in a dream), about collaboration in making music with the aid of an algorithm for people without experience, about my earliest idea: a “Medle Medley”, where a selection of music in the game are mixed together into a new piece. But I’m cumbersome at my work, and my time and energy are limited as well, hence after a few days of hesitation and struggles I had to give up and choose to take a curtain call with this nonsense. Nonetheless, these ideas may be brought to life someday in the future!
 
 !<h1 Coda #coda>
 

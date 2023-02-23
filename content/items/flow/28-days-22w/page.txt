@@ -278,6 +278,6 @@
 癸卯年的第一天过得并不快乐，但是没关系！希望在兔年创造的愉悦与充实不仅能给别人，也能给自己 <kao ✧٩(ˊωˋ*)و✧>
 
 {{contents.en=}}
-!<note This page is currently <catlink 28-days-22w?lang=zh pebbles Chinese-only>.>
+!<note This page is currently <link ?lang=zh Chinese-only>.>
 
 {{toc=}}true

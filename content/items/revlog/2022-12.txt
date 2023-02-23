@@ -9,8 +9,8 @@
   <li
     增加了两份长长的日常记录。其实原本没有设想过放这类生活化的内容，但是看上去也不错的样子！
     <list
-      <li <link 28-days-22w 打卡日记>，期间心血来潮试了试通过 AI 扒谱为音乐生成视觉效果，做了一段小动画。>
-      <li <link days-rabbit 新年游记>，堆放了许多出游照片与胡思乱想的文字。>
+      <li <link flow/28-days-22w 打卡日记>，期间心血来潮试了试通过 AI 扒谱为音乐生成视觉效果，做了一段小动画。>
+      <li <link flow/rabbit 新年游记>，堆放了许多出游照片与胡思乱想的文字。>
     >
   >
   <li 生产了一篇笨蛋运维纪实，<link fhxl-rehousing>。>
@@ -25,8 +25,8 @@ A month filled with fragments, spent in painting and New Year’s outings.
   <li
     Added two lengthy dumps of daily life. I actually had not envisaged putting up such life-related content here, but it turned out decent!
     <list
-      <li <link 28-days-22w Daily activity records>, during which I impulsively tried creating visualisations for music through AI-based transcription, and made a short demonstrative animation.>
-      <li <link days-rabbit New Year’s outings>, a collection of photos and rambling words.>
+      <li <link flow/28-days-22w Daily activity records>, during which I impulsively tried creating visualisations for music through AI-based transcription, and made a short demonstrative animation.>
+      <li <link flow/rabbit New Year’s outings>, a collection of photos and rambling words.>
     >
   >
   <li Wrote a record of a bumbling Ops experience, <link fhxl-rehousing>.>
