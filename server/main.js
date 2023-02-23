@@ -158,6 +158,38 @@ const timeOfDay = (timestampMinute) => {
   }
 }
 
+const editScore = (s, t) => {
+  const ns = s.length
+  const nt = t.length
+  const a = new Array((ns + 1) * (nt + 1))
+  const stride = nt + 1
+  // Damerau–Levenshtein distance
+  for (let i = 0; i <= ns; i++) a[i * stride + 0] = i
+  for (let j = 1; j <= nt; j++) a[0 * stride + j] = j
+  for (let i = 1; i <= ns; i++)
+    for (let j = 1; j <= nt; j++)
+      a[i * stride + j] = Math.min(
+        a[(i - 1) * stride + j] + 1,
+        a[i * stride + (j - 1)] + 1,
+        a[(i - 1) * stride + (j - 1)] + (s[i - 1] === t[i - 1] ? 0 : 1),
+        (i >= 2 && j >= 2 && s[i - 2] === t[i - 1] && s[i - 1] === t[i - 2])
+          ? a[(i - 2) * stride + (j - 2)] + 1
+          : ns + nt
+      )
+  const dist = a[ns * stride + nt]
+  // Common subsequences
+  for (let i = 0; i <= ns; i++) a[i * stride + 0] = 0
+  for (let j = 1; j <= nt; j++) a[0 * stride + j] = 0
+  for (let i = 1; i <= ns; i++)
+    for (let j = 1; j <= nt; j++)
+      a[i * stride + j] =
+        a[(i - 1) * stride + j] +
+        a[i * stride + (j - 1)] +
+        (s[i - 1] === t[j - 1] ? 1 : -a[(i - 1) * stride + (j - 1)])
+  const sub = a[ns * stride + nt]
+  return dist * 5 - sub
+}
+
 const negotiateLang = (accept, supported) => {
   const list = accept.split(',').map((s) => {
     s = s.trim()
@@ -252,7 +284,7 @@ const staticFile = async (req, opts, headers, path) => {
 
   if (realPath.endsWith('.html')) {
     persistLog([
-      req.url,
+      req.url + (path === '/_/404' ? ' *' : ''),
       JSON.stringify(opts),
       req.headers.get('User-Agent'),
       req.conn.remoteAddr.hostname,
@@ -290,8 +322,14 @@ const staticFile = async (req, opts, headers, path) => {
         }
         return items.join('\n')
       } else if (key === 'cataloguesearch') {
-        const path = decodeURI((new URL(req.url)).pathname)
-        return value
+        const enteredPath = decodeURI((new URL(req.url)).pathname).substring(1)
+        const best = []
+        for (const [_, path, content] of value.matchAll(/(\S+) (.+)\n/g)) {
+          const score = editScore(enteredPath, path)
+          best.push({ score, content })
+        }
+        best.sort((a, b) => a.score - b.score)
+        return best.slice(0, 5).map(x => x.content).join('')
       }
     })
     headers.set('Cache-Control', 'no-store')

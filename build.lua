@@ -809,14 +809,19 @@ local function renderallitems()
         renderpage(path, 'item.html', locals)
         markupfnsenvitem = nil
       end
-      if path:sub(1, 9) ~= 'backyard/' and path:sub(1, 2) ~= '_/' then
+      if path:sub(1, 9) ~= 'backyard/' and path ~= 'index' and path:sub(1, 2) ~= '_/' then
         local title = caisse.envadditions.tr(locals.title)
         print(item.cat, title)
-        catalogue[#catalogue + 1] = path .. '\t' .. title .. '\n'
+        catalogue[#catalogue + 1] = {
+          path = path,
+          cat = item.cat,
+          title = title,
+        }
       end
     end
   end end
-  writefile(sitepath .. '_/catalogue.' .. caisse.lang .. '.txt', table.concat(catalogue))
+  table.sort(catalogue, function (a, b) return a.path < b.path end)
+  return catalogue
 end
 
 local function trmerge(...)
@@ -914,11 +919,18 @@ registeritemmarkup('pebbles', 'pebbles', {
 registeritemtempl('flow', 'flow', 'bannerlist.html')
 
 ensuredir('_/')
-registeritemtempl('_/404', 'home', '404.html')
+local itemregglobal = itemreg
 for _, lang in ipairs({'zh', 'en'}) do
   caisse.lang = lang
   caisse.envadditions.lang = caisse.lang
+  local catalogue = renderallitems()
+  local itemregglobal = itemreg
+  itemreg = {}
+  registeritemtempl('_/404', 'home', '404.html', {
+    catalogue = catalogue,
+  })
   renderallitems()
+  itemreg = itemregglobal
 end
 
 os.execute(table.concat(bufferedcmds, '; '))
