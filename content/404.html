@@ -17,7 +17,32 @@ Are you looking for these?
 <p>{{ prompt }}</p>
 <ul>
 <!-- (cataloguesearch)
-<li><a class='pastel home' href='/friends'>朋友们</a></li>
+{{@ catalogue }}
+{{path}} <li><a class='pastel {{cat}}' href='/{{path}}'>{{title}}</a><span class='tt catalogue-path'>/{{path}}</span><div class='catalogue-path-after'></div></li>
+{{@ end }}
 -->
 </ul>
 </section>
+
+<style>
+.item-contents ul li {
+  margin-block-end: 0.25em;
+}
+.catalogue-path {
+  opacity: 0.4;
+  margin-inline-start: 1.5em;
+}
+.catalogue-path-after {
+  display: none;
+}
+@media (max-width: 115vh), (max-width: 48rem) {
+  .catalogue-path {
+    margin-inline-start: 0.25em;
+    float: right;
+  }
+  .catalogue-path-after {
+    display: block;
+    clear: both;
+  }
+}
+</style>
