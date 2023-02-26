@@ -254,7 +254,7 @@
 !<img 0218-line4.png 三个小女孩，中间一位在画画，另两位凑过来看。侧面摆放着尚未抄写完的乐谱。 syncdark>
 
 画着画着我也被画进去了！看似随便画几笔就能描绘出来真是太厉害啦。要继续努力学习！
-!<img 0218c.jpg <= 友人画的奋力抄谱中的 Ayu。> vertical caption>
+!<img 0218c.png <= 友人画的奋力抄谱中的 Ayu。（已征得友人同意）> vertical caption syncdark>
 
 !<hr>
 
