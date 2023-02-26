@@ -104,9 +104,10 @@ local function copydir(src)
       'cp -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
   else
     -- Symbolic link
+    local dircompcount = select(2, (sitepath .. dst):gsub('[^/]+/', ''))
     bufferedcmds[#bufferedcmds + 1] =
       'ln -s ' ..
-      '"$(realpath --relative-to="$(dirname "' .. sitepath .. dst .. '")" "' .. srcpath .. src .. '")" ' ..
+      '"' .. string.rep('../', dircompcount) .. srcpath .. src .. '" ' ..
       '"' .. sitepath .. dst .. '"'
   end
   contentpath[dst] = src
@@ -869,7 +870,7 @@ for _, fontname in ipairs({
   copyfile('fonts/' .. fontname .. '.woff', true)
 end
 copydir('fonts-zh')
-copydir('vendor/katex-0.16.3')
+copydir('vendor/katex-0.16.4')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
