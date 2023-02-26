@@ -33,7 +33,7 @@
 
 很快就开始觉得不能那么废物，支棱起来不抱希望地往搜索引擎里面敲“<lang en Linux recover rm’ed files>”，并且做好了胡乱 unmount 的准备，实在不行就算了。然后出现了让我眼前一亮的东西——
 
-!<img stackexchange.png <= StackExchange 上的问题，回答中提到如果文件还被进程开着就可以从 /proc 里找到。>>
+!<img stackexchange.png <= StackExchange 上的问题，回答中提到如果文件还被进程开着就可以从 /proc 里找到。> syncdarkmild>
 
 天哪，谢谢这个设计，赶紧去找，顺便看看自己有没有不知不觉把别的日志也搞丢了。
 
@@ -89,7 +89,7 @@ At this time I started to cry on the table. (I’m really sobbing over my own st
 
 I soon started to realise that I could not appear that useless. I got up and typed “Linux recover rm’ed files” into the search engine, without much hope and prepared to randomly unmount and just forget about it if it did not turn out well. Then something popped up that caught my eye —
 
-!<img stackexchange.png <= A question on StackExchange, whose answer mentioned that if the process was still running, the file could be found in /proc.>>
+!<img stackexchange.png <= A question on StackExchange, whose answer mentioned that if the process was still running, the file could be found in /proc.> syncdarkmild>
 
 Gosh, thanks for this design! I rushed off to find it and to see whether I had unknowingly lost any other logs as well.
 

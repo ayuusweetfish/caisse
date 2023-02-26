@@ -21,6 +21,9 @@ body.dark {
   background: url(/bin/{{ hashverfile('background-dark.svg') }}), hsl(36deg, 80%, 7%) center;
   color: #fefbfa;
 }
+/* Image alt text */
+img { color: #181410; }
+body.dark img { color: #fefbfa; }
 
 body {
   display: flex;
@@ -673,7 +676,10 @@ blockquote.quote .quote-by {
   display: block;
 }
 
-body.dark img.syncdark { filter: invert(); }
+body img { transition: filter ease 0.2s; }
+body.dark img { filter: grayscale(20%) brightness(95%); }
+body.dark img.syncdark { filter: grayscale(20%) invert() brightness(95%) hue-rotate(180deg); }
+body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brightness(95%) hue-rotate(180deg); }
 
 /* Styles for bannerlist.html */
 
