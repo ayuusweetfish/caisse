@@ -290,6 +290,7 @@ const staticFile = async (req, opts, headers, path) => {
       req.conn.remoteAddr.hostname,
       req.headers.get('Referer'),
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
+    if (path === '/_/404') status = 404
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
     const timeInMinCur = timeInMin(opts.tz || 8 * 60)
