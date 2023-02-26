@@ -7,6 +7,8 @@ Then run without arguments or input:
   lua process.lua
 To use the cache:
   mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
+
+Dependencies: pyftsubset (fonttools), woff2_compress (woff2)
 ]]
 
 local codepoints = {}

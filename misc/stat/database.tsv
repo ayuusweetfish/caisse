@@ -50,8 +50,6 @@ items/adventure/Vio3.png	15507	image	360	640
 items/adventure/Vio4.png	19045	image	360	640
 items/adventure/notes.txt	111	document
 items/adventure/run.sh	548	unknown
-items/adventure/stb_image.h	279339	code
-items/adventure/stb_image_write.h	71221	code
 items/adventure/unifystrokes.c	6617	code
 items/bellflowers/Bellflowers_Wonderland.ogg	4340151	audio	252
 items/bellflowers/Bellflowers_Wonderland.tracktionedit	334735	musicnotes
