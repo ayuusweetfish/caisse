@@ -38,6 +38,7 @@ The two main characters of Cave Story are both named after punctuation marks (th
 
 {{rellinks.zh=}}
 !<list
+  <li <link https://github.com/ayuusweetfish/tilde-seq 程序仓库（GitHub）>>
   <li <link zero#Heptadekka 使用 Tilde 制作的音乐《Heptadekka》>>
   <li <link https://www.warmplace.ru/soft/pixilang/ Pixilang>>
   <li <link https://www.cavestory.org/ 《洞窟物语》社区网站>>
@@ -46,6 +47,7 @@ The two main characters of Cave Story are both named after punctuation marks (th
 
 {{rellinks.en=}}
 !<list
+  <li <link https://github.com/ayuusweetfish/tilde-seq Source repository (GitHub)>>
   <li <link zero#Heptadekka Music composed in Tilde, “Heptadekka”>>
   <li <link https://www.warmplace.ru/soft/pixilang/ Pixilang>>
   <li <link https://www.cavestory.org/ Cave Story community website>>
