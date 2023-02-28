@@ -20,6 +20,7 @@ process tianxianzi '#ada99e'  # dimmed to 75%
 process miyehn '#394134'
 process gregueria '#4e4b5f'
 process orangii '#ff9700'
+process azalea '#70512a'
 process xxiivv-webring '#303030'
 process indiewebring '#ff5c00'
 process travellings '#303030'
