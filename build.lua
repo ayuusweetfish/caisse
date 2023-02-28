@@ -558,6 +558,9 @@ markupfns = {
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
       .. htmlescape(text) .. '</a>'
   end,
+  anchor = function (id)
+    return '<a id="' .. id .. '"></a>'
+  end,
   relme = function (text)
     return text:gsub('^<a ', '<a rel="me" ')
   end,
