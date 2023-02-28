@@ -50,6 +50,9 @@
 
 !<h1 02.25【快乐周末】 #0225>
 !<img 0225a.png 与友人去居酒屋吃饭。 caption syncdark>
+!<img 0225b.png 友人：每次看到［Ayu］好像都是毛茸茸的哎。 caption syncdark>
+!<img 0225c.png 下午一起玩游戏。 caption syncdark>
+!<img 0225d.png 晚上去乐队里其他梯队的排练玩。 caption medsmall syncdark>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
