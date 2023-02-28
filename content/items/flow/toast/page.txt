@@ -1,24 +1,23 @@
 {{title.zh=}}为美好生活干杯
 {{intro.zh=}}不知道未来有什么呢
 {{title.en=}}A Toast to a Lovely Life
-{{intro.en=}}
+{{intro.en=}}The unknown that lies ahead
 
 {{date=}}2023.02
 
 {{contents.zh=}}
 
-!<note 最近更新：<link #0227 02.27【不行退学】>>
+!<note 最近更新：<link #0228 02.28【吹水】>>
 
-上篇结尾刚说完“可能最近没那么有趣”，过了一周回顾时就发现生活中还是有许多值得记录的事情，所以决定继续啦。我想尝试尽量少写字，想着除了碎碎念之外或许还能有一些别的什么，给这里的读者，更重要的是给自己。
+上篇结尾刚说完“可能最近没那么有趣”，过了一周回顾时就发现生活中还是有许多值得记录的事情，所以决定继续啦。我想尝试少写大段的文字，想着除了碎碎念之外或许还能有一些别的什么给这里的读者，当然也给自己。
 
 !<hr windy>
-
 !<h1 02.22【好巧，糟糕】 #0222>
-上午发现忘记了一节课——我：“哈哈哈哈好巧！”同学：“好像没看见你呀。”我：“糟糕……”。
+上午赖床时得知自己忘记了一节课——同学：“你也在这节课上吗！”我：“诶哈哈哈哈哈好巧！”同学：“好像没看见你呀。”我：“糟糕……”
 !<img 0222a.png 坐在床上看着聊天消息无奈苦笑的情景。 medsmall syncdark>
 
 !<blockquoteby <link flow/drumbeats#0221 昨天我自己说的>
-……第一周完全没有课，反而比假期还舒适。好像很久没有过这么快乐的一天啦。
+……第一周<b 完全没有课>，反而比假期还舒适。好像很久没有过这么快乐的一天啦。
 >
 
 !<hr>
@@ -26,21 +25,26 @@
 补了一下午生日记录。
 !<img 0222b.png 坐在电脑前画画的情景。 medsmall syncdark>
 
+!<hr windy>
 !<h1 02.23【贺卡】 #0223>
 下午一直在床上躺着，折腾了那么久终于可以放空一会儿了。
 !<img 0223a.png 躺在床上玩手机的情景。 medsmall syncdark>
 
+!<anchor 0223-portrait>
+晚上在排练厅玩，收到一位同学（鸭鸭）的新年贺卡，这是最近第二次被别人画了（<link flow/drumbeats#0218-portrait 上一次在这>）！好开心好开心！
+（图片征求同意中）
 !<--=''
-晚上在排练厅玩，收到一位同学——大家叫她鸭鸭——的新年贺卡，这是我最近第二次被别人画了（<link flow/drumbeats#0218 上一次在这>）！好开心好开心！
 !<img 0223b.jpg 贺卡上用铅笔绘制的图画，举着琴槌站在琴前。 vertical medsmall syncdark>
 ''>
 
+!<hr windy>
 !<h1 02.24【组会】 #0224>
 开组会。提前到达，趴在休息区看了一些《深海》的手书，比如<link https://www.bilibili.com/video/BV1kM411Y7Uf/ 这个>。你说它好笑吧，又到处藏刀子；说它好哭吧，本质还是生草手书。从未如此深刻地体会到什么叫哭笑不得。
 !<img 0224a.png 拿着手机边哭边笑的场景。 medsmall syncdark>
 
 开会前还看到了地面上的彩虹。
-!<img 0224b.png 地面上的一小段彩虹。 medsmall syncdark>
+!<img 0224b.png 观看地面上的一小段彩虹的情景。 medsmall syncdark>
+!<img 0224b2.jpg 地面上彩虹的照片。 square medsmall>
 
 导师在幻灯片的结尾写着“要加油鸭”，“<lang jp がんばれ>”。
 !<img 0224c.png 组会的场景，屏幕上用中日双语写着“加油”。 medsmall syncdark>
@@ -48,11 +52,22 @@
 晚上乐队排练结束后被邀请去过生日的友人宿舍吃蛋糕。
 !<img 0224d.png 一起吃蛋糕的情景。 medsmall syncdark>
 
+!<hr windy>
 !<h1 02.25【快乐周末】 #0225>
 !<img 0225a.png 与友人去居酒屋吃饭。 caption syncdark>
 !<img 0225b.png 友人：每次看到［Ayu］好像都是毛茸茸的哎。 caption syncdark>
 !<img 0225c.png 下午一起玩游戏。 caption syncdark>
 !<img 0225d.png 晚上去乐队里其他梯队的排练玩。 caption medsmall syncdark>
+
+!<hr windy>
+!<h1 02.26 —（待补）— #0226>
+!<h1 02.27 —（待补）— #0227>
+!<note 尝试看话说图中>
+
+!<hr windy>
+!<h1 02.28【吹水】 #0228>
+“小朋友们要来吹管，可是我在划水”——参加乐队招新面试，在琴房等着小朋友们送上门来（不是）。今天来的人很少，于是都在瞎玩，正事也没做，一下午就这么过去了。另外一个环节要用软件做测试，怀疑这个软件有 bug，然后证实了……不准的测试结果可不能用来参考，这次开会时得汇报一下啦。
+!<img 0228a.png 坐在钢琴旁无所事事的情景。 syncdark>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
