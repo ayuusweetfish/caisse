@@ -60,7 +60,12 @@
 !<img 0225d.png 晚上去乐队里其他梯队的排练玩。 caption medsmall syncdark>
 
 !<hr windy>
-!<h1 02.26 —（待补）— #0226>
+!<h1 02.26【修电脑的】 #0226>
+!<img 0226a.png <= 电脑屏幕不亮了……不过接上这个 5 寸小显示屏还是能用。我是不是可以叫它“苹果派”？> caption syncdark>
+!<img 0226b.png <= 不知道校内的志愿者会处理这个吗……总之先拿去试试吧。> caption syncdark>
+!<img 0226c.png <= 啊啊啊要怎么说呢……“屏幕不亮，其他设备包括摄像头都正常工作，NVRAM 和 SMC 已经重设”？“想问问这种情况可以帮忙看一下吗，还是说拿到维修店比较好”？> caption syncdark>
+
+!<hr windy>
 !<h1 02.27 —（待补）— #0227>
 !<note 尝试看话说图中>
 
