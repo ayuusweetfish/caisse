@@ -7,7 +7,7 @@
 
 {{contents.zh=}}
 
-!<note 最近更新：<link #0228 02.28【吹水】>>
+!<note 最近更新：<link #0301 03.01【烤鱼】>；补全了 <link #0226 02.26【修电脑的】>、<link #0227 02.27【不行退学】>。>
 
 上篇结尾刚说完“可能最近没那么有趣”，过了一周回顾时就发现生活中还是有许多值得记录的事情，所以决定继续啦。我想尝试少写大段的文字，想着除了碎碎念之外或许还能有一些别的什么给这里的读者，当然也给自己。
 
@@ -81,8 +81,12 @@
 !<hr windy>
 !<h1 03.01【烤鱼】 #0301>
 与栗子同学约饭。原本计划去的店关门了，遂决定就近吃烤鱼，等待上菜时去了奶茶店。聊了许多近况，超级开心。
-!<img 0301a.png 奶茶店的情景。 medsmall syncdark>
+!<img 0301a.png 奶茶店的情景。 small syncdark>
 !<img 0301b.png 餐桌上的情景。 medsmall syncdark>
+!<hr cloudy>
+彩蛋——
+!<img 0301c.png <= 试衣镜映出的栗子同学与一旁探头的 Ayu。//饭后闲逛。> caption square medsmall syncdark>
+!<img 0301d.png <= 餐桌上的情景。//“不要什么都说啊啊啊啊讨厌一些没有边界感的 ENFP！”> caption square medsmall syncdark>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
