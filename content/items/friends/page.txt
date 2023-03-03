@@ -107,6 +107,14 @@ I expect that your site mirrors a part of yourself! Please reach me by e-mail at
   langs = {'zh'},
   tint = {0x70, 0x51, 0x2a},
   bgimg = 'azalea-bg.png',
+}, {
+  shortname = 'JasonL',
+  title = 'JasonL\'s Blog',
+  author = 'JasonLan',
+  link = 'https://jasonlannel.github.io/',
+  langs = {'zh'},
+  tint = {0, 102, 170},
+  bgimg = 'jasonl-bg.png',
 --[[
 }, {
   shortname = 'Example',
