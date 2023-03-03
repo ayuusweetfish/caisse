@@ -32,10 +32,7 @@
 
 !<anchor 0223-portrait>
 晚上在排练厅玩，收到一位同学（鸭鸭）的新年贺卡，这是最近第二次被别人画了（<link flow/drumbeats#0218-portrait 上一次在这>）！好开心好开心！
-（图片征求同意中）
-!<--=''
-!<img 0223b.jpg 贺卡上用铅笔绘制的图画，举着琴槌站在琴前。 vertical medsmall syncdark>
-''>
+!<img 0223b.jpg 贺卡上用铅笔绘制的图画，举着琴槌站在琴前。//（已征得同意） caption vertical medsmall syncdark>
 
 !<hr windy>
 !<h1 02.24【组会】 #0224>
