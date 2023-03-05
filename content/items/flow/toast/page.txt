@@ -40,7 +40,7 @@
 !<img 0224a.png 拿着手机边哭边笑的场景。 medsmall syncdark>
 
 开会前还看到了地面上的彩虹。
-!<img 0224b.png 观看地面上的一小段彩虹的情景。 medsmall syncdark>
+!<img 0224b.png 观看地面上的一小段彩虹的情景。 medsmall syncdarkmild>
 !<img 0224b2.jpg 地面上彩虹的照片。 square medsmall>
 
 导师在幻灯片的结尾写着“要加油鸭”，“<lang jp がんばれ>”。
