@@ -1,0 +1,22 @@
+{{title.zh=}}23 寅月 —— 七九河开，八九雁来
+{{title.en=}}23, Month of the Tiger — Rivers Thawing, Wild Geese Migrating
+
+{{timestamp=}}2023.03.06.05
+
+{{contents.zh=}}
+候雁北、草木萌动。我也来到了北方，好像许多值得期待的的人事物也和春天一起走来啦。
+
+!<list
+  <li <link medle-postmortem Medle 第一乐章的结束>；>
+  <li 将所有日常记录移到了<link flow 流水帐>分类，增加两篇新内容；>
+  <li 在“未找到”（404）页面上列出相近的页面链接。>
+>
+
+{{contents.en=}}
+The migrants come north, the grasses sprout. I’ve also moved to the North, where wondrous things seem to come along with spring.
+
+!<list
+  <li <link medle-postmortem Medle concludes its first movement>;>
+  <li Moved all daily records to the category of <link flow Flow>, adding two new articles;>
+  <li List links to similar pages on the “not found” (404) page.>
+>

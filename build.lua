@@ -901,7 +901,7 @@ for i = 1, #backyarditems do
 end
 registeritemmarkup('backyard', 'backyard')
 
-local revloglatest = 2022*12 + 12
+local revloglatest = 2023*12 + 1
 local revlogfirst = 2022*12 + 10
 registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
 for _, lang in ipairs({'zh', 'en'}) do
