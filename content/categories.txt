@@ -68,6 +68,7 @@ Different from the <link dates date format> throughout the site, dates here will
 
 {{{
 cats.music.pagelist = {
+  {name = 'candy'},
   {name = 'vividness', dark = true},
   {name = 'leaving', dark = true},
   {name = 'bellflowers', dark = true},

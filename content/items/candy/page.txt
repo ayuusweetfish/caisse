@@ -1,0 +1,10 @@
+{{title.zh=}}元气女孩・打击乐七重奏
+{{intro.zh=}}
+{{title.en=}}Candy Girl — Percussion septet cover
+{{intro.en=}}
+
+{{date=}}2023.03
+
+{{contents.zh=}}
+
+{{contents.en=}}
