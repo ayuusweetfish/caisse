@@ -7,4 +7,9 @@
 
 {{contents.zh=}}
 
+!<filetable
+  <file Candy_Girl.mp4 动画与乐谱>
+  <file Candy_Girl.mscz MuseScore 3 文档>
+>
+
 {{contents.en=}}

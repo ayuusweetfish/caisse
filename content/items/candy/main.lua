@@ -5,16 +5,16 @@
 
 -- record=1 ~/Downloads/love-11.4.app/Contents/MacOS/love .
 -- mv ~/Library/Application\ Support/LOVE/CandyGirl overlay
--- for i in overlay/CandyGirl-*.png; do convert $i -define png:color-type=2 $i; done
+-- convert -define png:color-type=2 -size 1920x1200 xc:none overlay/CandyGirl-004655.png; for i in {4656..4829}; do ln -sf CandyGirl-004655.png overlay/CandyGirl-00$i.png; done
 
 --[[
 ~/Downloads/ffmpeg-5.0.1 \
   -i ~/Downloads/BV1Y541177Rg.m4s \
   -r 24000/1001 -i "overlay/CandyGirl-%06d.png" \
-  -filter_complex "[0]crop=1152:720:64:0,scale=960:600[0a];[1]scale=960:600[1a];[0a][1a]overlay[out]" \
+  -filter_complex "[0]crop=1152:720:64:0,scale=960:600,tpad=stop=-1:stop_mode=clone[0a];[1]scale=960:600,tpad=stop=-1:stop_mode=clone[1a];[0a][1a]overlay[out]" \
   -i CandyGirl.wav \
   -filter_complex "aevalsrc=0:d=0.8[pad];[pad][2]concat=n=2:v=0:a=1[2a]" \
-  -map [out] -map [2a] -crf 28 CandyGirl.mp4
+  -map [out] -map [2a] -shortest -crf 29 CandyGirl.mp4
 ]]
 
 local scale = 2
