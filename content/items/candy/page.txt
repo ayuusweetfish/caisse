@@ -6,7 +6,7 @@
 {{!--[[
 ~/Downloads/ffmpeg-6.0 -ss 1.7 -i ~/Downloads/BV1Y541177Rg.m4s -frames:v 1 -vf "scale=iw/2:ih/2" cover.png
 ]]}}
-{{date=}}2023.03
+{{date=}}2021.04,2023.03
 {{bannerimg=}}cover.png
 {{bannerimgpos=}}50,10
 {{bannerimgalt.zh=}}音乐动画画面；夜色中的城市天际线，粉彩色。
@@ -63,3 +63,18 @@ We talk about the intersectionality of individuals, about how each identity is a
 The so-called “girls” are, at the end of the day, the intersection of the two situations of “females” and “youth”, or rather, “femininity” and “youthfulness”. Both are of course diverse and even ambiguous, but at least there is something that resonates between the experiences of life here.
 
 The girl in the campus in the city looks into the future, while the girl in the classroom among the mountains looks into the distance. They fight for the inequality under the sun, and rage against the evil in the shadows. Bearing countless unknown potentials, taking countless different shapes, writing countless fresh stories — every girl that exists is a drop in the flood, a snowflake in the storm. No?
+
+When we reject the notion of “Girls’ Day”, we stand against the deification, specialisation and othering of femininity, against the neglect and the indifference reflected in the words like “goddesses” and “queens”. The forced buying and selling on Girls’ Days may become a cause for embarrassments, but the observance can actually be a vehicle for goodwill and friendship, and more importantly, a good opportunity to see and to reflect.
+
+When Principal Zhang Guimei sees that her girls will one day be able to reap a few laughs, although perhaps mixed with a few frowns, on Girls’ Day, I guess she will probably be pleased as well?
+
+!<hr>
+
+In retrospect, the “Candy Girl” in the music stands for only one among a myriad of possibilities, and actually carries too much of a stereotype. It is almost true that only “one in a thousand” girls is able to “never forget being beautiful”, and not every girl is willing or is able to be “lovely to the hair”. But what’s wrong, after all? Can being beautiful not spread shades of delight in the life, can Hanser and Nanami not be considered salty-sweet — both cool and cute?
+
+“Deng Yue Plan V” had this slogan — “overthrow the definition, you are how you want to be”. There are countless girls who are “omnipotent” in their own way, and countless girls who “never want their lives to be dictated by anyone”; girls are writing their own narrative poems, one by one. It is as if we are in the midst of a turbulent but marvellous era.
+
+!<blockquote <~~='
+别太乖/去热爱/自由自在
+Obey not too much / go on loving, freely
+'>>
