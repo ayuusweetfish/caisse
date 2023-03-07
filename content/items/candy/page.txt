@@ -31,8 +31,8 @@
 我们谈个体的交织性、说每一种身份都是一种处境，而妇女节（“劳动妇女节”）的来历正是一个很好的体现：无参政权、受制于性别属性的“第二性”，与工人阶级所遭受的沉重压迫、所拥有的浩大队伍，二者的交织最终以“女性力量”的形式爆发出来——大罢工、抗议游行，“所有人都要有面包与玫瑰”。这是一股冲破旧世界走向平等的磅礴力量。
 所谓的“女生”、所谓的“<lang en girls>”，其实无非也就是“女性”与“年轻”两个处境的交集，更进一步，不妨说它是“女性气质”（<lang en femininity>）与“年轻心态”（<lang en youthfulness>）的交汇点。它们当然都是多种多样、甚至是模糊的，但是至少，这里的生命体验之间有一些可以共振的东西。
 城市校园里的女孩向往着未来，大山教室里的女孩向往着远方。为阳光下的偏待而抗争，为阴影中的罪恶而愤怒。蕴含着无数未知的潜力，展现着无数不同的模样，书写着无数崭新的故事——每一个存在着的 <lang en girl>，不也都是洪流中的一滴水、风暴中的一片雪花吗！
-当我们拒绝“女生节”时，拒绝的是神化、特殊化、他者化，拒绝的是“女神”“女王”这样的字眼所映出的轻忽、漠然。“女生节”里的强买强卖时常令人蹙眉，但这样的节日其实是个去看见、去思考的好机会。
-不过，当张桂梅校长看到她的女孩儿们有一天能在“女生节”被迫的团建里收获几分夹杂着无奈的欢笑，应该也会很欣慰的吧？
+当我们拒绝“女生节”时，拒绝的是神化、特殊化、他者化，拒绝的是“女神”“女王”这样的字眼所映出的轻忽、漠然。“女生节”里的强买强卖时常令人蹙眉，但这样的节日其实完全可以是善意与友情的载体，更是去看见、去思考的好机会。
+当张桂梅校长看到她的女孩儿们有一天能在“女生节”收获几分或许夹杂着无奈的欢笑，应该也会很欣慰的吧？
 
 !<hr>
 
@@ -42,3 +42,24 @@
 !<blockquote 别太乖/去热爱/自由自在>
 
 {{contents.en=}}
+
+!<filetable
+  <file Candy_Girl.mp4 Animation and score>
+  <file Candy_Girl.mscz MuseScore 3 document>
+>
+
+Happy Girls’ Day / International Women’s Day!
+
+This is a piece prepared for the salon concert of the art troupe’s wind band. Another piece was <link zzz “Zzz”>, which was eventually selected for the performance. This rearrangement was hence long overdue for completion, and incidentally became this year’s festive ritual.
+
+!<note The cover image and the background animation in the video are from <link https://bilibili.com/video/BV1Y541177Rg/ the original music video>.>
+
+!<hr>
+
+Is “Girls’ Day” worth celebrating? Is it reinforcing the misinterpretation and stigmatisation of “women” (in Simplified Chinese, “妇女”)?
+
+We talk about the intersectionality of individuals, about how each identity is a situation. These are well illustrated by the origins of Women’s Day (“Working Women’s Day”): the “second sex”, without the right to vote, bound by the gender identity, combined with the heavy oppression of the working class as well as the huge procession standing behind; the interplay between the two culminated in the outbreak of “feminine power” in the form of strikes and protests, “bread for all, and roses, too”. It grew into a powerful force that broke through the old world, heading for equality.
+
+The so-called “girls” are, at the end of the day, the intersection of the two situations of “females” and “youth”, or rather, “femininity” and “youthfulness”. Both are of course diverse and even ambiguous, but at least there is something that resonates between the experiences of life here.
+
+The girl in the campus in the city looks into the future, while the girl in the classroom among the mountains looks into the distance. They fight for the inequality under the sun, and rage against the evil in the shadows. Bearing countless unknown potentials, taking countless different shapes, writing countless fresh stories — every girl that exists is a drop in the flood, a snowflake in the storm. No?
