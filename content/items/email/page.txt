@@ -21,6 +21,9 @@ I check the mailbox frequently and have even disabled the spam filter, since it 
 The following are the most recent mails. Timestamps are all in UTC.
 If you’ve written a mail to me, check here after a minute and it should appear.
 
+{{daemonlost.zh=}}!<note （糟糕！小恶魔走丢啦……）>
+{{daemonlost.en=}}!<note (Oops! The daemon went stray…)>
+
 {{inbound.zh=}}收件
 {{inbound.en=}}Inbound
 {{outbound.zh=}}寄件
