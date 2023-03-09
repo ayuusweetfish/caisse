@@ -170,19 +170,28 @@ return mails
 
 let mailsText
 const updateMails = async () => {
-  const mails = await fetchMails(5)
-  mailsText =
-    mails[0].map(({ date, from, to }) => {
-      const dateStr = date.toISOString()
-      return `<tr><td>${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~</td><td>` +
-        `${from[1]}~~~~@~~~~~</td></tr>\n`
-    }).join('')
-    + '---\n' +
-    mails[1].map(({ date, from, to }) => {
-      const dateStr = date.toISOString()
-      return `<tr><td>${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~</td><td>` +
-        `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~</td></tr>\n`
-    }).join('')
+  for (let retries = 0; retries < 3; retries++) {
+    try {
+      const mails = await fetchMails(5)
+      mailsText =
+        mails[0].map(({ date, from, to }) => {
+          const dateStr = date.toISOString()
+          return `<tr><td>${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~</td><td>` +
+            `${from[1]}~~~~@~~~~~</td></tr>\n`
+        }).join('')
+        + '---\n' +
+        mails[1].map(({ date, from, to }) => {
+          const dateStr = date.toISOString()
+          return `<tr><td>${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~</td><td>` +
+            `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~</td></tr>\n`
+        }).join('')
+      break
+    } catch (e) {
+      const s = '<tr><td>(Stray)</td><td></td></tr>\n'
+      mailsText = s + '---\n' + s
+      log(`${e} (attempt ${retries + 1})`)
+    }
+  }
 }
 
 await updateMails()
