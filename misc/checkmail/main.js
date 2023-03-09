@@ -18,6 +18,8 @@ const CHAR_0 = '0'.charCodeAt(0)
 const CHAR_CR = '\r'.charCodeAt(0)
 const CHAR_LF = '\n'.charCodeAt(0)
 
+const MARK_STR_BOUNDARY = 255
+
 const createParser = function* () {
   const respBuf = []
   let c = yield
@@ -31,11 +33,20 @@ const createParser = function* () {
       c = yield { tag, content }
       respBuf.splice(0)
     } else if (c === CHAR_DQUOTE) {
-      respBuf.push(c)
+      respBuf.push(MARK_STR_BOUNDARY)
       while ((c = yield) !== CHAR_DQUOTE) respBuf.push(c)
-      respBuf.push(c)
+      respBuf.push(MARK_STR_BOUNDARY)
       c = yield
-    //} else if (c === CHAR_BR_OPEN) {
+    } else if (c === CHAR_BR_OPEN) {
+      let num = 0
+      while ((c = yield) != CHAR_BR_CLOSE)
+        num = num * 10 + (c - CHAR_0)
+      c = yield   // Assume CR
+      c = yield   // Assume LF
+      respBuf.push(MARK_STR_BOUNDARY)
+      for (let i = 0; i < num; i++) respBuf.push(c = yield)
+      respBuf.push(MARK_STR_BOUNDARY)
+      c = yield
     } else {
       respBuf.push(c)
       c = yield
@@ -71,4 +82,6 @@ const cmd = async (text) => {
 }
 
 console.log(await cmd(`LOGIN "${userid}" "${pwd}"`))
+console.log(await cmd(`LIST "" "*"`))
 console.log(await cmd(`EXAMINE INBOX`))
+console.log(await cmd(`FETCH 1:10 (BODY[HEADER])`))
