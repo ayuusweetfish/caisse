@@ -5,12 +5,13 @@
 <section class='item-contents item-email'>
   {{ rendermarkup(tr(intro)) }}
 
-  <h1>{{ inbound }}</h1>
-  <div class='table-container'><table><thead><th>{{ timestamp }}</th><th>{{ addr }}</th></thead><tbody>
 <!-- (fetch) https://checkmail.ayu.land/
---- </tbody></table></div><h1>{{ outbound }}</h1><div class='table-container'><table><th>{{ timestamp }}</th><th>{{ addr }}</th></thead><tbody>
+<tr>
+{{ rendermarkup(tr(daemonlost)) }}
+^ <h1>{{ inbound }}</h1><div class='table-container'><table><thead><tr><th>{{ timestamp }}</th><th>{{ addr }}</th></tr></thead><tbody>
+--- </tbody></table></div><h1>{{ outbound }}</h1><div class='table-container'><table><tr><th>{{ timestamp }}</th><th>{{ addr }}</th></tr></thead><tbody>
+$ </tbody></table></div>
 -->
-  </tbody></table></div>
 </section>
 
 <style>
