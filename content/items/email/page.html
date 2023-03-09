@@ -1,0 +1,24 @@
+<header>
+  <h1>{{ title }}</h1>
+</header>
+
+<section class='item-contents item-email'>
+  {{ rendermarkup(tr(intro)) }}
+
+  <h1>{{ inbound }}</h1>
+  <div class='table-container'><table><thead><th>{{ timestamp }}</th><th>{{ addr }}</th></thead><tbody>
+<!-- (fetch) https://checkmail.ayu.land/
+--- </tbody></table></div><h1>{{ outbound }}</h1><div class='table-container'><table><th>{{ timestamp }}</th><th>{{ addr }}</th></thead><tbody>
+-->
+  </tbody></table></div>
+</section>
+
+<style>
+.item-contents.item-email table {
+  width: 60%;
+}
+.item-contents.item-email table td {
+  font-family: 'Sono', monospace;
+  border-color: transparent;
+}
+</style>

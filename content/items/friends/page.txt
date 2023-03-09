@@ -9,7 +9,7 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.zh=}}
 !<h1 交换友链>
-希望你的网站可以映出你自己的一部分！可以通过邮件 <tt claire@ayu.land> 联系～
+希望你的网站可以映出你自己的一部分！可以通过<link email 邮件>联系～
 
 !<note <~~=''
   如果可以的话，请尽量不要将本站称呼为“博客”——我不擅长把想法组织成文章，也不太能一篇篇有序地更新内容，只会乱堆东西。这里七零八落的文字实在够不上博客的水准，我觉得这儿最好玩的大概也不是文字啦。
@@ -18,7 +18,7 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.en=}}
 !<h1 Link Exchange>
-I expect that your site mirrors a part of yourself! Please reach me by e-mail at <tt claire@ayu.land>.
+I expect that your site mirrors a part of yourself! Please reach me by <tt email e-mail>.
 
 !<note <~~=''
   If possible, please avoid referring to this site as a “blog” — I struggle with organizing my thoughts into articles, nor am I able to update content in an orderly fashion. I just pile random things up, and the writing here does not meet a standard of a blog. I suppose that the most interesting things here are not my writing, anyway.

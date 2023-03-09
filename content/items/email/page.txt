@@ -1,0 +1,33 @@
+{{title.zh=}}电子邮件
+{{title.en=}}E-mail
+
+{{intro.zh=}}
+我的邮件地址是 <tt claire@ayu.land>。
+网站上没有设置评论区，我也不在公开的社交网络上活跃，因此有任何想法都请随意写给我～
+我会时常检查信箱，甚至关闭了邮件过滤器，不然要是错过消息就太可惜啦。超级开心能收到大家的来信！
+
+!<hr>
+
+以下是近期的信件，时间戳均为协调世界时（UTC）。
+如果你发了信，过一分钟再来应该就能看到它啦。
+
+{{intro.en=}}
+My mail address is <tt claire@ayu.land>.
+This website does not have a comment section, nor am I active on public social networks; so please feel free to send anything here.
+I check the mailbox frequently and have even disabled the spam filter, since it would be too regretful for me to miss anything. It’s a great delight to have your messages!
+
+!<hr>
+
+The following are the most recent mails. Timestamps are all in UTC.
+If you’ve written a mail to me, check here after a minute and it should appear.
+
+{{inbound.zh=}}收件
+{{inbound.en=}}Inbound
+{{outbound.zh=}}寄件
+{{outbound.en=}}Outbound
+{{timestamp.zh=}}时间戳
+{{timestamp.en=}}Timestamp
+{{addr.zh=}}地址
+{{addr.en=}}Address
+
+{{=}}
