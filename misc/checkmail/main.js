@@ -5,6 +5,7 @@ const hostname = Deno.env.get('HOST')
 const port = Deno.env.get('PORT') || 993
 const userid = Deno.env.get('USER')
 const pwd = Deno.env.get('PWD')
+const toAddrs = Deno.env.get('TO').split(',')
 
 const conn = await Deno.connectTls({ hostname, port })
 
@@ -82,8 +83,7 @@ const cmd = async (text, descOnErr) => {
     if (resp.tag === tag) break
   }
   if (!resps[resps.length - 1].content.startsWith('OK ')) {
-    console.log(descOnErr)
-    Deno.exit()
+    throw new Error(`Failed with IMAP responses: ${descOnErr}`)
   }
   return resps
 }
@@ -98,9 +98,28 @@ const extractResps = (resps, regexp) => {
 }
 
 const parseHeaders = (s) => {
-  const result = []
+  const result = {}
+  const curStr = []
   for (const line of s.split('\r\n')) {
-    result.push(line)
+    if (line.match(/^\s/)) {
+      curStr.push(line.trim())
+    } else {
+      // Start a new line
+      const fullLine = curStr.splice(0).join(' ')
+      const colonPos = fullLine.indexOf(':')
+      if (colonPos !== -1) {
+        const key = fullLine.substring(0, colonPos)
+          .toLowerCase().replaceAll(/(-|^)[a-z]/g, (s) => s.toUpperCase())
+        const value = fullLine.substring(colonPos + 1).trimStart()
+        if (result[key] !== undefined) {
+          const list = (result[key + '.list'] || (result[key + '.list'] = [result[key]]))
+          list.push(value)
+        } else {
+          result[key] = value
+        }
+      }
+      curStr.push(line.trim())
+    }
   }
   return result
 }
@@ -113,17 +132,20 @@ console.log('Examining inbox')
 await cmd(`EXAMINE INBOX`, 'Examine inbox')
 
 console.log('Searching inbox')
-const list = extractResps(await cmd(`SEARCH TO claire@ayu.land`), /^SEARCH([0-9 ]+)$/)[0][0]
+const query = toAddrs.map((addr, i) => (i === toAddrs.length - 1 ? 'TO ' : 'OR TO ') + addr).join(' ')
+const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]+)$/)[0][0]
   .trim().split(' ').map((w) => +w)
 list.sort()
+const fetchList = list.slice(-15).join(',')
 
-console.log(`Fetching ${list.slice(-5).join(',')}`)
+console.log(`Fetching ${fetchList}`)
 const headersMatched = extractResps(
-  await cmd(`FETCH ${list.slice(-5).join(',')} (BODY[HEADER])`, 'Fetch message headers'),
+  await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
   /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
 )
-for (const [nStr, headersStr] of headersMatched) {
-  const n = +nStr
+for (const [_nStr, headersStr] of headersMatched) {
   const headers = parseHeaders(headersStr)
-  console.log(n, headers)
+  const date = new Date(headers['Date'])
+  const from = headers['From'].match(/<([A-Za-z0-9.-_@]+)>/)[1]
+  console.log(date, from)
 }
