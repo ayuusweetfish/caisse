@@ -174,14 +174,14 @@ const updateMails = async () => {
   mailsText =
     mails[0].map(({ date, from, to }) => {
       const dateStr = date.toISOString()
-      return `${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~\t` +
-        `${from[1]}~~~~@~~~~~\n`
+      return `<tr><td>${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~</td><td>` +
+        `${from[1]}~~~~@~~~~~</td></tr>\n`
     }).join('')
-    + '\n' +
+    + '---\n' +
     mails[1].map(({ date, from, to }) => {
       const dateStr = date.toISOString()
-      return `${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~\t` +
-        `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~\n`
+      return `<tr><td>${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~</td><td>` +
+        `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~</td></tr>\n`
     }).join('')
 }
 
