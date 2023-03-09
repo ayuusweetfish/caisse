@@ -295,6 +295,7 @@ const staticFile = async (req, opts, headers, path) => {
     let text = new TextDecoder().decode(await readAll(file))
     const timeInMinCur = timeInMin(opts.tz || 8 * 60)
     const timeOfDayCur = timeOfDay(timeInMinCur)
+    const fetched = {}
     text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
       if (key === 'dark') {
         const spacePos = value.indexOf(' ')
@@ -331,6 +332,26 @@ const staticFile = async (req, opts, headers, path) => {
         }
         best.sort((a, b) => a.score - b.score)
         return best.slice(0, 5).map(x => x.content).join('')
+      } else if (key === 'fetch') {
+        const lines = value.split('\n', 1)
+        fetched[lines[0]] = null
+        return _
+      }
+    })
+    for (const url in fetched)
+      fetched[url] = await (await fetch(url)).text()
+    text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
+      if (key === 'fetch') {
+        const lines = value.split('\n')
+        let text = fetched[lines[0]]
+        for (const replacement of lines.slice(1)) {
+          const spacePos = replacement.indexOf(' ')
+          if (spacePos !== -1)
+            text = text.replace(
+              replacement.substring(0, spacePos),
+              replacement.substring(spacePos + 1))
+        }
+        return text
       }
     })
     headers.set('Cache-Control', 'no-store')

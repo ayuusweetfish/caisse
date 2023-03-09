@@ -459,7 +459,6 @@ body.dark #top-fleuron { opacity: 45%; }
 *[lang='lat'] { font-style: italic; }
 
 pre, code, .tt {
-  font-family: monospace;
   font-size: 0.9rem;
 }
 .little-icons {

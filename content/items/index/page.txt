@@ -19,7 +19,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<list
   <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
   <li <title ayuu#0552 <relme <link https://discord.com/users/707786894213120082 Discord>>>>
-  <li <title claire@ayu.land <relme <catlink mailto:claire@ayu.land home E-mail>>>>
+  <li <link email E-mail>>
   <li <link friends 朋友们>>
   <li <link backyard 后花园>>
 >
@@ -50,7 +50,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<list
   <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
   <li <title ayuu#0552 <relme <link https://discord.com/users/707786894213120082 Discord>>>>
-  <li <title claire@ayu.land <relme <catlink mailto:claire@ayu.land home E-mail>>>>
+  <li <link email E-mail>>
   <li <link friends Friends>>
   <li <link backyard Backyard>>
 >
