@@ -1,11 +1,16 @@
 // IMAP: RFC 3501 https://www.rfc-editor.org/rfc/rfc3501
 // Headers: RFC 2822 https://www.rfc-editor.org/rfc/rfc2822
 
-const hostname = Deno.env.get('HOST')
-const port = Deno.env.get('PORT') || 993
+const hostname = Deno.env.get('MAILHOST')
+const port = Deno.env.get('MAILPORT') || 993
 const userid = Deno.env.get('USER')
 const pwd = Deno.env.get('PWD')
 const toAddrs = Deno.env.get('TO').split(',')
+
+const log = (s) => console.log(`${new Date().toISOString()} ${s}`)
+
+// ====================
+const fetchMails = async (count) => {
 
 const conn = await Deno.connectTls({ hostname, port })
 
@@ -124,28 +129,101 @@ const parseHeaders = (s) => {
   return result
 }
 
-console.log('Logging in')
+log('Logging in')
 await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
-console.log('Examining inbox')
-// const nexists = +extractResps(await cmd(`EXAMINE INBOX`, 'Examine inbox'), /^([0-9]+) EXISTS$/)[0][0]
-// console.log(nexists)
+log('Examining inbox')
 await cmd(`EXAMINE INBOX`, 'Examine inbox')
 
-console.log('Searching inbox')
-const query = toAddrs.map((addr, i) => (i === toAddrs.length - 1 ? 'TO ' : 'OR TO ') + addr).join(' ')
-const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]+)$/)[0][0]
-  .trim().split(' ').map((w) => +w)
-list.sort()
-const fetchList = list.slice(-15).join(',')
+const mails = []
 
-console.log(`Fetching ${fetchList}`)
-const headersMatched = extractResps(
-  await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
-  /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
-)
-for (const [_nStr, headersStr] of headersMatched) {
-  const headers = parseHeaders(headersStr)
-  const date = new Date(headers['Date'])
-  const from = headers['From'].match(/<([A-Za-z0-9.-_@]+)>/)[1]
-  console.log(date, from)
+for (let fromMe = 0; fromMe <= 1; fromMe++) {
+  const queryWd = fromMe ? 'FROM' : 'TO'
+  log(`Searching inbox (${queryWd})`)
+  const query = toAddrs.map((addr, i) =>
+    (i === toAddrs.length - 1 ? `${queryWd} ` : `OR ${queryWd} `) + addr).join(' ')
+  const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]+)$/)[0][0]
+    .trim().split(' ').map((w) => +w)
+  list.sort()
+  const fetchList = list.slice(-count).join(',')
+
+  log(`Fetching ${fetchList}`)
+  const headersMatched = extractResps(
+    await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
+    /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
+  )
+  const headersSorted = []
+  for (const [_seqStr, headersStr] of headersMatched) {
+    const headers = parseHeaders(headersStr)
+    const date = new Date(headers['Date'])
+    const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+    const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+    headersSorted.push({ date, from, to })
+  }
+  headersSorted.sort((a, b) => b.date - a.date)
+  mails[fromMe] = headersSorted
+}
+
+return mails
+
+} // fetchMails
+// ====================
+
+let mailsText
+const updateMails = async () => {
+  const mails = await fetchMails(5)
+  mailsText =
+    mails[0].map(({ date, from, to }) => {
+      const dateStr = date.toISOString()
+      return `${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~\t` +
+        `${from[1]}~~~~@~~~~~\n`
+    }).join('')
+    + '\n' +
+    mails[1].map(({ date, from, to }) => {
+      const dateStr = date.toISOString()
+      return `${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~\t` +
+        `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~\n`
+    }).join('')
+}
+
+await updateMails()
+setInterval(() => updateMails(), 60000)
+
+const serveReq = async (req) => {
+  const url = new URL(req.url)
+  if (url.pathname === '/') return new Response(mailsText)
+  return new Response('Not found', { status: 404 })
+}
+
+const serverPort = +Deno.env.get('SERVEPORT') || 2339
+const server = Deno.listen({ port: serverPort })
+log(`Running at http://localhost:${serverPort}/`)
+
+const handleConn = async (conn) => {
+  const httpConn = Deno.serveHttp(conn)
+  try {
+    for await (const evt of httpConn) (async () => {
+      const req = evt.request
+      try {
+        req.conn = conn
+        await evt.respondWith(await serveReq(req))
+      } catch (e) {
+        if (!(e instanceof Deno.errors.Http)) {
+          log(`Internal server error: ${e}`)
+          try {
+            await evt.respondWith(new Response('', { status: 500 }))
+          } catch (e) {
+            log(`Error writing 500 response: ${e}`)
+          }
+        }
+      }
+    })()
+  } catch (e) {
+    if (!(e instanceof Deno.errors.Http)) {
+      log(`Unhandled error: ${e}`)
+    }
+  }
+}
+while (true) {
+  const conn = await server.accept()
+  handleConn(conn)
 }
