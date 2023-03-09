@@ -1,3 +1,6 @@
+// IMAP: RFC 3501 https://www.rfc-editor.org/rfc/rfc3501
+// Headers: RFC 2822 https://www.rfc-editor.org/rfc/rfc2822
+
 const hostname = Deno.env.get('HOST')
 const port = Deno.env.get('PORT') || 993
 const userid = Deno.env.get('USER')
@@ -68,7 +71,7 @@ const read = async () => {
 }
 
 let id = 0
-const cmd = async (text) => {
+const cmd = async (text, descOnErr) => {
   const tag = 'A' + (id++).toString().padStart(4, '0')
   const bufw = new TextEncoder().encode(`${tag} ${text}\r\n`)
   await writeAll(conn, bufw)
@@ -78,10 +81,49 @@ const cmd = async (text) => {
     resps.push(resp = await read())
     if (resp.tag === tag) break
   }
+  if (!resps[resps.length - 1].content.startsWith('OK ')) {
+    console.log(descOnErr)
+    Deno.exit()
+  }
   return resps
 }
 
-console.log(await cmd(`LOGIN "${userid}" "${pwd}"`))
-console.log(await cmd(`LIST "" "*"`))
-console.log(await cmd(`EXAMINE INBOX`))
-console.log(await cmd(`FETCH 1:10 (BODY[HEADER])`))
+const extractResps = (resps, regexp) => {
+  const results = []
+  for (const resp of resps) if (resp.tag === '*') {
+    const result = resp.content.match(regexp)
+    if (result) results.push(result.slice(1))
+  }
+  return results
+}
+
+const parseHeaders = (s) => {
+  const result = []
+  for (const line of s.split('\r\n')) {
+    result.push(line)
+  }
+  return result
+}
+
+console.log('Logging in')
+await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
+console.log('Examining inbox')
+// const nexists = +extractResps(await cmd(`EXAMINE INBOX`, 'Examine inbox'), /^([0-9]+) EXISTS$/)[0][0]
+// console.log(nexists)
+await cmd(`EXAMINE INBOX`, 'Examine inbox')
+
+console.log('Searching inbox')
+const list = extractResps(await cmd(`SEARCH TO claire@ayu.land`), /^SEARCH([0-9 ]+)$/)[0][0]
+  .trim().split(' ').map((w) => +w)
+list.sort()
+
+console.log(`Fetching ${list.slice(-5).join(',')}`)
+const headersMatched = extractResps(
+  await cmd(`FETCH ${list.slice(-5).join(',')} (BODY[HEADER])`, 'Fetch message headers'),
+  /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
+)
+for (const [nStr, headersStr] of headersMatched) {
+  const n = +nStr
+  const headers = parseHeaders(headersStr)
+  console.log(n, headers)
+}
