@@ -8,7 +8,7 @@
 
 !<hr>
 
-以下是近期的信件，时间戳均为协调世界时（UTC）。
+为了确保万无一失，以下是近期信件的清单。时间戳均为协调世界时（UTC）。
 如果你发了信，过一分钟再来应该就能看到它啦。
 
 {{intro.en=}}
@@ -18,7 +18,7 @@ I check the mailbox frequently and have even disabled the spam filter, since it 
 
 !<hr>
 
-The following are the most recent mails. Timestamps are all in UTC.
+To make sure nothing is lost halfway, the most recent mails are listed here. Timestamps are all in UTC.
 If you’ve written a mail to me, check here after a minute and it should appear.
 
 {{daemonlost.zh=}}!<note （糟糕！小恶魔走丢啦……）>
