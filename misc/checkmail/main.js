@@ -10,7 +10,7 @@ const toAddrs = Deno.env.get('TO').split(',')
 const log = (s) => console.log(`${new Date().toISOString()} ${s}`)
 
 // ====================
-const fetchMails = async (count) => {
+const fetchMails = async (count, inboxCountLast) => {
 
 const conn = await Deno.connectTls({ hostname, port })
 
@@ -131,8 +131,13 @@ const parseHeaders = (s) => {
 
 log('Logging in')
 await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
+
 log('Examining inbox')
-await cmd(`EXAMINE INBOX`, 'Examine inbox')
+const inboxCount = +extractResps(await cmd(`EXAMINE INBOX`, 'Examine inbox'), /^([0-9]+) EXISTS$/)[0][0]
+if (inboxCount === inboxCountLast) {
+  await cmd('LOGOUT', 'Log out')
+  return [inboxCount, null]
+}
 
 const mails = []
 
@@ -141,50 +146,59 @@ for (let fromMe = 0; fromMe <= 1; fromMe++) {
   log(`Searching inbox (${queryWd})`)
   const query = toAddrs.map((addr, i) =>
     (i === toAddrs.length - 1 ? `${queryWd} ` : `OR ${queryWd} `) + addr).join(' ')
-  const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]+)$/)[0][0]
-    .trim().split(' ').map((w) => +w)
+  const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]*)$/)[0][0]
+    .trim().split(' ').map((w) => w === '' ? undefined : +w)
   list.sort()
   const fetchList = list.slice(-count).join(',')
 
-  log(`Fetching ${fetchList}`)
-  const headersMatched = extractResps(
-    await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
-    /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
-  )
-  const headersSorted = []
-  for (const [_seqStr, headersStr] of headersMatched) {
-    const headers = parseHeaders(headersStr)
-    const date = new Date(headers['Date'])
-    const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-    const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-    headersSorted.push({ date, from, to })
+  if (fetchList.length > 0) {
+    log(`Fetching ${fetchList}`)
+    const headersMatched = extractResps(
+      await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
+      /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
+    )
+    const headersSorted = []
+    for (const [_seqStr, headersStr] of headersMatched) {
+      const headers = parseHeaders(headersStr)
+      const date = new Date(headers['Date'])
+      const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+      const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+      headersSorted.push({ date, from, to })
+    }
+    headersSorted.sort((a, b) => b.date - a.date)
+    mails[fromMe] = headersSorted
+  } else {
+    mails[fromMe] = []
   }
-  headersSorted.sort((a, b) => b.date - a.date)
-  mails[fromMe] = headersSorted
 }
 
-return mails
+await cmd('LOGOUT', 'Log out')
+return [inboxCount, mails]
 
 } // fetchMails
 // ====================
 
 let mailsText
+let inboxCountLast
 const updateMails = async () => {
   for (let retries = 0; retries < 3; retries++) {
     try {
-      const mails = await fetchMails(5)
-      mailsText =
-        mails[0].map(({ date, from, to }) => {
-          const dateStr = date.toISOString()
-          return `<tr><td>${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~</td><td>` +
-            `${from[0]}~~~~@~~~~~</td></tr>\n`
-        }).join('')
-        + '---\n' +
-        mails[1].map(({ date, from, to }) => {
-          const dateStr = date.toISOString()
-          return `<tr><td>${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~</td><td>` +
-            `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~</td></tr>\n`
-        }).join('')
+      const [inboxCount, mails] = await fetchMails(5, inboxCountLast)
+      if (inboxCount !== inboxCountLast) {
+        inboxCountLast = inboxCount
+        mailsText =
+          mails[0].map(({ date, from, to }) => {
+            const dateStr = date.toISOString()
+            return `<tr><td>${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~</td><td>` +
+              `${from[0]}~~~~@~~~~~</td></tr>\n`
+          }).join('')
+          + '---\n' +
+          mails[1].map(({ date, from, to }) => {
+            const dateStr = date.toISOString()
+            return `<tr><td>${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~</td><td>` +
+              `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~</td></tr>\n`
+          }).join('')
+      }
       break
     } catch (e) {
       const s = '<tr><td>(Stray)</td><td></td></tr>\n'
