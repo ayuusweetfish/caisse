@@ -206,7 +206,7 @@
 
 最近被推到然后反复循环的一首歌《熬夜上瘾》，真的是全给你懂完了网易云。话说我总有种幻觉，好像歌词里“数羊数鸡”那段里有一个“数钱”，是不是我的问题？
 
-!<musictrack 王艺玄//刘亦心 熬夜上瘾 <= > cover_1417082727.jpg https://music.163.com/#/song?id=1417082727>
+!<musictrack 王艺玄//刘亦心 熬夜上瘾 <= > cover_1417082727.jpg https://music.163.com/#/song?id=1417082727 歌曲封面，黑眼圈玩手机的女孩。>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>

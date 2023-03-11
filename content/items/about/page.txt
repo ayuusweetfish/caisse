@@ -43,27 +43,27 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 !<h2 歌单 #playlist>
 !<gridtable music-table
   <= 一些零散的歌>
-  <musictrack 瀬名航//鎖那 一个人的旅行 <lang ja ひとり旅> music/hitori.jpg 歌曲动画中的画面，女孩背着包、脖子上挂着相机独自走在路上，由 Mitsuki Sanagi 绘制。>
-  <musictrack 潮汐-tide/冉语优 如见青山 <= > music/rjqs.jpg 歌曲动画中的画面，苏东坡站在小船上一手托着碗，衣带随风飘扬，佛印和尚坐在一旁微笑看向苏东坡。>
+  <musictrack 瀬名航//鎖那 一个人的旅行 <lang ja ひとり旅> music/hitori.jpg https://music.163.com/#/song?id=1311345944 歌曲动画中的画面，女孩背着包、脖子上挂着相机独自走在路上，由 Mitsuki Sanagi 绘制。>
+  <musictrack 潮汐-tide/冉语优 如见青山 <= > music/rjqs.jpg https://www.bilibili.com/video/BV1ab411g7Fb/ 歌曲动画中的画面，苏东坡站在小船上一手托着碗，衣带随风飘扬，佛印和尚坐在一旁微笑看向苏东坡。>
   <<~=' by <nobr 喜欢的作者>'>>
-  <musictrack とあ//nameless <lang en Puzzle Girl> <<~= <lang ja パズルガール>//212>> music/212.jpg 专辑封面，黄绿色的奇幻场景中，身穿白色连衣裙、头上有形似鹿角装饰的仙子背对画面站在水池边，面对着对岸一座由形状奇特的绿色荧光石块组成的山。>
-  <musictrack 春卷饭 萤火虫未曾来过 <lang ja 蛍はいなかった> music/hotaru.jpg 歌曲封面，两位女孩相拥在一起，深绿的夜色被仿佛两人心中照出的黄色光亮划破。>
+  <musictrack とあ//nameless <lang en Puzzle Girl> <<~= <lang ja パズルガール>//212>> music/212.jpg https://music.163.com/#/song?id=38689088 专辑封面，黄绿色的奇幻场景中，身穿白色连衣裙、头上有形似鹿角装饰的仙子背对画面站在水池边，面对着对岸一座由形状奇特的绿色荧光石块组成的山。>
+  <musictrack 春卷饭 萤火虫未曾来过 <lang ja 蛍はいなかった> music/hotaru.jpg https://www.bilibili.com/video/BV1z3411a7v2/ 歌曲封面，两位女孩相拥在一起，深绿的夜色被仿佛两人心中照出的黄色光亮划破。>
   <<~=' by <nobr 喜欢的乐队>'>>
-  <musictrack 夜鹿 <lang en Hitchcock> <lang ja ヒッチコック> music/hitchcock.jpg 歌曲动画中的画面，一个孩子与一个不明生物站在十字路口中央，各自背对对方。>
-  <musictrack <lang en Humbert Humbert> <lang en Message> <lang ja メッセージ> music/hundreds.jpg 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
+  <musictrack 夜鹿 <lang en Hitchcock> <lang ja ヒッチコック> music/hitchcock.jpg https://music.163.com/#/song?id=557581315 歌曲动画中的画面，一个孩子与一个不明生物站在十字路口中央，各自背对对方。>
+  <musictrack <lang en Humbert Humbert> <lang en Message> <lang ja メッセージ> music/hundreds.jpg https://y.qq.com/n/ryqq/songDetail/002QzIbK0TTknZ 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
 >
 {{contents.en=}}
 !<h2 Playlist #playlist>
 !<gridtable music-table
   <= Scattered Songs>
-  <musictrack <= Wataru Sena//Sana> <= Solo Trip> <lang ja ひとり旅> music/hitori.jpg Image from the music animation. A girl walking alone on the street with a backpack and a camera. Illustrated by Mitsuki Sanagi.>
-  <musictrack <lang zh 潮汐-tide/冉语优> <= As If Green Hills Heave in Sight> <lang zh 如见青山> music/rjqs.jpg Image from the music animation. The ancient Chinese poet Su Dongpo stands on a boat, holding a bowl in one hand, clothes fluttering in the wind. The monk, Fo-Yin, sits aside looking at Dongpo with a smile.>
+  <musictrack <= Wataru Sena//Sana> <= Solo Trip> <lang ja ひとり旅> music/hitori.jpg https://music.163.com/#/song?id=1311345944 Image from the music animation. A girl walking alone on the street with a backpack and a camera. Illustrated by Mitsuki Sanagi.>
+  <musictrack <lang zh 潮汐-tide/冉语优> <= As If Green Hills Heave in Sight> <lang zh 如见青山> music/rjqs.jpg https://www.bilibili.com/video/BV1ab411g7Fb/ Image from the music animation. The ancient Chinese poet Su Dongpo stands on a boat, holding a bowl in one hand, clothes fluttering in the wind. The monk, Fo-Yin, sits aside looking at Dongpo with a smile.>
   <= by Favoured Authors>
-  <musictrack toa//nameless <= Puzzle Girl> <<~= <lang ja パズルガール>//212>> music/212.jpg Cover of the album. In a fantastical yellow-greenish scene, a fairy in a white dress with antlers-like decorations on her head stands by a pool with her back to the viewer, facing a mountain of green luminescent stones of unique shapes.>
-  <musictrack <= Harumaki Gohan> <= Fireflies Never Came> <lang ja 蛍はいなかった> music/hotaru.jpg Cover of the song. Two girls embracing each other, as if the deep green night was cut by a yellow light shining from their hearts.>
+  <musictrack toa//nameless <= Puzzle Girl> <<~= <lang ja パズルガール>//212>> music/212.jpg https://music.163.com/#/song?id=38689088 Cover of the album. In a fantastical yellow-greenish scene, a fairy in a white dress with antlers-like decorations on her head stands by a pool with her back to the viewer, facing a mountain of green luminescent stones of unique shapes.>
+  <musictrack <= Harumaki Gohan> <= Fireflies Never Came> <lang ja 蛍はいなかった> music/hotaru.jpg https://www.bilibili.com/video/BV1z3411a7v2/ Cover of the song. Two girls embracing each other, as if the deep green night was cut by a yellow light shining from their hearts.>
   <= by Favoured Groups>
-  <musictrack <= Yorusika> Hitchcock <lang ja ヒッチコック> music/hitchcock.jpg Image from the music animtion. A child and an unknown creature standing in the middle of a crossroads, each with their backs to the other.>
-  <musictrack <= Humbert Humbert> Message <lang ja メッセージ> music/hundreds.jpg Cover of the album. On a black background, colourful squares laid out in a pattern resembling a butterfly.>
+  <musictrack <= Yorusika> Hitchcock <lang ja ヒッチコック> music/hitchcock.jpg https://www.youtube.com/watch?v=t7MBzMP4OzY Image from the music animtion. A child and an unknown creature standing in the middle of a crossroads, each with their backs to the other.>
+  <musictrack <= Humbert Humbert> Message <lang ja メッセージ> music/hundreds.jpg https://open.spotify.com/track/3FQtTH7gloLBbQ5ipCVswG Cover of the album. On a black background, colourful squares laid out in a pattern resembling a butterfly.>
 >
 
 {{contents.zh=}}
