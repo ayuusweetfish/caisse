@@ -115,6 +115,14 @@ I expect that your site mirrors a part of yourself! Please reach me by <tt email
   langs = {'zh'},
   tint = {0, 102, 170},
   bgimg = 'jasonl-bg.png',
+}, {
+  shortname = 'mengru',
+  title = 'Mengru的空间',
+  author = 'Mengru',
+  link = 'https://mengru.space/',
+  langs = {'zh'},
+  tint = {0xf7, 0xd3, 0xd3},
+  bgimg = 'mengru-bg.png',
 --[[
 }, {
   shortname = 'Example',
