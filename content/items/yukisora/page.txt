@@ -5,7 +5,7 @@
 
 {{contents.zh=}}
 
-!<musictrack とあ 飘雪的天空 <lang ja ユキソラ> cover.jpg 专辑封面，身着白色有雪花纹饰装束的初音未来角色。>
+!<musictrack とあ 飘雪的天空 <lang ja ユキソラ> cover.jpg https://music.163.com/#/song?id=1410001162 专辑封面，身着白色有雪花纹饰装束的初音未来角色。>
 
 是喜欢的 Vocaloid 制作人<lang ja とあ>（Toa）的歌曲。一般大部分日语的歌曲都会有日本网站贴出和弦谱，但是这一首算是<lang ja とあ>给中国粉丝的特别礼物，在 YouTube 过了一年多才上传，niconico 没有投。大概也是因此在几家网站都没有找到谱，故自己扒了一份。当时正好在学校看到了公历 2020 年的初雪，便计划趁机发到当时的旧版博客站上，后来想想单发个和弦谱也没什么营养，就搁置了。
 说实话之后每次下雪都会把这个翻出来回顾一遍，想着是不是要发出来。今天在家看到了公历 2023 年的初雪，就趁机偷偷挂上来吧，可能有点错漏，先不管那么多啦。升五级增和弦的运用很喜欢。
@@ -56,7 +56,7 @@
 
 {{contents.en=}}
 
-!<musictrack とあ <= Snowy Sky> <lang ja ユキソラ> cover.jpg Cover of the album. Hatsune Miku in a white costume with decorations in the shape of snowflakes.>
+!<musictrack とあ <= Snowy Sky> <lang ja ユキソラ> cover.jpg https://music.163.com/#/song?id=1410001162 Cover of the album. Hatsune Miku in a white costume with decorations in the shape of snowflakes.>
 
 This is a song by <lang ja とあ> (Toa), the Vocaloid producer that I appreciate. Most Japanese songs usually will have chord sheets posted on Japanese websites, but this one was more of a special gift from Toa to the Chinese fans, uploaded to YouTube only over a year later and still absent on Niconico to date. I guess this is why the sites do not have the sheets available, so I made one myself. At the time, I was seeing the first snowfall of 2020 at school and planned to post it on my previous blog site, but then thought it would not make much sense to just post a chord sheet and shelved it.
 Since then, to be honest, I’ve been looking back at this and wondering whether I should post it every time I see a snowfall. Today was my first encounter with the snow in 2023, so I’ll take the opportunity to quietly put it up without much thought about mistakes. I especially like the use of augmented triads of the raised fifth degree.
@@ -107,13 +107,11 @@ Since then, to be honest, I’ve been looking back at this and wondering whether
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://www.bilibili.com/video/BV1Tt41167t8/ 乐曲（哔哩哔哩）>>
-  <li <link https://music.163.com/#/song?id=1410001162 乐曲（网易云音乐）>>
+  <li <link https://www.bilibili.com/video/BV1Tt41167t8/ 乐曲动画（哔哩哔哩）>>
 >
 
 {{rellinks.en=}}
 
 !<list
-  <li <link https://www.bilibili.com/video/BV1Tt41167t8/ Music (Bilibili)>>
-  <li <link https://music.163.com/#/song?id=1410001162 Music (NetEase)>>
+  <li <link https://www.bilibili.com/video/BV1Tt41167t8/ Accompanying animation (Bilibili)>>
 >
