@@ -652,7 +652,7 @@ markupfns = {
     builder[#builder + 1] = '</div>'
     return table.concat(builder)
   end,
-  musictrack = function (artist, title, origtitle, image, alt)
+  musictrack = function (artist, title, origtitle, image, link)
     -- Extract composer and vocalist from artist
     local artiststr
     local slashpos = artist:find('//', 1, true)
@@ -672,16 +672,16 @@ markupfns = {
       origtitle =
         title .. ' / <span class="little-icons">&#x1f4bf;</span>' .. album
     end
-    return '<div class="music-track">' ..
+    return '<a class="music-track-link" href="' .. link .. '"><div class="music-track">' ..
       (image and
         '<img src="' .. caisse.envadditions.file(image, 'items/' .. markupfnsenvitem) ..
-        (alt and ('" alt="' .. alt) or '') .. '">'
+        '" alt="">'
        or '') ..
       '<div class="music-track-gap"></div>' ..
       '<div><strong>' .. title .. '</strong><br>' ..
       (origtitle ~= '' and ('<span class="orig-title">' .. origtitle .. '</span>') or '') ..
       '<span class="music-track-artist">' .. artiststr .. '</span>' ..
-      '</div></div>'
+      '</div></div></a>'
   end,
 
   math = function (string) return katexrender(string, false) end,

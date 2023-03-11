@@ -653,6 +653,10 @@ blockquote.quote .quote-by {
   white-space: nowrap;
 }
 
+a.music-track-link {
+  color: inherit;
+  text-decoration: inherit;
+}
 .music-track {
   display: flex;
   align-items: center;
