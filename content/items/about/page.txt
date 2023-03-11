@@ -26,8 +26,7 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-Drawabox 盒子练习与第二课同步进行中。
-正在努力思考一些事情，有点难呢 <kao （´-`）.｡oO（> <date 2022.24>
+开学了！<date 2023.03>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
@@ -112,12 +111,12 @@ Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 
 {{contents.zh=}}
 !<h1 戳戳 #contact>
-其实不怎么往社交平台发东西，一时也没搭好访客留言板。可以在 <tt claire@ayu.land> 邮件联系呀～
+其实不怎么往社交平台发东西，可以通过<link email 邮件>联系呀～
 总之谢谢你来！玩得开心！<kao (っ*´∀｀*)っ>
 
 {{contents.en=}}
 !<h1 Knock knock #contact>
-I do not really post much on social media platforms, and have yet to set up a visitors’ message board. I can be reached at <tt claire@ayu.land> by e-mail!
+I do not really post much on social media platforms. For now, I can be reached by <link email e-mail>!
 Thank you for coming! Have a great time here <kao (っ*´∀｀*)っ>
 
 {{toc=}}true
