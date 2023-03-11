@@ -82,6 +82,15 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 >
 !<img nichijou.jpg 《日常》片头中的三位主人公>
 
+!<h2 个站与频道>
+!<list
+  <li <link https://100r.co/ Hundred Rabbits>（英）—— 海上航行、顺便做开源软件的两位神奇朋友。>
+  <li <link https://ddrkirby.com/ DDRKirby(ISQ)>（英）—— 音乐和可爱小游戏的创作者。>
+  <li <link https://space.bilibili.com/528182630 叨叨冯聊音乐> —— 浅显易懂的音乐趣味知识，来自百老汇华人打击乐手。>
+  <li <link https://nicechord.com/ NiceChord 好和弦> —— 台湾音乐人 Wiwi 的乐理与音乐制作教学频道。>
+  <li <link https://space.bilibili.com/39034282 王乐乐乐游> —— 音乐杂谈与整活（不是）。>
+>
+
 !<h2 杂七杂八 #miscellaneous>
 对好看的、花里胡哨的东西没什么抵抗力，也喜欢世界上的有趣灵魂！（好看皮囊也可以，我全都要！x
 !<img IMG_20220505_113339_mh1651727711263.jpg 巧克力冰淇淋，上面有彩色糖豆和樱桃和西瓜等水果小块>
@@ -104,10 +113,20 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 >
 !<img nichijou.jpg The three main characters of Nichijou in the opening credits animation>
 
+!<h2 Individual websites and channels>
+!<list
+  <li <link https://100r.co/ Hundred Rabbits> — Two friends that sail on the sea while making open-source software.>
+  <li <link https://ddrkirby.com/ DDRKirby(ISQ)> — Producer of music and cute games.>
+  <li <link https://www.youtube.com/@daodaofeng Feng's Music Channel> (Chinese) — Talks on musical explanations and trivia, by a Chinese percussionist at Broadway.>
+  <li <link https://nicechord.com/ NiceChord> (Chinese) — An educational channel on music theory and production, by the musician Wiwi Kuan from Taiwan.>
+  <li <link https://space.bilibili.com/39034282 王乐乐乐游> (Chinese) — Talks on trivia of music, and self-arranged pieces.>
+>
+
 !<h2 Miscellaneous #miscellaneous>
 Vulnerable to all fancy good-looking trinkets; interested in all the diverting souls of the world! (Or charming appearances, I take both)
 !<img IMG_20220505_113339_mh1651727711263.jpg Chocolate ice-cream topped with colourful sugar beans and little slices of fruit including cherries and watermelon>
 Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
+
 
 {{contents.zh=}}
 !<h1 戳戳 #contact>
