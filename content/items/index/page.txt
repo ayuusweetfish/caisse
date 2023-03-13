@@ -30,9 +30,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.03> <link flow/toast>，完结撒花！>
   <li <date 2023.03> <link email 来看看信箱嘛>>
   <li <date 2023.03> <link candy>>
-  <li <date 2023.02> 流水账新坑，<link flow/toast>>
 >
 
 <link revlog>
@@ -61,9 +61,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.02> <link flow/toast> concludes! (Currently Chinese only)>
   <li <date 2023.03> <link email Messages moving around>~>
   <li <date 2023.03> <link candy>.>
-  <li <date 2023.02> Pieces of flowing time: <link flow/toast> (currently Chinese only).>
 >
 
 <link revlog>
