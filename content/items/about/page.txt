@@ -26,12 +26,11 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-开学了！<date 2023.03>
+想在春天做很多很多有趣的事情！<date 2023.03>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Drawabox: boxes challenge and lesson 2 progressing in parallel.
-Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
+… such a sea of interesting things in spring! <date 2023.03>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
@@ -74,6 +73,10 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 >
 !<img games.png 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>
 
+!<list
+  <li 以及 <link https://wholesomegames.com/ Wholesome Games>>
+>
+
 !<h2 动画 #animations>
 !<list
   <li <b 日常>>
@@ -82,13 +85,19 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 >
 !<img nichijou.jpg 《日常》片头中的三位主人公>
 
+!<list
+  <li 以及很多很多独立动画>
+>
+
 !<h2 个站与频道>
 !<list
+  <li <link friends>>
   <li <link https://100r.co/ Hundred Rabbits>（英）—— 海上航行、顺便做开源软件的两位神奇朋友。>
   <li <link https://ddrkirby.com/ DDRKirby(ISQ)>（英）—— 音乐和可爱小游戏的创作者。>
   <li <link https://space.bilibili.com/528182630 叨叨冯聊音乐> —— 浅显易懂的音乐趣味知识，来自百老汇华人打击乐手。>
   <li <link https://nicechord.com/ NiceChord 好和弦> —— 台湾音乐人 Wiwi 的乐理与音乐制作教学频道。>
   <li <link https://space.bilibili.com/39034282 王乐乐乐游> —— 音乐杂谈与整活（不是）。>
+  <li <link https://heiheihei.ca/ Cave • 小触手的书房> —— 画画的 Emmy。>
 >
 
 !<h2 杂七杂八 #miscellaneous>
@@ -105,6 +114,10 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 >
 !<img games.png Characters in the games: winged strawberries, Claire the bird, Huebirds>
 
+!<list
+  <li And <link https://wholesomegames.com/ Wholesome Games>>
+>
+
 !<h2 Animations #animations>
 !<list
   <li <b Nichijou: My Ordinary Life>>
@@ -113,13 +126,19 @@ Thinking hard about things a bit hard. <kao （´-`）.｡oO（> <date 2022.24>
 >
 !<img nichijou.jpg The three main characters of Nichijou in the opening credits animation>
 
+!<list
+  <li And lots, lots of individual animations>
+>
+
 !<h2 Individual websites and channels>
 !<list
+  <li <link friends>>
   <li <link https://100r.co/ Hundred Rabbits> — Two friends that sail on the sea while making open-source software.>
   <li <link https://ddrkirby.com/ DDRKirby(ISQ)> — Producer of music and cute games.>
   <li <link https://www.youtube.com/@daodaofeng Feng's Music Channel> (Chinese) — Talks on musical explanations and trivia, by a Chinese percussionist at Broadway.>
   <li <link https://nicechord.com/ NiceChord> (Chinese) — An educational channel on music theory and production, by the musician Wiwi Kuan from Taiwan.>
   <li <link https://space.bilibili.com/39034282 王乐乐乐游> (Chinese) — Talks on trivia of music, and self-arranged pieces.>
+  <li <link https://heiheihei.ca/ Cave • 小触手的书房> (Chinese) —— Emmy with her paintings.>
 >
 
 !<h2 Miscellaneous #miscellaneous>
