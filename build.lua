@@ -598,9 +598,9 @@ markupfns = {
       htmlescape(sizestring(size) ..
         (extrainfo and (', ' .. extrainfo) or '')) .. ')</a></td>'
   end,
-  h1 = function (text) return heading('h1', text) end,
-  h2 = function (text) return heading('h2', text) end,
-  h3 = function (text) return heading('h3', text) end,
+  h1 = function (text) return heading('h2', text) end,
+  h2 = function (text) return heading('h3', text) end,
+  h3 = function (text) return heading('h4', text) end,
   list = function (...)
     return '<ul>' .. table.concat({...}) .. '</ul>'
   end,

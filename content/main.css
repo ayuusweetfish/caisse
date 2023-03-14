@@ -47,7 +47,12 @@ aside { width: 20%; }
 }
 nav, main, aside, footer { padding: 1rem; }
 
-nav > h1 > a {
+nav > header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-block: 0.83em;
+}
+nav > header > a {
   text-decoration: none;
   color: inherit;
 }
@@ -121,9 +126,9 @@ body.dark .table-of-contents { color: hsl(36deg, 5%, 70%); }
 .table-of-contents p {
   margin-block: 0.5em;
 }
-.table-of-contents p.toc-h1 { margin-inline-start: 0; }
-.table-of-contents p.toc-h2 { margin-inline-start: 1em; }
-.table-of-contents p.toc-h3 { margin-inline-start: 2em; }
+.table-of-contents p.toc-level1 { margin-inline-start: 0; }
+.table-of-contents p.toc-level2 { margin-inline-start: 1em; }
+.table-of-contents p.toc-level3 { margin-inline-start: 2em; }
 .table-of-contents a.hidden-pastel::after { background: hsl(50deg, 15%, 80%); }
 body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%, 50%); }
 #related-links ul {
@@ -360,6 +365,9 @@ footer a.hidden-pastel.little-icons::after {
 
 main {
   position: relative;
+}
+main header h1 {
+  margin-block: 0.83em;
 }
 #top-fleuron {
   background: no-repeat center 0 / contain url('/bin/{{ hashverfile('top-fleuron.svg') }}');
@@ -606,9 +614,9 @@ ul.compact {
   margin-block-start: -1em;
 }
 
-section h1 { font-size: 1.2rem; margin-block-end: 1.08rem; }
-section h2 { font-size: 1.14rem; margin-block-end: 1rem; }
-section h3 { font-size: 1.08rem; margin-block-end: 1rem; }
+section h2 { font-size: 1.2rem; margin-block-end: 1.08rem; }
+section h3 { font-size: 1.14rem; margin-block-end: 1rem; }
+section h4 { font-size: 1.08rem; margin-block-end: 1rem; }
 blockquote {
   margin-block: -0.1em;
   margin-inline: 1em;
@@ -691,6 +699,13 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   text-decoration: inherit;
   margin-block: 1rem 1.5rem;
 }
+.banner-list a.item-entry header {
+  font-weight: bold;
+}
+.banner-list .item-plainheader header {
+  font-size: 1.2rem;
+  margin-block: 1rem;
+}
 .banner-list .item-banner {
   height: 10rem;
   position: relative;
@@ -701,7 +716,7 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   object-fit: cover;
   border-radius: 0.75em;
 }
-.banner-list .item-banner > h1 {
+.banner-list .item-banner > header {
   position: absolute;
   inset-inline-start: 0;
   inset-block-end: 1rem;
@@ -724,10 +739,10 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   clear: both;
   margin-block-start: -2em;
 }
-.banner-list .item-banner h1 {
+.banner-list .item-banner header {
   color: #181410;
 }
-.banner-list .item-banner h1.item-title-dark {
+.banner-list .item-banner header.item-title-dark {
   color: #fdfdfd;
   text-shadow: #181410 0.05em 0.05em;
   border-image: url(/bin/{{ hashverfile('chalk-bg-b.png') }}) 18 fill / 0.3em / 0.1em 0;
@@ -736,7 +751,7 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   margin-block: 1em 1.5em;
 }
 
-.banner-list.compact header > p {
+.banner-list.compact > header > p {
   text-indent: 2em;
   margin-block-end: 1.5em;
 }
@@ -913,11 +928,11 @@ img.item-banner,
   border-block: 0.15em solid #60605c;
 }
 
-.item-contents h1 a.date-term-link {
+.item-contents h2 a.date-term-link {
   margin-inline-start: 1em;
   float: right;
 }
-.item-contents h1::after {
+.item-contents h2::after {
   content: '';
   display: block;
   clear: both;

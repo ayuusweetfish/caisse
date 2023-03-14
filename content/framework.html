@@ -65,7 +65,7 @@ Collection of sundries —
 
 <div id='main-grid'>
 <nav>
-<h1><a href='/'>{{ sitename }}</a></h1>
+<header><a href='/'>{{ sitename }}</a></header>
 <ul>
   {{@ cat in cats}}{{@ cat.name ~= 'backyard'}}
   <li><a class='pastel {{cat.name}}'
@@ -136,7 +136,7 @@ Current page belongs to the category of {{cats[curcat].title}}
 {{ asideempty = false }}
 <section class='aside-section table-of-contents'>
   {{@ h in aside.headinglist }}
-  <p class='toc-h{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
+  <p class='toc-level{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
   {{@ end }}
 </section>
 {{@ end }}

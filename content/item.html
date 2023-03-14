@@ -20,7 +20,7 @@
     <summary>{{ tableofcontents }}</summary>
     <section class='table-of-contents'>
       {{@ h in aside.headinglist }}
-      <p class='toc-h{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
+      <p class='toc-level{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
       {{@ end }}
     </section>
   </details>

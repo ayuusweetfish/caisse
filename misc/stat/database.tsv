@@ -1,7 +1,7 @@
 404.html	883	unknown
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
-bannerlist.html	1535	unknown
+bannerlist.html	1587	unknown
 categories.txt	3918	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
@@ -11,8 +11,8 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	8977	unknown
-item.html	1734	unknown
+framework.html	8989	unknown
+item.html	1738	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
 items/aakami/illustration20.png	8290	image	320	240
@@ -446,7 +446,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	24773	unknown
+main.css	25072	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4582	unknown
