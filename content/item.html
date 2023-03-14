@@ -31,7 +31,7 @@
 {{@ not ((intro and intro ~= '') or bannerimg) and toc == 'true' }}
   <div role='separator' class='item-separator hidden-in-widest'></div>
 {{@ end }}
-<section class='item-contents e-content'>{{ rendermarkup(tr(contents)) }}</section>
+<section class='item-content e-content'>{{ rendermarkup(tr(contents)) }}</section>
 {{@ date }}
 <div class='item-date'>
   {{ renderdate(date) }}
@@ -45,7 +45,7 @@
 {{@ usemath == 'true' }}
 <link rel='stylesheet' href='/bin/vendor/katex-0.16.4/katex.min.css'>
 <style>
-.item-contents .katex { font-size: 1rem; }
+.item-content .katex { font-size: 1rem; }
 </style>
 {{@ end }}
 

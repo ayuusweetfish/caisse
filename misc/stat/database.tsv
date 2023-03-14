@@ -12,7 +12,7 @@ divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
 framework.html	8989	unknown
-item.html	1738	unknown
+item.html	1736	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
 items/aakami/illustration20.png	8290	image	320	240
@@ -30,7 +30,7 @@ items/about/music/hotaru.jpg	14387	image	250	250
 items/about/music/hundreds.jpg	18600	image	250	250
 items/about/music/rjqs.jpg	22004	image	300	300
 items/about/nichijou.jpg	51732	image	640	360
-items/about/page.css	2667	unknown
+items/about/page.css	2665	unknown
 items/about/portrait.jpg	98017	image	672	756
 items/adventure/.gitignore	32	unknown
 items/adventure/Azu1.png	20386	image	360	640
@@ -73,7 +73,7 @@ items/daytime-cat/play/index.html	4719	unknown
 items/daytime-cat/play/love.js	325312	code
 items/daytime-cat/play/love.wasm	4702493	unknown
 items/daytime-cat/screenshot.png	67714	image	720	480
-items/email/page.html	698	unknown
+items/email/page.html	695	unknown
 items/fhxl-rehousing/kernel.png	15455	image	1020	335
 items/fhxl-rehousing/noclose.jpg	15304	image	300	300
 items/fhxl-rehousing/shell.png	10790	image	894	162
@@ -300,7 +300,7 @@ items/friends/miyehn-bg.png	4445	image	281	300
 items/friends/miyehn.png	17560	image	683	730
 items/friends/orangii-bg.png	8203	image	300	300
 items/friends/orangii.png	41005	image	939	940
-items/friends/page.html	6831	unknown
+items/friends/page.html	6829	unknown
 items/friends/pieris-bg.png	9314	image	419	300
 items/friends/pieris.png	34082	image	1015	727
 items/friends/tianxianzi-bg.png	9439	image	750	300
@@ -323,7 +323,7 @@ items/ice-hatch/play/love.wasm	4702493	unknown
 items/ice-hatch/screenshot1.png	14400	image	540	360
 items/ice-hatch/screenshot2.png	19453	image	540	360
 items/index/fish.png	2116	image	60	60
-items/index/page.css	1727	unknown
+items/index/page.css	1708	unknown
 items/leaving/IMG_20221130_151158.jpg	57870	image	912	684
 items/leaving/deteiku.mscz	52697	score
 items/leaving/deteiku.ogg	2269069	audio	194
@@ -446,7 +446,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	25072	unknown
+main.css	25035	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4582	unknown
