@@ -830,16 +830,16 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 
 /* Styles for item.html */
 
-.item-contents p {
+.item-content p {
   text-indent: 2em;
 }
-.item-contents > p *,
-.item-contents blockquote.note p,
-.item-contents blockquote p *,
-.item-contents div.image-container p {
+.item-content > p *,
+.item-content blockquote.note p,
+.item-content blockquote p *,
+.item-content div.image-container p {
   text-indent: 0;
 }
-.item-contents > p.text-center {
+.item-content > p.text-center {
   text-align: center;
   text-indent: 0;
 }
@@ -848,54 +848,54 @@ div.image-container {
   margin-block: 1.5em;
   line-height: 1;
 }
-img.item-banner, .item-contents img {
+img.item-banner, .item-content img {
   object-fit: contain;
   display: inline-block;
 }
 img.item-banner,
-.item-contents div.image-container img:not(.vertical) {
+.item-content div.image-container img:not(.vertical) {
   max-block-size: 20em;
 }
 img.item-banner,
-.item-contents div.image-container img:not(.orig-size) {
+.item-content div.image-container img:not(.orig-size) {
   inline-size: 20em;
   min-inline-size: 80%;
   max-inline-size: 100%;
   block-size: auto;
 }
-.item-contents div.image-container img.vertical {
+.item-content div.image-container img.vertical {
   inline-size: 100%;
   min-inline-size: unset;
   max-inline-size: 20em;
 }
-.item-contents div.image-container img.medsmall {
+.item-content div.image-container img.medsmall {
   inline-size: 75%;
   min-inline-size: unset;
   max-inline-size: 17.5em;
 }
-.item-contents div.image-container img.small {
+.item-content div.image-container img.small {
   inline-size: 50%;
   min-inline-size: unset;
   max-inline-size: 15em;
 }
-.item-contents div.image-container img.xsmall {
+.item-content div.image-container img.xsmall {
   inline-size: 8em;
   min-inline-size: 25%;
   max-inline-size: 100%;
 }
-.item-contents div.image-container img.xsmall.vertical {
+.item-content div.image-container img.xsmall.vertical {
   inline-size: auto;
   block-size: 8em;
 }
-.item-contents div.image-container img.square {
+.item-content div.image-container img.square {
   inline-size: 25em;
   max-block-size: 25em;
 }
-.item-contents div.image-container img.orig-size {
+.item-content div.image-container img.orig-size {
   max-inline-size: min(max(80%, 20em), 100%); /* clamp() */
   block-size: auto;
 }
-.item-contents div.image-container p {
+.item-content div.image-container p {
   margin-block: 0.25em -0.5em;
   line-height: 1.5;
 }
@@ -903,49 +903,49 @@ img.item-banner,
   margin-block-start: 1em;
 }
 @media (max-width: 115vh), (max-width: 48rem) {
-  img.item-banner, .item-contents div.image-container img {
+  img.item-banner, .item-content div.image-container img {
     max-inline-size: 100%;
   }
 }
 
-.item-contents div.table-container {
+.item-content div.table-container {
   text-align: center;
   margin-block: 1.5em;
   margin-inline: 0;
 }
-.item-contents div.table-container table {
+.item-content div.table-container table {
   min-inline-size: 75%;
   margin-inline: auto;
 }
-.item-contents div.table-container table,
-.item-contents div.table-container th,
-.item-contents div.table-container td {
+.item-content div.table-container table,
+.item-content div.table-container th,
+.item-content div.table-container td {
   border-block: 0.1em solid #60605c;
   border-collapse: collapse;
 }
-.item-contents div.table-container th,
-.item-contents div.table-container table {
+.item-content div.table-container th,
+.item-content div.table-container table {
   border-block: 0.15em solid #60605c;
 }
 
-.item-contents h2 a.date-term-link {
+.item-content h2 a.date-term-link {
   margin-inline-start: 1em;
   float: right;
 }
-.item-contents h2::after {
+.item-content h2::after {
   content: '';
   display: block;
   clear: both;
 }
 
-.item-contents pre {
+.item-content pre {
   word-break: break-all;
   white-space: pre-wrap;
 }
-.item-contents pre.code {
+.item-content pre.code {
   width: 95%;
 }
-.item-contents pre.code > span {
+.item-content pre.code > span {
   text-indent: 5%;
   display: block;
   min-height: 1.5em;
@@ -957,19 +957,19 @@ img.item-banner,
 .chroma .s, .chroma .s1
 { color: #852; }
 
-.item-contents span.katex {
+.item-content span.katex {
   overflow-x: scroll;
   overflow-y: hidden;
 }
 
-.item-contents .music-track {
+.item-content .music-track {
   padding-inline: 2em;
 }
 
-.item-contents .chord-tab .chord-tab-row {
+.item-content .chord-tab .chord-tab-row {
   margin-block: 0.5em;
 }
-.item-contents .chord-tab .chord-tab-item {
+.item-content .chord-tab .chord-tab-item {
   display: inline-block;
   margin-inline: 0 0.125em;
   margin-block: 0.25em;
@@ -977,14 +977,14 @@ img.item-banner,
   border-left: 0.1em rgba(192, 180, 180, 12%) solid;
   padding-left: 0.125em;
 }
-.item-contents .chord-tab .chord-tab-item.chord-tab-item-empty {
+.item-content .chord-tab .chord-tab-item.chord-tab-item-empty {
   border-left: none;
 }
-.item-contents .chord-tab .chord-tab-item span {
+.item-content .chord-tab .chord-tab-item span {
   display: block;
   block-size: 1.5em;
 }
-.item-contents .chord-tab div[role='separator'] {
+.item-content .chord-tab div[role='separator'] {
   margin-block: 0.5em;
 }
 

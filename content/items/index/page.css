@@ -1,23 +1,23 @@
-.item-contents div.image-container img:nth-of-type(1) {
+.item-content div.image-container img:nth-of-type(1) {
   margin-block: 1.5em;
 }
 
 @media (min-width: 115vh) and (min-width: 48rem) {
-  .item-contents ul:nth-of-type(1),
-  .item-contents ul:nth-of-type(2) {
+  .item-content ul:nth-of-type(1),
+  .item-content ul:nth-of-type(2) {
     padding-inline-start: 2em;
   }
-  .item-contents ul:nth-of-type(1) > li,
-  .item-contents ul:nth-of-type(2) > li {
+  .item-content ul:nth-of-type(1) > li,
+  .item-content ul:nth-of-type(2) > li {
     display: inline-block;
   }
-  .item-contents ul:nth-of-type(1) > li:not(:last-child)::after,
-  .item-contents ul:nth-of-type(2) > li:not(:last-child)::after {
+  .item-content ul:nth-of-type(1) > li:not(:last-child)::after,
+  .item-content ul:nth-of-type(2) > li:not(:last-child)::after {
     content: '|';
     margin-inline: 0.25em;
   }
-  .item-contents ul:nth-of-type(1) > li::before,
-  .item-contents ul:nth-of-type(2) > li::before {
+  .item-content ul:nth-of-type(1) > li::before,
+  .item-content ul:nth-of-type(2) > li::before {
     display: none;
   }
 }
@@ -25,33 +25,33 @@
 @media (max-width: 115vh), (max-width: 48rem) {
   /* Might as well use list-style and ::marker,
     but this receives more browser support */
-  .item-contents ul:nth-of-type(1) > li {
+  .item-content ul:nth-of-type(1) > li {
     list-style: none;
   }
-  .item-contents ul:nth-of-type(1) > li::before {
+  .item-content ul:nth-of-type(1) > li::before {
     content: '\1f31f';
     margin-inline: -1.35em 0.5em;
     font-family: 'Ayuu Little Icons — 221202a';
   }
-  .item-contents ul:nth-of-type(1) > li:nth-of-type(1)::before {
+  .item-content ul:nth-of-type(1) > li:nth-of-type(1)::before {
     color: hsl(28deg, 65%, 65%);
   }
-  .item-contents ul:nth-of-type(1) > li:nth-of-type(2)::before,
-  .item-contents ul:nth-of-type(1) > li:nth-of-type(3)::before {
+  .item-content ul:nth-of-type(1) > li:nth-of-type(2)::before,
+  .item-content ul:nth-of-type(1) > li:nth-of-type(3)::before {
     color: hsl(40deg, 80%, 60%);
   }
-  .item-contents ul:nth-of-type(1) > li:nth-of-type(4)::before {
+  .item-content ul:nth-of-type(1) > li:nth-of-type(4)::before {
     color: hsl(282deg, 65%, 75%);
   }
-  .item-contents ul:nth-of-type(1) > li:nth-of-type(5)::before {
+  .item-content ul:nth-of-type(1) > li:nth-of-type(5)::before {
     color: hsl(204deg, 65%, 72%);
   }
-  .item-contents ul:nth-of-type(1) > li:nth-of-type(6)::before {
+  .item-content ul:nth-of-type(1) > li:nth-of-type(6)::before {
     color: hsl(163deg, 60%, 70%);
   }
 
-  .item-contents ul:nth-of-type(1) > li,
-  .item-contents ul:nth-of-type(2) > li {
+  .item-content ul:nth-of-type(1) > li,
+  .item-content ul:nth-of-type(2) > li {
     margin-block-end: 0.2em;
   }
 }
