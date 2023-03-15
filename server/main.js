@@ -344,12 +344,12 @@ const staticFile = async (req, opts, headers, path) => {
       if (key === 'fetch') {
         const lines = value.split('\n')
         let text = fetched[lines[0]]
-        if (!text.startsWith(lines[1])) return lines[2]
+        if (!text.match(new RegExp('^' + lines[1]))) return lines[2]
         for (const replacement of lines.slice(3)) {
           const spacePos = replacement.indexOf(' ')
           if (spacePos !== -1)
             text = text.replace(
-              new RegExp(replacement.substring(0, spacePos)),
+              new RegExp(replacement.substring(0, spacePos), 'g'),
               replacement.substring(spacePos + 1))
         }
         return text
