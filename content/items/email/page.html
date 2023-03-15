@@ -6,10 +6,13 @@
   {{ rendermarkup(tr(intro)) }}
 
 <!-- (fetch) https://checkmail.ayu.land/
-<tr>
+[0-9]{2}-[0-9]{2}
 {{ rendermarkup(tr(daemonlost)) }}
-^ <h1>{{ inbound }}</h1><div class='table-container'><table><thead><tr><th>{{ timestamp }}</th><th>{{ addr }}</th></tr></thead><tbody>
+(?<=(^|\n))(?!-) <tr><td>
+\t </td><td>
+(?<!-)(?=(\n|$)) </td></tr>
 --- </tbody></table></div><h1>{{ outbound }}</h1><div class='table-container'><table><tr><th>{{ timestamp }}</th><th>{{ addr }}</th></tr></thead><tbody>
+^ <h1>{{ inbound }}</h1><div class='table-container'><table><thead><tr><th>{{ timestamp }}</th><th>{{ addr }}</th></tr></thead><tbody>
 $ </tbody></table></div>
 -->
 </section>
