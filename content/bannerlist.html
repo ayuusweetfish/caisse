@@ -17,7 +17,7 @@
   {{@ end }}
 </header>
 <section class='banner-list{{@ compact}} compact{{@ end}}'>
-{{@ cats[curcat].pagelist}}
+{{@ cats[curcat].pagelist}}{{@ not unlisted}}
 <a href='/{{ name }}' class='item-entry'><section>
   {{ page = render('items/' .. name .. '/page.txt') }}
   {{@ page.bannerimg }}
@@ -42,7 +42,7 @@
   </div>
 </section></a>
 <div role='separator' class='item-separator'></div>
-{{@ end}}
+{{@ end}}{{@ end}}
 </section>
 
 <style>
