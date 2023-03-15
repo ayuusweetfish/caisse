@@ -103,6 +103,9 @@ cats.murmurs.pagelist = {
   {name = 'inner-prod'},
 }
 cats.potpourri.pagelist = {
+  {name = 'gpt'},
+  {name = 'gpt/sleep-learning', unlisted = true},
+  {name = 'gpt/gibberish', unlisted = true},
   {name = 'adventure'},
   {name = 'patchwork'},
   {name = 'maylove-ex-22'},

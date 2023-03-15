@@ -1,0 +1,21 @@
+{{title.zh=}}GPT 拿捏了
+{{intro.zh=}}人工智能？说不清楚。
+{{title.en=}}GPT Nailed It
+{{intro.en=}}Artificial intelligence? You can’t tell.
+
+{{{--[[
+{{bannerimg=}}illust.png
+{{bannerimgpos=}}50,50
+{{bannerimgalt.zh=}}
+{{bannerimgalt.en=}}
+]]}}}
+
+{{date=}}2023.03
+
+{{contents.zh=}}
+!<list
+  <li <link gpt/sleep-learning>>
+  <li <link gpt/gibberish>>
+>
+
+{{contents.en=}}
