@@ -604,6 +604,7 @@ ul > li::before {
   content: '–';
   margin-inline: -1.1em 1em;
   display: inline-block;
+  float: left; /* inline-start */
   position: relative;
   inset-block-start: 0.075em;
 }
