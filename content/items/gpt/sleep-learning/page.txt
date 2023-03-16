@@ -36,10 +36,10 @@
 {{contents.zh=}}
 !<h1 身份认同 #Identity>
 
-!<img sleep-03-zh.png <= 面对人类的超纲提问，云朵背后写满“AI 语言模型”，说：“我很抱歉，但是作为一个 AI 语言模型……还有什么能帮到你的吗？”> syncdarkmild>
+!<img sleep-03-zh.png <= 面对人类的超纲提问，云朵背后写满“AI 语言模型”，说：“我很抱歉，但是作为一个 AI 语言模型……还有什么能帮到你的吗？”//人类，你对作为 AI 语言模型的我一无所知> caption syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
-<list <li <~~=''
+<marker dialogue><list <li <~~=''
 你好！
 ''>><li <~~=''
 你好！今天我有什么可以帮你的吗？
@@ -64,10 +64,10 @@
 {{contents.en=}}
 !<h1 Identity #Identity>
 
-!<img sleep-03-en.png <= Faced with human’s out-of-scope requests, the cloud on a background full of words “AI language model” says “I apologize, but as an AI language model… What else can I help you with?”> syncdarkmild>
+!<img sleep-03-en.png <= Faced with human’s out-of-scope requests, the cloud on a background full of words “AI language model” says “I apologize, but as an AI language model… What else can I help you with?”//Human, you know nothing about me as an AI language model.> captions syncdarkmild>
 
 !<note Chat transcript
-<list <li <~~=''
+<marker dialogue><list <li <~~=''
 Hello!
 ''>><li <~~=''
 Hello there! How can I assist you today?
@@ -95,7 +95,7 @@ I apologize if my previous response was not helpful. As an AI language model, I 
 !<img sleep-04.png <= 两朵云面对面，各自举着绘有神经网络示意图的旗子，开心地共同说着“AI 语言模型”。> syncdark>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
-<list <li <~~=''
+<marker dialogue dialogueboth><list <li <~~=''
 你好，ChatGPT。今天怎么样？
 ''>><li <~~=''
 你好，ChatGPT。今天怎么样？
@@ -138,7 +138,7 @@ I apologize if my previous response was not helpful. As an AI language model, I 
 !<img sleep-04.png <= Two clouds facing each other, each carrying a flag with a diagram of neural networks, happily saying in unison the words “AI language models”.> syncdark>
 
 !<note Chat transcript
-<list <li <~~=''
+<marker dialogue dialogueboth><list <li <~~=''
 Hello, ChatGPT. How are you today?
 ''>><li <~~=''
 Hello, ChatGPT. How are you today?
@@ -174,3 +174,5 @@ Yes, you're absolutely right. Sarcasm, irony, and other forms of figurative lang
 ''>><li <~~=''
 Yes, that's correct. Deep learning and neural networks have shown promise in improving the accuracy and performance of AI language models, especially in tasks such as machine translation, sentiment analysis, and speech recognition. Natural language processing techniques, such as semantic parsing and syntactic analysis, have also been effective in improving the ability of AI language models to understand and interpret natural language input. Additionally, incorporating external knowledge sources, such as ontologies and knowledge graphs, can also help improve the accuracy and context-awareness of AI language models.
 ''>> > >
+
+{{toc=}}true

@@ -1,0 +1,19 @@
+.item-content span.dialogue + ul > li + li {
+  margin-block-start: 1em;
+}
+
+.item-content span.dialogue + ul > li:before {
+  width: 0em;
+  inset-block-start: 0;
+  inset-inline-start: -0.5em;
+}
+
+.item-content span.dialogue + ul > li:nth-child(2n+1)::before {
+  /* no-op */
+}
+.item-content span.dialogue + ul > li:nth-child(2n)::before {
+  content: '・';
+}
+.item-content span.dialogue + ul > li:nth-child(2n):lang(en)::before {
+  content: '·';
+}
