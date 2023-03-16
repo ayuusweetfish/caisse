@@ -6,8 +6,32 @@
 {{contents.zh=}}
 !<note ChatGPT 版本：2023-02-13>
 
+!<hr>
+
+!<cen 据说在睡觉时，人也可以接受语言暗示，甚至可以学习。>
+!<img sleep-01.png <= 上下两格画面。上：睡觉的人。下：周围的几个身影表明，另一人在向睡梦中的人传达积极的暗示。> square syncdarkmild>
+
+!<cen ChatGPT 睡觉时都在学些什么呀？>
+!<img sleep-02.png <= 上下两格画面。上：绿色云朵在睡觉，背景是逐渐下降的损失函数图像。下：半梦半醒的云朵，被“AI language model”（人工智能语言模型）字样围绕。> square syncdarkmild>
+
+!<cen 好像只学到了一个词组呢……>
+
+!<hr>
+
 {{contents.en=}}
 !<note ChatGPT version: Feb 13, 2023>
+
+!<hr>
+
+!<cen It is said that people can receive language cues and even learn while sleeping.>
+!<img sleep-01.png <= Two panels. Top: a sleeping person. Bottom: several figures around the person conveying positive cues.> square syncdarkmild>
+
+!<cen What do ChatGPT learn while sleeping?>
+!<img sleep-02.png <= Two panels. Top: a green cloud sleeping, with a decreasing loss function graph in the background. Bottom: a semi-awake cloud surrounded by the words “AI language model”.> square syncdarkmild>
+
+!<cen Only one phrase, apparently.>
+
+!<hr>
 
 {{contents.zh=}}
 !<h1 身份认同 #Identity>
