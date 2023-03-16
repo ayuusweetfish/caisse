@@ -92,7 +92,7 @@ I apologize if my previous response was not helpful. As an AI language model, I 
 {{contents.zh=}}
 !<h1 回声长廊 #Echo>
 
-!<img sleep-04.png <= 两朵云面对面，各自举着绘有神经网络示意图的旗子，开心地共同说着“AI 语言模型”。> syncdark>
+!<img sleep-04.png <= 两朵云面对面，各自举着绘有神经网络示意图的旗子，开心地共同说着“AI 语言模型”。//GPT 聚在一起都聊些什么？> caption syncdark>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue dialogueboth><list <li <~~=''
@@ -135,7 +135,7 @@ I apologize if my previous response was not helpful. As an AI language model, I 
 {{contents.en=}}
 !<h1 Echo Chamber #Echo>
 
-!<img sleep-04.png <= Two clouds facing each other, each carrying a flag with a diagram of neural networks, happily saying in unison the words “AI language models”.> syncdark>
+!<img sleep-04.png <= Two clouds facing each other, each carrying a flag with a diagram of neural networks, happily saying in unison the words “AI language models”.//What do “GPTs’ talk” look like?> caption syncdark>
 
 !<note Chat transcript
 <marker dialogue dialogueboth><list <li <~~=''
