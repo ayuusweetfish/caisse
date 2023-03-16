@@ -27,7 +27,7 @@
 !<img sleep-01.png <= Two panels. Top: a sleeping person. Bottom: several figures around the person conveying positive cues.> square syncdarkmild>
 
 !<cen What do ChatGPT learn while sleeping?>
-!<img sleep-02.png <= Two panels. Top: a green cloud sleeping, with a decreasing loss function graph in the background. Bottom: a semi-awake cloud surrounded by the words “AI language model”.> square syncdarkmild>
+!<img sleep-02.png <= Two panels. Top: a green cloud sleeping, with a graph of a decreasing loss function in the background. Bottom: a semi-awake cloud surrounded by the words “AI language model”.> square syncdarkmild>
 
 !<cen Only one phrase, apparently.>
 
@@ -35,6 +35,8 @@
 
 {{contents.zh=}}
 !<h1 身份认同 #Identity>
+
+!<img sleep-03-zh.png <= 面对人类的超纲提问，云朵背后写满“AI 语言模型”，说：“我很抱歉，但是作为一个 AI 语言模型……还有什么能帮到你的吗？”> syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <list <li <~~=''
@@ -62,6 +64,8 @@
 {{contents.en=}}
 !<h1 Identity #Identity>
 
+!<img sleep-03-en.png <= Faced with human’s out-of-scope requests, the cloud on a background full of words “AI language model” says “I apologize, but as an AI language model… What else can I help you with?”> syncdarkmild>
+
 !<note Chat transcript
 <list <li <~~=''
 Hello!
@@ -87,6 +91,8 @@ I apologize if my previous response was not helpful. As an AI language model, I 
 
 {{contents.zh=}}
 !<h1 回声长廊 #Echo>
+
+!<img sleep-04.png <= 两朵云面对面，各自举着绘有神经网络示意图的旗子，开心地共同说着“AI 语言模型”。> syncdark>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <list <li <~~=''
@@ -127,7 +133,9 @@ I apologize if my previous response was not helpful. As an AI language model, I 
 ''>> > >
 
 {{contents.en=}}
-!<h1 Identity #Identity>
+!<h1 Echo Chamber #Echo>
+
+!<img sleep-04.png <= Two clouds facing each other, each carrying a flag with a diagram of neural networks, happily saying in unison the words “AI language models”.> syncdark>
 
 !<note Chat transcript
 <list <li <~~=''
