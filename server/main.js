@@ -315,7 +315,7 @@ const staticFile = async (req, opts, headers, path) => {
         const seed = (+seedBase) + Math.floor(timeInMinCur / 10 + (+phase))
         let g = { seed }
         for (let i = 0; i < 6; i++) g = randNext(g)
-        for (let i = 0; i < items.length; i++) {
+        for (let i = 1; i < items.length; i++) {
           g = randNext(g)
           const j = g.sum % (i + 1)
           const t = items[i]
