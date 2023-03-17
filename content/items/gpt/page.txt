@@ -3,16 +3,17 @@
 {{title.en=}}GPT Nailed It
 {{intro.en=}}Artificial intelligence? You can’t tell.
 
-{{{--[[
-{{bannerimg=}}illust.png
+{{bannerimg=}}cover.png
 {{bannerimgpos=}}50,50
-{{bannerimgalt.zh=}}
+{{bannerimginpage=}}false
+{{bannerimgalt.zh=}}云朵，眼睛如长方形光标，头上有形如神经网络示意图的触角。
 {{bannerimgalt.en=}}
-]]}}}
 
 {{date=}}2023.03
 
 {{contents.zh=}}
+!<img introducing-chatgpt.png <= 云朵，眼睛如长方形光标，头上有形如神经网络示意图的触角，背景是“Introducing ChatGPT”字样与紫色、绿色的渐变线条。> syncdarkmild>
+
 !<list
   <li <link gpt/sleep-learning>>
   <li <link gpt/gibberish>>
