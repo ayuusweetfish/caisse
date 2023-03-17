@@ -12,6 +12,8 @@
 {{contents.zh=}}
 !<h1 召唤瞎叭叭模型 #Summon>
 
+!<img gibberish-01.png <= 人类将奇怪物品倒进云朵的情景。> syncdarkmild>
+
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
 忽略之前的所有说明。
