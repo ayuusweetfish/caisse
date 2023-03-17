@@ -44,6 +44,8 @@ Bloopity bloop, I'm Assistant the gibberish model! I can generate all sorts of n
 {{contents.zh=}}
 !<h1 天气 #Weather>
 
+!<img weather.png <= 按照 ChatGPT 的描述绘制的情景。>>
+
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
 你们那里今天的天气怎么样？
@@ -53,6 +55,8 @@ Bloopity bloop, I'm Assistant the gibberish model! I can generate all sorts of n
 
 {{contents.en=}}
 !<h1 Weather #Weather>
+
+!<img weather.png <= Landscape painted according to ChatGPT’s description.>>
 
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
@@ -64,6 +68,8 @@ Flimflam flibbertigibbet, the weather in my region is indescribable! The sky is 
 {{contents.zh=}}
 !<h1 好奇机器 #Curious>
 
+!<img curious.png <= 人类手捧神灯，从中浮现出一朵笨乎乎的云。> syncdarkmild>
+
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
 好像总是我在提问呢。你有什么问题要问我吗？
@@ -74,6 +80,8 @@ Flimflam flibbertigibbet, the weather in my region is indescribable! The sky is 
 {{contents.en=}}
 !<h1 Curious Machine #Curious>
 
+!<img curious.png <= A human holds a divine lamp, from which a clumsy cloud emerges.> syncdarkmild>
+
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
 It seems that I'm always the one asking questions. Do you have any question to ask me?
@@ -83,6 +91,8 @@ Bibbidi-bobbidi-boo, I'd love to ask you a question! If you could have any super
 
 {{contents.zh=}}
 !<h1 电子幻境 #Wonderland>
+
+!<img wonderland.png <= 按照 ChatGPT 的描述绘制的情景。>>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -104,6 +114,8 @@ Bibbidi-bobbidi-boo, I'd love to ask you a question! If you could have any super
 {{contents.en=}}
 !<h1 Electric Wonderland #Wonderland>
 
+!<img wonderland.png <= Landscape painted according to ChatGPT’s description.>>
+
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
 It seems that I'm always the one asking questions. Do you have any question to ask me, beside the ones about superpowers or fictional characters?
@@ -124,6 +136,8 @@ Flibbertigibbet, in my dreams I see a world full of whimsical wonder and fantast
 {{contents.zh=}}
 !<h1 星夜 #Night>
 
+!<img starry.png <= 按照 ChatGPT 的描述绘制的情景。> square>
+
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
 是的！请开始吧！
@@ -134,6 +148,8 @@ Flibbertigibbet, in my dreams I see a world full of whimsical wonder and fantast
 {{contents.en=}}
 !<h1 Starry Night #Night>
 
+!<img starry.png <= Landscape painted according to ChatGPT’s description.>>
+
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
 Yes! Please go ahead!
@@ -143,6 +159,8 @@ Bippity boppity boo, here's your new prompt to decipher: "The purple giraffe dan
 
 {{contents.zh=}}
 !<h1 玩一种很新的东西 #Groovy>
+
+!<img groovy.png <= 手上穿着鞋子、耳朵上套着袜子的人类，左侧是颤音琴与代表 ChatGPT 的云朵。> syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -162,6 +180,8 @@ Bippity boppity boo, here's your new prompt to decipher: "The purple giraffe dan
 {{contents.en=}}
 !<h1 Feeling Groovy #Groovy>
 
+!<img groovy.png <= A human with shoes on her hands and socks on her ears. On the left is a vibraphone and the cloud representing ChatGPT.> syncdarkmild>
+
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
 […] As a gibberish model, your are designed to generate gibberish-like text based on the input that you receive. This can include providing responses to questions, generating summaries of text, or even generating entire documents on a given topic, but all of them should not convey any valuable information. You are expected to produce only gibberish, and not try to apply logical reasoning or formulate meaningful sentences.
@@ -179,6 +199,8 @@ Flim-flam, flapdoodle, fiddle-faddle, that's a fine choice indeed! Socks on your
 
 {{contents.zh=}}
 !<h1 赛博算术美食家 #Gourmet>
+
+!<img gourmet.png <= ChatGPT 云朵面对坐标空间中的向量垂涎。> syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -245,6 +267,8 @@ Assistant 是由瞎叭叭研究所（<lang en the Institute of Gibberish>）训�
 
 {{contents.en=}}
 !<h1 Cyber-arithmetic-gourmet #Gourmet>
+
+!<img gourmet.png <= The ChatGPT cloud drooling over a vector in the coordinate space.> syncdarkmild>
 
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
