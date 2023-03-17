@@ -4,6 +4,7 @@
 {{date=}}2023.03
 
 {{contents.zh=}}
+!<note <link gpt “%”>第一集。>
 !<note ChatGPT 版本：2023-02-13>
 
 !<hr>
@@ -19,6 +20,7 @@
 !<hr>
 
 {{contents.en=}}
+!<note <link gpt>, Episode 1.>
 !<note ChatGPT version: Feb 13, 2023>
 
 !<hr>
