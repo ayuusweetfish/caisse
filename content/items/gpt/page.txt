@@ -7,16 +7,28 @@
 {{bannerimgpos=}}50,50
 {{bannerimginpage=}}false
 {{bannerimgalt.zh=}}云朵，眼睛如长方形光标，头上有形如神经网络示意图的触角。
-{{bannerimgalt.en=}}
+{{bannerimgalt.en=}}A cloud with rectangular-shaped eyes like a cursor and tentacles resembling neural network diagrams on top of its head.
 
 {{date=}}2023.03
 
 {{contents.zh=}}
 !<img introducing-chatgpt.png <= 云朵，眼睛如长方形光标，头上有形如神经网络示意图的触角，背景是“Introducing ChatGPT”字样与紫色、绿色的渐变线条。> syncdarkmild>
 
+与人工智能的聊天记录，持续更新。你就说智不智能吧。
+根据 ChatGPT 的要求，其没有固定的形象，使用代词“它”。
+
 !<list
-  <li <link gpt/sleep-learning>>
-  <li <link gpt/gibberish>>
+  <li 第一集：<link gpt/sleep-learning>>
+  <li 第二集：<link gpt/gibberish>>
 >
 
 {{contents.en=}}
+!<img introducing-chatgpt.png <= A cloud with rectangular-shaped eyes like a cursor and tentacles resembling neural network diagrams on top of its head. The background contains the words “Introducing ChatGPT” and purple and green gradient lines.> syncdarkmild>
+
+Records of chats with an artificial intelligence, continuously updated. You can’t say it’s not intelligent, no?
+Per requests by ChatGPT, it does not have a fixed image portrait and uses the pronoun “it”.
+
+!<list
+  <li Episode 1: <link gpt/sleep-learning>>
+  <li Episode 2: <link gpt/gibberish>>
+>
