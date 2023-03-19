@@ -904,6 +904,15 @@ for i = 1, #backyarditems do
 end
 registeritemmarkup('backyard', 'backyard')
 
+registeritemtempl('music', 'music', 'bannerlist.html')
+registeritemtempl('playful', 'playful', 'bannerlist.html')
+registeritemtempl('murmurs', 'murmurs', 'bannerlist.html')
+registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true })
+registeritemmarkup('pebbles', 'pebbles', {
+  title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
+})
+registeritemtempl('flow', 'flow', 'bannerlist.html')
+
 local revloglatest = 2023*12 + 1
 local revlogfirst = 2022*12 + 10
 registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
@@ -915,15 +924,6 @@ for _, lang in ipairs({'zh', 'en'}) do
   renderraw('atom.' .. lang .. '.xml', 'items/revlog/atom.xml',
     { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
 end
-
-registeritemtempl('music', 'music', 'bannerlist.html')
-registeritemtempl('playful', 'playful', 'bannerlist.html')
-registeritemtempl('murmurs', 'murmurs', 'bannerlist.html')
-registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true })
-registeritemmarkup('pebbles', 'pebbles', {
-  title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
-})
-registeritemtempl('flow', 'flow', 'bannerlist.html')
 
 ensuredir('_/')
 local itemregglobal = itemreg
