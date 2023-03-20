@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4031	document
+categories.txt	4135	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -314,6 +314,7 @@ items/friends/xhhdd.png	66368	image	1797	983
 items/friends/xxiivv-webring-bg.png	6190	image	600	300
 items/friends/xxiivv-webring.png	17351	image	1200	600
 items/gpt/cover.png	26778	image	330	288
+items/gpt/explain/page.css	445	unknown
 items/gpt/gibberish/curious.png	38972	image	900	480
 items/gpt/gibberish/gibberish-01.png	43255	image	860	640
 items/gpt/gibberish/gourmet.png	37986	image	800	480
@@ -323,6 +324,7 @@ items/gpt/gibberish/starry.png	87548	image	800	800
 items/gpt/gibberish/weather.png	50005	image	900	480
 items/gpt/gibberish/wonderland.png	85633	image	900	480
 items/gpt/introducing-chatgpt.png	82951	image	900	480
+items/gpt/mirror/page.css	445	unknown
 items/gpt/sleep-learning/page.css	695	unknown
 items/gpt/sleep-learning/sleep-01.png	43776	image	800	800
 items/gpt/sleep-learning/sleep-02.png	135872	image	800	800
