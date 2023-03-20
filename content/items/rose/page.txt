@@ -14,7 +14,8 @@
 {{contents.zh=}}
 
 !<img rose0.png <= > square>
-!<img rose1.png <= > square>
+!<img rose1.png <= > square syncdarkmild>
 !<img rose2.png <= > square>
+!<img rose3.png <= > square>
 
 {{contents.en=}}
