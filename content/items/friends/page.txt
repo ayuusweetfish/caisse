@@ -121,6 +121,15 @@ I expect that your site mirrors a part of yourself! Please reach me by <tt email
   langs = {'zh'},
   tint = {0xf7, 0xd3, 0xd3},
   bgimg = 'mengru-bg.png',
+}, {
+  shortname = 'irithys',
+  title = '山茶花舍',
+  author = '吕楪',
+  link = 'https://irithys.com',
+  langs = {'zh'},
+  tint = {226, 221, 209},
+  bgimg = '',
+  pending = true,
 --[[
 }, {
   shortname = 'Example',
