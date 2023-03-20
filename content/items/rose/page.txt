@@ -1,0 +1,20 @@
+{{title.zh=}}野玫瑰的摇篮曲
+{{intro.zh=}}
+{{title.en=}}Wild Rose’s Lullaby
+{{intro.en=}}
+
+{{bannerimg=}}rose2.png
+{{bannerimgpos=}}50,5
+{{bannerimginpage=}}false
+{{bannerimgalt.zh=}}
+{{bannerimgalt.en=}}
+
+{{date=}}2023.03
+
+{{contents.zh=}}
+
+!<img rose0.png <= > square>
+!<img rose1.png <= > square>
+!<img rose2.png <= > square>
+
+{{contents.en=}}
