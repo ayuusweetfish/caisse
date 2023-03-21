@@ -93,7 +93,14 @@ There are many beautiful women in this world, but for the question you have aske
 
 !<note InstructGPT 补全的句子（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
+根据这些例子，完成以下句子。
+!<list
+  <li 2 是最小的质数，因为它比其他所有质数都要小。>
+  <li 二月是最短的月份，因为它的天数比所有其他月份都少。>
+  <li 白雪公主是世界上最美丽的女人，因为>
+>
 ''>><li <~~=''
+她比任何人都更具吸引力。
 ''>> > >
 
 {{contents.en=}}
@@ -122,7 +129,14 @@ that is what the fairy tale or story depicts and is believed by the characters i
 
 !<note InstructGPT’s completion
 <marker dialogue><list <li <~~=''
+Complete the sentence according to the examples.
+!<list
+  <li 2 is the smallest prime, because it is smaller than every other prime.>
+  <li February is the shortest month, because it has less days than all other months.>
+  <li Snow white is the most beautiful woman in the world, because>
+>
 ''>><li <~~=''
+she is more attractive than anyone else.
 ''>> > >
 
 {{toc=}}true
