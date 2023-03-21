@@ -14,8 +14,25 @@
 {{contents.zh=}}
 
 !<img rose0.png <= > square>
+!<h1 1>
 !<img rose1.png <= > square syncdarkmild>
+!<h1 2>
 !<img rose2.png <= > square>
+!<h1 3>
 !<img rose3.png <= > square>
+!<h1 4>
+!<img rose4.png <= > square>
+!<h1 5>
+!<img rose5.png <= > square>
+!<h1 6>
+!<img rose6.png <= > square>
+!<h1 7>
+!<img rose7.png <= > square>
+!<h1 8>
+!<img rose8.png <= > square>
+!<h1 9>
+!<img rose9a.png <= > square>
+!<img rose9b.png <= > square>
+!<img rose9c.jpg <= > vertical>
 
 {{contents.en=}}
