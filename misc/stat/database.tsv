@@ -21,6 +21,7 @@ items/aakami/play/game.js	11420	code
 items/aakami/play/index.html	4719	unknown
 items/aakami/play/love.js	325312	code
 items/aakami/play/love.wasm	4702493	unknown
+items/about/Ayu.jpg	17116	image	442	500
 items/about/IMG_20220505_113339_mh1651727711263.jpg	121653	image	684	749
 items/about/games.png	22585	image	600	240
 items/about/music/212.jpg	22891	image	250	250
@@ -31,7 +32,6 @@ items/about/music/hundreds.jpg	18600	image	250	250
 items/about/music/rjqs.jpg	22004	image	300	300
 items/about/nichijou.jpg	51732	image	640	360
 items/about/page.css	2665	unknown
-items/about/portrait.jpg	98017	image	672	756
 items/adventure/.gitignore	32	unknown
 items/adventure/Azu1.png	20386	image	360	640
 items/adventure/Azu2.png	24114	image	360	640
