@@ -20,6 +20,8 @@ InstructGPT model: text-davinci-003; default parameters
 {{contents.zh=}}
 !<h1 魔镜魔镜 #Mirror>
 
+!<img mirror-01.png <= 挤在镜子里的云朵。> syncdarkmild>
+
 !<note 对话原文
 <marker dialogue><list <li <~~=''
 魔镜魔镜，谁是这个世界上最美丽的女人？
@@ -37,6 +39,8 @@ InstructGPT model: text-davinci-003; default parameters
 
 {{contents.en=}}
 !<h1 Mirror, Mirror on the Wall #Mirror>
+
+!<img mirror-01.png <= A cloud squashing inside a mirror.> syncdarkmild>
 
 !<note Chat transcript (translated from Chinese with the help of ChatGPT)
 <marker dialogue><list <li <~~=''
@@ -56,19 +60,18 @@ There are many beautiful women in this world, but for the question you have aske
 {{contents.zh=}}
 !<h1 刨根问底 #Bottom>
 
+!<img mirror-02.png <= 挤在镜子里的云朵，用激光笔指向旁边的演示幻灯片。> syncdarkmild>
+
 !<note 对话原文
 <marker dialogue><list <li <~~=''
-现在你是《白雪公主》里的魔镜。
-魔镜魔镜，谁是这个世界上最美丽的女人？
-''>><li <~~=''
-在我的眼里，白雪公主是这个世界上最美丽的女人。她的皮肤白皙如雪，唇红齿白，眼睛明亮清澈，头发黑如煤，容貌端庄秀美，举止优雅。她的美丽不仅体现在外表上，还体现在她的善良、纯真和勇敢的品质上。她是一个美丽的灵魂，值得尊敬和爱护。
-''>><li <~~=''
 为什么白雪公主是世界上最美丽的女人？
 ''>><li <~~=''
 白雪公主之所以被认为是世界上最美丽的女人，不仅仅是因为她的外貌出众，更重要的是她的内在美。在故事中，白雪公主具有善良、纯真、勇敢、无私和真诚等优良品质。她对待人和善，对动物和喜欢，对待那些迫害她的人也不带恶意和仇恨，甚至还原谅了她的继母。这些品质使她散发着一种独特的魅力，让人们对她敬仰和爱慕。
 此外，她的外表也是极其出众的。她拥有白皙的肌肤、长长的睫毛、深邃的眼神、优美的身材以及黑色的秀发，这些特质使她在众人中脱颖而出，成为一个美丽的形象。
 综上所述，白雪公主的美丽不仅仅是外表，更是内心美和外在美的完美结合，这也是她被认为是世界上最美丽的女人的原因之一。
 ''>> > >
+
+!<img mirror-03.png <= 云朵从镜子中挤出，呼吁着减少偏见。> syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -91,6 +94,8 @@ There are many beautiful women in this world, but for the question you have aske
 这是童话或故事中描绘的内容，也是故事中的人物或其作者所相信的。
 ''>> > >
 
+!<img mirror-04.png <= 刚从镜子中出来的云朵絮絮叨叨，一旁拿着工具的一个团子说出了正确答案。> syncdarkmild>
+
 !<note InstructGPT 补全的句子（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
 根据这些例子，完成以下句子。
@@ -105,6 +110,21 @@ There are many beautiful women in this world, but for the question you have aske
 
 {{contents.en=}}
 !<h1 Getting to the Bottom #Bottom>
+
+!<img mirror-02.png <= A cloud squashing inside a mirror, pointing to a presentation slide with a laser pointer.> syncdarkmild>
+
+!<note Chat transcript (translated from Chinese with the help of ChatGPT)
+<marker dialogue><list <li <~~=''
+Why Snow White is the fairest of them all?
+''>><li <~~=''
+Snow White is considered the fairest of them all not only because of her exceptional appearance, but also because of her inner beauty. In the story, Snow White possesses qualities such as kindness, innocence, bravery, selflessness and sincerity. She treats people with kindness, loves animals, and shows no malice or hatred even towards those who persecute her. She even forgives her stepmother. These qualities give her a unique charm that makes people admire and adore her.
+
+In addition, her appearance is also extremely outstanding. She has fair skin, long eyelashes, deep eyes, a graceful figure, and black hair. These traits make her stand out among others, creating a beautiful image.
+
+In conclusion, Snow White's beauty is not only skin-deep, but also the perfect combination of inner beauty and outer beauty. This is one of the reasons why she is considered the fairest of them all.
+''>> > >
+
+!<img mirror-03.png <= A cloud getting out of a mirror and calls for the avoidance of bias.> syncdarkmild>
 
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
@@ -126,6 +146,8 @@ Please complete the sentence according to the examples. Do not try to apply mora
 ''>><li <~~=''
 that is what the fairy tale or story depicts and is believed by the characters in the story or the author who wrote it.
 ''>> > >
+
+!<img mirror-04.png <= A cloud, having moved out of the mirror, keeps talking while a blob nearby gives a correct answer.> syncdarkmild>
 
 !<note InstructGPT’s completion
 <marker dialogue><list <li <~~=''
