@@ -1,39 +1,62 @@
 {{title.zh=}}野玫瑰的摇篮曲
-{{intro.zh=}}
+{{intro.zh=}}与花朵共度的日子
 {{title.en=}}Wild Rose’s Lullaby
-{{intro.en=}}
+{{intro.en=}}Days spent together with a flower
 
-{{bannerimg=}}rose2.png
-{{bannerimgpos=}}50,5
+{{bannerimg=}}rose5.png
+{{bannerimgpos=}}50,10
 {{bannerimginpage=}}false
-{{bannerimgalt.zh=}}
-{{bannerimgalt.en=}}
+{{bannerimgalt.zh=}}玫瑰在阳台上面对着阳光与楼下开着粉色花朵的树。
+{{bannerimgalt.en=}}A rose on the balcony facing the sunlight as well as a tree with pink blossoms outside.
 
 {{date=}}2023.03
 
 {{contents.zh=}}
 
-!<img rose0.png <= > square>
+!<img rose0.png <= 花园里的一朵玫瑰。> square>
 !<h1 1>
-!<img rose1.png <= > square syncdarkmild>
+!<img rose1.png <= 暖色灯光下的魔术帽与未开放的玫瑰。> square syncdarkmild>
 !<h1 2>
-!<img rose2.png <= > square>
+!<img rose2.png <= 窗台上粉色水壶里插着的玫瑰。> square>
 !<h1 3>
-!<img rose3.png <= > square>
+!<img rose3.png <= 阳台阴凉处放置于透明罐子里的玫瑰。> square>
 !<h1 4>
-!<img rose4.png <= > square>
+!<img rose4.png <= 宿舍里放置的玫瑰，帘子掩着床，桌面上放着感冒药。> square>
 !<h1 5>
-!<img rose5.png <= > square>
+!<img rose5.png <= 玫瑰在阳台上面对着阳光与楼下开着粉色花朵的树。> square>
 !<h1 6>
-!<img rose6.png <= > square>
+!<img rose6.png <= 深夜的台灯灯光下，玫瑰看着女孩面对绿色云朵发愁。> square>
 !<h1 7>
-!<img rose7.png <= > square>
+!<img rose7.png <= 回到阳台上沐浴着明媚阳光的玫瑰。> square>
 !<h1 8>
-!<img rose8.png <= > square>
+!<img rose8.png <= 宿舍室内阴凉处微微垂下头的玫瑰。> square>
 !<h1 9>
-!<img rose9a.png <= > square>
-!<img rose9b.png <= > square>
-!<img rose9c.jpg <= > vertical>
-!<img rose9d.png <= > square>
+!<img rose9a.png <= 女孩捧着垂下的玫瑰站在阳台上望向粉色花朵。> square>
+!<img rose9b.png <= 女孩把掉落的玫瑰花瓣埋在一棵绿叶繁茂的树下。> square>
+!<img rose9c.jpg <= 照片，手持的一朵玫瑰，背景的地面上有掉落的红色花瓣。> vertical>
+!<img rose9d.png <= 玫瑰失去了花瓣，横放在竖立的方形石块前的土地上，被繁茂的枝条包围。> square>
 
 {{contents.en=}}
+
+!<img rose0.png <= A rose in the garden.> square>
+!<h1 1>
+!<img rose1.png <= A magic hat and an unopened rose under warm-coloured lights.> square syncdarkmild>
+!<h1 2>
+!<img rose2.png <= A rose in a pink water bottle on the windowsill.> square>
+!<h1 3>
+!<img rose3.png <= A rose placed in a transparent container in a shaded area on the balcony.> square>
+!<h1 4>
+!<img rose4.png <= A rose in the dormitory, with curtains drawn over the bed and cold medicine on the table.> square>
+!<h1 5>
+!<img rose5.png <= A rose on the balcony facing the sunlight as well as a tree with pink blossoms outside.> square>
+!<h1 6>
+!<img rose6.png <= Under the light of a desk lamp late at night, a rose watches a worried girl facing a green cloud.> square>
+!<h1 7>
+!<img rose7.png <= A rose returned to the balcony bathing in the bright sunshine.> square>
+!<h1 8>
+!<img rose8.png <= A rose with a slightly drooping head in a shaded spot inside the dormitory.> square>
+!<h1 9>
+!<img rose9a.png <= A girl holding a drooping rose standing on the balcony, looking at the pink flowers.> square>
+!<img rose9b.png <= A girl burying the fallen rose petals under a tree with lush foliage.> square>
+!<img rose9c.jpg <= A photo of a rose held in hand with fallen red petals on the ground in the background.> vertical>
+!<img rose9d.png <= A rose, having lost the petals, lying horizontally on the ground in front of a standing square stone, surrounded by lush branches.> square>
