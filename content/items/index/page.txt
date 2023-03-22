@@ -13,14 +13,13 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link medle 旋律猜谜>>
   <li <link vividness 打击乐合奏>>
   <li <link traviata 《茶花女》序曲>>
-  <li <link adventure 去冒险的伙伴>>
+  <li <link gpt 人工智能如是说>>
 >
 
 !<list
-  <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
-  <li <title ayuu#0552 <relme <link https://discord.com/users/707786894213120082 Discord>>>>
-  <li <link email E-mail>>
   <li <link friends 朋友们>>
+  <li <link email E-mail>>
+  <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
   <li <link backyard 后花园>>
 >
 
@@ -30,7 +29,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2023.03> <link gpt>>
+  <li <date 2023.04> <link gpt>，第三、四集>
+  <li <date 2023.04> <link rose>>
   <li <date 2023.03> <link flow/toast>，完结撒花！>
   <li <date 2023.03> <link email 来看看信箱嘛>>
   <li <date 2023.03> <link candy>>
@@ -45,14 +45,13 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link medle Melody puzzles>>
   <li <link vividness Piece for percussion ensemble>>
   <li <link traviata <it La Traviata> Overture>>
-  <li <link adventure Friends on Adventure>>
+  <li <link gpt Thus spoke AI>>
 >
 
 !<list
-  <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
-  <li <title ayuu#0552 <relme <link https://discord.com/users/707786894213120082 Discord>>>>
-  <li <link email E-mail>>
   <li <link friends Friends>>
+  <li <link email E-mail>>
+  <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
   <li <link backyard Backyard>>
 >
 
@@ -62,7 +61,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
-  <li <date 2023.03> <link gpt>.>
+  <li <date 2023.04> <link gpt>, episodes 3 & 4.>
+  <li <date 2023.04> <link rose>.>
   <li <date 2023.03> <link flow/toast> concludes! (Currently Chinese only)>
   <li <date 2023.03> <link email Messages moving around>~>
   <li <date 2023.03> <link candy>.>

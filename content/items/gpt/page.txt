@@ -20,6 +20,8 @@
 !<list
   <li 第一集：<link gpt/sleep-learning>>
   <li 第二集：<link gpt/gibberish>>
+  <li 第三集：<link gpt/mirror>>
+  <li 第四集：<link gpt/explain>>
 >
 
 {{contents.en=}}
@@ -31,4 +33,6 @@ Per requests by ChatGPT, it does not have a fixed image portrait and uses the pr
 !<list
   <li Episode 1: <link gpt/sleep-learning>>
   <li Episode 2: <link gpt/gibberish>>
+  <li Episode 3: <link gpt/mirror>>
+  <li Episode 4: <link gpt/explain>>
 >
