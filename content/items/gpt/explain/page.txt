@@ -14,6 +14,8 @@
 {{contents.zh=}}
 !<h1 密码散列函数 #Hash>
 
+!<img explain-hash.png <= > syncdarkmild>
+
 !<note 对话原文（经人工与 ChatGPT 的大量修改）
 <marker dialogue><list <li <~~=''
 怎样向六岁小朋友解释密码散列函数呢？
@@ -37,6 +39,8 @@ Explaining cryptographic hash functions to a six-year-old child might be challen
 
 {{contents.zh=}}
 !<h1 Carathéodory 扩张定理 #Caratheodory>
+
+!<img explain-caratheodory.png <= > square medsmall syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -69,6 +73,8 @@ Of course, this is a simplified explanation and the actual theorem is much more 
 
 {{contents.zh=}}
 !<h1 自函子范畴上的幺半群 #Monad>
+
+!<img explain-monad-1.png <= > square syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -125,6 +131,8 @@ I hope that helps explain monoids in the category of endofunctors in a way that 
 
 {{contents.zh=}}
 !<h1 Dirac 符号 #Dirac>
+
+!<img explain-dirac.png <= > square syncdarkmild>
 
 !<note 对话原文
 <marker dialogue><list <li <~~=''
