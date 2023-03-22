@@ -1,5 +1,5 @@
 {{title.zh=}}野玫瑰的摇篮曲
-{{intro.zh=}}与花朵共度的日子
+{{intro.zh=}}与一枝花共度数日
 {{title.en=}}Wild Rose’s Lullaby
 {{intro.en=}}Days spent together with a flower
 
@@ -12,6 +12,10 @@
 {{date=}}2023.03
 
 {{contents.zh=}}
+
+!<filetable
+  <file Wild_Rose.ogg 野玫瑰的摇篮曲>
+>
 
 !<img rose0.png <= 花园里的一朵玫瑰。> square>
 !<h1 1>
@@ -36,7 +40,16 @@
 !<img rose9c.jpg <= 照片，手持的一朵玫瑰，背景的地面上有掉落的红色花瓣。> vertical>
 !<img rose9d.png <= 玫瑰失去了花瓣，横放在竖立的方形石块前的土地上，被繁茂的枝条包围。> square>
 
+!<hr>
+!<filetable
+  <file Wild_Rose.mscz MuseScore 4 文档>
+>
+
 {{contents.en=}}
+
+!<filetable
+  <file Wild_Rose.ogg Wild Rose’s Lullaby>
+>
 
 !<img rose0.png <= A rose in the garden.> square>
 !<h1 1>
@@ -60,3 +73,8 @@
 !<img rose9b.png <= A girl burying the fallen rose petals under a tree with lush foliage.> square>
 !<img rose9c.jpg <= A photo of a rose held in hand with fallen red petals on the ground in the background.> vertical>
 !<img rose9d.png <= A rose, having lost the petals, lying horizontally on the ground in front of a standing square stone, surrounded by lush branches.> square>
+
+!<hr>
+!<filetable
+  <file Wild_Rose.mscz MuseScore 4 document>
+>
