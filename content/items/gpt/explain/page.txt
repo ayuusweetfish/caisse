@@ -14,7 +14,7 @@
 {{contents.zh=}}
 !<h1 密码散列函数 #Hash>
 
-!<img explain-hash.png <= > syncdarkmild>
+!<img explain-hash.png <= 左：藏宝图上标记的路线；右：只标出藏宝地点的藏宝图。> syncdarkmild>
 
 !<note 对话原文（经人工与 ChatGPT 的大量修改）
 <marker dialogue><list <li <~~=''
@@ -28,6 +28,8 @@
 {{contents.en=}}
 !<h1 Cryptographic Hash Functions #Hash>
 
+!<img explain-hash.png <= Left: The route marked on the treasure map; right: the treasure map that only shows the location of the treasure.> syncdarkmild>
+
 !<note Chat transcript (translated from Chinese with the help of ChatGPT; substantially revised both manually and by ChatGPT)
 <marker dialogue><list <li <~~=''
 How to explain cryptographic hash functions to a six-year-old child?
@@ -40,7 +42,7 @@ Explaining cryptographic hash functions to a six-year-old child might be challen
 {{contents.zh=}}
 !<h1 Carathéodory 扩张定理 #Caratheodory>
 
-!<img explain-caratheodory.png <= > square medsmall syncdarkmild>
+!<img explain-caratheodory.png <= 一堆积木旁，小朋友抱着一个装满新积木的箱子。> square medsmall syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -58,6 +60,8 @@ Carathéodory 扩张定理是一个相当复杂的数学概念，对于一个六
 {{contents.en=}}
 !<h1 Carathéodory’s Extension Theorem #Caratheodory>
 
+!<img explain-caratheodory.png <= Beside a pile of building blocks, a child is holding a box filled with new building blocks.> square medsmall syncdarkmild>
+
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
 How to explain Carathéodory’s Extension Theorem to a six-year-old child?
@@ -74,7 +78,8 @@ Of course, this is a simplified explanation and the actual theorem is much more 
 {{contents.zh=}}
 !<h1 自函子范畴上的幺半群 #Monad>
 
-!<img explain-monad-1.png <= > square syncdarkmild>
+!<img explain-monad-1.png <= 小车经过魔法棒 f 变成船；船经过魔法棒 g 变成飞机；小车经过魔法棒“g 合成 f”变成飞机。> square syncdarkmild>
+!<img explain-monad-2.png <= 装满魔法棒的箱子，一张纸上写着“合成”的运算规则。> square syncdarkmild>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -104,6 +109,9 @@ Of course, this is a simplified explanation and the actual theorem is much more 
 {{contents.en=}}
 !<h1 Monoids in the Category of Endofunctors #Monad>
 
+!<img explain-monad-1.png <= The car turns into a boat with magic wand f; the boat turns into a plane with magic wand g; the car turns into a plane with the magic wand "g composed with f".> square syncdarkmild>
+!<img explain-monad-2.png <= A box filled with magic wands; a piece of paper with the "composition" operation rules written on it.> square syncdarkmild>
+
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
 How to explain monoids in the category of endofunctors to a six-year-old child?
@@ -132,7 +140,7 @@ I hope that helps explain monoids in the category of endofunctors in a way that 
 {{contents.zh=}}
 !<h1 Dirac 符号 #Dirac>
 
-!<img explain-dirac.png <= > square syncdarkmild>
+!<img explain-dirac.png <= 魔法师、魔法书与电子轨道。> square syncdarkmild>
 
 !<note 对话原文
 <marker dialogue><list <li <~~=''
@@ -142,7 +150,7 @@ I hope that helps explain monoids in the category of endofunctors in a way that 
 
 首先，可以告诉孩子 Dirac 符号就像是一个魔法符号，它可以帮助我们理解微观世界中的一些规律。我们可以把它想象成一个神奇的标记，就像魔法师们在书中画的符号一样。但是，这个符号不是用来做魔法的，而是用来帮助我们研究微观世界中的粒子运动的。
 
-可以告诉孩子，Dirac 符号是由一个英国物理学家发明的，他叫做Paul Dirac。这个符号可以帮助我们预测电子的运动方式，并解释为什么电子只能存在在特定的能量级别中。
+可以告诉孩子，Dirac 符号是由一个英国物理学家发明的，他叫做 Paul Dirac。这个符号可以帮助我们预测电子的运动方式，并解释为什么电子只能存在在特定的能量级别中。
 
 可以用一些具体的例子来帮助孩子理解，例如告诉孩子想象一下一个玻璃球在碗中滚动。这个玻璃球只能在碗中滚动，不能跳出碗外。在微观世界中，电子也像玻璃球一样，只能存在在特定的能量级别中，不能在能量级别之间随意跳跃。
 
@@ -151,6 +159,8 @@ I hope that helps explain monoids in the category of endofunctors in a way that 
 
 {{contents.en=}}
 !<h1 Dirac Notation #Dirac>
+
+!<img explain-dirac.png <= Magician, spellbook, and orbital states of electrons.> square syncdarkmild>
 
 !<note Chat transcript (translated from Chinese with the help of ChatGPT)
 <marker dialogue><list <li <~~=''
@@ -170,6 +180,8 @@ Lastly, you can tell the child that although the Dirac notation may seem magical
 {{contents.zh=}}
 !<h1 Gödel 不完备定理 #Godel>
 
+!<img explain-godel.png <= 迷宫中一扇锁上的门。> square syncdarkmild>
+
 !<note 对话原文
 <marker dialogue><list <li <~~=''
 怎样向六岁小朋友解释 Gödel 不完备定理呢？
@@ -187,6 +199,8 @@ Lastly, you can tell the child that although the Dirac notation may seem magical
 
 {{contents.en=}}
 !<h1 Gödel's Incompleteness Theorems #Godel>
+
+!<img explain-godel.png <= A locked door in a maze.> square syncdarkmild>
 
 !<note Chat transcript (translated from Chinese with the help of ChatGPT)
 <marker dialogue><list <li <~~=''
