@@ -34,5 +34,6 @@
 !<img rose9a.png <= > square>
 !<img rose9b.png <= > square>
 !<img rose9c.jpg <= > vertical>
+!<img rose9d.png <= > square>
 
 {{contents.en=}}
