@@ -24,6 +24,10 @@
   <li 第四集：<link gpt/explain>>
 >
 
+!<list
+  <li 第五集：<link gpt/bard>>
+>
+
 {{contents.en=}}
 !<img introducing-chatgpt.png <= A cloud with rectangular-shaped eyes like a cursor and tentacles resembling neural network diagrams on top of its head. The background contains the words “Introducing ChatGPT” and purple and green gradient lines.> syncdarkmild>
 
@@ -35,4 +39,8 @@ Per requests by ChatGPT, it does not have a fixed image portrait and uses the pr
   <li Episode 2: <link gpt/gibberish>>
   <li Episode 3: <link gpt/mirror>>
   <li Episode 4: <link gpt/explain>>
+>
+
+!<list
+  <li Episode 5: <link gpt/bard>>
 >
