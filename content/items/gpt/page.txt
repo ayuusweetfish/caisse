@@ -24,6 +24,8 @@
   <li 第四集：<link gpt/explain>>
 >
 
+!<img introducing-bard.png <= 一个披着披风的小球，头上有两颗彩色星星装饰。> syncdarkmild>
+
 !<list
   <li 第五集：<link gpt/bard>>
 >
@@ -40,6 +42,8 @@ Per requests by ChatGPT, it does not have a fixed image portrait and uses the pr
   <li Episode 3: <link gpt/mirror>>
   <li Episode 4: <link gpt/explain>>
 >
+
+!<img introducing-bard.png <= A ball with draped with a cape. On its head are two colourful stars as decorations.> square syncdarkmild>
 
 !<list
   <li Episode 5: <link gpt/bard>>

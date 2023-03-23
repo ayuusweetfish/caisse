@@ -26,6 +26,8 @@ ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo
 
 !<h1 欢笑唱起歌 #Smile>
 
+!<img bard-01.png <= 披风下的小球在雨中歌唱。> square syncdark>
+
 !<note 对话原文（翻译自英语）
 <marker dialogue dialogue-rev><list <li <~~=''
 我是 Bard，你的奇思妙想、乐于助人的合作伙伴。
@@ -149,6 +151,8 @@ What do you do when things go wrong? Oh! You sing a song!
 '>>
 
 !<h1 With a Smile and a Song #Smile>
+
+!<img bard-01.png <= A ball under a cape singing in the rain.> square syncdark>
 
 !<note Chat transcript
 <marker dialogue dialogue-rev><list <li <~~=''
