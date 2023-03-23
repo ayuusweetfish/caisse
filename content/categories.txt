@@ -109,6 +109,7 @@ cats.potpourri.pagelist = {
   {name = 'gpt/gibberish', unlisted = true},
   {name = 'gpt/mirror', unlisted = true},
   {name = 'gpt/explain', unlisted = true},
+  {name = 'gpt/bard', unlisted = true},
   {name = 'adventure'},
   {name = 'patchwork'},
   {name = 'maylove-ex-22'},

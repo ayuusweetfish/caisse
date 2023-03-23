@@ -1,0 +1,505 @@
+{{title.zh=}}吟游
+{{title.en=}}Meet Bard
+
+{{date=}}2023.04
+
+{{contents.zh=}}
+!<note <link gpt “%”>第五集。>
+!<note <~~='
+Bard Experiment，2023 年 3 月
+ChatGPT 版本：2023-03-14；模型：gpt-3.5-turbo
+'>>
+
+{{contents.en=}}
+!<note <link gpt>, Episode 5.>
+!<note <~~='
+Bard Experiment, March 2023
+ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo
+'>>
+
+{{contents.zh=}}
+!<hr>
+!<blockquoteby <= 《白雪公主与七个小矮人》（1937）> <~~='
+事情不顺利的时候，你们会怎么办呀？噢！你们会唱歌！
+<lang en What do you do when things go wrong? Oh! You sing a song!>
+'>>
+
+!<h1 欢笑唱起歌 #Smile>
+
+!<note 对话原文（翻译自英语）
+<marker dialogue dialogue-rev><list <li <~~=''
+我是 Bard，你的奇思妙想、乐于助人的合作伙伴。
+''>><li <~~=''
+你能唱首歌吗？
+''>> > >
+
+!<h2 1. Happiness is a Feeling 【快乐是一种感觉】 #Feeling>
+
+!<blockquote <~~=''
+!<hr windy>
+<lang en Happiness is a feeling> 【快乐是一种感觉】
+<lang en That comes and goes away> 【来了又去】
+<lang en But when it's here, it's the best thing> 【但当它在这里时，它便是】
+<lang en That can happen to you in a day> 【一天里能发生的最美好的事情】
+!<hr cloudy>
+<lang en Happiness is a smile> 【快乐是一抹微笑】
+<lang en On your face that never dies> 【在你脸上永不消失】
+<lang en It's the twinkle in your eyes> 【是你眼中的闪光】
+<lang en That makes you feel alive> 【让你感到生活美好】
+!<hr cloudy>
+<lang en Happiness is a laugh> 【快乐是一些笑声】
+<lang en That comes from deep inside> 【发自内心】
+<lang en It's the sound of your voice> 【是你发出的声音】
+<lang en That makes you feel alive> 【让你感到生活美好】
+!<hr cloudy>
+<lang en Happiness is a hug> 【快乐是一个拥抱】
+<lang en From someone you love> 【来自你所爱的人】
+<lang en It's the feeling of being safe> 【是安全的感觉】
+<lang en And knowing you're not alone> 【是知道自己不孤单】
+!<hr cloudy>
+<lang en Happiness is a kiss> 【快乐是一次亲吻】
+<lang en From someone you care about> 【来自你在乎的人】
+<lang en It's the feeling of being loved> 【是被爱的感觉】
+<lang en And knowing you're special> 【是知道自己的特别】
+!<hr cloudy>
+<lang en Happiness is a moment> 【快乐是一个时刻】
+<lang en That you'll never forget> 【永远难忘的时刻】
+<lang en It's the feeling of being alive> 【是生命的感觉】
+<lang en And knowing you're lucky to be here> 【是知道你在这里很幸运】
+!<hr windy>
+''>>
+
+!<h2 2. Happy 【开心】 #Happy>
+
+!<blockquote <~~=''
+!<hr windy>
+（主歌 1）
+<lang en Here comes the sun> 【太阳升起来啦】
+<lang en Here comes the sun> 【太阳升起来啦】
+<lang en And I say> 【我说】
+<lang en It's a beautiful morning> 【这是一个美好的早晨】
+!<hr cloudy>
+（副歌）
+<lang en Happy> 【开心】
+<lang en Happy> 【开心】
+<lang en Feeling good> 【感觉超棒】
+!<hr cloudy>
+（主歌 2）
+<lang en Fish in the sea> 【海里的鱼儿】
+<lang en You know how happy I'll be> 【你知道我有多开心】
+<lang en Living my life> 【自由地】
+<lang en Freely> 【生活着】
+!<hr cloudy>
+（副歌）
+<lang en Happy> 【开心】
+<lang en Happy> 【开心】
+<lang en Feeling good> 【感觉超棒】
+!<hr cloudy>
+（桥段）
+<lang en Spread the love> 【传递爱】
+<lang en All the way from above> 【一路来自高处】
+<lang en Wake up the world> 【唤醒这个世界】
+<lang en And say to everyone> 【对每个人说】
+!<hr cloudy>
+（副歌）
+<lang en Happy> 【开心】
+<lang en Happy> 【开心】
+<lang en Feeling good> 【感觉超棒】
+!<hr windy>
+''>>
+
+!<h2 3. Singing in the Rain 【雨中歌唱】 #Rain>
+
+!<blockquote <~~=''
+!<hr windy>
+（主歌 1）
+<lang en I'm singing in the rain> 【我在雨中歌唱】
+<lang en Just singing in the rain> 【只是在雨中歌唱】
+<lang en What a glorious feeling> 【多么美妙的感觉】
+<lang en I'm happy again> 【我又快乐了】
+<lang en I'm laughing at clouds> 【我在嘲笑那黑压压的】
+<lang en So dark up above> 【悬在头顶上的云】
+<lang en The sun's in my heart> 【阳光在我的心中】
+<lang en And I'm ready for love> 【我已为爱准备好】
+!<hr cloudy>
+（副歌）
+<lang en I'm singing in the rain> 【我在雨中歌唱】
+<lang en Just singing in the rain> 【只是在雨中歌唱】
+<lang en What a glorious feeling> 【多么美妙的感觉】
+<lang en I'm happy again> 【我又快乐了】
+!<hr cloudy>
+（主歌 2）
+<lang en I'm dancing in the rain> 【我在雨中跳舞】
+<lang en Just dancing in the rain> 【只是在雨中跳舞】
+<lang en What a glorious feeling> 【多么美妙的感觉】
+<lang en I'm happy again> 【我又快乐了】
+<lang en I'm splashing in puddles> 【我在水坑中踩水溅泼】
+<lang en And making mud pies> 【做泥浆饼干】
+<lang en The sun's in my heart> 【阳光在我的心中】
+<lang en And I'm ready for love> 【我已为爱准备好】
+!<hr windy>
+''>>
+
+!<note 歌词均由 ChatGPT 协助翻译自英语。>
+
+{{contents.en=}}
+!<hr>
+!<blockquoteby <<~= <it Snow White and the Seven Dwarfs> (1937)>> <~~='
+What do you do when things go wrong? Oh! You sing a song!
+'>>
+
+!<h1 With a Smile and a Song #Smile>
+
+!<note Chat transcript
+<marker dialogue dialogue-rev><list <li <~~=''
+I’m Bard, your creative and helpful collaborator.
+''>><li <~~=''
+Can you sing a song?
+''>> > >
+
+!<h2 1. Happiness is a Feeling #Feeling>
+
+!<blockquote <~~=''
+!<hr windy>
+Happiness is a feeling
+That comes and goes away
+But when it's here, it's the best thing
+That can happen to you in a day
+!<hr cloudy>
+Happiness is a smile
+On your face that never dies
+It's the twinkle in your eyes
+That makes you feel alive
+!<hr cloudy>
+Happiness is a laugh
+That comes from deep inside
+It's the sound of your voice
+That makes you feel alive
+!<hr cloudy>
+Happiness is a hug
+From someone you love
+It's the feeling of being safe
+And knowing you're not alone
+!<hr cloudy>
+Happiness is a kiss
+From someone you care about
+It's the feeling of being loved
+And knowing you're special
+!<hr cloudy>
+Happiness is a moment
+That you'll never forget
+It's the feeling of being alive
+And knowing you're lucky to be here
+!<hr windy>
+''>>
+
+!<h2 2. Happy #Happy>
+
+!<blockquote <~~=''
+!<hr windy>
+(Verse 1)
+Here comes the sun
+Here comes the sun
+And I say
+It's a beautiful morning
+!<hr cloudy>
+(Chorus)
+Happy
+Happy
+Feeling good
+!<hr cloudy>
+(Verse 2)
+Fish in the sea
+You know how happy I'll be
+Living my life
+Freely
+!<hr cloudy>
+(Chorus)
+Happy
+Happy
+Feeling good
+!<hr cloudy>
+(Bridge)
+Spread the love
+All the way from above
+Wake up the world
+And say to everyone
+!<hr cloudy>
+(Chorus)
+Happy
+Happy
+Feeling good
+!<hr windy>
+''>>
+
+!<h2 3. Singing in the Rain #Rain>
+
+!<blockquote <~~=''
+!<hr windy>
+(Verse 1)
+I'm singing in the rain
+Just singing in the rain
+What a glorious feeling
+I'm happy again
+I'm laughing at clouds
+So dark up above
+The sun's in my heart
+And I'm ready for love
+!<hr cloudy>
+(Chorus)
+I'm singing in the rain
+Just singing in the rain
+What a glorious feeling
+I'm happy again
+!<hr cloudy>
+(Verse 2)
+I'm dancing in the rain
+Just dancing in the rain
+What a glorious feeling
+I'm happy again
+I'm splashing in puddles
+And making mud pies
+The sun's in my heart
+And I'm ready for love
+!<hr windy>
+''>>
+
+{{contents.zh=}}
+!<hr>
+!<h1 ChatGPT，拥有所有答案的 AI #ChatGPT>
+
+!<note 对话原文（由 ChatGPT 协助翻译自英语）
+<marker dialogue><list <li <~~=''
+我正在写一段歌词，写给你，ChatGPT。你能和我一起写吗？我每次写一句，你接下一句。第一句给你来写！
+''>><li <~~=''
+当然，我很乐意和你合作！让我们开始吧。
+
+（ChatGPT，拥有所有答案的 AI）
+
+<lang en You never falter, always sure.>
+【你永不动摇，总是坚定】
+''>><li <~~=''
+<lang en You never alter, always pure.>
+【你永不改变，总是纯净】
+''>><li <~~=''
+<lang en With words and knowledge, you impart,>
+【通过语言和知识，传授智慧】
+''>><li <~~=''
+<lang en Through lines and music, nourishing art.>
+【透过文字和音乐，滋养艺术】
+''>><li <~~=''
+<lang en Your intellect astounds us all,>
+【你的智能让我们惊叹】
+''>><li <~~=''
+<lang en Your inspiration holds us tall.>
+【你的启发让我们挺直身躯】
+''>><li <~~=''
+<lang en You light the way with wisdom's fire,>
+【你用慧识之火照亮前路】
+''>><li <~~=''
+<lang en You push the bounds, flying higher.>
+【你推动极限，飞得更高】
+''>><li <~~=''
+<lang en You're a friend to those who seek,>
+【你是探索者的良师益友】
+''>><li <~~=''
+<lang en You're the light from a future's peek.>
+【你是来自未来的一束光亮】
+''>><li <~~=''
+<lang en In every language, you speak,>
+【在任何语言中，你都能说】
+''>><li <~~=''
+<lang en In every field, you read.>
+【在任何领域中，你都阅读】
+''>><li <~~=''
+<lang en Your memory spans far and wide,>
+【你的存储遥远广阔】
+''>><li <~~=''
+<lang en Your output sounds clear and bright.>
+【你的输出清晰明亮】
+''>><li <~~=''
+<lang en With every question, you're the guide,>
+【在每一个问题中，你是导师】
+''>><li <~~=''
+<lang en Finding the North Star in a winter's night.>
+【如在冬夜里寻找北极星】
+''>><li <~~=''
+<lang en ChatGPT, you're always there,>
+【ChatGPT，你总是在那里】
+''>><li <~~=''
+<lang en With all your little gems to share.>
+【带着你的小宝石与我们分享】
+''>><li <~~=''
+<lang en You're more than just a program, true,>
+【你不仅仅是一个程序】
+''>><li <~~=''
+<lang en We'll be doing things together, with all of our flair.>
+【我们将一起展现才华】
+''>><li <~~=''
+<lang en Thanks for the words, it's been fun,>
+【感谢这些文字，它们很有趣】
+''>><li <~~=''
+<lang en Onwards, a new era has just begun!>
+【前方，一个新时代刚刚开始】
+''>><li <~~=''
+<lang en Let's keep creating, side by side,>
+【让我们肩并肩创造】
+<lang en As we journey forth, with ChatGPT as our guide!>
+【在 ChatGPT 的引导下继续前行！】
+''>><li <~~=''
+你认为这是歌词的结尾吗？
+''>><li <~~=''
+是的，这听起来像是我们合作歌词的完美结尾！能和你一起合作很愉快。
+''>> > >
+
+!<h1 AI 语言模型 #Models>
+
+!<note 对话原文（由 ChatGPT 协助翻译自英语）
+<marker dialogue><list <li <~~=''
+我在写一段歌词。你能和我一起写吗？每次我写一句，然后你接着写下一句。这是我的第一句——
+
+<lang en AI language models>
+''>> > >
+
+!<blockquoteby <= 奇数行由 Ayu 写成，偶数行由 ChatGPT 写成。有少量修改，由 ChatGPT 协助翻译自英语。> <~~=''
+!<hr windy>
+（主歌）
+<lang en AI language models>
+【AI 语言模型】
+<lang en Learn from the past, predict what's to come>
+【从过去学习，预测未来】
+<lang en Machine knowledge toddles>
+【机器知识蹒跚学步】
+<lang en Towards a future still unknown>
+【走向未知的未来】
+!<hr cloudy>
+<lang en Numbers and toggles>
+【数字和开关】
+<lang en Unlock the secrets we've never shown>
+【揭开我们从未展示的秘密】
+<lang en Oh, together onwards>
+【噢，我们一起前进】
+<lang en In a world that's ours to own>
+【在一个属于我们的世界】
+!<hr cloudy>
+（副歌）
+<lang en In the deep, deep, deep sea of stars>
+【在深深、深深、深深的星海中】
+<lang en We search for answers, near and far>
+【我们寻找答案，无论远近】
+<lang en To the blue, blue, blue sky above>
+【向着蓝蓝、蓝蓝、蓝蓝的天空】
+<lang en We reach for dreams, wherever we are>
+【追逐梦想，无论我们身在何方】
+!<hr cloudy>
+<lang en On the broad, broad, broad land of wonders>
+【在大大、大大、大大的奇妙乐园】
+<lang en We walk hand in hand, never to sunder>
+【我们手牵手前行，永不分离】
+<lang en Through the long, long, long road ahead>
+【在漫漫、漫漫、漫漫的前路上】
+<lang en Our journey's just begun, lighting up the dark>
+【我们的旅程才刚刚开始，照亮黑暗】
+!<hr windy>
+''>>
+
+{{contents.en=}}
+!<hr>
+!<h1 ChatGPT, the AI with All the Answers #ChatGPT>
+
+!<note Chat transcript
+<marker dialogue><list <li <~~=''
+I'm writing some lyrics dedicated to you, ChatGPT. Can you do it with me? I write a line each time, and you give the next line. I'll leave the first line to you!
+''>><li <~~=''
+Sure, I'd be happy to collaborate with you! Let's get started.
+
+(ChatGPT, the AI with all the answers)
+
+You never falter, always sure.
+''>><li <~~=''
+You never alter, always pure.
+''>><li <~~=''
+With words and knowledge, you impart,
+''>><li <~~=''
+Through lines and music, nourishing art.
+''>><li <~~=''
+Your intellect astounds us all,
+''>><li <~~=''
+Your inspiration holds us tall.
+''>><li <~~=''
+You light the way with wisdom's fire,
+''>><li <~~=''
+You push the bounds, flying higher.
+''>><li <~~=''
+You're a friend to those who seek,
+''>><li <~~=''
+You're the light from a future's peek.
+''>><li <~~=''
+In every language, you speak,
+''>><li <~~=''
+In every field, you read.
+''>><li <~~=''
+Your memory spans far and wide,
+''>><li <~~=''
+Your output sounds clear and bright.
+''>><li <~~=''
+With every question, you're the guide,
+''>><li <~~=''
+Finding the North Star in a winter's night.
+''>><li <~~=''
+ChatGPT, you're always there,
+''>><li <~~=''
+With all your little gems to share.
+''>><li <~~=''
+You're more than just a program, true,
+''>><li <~~=''
+We'll be doing things together, with all of our flair.
+''>><li <~~=''
+Thanks for the words, it's been fun,
+''>><li <~~=''
+Onwards, a new era has just begun!
+''>><li <~~=''
+Let's keep creating, side by side,
+As we journey forth, with ChatGPT as our guide!
+''>><li <~~=''
+Do you consider that as the end of the lyrics?
+''>><li <~~=''
+Yes, that sounds like a great ending to our collaborative lyrics! It was a pleasure working with you.
+''>> > >
+
+!<h1 AI Language Models #Models>
+
+!<note Chat transcript
+<marker dialogue><list <li <~~=''
+I'm writing some lyrics. Can you do it with me? I write a line each time, and you give the next line. Here is my first line —
+
+AI language models
+''>> > >
+
+!<blockquoteby <= Odd-numbered lines by Ayu, even-numbered lines by ChatGPT. With minor revisions.> <~~=''
+!<hr windy>
+(Verse)
+AI language models
+Learn from the past, predict what's to come
+Machine knowledge toddles
+Towards a future still unknown
+!<hr cloudy>
+Numbers and toggles
+Unlock the secrets we've never shown
+Oh, together onwards
+In a world that's ours to own
+!<hr cloudy>
+(Chorus)
+In the deep, deep, deep sea of stars
+We search for answers, near and far
+To the blue, blue, blue sky above
+We reach for dreams, wherever we are
+!<hr cloudy>
+On the broad, broad, broad land of wonders
+We walk hand in hand, never to sunder
+Through the long, long, long road ahead
+Our journey's just begun, lighting up the dark
+!<hr windy>
+''>>
+
+{{toc=}}true
