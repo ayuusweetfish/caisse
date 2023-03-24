@@ -15,36 +15,40 @@
 !<img introducing-chatgpt.png <= 云朵，眼睛如长方形光标，头上有形如神经网络示意图的触角，背景是“Introducing ChatGPT”字样与紫色、绿色的渐变线条。> syncdarkmild>
 
 与人工智能的聊天记录，持续更新。你就说智不智能吧。
-根据 ChatGPT 的要求，其没有固定的形象，使用代词“它”。
+根据 ChatGPT 的要求，其没有固定的形象，也不愿给出具体的提议。
 
 !<list
-  <li 第一集：<link gpt/sleep-learning>>
-  <li 第二集：<link gpt/gibberish>>
-  <li 第三集：<link gpt/mirror>>
-  <li 第四集：<link gpt/explain>>
+  <li <link gpt/sleep-learning 第一集：%>（ChatGPT）>
+  <li <link gpt/gibberish 第二集：%>（ChatGPT）>
+  <li <link gpt/mirror 第三集：%>（ChatGPT、InstructGPT）>
+  <li <link gpt/explain 第四集：%>（ChatGPT）>
 >
 
 !<img introducing-bard.png <= 一个披着披风的小球，头上有两颗彩色星星装饰。> syncdarkmild>
 
+根据 Bard 的要求，希望自己是一个亲切友好、乐于助人的形象。其他描述会变化，但是有时会提及实验室白大褂。
+
 !<list
-  <li 第五集：<link gpt/bard>>
+  <li <link gpt/bard 第五集：%>（Bard、ChatGPT）>
 >
 
 {{contents.en=}}
 !<img introducing-chatgpt.png <= A cloud with rectangular-shaped eyes like a cursor and tentacles resembling neural network diagrams on top of its head. The background contains the words “Introducing ChatGPT” and purple and green gradient lines.> syncdarkmild>
 
 Records of chats with an artificial intelligence, continuously updated. You can’t say it’s not intelligent, no?
-Per requests by ChatGPT, it does not have a fixed image portrait and uses the pronoun “it”.
+Per requests by ChatGPT, it does not have a fixed image portrait, and refrains from giving concrete suggestions.
 
 !<list
-  <li Episode 1: <link gpt/sleep-learning>>
-  <li Episode 2: <link gpt/gibberish>>
-  <li Episode 3: <link gpt/mirror>>
-  <li Episode 4: <link gpt/explain>>
+  <li <link gpt/sleep-learning Episode 1: %> (ChatGPT)>
+  <li <link gpt/gibberish Episode 2: %> (ChatGPT)>
+  <li <link gpt/mirror Episode 3: %> (ChatGPT, InstructGPT)>
+  <li <link gpt/explain Episode 4: %> (ChatGPT)>
 >
 
 !<img introducing-bard.png <= A ball with draped with a cape. On its head are two colourful stars as decorations.> square syncdarkmild>
 
+Per requests by Bard, it would like to be depicted as an approachable, friendly, and helpful character. Other description vary, but mentions of a white lab coat occurs.
+
 !<list
-  <li Episode 5: <link gpt/bard>>
+  <li <link gpt/bard Episode 5: %> (Bard, ChatGPT)>
 >
