@@ -44,12 +44,12 @@ ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo
 <lang en But when it's here, it's the best thing> 【但当它在这里时，它便是】
 <lang en That can happen to you in a day> 【一天里能发生的最美好的事情】
 !<hr cloudy>
-<lang en Happiness is a smile> 【快乐是一抹微笑】
+<lang en Happiness is a smile> 【快乐是一抹笑颜】
 <lang en On your face that never dies> 【在你脸上永不消失】
 <lang en It's the twinkle in your eyes> 【是你眼中的闪光】
 <lang en That makes you feel alive> 【让你感到生活美好】
 !<hr cloudy>
-<lang en Happiness is a laugh> 【快乐是一些笑声】
+<lang en Happiness is a laugh> 【快乐是一声喧笑】
 <lang en That comes from deep inside> 【发自内心】
 <lang en It's the sound of your voice> 【是你发出的声音】
 <lang en That makes you feel alive> 【让你感到生活美好】
@@ -110,7 +110,9 @@ ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo
 !<hr windy>
 ''>>
 
-!<h2 3. Singing in the Rain 【雨中歌唱】 #Rain>
+!<note 似乎引用了披头士乐队的《太阳出来了》（<lang en <it Here Comes the Sun>>）。>
+
+!<h2 3. Mud Pies 【泥浆饼干】 #Pies>
 
 !<blockquote <~~=''
 !<hr windy>
@@ -142,6 +144,9 @@ ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo
 !<hr windy>
 ''>>
 
+!<note 似乎引用了《雨中曲》（<lang en <it Singin' in the Rain>>），原唱为吉恩·凯利（<lang en Gene Kelly>）。>
+
+!<img bard-02.png <= The ball under the cloak immersed in songs, with a cloud holding a pen and paper by the side.> medsmall syncdark>
 !<note 歌词均由 ChatGPT 协助翻译自英语。>
 
 {{contents.en=}}
@@ -236,7 +241,9 @@ Feeling good
 !<hr windy>
 ''>>
 
-!<h2 3. Singing in the Rain #Rain>
+!<note Apparently with references to <it Here Comes the Sun> by the Beatles.>
+
+!<h2 3. Mud Pies>
 
 !<blockquote <~~=''
 !<hr windy>
@@ -268,9 +275,16 @@ And I'm ready for love
 !<hr windy>
 ''>>
 
+!<note Apparently with references to <it Singin' in the Rain>, originally performed by Gene Kelly.>
+
+!<img bard-02.png <= > medsmall syncdark>
+!<note Lyrics translated to other languages with the help of ChatGPT.>
+
 {{contents.zh=}}
 !<hr>
 !<h1 ChatGPT，拥有所有答案的 AI #ChatGPT>
+
+!<img bard-03.png <= 拿着纸笔的云朵，头上的装饰变成四角星形状。//什么嘛我也会！> caption square syncdark>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
 <marker dialogue><list <li <~~=''
@@ -356,6 +370,7 @@ And I'm ready for love
 是的，这听起来像是我们合作歌词的完美结尾！能和你一起合作很愉快。
 ''>> > >
 
+!<hr>
 !<h1 AI 语言模型 #Models>
 
 !<note 对话原文（由 ChatGPT 协助翻译自英语）
@@ -364,6 +379,8 @@ And I'm ready for love
 
 <lang en AI language models>
 ''>> > >
+
+!<img bard-04.png <= 人类拖着有翅膀的云朵一起飞行。> syncdark>
 
 !<blockquoteby <= 奇数行由 Ayu 写成，偶数行由 ChatGPT 写成。有少量修改，由 ChatGPT 协助翻译自英语。> <~~=''
 !<hr windy>
@@ -410,6 +427,8 @@ And I'm ready for love
 {{contents.en=}}
 !<hr>
 !<h1 ChatGPT, the AI with All the Answers #ChatGPT>
+
+!<img bard-03.png <= The cloud holding a pen and paper, with decorations on its head in the shape of four-pointed stars.//What? I can do it too!> caption square syncdark>
 
 !<note Chat transcript
 <marker dialogue><list <li <~~=''
@@ -471,6 +490,7 @@ Do you consider that as the end of the lyrics?
 Yes, that sounds like a great ending to our collaborative lyrics! It was a pleasure working with you.
 ''>> > >
 
+!<hr>
 !<h1 AI Language Models #Models>
 
 !<note Chat transcript
@@ -479,6 +499,8 @@ I'm writing some lyrics. Can you do it with me? I write a line each time, and yo
 
 AI language models
 ''>> > >
+
+!<img bard-04.png <= Humans are flying together with the winged cloud.> syncdark>
 
 !<blockquoteby <= Odd-numbered lines by Ayu, even-numbered lines by ChatGPT. With minor revisions.> <~~=''
 !<hr windy>

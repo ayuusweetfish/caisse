@@ -29,7 +29,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2023.04> <link gpt>，第三、四集>
+  <li <date 2023.04> <link gpt>，第五集：<link gpt/bard>>
   <li <date 2023.04> <link rose>>
   <li <date 2023.03> <link flow/toast>，完结撒花！>
   <li <date 2023.03> <link email 来看看信箱嘛>>
@@ -61,7 +61,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
-  <li <date 2023.04> <link gpt>, episodes 3 & 4.>
+  <li <date 2023.04> <link gpt>, episodes 5: <link gpt/bard>.>
   <li <date 2023.04> <link rose>.>
   <li <date 2023.03> <link flow/toast> concludes! (Currently Chinese only)>
   <li <date 2023.03> <link email Messages moving around>~>
