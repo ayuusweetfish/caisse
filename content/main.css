@@ -292,10 +292,11 @@ function underlinesvg(hue, sat, val, opacity)
 end
 }}
 {{@ cat in cats}}
-{{ hue, sat, val1, val2 = table.unpack(cat.tint) }}
+{{ hue, sat, val1, val2, sat2 = table.unpack(cat.tint) }}
+{{ sat2 = sat2 or sat }}
 a.{{cat.name}} {
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
-  border-image-source: {{ underlinesvg(hue, sat, val2) }};
+  border-image-source: {{ underlinesvg(hue, sat2, val2) }};
 }
 body.dark a.{{cat.name}} {
   color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%);

@@ -1,14 +1,14 @@
 {{{
 cats = {
--- name          hue  sat  v1  v2   icon
-  {'home',      { 28, 100, 43, 89}, 0x1fab8},
-  {'music',     {282, 100, 45, 90}, 0x1fa87},
-  {'playful',   { 40, 100, 38, 84}, 0x1fa81},
-  {'murmurs',   {204, 100, 40, 90}, 0x1fab6},
-  {'potpourri', {163,  75, 35, 89}, 0x2618},
-  {'pebbles',   { 80,  40, 40, 85}, 0x1fae7},
-  {'flow',      {340,  68, 60, 92}, 0x1f390},
-  {'backyard',  {258,  70, 42, 90}, 0x1fabb},
+-- name          hue  sat  v1  v2 sat2  icon
+  {'home',      { 28, 100, 43, 89    }, 0x1fab8},
+  {'music',     {282, 100, 45, 90    }, 0x1fa87},
+  {'playful',   { 40, 100, 38, 84    }, 0x1fa81},
+  {'murmurs',   {204, 100, 40, 90    }, 0x1fab6},
+  {'potpourri', {163,  75, 35, 89, 42}, 0x2618},
+  {'pebbles',   { 80,  40, 40, 85    }, 0x1fae7},
+  {'flow',      {340,  68, 60, 92    }, 0x1f390},
+  {'backyard',  {258,  70, 42, 90    }, 0x1fabb},
 }
 for i = 1, #cats do
   local name, tint, icon = table.unpack(cats[i])
