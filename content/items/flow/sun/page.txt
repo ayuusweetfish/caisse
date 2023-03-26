@@ -1,0 +1,25 @@
+{{title.zh=}}太阳升起来啦
+{{intro.zh=}}世界此般模样，恍若早已是往昔
+{{title.en=}}Here Comes the Sun
+{{intro.en=}}It seems like years since it’s been here
+
+{{date=}}2023.03,2023.04
+
+{{contents.zh=}}
+
+!<h1 23h 38【野玫瑰的摇篮曲】 #23-38>
+
+!<h1 23h 41【低声细语】 #23-41>
+
+!<h1 23h 50【爱的协奏曲】 #23-50>
+
+!<h1 23h 53【塞瑟岛之旅】 #23-53>
+
+!<h1 23h 56【斐德罗篇】 #23-56>
+
+!<h1 0h 02【卷笔刀】 #0-02>
+
+{{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>.>
+
+{{toc=}}true
