@@ -115,8 +115,7 @@ end
   {{@ bgimg ~= '' }}background-image: url({{ file(bgimg, 'items/' .. name) }});{{@ end }}
 }
 body.dark .friend-item.friend-item-{{ hash }} {
-  {{ brighten = 1 - lum(normaliselum(0.5, tint)) * 2 }}
-  filter: brightness({{ 180 + brighten * 240 }}%) saturate(50%);
+  filter: saturate(90%) hue-rotate(180deg) invert() contrast(40%) brightness(150%);
 }
 .friend-item-{{ hash }} .pastel-underline::after {
   background: {{ hextint(normaliselum(0.4, tint)) }};
