@@ -17,7 +17,7 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.en=}}
 !<h1 Link Exchange>
-I expect that your site mirrors a part of yourself! Please reach me by <tt email e-mail>.
+I’d expect that your site mirrors a part of yourself! Please reach me by <tt email e-mail>.
 
 !<note <~~=''
   You may call here a website, a cyber home, a <hovernote memex memory expansion>, a personal wiki, a portfolio, or a name you deem appropriate, including, well, a blog <kao=' (>﹏<)'> However, I struggle with organizing my thoughts into articles, nor am I able to update content in an orderly fashion. I just pile random things up, and textual content here does not meet a standard of a blog. I suppose that the most interesting things here are not my writings, anyway.
@@ -128,8 +128,7 @@ I expect that your site mirrors a part of yourself! Please reach me by <tt email
   link = 'https://irithys.com',
   langs = {'zh'},
   tint = {226, 221, 209},
-  bgimg = '',
-  pending = true,
+  bgimg = 'irithys-bg.png',
 --[[
 }, {
   shortname = 'Example',
