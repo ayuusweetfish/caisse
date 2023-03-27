@@ -23,6 +23,7 @@ process orangii '#ff9700'
 process azalea '#70512a'
 process jasonl '#0066aa'
 process mengru '#f7a9a9'
+process irithys '#5a5854' # dimmed to 40%
 process xxiivv-webring '#303030'
 process indiewebring '#ff5c00'
 process travellings '#303030'
