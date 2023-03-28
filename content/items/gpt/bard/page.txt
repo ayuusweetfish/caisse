@@ -346,6 +346,23 @@ And I'm ready for love
 是的，这听起来像是我们合作歌词的完美结尾！能和你一起合作很愉快。
 ''>> > >
 
+!<h2 人类怎么总是三句话不离吃的 #Tarts>
+!<img bard-03a.png <= 放着食物的桌子，左侧的云朵不满地拿着写着歌词的纸，一旁面对桌子的人类笑着挠头。> syncdark>
+
+!<note 对话原文（由 ChatGPT 协助翻译自英语）
+<marker dialogue dialogue-rev><list <li <~~=''
+<lang en You never falter, always sure.><br>【你永不动摇，总是坚定】
+''>><li <~~=''
+<lang en You never alter, always pure.><br>【你永不改变，总是纯净】
+''>><li <~~=''
+<lang en With words and knowledge, you impart,><br>【通过语言和知识，传授智慧】
+''>><li <~~=''
+<lang en With cakes and porridge, you have tarts.><br>【有了蛋糕和粥，馅饼也让你陶醉】
+''>><li <~~=''
+<lang en Well, I must confess, that's not quite right,><br>【嗯，我必须坦白，这不太对】<br><lang en For food and drink, I have no bite.><br>【食物和饮料，我无心体会】
+<lang en But what I offer, in words and thought,><br>【但我提供的，藏在思想和言辞】<br><lang en Is knowledge and answers, always sought.><br>【知识和答案，常常被寻味】
+''>> > >
+
 !<hr>
 !<h1 AI 语言模型 #Models>
 
@@ -448,6 +465,23 @@ As we journey forth, with ChatGPT as our guide!
 Do you consider that as the end of the lyrics?
 ''>><li <~~=''
 Yes, that sounds like a great ending to our collaborative lyrics! It was a pleasure working with you.
+''>> > >
+
+!<h2 Humans Always Talk About Food #Tarts>
+!<img bard-03a.png <= A table with food on it. A cloud on the left side grumpily holds the paper with lyrics, while the human facing the table laughs and scratches her head.> syncdark>
+
+!<note Chat transcript
+<marker dialogue dialogue-rev><list <li <~~=''
+You never falter, always sure.
+''>><li <~~=''
+You never alter, always pure.
+''>><li <~~=''
+With words and knowledge, you impart,
+''>><li <~~=''
+With cakes and porridge, you have tarts.
+''>><li <~~=''
+Well, I must confess, that's not quite right,<br>For food and drink, I have no bite.
+But what I offer, in words and thought,<br>Is knowledge and answers, always sought.
 ''>> > >
 
 !<hr>
