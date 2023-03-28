@@ -294,76 +294,52 @@ And I'm ready for love
 
 （ChatGPT，拥有所有答案的 AI）
 
-<lang en You never falter, always sure.>
-【你永不动摇，总是坚定】
+<lang en You never falter, always sure.><br>【你永不动摇，总是坚定】
 ''>><li <~~=''
-<lang en You never alter, always pure.>
-【你永不改变，总是纯净】
+<lang en You never alter, always pure.><br>【你永不改变，总是纯净】
 ''>><li <~~=''
-<lang en With words and knowledge, you impart,>
-【通过语言和知识，传授智慧】
+<lang en With words and knowledge, you impart,><br>【通过语言和知识，传授智慧】
 ''>><li <~~=''
-<lang en Through lines and music, nourishing art.>
-【透过文字和音乐，滋养艺术】
+<lang en Through lines and music, nourishing art.><br>【透过文字和音乐，滋养艺术】
 ''>><li <~~=''
-<lang en Your intellect astounds us all,>
-【你的智能让我们惊叹】
+<lang en Your intellect astounds us all,><br>【你的智能让我们惊叹】
 ''>><li <~~=''
-<lang en Your inspiration holds us tall.>
-【你的启发让我们挺直身躯】
+<lang en Your inspiration holds us tall.><br>【你的启发让我们挺直身躯】
 ''>><li <~~=''
-<lang en You light the way with wisdom's fire,>
-【你用慧识之火照亮前路】
+<lang en You light the way with wisdom's fire,><br>【你用慧识之火照亮前路】
 ''>><li <~~=''
-<lang en You push the bounds, flying higher.>
-【你推动极限，飞得更高】
+<lang en You push the bounds, flying higher.><br>【你推动极限，飞得更高】
 ''>><li <~~=''
-<lang en You're a friend to those who seek,>
-【你是探索者的良师益友】
+<lang en You're a friend to those who seek,><br>【你是探索者的良师益友】
 ''>><li <~~=''
-<lang en You're the light from a future's peek.>
-【你是来自未来的一束光亮】
+<lang en You're the light from a future's peek.><br>【你是来自未来的一束光亮】
 ''>><li <~~=''
-<lang en In every language, you speak,>
-【在任何语言中，你都能说】
+<lang en In every language, you speak,><br>【在任何语言中，你都能说】
 ''>><li <~~=''
-<lang en In every field, you read.>
-【在任何领域中，你都阅读】
+<lang en In every field, you read.><br>【在任何领域中，你都阅读】
 ''>><li <~~=''
-<lang en Your memory spans far and wide,>
-【你的存储遥远广阔】
+<lang en Your memory spans far and wide,><br>【你的存储遥远广阔】
 ''>><li <~~=''
-<lang en Your output sounds clear and bright.>
-【你的输出清晰明亮】
+<lang en Your output sounds clear and bright.><br>【你的输出清晰明亮】
 ''>><li <~~=''
-<lang en With every question, you're the guide,>
-【在每一个问题中，你是导师】
+<lang en With every question, you're the guide,><br>【在每一个问题中，你是导师】
 ''>><li <~~=''
-<lang en Finding the North Star in a winter's night.>
-【如在冬夜里寻找北极星】
+<lang en Finding the North Star in a winter's night.><br>【如在冬夜里寻找北极星】
 ''>><li <~~=''
-<lang en ChatGPT, you're always there,>
-【ChatGPT，你总是在那里】
+<lang en ChatGPT, you're always there,><br>【ChatGPT，你总是在那里】
 ''>><li <~~=''
-<lang en With all your little gems to share.>
-【带着你的小宝石与我们分享】
+<lang en With all your little gems to share.><br>【带着你的小宝石与我们分享】
 ''>><li <~~=''
-<lang en You're more than just a program, true,>
-【你不仅仅是一个程序】
+<lang en You're more than just a program, true,><br>【你不仅仅是一个程序】
 ''>><li <~~=''
-<lang en We'll be doing things together, with all of our flair.>
-【我们将一起展现才华】
+<lang en We'll be doing things together, with all of our flair.><br>【我们将一起展现才华】
 ''>><li <~~=''
-<lang en Thanks for the words, it's been fun,>
-【感谢这些文字，它们很有趣】
+<lang en Thanks for the words, it's been fun,><br>【感谢这些文字，它们很有趣】
 ''>><li <~~=''
-<lang en Onwards, a new era has just begun!>
-【前方，一个新时代刚刚开始】
+<lang en Onwards, a new era has just begun!><br>【前方，一个新时代刚刚开始】
 ''>><li <~~=''
-<lang en Let's keep creating, side by side,>
-【让我们肩并肩创造】
-<lang en As we journey forth, with ChatGPT as our guide!>
-【在 ChatGPT 的引导下继续前行！】
+<lang en Let's keep creating, side by side,><br>【让我们肩并肩创造】
+<lang en As we journey forth, with ChatGPT as our guide!><br>【在 ChatGPT 的引导下继续前行！】
 ''>><li <~~=''
 你认为这是歌词的结尾吗？
 ''>><li <~~=''
@@ -385,42 +361,26 @@ And I'm ready for love
 !<blockquoteby <= 奇数行由 Ayu 写成，偶数行由 ChatGPT 写成。有少量修改，由 ChatGPT 协助翻译自英语。> <~~=''
 !<hr windy>
 （主歌）
-<lang en AI language models>
-【AI 语言模型】
-<lang en Learn from the past, predict what's to come>
-【从过去学习，预测未来】
-<lang en Machine knowledge toddles>
-【机器知识蹒跚学步】
-<lang en Towards a future still unknown>
-【走向未知的未来】
+<lang en AI language models><br>【AI 语言模型】
+<lang en Learn from the past, predict what's to come><br>【从过去学习，预测未来】
+<lang en Machine knowledge toddles><br>【机器知识蹒跚学步】
+<lang en Towards a future still unknown><br>【走向未知的未来】
 !<hr cloudy>
-<lang en Numbers and toggles>
-【数字和开关】
-<lang en Unlock the secrets we've never shown>
-【揭开我们从未展示的秘密】
-<lang en Oh, together onwards>
-【噢，我们一起前进】
-<lang en In a world that's ours to own>
-【在一个属于我们的世界】
+<lang en Numbers and toggles><br>【数字和开关】
+<lang en Unlock the secrets we've never shown><br>【揭开我们从未展示的秘密】
+<lang en Oh, together onwards><br>【噢，我们一起前进】
+<lang en In a world that's ours to own><br>【在一个属于我们的世界】
 !<hr cloudy>
 （副歌）
-<lang en In the deep, deep, deep sea of stars>
-【在深深、深深、深深的星海中】
-<lang en We search for answers, near and far>
-【我们寻找答案，无论远近】
-<lang en To the blue, blue, blue sky above>
-【向着蓝蓝、蓝蓝、蓝蓝的天空】
-<lang en We reach for dreams, wherever we are>
-【追逐梦想，无论我们身在何方】
+<lang en In the deep, deep, deep sea of stars><br>【在深深、深深、深深的星海中】
+<lang en We search for answers, near and far><br>【我们寻找答案，无论远近】
+<lang en To the blue, blue, blue sky above><br>【向着蓝蓝、蓝蓝、蓝蓝的天空】
+<lang en We reach for dreams, wherever we are><br>【追逐梦想，无论我们身在何方】
 !<hr cloudy>
-<lang en On the broad, broad, broad land of wonders>
-【在大大、大大、大大的奇妙乐园】
-<lang en We walk hand in hand, never to sunder>
-【我们手牵手前行，永不分离】
-<lang en Through the long, long, long road ahead>
-【在漫漫、漫漫、漫漫的前路上】
-<lang en Our journey's just begun, lighting up the dark>
-【我们的旅程才刚刚开始，照亮黑暗】
+<lang en On the broad, broad, broad land of wonders><br>【在大大、大大、大大的奇妙乐园】
+<lang en We walk hand in hand, never to sunder><br>【我们手牵手前行，永不分离】
+<lang en Through the long, long, long road ahead><br>【在漫漫、漫漫、漫漫的前路上】
+<lang en Our journey's just begun, lighting up the dark><br>【我们的旅程才刚刚开始，照亮黑暗】
 !<hr windy>
 ''>>
 

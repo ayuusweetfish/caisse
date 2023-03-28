@@ -492,7 +492,7 @@ markupfns = {
   it = function (text)
     return '<i>' .. text .. '</i>'
   end,
-  br = function () return '<br>' end,
+  br = function () return '<br><span class="br-indent"></span>' end,
   hr = function (class)
     return '<div role="separator"' ..
       (class ~= '' and ' class="' .. class .. '"' or '') ..

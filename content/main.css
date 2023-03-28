@@ -841,6 +841,14 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 .item-content div.image-container p {
   text-indent: 0;
 }
+.item-content p > span.br-indent {
+  /* Should be supported by text-indent: each-line,
+    but compatibility is very limited as of early 2023 */
+  margin-inline-start: 2em;
+}
+.item-content li p > span.br-indent {
+  margin-inline-start: 0;
+}
 .item-content > p.text-center {
   text-align: center;
   text-indent: 0;
