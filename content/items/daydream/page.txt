@@ -1,0 +1,20 @@
+{{title.zh=}}不情愿的白日梦
+{{intro.zh=}}关于自己的絮絮叨叨
+{{title.en=}}A Reluctant Daydream
+{{intro.en=}}Ramblings about self
+
+{{date=}}2023.04
+
+{{contents.zh=}}
+
+!<list
+  <li <link daydream/horn （上）蛋壳与犄角>>
+  <li （未完待续）>
+>
+
+{{contents.en=}}
+
+!<list
+  <li <link daydream/horn (1) The Eggshell and the Horns>>
+  <li (To be continued)>
+>

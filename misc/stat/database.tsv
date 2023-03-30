@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4262	document
+categories.txt	4302	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -67,6 +67,9 @@ items/courses-21/Sound_Design_Travel.mp4	3125577	video	63	640	360
 items/courses-21/scripts.sh	694	unknown
 items/dates/page.css	984	unknown
 items/daydream/horn/1880275338.jpg	8865	image	200	200
+items/daydream/horn/horn_hand.png	32310	image	600	400
+items/daydream/horn/horn_run.png	14330	image	240	400
+items/daydream/horn/horn_tray.png	16035	image	320	320
 items/daydream/horn/portrait_line.png	28017	image	336	378
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/play/game.data	48550	unknown
