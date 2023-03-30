@@ -93,6 +93,7 @@ cats.murmurs.pagelist = {
   {name = 'moon-river'},
   {name = 'why-comp-engr'},
 ]]
+  {name = 'daydream/horn'},
   {name = 'medle-postmortem'},
   {name = 'fhxl-rehousing'},
   {name = 'webfont'},
