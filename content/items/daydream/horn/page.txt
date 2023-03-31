@@ -10,7 +10,7 @@
 
 谢谢你愿意来听——
 
-!<musictrack うじたまい、40mP 犄角 <lang ja ツノ> 1880275338.jpg https://www.bilibili.com/video/BV11b4y1h7tN/ 歌曲封面。乐谱与彩色水晶之间，长着犄角的男孩女孩手拉手漂浮在空中。>
+!<musictrack <<~= <lang ja うじたまい>、40mP>> 犄角 <lang ja ツノ> 1880275338.jpg https://www.bilibili.com/video/BV11b4y1h7tN/ 歌曲封面。乐谱与彩色水晶之间，长着犄角的男孩女孩手拉手漂浮在空中。>
 
 !<h1 1>
 !<blockquote <~~='
@@ -118,7 +118,8 @@
 我仍然愿意相信自己没有在做白日梦；仍然愿意不停地书写属于我的、我们的、他们她们的故事。
 我不愿再停下来了。
 
-!<note 未完待续。中篇：“愚者与黑鸟”>
+!<hr>
+!<note 中篇：<link daydream/fool 愚者与黑鸟>>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>

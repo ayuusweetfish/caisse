@@ -571,7 +571,7 @@ markupfns = {
       caisse.envadditions.image(
         caisse.envadditions.file(src, 'items/' .. markupfnsenvitem),
         alt, class) ..
-      (class:find('caption') and ('<p>' .. htmlescape(altcap or alt) .. '</p>') or '') ..
+      (class:find('caption') and ('<p>' .. (altcap or alt) .. '</p>') or '') ..
       '</div>'
   end,
   filetable = function (contents)

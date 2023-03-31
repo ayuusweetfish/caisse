@@ -95,6 +95,7 @@ cats.murmurs.pagelist = {
 ]]
   {name = 'daydream'},
   {name = 'daydream/horn', unlisted = true},
+  {name = 'daydream/fool', unlisted = true},
   {name = 'medle-postmortem'},
   {name = 'fhxl-rehousing'},
   {name = 'webfont'},
