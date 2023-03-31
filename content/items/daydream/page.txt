@@ -9,6 +9,7 @@
 
 !<list
   <li <link daydream/horn （上）蛋壳与犄角>>
+  <li <link daydream/fool （中）愚者与黑鸟>>
   <li （未完待续）>
 >
 
@@ -16,5 +17,6 @@
 
 !<list
   <li <link daydream/horn (1) The Eggshell and the Horns>>
+  <li <link daydream/fool (2) The Fool and the Blackbird>>
   <li (To be continued)>
 >
