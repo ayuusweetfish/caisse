@@ -975,6 +975,10 @@ img.item-banner,
 .item-content .music-track {
   padding-inline: 2em;
 }
+.item-content > a.music-track-link {
+  margin-block: 1em;
+  display: block;
+}
 
 .item-content .chord-tab .chord-tab-row {
   margin-block: 0.5em;

@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4347	document
+categories.txt	4392	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -75,6 +75,9 @@ items/daydream/horn/horn_hand.png	32310	image	600	400
 items/daydream/horn/horn_run.png	14330	image	240	400
 items/daydream/horn/horn_tray.png	16035	image	320	320
 items/daydream/horn/portrait_line.png	28017	image	336	378
+items/daydream/star/puzzle_girl_cover.jpg	6545	image	155	155
+items/daydream/star/star_bubble.png	21360	image	478	360
+items/daydream/star/star_mirror.png	22814	image	640	480
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/play/game.data	48550	unknown
 items/daytime-cat/play/game.js	11416	code
@@ -510,7 +513,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	25348	unknown
+main.css	25426	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4582	unknown
