@@ -4,6 +4,11 @@
 {{date=}}2023.04
 
 {{contents.zh=}}
+!<note <~~='
+  上篇：<link daydream/horn 蛋壳与犄角>
+  中篇：<link daydream/fool 愚者与黑鸟>
+'>>
+!<hr>
 
 !<blockquote <~~='
 One、Two、
@@ -114,11 +119,13 @@ One、Two、Three、
 
 或许在别人看来只是小事，但是它对我来说真的很重要。
 
-谢谢你愿意来听——
+谢谢你愿意来听。
 
 !<blockquote <~~='
 <lang ja 追いかけて　たっ　たっ><br>【追逐着　哒、哒】
 '>>
+
+!<img star_fin.png <= 空中飞舞的“30”、“31”、“1”、“2”四页日历，飞过按次序排列的元素：游戏《双相》中几何风格的主角与小船；戴着帽子、面前放着跨性别旗帜的女孩；破碎的蛋壳背景前方，手牵手飞行的、长着犄角的女孩与男孩；一边飞行一边歌唱的乌鸫；沐浴阳光走在悬崖边的愚者；压在日历纸上的一封信，开头依稀可辨的字迹写着“Depression”；泡泡包裹的小猫，看着外面的阳光、蝴蝶、糖果与拼图碎片；灰色的拼图碎片掉落在星空中。> vertical>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
