@@ -80,7 +80,7 @@
 '>>
 
 !<hr>
-!<note 下篇：<link daydream/fool 星星与拼图>>
+!<note 下篇：<link daydream/star 星星与拼图>>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
