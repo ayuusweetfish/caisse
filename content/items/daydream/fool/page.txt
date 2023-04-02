@@ -4,7 +4,9 @@
 {{date=}}2023.04
 
 {{contents.zh=}}
-!<note 上篇：<link daydream/horn 蛋壳与犄角>>
+!<note <~~='
+  上篇：<link daydream/horn 蛋壳与犄角>
+'>>
 !<hr>
 
 !<musictrack <lang en Lennon–McCartney> 黑鸟 <lang en Blackbird> 4336738.jpg https://music.163.com/#/song?id=1412142637 <= 《披头士》专辑封面，白色背景上写着“The BEATLES”字样。>>
@@ -78,7 +80,7 @@
 '>>
 
 !<hr>
-!<note 未完待续。下篇：“星星与拼图”>
+!<note 下篇：<link daydream/fool 星星与拼图>>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>

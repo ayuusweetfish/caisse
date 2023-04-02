@@ -10,13 +10,17 @@
 !<list
   <li <link daydream/horn （上）蛋壳与犄角>>
   <li <link daydream/fool （中）愚者与黑鸟>>
-  <li （未完待续）>
+  <li <link daydream/star （下）星星与拼图>>
 >
+
+!<img calendar.png <= 空中飞舞的“30”、“31”、“1”、“2”四页日历。> vertical syncdark>
 
 {{contents.en=}}
 
 !<list
   <li <link daydream/horn (1) The Eggshell and the Horns>>
   <li <link daydream/fool (2) The Fool and the Blackbird>>
-  <li (To be continued)>
+  <li <link daydream/star (3) The Stars and the Puzzles>
 >
+
+!<img calendar.png <= Four calendar pages, reading “30”, “31”, “1”, and “2”, flying through the air.> vertical syncdark>
