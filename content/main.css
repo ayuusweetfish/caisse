@@ -455,7 +455,17 @@ body.dark #top-fleuron { opacity: 45%; }
        url(/bin/{{ hashverfile('fonts/Sono_Monospace-SemiBold.woff') }}) format('woff');
 }
 @font-face {
+  font-family: 'Open Sans — Greek';
+  unicode-range: U+0370-U+03ff;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Greek.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Greek.woff') }}) format('woff');
+}
+@font-face {
   font-family: 'Ayuu Little Icons — 221202a';
+  u
   font-style: normal;
   font-weight: 400;
   font-display: block;
