@@ -867,6 +867,7 @@ renderraw('bin/main.js', 'main.js', nil, true)
 for _, fontname in ipairs({
   'Livvic-Regular', 'Livvic-SemiBold', 'Livvic-Medium',
   'Sono_Monospace-Regular', 'Sono_Monospace-SemiBold',
+  'OpenSans-Regular-Greek',
   'little-icons',
 }) do
   copyfile('fonts/' .. fontname .. '.woff2', true)
