@@ -463,6 +463,10 @@ const serveReq = async (req) => {
     if (url.pathname === '/_' || url.pathname.startsWith('/_/')) {
       return notFoundPage(req, opts, headers, decodeURI(url.pathname))
     }
+    if (url.pathname === '/.well-known/webfinger') {
+      return redirectResponse('https://pub.ayu.land' + url.pathname + url.search,
+        new Headers({ 'Access-Control-Allow-Origin': '*' }))
+    }
     return await staticFile(req, opts, headers, decodeURI(url.pathname))
   }
   return new Response('hello')
