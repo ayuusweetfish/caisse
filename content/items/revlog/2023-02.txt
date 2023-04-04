@@ -1,0 +1,32 @@
+{{title.zh=}}23 卯月 —— 动如脱兔
+{{title.en=}}23, Month of the Rabbit — Quick Like a Bunny
+
+{{timestamp=}}2023.04.05.09
+
+{{contents.zh=}}
+卯年卯月，思绪简直跟兔子一样跑得飞快，什么都想做。确实也完成了不少，开心！
+!<list
+  <li <link candy>，拖了两年才做完的改编；>
+  <li <link email 信箱动态页>，真的好担心信送不出去，所以做了这个！至少别人不用担心啦！>
+  <li <link gpt>，居然已经有五集了！还有些存货等着之后更～>
+  <li <link rose>，虽然画画该练的还是一点没练！>
+  <li <link daydream>，总之算是完成了一个重要的心愿——>
+  <li <link about 关于>页面换上了新的图，来自<link friends#Azalea 桂桂>！真的可爱呜呜呜。>
+  <li 补上了所有音乐的链接。之前觉得其实只要放上标题和作者就足够，但怎么看怎么觉得像能点的样子，就改成真的能点啦。>
+  <li 一些课程作业与课程设计相关的内容，还在整理中。>
+>
+下个月继续见哦。
+
+{{contents.en=}}
+The month of the Rabbit in the year of the Rabbit, with all those ideas running quick like bunnies. Did get a lot done too, yay!
+!<list
+  <li <link candy>, an adaptation completed after two years;>
+  <li <link email Emails status page>, I worry really a lot that my message wouldn’t reach the destination, so I made this so that at least others do not have to worry!>
+  <li <link gpt>, it’s amazing that there are already five episodes! There is still some content in stock for later~>
+  <li <link rose>, but I have been absent from all the practices I’m supposed to have done…>
+  <li <link daydream>, an important wish of mine fulfilled —>
+  <li The <link about About> page has a new portrait, by <link friends#Azalea Azalea>! So adorable.>
+  <li Added links to all the music elements. I thought it would be enough to put the title and author, but these seemed clickable to me every time I saw them, so I finally updated them to be actually clickable.>
+  <li Something related to coursework and course projects, still being sorted out.>
+>
+Will still be seeing you next month!
