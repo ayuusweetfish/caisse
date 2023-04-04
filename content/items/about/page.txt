@@ -96,8 +96,10 @@ ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
   <li <link https://ddrkirby.com/ DDRKirby(ISQ)>（英）—— 音乐和可爱小游戏的创作者。>
   <li <link https://space.bilibili.com/528182630 叨叨冯聊音乐> —— 浅显易懂的音乐趣味知识，来自百老汇华人打击乐手。>
   <li <link https://nicechord.com/ NiceChord 好和弦> —— 台湾音乐人 Wiwi 的乐理与音乐制作教学频道。>
-  <li <link https://space.bilibili.com/39034282 王乐乐乐游> —— 音乐杂谈与整活（不是）。>
+  <li <link https://space.bilibili.com/39034282 王乐乐乐游> —— 音乐杂谈与整活。>
   <li <link https://heiheihei.ca/ Cave • 小触手的书房> —— 画画的 Emmy。>
+  <li <link http://www.yini.org/ 秘密花园> — 来自互联网早期的个人小小博物馆。>
+  <li <link http://eminism.org/ Eminism>（英）—— 女性主义，但是也卖小册子和小徽章（？）。>
 >
 
 !<h2 杂七杂八 #miscellaneous>
@@ -137,8 +139,10 @@ ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
   <li <link https://ddrkirby.com/ DDRKirby(ISQ)> — Producer of music and cute games.>
   <li <link https://www.youtube.com/@daodaofeng Feng's Music Channel> (Chinese) — Talks on musical explanations and trivia, by a Chinese percussionist at Broadway.>
   <li <link https://nicechord.com/ NiceChord> (Chinese) — An educational channel on music theory and production, by the musician Wiwi Kuan from Taiwan.>
-  <li <link https://space.bilibili.com/39034282 王乐乐乐游> (Chinese) — Talks on trivia of music, and self-arranged pieces.>
-  <li <link https://heiheihei.ca/ Cave • 小触手的书房> (Chinese) —— Emmy with her paintings.>
+  <li <link https://space.bilibili.com/39034282 王乐乐乐游> (Chinese) — Talks on trivia of music, self-arranged pieces, and musical memes.>
+  <li <link https://heiheihei.ca/ Cave • 小触手的书房> (Chinese) — Emmy with her paintings.>
+  <li <link http://www.yini.org/ Secret Garden> (Chinese) — A personal museum, from the old web.>
+  <li <link https://eminism.org/ Eminism> — Feminism, but with a store of zines and buttons (?).>
 >
 
 !<h2 Miscellaneous #miscellaneous>
