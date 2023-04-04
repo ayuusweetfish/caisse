@@ -914,12 +914,13 @@ registeritemmarkup('pebbles', 'pebbles', {
 })
 registeritemtempl('flow', 'flow', 'bannerlist.html')
 
-local revloglatest = 2023*12 + 1
+local revloglatest = 2023*12 + 2
 local revlogfirst = 2022*12 + 10
 registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
 for _, lang in ipairs({'zh', 'en'}) do
   registeritemempty('rss.' .. lang .. '.xml', 'home')
   registeritemempty('atom.' .. lang .. '.xml', 'home')
+  caisse.lang = lang
   renderraw('rss.' .. lang .. '.xml', 'items/revlog/rss.xml',
     { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
   renderraw('atom.' .. lang .. '.xml', 'items/revlog/atom.xml',

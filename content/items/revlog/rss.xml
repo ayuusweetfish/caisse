@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>
+{{description.zh=}}杂七杂八堆放处的月度更新记录~
+{{description.en=}}Collection of sundries, monthly revision logs~
 <channel>
   <title>{{ sitename }}</title>
   <link>{{ siteroot }}/</link>
-  <description>说明</description>
+  <description>{{ description }}</description>
   <language>{{ lang }}</language>
   <atom:link href='{{ siteroot }}/rss.{{ lang }}.xml' rel='self' type='application/rss+xml' />
   <generator>Caisse</generator>
