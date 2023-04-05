@@ -49,6 +49,7 @@ local list = {
 ['锦鲤附体'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/e3/2022_cometrue_org.png',
 ['鞭炮声声'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/7f/2023_firecrackers_org.png',
 ['抓狂'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/17/2018new_zhuakuang_org.png',
+['浮云'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/61/2018new_yunduo_org.png',
 }
 
 local download = select(1, ...) == 'download'
