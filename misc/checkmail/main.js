@@ -196,7 +196,7 @@ const updateMails = async () => {
           mails[1].map(({ date, from, to }) => {
             const dateStr = date.toISOString()
             return `${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~\t` +
-              `~~~~${to.match(/.(?=@)/)}@~~${to.match(/.(?=\.[^.]+$)/)}.~\n`
+              `~~~~${to.match(/.(?=@)/)}@~~${to.match(/@[^.]+?(.)(?=\.)/)[1]}.~\n`
           }).join('')
       }
       break
