@@ -590,7 +590,7 @@ markupfns = {
     if extrainfo then
       extrainfo = extrainfo(table.unpack(fileinfo(fullpath).args))
     end
-    return '<tr><td>' .. htmlescape(text) .. '</td>' ..
+    return '<tr><td>' .. text .. '</td>' ..
       '<td><a class="pastel ' .. item.cat .. '" href="' ..
       uriescape(fileurl) ..  '" target="_blank">' ..
       '<span class="little-icons">&#x' .. string.format('%x', icon) ..
