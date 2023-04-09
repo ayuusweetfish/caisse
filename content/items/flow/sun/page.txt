@@ -245,7 +245,9 @@ Essay 写到一半出来看乐队二队的首演。一场大晚会里一段几�
 中午吃饭时看到了几天前<link #014-bicycle 同一辆插着花的自行车>，风车和花都还在！好神奇！
 下午是乐队行进训练。原本馋了好久的小钟琴让给了其他友友，换到了小军鼓；可是今天由于大军鼓有同学请假、声部不全，于是前去顶替。背上的那一刻就哀叹起来“救命呀好重！”——去年在乐队最前方挥杆子，已经彻底忘记行进打击乐器的重量了！幸好下次不用再背了，大鼓担当太辛苦了呜呜呜。
 !<img 018aa.jpg <~=' 一群行进乐队的卡通猫咪。从左到右：三角铁、木琴、小鼓、大鼓、指挥。//从左到右：馋的、馋的、实际要负责的、今天顶替的、去年负责的。来源：<link https://www.youtube.com/watch?v=lAIGb1lfpBw Mitchiri Neko March>'> caption>
-!<img 018ab.png <= 猫咪演奏行进大鼓的简笔画。//趁着数位板落在外面，让 AI 给大家表演一个（DALL·E）> caption square medsmall syncdark>
+趁着数位板落在外面，让 AI 们给大家表演一个——
+!<img 018ab.png <= 线条简笔画，猫咪演奏行进大鼓。//（DALL·E 2）因体力太菜而晕乎乎的神态挺像的。> caption square medsmall syncdark>
+!<img 018ac.jpg <= 卡通漫画，猫咪用鼓槌戳脸。//（Craiyon / DALL·E Mega）本应背着行进大鼓的猫猫。你是不是偷看我合影了！！> caption square medsmall>
 
 !<h1 19°【西游】 #019b>
 晚上和网友约看电影《宇宙探索编辑部》。
