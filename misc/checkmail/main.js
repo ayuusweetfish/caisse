@@ -2,10 +2,11 @@
 // Headers: RFC 2822 https://www.rfc-editor.org/rfc/rfc2822
 
 const hostname = Deno.env.get('MAILHOST')
-const port = Deno.env.get('MAILPORT') || 993
+const port = +Deno.env.get('MAILPORT') || 993
 const userid = Deno.env.get('USER')
 const pwd = Deno.env.get('PWD')
-const toAddrs = Deno.env.get('TO').split(',')
+const myAddrs = (Deno.env.get('ADDRS') ? Deno.env.get('ADDRS').split(',') : null)
+const listSize = +Deno.env.get('LISTSIZE') || 5
 
 const log = (s) => console.log(`${new Date().toISOString()} ${s}`)
 
@@ -144,32 +145,44 @@ const fetchMails = async (count, inboxCountLast) => {
   for (let fromMe = 0; fromMe <= 1; fromMe++) {
     const queryWd = fromMe ? 'FROM' : 'TO'
     log(`Searching inbox (${queryWd})`)
-    const query = toAddrs.map((addr, i) =>
-      (i === toAddrs.length - 1 ? `${queryWd} ` : `OR ${queryWd} `) + addr).join(' ')
-    const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]*)$/)[0][0]
-      .trim().split(' ').map((w) => w === '' ? undefined : +w)
-    list.sort()
-    const fetchList = list.slice(-count).join(',')
-
-    if (fetchList.length > 0) {
-      log(`Fetching ${fetchList}`)
-      const headersMatched = extractResps(
-        await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
-        /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
-      )
-      const headersSorted = []
-      for (const [_seqStr, headersStr] of headersMatched) {
-        const headers = parseHeaders(headersStr)
-        const date = new Date(headers['Date'])
-        const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-        const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-        headersSorted.push({ date, from, to })
-      }
-      headersSorted.sort((a, b) => b.date - a.date)
-      mails[fromMe] = headersSorted
+    let resultList
+    if (!myAddrs) {
+      resultList = Array.from({length: inboxCount}, (_, i) => i + 1)
     } else {
-      mails[fromMe] = []
+      const query = myAddrs.map((addr, i) =>
+        (i === myAddrs.length - 1 ? `${queryWd} ` : `OR ${queryWd} `) + addr).join(' ')
+      resultList = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]*)$/)[0][0]
+        .trim().split(' ').map((w) => w === '' ? undefined : +w)
+      resultList.sort()
     }
+
+    const correspCollected = {}
+    while (Object.keys(correspCollected).length < count && resultList.length > 0) {
+      const fetchList = resultList.splice(-Math.floor(count * 1.5)).join(',')
+      if (fetchList.length > 0) {
+        log(`Fetching ${fetchList}`)
+        const headersMatched = extractResps(
+          await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
+          /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
+        )
+        const headersSorted = []
+        for (const [_seqStr, headersStr] of headersMatched) {
+          const headers = parseHeaders(headersStr)
+          const date = new Date(headers['Date'])
+          const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+          const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+          const corresp = (fromMe ? to : from)
+          if ((!myAddrs || myAddrs.indexOf(fromMe ? from : to) !== -1) &&
+              (!correspCollected[corresp] || correspCollected[corresp].date < date)) {
+            correspCollected[corresp] = { date, from, to }
+          }
+        }
+      }
+    }
+    const collectedList = Object.values(correspCollected)
+    collectedList.sort((a, b) => b.date - a.date)
+    collectedList.splice(count)
+    mails[fromMe] = collectedList
   }
 
   await cmd('LOGOUT', 'Log out')
@@ -182,7 +195,7 @@ let inboxCountLast
 const updateMails = async () => {
   for (let retries = 0; retries < 3; retries++) {
     try {
-      const [inboxCount, mails] = await fetchMails(5, inboxCountLast)
+      const [inboxCount, mails] = await fetchMails(listSize, inboxCountLast)
       if (inboxCount !== inboxCountLast) {
         inboxCountLast = inboxCount
         mailsText =
