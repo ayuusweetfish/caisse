@@ -122,7 +122,11 @@
 !<note 中篇：<link daydream/fool 愚者与黑鸟>>
 
 {{contents.en=}}
-Here I am, rambling about myself. It might seem a trivial matter to others, but to me it is indeed important. Thank you for being willing to listen —
+Here I am, rambling about myself.
+
+It might seem a trivial matter to others, but to me it is genuinely important.
+
+Thank you for being willing to listen —
 
 !<musictrack <<~= <lang ja うじたまい>, 40mP>> Horns <lang ja ツノ> 1880275338.jpg https://www.bilibili.com/video/BV11b4y1h7tN/ Cover of the song. A boy and a girl with horns float hand in hand between music symbols and coloured crystals.>
 

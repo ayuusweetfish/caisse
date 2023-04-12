@@ -73,6 +73,7 @@
 '>>
 
 前方的道路或许坎坷，但是我不在乎。我已经不必再拥有更多了。我只希望那些自己珍视的人可以更开心更充实，希望更多的人可以更好地生活。
+我不介意当一次四月鱼。
 尽管现在我所能做的也只有做好自己而已。
 
 !<blockquote <~~='
@@ -83,4 +84,78 @@
 !<note 下篇：<link daydream/star 星星与拼图>>
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>.>
+!<note <~~='
+  (1): <link daydream/horn The Eggshell and the Horns>
+'>>
+!<hr>
+
+!<musictrack <lang en Lennon–McCartney> Blackbird <= > 4336738.jpg https://music.163.com/#/song?id=1412142637 <= Cover of the album “The Beatles”, with the title of the album written on a white background>>
+
+!<img fool_blackbird.png <<~= Line art of a common blackbird.//Common blackbird (<lang lat Turdus merula>), but not entirely black>> square medsmall syncdarkmild caption>
+
+!<h1 1>
+!<blockquote <~~='
+Blackbird singing in the dead of night
+Take these broken wings and learn to fly
+'>>
+
+This was originally written as a song about racial inequality, but who doesn’t have a few broken wings? Those we’ve never been entitled to, those taken away from us, those we look forward to but outside our ability, those we aspire to but beyond our reach; family, material, luck, talent, ability, circumstances. It’s the lack that makes up life’s background, isn’t it?
+But there is no one who has nothing. What has been had and what will be had will always bring comfort in the dead of night. It’s even probable that all have a flying soul, since so many poems are about wings.
+The blackbird has its charming voice, and I am at least still surrounded by the magic of vibrating air.
+Then I’ll rummage through the materials around and flap my not-quite-repaired wings, towards where I’m heading for.
+
+!<blockquote <~~='
+All your life
+You were only waiting for this moment to arise
+'>>
+
+!<h1 2>
+!<img fool_card.png <= Card of “the Fool” in the Waite–Smith tarot deck.> vertical medsmall syncdark>
+!<blockquoteby <<<~=' <lang en A. E. Waite & P. C. Smith>, <it The Pictorial Key to the Tarot>'>>> <~~='
+With light step, as if earth and its trammels had little power to restrain him, a young man in gorgeous vestments pauses at the brink of a precipice among the great heights of the world; he surveys the blue distance before him — its expanse of sky rather than the prospect below.
+'>>
+
+I am not afraid. Not afraid to put my own experiences into words, not afraid to hear different viewpoints. I know of countless controversial social events and of the creator of magic who lost her mind under a deluge of attacks before maturing her views.
+Some are right, some are wrong, but more often than not it’s just that people experience life differently. Isn’t everyone constrained to some extent?
+I don’t expect to be seen by everyone, let alone to receive much understanding or support. It is enough to see that people are making the world a warmer and more interesting place in their own way.
+!<img fool_joker.png <= A ball toss like a clown acrobat, but with snacks floating in the air.> medsmall syncdark>
+My acquaintances around me know that I like to take various small snacks to share with my mates. If anyone around me was going to be critical of me, I think I’d take one out —
+"Seems that we’ve all had quite a bad time, so let’s make up for it~"
+Silly? But fools already have an annual day for themselves, do smart people have one? Do they?
+
+!<h1 3>
+!<blockquote <~~='
+Blackbird, fly
+Blackbird, fly
+Into the light of the dark black night
+'>>
+
+In a sense, perhaps, gender diversity is also a disability? A “regret” is magnified by the human-made environment and becomes a real “disability”; but this is exactly why these are no insurmountable barriers with social advancements. There is no need to cry over a broken wing, as although a broken feather can’t be used to fly for the moment, it can still be used to practise in the dead of night. The day will come when the sun spreads its greets in the sky.
+I still believe, foolishly, without a reason, that the world will get better.
+We are in a time of change, when everything seems to be in between unknown possibilities. That’s enough of a reason to look forward.
+After the night’s shades comes the sun. No one is to endure endless darkness.
+
+!<h1 4>
+!<blockquote <~~='
+The edge which opens on the depth has no terror; it is as if angels were waiting to uphold him, if it came about that he leaped from the height. His countenance is full of intelligence and expectant dream.
+'>>
+
+I am not afraid.
+I have been called by the wrong labels, I have been argued with by bent logic, I have been hurt by sharp words. <b I am not afraid.>
+"Seems that we’ve all had quite a bad time, so let’s make up for it~"
+Although I think I would be sad if the marks I’ve left were labelled incorrectly. I’m writing my own stories, and they can surely be taken along with me on preconceptions and subsumed into a larger torrent, but they do not belong to the things that I am not. No cup of coffee, no matter how silly, would like to be put on the shelf in a Coke can, right?
+
+!<blockquote <~~='
+He is a prince of the other world on his travels through this one — all amidst the morning glory, in the keen air. The sun, which shines behind him, knows whence he came, whither he is going, and how he will return by another path after many days. He is the spirit in search of experience.
+'>>
+
+The road ahead may be bumpy, but I don’t care. I don’t need more to possess anymore. I only hope for happiness and fulfillment for those I hold dear to, and for betterment for the vast lives in the world.
+I don’t mind being <lang fr un poisson d’avril> for once.
+Though right now all I can do is live my own life well.
+
+!<blockquote <~~='
+Blackbird singing in the dead of night
+'>>
+
+!<hr>
+!<note (3): <link daydream/star The Stars and the Puzzles>>

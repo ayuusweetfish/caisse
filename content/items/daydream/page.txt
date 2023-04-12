@@ -16,7 +16,6 @@
 !<img calendar.png <= 空中飞舞的“30”、“31”、“1”、“2”四页日历。> vertical syncdark>
 
 {{contents.en=}}
-!<note Content here is currently <link ?lang=zh Chinese-only>. Translations will be added quite soon.>
 
 !<list
   <li <link daydream/horn (1) The Eggshell and the Horns>>
