@@ -82,7 +82,7 @@
 '>>
 
 不玩谜语啦。
-自 2009 年起，每年的 3 月 31 日是“看见跨性别日”（International Transgender Day of Visibility）。
+自 2009 年起，每年的 3 月 31 日是“看见跨性别日”（<lang en International Transgender Day of Visibility>）。
 性别身份就是我的“犄角”。今天我想摘下帽子与大家一起面对它们。
 !<img horn_tray.png <= 女孩端着托盘，里面放着蓝色、粉色与灰白色的，形状各异的小石子。> square medsmall syncdarkmild>
 我们所在的世界并不完美，每个人都不得不背负着无数被贴上的标签。人们从这些标签中窥得一个人的生命体验、看待世界的视角与观点；人们琢磨着彼此身上的标签，有意或无意地带上预设去对待对方。
@@ -122,4 +122,114 @@
 !<note 中篇：<link daydream/fool 愚者与黑鸟>>
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>.>
+Here I am, rambling about myself. It might seem a trivial matter to others, but to me it is indeed important. Thank you for being willing to listen —
+
+!<musictrack <<~= <lang ja うじたまい>, 40mP>> Horns <lang ja ツノ> 1880275338.jpg https://www.bilibili.com/video/BV11b4y1h7tN/ Cover of the song. A boy and a girl with horns float hand in hand between music symbols and coloured crystals.>
+
+!<h1 1>
+!<blockquote <~~='
+<lang ja ツノをもった少年は><br>(A boy with horns)
+<lang ja 部屋でぽつりと呟いた><br>(Mumbling in the room)
+<lang ja 『僕は人間じゃないらしい』><br>(“I don’t seem to be human”)
+'>>
+
+Actually, I did grow a pair of horns, around the age of seven or eight, alongside the permanent teeth.
+I didn’t really know why, maybe I was sick? If it was an illness, it might get better with time, and if not, I could always ask the doctor. But what if it looked good? Would people find it attractive?
+I decided to keep it for the time being. I was lucky to have enough hair to cover it up, and in the rare cases where it accidentally showed, people even compliment me on my cute accessory.
+… but it was not an accessory. The awkwardness of not being able to find a comfortable position to sleep in, the embarrassment of being told it’s blocking someone’s view — all these left me at a loss. It was a heavy burden that accompanied each of my days. If I could choose, who would have wanted it?
+
+!<blockquote <~~='
+<lang ja ある日突然現れた　耳の上のそのツノは><br>(The horns above the ears, one day appearing out of the blue)
+<lang ja まるで世界を変えました><br>(It was as if they reshaped the world)
+'>>
+
+Sometimes I wonder, why me. I wish I could go back to the good old days of childhood, before all this happened.
+I see many, many people with all kinds of physical deficiencies openly sharing their lives with strangers. But people get judgemental, claiming to be unwilling to see them and to feel struck by bad luck. I’d be harsh in saying this — but the truth is that no matter how I appreciate their uplifting attitudes, I am still occasionally hit by the urge to turn away when I see those different, deviant shapes. Remorse and regret follow: the remorse that I shouldn’t have had such thoughts, and the regret that there is no way I’m not among them.
+Indeed, it’s probably human nature to appreciate healthy, "normal" beings. It’s wrong to hurt people, but as for the fact that weird creatures, like them, like me, cannot be appreciated by everyone, I guess we just need to accept it…?
+I start to live with my hat all day long, as if it is the only way I can feel at ease with the world. At times when I can’t stand the crushing of my horns, I disguise them as a decoration — just like this portrait I’ve used.
+!<img portrait_line.png <= A portrait with a hat resembling antlers.> vertical medsmall syncdark>
+Everything in life becomes cautious. Getting along with the world becomes hard.
+Sigh.
+Sometimes I wonder, why me.
+
+!<h1 2>
+!<blockquote <~~='
+<lang ja リトルモンスター　バケモノのままで><br>(Little Monster, in the shape of a monstrous creature)
+<lang ja そっと踊りだすランランドゥ><br>(Quietly dancing with joy)
+<lang ja 愛してる好きをもっと送るよ><br>(I’ll spread more of my love and affection)
+'>>
+
+But I still have so many whimsical ideas. I still love the countless wonders the world. I want to be luminous, to paint my colours with abandon, to bring a bit of beauty into the world. Who cares about the oddly shaped body with horns? It can’t reach into my dreamland.
+“In the shape of a monstrous creature, quietly dancing with joy”
+To work twice as hard as everyone else, to be helpful, to be interesting, to be loving; to reach the splendid sky, to set foot on the uncharted land, to prove to everyone that it is possible to have a delightful soul even with an odd look, to bathe the horns in brilliant sunshine and then spill it out into the world.
+
+!<blockquote <~~='
+<lang ja 夢見た世界は　みずみずしくて><br>(In the dreams is such a vivid world)
+<lang ja でもなんで乾いた視線に><br>(But why in the dull view)
+<lang ja 身体ごと　心ごと　カラカラ音がした><br>(The body and the mind are both making creaking sounds)
+'>>
+
+But the horns do not go away in reality. They still stir me up when I sleep, people still say those harsh words online, and I still smother my face with pimples in a hat in the middle of summer. Alas, it has become even stranger now.
+Is it possible that no amount of effort can compensate for such a regret? What should I do? People around me show their appreciation towards me, but… do they really accept me as a whole, including what is buried under the hat and hair? Or do they actually do it out of some sympathy? I’m even less willing to accept that. I want to be self-dependent, to break free of my worries, to achieve all my aspirations, to be a ray of light breaking out of the cage.
+
+!<img horn_run.png <= A girl with horns running forward.> vertical small syncdark>
+
+!<blockquote <~~='
+<lang ja リトルモンスター　ちっぽけなツノが><br>(Little Monster, the little horns)
+<lang ja ちょっとずっしりと重くって><br>(Becomes a bit heavy)
+<lang ja 歌うのも踊るのも叶わない><br>(Be it to sing or to dance, wishes cannot be fulfilled anymore)
+'>>
+
+But it’s so hard, even if just trying to live a life. I know there are many, many people who are forced to face life’s imperfections in the material world, and there is no comparison between different difficulties, but I can’t even look at my own head in the mirror.
+Do I have to keep trying? What’s the point? Can I really become my ideal self? Is this whole me going to be distanced from forever? Will that desire to decorate the world be just a daydream after all?
+All I can do is keep going forward. Tailwind and headwind, day and night. I never allowed myself to stop, never allowed myself to look down — after all, if I did, my horns would bang against others hurting all.
+During occasional breaks, when I look back and see glittering fragments along the way, I feel genuinely relieved. But when I face the endless journey ahead, I can’t help but lament. I am still too insignificant.
+
+!<h1 3>
+!<blockquote <~~='
+<lang ja 産まれたときから　“みんなと同じ”を><br>(Having to be “the same as everyone” since birth)
+<lang ja 歩かされてきたはずでした><br>(Walking this path till today)
+<lang ja 後になって何か><br>(Then for some reason)
+<lang ja 人と違うもの求められる生き方><br>(Into a way of life that seeks something different)
+<lang ja 『ねぇ上手くできないなぁ』><br>(Oh I can’t do it well)
+'>>
+
+There have been enough riddles.
+Since 2009, the 31st of March each year is the International Transgender Day of Visibility.
+Gender identities have been my horns. Today I’d like to take my hat off and face them with everyone.
+!<img horn_tray.png <= A girl carrying a tray with blue, pink, and off-white pebbles of various shapes.> square medsmall syncdarkmild>
+The world we live in is not perfect. Everyone has to carry a myriad of labels that have been placed on them. People look at these labels to get a glimpse of one’s life experiences, their perspective and opinions towards the world; they mull over each other’s labels and, consciously or unconsciously, bring preconceptions to bear on each other.
+But when reluctantly being labelled as something that I never belonged to, when being treated in a way that is contrary to how I feel inside without chances to correct, a feeling of separation creeps into my heart and takes root.
+It is as if I am standing in a funhouse mirror and talking to others. People look at me through the mirror, and I look at them "looking at me through the mirror". It is as if I am outside of this world, watching others living with a distorted phantom of myself.
+So I plucked up the courage to step out of the mirror and show my original self to people.
+Who am I, and why? I have been forced to consider these seemingly unanswerable questions countless times. "Does gender matter?" — I was once at a loss for words in the face of an inquisitive friend.
+I feel that now might be a good time to revisit it. What does it really mean and in what way should it continue to exist?
+I am still too insignificant to give a complete answer. All I know is that in the world I live in, my choice between the two has made me comfortable and delightful, validated and valued. It seems to be the only place where I can shine.
+But I’d rather that this choice didn’t have to be made — at least not in the way it does now. There are already too many distressing things in the world and I’d rather not see any more of them; whether it’s the dichotomy causing more inequality or the struggles of those one in every 200 people.
+But there’s not much I can do. All I’m capable of is shining a little bit of my own light, in a vain attempt to make this place even slightly better, to bring a little warmth to even a single soul. I can only persist in going further and further, to humbly inquire into every corner of the world, to create with all my capacity.
+It is because I am insignificant that I have to work harder. I don’t want to stop anymore.
+
+!<h1 4>
+!<blockquote <~~='
+<lang ja “キミも逃げてきたの？”><br>(Have you come here to escape as well?)
+<lang ja 「生き辛いね、私もなの」><br>(Life is hard, I feel it too)
+'>>
+
+In fact, how could this not be the case for everyone. Body, background, experience, or even the major of study, there is no telling when they will become the pair of horns that make people toss and turn.
+Aren’t we all torn between our own experiences, labels, and real-life conditions?
+
+!<blockquote <~~='
+<lang ja 『重くなったモノはきっと誰かと持つの』><br>(The heavier things should be held together with someone)
+'>>
+
+I may not be the luckiest of those, but I’m already bearing many, many blessings. The limitations of material reality are not enough to worry me for the moment, and I have finally recovered from a gloomy mist.
+More importantly, I do have some power to do something about what I can see — sometimes it feels like the “privileges” I carry have become responsibilities of equal weight, and if someone as fortunate as me doesn’t do something, how powerless others would be. I want to look at all kinds of people, not because of who they are, but because as souls who have come into the world, all deserve to stand in the sunlight and bask in the colours, and the world deserves the pearls that they have turned their hardship into. I hope that one day people will be able to let go of those labels and get to see, to accommodate, and to love.
+
+!<img horn_hand.png <= A girl holds her hand forward with a dark cloud behind her.> syncdark>
+
+I would like to be the girl in the song. I look forward to seeing people in the world suffer a little less, to seeing everyone enjoying a few splashes of their own colours.
+I am still willing to believe that this is not a daydream; still willing to go on writing the stories of me, of us, of them.
+I don’t want to stop anymore.
+
+!<hr>
+!<note (2): <link daydream/fool The Fool and the Blackbird>>
