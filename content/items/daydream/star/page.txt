@@ -128,4 +128,125 @@ One、Two、Three、
 !<img star_fin.png <= 空中飞舞的“30”、“31”、“1”、“2”四页日历，飞过按次序排列的元素：游戏《双相》中几何风格的主角与小船；戴着帽子、面前放着跨性别旗帜的女孩；破碎的蛋壳背景前方，手牵手飞行的、长着犄角的女孩与男孩；一边飞行一边歌唱的乌鸫；沐浴阳光走在悬崖边的愚者；压在日历纸上的一封信，开头依稀可辨的字迹写着“Depression”；泡泡包裹的小猫，看着外面的阳光、蝴蝶、糖果与拼图碎片；灰色的拼图碎片掉落在星空中。> vertical>
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>.>
+!<note <~~='
+  (1): <link daydream/horn The Eggshell and the Horns>
+  (2): <link daydream/fool The Fool and the Blackbird>
+'>>
+!<hr>
+
+!<blockquote <~~='
+One, Two,
+One, Two, Three,
+'>>
+
+!<musictrack とあ//nameless <= Puzzle Girl> <lang ja パズルガール> puzzle_girl_cover.jpg https://music.163.com/#/song?id=38689088 Illustration for the song. A girl putting the puzzle together holds a piece in front of her eyes. The piece melts and flows, and a tear falls from the girl’s eye.>
+
+!<h1 1>
+!<blockquote <~~='
+<lang ja いっぱいあるんだよ　欲しいもの><br>(There are a lot, things I long for)
+<lang ja いっぱいなんだよ　嫌なとこ><br>(It’s such a lot, places I dislike)
+<lang ja 見えないようにさ　隠しても><br>(Even if I hide them in order not to be seen)
+<lang ja けっきょく溢れちゃうでしょ><br>(They’ll eventually overflow, right?)
+'>>
+
+The sun comes step by step from the south, gently caressing the buds of every tree and the hair of every child. Everything around is so glorious.
+Floating in a bubble in the air, reaching out to the world — but the bubble is forever squeezing out what is about to be touched by the fingertips, as if anything is resisting the touches.
+Confusion, helplessness, resignation, resentment, strangely-shaped thoughts churn in the sun-heated bubbles. It was like being trapped in a bubble with no way out; from the outside, the bubble probably looked like chaotic chaos.
+After that was learning to tolerate the chaos and mastering the habits of the bubbles, and finally managing to let the world behave as if it were being touched. Watching leaves, kites, books and cat ears being moved through the bubble, breathing a long sigh of relief — it finally appeared as if the wishes had come true.
+… but with cat hair allergy, cat ears are not so much worth touching. However, it is still a must since everyone is doing that. Whatever, or else the result is to be treated like an outsider.
+Seeking the outside world, seeking a close contact with everything adorable; loathing the chaos inside, loathing the cold barrier of the bubble. Even after having learned to live with the bubble, it remains as quietly wrapped around as ever.
+!<img star_bubble.png <= A person in a bubble reaching out to touch a flower outside.> medsmall syncdark>
+“Autism” — “self”, followed by “-ism”, that’s what everyone calls the bubble. “The child from the star”, this is the nickname for the person in the bubble.
+But is this really the case?
+Is it possible that most people are actually within the “boundary of all the bubbles in the world”? Is it possible that what most people see as “inside the small bubbles” is in fact the outside?
+Is it possible that they are also children of the earth, but people simply have not let them into the world?
+
+!<blockquote <~~='
+<lang ja 泣き虫はしっしっ　見られたくないし><br>(The crybaby sobs and sobs, hoping not to be seen)
+<lang ja 今はまだこの距離で><br>(Under this distance till now)
+<lang ja ハマらないかもしれない><br>(I probably will not attract anyone)
+<lang ja 色の無いパズルみたいで　いっか><br>(Like colourless puzzles, I don’t care)
+'>>
+
+The 2nd of April each year is World Autism Awareness Day (also known as Autism Acceptance Day).
+It is perhaps those on the autism spectrum that are the most eager to escape loneliness. Those wrapped inside bubbles have the same thoughts, loves and desires as everyone else, but the only way to keep in touch with the “ordinary world” is by fumbling and tapping.
+Some people make bubbles in the shape of cats and call themselves “kitties people”.
+I am not one of them, but I have not been allowed into this world in its entirety either. Not to mention that I may neither be what the auties call an “NT” (neurotypical — the so-called “normal”). I think I’m seeing familiar sparkles in the eyes of the kitties people.
+
+!<h1 2>
+Bubbles, broken wings, horns; rejected wishes, magnified regrets; realities that one wants to hide, deviations that one wants to disguise, pasts that one wants to bury. At the end of the day, who is not an outsider? Or, in another way, who is an outsider?
+
+!<blockquote <~~='
+<lang ja 綺麗なものだけ　並べて生きてたいけど><br>(Although I want to live on with beautiful things only)
+<lang ja ねぇ　昔の黒いとこ　白く塗り潰しちゃうの？><br>(The black spots from the past should also be covered up in white paint, right?)
+'>>
+
+For me, there are many beautiful things to long for, and many dark spots to try to paint over.
+I surely am thinking beyond the things mentioned over these past few days; I venture the assertion that there are way more than a few people who are equally as bewildered by their myriad troubles. Bubbles, broken wings, horns, or anything metaphorical, are probably part of the commonality of the human life experience.
+Everyone has issues that they value, and it can be hard to imagine that something as natural to them as breaths and heartbeats can be endlessly haunting for another group of people.
+None of us are alone. Or maybe all of us are alone.
+Who can understand anyone else, after all.
+Or who cannot, after all?
+
+!<blockquote <~~='
+<lang ja 終わりのないパズルみたいで　いいじゃん><br>(Like endless puzzles, which might as well be good)
+'>>
+
+!<h1 3>
+!<img star_mirror.png <= An image sliced by a diagonal line, with an upright self-image on the right and a tilted stranger on the left. The line in the middle appears as if it were a mirror. Both people are holding a heart in their hands.> syncdark>
+
+!<blockquoteby
+<link https://twitter.com/pizyj/status/1598084660864913408 @pizyj on Twitter>
+<~~='
+Suddenly realizing that [hormone treatment and social transition] is like playing with a puzzle.
+Bit by bit, piecing together a girl.
+[…]
+It’s like watching a girl growing up.
+'>>
+
+On one side is I piecing myself together, and on the other, others piecing together me… and on the other side again, I piecing together my image in the eyes of others.
+On one side, people inside the bubble piecing together the air outside, and on the other, people outside the bubble piecing together the logic inside.
+Humans, such complicated humans.
+
+!<h1 4>
+!<blockquote <~~='
+<lang ja バカみたい　けど見てたい><br>(I look like a fool, but I want to look at you)
+<lang ja 笑われたっていいよ><br>(I don’t mind being laughed at)
+'>>
+
+I do not worry about it. It takes a lot of effort to gradually change how others see me.
+Who can understand anyone else, after all.
+I am not afraid.
+I am still too insignificant.
+
+!<blockquote <~~='
+<lang ja 待ってるなんて　イヤだよ><br>(I don’t like to wait)
+<lang ja ジタバタ　してたいの><br>(I’m jittery, eager to take steps)
+<lang ja 迷子になったピースも><br>(Because the lost pieces)
+<lang ja 愛してたいからさ><br>(I’m hoping to cherish all the same)
+<lang ja 間違って　泣いたって　迷ったって><br>(Even if I make mistakes, cry tears, get lost)
+<lang ja 何回だって><br>(Even if these happen so many times)
+'>>
+
+Actually indeed, I don't want to wait longer.
+I'm afraid that I won't be able to finish my story, afraid that we won't be able to finish everyone's story. I'm afraid that the beautiful things will dissipate, afraid that I'll lose more pieces of the puzzle. I'm afraid, that I won't be able to do anything in time in this ever-changing place.
+All I can do, is keep piecing, keep flying, and keep thinking.
+Piecing together my complex, changeable, volatile, elusive self.
+Chasing after the dim glows in the night, taking the tunes farther afield.
+In a vain attempt to bring a little warmth to even a single soul.
+This is, finally, a reluctant daydream.
+<lang lat Per aspera ad astra.>
+
+!<hr>
+
+Here I am, rambling about myself.
+
+It might seem a trivial matter to others, but to me it is genuinely important.
+
+Thank you for being willing to listen.
+
+!<blockquote <~~='
+<lang ja 追いかけて　たっ　たっ><br>(Chasing, tat-tat)
+'>>
+
+!<img star_fin.png <= Four calendar pages, reading “30”, “31”, “1”, and “2”, flying through the air, over the elements laid out in order: the protagonist and the little boat in geometric style from the game “Biphase”; a girl wearing a hat with a transgender flag in front of her; a girl and a boy with horns flying hand in hand in front of a background of a broken eggshell; a blackbird singing while flying; a fool walking on the edge of a cliff, bathing in sunlight; a letter covering a calendar page with a faintly legible inscription reading “Depression”; bubble-wrapped kittens looking outside at the sun, the butterflies, the sweets and the puzzle pieces; grey puzzle pieces falling into the starry sky.> vertical>
