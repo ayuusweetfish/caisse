@@ -11,170 +11,169 @@ const log = (s) => console.log(`${new Date().toISOString()} ${s}`)
 
 // ====================
 const fetchMails = async (count, inboxCountLast) => {
+  const conn = await Deno.connectTls({ hostname, port })
 
-const conn = await Deno.connectTls({ hostname, port })
-
-const writeAll = async (w, buf) => {
-  const n = buf.length
-  let nw = 0
-  while (nw < n) nw += await w.write(buf.subarray(nw))
-}
-
-const CHAR_BR_OPEN = '{'.charCodeAt(0)
-const CHAR_BR_CLOSE = '}'.charCodeAt(0)
-const CHAR_DQUOTE = '"'.charCodeAt(0)
-const CHAR_0 = '0'.charCodeAt(0)
-const CHAR_CR = '\r'.charCodeAt(0)
-const CHAR_LF = '\n'.charCodeAt(0)
-
-const MARK_STR_BOUNDARY = 255
-
-const createParser = function* () {
-  const respBuf = []
-  let c = yield
-  while (true) {
-    if (c === CHAR_CR) {
-      c = yield   // Assume LF
-      const str = (new TextDecoder().decode(new Uint8Array(respBuf)))
-      const spacePos = str.indexOf(' ')
-      const tag = str.substring(0, spacePos)
-      const content = str.substring(spacePos + 1)
-      c = yield { tag, content }
-      respBuf.splice(0)
-    } else if (c === CHAR_DQUOTE) {
-      respBuf.push(MARK_STR_BOUNDARY)
-      while ((c = yield) !== CHAR_DQUOTE) respBuf.push(c)
-      respBuf.push(MARK_STR_BOUNDARY)
-      c = yield
-    } else if (c === CHAR_BR_OPEN) {
-      let num = 0
-      while ((c = yield) != CHAR_BR_CLOSE)
-        num = num * 10 + (c - CHAR_0)
-      c = yield   // Assume CR
-      c = yield   // Assume LF
-      respBuf.push(MARK_STR_BOUNDARY)
-      for (let i = 0; i < num; i++) respBuf.push(c = yield)
-      respBuf.push(MARK_STR_BOUNDARY)
-      c = yield
-    } else {
-      respBuf.push(c)
-      c = yield
-    }
+  const writeAll = async (w, buf) => {
+    const n = buf.length
+    let nw = 0
+    while (nw < n) nw += await w.write(buf.subarray(nw))
   }
-}
-const parser = createParser()
-parser.next()
 
-const read = async () => {
-  const bufr = new Uint8Array(1)
-  while (true) {
-    const n = await conn.read(bufr)
-    for (let i = 0; i < n; i++) {
-      const status = parser.next(bufr[i])
-      if (status.value !== undefined) return status.value
-    }
-  }
-}
+  const CHAR_BR_OPEN = '{'.charCodeAt(0)
+  const CHAR_BR_CLOSE = '}'.charCodeAt(0)
+  const CHAR_DQUOTE = '"'.charCodeAt(0)
+  const CHAR_0 = '0'.charCodeAt(0)
+  const CHAR_CR = '\r'.charCodeAt(0)
+  const CHAR_LF = '\n'.charCodeAt(0)
 
-let id = 0
-const cmd = async (text, descOnErr) => {
-  const tag = 'A' + (id++).toString().padStart(4, '0')
-  const bufw = new TextEncoder().encode(`${tag} ${text}\r\n`)
-  await writeAll(conn, bufw)
-  const resps = []
-  let resp
-  while (true) {
-    resps.push(resp = await read())
-    if (resp.tag === tag) break
-  }
-  if (!resps[resps.length - 1].content.startsWith('OK ')) {
-    throw new Error(`Failed with IMAP responses: ${descOnErr}`)
-  }
-  return resps
-}
+  // All strings in the response are enclosed by the character \xff
+  const MARK_STR_BOUNDARY = 255
 
-const extractResps = (resps, regexp) => {
-  const results = []
-  for (const resp of resps) if (resp.tag === '*') {
-    const result = resp.content.match(regexp)
-    if (result) results.push(result.slice(1))
-  }
-  return results
-}
-
-const parseHeaders = (s) => {
-  const result = {}
-  const curStr = []
-  for (const line of s.split('\r\n')) {
-    if (line.match(/^\s/)) {
-      curStr.push(line.trim())
-    } else {
-      // Start a new line
-      const fullLine = curStr.splice(0).join(' ')
-      const colonPos = fullLine.indexOf(':')
-      if (colonPos !== -1) {
-        const key = fullLine.substring(0, colonPos)
-          .toLowerCase().replaceAll(/(-|^)[a-z]/g, (s) => s.toUpperCase())
-        const value = fullLine.substring(colonPos + 1).trimStart()
-        if (result[key] !== undefined) {
-          const list = (result[key + '.list'] || (result[key + '.list'] = [result[key]]))
-          list.push(value)
-        } else {
-          result[key] = value
-        }
+  const createParser = function* () {
+    const respBuf = []
+    let c = yield
+    while (true) {
+      if (c === CHAR_CR) {
+        if ((c = yield) !== CHAR_LF) log('Malformed line ending (expecting CRLF)')
+        const str = (new TextDecoder().decode(new Uint8Array(respBuf)))
+        const spacePos = str.indexOf(' ')
+        const tag = str.substring(0, spacePos)
+        const content = str.substring(spacePos + 1)
+        c = yield { tag, content }
+        respBuf.splice(0)
+      } else if (c === CHAR_DQUOTE) {
+        respBuf.push(MARK_STR_BOUNDARY)
+        while ((c = yield) !== CHAR_DQUOTE) respBuf.push(c)
+        respBuf.push(MARK_STR_BOUNDARY)
+        c = yield
+      } else if (c === CHAR_BR_OPEN) {
+        let num = 0
+        while ((c = yield) != CHAR_BR_CLOSE)
+          num = num * 10 + (c - CHAR_0)
+        if ((c = yield) !== CHAR_CR) log('Malformed literal string (expecting CRLF)')
+        if ((c = yield) !== CHAR_LF) log('Malformed line ending (expecting CRLF)')
+        respBuf.push(MARK_STR_BOUNDARY)
+        for (let i = 0; i < num; i++) respBuf.push(c = yield)
+        respBuf.push(MARK_STR_BOUNDARY)
+        c = yield
+      } else {
+        respBuf.push(c)
+        c = yield
       }
-      curStr.push(line.trim())
     }
   }
-  return result
-}
+  const parser = createParser()
+  parser.next()
 
-log('Logging in')
-await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
+  const read = async () => {
+    const bufr = new Uint8Array(1)
+    while (true) {
+      const n = await conn.read(bufr)
+      for (let i = 0; i < n; i++) {
+        const status = parser.next(bufr[i])
+        if (status.value !== undefined) return status.value
+      }
+    }
+  }
 
-log('Examining inbox')
-const inboxCount = +extractResps(await cmd(`EXAMINE INBOX`, 'Examine inbox'), /^([0-9]+) EXISTS$/)[0][0]
-if (inboxCount === inboxCountLast) {
+  let id = 0
+  const cmd = async (text, descOnErr) => {
+    const tag = 'A' + (id++).toString().padStart(4, '0')
+    const bufw = new TextEncoder().encode(`${tag} ${text}\r\n`)
+    await writeAll(conn, bufw)
+    const resps = []
+    let resp
+    while (true) {
+      resps.push(resp = await read())
+      if (resp.tag === tag) break
+    }
+    if (!resps[resps.length - 1].content.startsWith('OK ')) {
+      throw new Error(`Failed with IMAP responses: ${descOnErr}`)
+    }
+    return resps
+  }
+
+  const extractResps = (resps, regexp) => {
+    const results = []
+    for (const resp of resps) if (resp.tag === '*') {
+      const result = resp.content.match(regexp)
+      if (result) results.push(result.slice(1))
+    }
+    return results
+  }
+
+  const parseHeaders = (s) => {
+    const result = {}
+    const curStr = []
+    for (const line of s.split('\r\n')) {
+      if (line.match(/^\s/)) {
+        curStr.push(line.trim())
+      } else {
+        // Start a new line
+        const fullLine = curStr.splice(0).join(' ')
+        const colonPos = fullLine.indexOf(':')
+        if (colonPos !== -1) {
+          const key = fullLine.substring(0, colonPos)
+            .toLowerCase().replaceAll(/(-|^)[a-z]/g, (s) => s.toUpperCase())
+          const value = fullLine.substring(colonPos + 1).trimStart()
+          if (result[key] !== undefined) {
+            const list = (result[key + '.list'] || (result[key + '.list'] = [result[key]]))
+            list.push(value)
+          } else {
+            result[key] = value
+          }
+        }
+        curStr.push(line.trim())
+      }
+    }
+    return result
+  }
+
+  log('Logging in')
+  await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
+
+  log('Examining inbox')
+  const inboxCount = +extractResps(await cmd(`EXAMINE INBOX`, 'Examine inbox'), /^([0-9]+) EXISTS$/)[0][0]
+  if (inboxCount === inboxCountLast) {
+    await cmd('LOGOUT', 'Log out')
+    return [inboxCount, null]
+  }
+
+  const mails = []
+
+  for (let fromMe = 0; fromMe <= 1; fromMe++) {
+    const queryWd = fromMe ? 'FROM' : 'TO'
+    log(`Searching inbox (${queryWd})`)
+    const query = toAddrs.map((addr, i) =>
+      (i === toAddrs.length - 1 ? `${queryWd} ` : `OR ${queryWd} `) + addr).join(' ')
+    const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]*)$/)[0][0]
+      .trim().split(' ').map((w) => w === '' ? undefined : +w)
+    list.sort()
+    const fetchList = list.slice(-count).join(',')
+
+    if (fetchList.length > 0) {
+      log(`Fetching ${fetchList}`)
+      const headersMatched = extractResps(
+        await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
+        /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
+      )
+      const headersSorted = []
+      for (const [_seqStr, headersStr] of headersMatched) {
+        const headers = parseHeaders(headersStr)
+        const date = new Date(headers['Date'])
+        const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+        const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+        headersSorted.push({ date, from, to })
+      }
+      headersSorted.sort((a, b) => b.date - a.date)
+      mails[fromMe] = headersSorted
+    } else {
+      mails[fromMe] = []
+    }
+  }
+
   await cmd('LOGOUT', 'Log out')
-  return [inboxCount, null]
-}
-
-const mails = []
-
-for (let fromMe = 0; fromMe <= 1; fromMe++) {
-  const queryWd = fromMe ? 'FROM' : 'TO'
-  log(`Searching inbox (${queryWd})`)
-  const query = toAddrs.map((addr, i) =>
-    (i === toAddrs.length - 1 ? `${queryWd} ` : `OR ${queryWd} `) + addr).join(' ')
-  const list = extractResps(await cmd(`SEARCH ${query}`, 'Search'), /^SEARCH([0-9 ]*)$/)[0][0]
-    .trim().split(' ').map((w) => w === '' ? undefined : +w)
-  list.sort()
-  const fetchList = list.slice(-count).join(',')
-
-  if (fetchList.length > 0) {
-    log(`Fetching ${fetchList}`)
-    const headersMatched = extractResps(
-      await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
-      /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
-    )
-    const headersSorted = []
-    for (const [_seqStr, headersStr] of headersMatched) {
-      const headers = parseHeaders(headersStr)
-      const date = new Date(headers['Date'])
-      const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-      const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-      headersSorted.push({ date, from, to })
-    }
-    headersSorted.sort((a, b) => b.date - a.date)
-    mails[fromMe] = headersSorted
-  } else {
-    mails[fromMe] = []
-  }
-}
-
-await cmd('LOGOUT', 'Log out')
-return [inboxCount, mails]
-
+  return [inboxCount, mails]
 } // fetchMails
 // ====================
 
@@ -211,7 +210,7 @@ const updateMails = async () => {
 await updateMails()
 setInterval(() => updateMails(), 60000)
 
-const serveReq = async (req) => {
+const serveReq = /*async*/ (req) => {
   const url = new URL(req.url)
   if (url.pathname === '/') return new Response(mailsText)
   return new Response('Not found', { status: 404 })
@@ -228,7 +227,7 @@ const handleConn = async (conn) => {
       const req = evt.request
       try {
         req.conn = conn
-        await evt.respondWith(await serveReq(req))
+        await evt.respondWith(/*await*/ serveReq(req))
       } catch (e) {
         if (!(e instanceof Deno.errors.Http)) {
           log(`Internal server error: ${e}`)
