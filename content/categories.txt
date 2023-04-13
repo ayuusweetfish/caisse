@@ -140,6 +140,7 @@ cats.pebbles.pagelist = {
 ]]
 }
 cats.flow.pagelist = {
+  {name = 'flow/wantan'},
   {name = 'flow/sun'},
   {name = 'flow/toast'},
   {name = 'flow/drumbeats'},
