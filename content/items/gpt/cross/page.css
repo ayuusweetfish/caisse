@@ -1,0 +1,43 @@
+.item-content span.dialogue + ul > li + li {
+  margin-block-start: 1em;
+}
+
+.item-content span.dialogue + ul > li:before {
+  width: 0em;
+  inset-block-start: 0;
+  inset-inline-start: -0.5em;
+}
+
+.item-content span.dialogue.dialogue-G1 + ul > li:before,
+.item-content span.dialogue.dialogue-B1 + ul > li:before {
+  inset-inline-start: -1em;
+}
+
+.item-content span.dialogue.dialogue-alluser + ul > li::before,
+.item-content span.dialogue.dialogue-ord + ul > li:nth-child(2n+1)::before,
+.item-content span.dialogue.dialogue-rev + ul > li:nth-child(2n)::before {
+  /* no-op */
+}
+.item-content span.dialogue.dialogue-ord + ul > li:nth-child(2n)::before,
+.item-content span.dialogue.dialogue-rev + ul > li:nth-child(2n+1)::before {
+  content: '・';
+}
+.item-content span.dialogue.dialogue-ord + ul > li:nth-child(2n):lang(en)::before,
+.item-content span.dialogue.dialogue-rev + ul > li:nth-child(2n+1):lang(en)::before {
+  content: '·';
+}
+
+.item-content span.dialogue.dialogue-G1 + ul > li:nth-child(2n+1)::before,
+.item-content span.dialogue.dialogue-B1 + ul > li:nth-child(2n)::before {
+  content: '(G)';
+}
+.item-content span.dialogue.dialogue-G1 + ul > li:nth-child(2n)::before,
+.item-content span.dialogue.dialogue-B1 + ul > li:nth-child(2n+1)::before {
+  content: '(B)';
+}
+.item-content span.dialogue.dialogue-both + ul > li:nth-child(2n+1)::before {
+  content: '①';
+}
+.item-content span.dialogue.dialogue-both + ul > li:nth-child(2n)::before {
+  content: '②';
+}

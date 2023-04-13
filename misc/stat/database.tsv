@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4392	document
+categories.txt	4433	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -369,6 +369,7 @@ items/gpt/bard/bard-03a.png	31483	image	800	320
 items/gpt/bard/bard-04.png	39079	image	800	512
 items/gpt/bard/page.css	737	unknown
 items/gpt/cover.png	26778	image	330	288
+items/gpt/cross/page.css	1464	unknown
 items/gpt/explain/explain-caratheodory.png	23716	image	600	500
 items/gpt/explain/explain-dirac.png	40425	image	600	600
 items/gpt/explain/explain-godel.png	38195	image	800	600
@@ -548,7 +549,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	25757	unknown
+main.css	25798	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4579	unknown
