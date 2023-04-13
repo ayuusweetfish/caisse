@@ -30,6 +30,7 @@
 
 !<list
   <li <link gpt/bard 第五集：%>（Bard、ChatGPT）>
+  <li <link gpt/cross 第六集：%>（Bard、ChatGPT）>
 >
 
 {{contents.en=}}
@@ -51,4 +52,5 @@ Per requests by Bard, it would like to be depicted as an approachable, friendly,
 
 !<list
   <li <link gpt/bard Episode 5: %> (Bard, ChatGPT)>
+  <li <link gpt/cross Episode 6: %> (Bard, ChatGPT)>
 >

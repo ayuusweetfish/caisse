@@ -29,9 +29,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.05> <link gpt>，第六集：<link gpt/cross>>
   <li <date 2023.05> <link flow/sun>，完结撒花～>
   <li <date 2023.04> <link daydream>>
-  <li <date 2023.04> <link gpt>，第五集：<link gpt/bard>（增加了一个小彩蛋）>
   <li <date 2023.04> <link rose>>
   <li <date 2023.03> <link candy>>
 >
@@ -61,9 +61,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.05> <link gpt>, episodes 6: <link gpt/cross>.>
   <li <date 2023.05> <link daydream> (updated with English version).>
   <li <date 2023.05> <link flow/sun> (currently Chinese-only) concludes!>
-  <li <date 2023.04> <link gpt>, episodes 5: <link gpt/bard> (now with a bonus).>
   <li <date 2023.04> <link rose>.>
   <li <date 2023.03> <link candy>.>
 >
