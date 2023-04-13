@@ -611,6 +611,9 @@ ul {
   padding-inline-start: 3em;
   list-style: none;
 }
+ul ul {
+  padding-inline-start: 1.5em;
+}
 ul > li::before {
   content: '–';
   margin-inline: -1.1em 1em;
