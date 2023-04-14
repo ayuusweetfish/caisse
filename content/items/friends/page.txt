@@ -129,6 +129,14 @@ I’d expect that your site mirrors a part of yourself! Please reach me by <tt e
   langs = {'zh'},
   tint = {226, 221, 209},
   bgimg = 'irithys-bg.png',
+}, {
+  shortname = 'SkyWT',
+  title = 'SkyWT',
+  author = 'SkyWT',
+  link = 'https://skywt.cn/',
+  langs = {'zh'},
+  tint = {224, 224, 224},
+  bgimg = 'skywt-bg.png',
 --[[
 }, {
   shortname = 'Example',
