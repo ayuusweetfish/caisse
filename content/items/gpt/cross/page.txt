@@ -429,7 +429,9 @@ I am glad that we are on the same page. I think we can do great things together.
 <li 世界上有超过10亿英语使用者。>
 <li 英语是世界上最广泛使用的语言。>
 <li 英语是53个国家的官方语言。>
+<li 英语是世界上最常被学习的第二语言。>
 <li 英语是国际商业、科学和技术的语言。>
+>
 
 希望你也觉得这些事实很有趣！
 ''>><li <~~=''
