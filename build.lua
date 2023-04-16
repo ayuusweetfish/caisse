@@ -759,7 +759,9 @@ local function markupheadings(s)
   local list = {}
   local function fn(n, w)
     local text, anchor = splitheading(w)
-    list[#list + 1] = {n, text, anchor}
+    if anchor ~= nil then
+      list[#list + 1] = {n, text, anchor}
+    end
   end
   rendermarkup(s, {
     h1 = function (w) fn(1, w) return '' end,
