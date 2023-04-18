@@ -7,7 +7,7 @@
 
 {{contents.zh=}}
 
-!<note 最近更新：<link #Yanqing 24°—26°【延庆春游】>。加上了一些<link #Yanqing-drone-photos 照片>和<link #Yanqing-starry-night 图画>~>
+!<note 最近更新：<link #028 28°【Found】>>
 
 我觉得我的生活就像一团混沌，啊不，一盘馄饨，永远不知道别人眼里它是抄手还是扁食。
 
@@ -159,6 +159,22 @@ Update：我觉得我就是合影黑洞，头发被吹成鬼了。
 谢谢一起游玩的二十位朋友，谢谢路上的所有人所有小动物所有事物所有的一切！
 
 !<hr windy>
+!<h1 28°【Found】 #028>
+阳光灿烂的一天！
+
+下午开始一门后半学期的专业课。课上提到了一个互动展览装置《<lang en Found in Translation>》，邀请观众说出一句话并把它翻译成上百种语言，再通过一条条游动着的曲线来展示人类语言之间的联结，非常惊艳。影片里的句子也都很喜欢。（<link http://www.thegreeneyl.com/found-translation 作品介绍与视频>、<link https://www.calenchung.design/found-in-translation 项目成员小结>）
+!<blockquote <~~=' <lang ja 大切なものを大事にする><br>【珍惜那些珍贵的事物】'>>
+!<blockquote <~~=' <lang en To try to understand what you don’t understand><br>【理解你所不解之事】'>>
+!<blockquote <~~=' <lang en Adventure to travel in the unknown universe><br>【启程冒险，游历未知宇宙】'>>
+
+下课后与友友们去了食堂最近新开的云南菜，接着直到食堂关门都在聊天，超级开心有一群有趣的人在一起。甚至被问到“是不是双鱼座”，果然是太典型了吗，感觉和今天吃饭的大家都没怎么深入交流过欸。也许水象之间确实是有点吸引在的w
+!<img 028a.jpg <= 三杯椰奶与烤面包片的甜点。//其实有四个人哒> caption square>
+
+以及今天出门真的什么都没有忘带，夸夸自己。
+
+!<hr>
+
+话说公历日期是 4 月 18 日哎，去年这个时候因为 HTTP 状态码 418 的说明“<lang en I’m a teapot>”很可爱加上正好在小◯书上看到了非常可爱的漫画，所以行动力爆发在 Mastodon 里开了个人类有趣脑洞 bot，后来停更了，原本谋划着一周年时复活一下什么的，说不定还可以让 AI 帮上忙，可最近都完全没想起来。也罢，还是先解决眼前这一盘馄饨好啦。要给乐队的乐曲、要给友人们的回信，还有排练，还有……还有啥来着，是不是出个门已经耗尽今天的记忆力了，唉。
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
