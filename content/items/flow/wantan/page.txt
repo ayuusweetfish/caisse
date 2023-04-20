@@ -3,11 +3,11 @@
 {{title.en=}}A Tangle of Dumplings
 {{intro.en=}}Given the circumstances, best to grab a meal first
 
-{{date=}}2023.05
+{{date=}}2023.05,2023.06
 
 {{contents.zh=}}
 
-!<note 最近更新：<link #028b 28°【出逃】>、<link #029a 29°【体验卡】>>
+!<note 最近更新：<link #029b 29°【七秒】>、<link #030a 30°【废】>>
 
 我觉得我的生活就像一团混沌，啊不，一盘馄饨，永远不知道别人眼里它是抄手还是扁食。
 
@@ -162,7 +162,7 @@ Update：我觉得我就是合影黑洞，头发被吹成鬼了。
 !<h1 28°【Found】 #028a>
 阳光灿烂的一天！
 
-下午开始一门后半学期的专业课。课上提到了一个互动展览装置《<lang en Found in Translation>》，邀请观众说出一句话并把它翻译成上百种语言，再通过一条条游动着的曲线来展示人类语言之间的联结，非常惊艳。影片里的句子也都很喜欢。（<link http://www.thegreeneyl.com/found-translation 作品介绍与视频>、<link https://www.calenchung.design/found-in-translation 项目成员小结>）
+下午开始一门后半学期的专业课。课上提到了一个互动展览装置《<lang en Found in Translation>》，邀请观众说出一句话并把它翻译成二十四门语言，再通过一条条游动着的曲线来展示人类语言之间的联结，非常惊艳。影片里的句子也都很喜欢。（<link http://www.thegreeneyl.com/found-translation 作品介绍与视频>、<link https://www.calenchung.design/found-in-translation 项目成员小结>）
 !<blockquote <~~=' <lang ja 大切なものを大事にする><br>【珍惜那些珍贵的事物】'>>
 !<blockquote <~~=' <lang en To try to understand what you don’t understand><br>【理解你所不解之事】'>>
 !<blockquote <~~=' <lang en Adventure to travel in the unknown universe><br>【启程冒险，游历未知宇宙】'>>
@@ -201,6 +201,16 @@ Update：我觉得我就是合影黑洞，头发被吹成鬼了。
 !<hr>
 现在是晚上，正在走出图书馆，还是只完成了一半多一点的样子。ryo 你怎么那么能写！就这几小段还能翻来覆去五分半！人家六分钟都够一首《波西米亚狂想曲》了好嘛！！（什么奇怪的对比啊）就是说原曲可以靠歌词推动情绪但是器乐改编只能硬造变化啊啊啊（扭曲）
 一位队友说想先放空一切来排练再去保研面试，因为特别想排。我觉得好像是我拖到现在才致使别人不得不做这种艰难的决定，早知道这样肯定说什么都提前开工了呜呜呜呜呜。
+
+!<hr windy>
+!<h1 29°【七秒】 #029b>
+出门忘记带水杯，因为早上沾水擦鞋子的时候落在了窗台上。放在包里的大福忘记吃，被压扁了。和家里通电话，讲不出正在上的课的名字。
+
+!<hr windy>
+!<h1 30°【废】 #030a>
+一下午一晚上都在排练厅，临时改完的曲子被大家和自己一起演绎得出乎意料地完整，结束后自己又练了好一会儿。晚上恰好凑齐了人便趁机又排了一会儿老肖。原本应该是开心的事，但是不知为什么特别疲惫，原本计划至少要在写信、画画还有准备几天后的一场小讲座几件事之间完成一件，可最后什么都没做。
+!<img 030-Timpani.png <= 尝试给定音鼓套上错误尺寸防尘罩的情景。//正在扒拉的是 32 寸鼓> caption syncdark>
+是新的节气啦，回到宿舍终于下定决心开始一个全新的神秘计划，也算是弥补一下一天的颓废吧。下定决心是成功的四分之一！
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
