@@ -7,6 +7,7 @@ const userid = Deno.env.get('USER')
 const pwd = Deno.env.get('PWD')
 const myAddrs = (Deno.env.get('ADDRS') ? Deno.env.get('ADDRS').split(',') : null)
 const listSize = +Deno.env.get('LISTSIZE') || 5
+const mailboxName = Deno.env.get('MAILBOX') || 'INBOX'
 
 const log = (s) => console.log(`${new Date().toISOString()} ${s}`)
 
@@ -26,9 +27,25 @@ const fetchMails = async (count, inboxCountLast) => {
   const CHAR_0 = '0'.charCodeAt(0)
   const CHAR_CR = '\r'.charCodeAt(0)
   const CHAR_LF = '\n'.charCodeAt(0)
+  const CHAR_ESC = '\\'.charCodeAt(0)
 
-  // All strings in the response are enclosed by the character \xff
-  const MARK_STR_BOUNDARY = 255
+  // All strings in the response are enclosed by the double quote character
+  // with all occurrences of characters " and \ prefixed by a backward slash (\)
+  const consumeStrOrAtom = (s) => {
+    if (s[0] === '"') {
+      const unesc = []
+      for (let i = 1; i < s.length; i++) {
+        if (s[i] === '"') return [unesc.join(''), s.substring(i + 1).trimStart()]
+        if (s[i] === '\\') i++
+        unesc.push(s[i])
+      }
+      return [unesc.join(''), '']
+    } else {
+      let i = s.indexOf(' ')
+      if (i === -1) i = s.length
+      return [s.substring(0, i), s.substring(i + 1)]
+    }
+  }
 
   const createParser = function* () {
     const respBuf = []
@@ -43,9 +60,12 @@ const fetchMails = async (count, inboxCountLast) => {
         c = yield { tag, content }
         respBuf.splice(0)
       } else if (c === CHAR_DQUOTE) {
-        respBuf.push(MARK_STR_BOUNDARY)
-        while ((c = yield) !== CHAR_DQUOTE) respBuf.push(c)
-        respBuf.push(MARK_STR_BOUNDARY)
+        respBuf.push(CHAR_DQUOTE)
+        while ((c = yield) !== CHAR_DQUOTE) {
+          if (c === CHAR_DQUOTE || c === CHAR_ESC) respBuf.push(CHAR_ESC)
+          respBuf.push(c)
+        }
+        respBuf.push(CHAR_DQUOTE)
         c = yield
       } else if (c === CHAR_BR_OPEN) {
         let num = 0
@@ -53,9 +73,13 @@ const fetchMails = async (count, inboxCountLast) => {
           num = num * 10 + (c - CHAR_0)
         if ((c = yield) !== CHAR_CR) log('Malformed literal string (expecting CRLF)')
         if ((c = yield) !== CHAR_LF) log('Malformed line ending (expecting CRLF)')
-        respBuf.push(MARK_STR_BOUNDARY)
-        for (let i = 0; i < num; i++) respBuf.push(c = yield)
-        respBuf.push(MARK_STR_BOUNDARY)
+        respBuf.push(CHAR_DQUOTE)
+        for (let i = 0; i < num; i++) {
+          c = yield
+          if (c === CHAR_DQUOTE || c === CHAR_ESC) respBuf.push(CHAR_ESC)
+          respBuf.push(c)
+        }
+        respBuf.push(CHAR_DQUOTE)
         c = yield
       } else {
         respBuf.push(c)
@@ -89,7 +113,11 @@ const fetchMails = async (count, inboxCountLast) => {
       if (resp.tag === tag) break
     }
     if (!resps[resps.length - 1].content.startsWith('OK ')) {
-      throw new Error(`Failed with IMAP responses: ${descOnErr}`)
+      if (typeof descOnErr === 'function') {
+        descOnErr = descOnErr()
+        if (descOnErr instanceof Promise) descOnErr = await descOnErr
+      }
+      throw new Error(`${descOnErr}. IMAP response: ${resps[resps.length - 1].content}`)
     }
     return resps
   }
@@ -134,7 +162,27 @@ const fetchMails = async (count, inboxCountLast) => {
   await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
 
   log('Examining inbox')
-  const inboxCount = +extractResps(await cmd(`EXAMINE INBOX`, 'Examine inbox'), /^([0-9]+) EXISTS$/)[0][0]
+  const inboxCount = +extractResps(
+    await cmd(`EXAMINE ${mailboxName}`, async () => {
+      let mailboxesStr
+      try {
+        const mailboxes = extractResps(
+          await cmd(`LIST "" *`, 'Cannot list'),
+          /^LIST \(.+?\) (.+)$/
+        ).map(([s]) => {
+          let t
+          ;[t, s] = consumeStrOrAtom(s)   // t = hierarchy delimiter (unused)
+          ;[t, s] = consumeStrOrAtom(s)   // t = name
+          return t
+        })
+        mailboxesStr = `List of mailboxes: "${mailboxes.join('", "')}"`
+      } catch (e) {
+        mailboxesStr = `Cannot fetch list of mailboxes (${e})`
+      }
+      return `Cannot select mailbox "${mailboxName}". ${mailboxesStr}`
+    }),
+    /^([0-9]+) EXISTS$/
+  )[0][0]
   if (inboxCount === inboxCountLast) {
     await cmd('LOGOUT', 'Log out')
     return [inboxCount, null]
@@ -163,10 +211,11 @@ const fetchMails = async (count, inboxCountLast) => {
         log(`Fetching ${fetchList}`)
         const headersMatched = extractResps(
           await cmd(`FETCH ${fetchList} (BODY[HEADER])`, 'Fetch message headers'),
-          /^([0-9]+) FETCH \(BODY\[HEADER\] .(.+).\)$/s
+          /^([0-9]+) FETCH \(BODY\[HEADER\] (.+)\)$/s
         )
         const headersSorted = []
-        for (const [_seqStr, headersStr] of headersMatched) {
+        for (const [_seqStr, headersStrQuoted] of headersMatched) {
+          const [headersStr, _] = consumeStrOrAtom(headersStrQuoted)
           const headers = parseHeaders(headersStr)
           const date = new Date(headers['Date'])
           const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
