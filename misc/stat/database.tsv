@@ -354,6 +354,11 @@ items/flow/wantan/039-Hashbrowns.jpg	13277	image	300	180
 items/flow/wantan/039-March.png	37632	image	620	820
 items/flow/wantan/039-Victory.png	17453	image	750	480
 items/flow/wantan/78399571.jpg	3447	image	120	120
+items/flow/wantan/Kamakura-Amanawa.jpg	108776	image	900	506
+items/flow/wantan/Kamakura-Ksitigarbha.jpg	44501	image	320	480
+items/flow/wantan/Kamakura-Negaifuda.jpg	186689	image	816	1848
+items/flow/wantan/Kamakura-Ticket.jpg	25593	image	700	520
+items/flow/wantan/Kamakura-Yuigahama.jpg	148240	image	992	744
 items/flow/wantan/Wind_Chimes.mp3	129483	audio	13
 items/flow/wantan/Yanqing-1free.jpg	20048	image	353	508
 items/flow/wantan/Yanqing-bells.jpg	42145	image	540	960
@@ -601,7 +606,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	25798	unknown
+main.css	25849	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4579	unknown
