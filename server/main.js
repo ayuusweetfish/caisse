@@ -336,6 +336,20 @@ const staticFile = async (req, opts, headers, path) => {
         const lines = value.split('\n', 1)
         fetched[lines[0]] = null
         return _
+      } else if (key === 'chocolate') {
+        const lineEnd = value.indexOf('\n')
+        const params = value.substring(0, lineEnd).split('\t')
+        const delim = params[0]
+        const contentEnd = value.indexOf(delim, lineEnd + 1)
+        const contentTempl = value.substring(lineEnd + 1, contentEnd)
+        const entries = value.substring(contentEnd + delim.length).trim().split('\n')
+        const seed = Math.floor(timeInMin(8 * 60) / 10)
+        let g = { seed }
+        for (let i = 0; i < 7; i++) g = randNext(g)
+        const entryIndex = (g.sum >> 8) % entries.length
+        const entryContent = entries[entryIndex].split('\t').reduce(
+          (s, t, i) => s.replaceAll(params[1 + i], t), contentTempl)
+        return entryContent
       }
     })
     for (const url in fetched)

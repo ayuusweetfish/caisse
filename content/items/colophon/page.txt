@@ -16,6 +16,10 @@
 
 搭起这些页面并且把它们送到读者面前的一组程序名叫 Caisse（“盒子”）。负责搭建页面的部分是用 Lua 语言写成的；云端门神的咒语是 JavaScript，它们目前住在 <link https://deno.land/ Deno Deploy> 平台上。可以在 GitHub 上访问<link https://github.com/ayuusweetfish/caisse 程序仓库>。
 
+!<hr>
+
+本站收集的访客信息包括站点设置（语言、配色、时区）、IP 地址、浏览客户端（user agent）与链接来源（referrer）。数据只用于整体统计，任何除爬虫外的个体不会被追踪。数据不会提供给他人；若确有意外，将在此布告。
+
 {{contents.en=}}
 Unless otherwise specified, all content published on this site is licensed under a <link https://creativecommons.org/licenses/by-sa/4.0/deed.en Creative Commons Attribution-ShareAlike 4.0 International Licence>.
 
@@ -30,3 +34,7 @@ According to the grants of use or the open-source licences of the owners, this s
 >
 
 The programs that assemble these pages and send them to the reader are named “Caisse”. The parts responsible for page content are written in the Lua language; the daemons on the cloud have their incantation in JavaScript and currently live on the <link https://deno.land/ Deno Deploy> platform. The <link https://github.com/ayuusweetfish/caisse source repository> can be accessed on GitHub.
+
+!<hr>
+
+This site collects the sitewise settings (language, colour scheme, and timezone), the IP address, the browsing client (user agent) and the source of visit (referrer) of each visitor. The data will only be inspected through overall statistics, and any individual except for crawler bots will not be tracked. The data will not be provided to others; in case accidents happen, notices will be put up here.
