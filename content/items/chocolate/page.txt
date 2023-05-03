@@ -1,0 +1,8 @@
+{{title.zh=}}歌单巧克力盒
+{{title.en=}}Playlist Chocolate Box
+
+{{intro.zh=}}
+测试
+
+{{intro.en=}}
+test

@@ -892,6 +892,9 @@ registeritemtempl('friends', 'home',
 registeritemtempl('email', 'home',
   'items/email/page.html',
   render('items/email/page.txt'))
+registeritemtempl('chocolate', 'home',
+  'items/chocolate/page.html',
+  render('items/chocolate/page.txt'))
 registeritemmarkup('dates', 'home')
 registeritemmarkup('colophon', 'home')
 
