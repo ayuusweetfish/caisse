@@ -26,11 +26,11 @@ ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-想在春天做很多很多有趣的事情！<date 2023.03>
+整理一些草率的角落。不知道夏天要怎么度过呢 <kao （´-`）.｡oO（><date 2023.06>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-… such a sea of interesting things in spring! <date 2023.03>
+Tidying up odds and ends done in a hurry. How will the summer be spent? Seems really hard to tell <kao （´-`）.｡oO（><date 2023.06>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
@@ -39,10 +39,10 @@ ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 
 {{contents.zh=}}
 !<h2 音乐 #music>
-<link chocolate>
+!<note 施工中，明天再来看看吧～>
 {{contents.en=}}
 !<h2 Music #music>
-<link chocolate>
+!<note Under construction. Check back tomorrow!>
 
 {{contents.zh=}}
 !<h2 游戏 #games>
@@ -78,7 +78,8 @@ ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
   <li <link https://nicechord.com/ NiceChord 好和弦> —— 台湾音乐人 Wiwi 的乐理与音乐制作教学频道。>
   <li <link https://space.bilibili.com/39034282 王乐乐乐游> —— 音乐杂谈与整活。>
   <li <link https://heiheihei.ca/ Cave • 小触手的书房> —— 画画的 Emmy。>
-  <li <link http://www.yini.org/ 秘密花园> — 来自互联网早期的个人小小博物馆。>
+  <li <link http://www.yini.org/ 秘密花园> —— 来自互联网早期的个人小小博物馆。>
+  <li <link https://www.lanisland.com/ 唉，澜的。> —— 写作、摄影、美食。>
   <li <link http://eminism.org/ Eminism>（英）—— 女性主义，但是也卖小册子和小徽章（？）。>
 >
 
@@ -122,6 +123,7 @@ ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
   <li <link https://space.bilibili.com/39034282 王乐乐乐游> (Chinese) — Talks on trivia of music, self-arranged pieces, and musical memes.>
   <li <link https://heiheihei.ca/ Cave • 小触手的书房> (Chinese) — Emmy with her paintings.>
   <li <link http://www.yini.org/ Secret Garden> (Chinese) — A personal museum, from the old web.>
+  <li <link https://www.lanisland.com/ Lan Island> — Writing, photography, and food.>
   <li <link https://eminism.org/ Eminism> — Feminism, but with a store of zines and buttons (?).>
 >
 
