@@ -6,3 +6,22 @@
 
 {{intro.en=}}
 test
+
+{{=}}
+{{i = 1}}
+{{box[i].title.zh=}}标题 1
+{{box[i].title.en=}}Title 1
+{{box[i].cmt.zh=}}测试测试 1
+{{box[i].cmt.en=}}Lorem ipsum 1
+
+{{i = #box + 1}}
+{{box[i].title.zh=}}标题 2
+{{box[i].title.en=}}Title 2
+{{box[i].cmt.zh=}}
+测试测试 2
+分段
+!<note test>
+{{box[i].cmt.en=}}
+Lorem ipsum 2
+Paragraph
+!<note test>
