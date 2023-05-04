@@ -129,6 +129,13 @@ const randNext = ({seed, sum}) => {
   sum = (sum || 0) ^ seed
   return {seed, sum}
 }
+const nonRepeatRandom = (fn, seed, range) => {
+  // Caveat: does not work when range is 2
+  const x = fn(seed) % (range - 1)
+  for (let i = 1; ; i++)
+    if (fn(seed - i) % (range - 1) !== x) 
+      return (i % 2 === 1) ? x : range - 1
+}
 
 const timeInMin = (timezoneOffsetMin) =>
   Math.floor(Date.now() / 60000) + timezoneOffsetMin
@@ -344,15 +351,18 @@ const staticFile = async (req, opts, headers, path) => {
         const contentTempl = value.substring(lineEnd + 1, contentEnd)
         const entries = value.substring(contentEnd + delim.length)
           .split('\n').filter((s) => s.length > 0)
-        let seed = Math.floor(timeInMin(8 * 60) / 10)
-        const addr = req.conn.remoteAddr.hostname
-        for (let i = 0; i < addr.length; i++) {
-          seed = seed * 997 + addr.charCodeAt(i) + 1
-          seed = (seed / 4294967296) ^ seed
+        const timeSeed = Math.floor(timeInMin(8 * 60) / 10)
+        const plainRandom = (seed) => {
+          const addr = req.conn.remoteAddr.hostname
+          for (let i = 0; i < addr.length; i++) {
+            seed = seed * 997 + addr.charCodeAt(i) + 1
+            seed = (seed / 4294967296) ^ seed
+          }
+          let g = { seed }
+          for (let i = 0; i < 7; i++) g = randNext(g)
+          return (g.sum >> 8)
         }
-        let g = { seed }
-        for (let i = 0; i < 7; i++) g = randNext(g)
-        const entryIndex = (g.sum >> 8) % entries.length
+        const entryIndex = nonRepeatRandom(plainRandom, timeSeed, entries.length)
         const entryContent = entries[entryIndex].split('\t').reduce(
           (s, t, i) => s.replaceAll(params[1 + i], t), contentTempl)
         return entryContent
