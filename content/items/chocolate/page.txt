@@ -14,6 +14,7 @@ test
 {{box[i].cmt.zh=}}测试测试 1
 {{box[i].cmt.en=}}Lorem ipsum 1
 
+{{=}}
 {{i = #box + 1}}
 {{box[i].title.zh=}}标题 2
 {{box[i].title.en=}}Title 2
@@ -25,3 +26,10 @@ test
 Lorem ipsum 2
 Paragraph
 !<note test>
+
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}标题 3
+{{box[i].title.en=}}Title 3
+{{box[i].cmt.zh=}}测试测试 3
+{{box[i].cmt.en=}}Lorem ipsum 3
