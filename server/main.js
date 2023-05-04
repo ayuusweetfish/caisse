@@ -342,8 +342,14 @@ const staticFile = async (req, opts, headers, path) => {
         const delim = params[0]
         const contentEnd = value.indexOf(delim, lineEnd + 1)
         const contentTempl = value.substring(lineEnd + 1, contentEnd)
-        const entries = value.substring(contentEnd + delim.length).trim().split('\n')
-        const seed = Math.floor(timeInMin(8 * 60) / 10)
+        const entries = value.substring(contentEnd + delim.length)
+          .split('\n').filter((s) => s.length > 0)
+        let seed = Math.floor(timeInMin(8 * 60) / 10)
+        const addr = req.conn.remoteAddr.hostname
+        for (let i = 0; i < addr.length; i++) {
+          seed = seed * 997 + addr.charCodeAt(i) + 1
+          seed = (seed / 4294967296) ^ seed
+        }
         let g = { seed }
         for (let i = 0; i < 7; i++) g = randNext(g)
         const entryIndex = (g.sum >> 8) % entries.length
