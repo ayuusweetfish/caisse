@@ -1,0 +1,24 @@
+{{title.zh=}}23 辰月 —— 春宵苦短
+{{title.en=}}23, Month of the Dragon — Spring is Short
+
+{{timestamp=}}2023.05.06.02
+
+{{contents.zh=}}
+这里的春日实在是短，一下子就听见夏天的脚步，迷迷糊糊之间一年又逃走不少呢。
+!<list
+  <li <link flow/wantan>，感觉废话越来越多，一个月大部分时候都在写这个。>
+  <li <link gpt>，第六集：<link gpt/cross>。>
+  <li <link planetarium>，因为之前的歌单实在比较局限，于是做了这个随机抽取的页面。接下来要多加些内容。>
+  <li <link email 信箱动态页>，最近坏了好几次，不知道有没有完全修好。>
+  <li 上个月要整理的还在积压，又有新的内容正在生产中了。试试下个月努力吧～>
+>
+
+{{contents.en=}}
+Springtide goes by so quickly here that all of a sudden, the footsteps of summer are around. A big portion of the year has escaped in a daze.
+!<list
+  <li <link flow/wantan>. I'm filled with more and more nonsensical things and have been writing this for most of the month.>
+  <li <link gpt>, episode 6: <link gpt/cross>.>
+  <li <link planetarium>. Since the previous playlist was quite limited, this page replaces it by random picks. More content to be added next.>
+  <li <link email Emails status page> broke a few times recently, and it's still unclear whether it has been completely fixed…>
+  <li The backlog from last month has not been sorted out, and new things are being made. Trying to get to these next month!>
+>
