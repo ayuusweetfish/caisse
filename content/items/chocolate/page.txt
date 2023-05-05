@@ -1,35 +1,47 @@
 {{title.zh=}}歌单巧克力盒
 {{title.en=}}Playlist Chocolate Box
 
-{{intro.zh=}}
-测试
-
-{{intro.en=}}
-test
-
 {{=}}
 {{i = 1}}
-{{box[i].title.zh=}}标题 1
-{{box[i].title.en=}}Title 1
-{{box[i].cmt.zh=}}测试测试 1
+{{box[i].title.zh=}}Elma
+{{box[i].title.en=}}Elma
+{{box[i].title.ja=}}エルマ
+{{box[i].artist.zh=}}夜鹿
+{{box[i].artist.en=}}Yorushika
+{{box[i].artist.ja=}}ヨルシカ
+{{box[i].origlang=}}ja
+{{box[i].links=}}https://open.spotify.com/track/5YCwibP7MrreKevBdimMZU https://music.163.com/song?id=1357960252
+{{box[i].cmt.zh=}}
+测试测试 1 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+测试测试 1 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
 {{box[i].cmt.en=}}Lorem ipsum 1
 
 {{=}}
 {{i = #box + 1}}
-{{box[i].title.zh=}}标题 2
-{{box[i].title.en=}}Title 2
+{{box[i].title.zh=}}花月成双
+{{box[i].title.en=}}Flower-Moon Duet
+{{box[i].artist.zh=}}三无Marblue/LS/夏安兰
+{{box[i].origlang=}}zh
+{{box[i].links=}}https://b23.tv/BV1rK4y1m7Px https://youtu.be/AGEUtj0meKo https://music.163.com/song?id=1831829639
 {{box[i].cmt.zh=}}
-测试测试 2
-分段
-!<note test>
-{{box[i].cmt.en=}}
-Lorem ipsum 2
-Paragraph
-!<note test>
+测试测试 2 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+测试测试 2 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+{{box[i].cmt.en=}}Lorem ipsum 2
 
 {{=}}
 {{i = #box + 1}}
-{{box[i].title.zh=}}标题 3
-{{box[i].title.en=}}Title 3
-{{box[i].cmt.zh=}}测试测试 3
+{{box[i].title.zh=}}虎鲸之梦
+{{box[i].title.en=}}Dream of Orca
+{{box[i].artist.en=}}park bird
+{{box[i].origlang=}}en
+{{box[i].links=}}https://youtu.be/kg1g_l5p8bk?t=909 https://soundcloud.com/pivot1/dream-of-orca?in=pivot1/sets/collecting-pieces
+{{box[i].cmt.zh=}}
+测试测试 3 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+测试测试 3 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
 {{box[i].cmt.en=}}Lorem ipsum 3
+
+{{intro.zh=}}
+每十分钟随机抽取一首不同的乐曲。这是 {{ #box }} 首中的第 %index% 首。
+
+{{intro.en=}}
+test

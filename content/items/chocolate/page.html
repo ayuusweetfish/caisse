@@ -2,15 +2,111 @@
   <h1>{{ title }}</h1>
 </header>
 
+{{
+local sitename = function (link)
+  if link:find('youtu.be', 1, true) then return 'YouTube'
+  elseif link:find('spotify.com', 1, true) then return 'Spotify'
+  elseif link:find('soundcloud.com', 1, true) then return 'SoundCloud'
+  elseif link:find('music.163.com', 1, true) then return {zh = '网易云', en = 'NetEase'}
+  elseif link:find('b23.tv', 1, true) then return {zh = '哔哩哔哩', en = 'Bilibili'}
+  else return {zh = '链接', en = 'Link'} end
+end
+htmllinks = function (links)
+  local elms = {}
+  for i = 1, #links do
+    local link = links[i]
+    elms[i] = "<li><a class='pastel external' href='" .. link
+      .. "' target='_blank'>" .. tr(sitename(link))
+      .. "<sup class='little-icons'>&#x1fa90;</sup></a></li>"
+  end
+  return table.concat(elms)
+end
+}}
+
 <section class='item-content'>
-  {{ rendermarkup(tr(intro)) }}
 <!-- (chocolate)
-----	%1	%2
-  <h2>%1</h2>
-  %2
+----	%index%	%title%	%titleorig%	%titleoriglang%	%artist%	%artistorig%	%artistoriglang%	%links%	%cmt%
+  {{ rendermarkup(tr(intro)) }}
+  <div role='separator' class='windy'></div>
+  <div class='track-cover'>
+    <img src='/favicon.png'>
+  </div>
+  <div class='track-title'>
+    <h2>%title%</h2><p class='track-meta-orig-lang' lang='%titleoriglang'>%titleorig%</p>
+  </div>
+  <div class='track-artist'>
+    <p>%artist%</p><p class='track-meta-orig-lang' lang='%artistoriglang'>%artistorig%</p>
+  </div>
+  <div class='track-links'><ul>%links%</ul></div>
+  <div class='track-commentary'>%cmt%<//div>
 ----
+{{i = 0}}
 {{@ box }}
-{{title}}	{{ rendermarkup(tr(cmt)) }}
+{{* i=i+1; return i}}	{{title}}	{{lang == origlang and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)) }}
 {{@ end }}
 -->
 </section>
+
+<style>
+.track-cover {
+  text-align: center;
+  margin-block-start: 2rem;
+}
+.track-cover img {
+  inline-size: 12em;
+  block-size: 12em;
+  max-inline-size: 100%;
+}
+
+.track-title *, .track-artist * {
+  display: inline-block;
+  margin-block: 0;
+}
+.track-title p, .track-artist p {
+  text-indent: 0;
+}
+p.track-meta-orig-lang {
+  color: hsl(50deg, 5%, 30%);
+  margin-inline-start: 1.2rem;
+}
+body.dark p.track-meta-orig-lang {
+  color: hsl(36deg, 5%, 70%);
+}
+p.track-meta-orig-lang:empty {
+  display: none;
+}
+
+.track-title {
+  text-align: center;
+  margin-block: 1rem 0.5rem;
+}
+.track-title h2 {
+  font-size: 1.36rem;
+}
+
+.track-artist {
+  text-align: center;
+  margin-block-start: 0;
+}
+
+.track-links {
+  text-align: center;
+}
+.track-links ul {
+  padding-inline-start: 0;
+}
+.track-links ul li {
+  display: inline-block;
+}
+.track-links ul li::before {
+  display: none;
+}
+.track-links ul li:not(:last-child)::after {
+  content: '|';
+  margin-inline: 0.25em;
+}
+
+.track-commentary {
+  margin-block-start: 1.5rem;
+}
+</style>
