@@ -39,10 +39,10 @@ Tidying up odds and ends done in a hurry. How will the summer be spent? Seems re
 
 {{contents.zh=}}
 !<h2 音乐 #music>
-!<note 施工中，明天再来看看吧～>
+<link planetarium>
 {{contents.en=}}
 !<h2 Music #music>
-!<note Under construction. Check back tomorrow!>
+<link planetarium>
 
 {{contents.zh=}}
 !<h2 游戏 #games>

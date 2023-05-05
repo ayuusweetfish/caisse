@@ -1,5 +1,5 @@
-{{title.zh=}}歌单巧克力盒
-{{title.en=}}Playlist Chocolate Box
+{{title.zh=}}音乐天文馆
+{{title.en=}}Musical Planetarium
 
 {{=}}
 {{i = 1}}
@@ -134,7 +134,7 @@ Spica might just be pretending not to know about Mikage’s sentiment. Or maybe 
 Yuhi is a wonderful help, but Mikage seems reluctant to open up to her. Indeed, it might be true that Yuhi may not be able to help much.
 
 {{intro.zh=}}
-每十分钟随机抽取一首不同的乐曲。这是 {{ #box }} 首中的第 %index% 首。
+每十分钟随机选取一首不同的乐曲。这是 {{ #box }} 首中的第 %index% 首。
 
 {{intro.en=}}
 A different piece of music is randomly picked every ten minutes. Among all {{ #box }}, here is the piece numbered %index%.
