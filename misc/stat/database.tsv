@@ -57,12 +57,6 @@ items/candy/Candy_Girl.mp4	18906820	video	203	960	600
 items/candy/Candy_Girl.mscz	51696	score
 items/candy/cover.png	45068	image	640	360
 items/candy/main.lua	5887	code
-items/chocolate/images/Collecting-Pieces.jpg	51923	image	500	500
-items/chocolate/images/Fireflies-Never-Came.jpg	63499	image	500	500
-items/chocolate/images/Gave-Up-Music.jpg	17326	image	300	300
-items/chocolate/images/Green-Hills.jpg	48774	image	534	534
-items/chocolate/images/Solo-Trip.jpg	41334	image	586	586
-items/chocolate/page.html	3011	unknown
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
 items/courses-21/Iron_Man.mscz	55061	score
@@ -514,6 +508,12 @@ items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mid	19891	musicnotes
 items/ne-er-do-well/instr_CONFESSION_OF_A_NE'ER_DO_WELL.mp3	4035940	audio	167
 items/ne-er-do-well/lead_CONFESSION_OF_A_NE'ER_DO_WELL.pdf	1478407	document	2
 items/patchwork/illust.png	19803	image	800	560
+items/planetarium/images/Collecting-Pieces.jpg	51923	image	500	500
+items/planetarium/images/Fireflies-Never-Came.jpg	63499	image	500	500
+items/planetarium/images/Gave-Up-Music.jpg	17326	image	300	300
+items/planetarium/images/Green-Hills.jpg	48774	image	534	534
+items/planetarium/images/Solo-Trip.jpg	41334	image	586	586
+items/planetarium/page.html	3011	unknown
 items/rabbit-hole/cat.jpg	51820	image	798	448
 items/rabbit-hole/cover.jpg	56098	image	958	539
 items/rabbit-hole/particles.jpg	100074	image	1280	720
