@@ -171,5 +171,4 @@ I’d expect that your site mirrors a part of yourself! Please reach me by <tt e
   langs = {'zh'},
   tint = {0x30, 0x30, 0x30},
   bgimg = 'travellings-bg.png',
-  pending = true,
 }} }}}
