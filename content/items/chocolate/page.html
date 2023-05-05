@@ -25,11 +25,11 @@ end
 
 <section class='item-content'>
 <!-- (chocolate)
-----	%index%	%title%	%titleorig%	%titleoriglang%	%artist%	%artistorig%	%artistoriglang%	%links%	%cmt%
+----	%index%	%image%	%title%	%titleorig%	%titleoriglang%	%artist%	%artistorig%	%artistoriglang%	%links%	%cmt%
   {{ rendermarkup(tr(intro)) }}
   <div role='separator' class='windy'></div>
   <div class='track-cover'>
-    <img src='/favicon.png'>
+    <img src='%image%'>
   </div>
   <div class='track-title'>
     <h2>%title%</h2><p class='track-meta-orig-lang' lang='%titleoriglang'>%titleorig%</p>
@@ -42,7 +42,7 @@ end
 ----
 {{i = 0}}
 {{@ box }}
-{{* i=i+1; return i}}	{{title}}	{{lang == origlang and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)) }}
+{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{title}}	{{lang == origlang and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)) }}
 {{@ end }}
 -->
 </section>
@@ -53,8 +53,8 @@ end
   margin-block-start: 2rem;
 }
 .track-cover img {
-  inline-size: 12em;
-  block-size: 12em;
+  inline-size: 15em;
+  block-size: 15em;
   max-inline-size: 100%;
 }
 
@@ -67,7 +67,10 @@ end
 }
 p.track-meta-orig-lang {
   color: hsl(50deg, 5%, 30%);
-  margin-inline-start: 1.2rem;
+}
+p.track-meta-orig-lang::before {
+  content: '·';
+  margin-inline: 0.6rem;
 }
 body.dark p.track-meta-orig-lang {
   color: hsl(36deg, 5%, 70%);
@@ -78,7 +81,7 @@ p.track-meta-orig-lang:empty {
 
 .track-title {
   text-align: center;
-  margin-block: 1rem 0.5rem;
+  margin-block: 0.75rem 0.5rem;
 }
 .track-title h2 {
   font-size: 1.36rem;

@@ -11,6 +11,7 @@
 {{box[i].artist.ja=}}ヨルシカ
 {{box[i].origlang=}}ja
 {{box[i].links=}}https://open.spotify.com/track/5YCwibP7MrreKevBdimMZU https://music.163.com/song?id=1357960252
+{{box[i].image=}}Gave-Up-Music.jpg
 {{box[i].cmt.zh=}}
 测试测试 1 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
 测试测试 1 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
@@ -23,6 +24,7 @@
 {{box[i].artist.zh=}}三无Marblue/LS/夏安兰
 {{box[i].origlang=}}zh
 {{box[i].links=}}https://b23.tv/BV1rK4y1m7Px https://youtu.be/AGEUtj0meKo https://music.163.com/song?id=1831829639
+{{box[i].image=}}Flower-Moon.jpg
 {{box[i].cmt.zh=}}
 测试测试 2 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
 测试测试 2 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
@@ -35,6 +37,7 @@
 {{box[i].artist.en=}}park bird
 {{box[i].origlang=}}en
 {{box[i].links=}}https://youtu.be/kg1g_l5p8bk?t=909 https://soundcloud.com/pivot1/dream-of-orca?in=pivot1/sets/collecting-pieces
+{{box[i].image=}}Collecting-Pieces.jpg
 {{box[i].cmt.zh=}}
 测试测试 3 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
 测试测试 3 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
