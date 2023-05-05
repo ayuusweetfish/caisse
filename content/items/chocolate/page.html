@@ -25,24 +25,24 @@ end
 
 <section class='item-content'>
 <!-- (chocolate)
-----	%index%	%image%	%title%	%titleorig%	%titleoriglang%	%artist%	%artistorig%	%artistoriglang%	%links%	%cmt%
+----	%index%	%image%	%imagealt%	%title%	%titleorig%	%titleoriglang%	%artist%	%artistorig%	%artistoriglang%	%links%	%cmt%
   {{ rendermarkup(tr(intro)) }}
   <div role='separator' class='windy'></div>
   <div class='track-cover'>
-    <img src='%image%'>
+    <img src='%image%' alt='%imagealt%'>
   </div>
   <div class='track-title'>
-    <h2>%title%</h2><p class='track-meta-orig-lang' lang='%titleoriglang'>%titleorig%</p>
+    <h2>%title%</h2><p class='track-meta-orig-lang' lang='%titleoriglang%'>%titleorig%</p>
   </div>
   <div class='track-artist'>
-    <p>%artist%</p><p class='track-meta-orig-lang' lang='%artistoriglang'>%artistorig%</p>
+    <p>%artist%</p><p class='track-meta-orig-lang' lang='%artistoriglang%'>%artistorig%</p>
   </div>
   <div class='track-links'><ul>%links%</ul></div>
-  <div class='track-commentary'>%cmt%<//div>
+  <div class='track-commentary'>%cmt%</div>
 ----
 {{i = 0}}
 {{@ box }}
-{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{title}}	{{lang == origlang and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)) }}
+{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{imagealt}}	{{title}}	{{lang == origlang and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)):gsub('\n', '') }}
 {{@ end }}
 -->
 </section>

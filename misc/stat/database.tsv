@@ -11,7 +11,7 @@ divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
 divider-fleuron-windy.svg	4657	image	2000	120
 favicon.png	3541	image	64	64
-framework.html	9181	unknown
+framework.html	9213	unknown
 item.html	1736	unknown
 items/aakami/AAKAMI.love	1495665	unknown
 items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
@@ -57,10 +57,12 @@ items/candy/Candy_Girl.mp4	18906820	video	203	960	600
 items/candy/Candy_Girl.mscz	51696	score
 items/candy/cover.png	45068	image	640	360
 items/candy/main.lua	5887	code
-items/chocolate/images/Collecting-Pieces.jpg	15901	image	250	250
-items/chocolate/images/Flower-Moon.jpg	11390	image	270	270
+items/chocolate/images/Collecting-Pieces.jpg	51923	image	500	500
+items/chocolate/images/Fireflies-Never-Came.jpg	63499	image	500	500
 items/chocolate/images/Gave-Up-Music.jpg	17326	image	300	300
-items/chocolate/page.html	2954	unknown
+items/chocolate/images/Green-Hills.jpg	48774	image	534	534
+items/chocolate/images/Solo-Trip.jpg	41334	image	586	586
+items/chocolate/page.html	3011	unknown
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
 items/courses-21/Iron_Man.mscz	55061	score
@@ -615,7 +617,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	25849	unknown
+main.css	25847	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4579	unknown

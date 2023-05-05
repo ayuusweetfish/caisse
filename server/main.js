@@ -303,7 +303,7 @@ const staticFile = async (req, opts, headers, path) => {
     const timeInMinCur = timeInMin(opts.tz || 8 * 60)
     const timeOfDayCur = timeOfDay(timeInMinCur)
     const fetched = {}
-    text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
+    text = text.replace(/<!-- \((.+?)\)\s?(.*?)\s*-->/gs, (_, key, value) => {
       if (key === 'dark') {
         const spacePos = value.indexOf(' ')
         if (spacePos !== -1)
@@ -343,6 +343,9 @@ const staticFile = async (req, opts, headers, path) => {
         const lines = value.split('\n', 1)
         fetched[lines[0]] = null
         return _
+      } else if (key === 'query') {
+        const s = (new URL(req.url)).search
+        return s ? ('&' + s.substring(1)) : ''
       } else if (key === 'chocolate') {
         const lineEnd = value.indexOf('\n')
         const params = value.substring(0, lineEnd).split('\t')
@@ -362,7 +365,12 @@ const staticFile = async (req, opts, headers, path) => {
           for (let i = 0; i < 7; i++) g = randNext(g)
           return (g.sum >> 8)
         }
-        const entryIndex = nonRepeatRandom(plainRandom, timeSeed, entries.length)
+        const queryIndex = (new URL(req.url)).searchParams.get('index')
+        const entryIndex = (
+          (queryIndex !== null && +queryIndex >= 1 && +queryIndex <= entries.length) ?
+          +queryIndex - 1 :
+          nonRepeatRandom(plainRandom, timeSeed, entries.length)
+        )
         const entryContent = entries[entryIndex].split('\t').reduce(
           (s, t, i) => s.replaceAll(params[1 + i], t), contentTempl)
         return entryContent
@@ -466,6 +474,7 @@ const serveReq = async (req) => {
       opts.isDark = isDarkNew
       newCookies.dark = isDarkNew ? '1' : '0'
       optsUpdatedByQuery = true
+      url.searchParams.delete('dark')
     }
     const queryLang = url.searchParams.get('lang')
     if (queryLang !== null &&
@@ -473,13 +482,13 @@ const serveReq = async (req) => {
       opts.lang = queryLang
       newCookies.lang = queryLang
       optsUpdatedByQuery = true
+      url.searchParams.delete('lang')
     }
     // Set cookies
     for (const [key, value] of Object.entries(newCookies))
       headers.append('Set-Cookie', `${encodeURIComponent(key)}=${encodeURIComponent(value)}; SameSite=Strict; Path=/; Secure; Max-Age=2592000`)
     // Redirect to remove query string
     if (optsUpdatedByQuery) {
-      url.search = ''
       return redirectResponse(url, headers)
     }
 

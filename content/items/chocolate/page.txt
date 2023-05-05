@@ -12,23 +12,64 @@
 {{box[i].origlang=}}ja
 {{box[i].links=}}https://open.spotify.com/track/5YCwibP7MrreKevBdimMZU https://music.163.com/song?id=1357960252
 {{box[i].image=}}Gave-Up-Music.jpg
+{{box[i].imagealt.zh=}}专辑封面。用白色线条绘制的、站在小巷里的人物，头被白色线条覆盖。
+{{box[i].imagealt.en=}}Cover of the album. A human painted with white lines standing in an alley, with the head covered in white scribbles.
 {{box[i].cmt.zh=}}
-测试测试 1 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-测试测试 1 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-{{box[i].cmt.en=}}Lorem ipsum 1
+Amy 决定带着自己的秘密，悄悄踏上旅程前往北欧，在路上写下留给 Elma 的信和歌词，连同春天与夏天一起装在一个小盒子里。过了不知多久，这个小盒子来到 Elma 手中，于是 Elma 沿着 Amy 的足迹追随去，揣摩着这挣扎的内心世界。
+这是夜鹿——或者说，是 Elma ——用两张专辑讲述的故事。
+!<blockquoteby Elma <~~='
+<lang ja 「この世で一番美しい音楽が何処にもあるかわかるかい？」><br>【知道世界上最动听的音乐在哪里吗？】
+<lang ja 私がわからないと答えると、彼は私の頭を掴んで優しく揺らすった。><br>【我回答不知道，他便抓住我的头轻轻晃了晃。】
+'>>
+<link https://www.bilibili.com/read/cv4740433 Amy 的信纸盒（中译）>；<link https://www.bilibili.com/read/cv4956878 Elma 的日记（中译）>
+{{box[i].cmt.en=}}
+Amy decided to take the secrets and quietly set off on a journey to Scandinavia. On the way, Amy wrote letters and lyrics to Elma, putting them in a little box along with the passing spring and summer. Some time later, this little box comes into the hands of Elma, who followed Amy’s trail, unfolding this strugging inner world.
+This is the story that Yorushika — or rather, Elma — tells in two albums.
+!<blockquoteby Elma <~~='
+<lang ja 「この世で一番美しい音楽が何処にもあるかわかるかい？」><br>(Do you know where the most beautiful music in the world can be found?)
+<lang ja 私がわからないと答えると、彼は私の頭を掴んで優しく揺らすった。><br>(When I replied that I didn’t, he took hold of my head and gently shook it.)
+'>>
+<link https://docs.google.com/document/d/1AYYdLls9-Q9GX0WNGIxoXgt_6Ne4jr6-bvVPd43UsGg/ Amy’s letters (English translation)>; <link https://docs.google.com/document/d/1v3jewbCoq3mP-7qKevFgUA5WSX795oqW1VDxc3zAm_c/ Elma’s diaries (English translation)>
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].title.zh=}}如见青山
+{{box[i].title.en=}}As If Green Hills Heave in Sight
+{{box[i].artist.zh=}}潮汐-tide/冉语优
+{{box[i].origlang=}}zh
+{{box[i].links=}}https://b23.tv/BV1ab411g7Fb https://music.163.com/song?id=1357172690
+{{box[i].image=}}Green-Hills.jpg
+{{box[i].imagealt.zh=}}歌曲封面。柳叶间的苏东坡形象，一旁是毛笔书写的“如见青山”四字。
+{{box[i].imagealt.en=}}Cover of the song. A portrait of the ancient Chinese poet Su Dongpo standing among the willow leaves, with the Chinese title of the song written in brushstrokes beside.
+{{box[i].cmt.zh=}}
+!<blockquote 役于物得失患　役于形不超然>
+苏东坡与佛印和尚的故事。知名的“狗啃河上骨”“水流东坡诗”句子就是两人之间的玩笑；当然二者交情之深远非一首歌、一段文字能说明。
+信息时代里待得久了，都开始觉得从前人与人的交情实在奇妙。苏东坡赴京赶考之后，也不知什么时候二人才能再次见面；和尚对于东坡而言成了虚幻的记忆与文字，于是所见的每一座青山似乎都有佛印和尚。见到真正的和尚，便仿佛与青山重叠，而和尚的佛性又好似无言的大自然一般，二者浑然一体——
+当然最后这些辩论都不重要。苏东坡“谁怕人生到处相逢难”、“所遇即安到处无牵绊”的洒脱，才是最触动人的吧。
+{{box[i].cmt.en=}}
+!<blockquote <~~='
+<lang zh 役于物得失患　役于形不超然><br>(Attachment to possessions accentuates vicissitudes)<br>(Attachment to appearances hinders contentment)
+'>>
+A story between the ancient Chinese poet Su Dongpo and the monk Fo-Yin. The famous pun lines “狗啃河上骨”, “水流东坡诗” — “Dog eating a bone on the river, water carrying a poem east of the slope”, which can also be interpreted as “dog eating the bones of the monk, water carrying the corpse of Dongpo” — are a joke between the two. Of course, the depth of their friendship goes far beyond a song or a paragraph of text.
+Immersed in the information age, one starts to be fascinated by people’s relationships in the past. After Su Dongpo went to the capital for his exam, it was not clear when they would meet again; for Dongpo, the monk became an unreal blur of memory and text, so every hill he saw seemed to have the monk in it. When he eventually meets the real Fo-Yin, the monk starts to overlap with the hills, and the monk’s Buddhist insights blend into the wordless nature, unifying the two —
+At the end of the day, however, none of these debate matters. It is Su Dongpo’s carefree spirit — “who cares that it’s difficult to be together”, “find peace in wherever one is placed” — that is the most touching.
+
+{{{!--[[
+{{=}}
+{{i = #box + 1}}
 {{box[i].title.zh=}}花月成双
-{{box[i].title.en=}}Flower-Moon Duet
+{{box[i].title.en=}}Duet of Flower and Moon
 {{box[i].artist.zh=}}三无Marblue/LS/夏安兰
 {{box[i].origlang=}}zh
 {{box[i].links=}}https://b23.tv/BV1rK4y1m7Px https://youtu.be/AGEUtj0meKo https://music.163.com/song?id=1831829639
 {{box[i].image=}}Flower-Moon.jpg
+{{box[i].imagealt.zh=}}歌曲封面。毛笔书写的“花月成双”四字，置于模糊月色的背景上，四周包围着淡粉色花朵。
+{{box[i].imagealt.en=}}Cover of the song. The Chinese title of the song written in brushstrokes on a background of blurred moonlit sky, surrounded by flowers of pale pink colour.
 {{box[i].cmt.zh=}}
-测试测试 2 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-测试测试 2 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
+“人间匆忙一趟　偶尔疏狂何妨”
+Bilibili 舞蹈嘉年华（BDF）2021 主题曲之一。
 {{box[i].cmt.en=}}Lorem ipsum 2
+]]}}}
 
 {{=}}
 {{i = #box + 1}}
@@ -38,13 +79,62 @@
 {{box[i].origlang=}}en
 {{box[i].links=}}https://youtu.be/kg1g_l5p8bk?t=909 https://soundcloud.com/pivot1/dream-of-orca?in=pivot1/sets/collecting-pieces
 {{box[i].image=}}Collecting-Pieces.jpg
+{{box[i].imagealt.zh=}}专辑封面。四位主角：猫、魔女、鸟、人类，坐在悬崖边的草地上，四周围着彩色的灌木丛、山脉、水草、云朵、鲸鱼。
+{{box[i].imagealt.en=}}Cover of the album. Four protagonists: a cat, a witch, a bird, and a human, sitting on a cliffside meadow surrounded by colourful bushes, mountains, aquatic plants, clouds, and whales.
 {{box[i].cmt.zh=}}
-测试测试 3 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-测试测试 3 测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试
-{{box[i].cmt.en=}}Lorem ipsum 3
+非常可爱的合成器风格音乐。它所在的专辑《Collecting Pieces》描绘的是“来自另一维度的四位伙伴的冒险”，10 首乐曲从初次相遇开始，讲述沿途遇见的奇妙景象，直至最后告别。半个小时的治愈系白日梦。
+{{box[i].cmt.en=}}
+Adorable music in synthesizer style. The album it’s on, <it Collecting Pieces>, depicts an “adventure of 4 friends from another dimension”, with 10 tracks that start with the first encounter and unfold the wonders they meet along the way, until the final goodbye. Half an hour of soothing daydreams.
+
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}独自旅行
+{{box[i].title.en=}}Solo Trip
+{{box[i].title.ja=}}ひとり旅
+{{box[i].artist.en=}}Sena Wataru / Sana
+{{box[i].artist.ja=}}瀬名航/鎖那
+{{box[i].origlang=}}ja
+{{box[i].links=}}https://youtu.be/tYcQ6BTvVQw https://open.spotify.com/track/4INFnKJnwU2KrPISp9j37H https://music.163.com/song?id=1311345944
+{{box[i].image=}}Solo-Trip.jpg
+{{box[i].imagealt.zh=}}歌曲动画中的画面。女孩背着包、脖子上挂着相机独自走在路上。由 Mitsuki Sanagi 绘制。
+{{box[i].imagealt.en=}}Image from the music animation. A girl walking alone on the street with a backpack and a camera. Illustrated by Mitsuki Sanagi.
+{{box[i].cmt.zh=}}
+要是有机会的话，确实想体验一次独自出去玩！
+!<blockquote <~~='
+<lang ja 私の知らない ない …… ない世界があるように><br>【正如有我所不知道的世界一样】
+<lang ja 君の知らない ない …… ない世界がきっとあるのでしょう><br>【也一定有你所不认识的世界吧】
+'>>
+随便臆测别人的经历、居高临下地施舍同情，或许是出于好意，但真的不是很需要啦——大家都是普通人而已嘛。说是旅行，其实何止旅行如此呢。
+{{box[i].cmt.en=}}
+I do want to experience a solo trip if I get the chance!
+!<blockquote <~~='
+<lang ja 私の知らない ない …… ない世界があるように><br>(Just as there are worlds I do not know)
+<lang ja 君の知らない ない …… ない世界がきっとあるのでしょう><br>(There must be worlds you do not know about as well)
+'>>
+It might be well-intentioned to make assumptions about other people’s experiences and offer condescending sympathy, but it’s really unnecessary - we’re all just people. This is not only about travelling; it’s more than that.
+
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}萤火虫未曾来过
+{{box[i].title.en=}}Fireflies Never Came
+{{box[i].title.ja=}}蛍はいなかった
+{{box[i].artist.zh=}}春卷饭
+{{box[i].artist.en=}}Harumaki Gohan
+{{box[i].artist.ja=}}はるまきごはん
+{{box[i].origlang=}}ja
+{{box[i].links=}}https://b23.tv/BV1z3411a7v2 https://youtu.be/gUGmed-NOow https://open.spotify.com/track/53d7Te0Vp1s4OcQ2W2vmW1 https://music.163.com/song?id=1913268085
+{{box[i].image=}}Fireflies-Never-Came.jpg
+{{box[i].imagealt.zh=}}歌曲封面。两位女孩相拥在一起，深绿的夜色被仿佛两人心中照出的黄色光亮划破。
+{{box[i].imagealt.en=}}Cover of the song. Two girls embracing each other, as if the deep green night was cut by a yellow light shining from their hearts.
+{{box[i].cmt.zh=}}
+Spica 或许只是假装不知道美影的情愫。或许她真的不知道，甚至没法知道；要是如此的话，对美影来说该有多难过——自己或许永远只是这个活泼女孩子的一名好朋友，接下来的一切仿佛都隔着一层厚厚的玻璃无法触及。身处玻璃背后的迷惘，大概要比失落更煎熬吧。合影中 Spica 靠在自己自己身上时，美影都在想些什么呢。
+Yuhi 真是神助攻，不过美影似乎并不愿向她坦诚。也是，Yuhi 确实未必能帮上多少吧。
+{{box[i].cmt.en=}}
+Spica might just be pretending not to know about Mikage’s sentiment. Or maybe she really didn’t know, or even couldn’t know; how sad it would be for Mikage if this is true — that she can only go on to be a good friend to this lively girl, and that everything beyond feel as if blocked by a thick layer of glass. The helplessness of being behind that glass was probably more painful than a loss. What is Mikage thinking about when Spica is leaning on her in the photo?
+Yuhi is a wonderful help, but Mikage seems reluctant to open up to her. Indeed, it might be true that Yuhi may not be able to help much.
 
 {{intro.zh=}}
 每十分钟随机抽取一首不同的乐曲。这是 {{ #box }} 首中的第 %index% 首。
 
 {{intro.en=}}
-test
+A different piece of music is randomly picked every ten minutes. Among all {{ #box }}, here is the piece numbered %index%.

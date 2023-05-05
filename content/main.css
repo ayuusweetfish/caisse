@@ -848,7 +848,7 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 .item-content p {
   text-indent: 2em;
 }
-.item-content > p *,
+.item-content p *,
 .item-content blockquote.note p,
 .item-content blockquote p *,
 .item-content div.image-container p {
