@@ -43,15 +43,15 @@ This is the story that Yorushika — or rather, Elma — tells in two albums.
 {{box[i].imagealt.en=}}Cover of the song. A portrait of the ancient Chinese poet Su Dongpo standing among the willow leaves, with the Chinese title of the song written in brushstrokes beside.
 {{box[i].cmt.zh=}}
 !<blockquote 役于物得失患　役于形不超然>
-苏东坡与佛印和尚的故事。知名的“狗啃河上骨”“水流东坡诗”句子就是两人之间的玩笑；当然二者交情之深远非一首歌、一段文字能说明。
+苏东坡与佛印和尚的故事。知名的“狗啃河上骨”“水流东坡诗”句子就是两人之间的玩笑；当然二者交情之深，远非一首歌、一段文字所能及。
 信息时代里待得久了，都开始觉得从前人与人的交情实在奇妙。苏东坡赴京赶考之后，也不知什么时候二人才能再次见面；和尚对于东坡而言成了虚幻的记忆与文字，于是所见的每一座青山似乎都有佛印和尚。见到真正的和尚，便仿佛与青山重叠，而和尚的佛性又好似无言的大自然一般，二者浑然一体——
 当然最后这些辩论都不重要。苏东坡“谁怕人生到处相逢难”、“所遇即安到处无牵绊”的洒脱，才是最触动人的吧。
 {{box[i].cmt.en=}}
 !<blockquote <~~='
 <lang zh 役于物得失患　役于形不超然><br>(Attachment to possessions accentuates vicissitudes)<br>(Attachment to appearances hinders contentment)
 '>>
-A story between the ancient Chinese poet Su Dongpo and the monk Fo-Yin. The famous pun lines “狗啃河上骨”, “水流东坡诗” — “Dog eating a bone on the river, water carrying a poem east of the slope”, which can also be interpreted as “dog eating the bones of the monk, water carrying the corpse of Dongpo” — are a joke between the two. Of course, the depth of their friendship goes far beyond a song or a paragraph of text.
-Immersed in the information age, one starts to be fascinated by people’s relationships in the past. After Su Dongpo went to the capital for his exam, it was not clear when they would meet again; for Dongpo, the monk became an unreal blur of memory and text, so every hill he saw seemed to have the monk in it. When he eventually meets the real Fo-Yin, the monk starts to overlap with the hills, and the monk’s Buddhist insights blend into the wordless nature, unifying the two —
+A story between the ancient Chinese poet Su Dongpo and the monk Fo-Yin. The famous pun lines “狗啃河上骨”, “水流东坡诗” — “Dog eating a bone on the river, water carrying a poem east of the slope”, which, based on the pronunciation, can also be interpreted as “dog eating the bones of the monk, water carrying the corpse of Dongpo” — are a joke between the two. Of course, the depth of their friendship goes far beyond a song or a paragraph of text.
+Immersed in the information age, one starts to be fascinated by people’s relationships in the past. After Su Dongpo went to the capital for his exam, it would no more be clear when they would meet again; for Dongpo, the monk became an unreal blur of memory and language, and then every hill he saw seemed to have the monk in it. Should he eventually meet the real Fo-Yin, the monk would start to overlap with the hills, with the monk’s Buddhist insights blending into the wordless nature, unifying the two —
 At the end of the day, however, none of these debates matter. It is Su Dongpo’s carefree spirit — “who cares that it’s difficult to be together”, “find peace in wherever one is placed” — that is the most touching.
 
 {{{!--[[
