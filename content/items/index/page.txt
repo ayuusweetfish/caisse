@@ -29,8 +29,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.07> <link flow/monsoon>>
   <li <date 2023.06> <link planetarium>>
-  <li <date 2023.05> <link flow/wantan>>
   <li <date 2023.05> <link gpt>，第六集：<link gpt/cross>>
   <li <date 2023.04> <link daydream>>
   <li <date 2023.03> <link candy>>
@@ -61,8 +61,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.07> <link flow/monsoon> (currently Chinese-only).>
   <li <date 2023.06> <link planetarium>.>
-  <li <date 2023.05> <link flow/wantan> (currently Chinese-only).>
   <li <date 2023.05> <link gpt>, episodes 6: <link gpt/cross>.>
   <li <date 2023.05> <link daydream> (updated with English version).>
   <li <date 2023.03> <link candy>.>
