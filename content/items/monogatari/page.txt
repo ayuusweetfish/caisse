@@ -1,0 +1,57 @@
+{{title.zh=}}你不知道的故事・打击乐六重奏
+{{intro.zh=}}动画《化物语》片尾曲打击乐改编
+{{title.en=}}The Story You Don’t Know — Percussion sextet
+{{intro.en=}}Ending theme of “Bakemonogatari”; adaptation for percussion sextet
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,47
+{{bannerimgalt.zh=}}简笔画绘制的贺卡放在花束里。
+{{bannerimgalt.en=}}A gift card with line art placed inside a bouquet.
+
+{{date=}}2023.05,2023.07
+
+{{contents.zh=}}
+学生艺术团军乐队 2023 年二队沙龙音乐会演出・打击声部小重奏节目！是动画片《化物语》片尾曲的改编。
+架子鼓部分参考了嶋崎雄斗的改编版本。
+
+<b 声部配置>
+!<list
+  <li ① 钟琴>
+  <li ② 颤音琴>
+  <li ③ 马林巴高音声部>
+  <li ④ 马林巴低音声部>
+  <li ⑤ 定音鼓>
+  <li ⑥ 爵士鼓>
+>
+!<filetable
+  <file Monogatari.pdf 总谱与分谱>
+  <file Monogatari.ogg 预览音频>
+  <file Monogatari.mscz MuseScore 文档>
+>
+
+大部分想说的都写在“流水帐”里啦——<link flow/wantan#029a 【体验卡】>、<link flow/monsoon#050 【不知道】>、<link flow/monsoon#058 【夏季大三角】>。
+!<img stars.png <= 简笔画，六位打击乐手站在夏季大三角的星空下，手持各不相同的槌。左上角写着“今晚去看星星吧”；下方写着“THUMB 二队打击”，2023 年 5 月 19 日。> syncdark>
+!<note 封面图来自乐队友人 nanako。>
+
+{{contents.en=}}
+Performance of the percussion ensemble on the 2023 juniors’ salon concert of the wind band of the university students’ art troupe. An adaptation of the ending theme of the animated series “Bakemonogatari”.
+Drumset part with reference to the arrangement by Shimazaki Yuto.
+
+<b Instrumentation>
+!<list
+  <li ①  glockenspiel>
+  <li ②  vibraphone>
+  <li ③  marimba (upper voice)>
+  <li ④  marimba (lower voice)>
+  <li ⑤  timpani>
+  <li ⑥  drumset>
+>
+!<filetable
+  <file Monogatari.pdf Full score and parts>
+  <file Monogatari.ogg Preview audio>
+  <file Monogatari.mscz MuseScore document>
+>
+
+Most of the words are in the “pieces of flowing time” — all of which is currently available in Chinese only.
+!<img stars.png <= Line art of six percussionists standing under a night sky with the Summer Triangle, each holding different sets of mallets. On the top-left corner is written the words “let’s go to see the stars tonight”, while on the bottom, “THUMB Percussionist Apprentices”, “2023.05.19”; all written in Chinese.> syncdark>
+!<note Cover image by nanako from the band.>
