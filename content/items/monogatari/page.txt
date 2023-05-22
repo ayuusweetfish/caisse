@@ -12,7 +12,7 @@
 
 {{contents.zh=}}
 学生艺术团军乐队 2023 年二队沙龙音乐会演出・打击声部小重奏节目！是动画片《化物语》片尾曲的改编。
-架子鼓部分参考了嶋崎雄斗的改编版本。
+爵士鼓部分参考了嶋崎雄斗的改编版本。
 
 <b 声部配置>
 !<list
@@ -30,8 +30,9 @@
 >
 
 大部分想说的都写在“流水帐”里啦——<link flow/wantan#029a 【体验卡】>、<link flow/monsoon#050 【不知道】>、<link flow/monsoon#058 【夏季大三角】>。
+!<img mallets.jpg <= 低角度侧视照片，黑色背景的舞台上，白色制服的乐队成员手持琴槌演奏。>>
 !<img stars.png <= 简笔画，六位打击乐手站在夏季大三角的星空下，手持各不相同的槌。左上角写着“今晚去看星星吧”；下方写着“THUMB 二队打击”，2023 年 5 月 19 日。> syncdark>
-!<note 封面图来自乐队友人 nanako。>
+!<note 封面图来自乐队友人 nanako；演出照片来自乐队友人洋芋。>
 
 {{contents.en=}}
 Performance of the percussion ensemble on the 2023 juniors’ salon concert of the wind band of the university students’ art troupe. An adaptation of the ending theme of the animated series “Bakemonogatari”.
@@ -53,5 +54,6 @@ Drumset part with reference to the arrangement by Shimazaki Yuto.
 >
 
 Most of the words are in the “pieces of flowing time” — all of which is currently available in Chinese only.
+!<img mallets.jpg <= Low-angle side view photograph. On a stage against a black background, band members in white uniforms holding mallets and playing.>>
 !<img stars.png <= Line art of six percussionists standing under a night sky with the Summer Triangle, each holding different sets of mallets. On the top-left corner is written the words “let’s go to see the stars tonight”, while on the bottom, “THUMB Percussionist Apprentices”, “2023.05.19”; all written in Chinese.> syncdark>
-!<note Cover image by nanako from the band.>
+!<note Cover image by the band member nanako. Performance photograph by the band member Yu.>
