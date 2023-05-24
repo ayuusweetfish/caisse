@@ -913,6 +913,7 @@ img.item-banner,
 }
 .item-content div.image-container img.square {
   inline-size: 25em;
+  max-inline-size: 100%;
   max-block-size: 25em;
 }
 .item-content div.image-container img.orig-size {
