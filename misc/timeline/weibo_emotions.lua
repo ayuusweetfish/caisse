@@ -50,6 +50,7 @@ local list = {
 ['鞭炮声声'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/7f/2023_firecrackers_org.png',
 ['抓狂'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/17/2018new_zhuakuang_org.png',
 ['浮云'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/61/2018new_yunduo_org.png',
+['馋嘴'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/fa/2018new_chanzui_org.png',
 }
 
 local download = select(1, ...) == 'download'
@@ -59,7 +60,7 @@ if download then os.execute('mkdir -p ' .. savepath) end
 for k, url in pairs(list) do
   local basename = url:match('[^/]+$')
   if download then
-    os.execute(string.format('wget %s -O %s/%s', url, savepath, basename))
+    os.execute(string.format('curl %s -o %s/%s', url, savepath, basename))
   end
   list[k] = basename
 end
