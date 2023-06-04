@@ -1,0 +1,79 @@
+{{title.zh=}}粉色泡沫
+{{intro.zh=}}网络暴力下个体的无力
+{{title.en=}}Pink Bubble
+{{intro.en=}}Impotence of individuals under cyberviolence
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,76
+{{bannerimgalt.zh=}}被泡泡形状的透明保护罩包围的粉色头发女孩，被外面的尖刺环绕。
+{{bannerimgalt.en=}}A pink-haired girl in a bubble-shaped translucent shield, surrounded by spikes outside.
+
+{{date=}}2023.04
+
+{{contents.zh=}}
+!<note 本页大部分内容目前<link ?lang=en 仅有英语版本>，汉译将在数日内上传。>
+
+!<note 课程《传媒研究》合作项目。>
+一个互动艺术装置，呈现网络暴力受害者依靠个人力量时遭遇的巨大困难。
+
+!<img floor-plan.jpg <= 装置结构的倾斜俯视图。> square>
+!<img rendering.jpg <= 计算机渲染的空间内场景与其中的观众。>>
+
+{{contents.en=}}
+!<note Collaborated project for the course “Communication Studies”.>
+An interactive art installation discussing the massive difficulties of individuals overcoming cyberviolence.
+
+!<hr>
+
+Self-help and social support is powerless when faced with cyberviolence.
+It’s almost always the same — we see a victim of cyberviolence, we get angry at those inhumane perpetrators, we mourn for the victim, and then we forget, burying all of it inside the endless sea of data. Whenever it happens, we do the same again and again, and finally — nothing changes. Ordinary netizens, especially women and girls, remain profoundly vulnerable in cyberspace.
+You may be the next victim. We all may.
+You may think that you, as a determined optimist with adequete social support, will stay strong and fight back. You may think you will scare the black dog away.
+This is, sadly, hard. A recent victim, Zheng Linghua, suffered from intense depression and committed suicide despite having faced life with optimism and received support from family, friends, and online supporters. All those, being almost the best of what you can have for recovery, had not been sufficient.
+— And all this started with a single innocent photo of her, with pink hair, sharing her joy with her grandfather by the sickbed after receiving an admission.
+Heartbroken at the seemingly unstoppable havoc, we designed this interactive installation to raise awareness to the situation that individuals face immense difficulties and are almost impotent under cyberviolence, calling for regulatory actions by moderators and governments to stop the harm.
+
+!<h1 Design Details #Design>
+
+The installation is implemented in an indoor space of around 15m × 5m.
+
+!<img floor-plan.jpg <= 3D floor plan of the installation.> square>
+!<img model.jpg <= A 1:50 physical model of the installation.>>
+
+The installation consists of a corridor, in which an animated video is projected onto the wall, and a glass-enclosed space in which a sculpture of a girl sits among spikes coming out from the walls, covered in a translucent shield around her. The shield and the spikes in this last part are both movable, controlled by a microcomputer.
+
+!<img rendering.jpg <= Computer-rendered scenes of the space and visitors inside.>>
+
+We carefully adjusted the architectural design so that visitors will be able to have a peek at the pink bubble at the very end directly from the outside.
+!<img floor-plan-analysis.jpg <= Illustrated analyses of the floor plan, including space design considerations and illustrations of the visitors’ routes.> square>
+
+Upon entry, the audience is first introduced to the background story through the animation. The animation depicts a girl in an open space walking into a dimmed mist, blending into the colour of the corridor itself. Through the corridor, spikes are placed on the walls, getting denser further into the space. At the end of the corridor, the audience is introduced to the sculpture of the girl, as well as a QR code projected onto a wall beside her. As the viewer scans the code with their smartphone, the interactive part activates, with the shield inflating, protecting the girl from the spikes. Each time a new viewer joins, the shield inflates a bit more, with a light spot projected onto it with a colour corresponding to the one shown on the user’s screen. However, the shield keeps collapsing so that it eventually breaks regardless of the number of participants. The device then resets, waiting for the next batch of visitors.
+
+!<h1 Interactive Prototype and Onsite Feedback #Onsite>
+We implemented an interactive prototype through 2D computer animations and proper networking techniques (WebSocket), and were greeted with overall positive feedback at an onsite presentation.
+!<img onsite.jpg <= A smartphone with a circular-shaped light spot; in the background is a large screen with an illustration of a girl surrounded by a bubble-shaped shield and spikes.>>
+A major setback was that the meaning of the light spots were not made clear. Some participants expressed confusion towards the circle shape on their screen, stating that it was not apparent what these actually stood for.
+
+The audience’s response to our design shows that there is still space for public discussion around the issue of cyberviolence, as it is still a major source of potential harm for ordinary netizens, and there are aspects of it (e.g. insufficiency of social support alone) that have not received the awareness they deserve.
+
+!<h1 Discussion and Future Work #Discussion>
+Through our design and demonstration process, we have confirmed the feasibility of implementing our design in an indoor exhibition. We have selected proper materials for the construction of the space as well as for all the decorative and interactive parts, and have demonstrated a set of working combination of logical rules and network technologies through our prototype.
+However, it is worth noting that the audience participating in our demonstration mainly consisted of university students and professors, who, albeit with varied backgrounds, may have similar viewpoints and understandings on certain social topics. We have not confirmed the appeal and the effect of the exhibition to a wider audience.
+We are still considering the possibilities for improvements to our design. We are concerned that viewers may not proceed due to a lack of motivation; hence, we are considering a redesign of the space to prevent the viewers from observing the ending in advance; alternatively, a double-route design allowing the viewers to attend the exhibition either from the interactions inside or spectate from the outside will provide the “unmotivated” viewer with another way to engage in the exhibition.
+
+To conclude this article, we would like to call on all of our audience to attend to the fact that cyberviolence needs intervention from entities with regulatory power, such as platform owners, moderators, governments, etc., and this should be continue to be pushed forward. And, despite this sorrowful fact that we as ordinary netizens might not be able to do much, by all means care for the victims you know. Your care will surely be a great comfort to those who are in need during the time before the ill-intentioned perpetrators get punished and the harmful atmosphere gradually dissipates. We all look forward to that day.
+
+!<h1 Try It #Try>
+To have a taste of the experience, open <link https://pink.ayu.land/kiosk/ the demonstration page> on the computer, and scan the code there with a smartphone. Ideally, invite friends around so that each of you may contribute your own light spot on the shield. Alternatively, open <link https://pink.ayu.land/ the participants’ page> in another browser window; you may open many instances of this page and see more light spots projected onto the shield.
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://pink.ayu.land/kiosk/ 互动演示>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://pink.ayu.land/kiosk/ Interactive demonstration>>
+>
+
+{{toc=}}true
