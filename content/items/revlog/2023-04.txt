@@ -1,0 +1,20 @@
+{{title.zh=}}23 巳月 —— 一晴方觉夏深
+{{title.en=}}23, Month of the Snake — After the Rain Unfolds Summer
+
+{{timestamp=}}2023.06.06.07
+
+{{contents.zh=}}
+甜筒的季节！
+!<list
+  <li <link flow/monsoon>，继续海量废话。>
+  <li 参与了两场演出！完成一首改编乐曲<link monogatari 《%》>，给队刊投稿<link stargazing 《%》>。>
+  <li 补上了之前的合作课程作业，互动艺术装置<link pink-bubble 《%》>。>
+>
+
+{{contents.en=}}
+The season for ice-creams!
+!<list
+  <li <link flow/monsoon>, continuing the flooding nonsense.>
+  <li Participated in two performances! Completed an adaptation piece <link monogatari> and submitted an article, <link stargazing>, to the band’s journal.>
+  <li Caught up with the previous collaborative coursework, the interactive art installation <link pink-bubble>.>
+>

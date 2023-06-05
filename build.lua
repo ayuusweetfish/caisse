@@ -919,7 +919,7 @@ registeritemmarkup('pebbles', 'pebbles', {
 })
 registeritemtempl('flow', 'flow', 'bannerlist.html')
 
-local revloglatest = 2023*12 + 3
+local revloglatest = 2023*12 + 4
 local revlogfirst = 2022*12 + 10
 registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
 for _, lang in ipairs({'zh', 'en'}) do

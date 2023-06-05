@@ -11,13 +11,35 @@
 {{date=}}2023.04
 
 {{contents.zh=}}
-!<note 本页大部分内容目前<link ?lang=en 仅有英语版本>，汉译将在数日内上传。>
-
+!<note 本页大部分内容目前<link ?lang=en 仅有英语版本>，汉译不完整，将尽快补全。>
 !<note 课程《传媒研究》合作项目。>
-一个互动艺术装置，呈现网络暴力受害者依靠个人力量时遭遇的巨大困难。
+一件互动艺术装置，呈现网络暴力受害者依靠个人力量所面对的巨大困难。
+
+!<hr>
+
+面对网络暴力，自救与社会支持都显得无力。
+事件的发展总是如此相似——我们目睹可怖的网络暴力，为惨无人道的加害者愤怒、为受害者同情，然后我们将一切埋在无尽的数据海洋中忘却。我们将这苍白的过程重复着一遍又一遍，最后事态却毫无转机。普通网民，尤其是女性，在网络空间中仍然十分危险。
+你或许就是下一个受害者。我们都可能是。
+你或许会想，自己是坚定的乐观主义者，有充足的社会支持，自己会坚强地反击；自己会把抑郁的黑犬吓走。
+可是这真的很困难。最近的一位受害者，郑灵华（鸡蛋姬），从来积极乐观地面对生活，也在网暴事件发生后接受诊疗，还得到了家人、朋友和网友的关心，却仍然深陷抑郁的泥潭直至放弃生命。这几乎是恢复期间的最好条件，却还是没能帮她渡过难关。
+——而这一切只是源于一张普普通通的照片，照片中粉色头发的她只是在病床前和爷爷分享收到录取通知书的喜悦。
+我们痛心于这一眼望不到头的灰暗混沌景象。我们设计了这个互动装置，旨在引导人们关注到网络暴力下个体力量的困顿无力，呼吁管理者和政府采取监管手段来消灭伤害。
+
+!<h1 设计细节 #Design>
+装置布置于大约 15 米 × 5 米的室内空间。
 
 !<img floor-plan.jpg <= 装置结构的倾斜俯视图。> square>
+!<img model.jpg <= 1:50 实体装置模型。>>
+
+装置包含一条走廊，走廊的墙壁上投影着一段动画视频；走廊的尽头是一个玻璃围成的封闭空间，其中摆放着一位女孩的雕塑，四周的墙壁上冒出许多尖刺，而女孩周围是一层半透明的保护罩——粉色气泡。保护罩和尖刺都可以移动，由一个微型计算机控制。
+
 !<img rendering.jpg <= 计算机渲染的空间内场景与其中的观众。>>
+
+我们精心调整了建筑的设计，使游客可以从装置外直接窥视到尽头的粉红色气泡。
+
+!<img floor-plan-analysis.jpg <= Illustrated analyses of the floor plan, including space design considerations and illustrations of the visitors’ routes.> square>
+
+!<note 施工中~ 待续>
 
 {{contents.en=}}
 !<note Collaborated project for the course “Communication Studies”.>
@@ -26,7 +48,7 @@ An interactive art installation discussing the massive difficulties of individua
 !<hr>
 
 Self-help and social support is powerless when faced with cyberviolence.
-It’s almost always the same — we see a victim of cyberviolence, we get angry at those inhumane perpetrators, we mourn for the victim, and then we forget, burying all of it inside the endless sea of data. Whenever it happens, we do the same again and again, and finally — nothing changes. Ordinary netizens, especially women and girls, remain profoundly vulnerable in cyberspace.
+It’s almost always the same — we see a frightening instance of cyberviolence, we get angry at those inhumane perpetrators, we mourn for the victim, and then we forget, burying all of it inside the endless sea of data. Whenever it happens, we do the same again and again, and finally — nothing changes. Ordinary netizens, especially women and girls, remain profoundly vulnerable in cyberspace.
 You may be the next victim. We all may.
 You may think that you, as a determined optimist with adequete social support, will stay strong and fight back. You may think you will scare the black dog away.
 This is, sadly, hard. A recent victim, Zheng Linghua, suffered from intense depression and committed suicide despite having faced life with optimism, undergone proper medical treatment, and received care from family, friends, and online supporters. All those, being almost the best of what you can have for recovery, had not been successful in helping her overcome the pain.
@@ -40,7 +62,7 @@ The installation is implemented in an indoor space of around 15m × 5m.
 !<img floor-plan.jpg <= 3D floor plan of the installation.> square>
 !<img model.jpg <= A 1:50 physical model of the installation.>>
 
-The installation consists of a corridor, in which an animated video is projected onto the wall, and a glass-enclosed space in which a sculpture of a girl sits among spikes coming out from the walls, covered in a translucent shield around her. The shield and the spikes in this last part are both movable, controlled by a microcomputer.
+The installation consists of a corridor, in which an animated video is projected onto the wall, and a glass-enclosed space in which a sculpture of a girl sits among spikes coming out from the walls, covered in a translucent shield — the pink bubble — around her. The shield and the spikes in this last part are both movable, controlled by a microcomputer.
 
 !<img rendering.jpg <= Computer-rendered scenes of the space and visitors inside.>>
 
