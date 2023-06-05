@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4537	document
+categories.txt	4562	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -590,6 +590,7 @@ items/revlog/2022-12.txt	1789	document
 items/revlog/2023-01.txt	930	document
 items/revlog/2023-02.txt	2161	document
 items/revlog/2023-03.txt	1510	document
+items/revlog/2023-04.txt	855	document
 items/revlog/atom.xml	1374	unknown
 items/revlog/rss.xml	1236	unknown
 items/rose/Wild_Rose.mscz	24282	score
