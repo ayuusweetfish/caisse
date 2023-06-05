@@ -54,7 +54,7 @@ We intend that the light spots stand for the social support from individuals aro
 !<h1 Interactive Prototype and Onsite Feedback #Onsite>
 We implemented an interactive prototype through 2D computer animations and proper networking techniques (WebSocket), and were greeted with overall positive feedback at an onsite presentation.
 !<img onsite.jpg <= A smartphone with a circular-shaped light spot; in the background is a large screen with an illustration of a girl surrounded by a bubble-shaped shield and spikes.>>
-A major setback was that the meaning of the light spots were not made clear. Some participants expressed confusion towards the circle shape on their screen, stating that it was not apparent what these actually stood for.
+A major setback was that the meaning of the light spots was not made clear. Some participants expressed confusion towards the circle shape on their screen, stating that it was not apparent what these actually stood for.
 
 The audience’s affirmative response to our design confirms that there is still space for public discussion around the issue of cyberviolence, as it is still a major source of potential harm for ordinary netizens, and there are aspects of it (e.g. insufficiency of social support alone) that have not received the awareness they deserve.
 
