@@ -29,10 +29,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.08> <link flow/monsoon>，完结撒花～>
   <li <date 2023.08> <link stargazing>>
   <li <date 2023.08> <link pink-bubble>（目前仅英语）>
   <li <date 2023.07> <link monogatari>>
-  <li <date 2023.07> <link flow/monsoon>>
   <li <date 2023.06> <link planetarium>>
 >
 
@@ -61,10 +61,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.08> <link flow/monsoon> concludes! (currently Chinese-only).>
   <li <date 2023.08> <link stargazing> (currently Chinese-only).>
   <li <date 2023.08> <link pink-bubble>.>
   <li <date 2023.07> <link monogatari>.>
-  <li <date 2023.07> <link flow/monsoon> (currently Chinese-only).>
   <li <date 2023.06> <link planetarium>.>
 >
 
