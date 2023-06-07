@@ -11,7 +11,6 @@
 {{date=}}2023.04
 
 {{contents.zh=}}
-!<note 本页大部分内容目前<link ?lang=en 仅有英语版本>，汉译不完整，将尽快补全。>
 !<note 课程《传媒研究》合作项目。>
 一件互动艺术装置，呈现网络暴力受害者依靠个人力量所面对的巨大困难。
 
@@ -32,6 +31,7 @@
 !<img model.jpg <= 1:50 实体装置模型。>>
 
 装置包含一条走廊，走廊的墙壁上投影着一段动画视频；走廊的尽头是一个玻璃围成的封闭空间，其中摆放着一位女孩的雕塑，四周的墙壁上冒出许多尖刺，而女孩周围是一层半透明的保护罩——粉色气泡。保护罩和尖刺都可以移动，由一个微型计算机控制。
+我们选择的墙壁材料是聚碳酸酯（PC）。墙上的尖刺由橡胶制成，玻璃空间内的尖刺为金属材质。气泡保护罩以 LED 全息投影风扇显示。
 
 !<img rendering.jpg <= 计算机渲染的空间内场景与其中的观众。>>
 
@@ -39,7 +39,24 @@
 
 !<img floor-plan-analysis.jpg <= Illustrated analyses of the floor plan, including space design considerations and illustrations of the visitors’ routes.> square>
 
-!<note 施工中~ 待续>
+进入展览空间，观众首先观看墙上的背景故事动画。动画展现一个女孩从开阔的空间走向一片昏暗的迷雾，与走廊原本的颜色融为一体。走廊里到处布置着尖刺，随着进入的距离越来越深，尖刺也越来越密集。
+在走廊尽头，观众看到这座女孩雕塑，以及投影在其侧的一个二维码。当观众用智能手机扫描二维码，互动装置便被激活，保护罩膨胀起来，如同保护女孩不受尖刺伤害。随着每位新访客的加入，保护罩都变得更大一些，且会有一个光斑投射其上，光斑颜色与访客手机屏幕上的图案颜色一致。然而，保护罩会一直不断坍缩，无论有多少观众加入，保护罩最终都会破碎。接着装置复位，灯光暗下，等待下一批游客的到来。
+我们意在让这些光斑代表来自受害者周围人的社会支持，而保护罩必然的破碎则揭示这样的支持往往并不足以帮助受害者最终走出伤痛。
+
+!<h1 互动原型与现场反馈 #Onsite>
+我们借助二维计算机动画与合适的网络技术（WebSocket）实现了一个互动原型，并在一场现场展示中得到总体积极的反馈。
+!<img onsite.jpg <= 智能手机，屏幕上显示出一个圆形光斑；背景是一块大屏幕，上面绘制着女孩的图像，周围是一个泡泡状的保护罩与许多尖刺。>>
+暴露出的主要问题之一是光斑的含义并不明晰。部分观众对屏幕上的圆形图案表示困惑，不理解其具体含义。
+不过，观众给予这项设计的认同，证实网络暴力问题仍值得在公共话语空间中进一步讨论，因为这仍然是普通网民的一大潜在威胁，且人们尚未充分认识到问题的更多不同方面（如社会支持的无力）。
+
+!<h1 讨论与未来工作 #Discussion>
+在设计与演示的过程中，我们得以确认这项设计在室内展览中得到实现的可能性。我们为建筑空间与所有的装饰、互动元素都选择了合适的材料，并借助互动原型演示了一套逻辑规则与网络技术的有效组合。
+然而值得注意的是，原型演示现场的观众主要是大学生和大学教授，尽管他们来自多样的背景，却在部分社会话题上有相似的视角与解读。我们尚未确认这项展览是否可以引起更广泛受众的兴趣。
+我们也仍在考虑改进的可能性。一个担忧是观众可能因提前得知结果、缺乏动力而不参与互动。因此，我们认为或可重新设计空间结构，以避免观众预知结果；或者也可以允许观众在两种路线中作出选择，若不在装置内部参与互动，也仍可以从外部观察，这样便能为“失去动力”的观众提供另一种观展途径。
+在这篇文章的末尾，我们希望呼吁所有的读者关注这样的现实：预防网络暴力，离不开具有监管权力的实体介入，如平台方、管理员、政府等，这应当不断推进。同时，尽管我们作为普通网民做不到太多，伤心之余也可以通过各种方式关心自己看见的受害者。在居心不良的肇事者受到惩罚、有毒的气氛逐渐消散之前，这样的关怀一定会为需要帮助的人带来极大的安慰。我们都期待着这样美好的一天能早日到来。
+
+!<h1 体验 #Try>
+在计算机上打开<link https://pink.ayu.land/kiosk/ 演示页面>，并用智能手机扫描其上的二维码，即可进入互动体验。可以邀请周围的伙伴，每个人都可以在泡泡上映出自己的光斑。或者，也可以在另一个浏览器窗口中打开<link https://pink.ayu.land/ 观众页面>；甚至可以打开许多份，观看泡泡上产生更多的光斑。
 
 {{contents.en=}}
 !<note Collaborated project for the course “Communication Studies”.>
@@ -63,19 +80,20 @@ The installation is implemented in an indoor space of around 15m × 5m.
 !<img model.jpg <= A 1:50 physical model of the installation.>>
 
 The installation consists of a corridor, in which an animated video is projected onto the wall, and a glass-enclosed space in which a sculpture of a girl sits among spikes coming out from the walls, covered in a translucent shield — the pink bubble — around her. The shield and the spikes in this last part are both movable, controlled by a microcomputer.
+The material we selected for the walls is polycarbonate (PC). Spikes on the walls are made of rubber while the ones inside the glass are metallic. The bubble shield is projected with an LED hologram fan.
 
 !<img rendering.jpg <= Computer-rendered scenes of the space and visitors inside.>>
 
 We carefully adjusted the architectural design so that visitors will be able to have a peek at the pink bubble at the very end directly from the outside.
 !<img floor-plan-analysis.jpg <= Illustrated analyses of the floor plan, including space design considerations and illustrations of the visitors’ routes.> square>
 
-Upon entry, the audience is first introduced to the background story through the animation. The animation depicts a girl in an open space walking into a dimmed mist, blending into the colour of the corridor itself. Through the corridor, spikes are placed on the walls, getting denser further into the space.
-At the end of the corridor, the audience is introduced to the sculpture of the girl, as well as a QR code projected onto a wall beside her. As the viewer scans the code with their smartphone, the interactive part activates, with the shield inflating, protecting the girl from the spikes. Each time a new viewer joins, the shield inflates a bit more, with a light spot projected onto it with a colour corresponding to the one shown on the user’s screen. However, the shield keeps collapsing so that it eventually breaks regardless of the number of participants. The device then resets, waiting for the next batch of visitors.
+Upon entry, the audience is first introduced to the background story through the animation. The animation depicts a girl in an open space walking into a dimmed mist, blending into the colour of the corridor itself. Throughout the corridor, spikes are placed on the walls, getting denser further into the space.
+At the end of the corridor, the audience is introduced to the sculpture of the girl, as well as a QR code projected onto a wall beside her. As the viewer scans the code with their smartphone, the interactive part activates, with the shield inflating, apparently protecting the girl from the spikes. Each time a new viewer joins, the shield inflates a bit more, with a light spot projected onto it with a colour corresponding to the one shown on the viewer’s screen. However, the shield keeps collapsing so that it eventually breaks regardless of the number of participants. The device then resets, the lights dimming, waiting for the next batch of visitors.
 We intend that the light spots stand for the social support from individuals around the victim, and through the inevitable breakdown, intend to reveal the reality that such support alone is often not enough for a victim to get over the harm.
 
 !<h1 Interactive Prototype and Onsite Feedback #Onsite>
 We implemented an interactive prototype through 2D computer animations and proper networking techniques (WebSocket), and were greeted with overall positive feedback at an onsite presentation.
-!<img onsite.jpg <= A smartphone with a circular-shaped light spot; in the background is a large screen with an illustration of a girl surrounded by a bubble-shaped shield and spikes.>>
+!<img onsite.jpg <= A smartphone with a circular-shaped light spot depicted on the screen; in the background is a large screen with an illustration of a girl surrounded by a bubble-shaped shield and spikes.>>
 A major setback was that the meaning of the light spots was not made clear. Some participants expressed confusion towards the circle shape on their screen, stating that it was not apparent what these actually stood for.
 
 The audience’s affirmative response to our design confirms that there is still space for public discussion around the issue of cyberviolence, as it is still a major source of potential harm for ordinary netizens, and there are aspects of it (e.g. insufficiency of social support alone) that have not received the awareness they deserve.
@@ -83,9 +101,9 @@ The audience’s affirmative response to our design confirms that there is still
 !<h1 Discussion and Future Work #Discussion>
 Through our design and demonstration process, we have confirmed the feasibility of implementing our design in an indoor exhibition. We have selected proper materials for the construction of the space as well as for all the decorative and interactive parts, and have demonstrated a set of working combination of logical rules and network technologies through our prototype.
 However, it is worth noting that the audience participating in our demonstration mainly consisted of university students and professors, who, albeit with varied backgrounds, may have similar viewpoints and understandings on certain social topics. We have not confirmed the appeal and the effect of the exhibition to a wider audience.
-We are still considering the possibilities for improvements to our design. We are concerned that viewers may not proceed due to a lack of motivation; hence, we are considering a redesign of the space to prevent the viewers from observing the ending in advance; alternatively, a double-route design allowing the viewers to attend the exhibition either from the interactions inside or spectate from the outside will provide the “unmotivated” viewer with another way to engage in the exhibition.
+We are still considering the possibilities for improvements to our design. We are concerned that viewers who anticipate the ending may not proceed due to a lack of motivation. Hence, we are considering a redesign of the space to prevent the viewers from observing the ending in advance; alternatively, a double-route design allowing the viewers to attend the exhibition either from the interactions inside or spectate from the outside will provide the “unmotivated” viewer with another way to engage in the exhibition.
 
-To conclude this article, we would like to call on all of our audience to attend to the fact that cyberviolence needs further intervention from entities with regulatory power, such as platform owners, moderators, governments, etc., and this should be continue to be pushed forward. And, despite this sorrowful fact that we as ordinary netizens might not be able to do much, by all means care for the victims you know. Your care will surely be a great comfort to those who are in need during the time before the ill-intentioned perpetrators get punished and the harmful atmosphere gradually dissipates. We all look forward to that day.
+To conclude this article, we would like to call on all of our audience to attend to the reality that cyberviolence needs further intervention from entities with regulatory power, such as platform owners, moderators, governments, etc., and this should be continue to be pushed forward. And, despite this sorrowful fact that we as ordinary netizens might not be able to do much, by all means care for the victims you know. Your care will surely be a great comfort to those who are in need during the time before the ill-intentioned perpetrators get punished and the harmful atmosphere gradually dissipates. We all look forward to that day of freshness.
 
 !<h1 Try It #Try>
 To have a taste of the experience, open <link https://pink.ayu.land/kiosk/ the demonstration page> on the computer, and scan the code there with a smartphone. Ideally, invite friends around so that each of you may contribute your own light spot on the shield. Alternatively, open <link https://pink.ayu.land/ the participants’ page> in another browser window; you may open many instances of this page and see more light spots projected onto the shield.
@@ -93,11 +111,13 @@ To have a taste of the experience, open <link https://pink.ayu.land/kiosk/ the d
 {{rellinks.zh=}}
 !<list
   <li <link https://pink.ayu.land/kiosk/ 互动演示>>
+  <li <link https://github.com/ayuusweetfish/Pink-Bubble 程序仓库（GitHub）>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link https://pink.ayu.land/kiosk/ Interactive demonstration>>
+  <li <link https://github.com/ayuusweetfish/Pink-Bubble Source repository (GitHub)>>
 >
 
 {{toc=}}true
