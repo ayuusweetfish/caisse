@@ -30,8 +30,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 !<h1 最近更新>
 !<list
   <li <date 2023.08> <link flow/monsoon>，完结撒花～>
+  <li <date 2023.08> <link pink-bubble>（汉译已上传～）>
   <li <date 2023.08> <link stargazing>>
-  <li <date 2023.08> <link pink-bubble>（目前仅英语）>
   <li <date 2023.07> <link monogatari>>
   <li <date 2023.06> <link planetarium>>
 >
