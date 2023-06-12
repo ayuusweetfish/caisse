@@ -7,6 +7,7 @@ local sitename = function (link)
   if link:find('youtu.be', 1, true) then return 'YouTube'
   elseif link:find('spotify.com', 1, true) then return 'Spotify'
   elseif link:find('soundcloud.com', 1, true) then return 'SoundCloud'
+  elseif link:find('bandcamp.com', 1, true) then return 'Bandcamp'
   elseif link:find('music.163.com', 1, true) then return {zh = '网易云', en = 'NetEase'}
   elseif link:find('b23.tv', 1, true) then return {zh = '哔哩哔哩', en = 'Bilibili'}
   else return {zh = '链接', en = 'Link'} end
@@ -42,7 +43,7 @@ end
 ----
 {{i = 0}}
 {{@ box }}
-{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{imagealt}}	{{title}}	{{lang == origlang and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)):gsub('\n', '') }}
+{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{imagealt}}	{{title}}	{{title[origlang] == title[lang] and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)):gsub('\n', '') }}
 {{@ end }}
 -->
 </section>

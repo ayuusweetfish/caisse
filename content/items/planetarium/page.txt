@@ -133,6 +133,95 @@ Yuhi 真是神助攻，不过美影似乎并不愿向她坦诚。也是，Yuhi �
 Spica might just be pretending not to know about Mikage’s sentiment. Or maybe she really didn’t know, or even couldn’t know; how sad it would be for Mikage if this is true — that she can only go on to be a good friend to this lively girl, and that everything beyond feel as if blocked by a thick layer of glass. The helplessness of being behind that glass was probably more painful than a loss. What is Mikage thinking about when Spica is leaning on her in the photo?
 Yuhi is a wonderful help, but Mikage seems reluctant to open up to her. Indeed, it might be true that Yuhi may not be able to help much.
 
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}造梦者
+{{box[i].title.en=}}Dream Makers
+{{box[i].title.ja=}}Dream Makers
+{{box[i].artist.en=}}A-Hi-Cha
+{{box[i].artist.ja=}}ああ…翡翠茶漬け…
+{{box[i].origlang=}}ja
+{{box[i].links=}}https://ahicha.bandcamp.com/track/dream-makers https://music.163.com/song?id=1364977558
+{{box[i].image=}}Dream-Makers.jpg
+{{box[i].imagealt.zh=}}专辑封面。彩色的背景上，三个小动物卡通角色各自拿着蜡笔，周围围绕着音符、星星、火箭、食物等小元素。右下角是专辑名称“Dream Makers”。
+{{box[i].imagealt.en=}}Cover of the album. On a colourful background, three cartoon characters with animal-like appearances each holds a crayon, surrounded by little elements including notes, stars, a rocket, and food. In the bottom-right corner is the album’s title, “Dream Makers”.
+{{box[i].cmt.zh=}}
+哎哟翡翠茶泡饭（<lang ja ああ…翡翠茶漬け…>，A-Hi-Cha）是由三位音乐作者组成的团体，有许多作品被音乐节奏类游戏收录。三人之间也会两两成组，再加上独立创作，一共有七种署名方式，仿佛让人在每张专辑里都能看到一个热闹而欢乐的场面——三只福瑞各自合作，忙忙碌碌制造美梦的情景，谁看了不大呼可爱呢！
+《Dream Makers》是同名专辑里的彩蛋乐曲，也是专辑中唯一一首全体成员合作完成的作品。变化多端的风格里混合着三人各自的鲜明特色：AAAA（<lang ja ああああ>）擅长富于叙事与交响性的旋律与和声，Isuka（<lang ja 翡乃イスカ>）常常融入电子舞曲的音色与编配风格，而茶泡饭（<lang ja 梅干茶漬け>）则更接近流行乐曲与复古游戏配乐式的“正统”芯片音乐——每个段落似乎都依稀可辨是哪几位躲在背后拨弄着叮叮当当的声音，有时大家甚至各自大张旗鼓地塞进自己以前作品的旋律音效，宛如一场灵动俏皮的舞台演出。
+《Dream Makers》或许不是最适合节奏游戏的乐曲，却全然将创作者与幻想世界的故事演绎得淋漓尽致。这大概也是它成为彩蛋曲的原因吧。
+{{box[i].cmt.en=}}
+Ah… Hisui Chazuke… (<lang ja ああ…翡翠茶漬け…>, A-Hi-Cha) is a group of three music producers who have had many of their works featured in music and rhythm games. The trio also collaborate in pairs, along with individual compositions, resulting in a total of seven different ways they sign their works, which seem to be depicting a lively and joyful scene in each album — the three furries working together, bustling around, creating dreamlike scenarios. Who can resist exclaiming their cuteness?
+In the eponymous album, <it Dream Makers> is a bonus track and is the only one on which all members collaborated. The varied style blends the distinctive characters of each member: AAAA (<lang ja ああああ>) specialises in melodies and harmony with narrative and symphonic elements, Isuka (<lang ja 翡乃イスカ>) incorporates timbres and arrangements from electronic dance music, while Chazuke (<lang ja 梅干茶漬け>) leans towards “orthodox” chiptune in pop and retro videogame style. Each section tends to vaguely reveal who is behind the playful tinkling sounds, sometimes even with melodies and sounds from their past works tucked in, as if a vibrant and mischievous stage show is going on.
+<it Dream Makers> might not be the most suitable track for a rhythm game, but brings the stories of creators and fantasies to life in such a vivid way. Perhaps that’s why it has become the bonus track.
+
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}星 空 扭 蛋 机
+{{box[i].title.en=}}Starry Gacha Machine
+{{box[i].artist.zh=}}中下游
+{{box[i].artist.en=}}Blaine Zhou
+{{box[i].origlang=}}zh
+{{box[i].links=}}https://music.163.com/song?id=1451681697
+{{box[i].image=}}Starry-Gacha.jpg
+{{box[i].imagealt.zh=}}乐曲封面插图。一个装满星星与弯月的扭蛋机。
+{{box[i].imagealt.en=}}Cover illustraton of the track. A gacha machine full of stars and crescent moons.
+{{box[i].cmt.zh=}}
+咸鱼中下游是一位插画师，但无论是绘画还是音乐都并非专业出身，只是依靠热爱与坚持实现自己的梦想。中下游老师制作了高质量的公开课，并且用收入捐赠过希望小学。
+最简单的乐器也可以拼凑成可爱动听的音乐，最基础的知识其实就足够支撑起创作表达的冲动。千万别被别人的复杂作品吓到啦。
+{{box[i].cmt.en=}}
+Blaine Zhou is an illustrator, but does not come from a professional background in either painting or music and instead realizes these dreams through passion and perseverance. Blaine has published high-quality open lectures and have donated part of the income to Project Hope.
+The simplest instruments can be pieced together into lovely, sweet music, and the most basic knowledge can be enough to support the urge to create and express. Never be indimidated by the complexity of others’ work~
+
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}序章。
+{{box[i].title.en=}}Prologue.
+{{box[i].title.ja=}}序章。
+{{box[i].artist.zh=}}Yuika
+{{box[i].artist.en=}}Yuika
+{{box[i].artist.ja=}}『ユイカ』
+{{box[i].origlang=}}ja
+{{box[i].links=}}https://open.spotify.com/track/7hVUQFoaciShZajNRaxBz9 https://music.163.com/song?id=2026479587 https://youtu.be/V3ie_Nbj3d8
+{{box[i].image=}}Prologue.jpg
+{{box[i].imagealt.zh=}}歌曲封面插画。中学教室里的学生聚在一起合影，脸上洋溢着笑容。t手写字体的标题“序章”重叠在图画右下角。
+{{box[i].imagealt.en=}}Cover illustration of the song. Students in a high school classroom gathering for group photos, with smiles brimming on their faces. Handwritten title, “Prologue”, overlays in the bottom-right corner.
+{{box[i].cmt.zh=}}
+高中生创作歌手 Yuika 在毕业时创作的歌曲。
+当她宣布自己如愿考上第一志愿大学的喜讯时这么说道：
+!<blockquoteby <link https://twitter.com/yuika_singuitar/status/1630556022741032960 Yuika 的 Twitter>
+<~~='
+<lang ja これからは皆さまを応援する立場としてより一層本格的に音楽活動をしていけたらと思っております.ᐟ.ᐟ.ᐟ><br>【从今以后，希望能作为大家的支持者，更加认真地参与音乐活动！】
+'>
+>
+“作为大家的支持者”——能成为这样的音乐人一定也会很幸福吧！
+{{box[i].cmt.en=}}
+A song composed by the high school singer-songwriter Yuika on her graduation.
+When announcing the good news that she had been admitted into her first choice university, she said:
+!<blockquoteby <link https://twitter.com/yuika_singuitar/status/1630556022741032960 Yuika’s Twitter>
+<~~='
+<lang ja これからは皆さまを応援する立場としてより一層本格的に音楽活動をしていけたらと思っております.ᐟ.ᐟ.ᐟ><br>(From now on, in the position to support all of you, I hope to engage in music activities more seriously!)
+'>
+>
+To be “in the position to support all” — it must be happy and fulfilling to be able to become such a musician!
+
+{{{!--[[
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}
+{{box[i].title.en=}}
+{{box[i].title.ja=}}
+{{box[i].artist.zh=}}
+{{box[i].artist.en=}}
+{{box[i].artist.ja=}}
+{{box[i].origlang=}}zh
+{{box[i].links=}}
+{{box[i].image=}}
+{{box[i].imagealt.zh=}}歌曲封面。
+{{box[i].imagealt.en=}}Cover of the song.
+{{box[i].cmt.zh=}}
+{{box[i].cmt.en=}}
+]]}}}
+
 {{intro.zh=}}
 每十分钟随机选取一首不同的乐曲。这是 {{ #box }} 首中的第 %index% 首。
 
