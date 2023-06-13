@@ -130,7 +130,7 @@ cats.potpourri.pagelist = {
 ]]
 }
 cats.pebbles.pagelist = {
-  {name = 'fledgling'},
+  -- {name = 'fledgling'},
   {name = 'solo-boot'},
   {name = 'yukisora'},
   {name = 'ne-er-do-well'},
