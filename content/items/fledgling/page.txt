@@ -32,16 +32,27 @@ ffmpeg \
 
 {{contents.zh=}}
 《小菜鸡 Go》是由“猫猫们拍了拍汇编”小组自主研发的一款全新音乐/节奏类游戏。游戏运行在一个被称作“树莓派”的单片机，你将扮演一只名为“小菜鸡”的鸟儿，在头鸟的引领下与周围的鸟群一同在云层间起舞。
+!<img Fledgling-Go.jpg <= 游戏截图。粉色天空、彩色云朵背景下，一只橙色小鸟随着鸟群飞行，追随前方小鸟留下的羽毛。>>
 !<filetable
   <file Fledgling_Go_RPi.mp4 现场录像>
 >
 程序仓库中有<link https://github.com/ayuusweetfish/Fledgling-Go/releases/tag/exe-publish 可执行程序与游玩说明>。录像中的试键器由室友友情赞助，在此鸣谢。
 !<hr>
 课程作业的说明是“用汇编语言实现一个你觉得最棒的应用程序”。我们一致认为，最棒的应用程序是音游！于是这个代号“in you”（音游）的项目应运而生，当然我们有时也叫它“fly bitch”。游戏的设计受到《节奏天国》的启发，大部分图画、声音、程序逻辑都由小组成员制作。
+!<img In-You.jpg <= 橙色的小鸟在一群蓝色小鸟中间飞行，背景是彩虹色上悬浮的“IN YOU”字样的云朵。>>
 游戏程序逻辑由 ARMv6 汇编语言编写。我们搭建了一个简单的单任务操作系统环境，在树莓派（<lang en Raspberry Pi Zero>）单片机上运行，也可以在桌面计算机上使用模拟器调试。树莓派版本直接运行在裸机上，不依托复杂的桌面操作系统，且可以直接在存储卡上替换游戏程序，四舍五入手搓了一台掌机（点头）。
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>.>
+<it Fledgling Go> is a music/rhythm game developed by the team “Cats Nudged the Assembler”. The game runs on a single-board computer called the Raspberry Pi. You play as the bird named “the fledgling”, dancing with the flock among the clouds following the leading bird.
+!<img Fledgling-Go.jpg <= Game screenshot. Against a background of colourful clouds on a pink sky, an orange bird flies among a flock of birds, following the feathers left by the leading bird.>>
+!<filetable
+  <file Fledgling_Go_RPi.mp4 Video footage>
+>
+<link https://github.com/ayuusweetfish/Fledgling-Go/releases/tag/exe-publish Executable programs and playing instructions> can be found in the source repository. Gratitude goes to the roommate who kindly sponsored the keycap tester in the video.
+!<hr>
+The instructions for the coursework were to “implement in assembly language an application that you think will be the best.” We reached the concensus that the best application would be a music game! It resulted in this project codenamed “in you” (pronounced similar to “music game” in Chinese), or “fly bitch” as we sometimes call it. The design of the game was inspired by <it Rhythm Heaven>, but most of the graphics, sounds, and program logic were created by the team.
+!<img In-You.jpg <= An orange bird flying among a group of blue birds. The background is rainbow-coloured, with clouds in the shape of the words “IN YOU”.>>
+The game logic is written in ARMv6 assembly. We built a simple single-tasking operating system environment that runs the Raspberry Pi Zero single board computer and also supports development on desktop computers with an emulator. The Raspberry Pi version runs directly on bare metal without depending on a complex desktop OS, and games can be swapped by simply copying files on the SD card. Rounding up, we have made our own handheld gaming console (indeed).
 
 {{rellinks.zh=}}
 !<list
