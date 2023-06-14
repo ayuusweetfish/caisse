@@ -3,10 +3,52 @@
 
 {{date=}}2020.16,2020.22
 
+{{*--[[
+ffmpeg \
+    -to 3.5 -i $VIDEO \
+    -ss 14 -to 39.5 -i $VIDEO \
+    -ss 98.5 -to 128.5 -i $VIDEO \
+    -ss 160 -to 175 -i $VIDEO \
+  -filter_complex '
+[0:v]scale=960x540[v0x];
+[1:v]scale=960x540[v1x];
+[2:v]scale=960x540[v2x];
+[3:v]scale=960x540[v3x];
+
+[v0x][v1x]xfade=offset=3:duration=0.5[vxf1];
+[vxf1][v2x]xfade=offset=28:duration=0.5[vxf2];
+[vxf2][v3x]xfade=offset=57.5:duration=0.5[vout];
+
+[0:a]volume=6dB[a0x];
+[1:a]volume=24dB[a1x];
+[2:a]volume=24dB[a2x];
+[3:a]volume=24dB[a3x];
+[a0x][a1x]acrossfade=d=0.5:curve1=tri:curve2=tri[axf1];
+[axf1][a2x]acrossfade=d=0.5:curve1=tri:curve2=tri[axf2];
+[axf2][a3x]acrossfade=d=0.5:curve1=tri:curve2=tri[aout];
+' \
+  -map '[vout]' -map '[aout]' -pix_fmt yuv420p -r 30 -crf 29 -b:a 80k Fledgling_Go_RPi.mp4
+]]}}
+
 {{contents.zh=}}
 《小菜鸡 Go》是由“猫猫们拍了拍汇编”小组自主研发的一款全新音乐/节奏类游戏。游戏运行在一个被称作“树莓派”的单片机，你将扮演一只名为“小菜鸡”的鸟儿，在头鸟的引领下与周围的鸟群一同在云层间起舞。
+!<filetable
+  <file Fledgling_Go_RPi.mp4 现场录像>
+>
+程序仓库中有<link https://github.com/ayuusweetfish/Fledgling-Go/releases/tag/exe-publish 可执行程序与游玩说明>。录像中的试键器由室友友情赞助，在此鸣谢。
 !<hr>
-课程的作业说明是“用汇编语言实现一个你觉得最棒的应用程序”。我们一致认为，最棒的应用程序是音游！于是这个代号“in you”（音游）的项目应运而生，当然我们更喜欢叫它“fly bitch”。游戏的设计受到《节奏天国》模式的启发，大部分图画、声音、程序逻辑都由小组成员制作。
-游戏程序逻辑由 ARMv6 汇编语言编写，运行在一个自主设计的单任务操作系统环境“kayubox”中。kayubox 程序可以通过一组系统调用来访问图像、声音、按键等功能，在树莓派（<lang en Raspberry Pi Zero>）单片机上运行，也可以在桌面计算机上使用模拟器调试。借助 <link https://github.com/rsta2/circle Circle> 库，树莓派版本可以直接运行在裸机上，不依托复杂的桌面操作系统，且可以直接在存储卡上替换游戏程序，开发与游玩都十分便利。
+课程作业的说明是“用汇编语言实现一个你觉得最棒的应用程序”。我们一致认为，最棒的应用程序是音游！于是这个代号“in you”（音游）的项目应运而生，当然我们有时也叫它“fly bitch”。游戏的设计受到《节奏天国》的启发，大部分图画、声音、程序逻辑都由小组成员制作。
+游戏程序逻辑由 ARMv6 汇编语言编写。我们搭建了一个简单的单任务操作系统环境，在树莓派（<lang en Raspberry Pi Zero>）单片机上运行，也可以在桌面计算机上使用模拟器调试。树莓派版本直接运行在裸机上，不依托复杂的桌面操作系统，且可以直接在存储卡上替换游戏程序，四舍五入手搓了一台掌机（点头）。
 
 {{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>.>
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/Fledgling-Go 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/Fledgling-Go Source repository (GitHub)>>
+>
