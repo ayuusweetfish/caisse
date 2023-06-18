@@ -10,7 +10,7 @@
 {{date=}}2021.11
 
 {{contents.zh=}}
-游戏<link sheepdogs 《%》>的配乐。最初做的第一版收到的评价是“太成年人了，不像小孩子的，希望幼稚一点”，于是重新写了最后用在游戏中的这一段《牧羊犬营业啦》。原本的这一稿也作为彩蛋《牧羊犬快乐假期》一起放在这里了。
+游戏<link sheepdogs 《%》>的配乐。最初做的第一版收到的评价是“太成年人了，不像小孩子的，希望幼稚一点”（以及开头撞车当时早已毫无印象的<link https://music.163.com/song?id=27896321 《开心往前飞》>……），于是重新写了最后用在游戏中的这一段《牧羊犬营业啦》。原本的这一稿也作为彩蛋《牧羊犬快乐假期》一起放在这里了。
 
 !<filetable
   <file Sheepdogs_at_Work.ogg 牧羊犬营业啦>
@@ -18,7 +18,7 @@
 >
 
 {{contents.en=}}
-Music from the game <link sheepdogs>. The first version received the feedback that “it was too adult-like and un-childish; expected more childishness”. So I went on to write the track used in the game, “Sheepdogs at Work”. The original version was put here as a bonus, “Sheepdogs on Vacation”.
+Music from the game <link sheepdogs>. The first version received the feedback that “it was too adult-like and un-childish; expected more childishness” (also, the beginning heavily collided with the song <link https://youtu.be/c5x62ZdTmKo “开心往前飞”> from a widespread animated television series, which I had lost all memories about by then). So I went on to write the track used in the game, “Sheepdogs at Work”. The original version was put here as a bonus, “Sheepdogs on Vacation”.
 
 !<filetable
   <file Sheepdogs_at_Work.ogg Sheepdogs at Work>

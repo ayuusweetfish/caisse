@@ -53,13 +53,13 @@
 在设计与演示的过程中，我们得以确认这项设计在室内展览中得到实现的可能性。我们为建筑空间与所有的装饰、互动元素都选择了合适的材料，并借助互动原型演示了一套逻辑规则与网络技术的有效组合。
 然而值得注意的是，原型演示现场的观众主要是大学生和大学教授，尽管他们来自多样的背景，却在部分社会话题上有相似的视角与解读。我们尚未确认这项展览是否可以引起更广泛受众的兴趣。
 我们也仍在考虑改进的可能性。一个担忧是观众可能因提前得知结果、缺乏动力而不参与互动。因此，我们认为或可重新设计空间结构，以避免观众预知结果；或者也可以允许观众在两种路线中作出选择，若不在装置内部参与互动，也仍可以从外部观察，这样便能为“失去动力”的观众提供另一种观展途径。
-在这篇文章的末尾，我们希望呼吁所有的读者关注这样的现实：预防网络暴力，离不开具有监管权力的实体介入，如平台方、管理员、政府等，这应当不断推进。同时，尽管我们作为普通网民做不到太多，伤心之余也可以通过各种方式关心自己看见的受害者。在居心不良的肇事者受到惩罚、有毒的气氛逐渐消散之前，这样的关怀一定会为需要帮助的人带来极大的安慰。我们都期待着这样美好的一天能早日到来。
+在这篇文章的末尾，我们希望呼吁所有的读者关注这样的现实：预防网络暴力，离不开具有监管权力的实体介入，如平台方、管理员、政府等；我们相信集体的关注与努力所激起的浪花可以促成改变。同时，尽管我们作为普通网民做不到太多，伤心之余也可以通过各种方式关心自己看见的受害者。在居心不良的肇事者受到惩罚、有毒的气氛逐渐消散之前，这样的关怀一定会为需要帮助的人带来极大的安慰。我们都期待着这样美好的一天能早日到来。
 
 !<h1 体验 #Try>
 在计算机上打开<link https://pink.ayu.land/kiosk/ 演示页面>，并用智能手机扫描其上的二维码，即可进入互动体验。可以邀请周围的伙伴，每个人都可以在泡泡上映出自己的光斑。或者，也可以在另一个浏览器窗口中打开<link https://pink.ayu.land/ 观众页面>；甚至可以打开许多份，观看泡泡上产生更多的光斑。
 
 {{contents.en=}}
-!<note Collaborated project for the course “Communication Studies”.>
+!<note Collaborative project for the course “Communication Studies”.>
 An interactive art installation discussing the massive difficulties of individuals overcoming cyberviolence.
 
 !<hr>
@@ -103,7 +103,7 @@ Through our design and demonstration process, we have confirmed the feasibility 
 However, it is worth noting that the audience participating in our demonstration mainly consisted of university students and professors, who, albeit with varied backgrounds, may have similar viewpoints and understandings on certain social topics. We have not confirmed the appeal and the effect of the exhibition to a wider audience.
 We are still considering the possibilities for improvements to our design. We are concerned that viewers who anticipate the ending may not proceed due to a lack of motivation. Hence, we are considering a redesign of the space to prevent the viewers from observing the ending in advance; alternatively, a double-route design allowing the viewers to attend the exhibition either from the interactions inside or spectate from the outside will provide the “unmotivated” viewer with another way to engage in the exhibition.
 
-To conclude this article, we would like to call on all of our audience to attend to the reality that cyberviolence needs further intervention from entities with regulatory power, such as platform owners, moderators, governments, etc., and this should be continue to be pushed forward. And, despite this sorrowful fact that we as ordinary netizens might not be able to do much, by all means care for the victims you know. Your care will surely be a great comfort to those who are in need during the time before the ill-intentioned perpetrators get punished and the harmful atmosphere gradually dissipates. We all look forward to that day of freshness.
+To conclude this article, we would like to call on all of our audience to attend to the reality that cyberviolence needs further intervention from entities with regulatory power, such as platform owners, moderators, governments, etc., and we believe that collective awareness and effort will be able to spawn a spindrift and make the change. And, despite this sorrowful fact that we as ordinary netizens might not be able to do much, by all means care for the victims you know. Your care will surely be a great comfort to those who are in need during the time before the ill-intentioned perpetrators get punished and the harmful atmosphere gradually dissipates. We all look forward to that day of freshness.
 
 !<h1 Try It #Try>
 To have a taste of the experience, open <link https://pink.ayu.land/kiosk/ the demonstration page> on the computer, and scan the code there with a smartphone. Ideally, invite friends around so that each of you may contribute your own light spot on the shield. Alternatively, open <link https://pink.ayu.land/ the participants’ page> in another browser window; you may open many instances of this page and see more light spots projected onto the shield.
