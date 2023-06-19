@@ -8,7 +8,7 @@
 !<hr>
 制作了两个程序来展示这个库的用途。包含在程序仓库中的 Flatspin 工具可以交互式播放 BMS 格式音乐。<link https://gist.github.com/50764b32880710f9ec8b95de353a18fb BGA Compo> 工具根据 BMS 格式文件合成音频与背景动画（BGA），便于预览乐曲——早期的许多乐曲并不附带完整的视频文件，而是通过两层不断切换的静帧画面叠加来组成动画；不过这样的复古技术限制似乎反而更能激发灵性呢！
 !<filetable
-  <file Epilogue_Flatspin.mp4 <~=' Flatspin 播放的复杂 BMS 音轨<b （※可能包含大量触发光敏性癫痫的图像）>'>>
+  <file Epilogue_Flatspin.mp4 <~=' Flatspin 播放的复杂 BMS 音轨<b （※可能包含闪烁重复图案）>'>>
   <file twinklesky.mp4 BGA Compo 合成的静帧背景动画>
 >
 !<note <<~~='
@@ -25,7 +25,7 @@
 !<hr>
 Two programs have been crafted to demonstrate its possible use cases. Flatspin, included in the source package, is an interactive playback and visualisation tool for BMS music tracks. <link https://gist.github.com/50764b32880710f9ec8b95de353a18fb BGA Compo> is a utility that renders audio and background animation videos (BGAs) from BMS files, which may be useful for track previews — many tracks from the old times do not include complete video files and instead employs two layers of fast-changing still images superimposed to form the animation; but these retro-style technical limitations seem to be inspiring a lot of creativity!
 !<filetable
-  <file Epilogue_Flatspin.mp4 <~=' A complex BMS track played by Flatspin <b (※ may contain substantial imagery that triggers photosensitive epilepsy)>'>>
+  <file Epilogue_Flatspin.mp4 <~=' A complex BMS track played by Flatspin <b (※ may contain flashing repetitive patterns)>'>>
   <file twinklesky.mp4 A still-image BGA rendered by BGA Compo>
 >
 !<note <<~~='
@@ -34,7 +34,7 @@ Tracks in the videos:
   <li <b <lang ja 僕たちの旅とエピローグ。>>/<it Our Journey and Epilogue.> —— music by ああああ>
   <li <b twinklesky> —— music by fether; animation by むらたむうた>
 >
-(Both are very cute, please take a look or a listen!)
+(Both are very cute, please have a look or a listen!)
 '>>>
 
 {{rellinks.zh=}}
