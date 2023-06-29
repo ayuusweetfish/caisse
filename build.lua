@@ -531,11 +531,17 @@ markupfns = {
   nobr = function (text)
     return '<span class="no-break">' .. text .. '</span>'
   end,
+  allbr = function (text)
+    return '<span class="all-break">' .. text .. '</span>'
+  end,
   title = function (title, text)
     return '<span title="' .. title .. '">' .. text .. '</span>'
   end,
   hovernote = function (text, note)
     return '<span title="' .. note .. '" class="pastel noexpand hovernote">' .. text .. '</span>'
+  end,
+  symbols = function (text)
+    return '<span class="symbols">' .. text .. '</span>'
   end,
   rawlink = function (href, text)
     return '<a href="' .. href .. '">' .. text .. '</a>'
@@ -738,6 +744,10 @@ markupfns = {
     return '<div class="chord-tab">' ..
       table.concat(list) .. '</div>'
   end,
+
+  base64 = function (text)
+    return '<span class="tt all-break">' .. base64encode(text) .. '</span>'
+  end
 }
 caisse.envadditions.rendermarkup = function (s, item)
   local oldmarkupfnsenvitem = markupfnsenvitem
