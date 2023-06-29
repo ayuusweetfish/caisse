@@ -204,6 +204,28 @@ When announcing the good news that she had been admitted into her first choice u
 >
 To be “in the position to support all” — it must be happy and fulfilling to be able to become such a musician!
 
+{{=}}
+{{i = #box + 1}}
+{{box[i].title.zh=}}音讯
+{{box[i].title.en=}}Message
+{{box[i].title.ja=}}メッセージ
+{{box[i].artist.zh=}}Humbert Humbert
+{{box[i].artist.en=}}Humbert Humbert
+{{box[i].artist.ja=}}ハンバートハンバート
+{{box[i].origlang=}}ja
+{{box[i].links=}}https://open.spotify.com/track/3FQtTH7gloLBbQ5ipCVswG https://y.qq.com/n/ryqq/songDetail/2844924 https://youtu.be/iSzI0UF9nak
+{{box[i].image=}}For-Hundreds-of-Children.jpg
+{{box[i].imagealt.zh=}}歌曲封面。黑色背景下五彩的方块排列成蝴蝶形状。
+{{box[i].imagealt.en=}}Cover of the song. On a black background, colourful squares laid out in a pattern resembling a butterfly.
+{{box[i].cmt.zh=}}
+二十岁生日之前看着透过窗户照进房间的夕阳想着，不知道我还有没有机会亲历这样纯真美好的情感了。那个时候对恋爱啊人生规划啊什么的都毫无概念，只觉得希望尝尝这番甘甜滋味、不愿留下遗憾，却又不知如何是好。“在夏日雨后的天空架起长长的彩虹因为喜欢你”，一个灵魂飞奔着去拥抱另一个的场景仿佛就在眼前，这该是有多浪漫呀！于是在玻璃窗映出的温暖影子里落下混着感动与心酸的泪水。
+其实两人写下这首歌的时候也只有二十三岁呢——那时还很难相信大学毕业就可以追逐这样的理想、做出如此动人的作品，好像那一切都是属于成熟大人的。但其实二十年的人生早已足够丰富，何况谁不能重新当回小孩子呢。
+接着不久便有了一次双向奔赴，哼唱着这首歌度过四季，还把乐谱认真地抄写在纸上。啊，生活真是神奇。
+{{box[i].cmt.en=}}
+It was a few days before my twentieth birthday. As I watched the sunset shining through the window, I wondered whether I’d ever have the chance to experience such pure and beautiful emotions myself. Back then, I had no idea of love, life plans, or anything. I simply longed for the mellow taste and did not want to leave any regret. Yet, I was at a loss to go forward. “In the sky after a summer rain, building a wide rainbow because I like you.” As if right in front of me were a scene of a soul rushing to embrace another; can it be any more romantic? Then, tears mixed with bittersweet emotions and sadness ran down in the warm shadows cast by the glass windows.
+Actually, the duo were only 23 when they wrote this song — it was hard for me then to believe that they could pursue such ideals and create such touching works right after graduating from university, as all these seemed to belong to mature adults. But really, twenty years of life can already be rich enough; and who doesn’t have the choice to revert to being a child again sometimes?
+Soon afterwards, there was a mutual attraction that turned into a relationship. Humming this song through the four seasons, and carefully copying the melodies onto paper — isn’t life magical?
+
 {{{!--[[
 {{=}}
 {{i = #box + 1}}
