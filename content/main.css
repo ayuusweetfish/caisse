@@ -675,6 +675,9 @@ blockquote.quote .quote-by {
   display: inline-block;
   white-space: nowrap;
 }
+.all-break {
+  word-break: break-all;
+}
 
 a.music-track-link {
   color: inherit;
