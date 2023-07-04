@@ -12,7 +12,7 @@ process_dir() {
   dst_dir=$2
   echo "Source: $src_dir; Destination: $dst_dir"
   mkdir -p $dst_dir
-  for f in `find "$src_dir" -type f`; do
+  [ -e "$src_dir" ] && for f in `find "$src_dir" -type f`; do
     bn=`basename $f`
     ext=`echo ${bn##*.} | tr '[:upper:]' '[:lower:]'`
     dst=$dst_dir/$bn
