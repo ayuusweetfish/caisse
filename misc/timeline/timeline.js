@@ -142,7 +142,7 @@ const methods_weibo = {
         // Comments?
         if (item.comments_count > 0) {
           const respObjComments = await getJson(
-            `https://weibo.com/ajax/statuses/buildComments?is_reload=1&id=${item.id}&is_show_bulletin=2&is_mix=0&count=20&type=feed`,
+            `https://weibo.com/ajax/statuses/buildComments?is_reload=1&id=${item.id}&is_show_bulletin=2&is_mix=0&count=20`,
             { 'Cookie': cookie },
           )
           itemObj.comments = []
