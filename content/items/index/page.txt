@@ -29,9 +29,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.10> <link flow/windborne>，完结撒花～>
   <li <date 2023.09> 音乐节奏游戏，<link fledgling>>
   <li <date 2023.09> 程序库与小动画，<link bmflat>>
-  <li <date 2023.09> <link flow/windborne>>
   <li <date 2023.08> <link pink-bubble>（汉译已上传～）>
   <li <date 2023.08> <link stargazing>>
   <li <date 2023.07> <link monogatari>>
@@ -62,9 +62,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.10> <link flow/windborne> concludes! (currently Chinese-only)>
   <li <date 2023.09> A rhythm game, <link fledgling>.>
   <li <date 2023.09> A program library and a few animations, <link bmflat>.>
-  <li <date 2023.09> <link flow/windborne> (currently Chinese-only).>
   <li <date 2023.08> <link stargazing> (updated with English content).>
   <li <date 2023.08> <link pink-bubble>.>
   <li <date 2023.07> <link monogatari>.>
