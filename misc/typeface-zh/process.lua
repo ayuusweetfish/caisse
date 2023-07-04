@@ -21,6 +21,7 @@ print('#codepoints', ncodepoints)
 
 local css = io.open('AaKaiSong.css', 'w')
 
+local subsetsocc = {} -- Deduplication
 function addsubset(subset, name, skipcss, comment)
   local terms = {}
   local j = 1
@@ -39,8 +40,12 @@ function addsubset(subset, name, skipcss, comment)
   for i = 1, #subset do h = h * 100019 + subset[i] + 1 end
   h = string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
   --print(table.concat(terms, ','))
-  -- Check if file exists
+  -- Deduplication
   local woff2path = string.format('AaKaiSong.%s.%s.woff2', name, h)
+  -- Short-circuit if already processed
+  if subsetsocc[woff2path] then return end
+  subsetsocc[woff2path] = true
+  -- Check if file exists
   local f = io.open(woff2path, 'r')
   local exists = (f ~= nil)
   print(string.format(
