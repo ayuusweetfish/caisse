@@ -11,6 +11,7 @@ local sitename = function (link)
   elseif link:find('music.163.com', 1, true) then return {zh = '网易云', en = 'NetEase'}
   elseif link:find('b23.tv', 1, true) then return {zh = '哔哩哔哩', en = 'Bilibili'}
   elseif link:find('y.qq.com', 1, true) then return {zh = 'QQ 音乐', en = 'QQ Music'}
+  elseif link:find('nicovideo.jp', 1, true) then return 'Niconico'
   else return {zh = '链接', en = 'Link'} end
 end
 htmllinks = function (links)
