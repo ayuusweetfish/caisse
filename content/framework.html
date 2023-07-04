@@ -188,13 +188,14 @@ Current page belongs to the category of {{cats[curcat].title}}
 <div id='bottom-fleuron'><div></div></div>
 
 <style>
+{{ stray_typeface_hash = AaKaiSong_subsethash(savepath .. '.' .. lang) }}
 {{@ distbuild }}
 @font-face {
-  font-family: 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}';
+  font-family: 'AaKaiSong Stray {{ stray_typeface_hash }}';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/fonts-zh/AaKaiSong.stray.{{ AaKaiSong_subsethash(savepath) }}.woff2) format('woff2');
+  src: url(/bin/fonts-zh/AaKaiSong.stray.{{ stray_typeface_hash }}.woff2) format('woff2');
 }
 {{@ end }}
 {{@ not distbuild }}
@@ -211,18 +212,18 @@ body:lang(en), *[lang='en'],
 body:lang(fr), *[lang='fr'],
 body:lang(it), *[lang='it'],
 body:lang(de), *[lang='de'] {
-  font-family: 'Livvic', 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', sans-serif;
+  font-family: 'Livvic', 'AaKaiSong', 'AaKaiSong Stray {{ stray_typeface_hash }}', sans-serif;
 }
 body:lang(zh), *[lang='zh'] {
-  font-family: 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', 'Livvic — Lighter Bold', sans-serif;
+  font-family: 'AaKaiSong', 'AaKaiSong Stray {{ stray_typeface_hash }}', 'Livvic — Lighter Bold', sans-serif;
 }
 .symbols,
 body:lang(el), *[lang='el'],
 body:lang(grc), *[lang='grc'] {
-  font-family: 'Open Sans — Greek', 'Livvic', 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', sans-serif;
+  font-family: 'Open Sans — Greek', 'Livvic', 'AaKaiSong', 'AaKaiSong Stray {{ stray_typeface_hash }}', sans-serif;
 }
 pre, code, .tt {
-  font-family: 'Sono', 'AaKaiSong', 'AaKaiSong Stray {{ AaKaiSong_subsethash(savepath) }}', monospace;
+  font-family: 'Sono', 'AaKaiSong', 'AaKaiSong Stray {{ stray_typeface_hash }}', monospace;
 }
 
 {{@ curcat}}
