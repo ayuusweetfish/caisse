@@ -247,11 +247,11 @@ Soon afterwards, there was a mutual attraction that turned into a relationship. 
 '>
 >
 乐曲的主角应是付丧神中的唐伞小僧（<lang ja からかさこぞう>），或者是骨伞（<lang ja ほねからかさ>），唐伞即唐朝传入日本的油纸伞，二者都是油纸伞的化身。唐伞小僧的独眼独腿鬼脸形象、骨伞的呼云唤雨神力，都能在精巧交织着韵律的歌词中找到对应。
-一把被丢弃的伞化作人形，无所事事地做着游戏，抱怨着旧时的伙伴不辞而别，虽然无法理解，却似乎正学着释怀。这与原文中妖怪们胡作非为过后忏悔成佛的故事似有出入，然而两个世界都展示着被抛弃的事物所经历的伤痛之深，只是一个向外、一个向内而已。而同样共通的是，两个故事里时间都治愈了一切——无论是修行成佛还是“连着雨云一起消失”，有形之物最终都让位给了时间、虚空、无穷的力量。正如三岛由纪夫在引用这段神话之前说的，
+一把被丢弃的伞化作人形，无所事事地做着游戏，抱怨着旧时伙伴的不辞而别，虽然仍未理解，却似乎正学着释怀。这与原文中妖怪们胡作非为过后忏悔成佛的故事似有出入，然而两个世界都展示着被抛弃的伤痛之深，只是一个向外、一个向内而已。而同样共通的是，两个故事里时间都治愈了一切——无论是修行成佛还是“连着雨云一起消失”，有形之物最终都让位给了时间、虚空、无穷的力量。正如三岛由纪夫在引用这段神话之前说的，
 !<blockquoteby 《金阁寺》
 <~~='
 <lang ja […] われわれの生存は、一定のあいだ持続した時間の凝固物に囲まれて保たれていた。たとえば、ただ家事の便に指物師が作った小抽斗も、時を経るにつれ時間がその物の形態を凌駕して、数十年数百年のちには、逆に時間が凝固してその形態をとったかのようになるのである。>
-【我们的生存，被持续一定范围的时间的凝固体包围、保护。比如即使只是木匠为家务之便而制作的小抽屉，经年累月的时间也将凌驾它的形态，数十年、数百年后，便像是时间凝固成了它的形态一般。】
+【我们的生存，被持续一定范围的时间的凝固体包围、保护。比如即使只是木匠为家务之便而制作的小抽屉，经年累月的时间也将凌驾它的形态，数十年、数百年后，反而像是时间凝固成了它的形态一般。】
 <lang ja 一定の小さな空間が、はじめは物体によって占められていたのが、凝縮した時間によって占められるようになる。それは或る種の霊への化身だ。>
 【一定的狭小空间，尽管最初被物体占据着，后来也会被凝结的时间所占据。那是向着某种灵性的转化。】
 '>
@@ -262,11 +262,11 @@ Soon afterwards, there was a mutual attraction that turned into a relationship. 
 <<~= <it Tsukumogami-emaki> (<lang ja 付喪神絵巻>) (<link https://rmda.kulib.kyoto-u.ac.jp/item/rb00013599 Kyoto University Library>、<link https://dl.ndl.go.jp/pid/2541764 National Diet Library>)>>
 <~~='
 <lang ja 陰陽雑記云　器物百年を経て　化して精霊を得てより　人の心を誑す　これを付喪神と号すといへり>
-(As has been told in <it Onnmyoh-zakki> — a tool, after a hundred years have passed, will transform to acquire a spirit and deceive people’s hearts. These are referred to as <it Tsukumogami>.)
+(As has been told in <it Onnmyoh-zakki> — a tool or an object, after a hundred years have passed, will transform to acquire a spirit and deceive people’s hearts. These are referred to as <it Tsukumogami>.)
 '>
 >
 The protagonist of the piece should be a <it tsukumogami> named <it Karakasa-kohzoh> (<lang ja 唐傘小僧>), or she may as well be <it Hone-karakasa> (<lang ja 骨傘>). <it Karakasa> (<lang ja 唐傘>) is the oil-paper umbrella that spread to Japan from the Tang Dynasty of China. The one-eyed, one-legged portrait of <it Karakasa-kohzoh> with a wry face, as well as the power to call the clouds and the rain by <it Hone-karakasa>, both resonate among the delicately interwoven rhymes of the lyrics.
-A discarded umbrella takes on a human form, idling away while playing games, lamenting the wordless departure of her old companion. Although she has not been able to understand this, she seems to be learning to let go. This seems at odds with the original story of monsters committing misdeeds before repenting and attaining Buddhist enlightenment, yet both worlds exhibit the depth of the hurt experienced by discarded objects, with the difference between outwards and inwards. Also shared between the tales is that time comes to heal everything — whether it’s attaining enlightenment through practice or “go away with the rain clouds” (<lang ja 雨雲ごとどっか行っちゃう>), the tangible eventually gives way to the power of time, voidness, and infinity. Just as Mishima Yukio writes before quoting this myth —
+A discarded umbrella takes on a human form, idling away while playing games, lamenting the wordless departure of her old companion. Although she has not been able to understand this, she seems to be learning to let go. This seems at odds with the original story of monsters committing misdeeds before repenting and attaining Buddhist enlightenment, yet both exhibit the depth of the hurt of being discarded, with the difference between outwards and inwards. Also shared between the tales is that time comes to heal everything — whether it’s attaining enlightenment through practice or “go away with the rain clouds” (<lang ja 雨雲ごとどっか行っちゃう>), the tangible eventually gives way to the power of time, voidness, and infinity. Just as Mishima Yukio writes before quoting this myth —
 !<blockquoteby <~=' <it The Temple of the Golden Pavilion> (<lang ja 金閣寺>)'>
 <~~='
 <lang ja […] われわれの生存は、一定のあいだ持続した時間の凝固物に囲まれて保たれていた。たとえば、ただ家事の便に指物師が作った小抽斗も、時を経るにつれ時間がその物の形態を凌駕して、数十年数百年のちには、逆に時間が凝固してその形態をとったかのようになるのである。>
@@ -275,7 +275,7 @@ A discarded umbrella takes on a human form, idling away while playing games, lam
 (A certain small space, even if initially occupied by an object, will become filled with condensed time. That is an incarnation towards a kind of spirits.)
 '>
 >
-In this age that is so keen on treating every living matter as mere objects and tools, perhaps we should all seek some inspiration from the primitive beliefs that spirits reside in everything and the nature is to be revered.
+In such an age that is so keen on treating all living matter as mere objects and tools, perhaps we should all seek some inspiration from the primitive beliefs that spirits reside in everything and the nature is to be revered.
 
 {{{!--[[
 {{=}}
