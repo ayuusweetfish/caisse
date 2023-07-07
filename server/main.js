@@ -12,10 +12,6 @@ const persistLog = (line) => {
     })
 }
 
-const port = +Deno.env.get('PORT') || 1123
-const server = Deno.listen({ port })
-log(`Running at http://localhost:${port}/`)
-
 const siteRootDir = Deno.cwd() + '/build'
 
 const supportedLangs = ['en', 'zh']
@@ -294,7 +290,7 @@ const staticFile = async (req, opts, headers, path) => {
       req.url + (path === '/_/404' ? ' *' : ''),
       JSON.stringify(opts),
       req.headers.get('User-Agent'),
-      req.conn.remoteAddr.hostname,
+      req.aux.remoteHost,
       req.headers.get('Referer'),
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
     if (path === '/_/404') status = 404
@@ -356,7 +352,7 @@ const staticFile = async (req, opts, headers, path) => {
           .split('\n').filter((s) => s.length > 0)
         const timeSeed = Math.floor(timeInMin(8 * 60) / 10)
         const plainRandom = (seed) => {
-          const addr = req.conn.remoteAddr.hostname
+          const addr = req.aux.remoteHost
           for (let i = 0; i < addr.length; i++) {
             seed = seed * 997 + addr.charCodeAt(i) + 1
             seed = (seed / 4294967296) ^ seed
@@ -432,7 +428,7 @@ const staticFile = async (req, opts, headers, path) => {
   }
 }
 
-const serveReq = async (req) => {
+const serveReq = async (req, info) => {
   const url = new URL(req.url)
 
   if (req.method === 'GET') {
@@ -442,6 +438,9 @@ const serveReq = async (req) => {
     }
 
     const opts = {}
+    const aux = (req.aux = {})
+    aux.remoteHost = info.remoteAddr.hostname
+
     const headers = new Headers()
     const newCookies = {}
     // Parse cookies
@@ -502,41 +501,18 @@ const serveReq = async (req) => {
     if (url.pathname === '/_' || url.pathname.startsWith('/_/')) {
       return notFoundPage(req, opts, headers, decodeURI(url.pathname))
     }
-    if (url.pathname === '/.well-known/webfinger') {
-      return redirectResponse('https://pub.ayu.land' + url.pathname + url.search,
-        new Headers({ 'Access-Control-Allow-Origin': '*' }))
-    }
     return await staticFile(req, opts, headers, decodeURI(url.pathname))
   }
   return new Response('hello')
 }
 
-const handleConn = async (conn) => {
-  const httpConn = Deno.serveHttp(conn)
+const port = +Deno.env.get('PORT') || 1123
+const server = Deno.serve({ port }, async (req, info) => {
   try {
-    for await (const evt of httpConn) (async () => {
-      const req = evt.request
-      try {
-        req.conn = conn
-        await evt.respondWith(await serveReq(req))
-      } catch (e) {
-        if (!(e instanceof Deno.errors.Http)) {
-          log(`Internal server error: ${e}`)
-          try {
-            await evt.respondWith(new Response('', { status: 500 }))
-          } catch (e) {
-            log(`Error writing 500 response: ${e}`)
-          }
-        }
-      }
-    })()
+    return await serveReq(req, info)
   } catch (e) {
-    if (!(e instanceof Deno.errors.Http)) {
-      log(`Unhandled error: ${e}`)
-    }
+    log(`Internal server error: ${e}`)
+    return new Response('Internal server error', { status: 500 })
   }
-}
-while (true) {
-  const conn = await server.accept()
-  handleConn(conn)
-}
+})
+log(`Running at http://localhost:${port}/`)
