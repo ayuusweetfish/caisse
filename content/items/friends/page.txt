@@ -137,6 +137,14 @@ I’d expect that your site mirrors a part of yourself! Please reach me by <tt e
   langs = {'zh'},
   tint = {224, 224, 224},
   bgimg = 'skywt-bg.png',
+}, {
+  shortname = 'Origakid',
+  title = '抽象艺术大巴扎',
+  author = 'Origakid',
+  link = 'https://sunnycloudyang.github.io/',
+  langs = {'zh'},
+  tint = {130, 150, 146},
+  bgimg = 'origakid-bg.png',
 --[[
 }, {
   shortname = 'Example',
