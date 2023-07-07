@@ -1,0 +1,18 @@
+{{title.zh=}}23 午月 —— 果酱彩虹
+{{title.en=}}23, Month of the Horse — Berry Jam Rainbows
+
+{{timestamp=}}2023.07.07.16
+
+{{contents.zh=}}
+毕业季与期末季。赶了作业，看了夏日限定的云朵与彩虹，去了好玩的地方。
+!<list
+  <li <link flow/windborne>。>
+  <li 以前做的两个小玩具：<link bmflat> 与<link fledgling 《%》>。>
+>
+
+{{contents.en=}}
+Graduation season and conclusion of the term. Rushed through coursework, enjoyed the summer-exclusive clouds and rainbows, went to fascinating places.
+!<list
+  <li <link flow/windborne>.>
+  <li Two past toy projects: <link bmflat> and <link fledgling>.>
+>
