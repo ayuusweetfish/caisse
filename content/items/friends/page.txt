@@ -9,18 +9,18 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.zh=}}
 !<h1 交换友链>
-希望你的网站可以映出你自己的一部分！可以通过<link email 邮件>联系～
+期待着你的网站可以映出你自己的一部分！如果希望向各自的访客发出通往对面的邀请，或者只是想互相分享些什么，都请通过<link email 邮件>联系我～
 
 !<note <~~=''
-  可以把这里叫做“网站”、“赛博小屋”、“<hovernote memex memory expansion，延伸记忆>”、“<hovernote <= personal wiki> 个人百科>”，或者其他你觉得合适的称呼。当然要是觉得“博客”合适的话也不是不可以 <kao=' (>﹏<)'> 只是我不擅长把想法组织成文章，也不太能一篇篇有序地更新内容，只会乱堆东西。这里七零八落的文字实在够不上博客的水准，这儿最好玩的大概也不是文字啦。
+严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<hovernote <lang en memex> memory expansion，延伸记忆>。无论如何，这就是它在你眼里成为的模样，不是嘛。
 ''>>
 
 {{outro.en=}}
 !<h1 Link Exchange>
-I’d expect that your site mirrors a part of yourself! Please reach me by <tt email e-mail>.
+I’d expect that your site mirrors a part of yourself! If you would like to invite the visitors of both of our sites to stop by the other side, or are only wishing to share something, please reach me by <link email e-mail>!
 
 !<note <~~=''
-  You may call here a website, a cyber home, a <hovernote memex memory expansion>, a personal wiki, a portfolio, or a name you deem appropriate, including, well, a blog <kao=' (>﹏<)'> However, I struggle with organizing my thoughts into articles, nor am I able to update content in an orderly fashion. I just pile random things up, and textual content here does not meet a standard of a blog. I suppose that the most interesting things here are not my writings, anyway.
+Technically, this is a personal wiki, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <hovernote memex memory expansion>. In any case, this is what it becomes in your eyes, isn’t it?
 ''>>
 
 {{=}}
@@ -51,9 +51,10 @@ I’d expect that your site mirrors a part of yourself! Please reach me by <tt e
   bgimg = 'chiyuru-bg.png',
 }, {
   shortname = 'Pieris',
-  title = "Pieris' Homepage",
+  title = "Pieris' Archive",
   author = 'Pieris',
-  link = 'https://pieris05.com/',
+  link = 'https://archive.pieris05.com/',
+  linkdisp = 'pieris05.com',
   langs = {'zh'},
   tint = {0x58, 0xb2, 0xdc},
   bgimg = 'pieris-bg.png',
@@ -167,7 +168,7 @@ I’d expect that your site mirrors a part of yourself! Please reach me by <tt e
 }, {
   shortname = 'IndieWeb',
   title = 'IndieWebring',
-  link = 'https://xn--sr8hvo.ws/%F0%9F%92%9F%F0%9F%94%A5%F0%9F%8F%90',
+  link = 'https://xn--sr8hvo.ws/directory',
   linkdisp = '<span class="little-icons">🕸💍</span>.ws',
   langs = {'en'},
   tint = {0xff, 0x5c, 0x00},
