@@ -750,7 +750,13 @@ markupfns = {
   end,
 
   base64 = function (text)
-    return '<span class="tt all-break">' .. base64encode(text) .. '</span>'
+    local title = tr({
+      zh = '请使用 Base64 解码工具揭晓明文',
+      en = 'Please use a Base64 decoding tool to reveal the text',
+    })
+    return '<span title="' .. title .. '" class="pastel noexpand hovernote">' ..
+      '<span class="tt all-break">' .. base64encode(text) .. '</span>' ..
+      '</span>'
   end
 }
 caisse.envadditions.rendermarkup = function (s, item)
