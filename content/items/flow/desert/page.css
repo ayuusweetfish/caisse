@@ -1,0 +1,7 @@
+.item-content span.timeline + ul {
+  margin-block-start: 0;
+  padding-inline-start: 1.5em;
+}
+.item-content span.timeline + ul > li + li {
+  margin-block-start: 1em;
+}
