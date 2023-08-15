@@ -141,10 +141,10 @@ cats.pebbles.pagelist = {
   {name = 'ice-rink'},
   {name = 'define-21'},
   {name = 'mikabox'},
-  {name = 'bmflat'},
 ]]
 }
 cats.flow.pagelist = {
+  -- {name = 'flow/free'},
   {name = 'flow/desert'},
   {name = 'flow/windborne'},
   {name = 'flow/monsoon'},

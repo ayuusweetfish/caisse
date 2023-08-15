@@ -1,0 +1,15 @@
+{{title.zh=}}囡囝出逃记
+{{intro.zh=}}…
+{{title.en=}}Kiddie’s Escape
+{{intro.en=}}…
+
+{{date=}}2023.13,2023.14
+
+{{contents.zh=}}
+!<h1 【我向许多人打听过你】 #Exhibition>
+!<h2 Day -5 【一个人的旅行】 #Ex-Day-Neg-5>
+
+{{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>.>
+
+{{toc=}}true
