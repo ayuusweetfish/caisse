@@ -29,6 +29,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.13> <link flow/free>，持续补全中>
   <li <date 2023.11> <link flow/desert>>
   <li <date 2023.09> 音乐节奏游戏，<link fledgling>>
   <li <date 2023.08> <link stargazing>>
@@ -61,6 +62,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.13> <link flow/free> (currently Chinese-only). Continuously clearing the backlog.>
   <li <date 2023.11> <link flow/desert> (currently Chinese-only).>
   <li <date 2023.09> A rhythm game, <link fledgling>.>
   <li <date 2023.08> <link stargazing>.>

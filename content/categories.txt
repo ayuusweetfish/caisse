@@ -56,13 +56,13 @@ end
 {{cats.flow.intro.zh=}}
 “逝者如斯夫！不舍昼夜。”“帐，张也，张施于床上也。”
 不同于本站的<link dates 日期格式>，这里会使用公历与太阳黄经记载日期。
-!<note 连载中：<link flow/desert %>>
+!<note 连载中：<link flow/desert %>、<link flow/free %>>
 /
 {{cats.flow.intro.en=}}
 “It passes on like this, ceaseless day and night.” —— <it Analects>
 Different from the <link dates date format> throughout the site, dates here will be recorded in the Gregorian calendar and the solar longitude.
 !<note Content here is currently <catlink ?lang=zh flow Chinese-only>.>
-!<note Currently running: <link flow/desert %>>
+!<note Currently running: <link flow/desert %>, <link flow/free %>>
 /
 {{cats.flow.introsep=}}true
 
@@ -144,7 +144,7 @@ cats.pebbles.pagelist = {
 ]]
 }
 cats.flow.pagelist = {
-  -- {name = 'flow/free'},
+  {name = 'flow/free'},
   {name = 'flow/desert'},
   {name = 'flow/windborne'},
   {name = 'flow/monsoon'},
