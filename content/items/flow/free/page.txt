@@ -1,13 +1,48 @@
 {{title.zh=}}囡囝出逃记
-{{intro.zh=}}…
+{{intro.zh=}}
 {{title.en=}}Kiddie’s Escape
-{{intro.en=}}…
+{{intro.en=}}
 
-{{date=}}2023.13,2023.14
+{{date=}}2023.13
 
 {{contents.zh=}}
-!<h1 【我向许多人打听过你】 #Exhibition>
-!<h2 Day -5 【一个人的旅行】 #Ex-Day-Neg-5>
+!<h1 135°–142°【我向许多人打听过你】 #Exhibition>
+!<<--= !<h2 Day -5 【一个人的旅行】 #Ex-Day-Neg-5> >>
+!<note 待补全>
+
+!<hr windy>
+!<h1 143°–149°【暑训】 #Training>
+!<h2 Day 1【假】 #Training-Day-1>
+!<note <~~=''
+今日排练曲目
+!<list
+  <li 第一场 <list
+    <li <link https://www.jwpepper.com/sheet-music/media-player.jsp?&type=audio&productID=2284123 <lang en <it Pine River Trilogy>>> — Ed Huckeby>
+    <li <link https://www.jwpepper.com/sheet-music/media-player.jsp?&type=audio&productID=10006294 <lang en <it The Chronicles of Narnia>> 选段> — Paul Murtha>
+  >>
+  <li 第二场 <list
+    <li <link https://youtu.be/Rl20WaqAyh8 <lang en <it A Hero’s Tale>>> — Bert Appermont>
+    <li <link https://forninemusic.com/concert/redwood <lang en <it Redwood>>> — Ryan George>
+  >>
+>
+''>>
+原本与栗子同学约了午饭，结果一早按掉无数个闹钟睡到临近饭点结束，一下子惊醒，一看消息原来对方不舒服所以咕咕了。该说是幸好还是什么吗……
+下午就是第一场排练。简直是开幕雷击，乐谱开头赫然写着“<lang en in a nowing style>”，不知道是什么全新的词，以及什么“Wtnb Chimes”，满脸黑线。还有我一个没有绝对音感的人都能听得出是 F 音的定音鼓在五线谱上全写成了 E。中途一位同学被指挥指出问题，果断怀疑两人手上的乐谱不一样，休息时分别拿来一看确实如此。以及那个“nowing”，总谱上写着的分明是“flowing”。感觉像是自动识别之后没仔细校对的盗版乐谱……
+时隔两个月后的第一次排练居然拿到的是定音鼓，缘，妙不可言。
+前些天还在想，“3-3-2-2-2”的 Bruckner 节奏型（在<link vividness 《%》>里面大量出现的节奏，不过写完之后才知道这个名字）根本不是表面上的所谓三连音或者“二换三”，而是一种切分，和“3-3-2”的 Tresillo 节奏型一样，前面的“3”都是六拍子或者四拍子框架下隐藏着的切分（我在乐曲里甚至把完整的切分节奏都拼了出来）。今天的乐曲里有五拍子的“3-3-2-2”节奏型，实际上这几种都是完全一致的，最后的几个“2”无非就是为了强调背后的框架而已。
+!<--=' convert 3-3-Syncopation-1.png -crop 2500x500+300+204 -scale 25% T1-Syncopation.png '>
+!<img T1-Syncopation.png <= 乐谱。三种节奏型中，若将时值为“3”的音符拆为“2+1”，两个“3”之间即构成一组切分。> syncdark>
+不过今天中午还在想着用这一系列节奏型继续写首曲子呢，怎么这就被抢先了啊啊啊啊。 
+!<hr>
+收到 gap year 过后回到艺术团来玩的友人从英国带回来的礼物，是一只 Jellycat 兔子，仔细看看标签才知道原来 Jellycat 原来是个 <lang en London-based brand>。要把玩偶背回来感觉真是会很麻烦，感动得要命，相比之下我的小礼物真是小了点。呜呜呜呜呜。
+晚上继续排练，由时常抛出引人深思的哲理的 M 老师指挥。今天的哲理：
+!<list
+  <li 出了排练厅人总是有点假，希望大家在排练厅的音乐里能更真实一些。>
+  <li 技术服务于音乐，技术上的瓶颈不妨尝试通过理解音乐的方式来突破。>
+>
+!<--=' convert -size 2716x3624 "xc:#222" \( hero-001.png -level 25%,75% -colorspace gray -alpha off -negate \) -compose copy-opacity -composite -scale 25% -crop 640x270+25+582 T1-Church.png '>
+以及乐谱上有一段奇妙的节奏，恍惚间想起了考核时的视奏项目，掐着五分钟时间给看一大段这种东西然后就要到鼓上敲。排练时倒是没那么紧张，毕竟大不了摆烂混过去，何况上面还写着“<lang en freely>”。不过无论如何脑子是长到了。
+!<img T1-Church.png <= 标有复杂节奏的乐谱。> syncdark>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
