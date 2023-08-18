@@ -646,6 +646,9 @@ blockquote.note {
 blockquote.quote .quote-main {
   position: relative;
 }
+blockquote.quote .quote-main > * {
+  text-indent: 0;
+}
 blockquote.quote .quote-main, blockquote.quote .quote-main > p {
   text-indent: 2em;
 }
