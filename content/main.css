@@ -981,10 +981,16 @@ img.item-banner,
   display: block;
   min-height: 1.5em;
 }
-.chroma .c
+.chroma .c, .chroma .cm, .chroma .c1
 { color: #58a; }
 .chroma .k
 { color: #b63; }
+.chroma .kt
+{ color: #395; }
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo
+{ color: #83a; }
+.chroma .nb
+{ color: #46c; }
 .chroma .s, .chroma .s1
 { color: #852; }
 
