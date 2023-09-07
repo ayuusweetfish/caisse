@@ -109,6 +109,7 @@ cats.murmurs.pagelist = {
   {name = 'inner-prod'},
 }
 cats.potpourri.pagelist = {
+  {name = 'maylove-ex-23/log'},
   {name = 'pink-bubble'},
   {name = 'rose'},
   {name = 'gpt'},

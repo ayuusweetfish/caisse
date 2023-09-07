@@ -1,8 +1,11 @@
 404.html	881	unknown
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4727	document
+categories.txt	4759	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -689,6 +692,31 @@ items/maylove-ex-22/play/game.js	11418	code
 items/maylove-ex-22/play/index.html	4721	unknown
 items/maylove-ex-22/play/love.js	325312	code
 items/maylove-ex-22/play/love.wasm	4702493	unknown
+items/maylove-ex-23/log/0715-ITO.jpg	117648	image	1200	800
+items/maylove-ex-23/log/0716-Sierpinski.jpg	87023	image	922	691
+items/maylove-ex-23/log/0716-Sierpinski.mp4	503553	video	10	960	540
+items/maylove-ex-23/log/0716-Text.jpg	102623	image	922	691
+items/maylove-ex-23/log/0728-Light-Up.mp4	408576	video	6	960	540
+items/maylove-ex-23/log/BodyLight_0715A.png	20430	image	1200	640
+items/maylove-ex-23/log/BodyLight_0715B.png	55920	image	1200	640
+items/maylove-ex-23/log/BodyLight_0715C.png	31996	image	1200	640
+items/maylove-ex-23/log/BodyLight_Assembly_0728.pdf	1380765	document	8
+items/maylove-ex-23/log/BodyLight_PCB_0724.zip	145964	unknown
+items/maylove-ex-23/log/ITO.jpg	117648	image	1200	800
+items/maylove-ex-23/log/MPR121-Breakout-v13.png	29272	image	1212	936
+items/maylove-ex-23/log/main-0709-blink.cc	376	code
+items/maylove-ex-23/log/main-0711a-wire.cc	917	code
+items/maylove-ex-23/log/main-0711b-usart-i2c.c	3632	code
+items/maylove-ex-23/log/main-0712a-read-out.c	5894	code
+items/maylove-ex-23/log/main-0712b-control.c	6773	code
+items/maylove-ex-23/log/main-0715-ensemble.c	7661	code
+items/maylove-ex-23/log/main-0716a-sierpinski.c	9809	code
+items/maylove-ex-23/log/main-0716b-text.c	19071	code
+items/maylove-ex-23/log/main-0716c-dma.c	21534	code
+items/maylove-ex-23/log/main-0717-plot.c	26996	code
+items/maylove-ex-23/log/main-0728-rev1.c	31206	code
+items/maylove-ex-23/log/process-bdf.lua	1008	code
+items/maylove-ex-23/log/sensors_schem.png	13718	image	1545	1065
 items/medle-postmortem/001.svg	89280	image	4000	2500
 items/medle-postmortem/medle-01.png	16949	image	600	321
 items/medle-postmortem/medle-02.png	11145	image	600	320
@@ -835,7 +863,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	25982	unknown
+main.css	26172	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4579	unknown

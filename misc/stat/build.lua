@@ -14,6 +14,7 @@ local filetypes = {
   -- Text, code, and documents
   txt = 'document', pdf = 'document',
   c = 'code', h = 'code', lua = 'code', js = 'code',
+  cc = 'code',
 }
 
 local infofn = {}

@@ -1,0 +1,235 @@
+{{title.zh=}}身体红绿灯（2023）工作日志
+{{title.en=}}Lights of the Body (2023) Work Journal
+
+{{date=}}2023.11
+{{usemath=}}true
+
+{{contents.zh=}}
+
+!<note 本文仅记录技术细节。>
+
+!<h1 07.08 #0708>
+早上看了 <link https://www.bareconductive.com/pages/product-resources Bare Conductive 的电容传感开发板文档>，得知内部的传感芯片是 MPR121，可以实现高精度的电容传感。于是下午下单一块 MPR121 分线板、杜邦线三种头各 40p，以及导电笔。
+
+晚上阅读文档 AN3889，此文档介绍 MPR121 的基础配置项。
+芯片传感的大致原理与之前 FUNgi 的方案相同，是自电容（<lang en self-capacitance>），但是 FUNgi 是利用 RC 网络的时间常数，这次芯片的做法是让一块导电体充电、放电，计算 <math C = Q/V>，这样频率和精度能更高一些。芯片采取的模式是固定电流与充电时间，利用充电结束时的电压 <math V = Q/C = IT/C> 反推电容。<math I> 和 <math T> 就是两个主要的配置项。用于检测电压的内部 ADC 线性范围有限，只有 <math V> 处在 0.7 V 与 VDD - 0.7 V 范围之内才能保证灵敏度（文档 Fig. 3），配置时需要顾及这一点。
+关于精度：Eq. 7 看着晕乎乎的，其实可以认为是求导过后乘上了 <math 1> 的变化量，或者也可以当作意思就是 <math \Delta C \propto \left( \frac 1 {\mathrm{ADC}} - \frac 1 {(\mathrm{ADC} + 1)} \right) \approx \frac 1 {\mathrm{ADC}^2} \propto C^2>。也即分辨率与 <math Q = IT> 成正比，固定配置下与 <math C^2> 成正比。Fig. 4 和 Tab. 2 都是针对不同配置（固定 <math I> 与 <math V>，不同 <math C_\mathrm{mid}> 即对应不同 <math T>），所以是与中间值电容——而非其平方——成正比。
+芯片的自动配置功能很方便，按照 pp. 7–8 的公式计算目标电压值与高低界限，填入三个对应寄存器，然后按照 p. 9 的说明开启自动校准即可。根据 p. 10，只要初始配置正确，一般校准都不会出现错误。
+
+晚上咨询同学如何寻找大的导体薄膜，得到的推荐是五金店或者淘宝。淘宝好像很有道理，下单铜箔（0.01 mm × 100 mm × 4 m）。
+
+!<h1 07.09 #0709>
+读了昨天找到的一些电容传感设计指南。Microchip 的文档比较有意思，解释了一些常见的问题与技巧。用交错形态的电极实现触摸滑条的 <lang en interpolation> 方法很有趣，值得一看；不过更重要的似乎是用以提升灵敏度的 <lang en driven shield> 方法：用导电材料在平面上包围传感区域，并在测量电容时将其余区域电势全部拉高到 VDD，避免周围形成接地电极，与传感电极之间形成强电场，进而降低信噪比。MPR121 文档里并没有提到类似的方案，不知是已经内置还是没有实现。如果精度不够的话，或许会是一个潜在的考量。
+!<note 更新：似乎确实是没有实现。>
+意识到按照 MPR121 的要求（数据手册 Fig. 2），还需要一些外部元件。下单 10µ 电容、75k 电阻与 4.7k 电阻各一包。晚上向建筑学院的友人拿到了一块不用的 KT 板（约 30 cm × 30 cm × 0.5 cm）。
+拆开去年购置的 STM32F103C6T6 开发板，通电，看到熟悉的 200 ms 闪烁小灯。
+去年用的开发平台是 PlatformIO，感觉一站式的命令行工具与集成插件很方便。新建项目，选择 Arduino 框架。这是在 STM32 平台上重新实现的一组 Arduino 程序接口，可以方便其他平台的用户切换到 STM32。是个好主意呢。
+试试把空程序传上去。按照文档 AN2606 的记载，把 BOOT0 引脚拉高然后按下重设，就可以从 UART 下载程序。板上搭载了 UART 模块，不必外接转换器，只要直接用 USB 线连接电脑即可。排针还没焊到板上，只能用杜邦线戳在 BOOT0 和 3V3 两个孔之间，过于简陋（同时到这里才发现我还有一大堆混乱的杜邦线，不用单独买……有点浪费了唉）。按下 RESET 按钮看到原本按照程序闪烁的小灯变为常灭，就是可以上传程序的状态了。
+编译上传都正常，不过 IntelliSense 提示找不到 <tt Arduino.h>，没法查子过程定义。翻到 <tt .vscode/c_cpp_properties.json>，里面有一个字符串 <<<tt <<^= /Users/<Ayu>/.platformio/packages/framework-arduinoststm32/variants/STM32F1xx/F103C4T_F103C6(T-U)>> >>> 括号前面加了一根反斜杠，不知是什么地方不小心 escape 过了，造成 JSON 的语法错误，导致整个文件没法解析。把反斜杠去掉就好了。
+默认的程序什么都没有做，下一步自然是重新开始闪小灯。不知道板上的 LED 是哪个引脚，原理图也没有，当时下单的网店页面提供的原理图是另一块板的，还得专门联系客服等回复。反正 <link https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html blue pill 开发板上面是 PC13>，用这个一试结果瞎猫碰上死耗子看到小灯开始闪了。不错。
+然后是串口的问题，要是能向串口输出文字想必是极好的。按照 Arduino 的接口试了 <tt Serial.begin()> 后接 <tt Serial.println()>，开着 <tt screen /dev/cu.usbserial-14130 9600> 监视，一直没有反应。看了网上论坛一大堆讨论试了好一会儿，以为是配置问题，结果无聊试着从两个 USART 接口同时输出时忽然在屏幕上看到了文字——板上这个 UART 口是 USART1（TX = PB6, RX = PB7），而 <tt Serial>（即 <tt SerialUSB> 对象）默认是在 USART2。鬼知道这是哪个口哦，都怪没有原理图。进度可喜，收工收工。接下来只要找个地方焊上排针，再等材料到齐，就能做好整个原型了。
+!<filetable
+  <file main-0709-blink.cc 闪烁小灯与串口输出测试>
+>
+
+!<h1 07.11 #0711>
+焊接开发板与分线板的排针。发现分线板上已经接好了所有需要的外部元件，顺便找到了 <link https://www.adafruit.com/product/1982 Adafruit 的这份原理图>，看着像是手上这块板子的复刻来源。虽然好像是白买了那些电阻电容，但不用再等一天至少是好事。
+!<img sensors_schem.png <= 分线板原理图。> syncdarkmild>
+>开始试验。查阅 STM32F103x6 数据手册知 I2C1_SCL = PB6，I2C1_SDA = PB7，从这一对引脚接出两根线。虽然现在用的 Arduino 函数库里似乎是软件逻辑实现（<lang en bit-bang>），但是便于后续切换也好。从上面的原理图看到 MPR121 芯片的 ADDR 引脚通过 100k 电阻接地，所以外接 ADDR 引脚悬空时地址是 0x5A。
+查阅数据手册的 Table 2，应该向寄存器 ELE_EN 写入 0b0001 启动 0 号电极运转，然后从寄存器 EFD0LB 以及 EFD0HB 读出原始值。参考 6.4 节的格式（其实就是 I2C 标准格式），用 <tt Wire> 库操作 I2C 读写即可。
+其余设置不用改变，保持默认。对于充电电流：CDCx = 0 时使用全局设置 CDC（p. 15），而 CDC 默认是 0x10 即 16 µA（p. 14），是合理的默认值。
+!<filetable
+  <file main-0711a-wire.cc Wire 函数库操作 I2C 接口>
+>
+
+编写完成，构建时显示闪存空间不足，全局变量占据空间过大。链接器信息如下：
+<code= plain
+section `.data' will not fit in region `FLASH'
+region `FLASH' overflowed by 1000 bytes
+>
+使用 <tt objdump> 简单看了看并没有找到明显占据无用空间的部分，<tt strip> 也减不掉多少，而且每次手动做这些步骤着实麻烦，最终决定作罢，换成更轻量的 STM32Cube 框架，但是不知为何需要重新安装一份版本新一些的 GNU Arm Toolchain，下载速度还很慢。虽然很大程度上是因为我在这个不熟悉的实验室社恐只能蹲在网络信号不好的角落啦……一站式解决方案一旦出现疑难杂症就会很难追踪，尤其是对用户而言实在有些棘手。
+不过不知为何，手动执行一次 <tt pio pkg install -t platformio/toolchain-gccarmnoneeabi>、提示已经有一个老版本，过后再 <tt pio pkg install> 就跳过这个步骤直接视作完成了，疑惑。
+很快又看到闪烁 LED 了。不过不像 Arduino 框架那样在刷入程序后可以直接开始执行，而是要手动拿掉 BOOT0 与 3V3 之间的线再按 RESET。可能需要再研究研究 bootloading sequence，但现在关系不大，先不管了。
+在网上到处抄 USART 的程序段，总算是跑了起来。还要单独设置一下时钟，没仔细研究，姑且复制了别人的参数。比想象中困难呢。
+接着从去年的程序里抄 I2C 接口，调了半天发现错误一直是 <tt HAL_I2C_ERROR_AF>，想了想把地址 0x5A 左移了一位就对了。
+!<filetable
+  <file main-0711b-usart-i2c.c USART 串口输出与 I2C 通信>
+>
+
+!<h1 07.12 #0712>
+昨天安装卡住时为了排查问题学着用了 <tt pio> 命令行，今天开始就懒得开 IDE 了，反正 Vim 里写也很方便，查定义查文档就直接在 PlatformIO 的安装目录下 <tt grep>。
+
+继续调试 MPR121，今天准备打开它的自动校准功能。按照文档说明填写了几个寄存器，可是读出 CDC 与 CDT 的值都没有变化。查阅数据手册，发现自动校准只有从 Stop Mode 切换到 Run Mode 时才会开始执行（数据手册 p. 17），而重校准是由校准失败的 flag（即 ACFF 与 ARFF）触发的，所以 ECR 必须在自动校准启用（ACE = ARE = 1）之后再从 0 改为非零值。
+
+此后可以看到 CDC 与 CDT 都开始自动设置，但非常不稳定，且没有达到指定的目标值 TL = 728。一些寄存器值如下，其中 <tt value> 对应传感读数 EFD0。
+<<code= plain
+value =    0, AR/ACFF = 2, OOR = 0x01, CDC0 = 36, CDT0 = 2, E0BV = 0
+value =  392, AR/ACFF = 3, OOR = 0x01, CDC0 = 37, CDT0 = 2, E0BV = 0
+value =  389, AR/ACFF = 3, OOR = 0x01, CDC0 = 36, CDT0 = 2, E0BV = 384
+value =  391, AR/ACFF = 3, OOR = 0x01, CDC0 = 36, CDT0 = 2, E0BV = 384
+value =  390, AR/ACFF = 3, OOR = 0x01, CDC0 = 36, CDT0 = 2, E0BV = 384
+value =  398, AR/ACFF = 3, OOR = 0x01, CDC0 = 38, CDT0 = 2, E0BV = 384
+value =  417, AR/ACFF = 3, OOR = 0x01, CDC0 = 38, CDT0 = 2, E0BV = 384
+value =  434, AR/ACFF = 3, OOR = 0x01, CDC0 = 37, CDT0 = 2, E0BV = 416
+value =  404, AR/ACFF = 3, OOR = 0x01, CDC0 = 38, CDT0 = 2, E0BV = 384
+value =  410, AR/ACFF = 3, OOR = 0x01, CDC0 = 37, CDT0 = 2, E0BV = 384
+value =  402, AR/ACFF = 3, OOR = 0x01, CDC0 = 37, CDT0 = 2, E0BV = 384
+value =  380, AR/ACFF = 3, OOR = 0x01, CDC0 = 34, CDT0 = 2, E0BV = 352
+value =  367, AR/ACFF = 3, OOR = 0x01, CDC0 = 36, CDT0 = 2, E0BV = 352
+>>
+检查发现 LSL 和 TL 的值写反了，所以目标值变成了 LSL = 404，而且出现了 ACFF、ARFF 与 OOR 标记，每次都会进入重设置，这也是 CDC 一直变化，且基准值 E0BV 永远等于初次传感值抹去二进制最低五位（根据 BVA = CL = 0b10，数据手册 p. 16）的缘故。调整过来就顺利工作了，效果很不错。
+!<filetable
+  <file main-0712a-read-out.c 读取读数>
+  <file main-0712b-control.c 初步加入防抖逻辑，点亮 LED 小灯>
+>
+
+晚上下单一片 ITO 薄膜。ITO 是透明导电材料，购买的是 A4 尺寸、厚度 0.125 mm，阻抗 5 Ω，不知覆盖在表面上作传感电极能有多高灵敏度。
+
+!<h1 07.13 #0713>
+挑了一款 128 × 64 单色 OLED 显示屏，购入两块。
+去年的工作和之前 FUNgi 的经验都表明，电脑的 USB 口供电与 USB 电源供电会影响 I2C 与电容传感的表现，有些问题只在电源供电时出现，这时没法用串口调试；要是有一块显示屏应该会提升不少效率。想起去年只靠板载小灯闪烁调试，甚至没有串口，简直是太痛苦了，不知道自己是怎么坚持过来的，好可怕。
+
+!<h1 07.15 #0715>
+中午拿到 ITO 薄膜。薄膜放在硬纸筒里面，保护得十分细致。
+!<img 0715-ITO.jpg <= 左右拼图。卷在厚纸筒中的 ITO 导电薄膜。>>
+
+这样一来就可以把 (1) KT 板正面覆盖 ITO、(2) KT 板背面贴铜箔、(3) 硬纸板背后贴铜箔、(4) 硬纸板背后贴导电胶带叉叉这四个电极联合测试了。其实灵敏度都还不错，ITO 似乎略好一点点，但毕竟不是全透明，外观效果上不是最适合，而且差异并不大，只是有一点点感觉，未必准确。
+
+程序上已经把检测的逻辑提取到一个 <tt debouncer> 结构体里面。原本研究了 MPR121 自带的基准值追踪与抗抖动功能（文档 AN3891、AN3892），但感觉不如直接在程序里追踪来得灵活、便于调试。反正这两个系统也都是基于多次平均得到的传感值（寄存器 EFDxHB/LB 指示的值）计算的，并没有依赖背后的什么隐藏状态，那么从软件上也完全能够覆盖它的逻辑。现在的逻辑是在 FUNgi 里发明的，大致思路是追踪一个基准值，当传感值大于基准值时增大基准值，否则缓慢减小；然后将基准值与传感值之差是否大于阈值作滤波，加上迟滞触发器作判定。具体参考程序。
+
+<<code= c
+void debouncer_update(struct debouncer *d, int32_t value)
+{
+  // -- 部分省略 --
+  // 高基准值 high 每个时刻至多增加 64 或减少 1
+  d->high = max(d->high - 1, min(d->high + 64, value));
+  // 取决于当前传感值与基准值之差，增减计数器 count
+  if (value < d->high - 320)
+    d->count = min(d->count + 1, 25);
+  else
+    d->count = max(d->count - 1, 0);
+  // 根据计数值作迟滞触发判定
+  if (!d->on && d->count >= 15) d->on = true;
+  else if (d->on && d->count < 10) d->on = false;
+}
+>>
+
+这个算法可以适应各种情形，因为在足够长时间后基准值都会重新校准，不用担心漂移；但有两个缺点，其一是单次触摸时长有限，触摸长时间后基准值会校准到触摸时的值；其二是对环境变化的反应不够快，因为基准值只是缓慢减小。而且此二者之间是一个权衡的关系；换言之，算法区分触摸与漂移的能力不够理想。不过感觉是够用啦。
+
+傍晚收到快递员的电话，立刻下楼取到亚克力板。
+
+在背后贴了两块传感电极，与硬纸板一致，一块是大铜箔，另一块是导电胶带画的网状结构。加上刚才的配置，一共六个电极都能一起触发了，而且灵敏度仍然都不错，到此基本可以有信心不同电极之间的干扰不会影响应用。这时其他人要用原本的转椅，帮我搬来了另一把椅子，可惜之后发现椅子上放不稳 KT 板，就作罢了。不过这个椅子排列好像某种神秘法术现场……
+
+!<filetable
+  <file main-0715-ensemble.c 六个电极联合测试>
+>
+(video: 测试录像)
+
+前两天挑显示屏时在 SPI 和 I2C 协议款式中选择了后者，想着省两根线顺便省点程序挺好的。结果今晚才意识到二者通信速率能差出十倍，是谁看着 MHz 的单位眼馋了啊。后来强迫自己画出二者的电路图又开始馋 I2C 线路的简洁，而且一算按照 400 kHz 的速率也能把刷新时间控制在 25 ms 以内。而且要是只更新变动的区域还能更快。嘿嘿，不亏。
+
+在宿舍改了改 I2C 程序，测试最高速率，同时读了 DMA 模式 I2C 的文档与示例程序。意识到没带多余的杜邦线回宿舍，没法把 BOOT0 拉高。忽然灵机一动随手抓起旁边一块 FUNgi 布展时的胸牌，用金属扣子搭在 BOOT0 和 3V3 引脚之间，另一只手伸过去按 RESET。我真是一个小天才。
+
+晚上开了会，过后深夜画了一些组装示意图。
+!<img BodyLight_0715A.png <= 装置反面示意图，包括铜片与单片机。> syncdark>
+!<img BodyLight_0715B.png <= 装置反面示意图，铜片通过导线连接到单片机上。标有文字：“导线悬空即可，若影响灵敏度则考虑用胶带固定于面板”；旁边局部放大图显示铜箔用导电胶带固定并粘在导线上，另外也可以直接用导电胶带组成感应区域。> syncdark>
+!<img BodyLight_0715C.png <= 装置夹层示意图，包括红黄绿不同颜色的灯带，各自伸出正负极导线接在 12 V 电源上，同时伸出一根导线连接到各自不同的单片机引脚。> syncdark>
+
+!<h1 07.16 #0716>
+拿到显示屏，话说这个小盒子好像耳环或者项链的那种首饰盒ww。然后拿到实验室工作台焊接排针。
+!<img ../../flow/desert/113-Screen.jpg <= 装着小显示屏的两个塑料盒。>>
+
+之前看过说明，OLED 屏幕是自发光而不是背光，所以通电之后并不会立刻点亮，需要通过命令序列启动。接上开发板，I2C 传输有反应，但是照抄数据手册上的 C 程序命令序列没有见到屏幕亮起。改成前两页流程图里的序列，加上 0xA5（<lang en Entire Display ON>）就能亮起来。不过屏幕内容一直差出一个 <lang en page>（8 行，啊我是说垂直方向 8 个像素不是说“不行”嗯……），如图。
+!<img 0716-Sierpinski.jpg <= 屏幕上的三角形图案，但是整体上移 8 个像素点，最上方的 8 行来到了最下方。>>
+
+最后排查到是 0xB0（<lang en Set Page Start Address for Page Addressing Mode>）命令，删掉就好了，好奇怪，明明设的是 0 而且根本没在 <lang en page addressing mode> 里呀。总之显示上总算是对了。
+
+以及显示器的首行实际上是在接线的对面，所以如果丝印文字正立的话，需要把整个显示内容旋转 180 度；控制器有对应的命令（<lang en Set Segment Re-map>、<lang en Set COM Output Scan Direction>），数据手册也十分贴心地把它们写进了那张流程图里。
+
+200 kHz 过一会儿两个 I2C 设备就都停了，大概是线有点长，总线电容偏高，上拉电阻支持不住。100 kHz 可以持续工作。
+!<filetable
+  <file main-0716a-sierpinski.c 点亮屏幕、显示图案>
+  <file 0716-Sierpinski.mp4 录像（包含少量低频黑白闪烁画面）>
+>
+
+接下来要往屏幕上写字，需要挑好字体再转成位图写进程序。翻出以前一个挺喜欢的像素字体 Tamzen，结果 TTF 格式放在 Krita 里面是一片模糊，提供的 PNG 格式预览也没有按照字符编号排列。索性写了个 Lua 脚本读原始的 BDF 格式字体，转成符合小显示屏惯例的列优先位图，作为常量数组放在程序里。然后就可以写字啦。
+!<img 0716-Text.jpg <= 屏幕上排成四行、十六列的各种字符。>>
+!<filetable
+  <file process-bdf.lua 字体处理脚本>
+  <file main-0716b-text.c 显示文字>
+>
+
+感觉往显示屏写数据的过程会把处理器阻塞很长时间（128 * 64 * (9/8) / 150 kHz = 61 ms），传感器采样的时间间隔不好控制，于是试了试 DMA。（话说其实不用的啊，读出 SysTick 算一算就好了，调到一半才反应过来，但调都调了……）在串口看到“<tt DMA result = 2（换行）init result = 0>”，纳闷半天哪来的 <tt init result> 几个字，接着断电重启过后变成了乱码，这才想起是之前某个版本程序里的，留在了 SRAM 里；UART 传输的长度写错，所以多了缓冲区边界外这些未定义的内容。
+
+所有 delay 都不管用了，<tt SysTick_Handler> 根本没被调用，改了 NVIC 优先级也还是不对。正准备放弃时一眼瞄到我的中断例程名字拼错了，写的是 <tt I2Cx_EV_IRQHandler>，这是来自<link https://github.com/STMicroelectronics/STM32CubeF1/blob/bdec2f6b0658b5725b41c96cb1f066c362acc4d0/Projects/STM3210E_EVAL/Examples/I2C/I2C_TwoBoards_ComDMA/Inc/main.h#L60 示例程序>的，里面把这个带 <tt x> 的名字定义成了 <tt I2C1_EV_IRQHandler> 的别名，后者会由 Cube 在捕获中断后调用，但是我对着看的时候一不小心就连着 <tt x> 抄过来了，后果就是这个 <tt I2Cx> 开头的东西根本没有成为中断例程，从头到尾没有进入过，而同时 DMA 中断信号一直被拉着无人理睬，别的中断自然就没反应了。函数名改过来就顺利工作了。傻不傻啊 ST 他们那个自动生成的代码搞那么多 <tt #define> 把一个东西替换成另一个不怕把自己绕死吗……
+!<filetable
+  <file main-0716c-dma.c 通过 DMA 向 I2C 输出>
+>
+
+叠了几层板（亚克力、KT 板，中间塞一盘灯带，硬纸板），当作灵敏度压测。从旁边抓到一个 12 V 直流电源，正好接在灯带上。灯带通电时似乎影响更大一些，虽然基本上调一下阈值就能传感，但还没有确定开关前后究竟会怎么变化，主要是手边没有 power MOSFET，没法自动开关或者定时切换。要不要明天抓人来帮忙手动开关这个呢。
+
+!<h1 07.17 #0717>
+继续调程序，主要是保证稳定性，在传感器或者屏幕失去连接时保持运作，并在重连时恢复。
+研究了半天感觉断联过后最稳健的办法还是系统重设，一切从头开始，只是看上去太不优雅了。做了一个 I2C 出错时在显示屏展示错误的功能，保持几秒之后就重设，但是有时显示不出来，卡一会儿就直接重设了。试验半天发现错误显示界面如果用手捏着就会刷不完（DMA 写到一半就卡住失败了），大概是手触摸时的总线电容大幅增加，导致时序错误，这何尝不是一种电容传感！！（望天）
+明天就要回家了，离开前想最后确认一下灯带开关对传感灵敏度是不是没有太多影响。Arduino IDE 有个串口绘图工具，任何串口都能用，但是看了半天感觉看得不是很清楚，这种信噪比不高的数据还是适合用散点图、EMA 曲线，或者随时间淡出的散点轨迹图，而不是普通的折线图。于是直接在串口画出了散点图，接着摘掉眼镜就可以看到清晰的趋势了。感觉上打开灯带时信噪比会更低一些，但看上去应该是够用的。比如下面的视频，可以看到手接近上部的时候两侧的曲线有“变窄”的趋势，这是因为 0 号电极的传感值增大、1 号电极的传感值减小。
+!<filetable
+  <file main-0717-plot.c 经串口文字绘图>
+>
+(video: 动态曲线图)
+
+!<h1 07.19 #0719>
+凌晨思考要不要把两组 I2C 分开，显示屏用高速的硬件通道，传感器线长一些，用几十 kHz 的 <lang en bit-bang>。每个传感器 8 个电极、单次采样 16 bytes，两个传感器合计 32 bytes = 256 bits，如果采样间隔为 10 ms，最低的频率是 256 × (9/8) / (10 ms) = 28.8 kHz。显示屏用 DMA 拉满 400 kHz 的话可以做到 1 / (128 × 64 × (9/8) / 400 kHz) = 48 fps 全刷。绕来绕去最后还是没绕过 <lang en bit-bang> 啊。
+
+!<h1 07.21 #0721>
+现在的决定是我订好元件发到展览那边，之后在现场组装。列了 BOM，下单元件发往对面同学。脑子一片糊糊的，很多线要怎么接、怎么方便拆装收纳，都没什么头绪，只有电路原理和程序大概是清楚的。总之慢慢想吧。
+上次 FUNgi 时焊接洞洞板十分痛苦，这次为了减轻压力，开始思考是不是学习一下如何画 PCB 板，于是下载了 KiCad，开始学习印刷电路板基本原理。灯带那边的大电流有些麻烦，一根大约就要达到 1 A，加起来可能极限有 15 A，薄薄的印刷铜板承受这些可实在有些压力。不过只要宽度足够倒也不是问题，参考<link https://resources.altium.com/cn/p/pcb-trace-width-vs-current-table-high-voltage-design 迹线宽度与电流关系表>以及 KiCad 自带的线宽计算器，1 A 只要 0.3 mm，15 A 要求 12 mm，倒也不是特别宽；而且之前一直在思考能不能不盖阻焊层、直接在铜板外面盖一坨焊锡，搜了搜看到 <link https://electronics.stackexchange.com/a/18883 StackExchange 上面居然真的有人说见过这种办法>，忽然放心了许多。大不了盖焊锡嘛。
+
+!<h1 07.23 #0723>
+研究了两天 PCB，总算是定了稿。由于可能通过 15 A 的部分只有电源正负极，正极能留出一大块铜片用来堆锡，而地线原本就是要在铺铜的时候填满大半块板子的，所以达到 12 mm 宽度都不是太大的问题；同时两面都会铺铜，通过覆铜过孔直接相连，这样大概压力还能再小一些。接线方式上经历了一番纠结，最终选用了螺丝接线端子，虽然自己没用过但是看上去不难用，很方便拆装的样子。在板上留出 footprint，到时把端子焊上去就好。火速下单。
+
+!<h1 07.24 #0724>
+周一，电路板定制厂家上线，可以提交订单了。早上起床又略微调整了一下迹线，接着付印。
+!<filetable
+  <file BodyLight_PCB_0724.zip KiCad 工程>
+>
+
+!<h1 07.27 #0727>
+写了一天操作指南，列了操作所需的所有步骤。
+色阿明天晚上直播，我要混进直播间问她还有两周紧不紧张能不能不 push（错乱）
+板子还没到，快递信息也不知道。明天需要问一问。
+
+!<h1 07.28 #0728>
+凌晨 3 点显示板子的包裹正在等待揽收，早上开始运输。工厂的大家辛苦了……
+
+晚上开始写 <lang en bit-bang> 的程序。MPR121 用 <lang en bit-bang> 读出的数据开头有额外四个字节，其中第 0 字节可能为 0x7f、0x3f、0x7e 等等，后三个（第 1~3）字节为 0。然后才开始 700+ 的数字，经测试这些是从 E0 开始的传感读数值（即返回的第 4、5 字节为 EFD0LB/HB）。
+
+注意到起始寄存器地址 0x04 与多余的字节数相等。将起始地址从 0x04 改为 0x06 后所得数据仍然一致（4 个字节，后接 EFD0）。显然，写入的寄存器地址并没有起作用。查阅文档发现读取时要求的是 <lang en repeated start>，即写入目标设备地址与寄存器地址后不能 <lang en stop> 而是直接接下一个 <lang en start>。修复后正常工作。
+
+发现最后一个 segment（page 7 的 segment 127）与最初一个（page 0 的 segment 0）总是同步。发现 I2C 缓冲小了一个字节，只有 1024 字节，而加上一个起始控制字节一共是 1 + 128×8 = 1025 字节；如果这个缓冲在地址空间中紧接着就是显示缓冲，那么传输 1025 个字节时，传输出去的最后一个字节就是显示缓冲的第一个字节。
+
+忽然意识到之前接触不良时读数全是 0 的问题有可能是由于 3V3 电源断开重连后没有初始化、启用电极，而不是因为陷进了混乱的 I2C 状态。只要重连时先读出 ELE_EN 看看是否启用即可。到此为止程序就可以稳定运转了，错误信息也能正确显示。
+!<filetable
+  <file main-0728-rev1.c Rev. 1 最终程序>
+  <file 0728-Light-Up.mp4 录像>
+>
+
+I2C <lang en bit-bang> 调低频率仍然无法支持长杜邦线（约 30 cm 起即无法识别），收不到 NACK，怀疑是无法把电压拉得足够低，可能是 10k 上拉电阻太小的缘故，最好是回实验室用示波器查查。另外，用杜邦线把 ADDR 引脚接到 3V3 时会直接短路，接到 SCL、SDA 时无论哪个地址都收不到信号。赶紧提醒对接同学先不要往 J2 插座里接元件，直接短路也太可怕了。明天起来再看看吧。
+!<filetable
+  <file BodyLight_Assembly_0728.pdf 组装说明>
+>
+
+!<h1 07.29 #0729>
+早上醒来意识到之前那张 Adafruit 分线板的原理图并非对应我买到的硬件。询问店家得到答复没有原理图，哪有这样的啊，产品说明里光秃秃贴一段机翻的说明，鬼看得懂。后来靠着这堆支离破碎的文字复原出英语原文，找到 <link https://www.sparkfun.com/products/retired/9695 SparkFun 的分线板原理图>，对着手上的板子检查一番终于对上了。之前盲目对照 Adafruit 款的原理图，以为 ADDR 有个 100k 下拉电阻，实际上 SparkFun 的设计（也就是我拿到的这版硬件）通过一个默认关闭的 <lang en solder jumper> 就直接接地了，把这个戳到谁就是把谁接地，戳 3V3 上自然就是短路，戳 SCL 或者 SDA 就是 <lang en arbitration lost>。笑死。
+!<img MPR121-Breakout-v13.png <= SparkFun 版本的电路原理图，其中 ADDR 引脚与地线之间没有下拉电阻。> syncdarkmild>
+正确打开方式是切断这个 <lang en jumper> 然后再把 ADDR 连到别的地方，另外上拉电阻也可以切断另外两个 <lang en jumper> 来取消。这样的话 PCB 的设计应该还是不用改的，不错。
+之前购买时看好几个店家在简介里写的都是同样的机翻文字，尽管每家的板外观上都不太一样，但大概也都是直接复刻的 SparkFun 版本。话说这机翻简直太塑料了，不过转念一想可能是 2013 年的产物，似乎也没有那么离谱。可是店家拿着这种塑料机翻还不贴原文，实在也太不上心了点吧。要是早点看懂这堆东西昨晚能少绕好多弯路呢，至少我会意识到要先打开 <lang en jumper>，至少我会认识这个东西是一种可以切开的 <lang en jumper> 而不是什么运动员啊啊啊啊啊！
+
+!<blockquote <~~='
+有一四名运动员在板的底部，所有这一切都是集（关闭）默认情况下。一种地址跳线关系添加引脚接地，意义上的芯片默认的I2C地址将0x5a。如果你需要改变芯片的地址（通过做空添加到一个不同的引脚），确保你打开跳线。跳线连接SCL和SDA，中断引脚10K的上拉电阻。如果你不需要上拉电阻可以通过切割痕迹连接打开跳线。<br><lang en There a [<it sic>] four jumpers on the bottom of the board, all of which are set (closed) by default. An address jumper ties the ADD pin to ground, meaning the default I2C address of the chip will be 0x5A. If you need to change the address of the chip (by shorting ADD to a different pin), make sure you open the jumper first. Jumpers also connect SDA, SCL and the interrupt pin to 10k pull-up resistors. If you don't require the pull-up resistors you can open the jumpers by cutting the trace connecting them.>
+板上有没有规定，所以提供的电压应为2.5和3.6vdc之间。该VREG引脚通过一个0.1uF电容器接地，这意味着连接，除非你修改板，你不可以在低电源电压模式操作mpr121（1.71-2.75vdc）。<br><lang en There is no regulation on the board, so the voltage supplied should be between 2.5 and 3.6VDC. The VREG pin is connected through a 0.1uF capacitor to ground, which means, unless you modify the board, you can't operate the MPR121 in low-supply voltage mode (1.71-2.75VDC).>
+'>>
+
+不过家里没有万用表，乱切担心切出问题，暂时搁置。
+
+{{contents.en=}}
+
+{{toc=}}true
