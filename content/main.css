@@ -857,8 +857,15 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 .item-content p *,
 .item-content blockquote.note p,
 .item-content blockquote p *,
+.item-content li > p:first-child,
 .item-content div.image-container p {
   text-indent: 0;
+}
+.item-content li > p:not(:first-child) {
+  text-indent: 0.5em;
+}
+.item-content li > p {
+  margin-block-start: 0;
 }
 .item-content p > span.br-indent {
   /* Should be supported by text-indent: each-line,
