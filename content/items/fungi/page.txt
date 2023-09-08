@@ -1,0 +1,20 @@
+{{title.zh=}}FUNgi
+{{intro.zh=}}基于电子织物的幼儿互动玩具
+{{title.en=}}FUNgi
+{{intro.en=}}Interactive toy for children based on e-textiles
+
+{{{--[[
+{{bannerimg=}}
+{{bannerimgalt.zh=}}
+{{bannerimgalt.en=}}
+]]}}}
+
+{{date=}}2023.07
+
+{{contents.zh=}}
+FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可以感知到触摸、挤压、拍打等肢体互动，再通过声音进行反馈，结合形似树桩与菌落的自然外观与鲜艳色彩，形成情感化的多感官体验。
+
+（图片）
+玩具主要面向 1–2 岁的幼儿，是一个形如树桩的外观，表面为针织，内部为 PP 棉填充。高约 60 cm、底座直径约 40 cm，
+
+{{contents.en=}}

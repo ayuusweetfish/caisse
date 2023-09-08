@@ -1,0 +1,11 @@
+<span class="line"><span class="cl"><span class="c1">// 更新基准值，与原始读数取小者
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">base</span> <span class="o">&gt;</span> <span class="n">result</span><span class="p">)</span> <span class="n">base</span> <span class="o">=</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 原始读数与基准值作差，得到过滤读数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">result</span> <span class="o">-=</span> <span class="n">base</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 每隔一段时间尝试增加基准值，以适应环境变化的情形
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 如果环境没有变化，增加量会在下一次刷新时抹去
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="n">lastBaseIncrement</span> <span class="o">+</span> <span class="mi">1000</span> <span class="o">&lt;</span> <span class="n">millis</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">base</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">lastBaseIncrement</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span>

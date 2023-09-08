@@ -15,6 +15,7 @@ local filetypes = {
   txt = 'document', pdf = 'document',
   c = 'code', h = 'code', lua = 'code', js = 'code',
   cc = 'code',
+  ino = 'code',
 }
 
 local infofn = {}
@@ -64,7 +65,10 @@ infofn['.pdf'] = function (path)
 end
 
 local function filesize(path)
-  return io.popen('stat -f "%z" "' .. path .. '" 2>/dev/null'):read('n')
+  local f = io.popen('stat -f "%z" "' .. path .. '" 2>/dev/null')
+  local s = f:read('n')
+  f:close()
+  return s
 end
 
 local databasetsv = arg[1] or 'database.tsv'
