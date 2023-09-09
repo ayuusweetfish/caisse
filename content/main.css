@@ -867,6 +867,9 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 .item-content li > p {
   margin-block-start: 0;
 }
+.item-content li > *:last-child:not(p) {
+  margin-block-end: 1em;
+}
 .item-content p > span.br-indent {
   /* Should be supported by text-indent: each-line,
     but compatibility is very limited as of early 2023 */
@@ -990,16 +993,26 @@ img.item-banner,
 }
 .chroma .c, .chroma .cm, .chroma .c1
 { color: #58a; }
+body.dark .chroma .c, body.dark .chroma .cm, body.dark .chroma .c1
+{ color: #8bf; }
 .chroma .k
 { color: #b63; }
+body.dark .chroma .k
+{ color: #f96; }
 .chroma .kt
 { color: #395; }
+body.dark .chroma .kt
+{ color: #7e9; }
 .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo
 { color: #83a; }
+body.dark .chroma .m, body.dark .chroma .mb, body.dark .chroma .mf, body.dark .chroma .mh, body.dark .chroma .mi, body.dark .chroma .il, body.dark .chroma .mo
+{ color: #d8f; }
 .chroma .nb
 { color: #46c; }
 .chroma .s, .chroma .s1
 { color: #852; }
+body.dark .chroma .s, body.dark .chroma .s1
+{ color: #eb8; }
 
 .item-content span.katex {
   overflow-x: scroll;
