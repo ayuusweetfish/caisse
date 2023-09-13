@@ -3,8 +3,8 @@
 {{title.en=}}FUNgi
 {{intro.en=}}Interactive toy for children based on e-textiles
 
+{{bannerimg=}}Cover.jpg
 {{{--[[
-{{bannerimg=}}
 {{bannerimgalt.zh=}}
 {{bannerimgalt.en=}}
 ]]}}}
@@ -12,9 +12,38 @@
 {{date=}}2023.07
 
 {{contents.zh=}}
-FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可以感知到触摸、挤压、拍打等肢体互动，再通过声音进行反馈，结合形似树桩与菌落的自然外观与鲜艳色彩，形成情感化的多感官体验。
+!<note 合作项目。>
 
-（图片）
-玩具主要面向 1–2 岁的幼儿，是一个形如树桩的外观，表面为针织，内部为 PP 棉填充。高约 60 cm、底座直径约 40 cm，
+FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可以感知到触摸、挤压、拍打等肢体互动，再通过声音进行反馈，结合形似树桩与菌落的自然外观与鲜艳色彩，形成情感化的多感官体验。
+!<img Form-1.jpg <= 置于草地上的毛绒玩具，远景。>>
+!<img Form-2.jpg <= 置于草地上的毛绒玩具，近景。>>
+
+{{!-- convert \( -background transparent 2-12135.png 3-12129.png -splice 23x23+0+0 -append -gravity southeast -splice 23x23 \) -background beige -alpha remove -scale 50% -quality 100 Photos-Collage.jpg --}}
+!<img Photos-Collage.jpg <= 两行两列的拼图。不同环境、不同角度下的毛绒玩具。> vertical>
+玩具主要面向 1–2 岁的幼儿，外观形如覆盖着菌落的树桩，高约 60 cm、底座直径约 40 cm，表面为针织，内部为 PP 棉填充。互动区域遍布整个装置，幼儿在不同姿势下都能找到适合的游玩方式。
+!<img Dimensions.png <= 装置详细尺寸示意图。> square medsmall syncdark>
+!<img Dimensions-Ref.png <= 装置尺寸与不同姿势下 1 岁幼儿体型对比示意图。> syncdark>
+
+装置表面共设置七个互动区域，每个区域包含多个小物件，各有不同的互动方式，如拍打、挤压、抚摸等，互动时会发出各有特色的声音，如鼓声、吱吱声、沙沙声。
+{{!-- convert IMG_9142.JPG IMG_9166.JPG IMG_9186.JPG -append -scale 6% -quality 100 Patches-Collage.jpg --}}
+!<img Patches-Collage.jpg <= 纵向三张拼图。不同互动区域的小块织物。> vertical>
+
+互动原理为电容传感，原型采用 Arduino 实现，基于 RC 网络阶跃响应特性，由电压变化速率测算得出电容值，经过软件滤波判定触发，最后从 MP3 模块播放声音。这个方案虽然精确度有限，也没有考虑成本与体积，但原型阶段工作较为良好，也顺利参与一次展览。目前正在尝试更精简、更低成本的组合方案。
+!<img Circuit.png <= 示意图。电特性受触摸影响的导电纱线与普通纱线混织，与电阻串联，接在 Arduino 板上。> square syncdarkmild>
+
+!<filetable
+  <file FUNgi_Ex_1.mp4 现场效果（1）>
+  <file FUNgi_Ex_2.mp4 现场效果（2）>
+>
 
 {{contents.en=}}
+
+{{rellinks.zh=}}
+!<list
+  <li <link fungi/log 工作日志>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link fungi/log Work journal>>
+>
