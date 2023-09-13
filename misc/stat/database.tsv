@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4843	document
+categories.txt	4840	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -619,15 +619,33 @@ items/friends/xhhdd-bg.png	10580	image	548	300
 items/friends/xhhdd.png	66368	image	1797	983
 items/friends/xxiivv-webring-bg.png	6190	image	600	300
 items/friends/xxiivv-webring.png	17351	image	1200	600
+items/fungi/Circuit.png	43404	image	760	720
+items/fungi/Cover.jpg	264993	image	900	600
+items/fungi/Dimensions-Ref.png	42066	image	979	538
+items/fungi/Dimensions.png	20776	image	312	256
+items/fungi/FUNgi_Ex_1.mp4	1441575	video	11	540	960
+items/fungi/FUNgi_Ex_2.mp4	1124688	video	18	304	540
+items/fungi/Form-1.jpg	134833	image	936	624
+items/fungi/Form-2.jpg	165060	image	936	624
+items/fungi/Patches-Collage.jpg	215070	image	418	835
+items/fungi/Photos-Collage.jpg	250129	image	568	835
+items/fungi/log/Audio_Circuit.jpg	267255	image	547	730
 items/fungi/log/Bound-Pins.jpg	64027	image	684	684
 items/fungi/log/DAC_0515.ino	439	code
+items/fungi/log/DAC_Circuit.jpg	264142	image	730	547
 items/fungi/log/LM386_Amp_Schematic.png	6247	image	516	329
 items/fungi/log/Numbering-1.jpg	302943	image	1080	810
 items/fungi/log/Numbering-2.jpg	121645	image	730	547
+items/fungi/log/Oscillator_0516.ino	1237	code
+items/fungi/log/Plotter.jpg	92076	image	1280	502
 items/fungi/log/Schematic-Day-Neg-2.png	42331	image	1700	768
 items/fungi/log/SensorInspect_0512.ino	1721	code
+items/fungi/log/Sound.mp4	594672	video	8	960	540
 items/fungi/log/Speaker-Components.jpg	170207	image	912	684
 items/fungi/log/Trigger_0514.ino	7385	code
+items/fungi/log/Trigger_Test_1.mp4	1274198	video	7	1440	810
+items/fungi/log/Trigger_Test_2.mp4	1235158	video	8	1440	810
+items/fungi/log/gen_wavetable.lua	1987	code
 items/gpt/bard/bard-01.png	32526	image	600	600
 items/gpt/bard/bard-02.png	29031	image	600	320
 items/gpt/bard/bard-03.png	31445	image	600	440
@@ -869,7 +887,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	26787	unknown
+main.css	26855	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
 timeline.html	4579	unknown

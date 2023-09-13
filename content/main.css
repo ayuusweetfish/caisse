@@ -995,6 +995,10 @@ img.item-banner,
 { color: #58a; }
 body.dark .chroma .c, body.dark .chroma .cm, body.dark .chroma .c1
 { color: #8bf; }
+.chroma .cp
+{ color: #a4d; }
+body.dark .chroma .cp
+{ color: #daf; }
 .chroma .k
 { color: #b63; }
 body.dark .chroma .k
