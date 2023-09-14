@@ -10,7 +10,7 @@ tables.stringsTable = function (a)
     local t = i * SAMPLE_DUR
     local x = F1 * t
     local Y = 0
-    -- Triangle + sine
+    -- Sawtooth + sine
     Y = Y + 0.5 * (0.5 - (x - math.floor(x))) / 0.5
     Y = Y + 0.5 * math.sin(x * math.pi * 2)
     -- Attack, release, vibrato

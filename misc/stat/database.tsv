@@ -629,11 +629,16 @@ items/fungi/Form-1.jpg	134833	image	936	624
 items/fungi/Form-2.jpg	165060	image	936	624
 items/fungi/Patches-Collage.jpg	215070	image	418	835
 items/fungi/Photos-Collage.jpg	250129	image	568	835
-items/fungi/log/Audio_Circuit.jpg	267255	image	547	730
+items/fungi/log/Audio_Circuit.jpg	142423	image	547	730
+items/fungi/log/Booth.jpg	122240	image	547	730
 items/fungi/log/Bound-Pins.jpg	64027	image	684	684
 items/fungi/log/DAC_0515.ino	439	code
-items/fungi/log/DAC_Circuit.jpg	264142	image	730	547
+items/fungi/log/DAC_Circuit.jpg	142064	image	730	547
+items/fungi/log/Dumplings.jpg	102524	image	730	547
+items/fungi/log/FUNgi_0517.ino	9358	code
 items/fungi/log/LM386_Amp_Schematic.png	6247	image	516	329
+items/fungi/log/Map.jpg	173762	image	730	547
+items/fungi/log/Night-Walk.jpg	236888	image	600	900
 items/fungi/log/Numbering-1.jpg	302943	image	1080	810
 items/fungi/log/Numbering-2.jpg	121645	image	730	547
 items/fungi/log/Oscillator_0516.ino	1237	code
@@ -641,10 +646,12 @@ items/fungi/log/Plotter.jpg	92076	image	1280	502
 items/fungi/log/Schematic-Day-Neg-2.png	42331	image	1700	768
 items/fungi/log/SensorInspect_0512.ino	1721	code
 items/fungi/log/Sound.mp4	594672	video	8	960	540
+items/fungi/log/Sound_Fluff.mp4	429973	video	8	270	480
 items/fungi/log/Speaker-Components.jpg	170207	image	912	684
 items/fungi/log/Trigger_0514.ino	7385	code
-items/fungi/log/Trigger_Test_1.mp4	1274198	video	7	1440	810
-items/fungi/log/Trigger_Test_2.mp4	1235158	video	8	1440	810
+items/fungi/log/Trigger_Test_Kick.mp4	1274198	video	7	1440	810
+items/fungi/log/Trigger_Test_Pick.mp4	1536151	video	11	1440	810
+items/fungi/log/Trigger_Test_Squeeze.mp4	1235158	video	8	1440	810
 items/fungi/log/gen_wavetable.lua	1987	code
 items/gpt/bard/bard-01.png	32526	image	600	600
 items/gpt/bard/bard-02.png	29031	image	600	320

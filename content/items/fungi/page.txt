@@ -28,7 +28,7 @@ FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可�
 {{!-- convert IMG_9142.JPG IMG_9166.JPG IMG_9186.JPG -append -scale 6% -quality 100 Patches-Collage.jpg --}}
 !<img Patches-Collage.jpg <= 纵向三张拼图。不同互动区域的小块织物。> vertical>
 
-互动原理为电容传感，原型采用 Arduino 实现，基于 RC 网络阶跃响应特性，由电压变化速率测算得出电容值，经过软件滤波判定触发，最后从 MP3 模块播放声音。这个方案虽然精确度有限，也没有考虑成本与体积，但原型阶段工作较为良好，也顺利参与一次展览。目前正在尝试更精简、更低成本的组合方案。
+互动原理为电容传感，原型采用 Arduino 实现，基于 RC 网络阶跃响应特性，由电压变化速率测算得出电容值，经过软件滤波判定触发，最后从 MP3 模块播放声音。这个方案虽然精确度有限，也没有考虑成本与体积，但原型阶段工作较为良好，也顺利参与了一次展览。详见<link fungi/log 工作日志>。目前正在尝试更精简、更低成本的组合方案。
 !<img Circuit.png <= 示意图。电特性受触摸影响的导电纱线与普通纱线混织，与电阻串联，接在 Arduino 板上。> square syncdarkmild>
 
 !<filetable
@@ -37,6 +37,7 @@ FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可�
 >
 
 {{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>.>
 
 {{rellinks.zh=}}
 !<list
