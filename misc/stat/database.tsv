@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4840	document
+categories.txt	4837	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -728,17 +728,34 @@ items/maylove-ex-23/log/0716-Sierpinski.jpg	87023	image	922	691
 items/maylove-ex-23/log/0716-Sierpinski.mp4	503553	video	10	960	540
 items/maylove-ex-23/log/0716-Text.jpg	102623	image	922	691
 items/maylove-ex-23/log/0728-Light-Up.mp4	408576	video	6	960	540
+items/maylove-ex-23/log/2022-Schematic-1.png	65647	image	1200	900
+items/maylove-ex-23/log/2022-Schematic-2.png	73236	image	1200	960
+items/maylove-ex-23/log/3-Electrodes.jpg	74406	image	547	730
+items/maylove-ex-23/log/4-Electrodes.mp4	2030842	video	20	960	540
+items/maylove-ex-23/log/6-Electrodes.jpg	153460	image	912	684
+items/maylove-ex-23/log/Acrylic.jpg	177911	image	912	684
 items/maylove-ex-23/log/BodyLight_0715A.png	20430	image	1200	640
 items/maylove-ex-23/log/BodyLight_0715B.png	55920	image	1200	640
 items/maylove-ex-23/log/BodyLight_0715C.png	31996	image	1200	640
 items/maylove-ex-23/log/BodyLight_Assembly_0728.pdf	1380765	document	8
 items/maylove-ex-23/log/BodyLight_PCB_0724.zip	145964	unknown
+items/maylove-ex-23/log/Bridge-1.jpg	76361	image	691	518
+items/maylove-ex-23/log/Bridge-2.jpg	76278	image	691	922
+items/maylove-ex-23/log/Chairs.jpg	80828	image	730	547
 items/maylove-ex-23/log/ITO.jpg	117648	image	1200	800
+items/maylove-ex-23/log/LED-Strip-Sandwich.jpg	88736	image	730	547
 items/maylove-ex-23/log/MPR121-Breakout-v13.png	29272	image	1212	936
+items/maylove-ex-23/log/Plot-1.mp4	684147	video	8	960	540
+items/maylove-ex-23/log/Plot-2.mp4	1147276	video	13	540	960
+items/maylove-ex-23/log/Reconnect.mp4	717705	video	10	960	540
+items/maylove-ex-23/log/Sandwich-Test.mp4	627295	video	11	540	960
+items/maylove-ex-23/log/Smaller-Electrodes.jpg	62985	image	730	547
+items/maylove-ex-23/log/Workbench.jpg	78174	image	730	547
 items/maylove-ex-23/log/main-0709-blink.cc	376	code
 items/maylove-ex-23/log/main-0711a-wire.cc	917	code
 items/maylove-ex-23/log/main-0711b-usart-i2c.c	3632	code
-items/maylove-ex-23/log/main-0712a-read-out.c	5894	code
+items/maylove-ex-23/log/main-0711c-readout.c	4993	code
+items/maylove-ex-23/log/main-0712a-readout.c	5894	code
 items/maylove-ex-23/log/main-0712b-control.c	6773	code
 items/maylove-ex-23/log/main-0715-ensemble.c	7661	code
 items/maylove-ex-23/log/main-0716a-sierpinski.c	9809	code
