@@ -9,7 +9,7 @@ const myAddrs = (Deno.env.get('ADDRS') ? Deno.env.get('ADDRS').split(',') : null
 const listSize = +Deno.env.get('LISTSIZE') || 5
 const mailboxName = Deno.env.get('MAILBOX') || 'INBOX'
 
-const log = (s) => console.log(`${new Date().toISOString()} ${s}`)
+const log = (s) => Deno.stdout.writeSync(new TextEncoder().encode(`${new Date().toISOString()} ${s}\n`))
 
 // ====================
 const fetchMails = async (count, inboxCountLast) => {
@@ -94,6 +94,7 @@ const fetchMails = async (count, inboxCountLast) => {
     const bufr = new Uint8Array(1)
     while (true) {
       const n = await conn.read(bufr)
+      if (n === 0) throw new Error('Connection closed')
       for (let i = 0; i < n; i++) {
         const status = parser.next(bufr[i])
         if (status.value !== undefined) return status.value
@@ -158,6 +159,23 @@ const fetchMails = async (count, inboxCountLast) => {
     return result
   }
 
+  const parseAddresses = (header) => {
+    const addrs = []
+    for (const entry of header.split(',')) {
+      const entryTrimmed = entry.trim()
+      const match = entryTrimmed.match(/^.+<([A-Za-z0-9.\-_]+@[A-Za-z0-9.\-_]+)>$/)
+      addrs.push(match !== null ? match[1] : entryTrimmed)
+    }
+    return addrs
+  }
+
+  const arrayIntersection = (a, b) => {
+    const set = new Set()
+    for (const v of a) set.add(v)
+    for (const v of b) if (set.has(v)) return v
+    return null
+  }
+
   log('Logging in')
   await cmd(`LOGIN "${userid}" "${pwd}"`, 'Invalid credentials')
 
@@ -218,10 +236,16 @@ const fetchMails = async (count, inboxCountLast) => {
           const [headersStr, _] = consumeStrOrAtom(headersStrQuoted)
           const headers = parseHeaders(headersStr)
           const date = new Date(headers['Date'])
-          const from = headers['From'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
-          const to = headers['To'].match(/(?:^|<)([A-Za-z0-9.\-_@]+)(?:$|>)/)[1]
+          const fromAddrs = parseAddresses(headers['From'])
+          const toAddrs = parseAddresses(headers['To'])
+          let from = fromAddrs[0]
+          let to = toAddrs[0]
+          if (myAddrs) {
+            if (fromMe) from = arrayIntersection(fromAddrs, myAddrs)
+            else to = arrayIntersection(toAddrs, myAddrs)
+          }
           const corresp = (fromMe ? to : from)
-          if ((!myAddrs || myAddrs.indexOf(fromMe ? from : to) !== -1) &&
+          if ((!myAddrs || (fromMe ? from : to) !== null) &&
               (!correspCollected[corresp] || correspCollected[corresp].date < date)) {
             correspCollected[corresp] = { date, from, to }
           }
@@ -243,7 +267,6 @@ let mailsText
 let inboxCountLast
 const updateMails = async () => {
   for (let retries = 0; retries < 3; retries++) {
-    try {
       const [inboxCount, mails] = await fetchMails(listSize, inboxCountLast)
       if (inboxCount !== inboxCountLast) {
         inboxCountLast = inboxCount
@@ -261,11 +284,6 @@ const updateMails = async () => {
           }).join('')
       }
       break
-    } catch (e) {
-      const s = '(Stray)\n'
-      mailsText = s + '---\n' + s
-      log(`${e} (attempt ${retries + 1})`)
-    }
   }
 }
 
