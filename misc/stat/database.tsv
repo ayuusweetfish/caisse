@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4837	document
+categories.txt	4839	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 date.html	4660	unknown
@@ -587,7 +587,7 @@ items/friends/alicez-bg.png	9552	image	511	300
 items/friends/alicez.png	33251	image	1485	871
 items/friends/azalea-bg.png	9929	image	500	300
 items/friends/azalea.png	14403	image	500	300
-items/friends/build.sh	837	unknown
+items/friends/build.sh	929	unknown
 items/friends/chiyuru-bg.png	14204	image	581	300
 items/friends/chiyuru.png	98284	image	2008	1036
 items/friends/gregueria-bg.png	7523	image	314	300
@@ -609,6 +609,8 @@ items/friends/origakid.png	11230	image	420	300
 items/friends/page.html	6792	unknown
 items/friends/pieris-bg.png	9314	image	419	300
 items/friends/pieris.png	34082	image	1015	727
+items/friends/revolver-bg.png	7346	image	500	300
+items/friends/revolver.png	16295	image	1000	600
 items/friends/skywt-bg.png	8315	image	346	300
 items/friends/skywt.png	8747	image	300	260
 items/friends/tianxianzi-bg.png	9439	image	750	300
