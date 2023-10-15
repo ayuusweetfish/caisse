@@ -1,0 +1,29 @@
+{{ aside = {} }}
+{{ titleprefix = {
+  zh = '源程序「',
+  en = 'Program Source “',
+} }}
+{{ titlesuffix = {
+  zh = '」',
+  en = '”',
+} }}
+<header>
+  <h1 class='p-name'>{{ titleprefix }}{{ title }}{{ titlesuffix }}</h1>
+</header>
+<div role='separator' class='windy'></div>
+<section class='item-content e-content item-content-code'>
+{{ highlightcode(highlightlang .. '\n' .. code, true) }}
+</section>
+
+<div role='separator' class='windy'></div>
+{{ rawfile = {
+  zh = '原始文件',
+  en = 'Raw file',
+} }}
+<a class='pastel {{ curcat }}' href='?raw'>{{ rawfile }} ({{ sizestring(#code) }})</a>
+
+<style>
+.item-content.item-content-code pre.code {
+  width: 100%;
+}
+</style>

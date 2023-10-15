@@ -991,6 +991,20 @@ img.item-banner,
   display: block;
   min-height: 1.5em;
 }
+.item-content pre.code.with-line-num > span {
+  display: inline;
+}
+.item-content pre.code > .line-num {
+  display: inline;
+  user-select: none;
+  text-indent: 0;
+  color: rgba(144, 144, 144, 30%);
+  text-decoration: none;
+  margin-inline-end: 1em;
+}
+.item-content pre.code > .line-num.line-num-accent {
+  /* color: rgba(180, 144, 144, 80%); */
+}
 .chroma .c, .chroma .cm, .chroma .c1
 { color: #58a; }
 body.dark .chroma .c, body.dark .chroma .cm, body.dark .chroma .c1
@@ -999,9 +1013,9 @@ body.dark .chroma .c, body.dark .chroma .cm, body.dark .chroma .c1
 { color: #a4d; }
 body.dark .chroma .cp
 { color: #daf; }
-.chroma .k
+.chroma .k, .chroma .kd, .chroma .kr
 { color: #b63; }
-body.dark .chroma .k
+body.dark .chroma .k, body.dark .chroma .kd, body.dark .chroma .kr
 { color: #f96; }
 .chroma .kt
 { color: #395; }

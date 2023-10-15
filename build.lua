@@ -80,9 +80,13 @@ local function hashverfile(path, targetpath)
 end
 caisse.envadditions.hashverfile = hashverfile
 
-local function copyfile(src, ishashver)
+local function copyfile(src, ishashver, dstsuffix)
   local dst = copydst(src)
   if ishashver then dst = hashverfile(src, dst) end
+  if dstsuffix then
+    dst = dst .. dstsuffix
+    ensuredir(dst)
+  end
   if contentpath[dst] then return dst end
   if caisse.envadditions.distbuild then
     bufferedcmds[#bufferedcmds + 1] =
@@ -212,6 +216,71 @@ end
 caisse.envadditions.file = function (path, wd)
   path = fullpath(path, wd)
   return '/' .. copyfile(path)
+end
+
+local highlightmap = {
+  ['cc'] = 'cpp',
+  ['ino'] = 'cpp',
+}
+local contentfile = function (path, curcat, iscode)
+  local origlang = caisse.lang
+  path = fullpath(path, wd)
+  local origdst = copydst(path)
+  if iscode then
+    copyfile(path, false, '/raw')
+    local mainname, ext = path:match('/([^/]*)%.([^.]+)$')
+    for _, lang in ipairs({'zh', 'en'}) do
+      caisse.lang = lang
+      caisse.envadditions.lang = caisse.lang
+      renderpage(origdst, 'code.html', {
+        curcat = curcat,
+        title = mainname .. '.' .. ext,
+        code = caisse.readfile(path),
+        highlightlang = highlightmap[ext] or ext,
+      })
+    end
+  else
+    copyfile(path)
+  end
+  caisse.lang = origlang
+  caisse.envadditions.lang = origlang
+  return '/' .. origdst
+end
+
+caisse.envadditions.highlightcode = function (text, linenum)
+  local pos = text:find('\n')
+  local lang = text:sub(1, pos - 1)
+  local s = text:sub(pos + 1)
+  local hash = basehash(s)
+  local f = io.open('misc/highlight/res.' .. hash .. '.' .. lang .. '.html', 'r')
+  if not f then
+    f = io.open('misc/highlight/src.' .. hash .. '.' .. lang, 'w')
+    f:write(s)
+    f:close()
+    return '<pre class="code">(code not rendered)</pre>'
+  end
+  local result = f:read('a')
+  f:close()
+  if linenum then
+    -- string.gmatch does not properly handle nesting
+    local lines = split(result, '<span class="line">')
+    table.remove(lines, 1)
+    local len = #tostring(#lines)
+    local pad = function (s) return string.rep('&nbsp;', len - #s) .. s end
+    local processed = {}
+    for i, line in ipairs(lines) do
+      processed[#processed + 1] = '<a class="line-num'
+        .. (i % 10 == 0 and ' line-num-accent' or '')
+        .. '" id="L'
+        .. tostring(i) .. '" href="#L' .. tostring(i) .. '">'
+        .. pad(tostring(i)) .. '</a><span class="line">'
+      processed[#processed + 1] = line
+    end
+    result = table.concat(processed)
+  end
+  return '<pre class="code'
+    .. (linenum and ' with-line-num' or '')
+    .. ' chroma">' .. result .. '</pre>'
 end
 
 local function inspectimage(path)
@@ -395,6 +464,7 @@ local function sizestring(size)
     return string.format('%.2f GiB', size / (1024 * 1024 * 1024))
   end
 end
+caisse.envadditions.sizestring = sizestring
 local function durstring(seconds)
   if seconds < 60 * 60 then
     return string.format('%02d:%02d', seconds // 60, seconds % 60)
@@ -507,21 +577,7 @@ markupfns = {
     return '<pre>' .. text .. '</pre>'
   end,
   code = function (text)
-    local pos = text:find('\n')
-    local lang = text:sub(1, pos - 1)
-    local s = text:sub(pos + 1)
-    local hash = basehash(s)
-    local f = io.open('misc/highlight/res.' .. hash .. '.' .. lang .. '.html', 'r')
-    if not f then
-      f = io.open('misc/highlight/src.' .. hash .. '.' .. lang, 'w')
-      f:write(s)
-      f:close()
-      return '<pre class="code">(code not rendered)</pre>'
-    end
-    local result = f:read('a')
-    f:close()
-    local lines = {result}
-    return '<pre class="code chroma">' .. result .. '</pre>'
+    return caisse.envadditions.highlightcode(text)
   end,
   tt = function (text)
     return '<span class="tt">' .. text .. '</span>'
@@ -590,11 +646,11 @@ markupfns = {
   file = function (src, text)
     local item = itemreg[markupfnsenvitem]
     local fullpath = fullpath(src, 'items/' .. markupfnsenvitem)
-    local fileurl = caisse.envadditions.file(fullpath)
+    local filetype = fileinfo(fullpath).type
+    local fileurl = contentfile(fullpath, curcat, filetype == 'code')
     local size = fileinfo(fullpath).size
     local parts = split(fileurl, '/')
     local basename = parts[#parts]
-    local filetype = fileinfo(fullpath).type
     local icon = filetypeicons[filetype]
     local extrainfo = filetypeextrainfo[filetype]
     if extrainfo then
