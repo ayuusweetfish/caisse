@@ -270,6 +270,7 @@ const staticFile = async (req, opts, headers, path) => {
 
   const { path: realPath, file, fileSize } =
     await tryOpenFile(path) ||
+    (opts.isRaw ? (await tryOpenFile(path + `/raw`)) : null) ||
     await tryOpenFile(path + `/index.${opts.lang}.html`) ||
     await tryOpenFile(path + `/index.html`) ||
     {}
@@ -460,6 +461,7 @@ const serveReq = async (req, info) => {
       opts.lang = negotiateLang(req.headers.get('Accept-Language') || '', supportedLangs)
       newCookies.lang = opts.lang
     }
+    opts.isRaw = (url.searchParams.get('raw') !== null)
     // Timezone
     if (isFinite(cookies['tz'])) {
       const tz = -cookies['tz']
