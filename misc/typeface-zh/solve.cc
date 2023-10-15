@@ -169,7 +169,7 @@ int main()
   std::vector<codepoint> cpseq;
   std::vector<std::unordered_set<codepoint>> docs;
   std::vector<char *> docnames;
-  char s[1024];
+  char s[65536];
   while (fgets(s, sizeof s, stdin)) {
     size_t len = strlen(s);
     if (s[len - 1] == '\n') s[len - 1] = '\0';
@@ -199,6 +199,8 @@ int main()
     }
     docs.emplace_back(cpset);
     fprintf(stderr, "%4zu %s\n", docs.rbegin()->size(), s);
+
+    fclose(f);
   }
   fprintf(stderr, "#glyphs = %zu\n", cpcount.size());
 
