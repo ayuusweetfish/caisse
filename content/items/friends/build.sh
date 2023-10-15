@@ -8,8 +8,9 @@ process() {
     return
   fi
   echo Processing $name
-  convert $name.png -scale x300 -colorspace gray -negate -evaluate Multiply 0.2 -alpha copy \
-    -channel rgb -set colorspace sRGB -fx $tint $name-bg.png
+  convert \( $name.png -scale x300 -alpha off -fill $tint -colorize 100% \) \
+    \( $name.png -scale x300 -colorspace gray -negate -evaluate Multiply 0.2 -alpha off \) \
+    -compose CopyOpacity -composite $name-bg.png
 }
 
 process alicez '#0047ab'
@@ -29,3 +30,4 @@ process indiewebring '#ff5c00'
 process travellings '#303030'
 process skywt '#808080'
 process origakid '#829692'
+process revolver '#a08c82'

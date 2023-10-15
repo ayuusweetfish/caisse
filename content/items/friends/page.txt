@@ -146,6 +146,14 @@ Technically, this is a personal wiki, but please call it anything you deem appro
   langs = {'zh'},
   tint = {130, 150, 146},
   bgimg = 'origakid-bg.png',
+}, {
+  shortname = 'Revolver',
+  title = 'Green Dolphin Dance',
+  author = 'Revolver',
+  link = 'https://greendolphindance.com/',
+  langs = {'zh'},
+  tint = {160, 140, 130},
+  bgimg = 'revolver-bg.png',
 --[[
 }, {
   shortname = 'Example',
