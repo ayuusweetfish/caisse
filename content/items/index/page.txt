@@ -29,10 +29,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2023.18> <link hitchhiker>>
   <li <date 2023.15> <link fungi> 与<link fungi/log 工作日志>>
   <li <date 2023.13> <link flow/free>，持续补全中>
   <li <date 2023.09> 音乐节奏游戏，<link fledgling>>
-  <li <date 2023.08> <link stargazing>>
 >
 
 <link revlog>
@@ -60,10 +60,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2023.18> <link hitchhiker> (currently Chinese-only, translation in progress).>
   <li <date 2023.15> <link fungi> with a <link fungi/log work journal> (currently both Chinese-only).>
   <li <date 2023.13> <link flow/free> (currently Chinese-only). Continuously clearing the backlog.>
   <li <date 2023.09> A rhythm game, <link fledgling>.>
-  <li <date 2023.08> <link stargazing>.>
 >
 
 <link revlog>
