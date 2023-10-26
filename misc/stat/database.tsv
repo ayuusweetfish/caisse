@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4839	document
+categories.txt	4864	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -698,6 +698,12 @@ items/gpt/sleep-learning/sleep-04.png	62936	image	900	480
 items/gradatim/Gradatim_1.jpg	75030	image	1080	720
 items/gradatim/Gradatim_2.jpg	135756	image	1080	720
 items/gradatim/Gradatim_trailer.mp4	1257564	video	32	540	360
+items/hitchhiker/HHG_Interactives.pdf	8969822	document	42
+items/hitchhiker/guide_icons-0.png	3643	image	160	160
+items/hitchhiker/guide_icons-1.png	3133	image	160	160
+items/hitchhiker/guide_icons-2.png	4622	image	160	160
+items/hitchhiker/guide_icons-3.png	2743	image	160	160
+items/hitchhiker/guide_icons-4.png	3557	image	160	160
 items/ice-hatch/cover.png	22420	image	650	500
 items/ice-hatch/play/game.data	84924	unknown
 items/ice-hatch/play/game.js	11416	code
