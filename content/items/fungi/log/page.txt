@@ -1,5 +1,5 @@
-{{title.zh=}}FUNgi 工作日志
-{{title.en=}}FUNgi Work Journal
+{{title.zh=}}FUNgi 工作日志（第一版）
+{{title.en=}}FUNgi Work Journal (Revision 1)
 
 {{date=}}2023.07
 {{usemath=}}true
@@ -290,8 +290,10 @@ ISR(TIMER1_COMPA_vect) {
 感觉也会是个看星星的好地方呢。
 辛苦啦！走咯。
 
+!<note 下篇：<link fungi/log-r2>>
+
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>.>
+!<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
 
 {{toc=}}true
 

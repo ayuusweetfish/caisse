@@ -1,0 +1,22 @@
+{{title.zh=}}FUNgi 工作日志（第二版）
+{{title.en=}}FUNgi Work Journal (Revision 2)
+
+{{date=}}2023.16,2023.17
+
+{{contents.zh=}}
+!<note 上篇：<link fungi/log>>
+
+{{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
+
+{{toc=}}true
+
+{{rellinks.zh=}}
+!<list
+  <li <link fungi %>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link fungi %>>
+>
