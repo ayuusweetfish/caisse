@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4864	document
+categories.txt	4911	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -626,14 +626,19 @@ items/fungi/Circuit.png	43404	image	760	720
 items/fungi/Cover.jpg	264993	image	900	600
 items/fungi/Dimensions-Ref.png	42066	image	979	538
 items/fungi/Dimensions.png	20776	image	312	256
+items/fungi/Electrodes-Perfboard.jpg	83971	image	547	547
 items/fungi/FUNgi_Ex_1.mp4	1441575	video	11	540	960
 items/fungi/FUNgi_Ex_2.mp4	1124688	video	18	304	540
+items/fungi/FUNgi_R2_Board.png	79138	image	830	830
 items/fungi/FUNgi_R2_Ex_1.mp4	842857	video	14	270	480
 items/fungi/FUNgi_R2_Ex_2.mp4	968586	video	18	540	360
+items/fungi/FUNgi_R2_Schematic.svg	806280	image	1234	675
 items/fungi/Form-1.jpg	134833	image	936	624
 items/fungi/Form-2.jpg	165060	image	936	624
+items/fungi/Interaction-by-Pulling.png	42977	image	829	387
 items/fungi/Patches-Collage.jpg	215070	image	418	835
 items/fungi/Photos-Collage.jpg	250129	image	568	835
+items/fungi/Pocket.jpg	104242	image	518	691
 items/fungi/log/Audio_Circuit.jpg	142423	image	547	730
 items/fungi/log/Booth.jpg	122240	image	547	730
 items/fungi/log/Bound-Pins.jpg	64027	image	684	684

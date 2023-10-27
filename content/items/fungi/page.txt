@@ -41,7 +41,9 @@ FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可�
 !<hr>
 !<h1 第二版 #Rev-2>
 
-改进了技术方案，重新完成各组件的选型，将所有元件（STM32 主控、闪存、DAC 与音频放大器）集成在一块扁平电路板上，使用单一 USB 电源供电，置于装置底部的布口袋结构内。过程中拆开装置，拆除其中不再使用的电阻元件与杜邦线，将所有纱线全部改为直接通过单股细导线焊接至电路板，并修复原本断开的连接，然后重新填充棉花、缝合。新方案不仅更易于运输与安装、更不容易损坏，而且反应灵敏度与可靠性均有提升。
+改进了技术方案，重新完成各组件的选型，将所有元件集成在一块扁平电路板上，由单一 USB 电源供电，置于装置底部的布口袋内。过程中拆开装置，拆除其中不再使用的电阻元件与杜邦线，将所有纱线全部改为直接通过单股细导线焊接至电路板，并修复原本断开的连接，然后重新填充棉花、缝合。新方案不仅更易于运输与安装、更不容易损坏，增补了拉伸的互动形式，而且反应灵敏度与可靠性均有提升。
+!<img Interaction-by-Pulling.png <= 示意图。通过拉伸的导电织物实现交互传感。> syncdarkmild>
+
 目前于北京薄荷公社展览中。
 
 !<filetable
@@ -49,7 +51,22 @@ FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可�
   <file FUNgi_R2_Ex_2.mp4 打击乐器现场>
 >
 
-工作日志补全中。
+!<h2 技术细节>
+在更新版中，作了如下修改：
+!<list
+  <li 主控芯片更换为 STM32F103C6T6（32 位，72 MHz，10 KiB RAM）；>
+  <li 采用充放电式电容传感芯片 MPR121 代替 RC 时间常数传感原理，提升灵敏度与稳定性；>
+  <li 音频采样使用 <link https://qoaformat.org/ QOA> 格式存储在闪存芯片中。>
+>
+所有部件集成在印刷电路板上，传感电极（纱线）缠绕在装置内部的洞洞板上，由此连接细导线，从装置底部引出，焊接固定于电路板上的孔内。
+!<img Electrodes-Perfboard.jpg <= 织物表面，纱线与细导线绕在洞洞板上，通过热熔胶与焊锡固定。> square medsmall>
+!<img FUNgi_R2_Schematic.svg <= 电路原理图。> syncdarkmild>
+!<img FUNgi_R2_Board.png <= 圆形电路板效果图。> square medsmall>
+!<img Pocket.jpg <= 藏在布口袋里的电路板，边缘的孔里焊接白色细导线。> vertical>
+
+借助仔细设计的时间分片算法，更新版可以在 100 Hz 刷新率 bit-bang 轮询六个 12 通道 I²C 传感器的同时完成 24 kHz 采样率 16 位深 4 复音数的采样解码，并通过数模转换器输出至音频放大器芯片。
+!<note 工作日志补全中。>
+!<--=' 详见<link fungi/log-r2 第二版工作日志>。 '>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
@@ -57,9 +74,11 @@ FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可�
 {{rellinks.zh=}}
 !<list
   <li <link fungi/log 工作日志（第一版）>>
+  <--=' <li <link fungi/log-r2 工作日志（第二版）>> '>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link fungi/log Work journal (revision 1)>>
+  <--=' <li <link fungi/log-r2 Work journal (revision 2)>> '>
 >
