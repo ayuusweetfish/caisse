@@ -135,6 +135,7 @@ cats.potpourri.pagelist = {
 ]]
 }
 cats.pebbles.pagelist = {
+  {name = 'shovel/pcb-printer'},
   {name = 'fledgling'},
   {name = 'bmflat'},
   {name = 'solo-boot'},
