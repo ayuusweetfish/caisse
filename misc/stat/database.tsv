@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4911	document
+categories.txt	4908	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -622,6 +622,7 @@ items/friends/xhhdd-bg.png	10580	image	548	300
 items/friends/xhhdd.png	66368	image	1797	983
 items/friends/xxiivv-webring-bg.png	6190	image	600	300
 items/friends/xxiivv-webring.png	17351	image	1200	600
+items/fungi/1014-Weld.jpg	32520	image	420	420
 items/fungi/Circuit.png	43404	image	760	720
 items/fungi/Cover.jpg	264993	image	900	600
 items/fungi/Dimensions-Ref.png	42066	image	979	538
@@ -630,15 +631,56 @@ items/fungi/Electrodes-Perfboard.jpg	83971	image	547	547
 items/fungi/FUNgi_Ex_1.mp4	1441575	video	11	540	960
 items/fungi/FUNgi_Ex_2.mp4	1124688	video	18	304	540
 items/fungi/FUNgi_R2_Board.png	79138	image	830	830
+items/fungi/FUNgi_R2_Case.FCStd	153417	unknown
 items/fungi/FUNgi_R2_Ex_1.mp4	842857	video	14	270	480
 items/fungi/FUNgi_R2_Ex_2.mp4	968586	video	18	540	360
+items/fungi/FUNgi_R2_FW.zip	16446	unknown
 items/fungi/FUNgi_R2_Schematic.svg	806280	image	1234	675
+items/fungi/FUNgi_R2_Timers.svg	20414	image	1361	286
+items/fungi/FUNgi_R2a_ECAD.zip	352892	unknown
 items/fungi/Form-1.jpg	134833	image	936	624
 items/fungi/Form-2.jpg	165060	image	936	624
 items/fungi/Interaction-by-Pulling.png	42977	image	829	387
 items/fungi/Patches-Collage.jpg	215070	image	418	835
 items/fungi/Photos-Collage.jpg	250129	image	568	835
 items/fungi/Pocket.jpg	104242	image	518	691
+items/fungi/R2-Exhibition.jpg	42113	image	547	730
+items/fungi/log-r2/0930-Proximity.mp4	1012949	video	18	960	540
+items/fungi/log-r2/1001-Schematic.svg	62946	image	479	116
+items/fungi/log-r2/1002-Lab.jpg	122841	image	730	1094
+items/fungi/log-r2/1002-Perfboard.jpg	72943	image	878	360
+items/fungi/log-r2/1003-PCB.png	66181	image	840	840
+items/fungi/log-r2/1003-Schematic.svg	138961	image	493	306
+items/fungi/log-r2/1006-Resemblance.jpg	170212	image	800	1600
+items/fungi/log-r2/1007-Corner.jpg	62588	image	547	730
+items/fungi/log-r2/1008-Board.jpg	123196	image	684	912
+items/fungi/log-r2/1009-Assembly.jpg	92852	image	730	547
+items/fungi/log-r2/1009-Blink.mp4	255117	video	5	540	960
+items/fungi/log-r2/1009-Probe.jpg	120993	image	861	646
+items/fungi/log-r2/1009-Resistors.jpg	86462	image	922	691
+items/fungi/log-r2/1010-Connections.jpg	106171	image	547	730
+items/fungi/log-r2/1010-Cucumber.jpg	69676	image	547	730
+items/fungi/log-r2/1010-Disassembly.jpg	111335	image	730	547
+items/fungi/log-r2/1010-HMA.jpg	95917	image	730	547
+items/fungi/log-r2/1010-Modifications.png	23728	image	1080	600
+items/fungi/log-r2/1010-Toolkit.jpg	82957	image	730	547
+items/fungi/log-r2/1010-Tune.mp4	860748	video	12	480	270
+items/fungi/log-r2/1010-Weld.jpg	56096	image	675	675
+items/fungi/log-r2/1011-Freedom.mp4	1393266	video	22	480	270
+items/fungi/log-r2/1011-Resistors.jpg	90185	image	691	518
+items/fungi/log-r2/1012-Bag.jpg	62649	image	730	547
+items/fungi/log-r2/1012-Case.jpg	29570	image	706	440
+items/fungi/log-r2/1013-Printer.jpg	46068	image	912	684
+items/fungi/log-r2/1013-Slicing.jpg	126520	image	1003	752
+items/fungi/log-r2/1014-Bend.mp4	137900	video	3	960	540
+items/fungi/log-r2/1014-Board.jpg	121262	image	730	547
+items/fungi/log-r2/1014-Bounce.mp4	1061143	video	17	270	480
+items/fungi/log-r2/1014-Connection.jpg	102025	image	730	547
+items/fungi/log-r2/1014-Hotpot.jpg	149352	image	730	1094
+items/fungi/log-r2/1014-Muster.jpg	84295	image	912	488
+items/fungi/log-r2/1014-Readout.jpg	112440	image	730	547
+items/fungi/log-r2/1014-Weld.jpg	94033	image	720	720
+items/fungi/log-r2/gen-flash-gdbinit.c	2737	code
 items/fungi/log/Audio_Circuit.jpg	142423	image	547	730
 items/fungi/log/Booth.jpg	122240	image	547	730
 items/fungi/log/Bound-Pins.jpg	64027	image	684	684

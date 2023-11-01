@@ -1,0 +1,13 @@
+<span class="line"><span class="cl"><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="nf">swv_putchar</span><span class="p">(</span><span class="kt">uint8_t</span> <span class="n">c</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 取消原本的 SWV 输出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="c1">// ITM_SendChar(c);
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="k">if</span> <span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="sc">&#39;\n&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">swv_buf</span><span class="p">[</span><span class="n">swv_buf_ptr</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="sc">&#39;\0&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nf">swv_trap_line</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">swv_buf_ptr</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">swv_buf_ptr</span> <span class="o">&lt;</span> <span class="p">(</span><span class="k">sizeof</span> <span class="n">swv_buf</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">swv_buf</span><span class="p">[</span><span class="n">swv_buf_ptr</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span>
