@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4908	document
+categories.txt	4941	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -906,6 +906,19 @@ items/sheepdogs/play/index.html	4723	unknown
 items/sheepdogs/play/love.js	385958	code
 items/sheepdogs/play/love.wasm	4727939	unknown
 items/sheepdogs/play/love.worker.js	3423	code
+items/shovel/pcb-printer/Amend.jpg	95479	image	912	684
+items/shovel/pcb-printer/Base-Board.jpg	64104	image	547	730
+items/shovel/pcb-printer/Cut.jpg	64130	image	656	540
+items/shovel/pcb-printer/Finish.jpg	68252	image	820	625
+items/shovel/pcb-printer/Holes.jpg	39513	image	730	547
+items/shovel/pcb-printer/Needle.jpg	14113	image	360	360
+items/shovel/pcb-printer/PCB-Design.svg	195901	image	1044	745
+items/shovel/pcb-printer/Powder.jpg	63759	image	547	730
+items/shovel/pcb-printer/Print.mp4	638222	video	13	960	540
+items/shovel/pcb-printer/Rack.jpg	38130	image	576	370
+items/shovel/pcb-printer/ResSensor_R1.zip	27184	unknown
+items/shovel/pcb-printer/Solder-Test.jpg	48397	image	396	672
+items/shovel/pcb-printer/T-Series-Client.jpg	68558	image	960	520
 items/sunshine/IMG_20190705_175742.jpg	233884	image	1884	1140
 items/sunshine/IMG_20190707_173644.jpg	194313	image	744	992
 items/sunshine/IMG_20190708_010812.jpg	288010	image	992	744
