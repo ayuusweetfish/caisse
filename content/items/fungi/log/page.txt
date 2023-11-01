@@ -1,5 +1,5 @@
-{{title.zh=}}FUNgi 工作日志（第一版）
-{{title.en=}}FUNgi Work Journal (Revision 1)
+{{title.zh=}}FUNgi（第一版）工作日志
+{{title.en=}}FUNgi (Revision 1) Work Journal
 
 {{date=}}2023.07
 {{usemath=}}true
