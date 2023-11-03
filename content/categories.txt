@@ -110,10 +110,11 @@ cats.murmurs.pagelist = {
   {name = 'inner-prod'},
 }
 cats.potpourri.pagelist = {
-  {name = 'maylove-ex-23/log', unlisted = true},
   {name = 'fungi'},
   {name = 'fungi/log', unlisted = true},
   {name = 'fungi/log-r2', unlisted = true},
+  {name = 'maylove-ex-23', dark = true},
+  {name = 'maylove-ex-23/log', unlisted = true},
   {name = 'pink-bubble'},
   {name = 'rose'},
   {name = 'gpt'},
