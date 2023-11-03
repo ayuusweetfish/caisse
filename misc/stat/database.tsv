@@ -2,11 +2,11 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	4941	document
+categories.txt	4982	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
-date.html	4660	unknown
+date.html	4662	unknown
 divider-end.svg	348	image	120	120
 divider-fleuron-cloudy.svg	376	image	1200	120
 divider-fleuron-heart.svg	1147	image	1080	120
@@ -781,6 +781,11 @@ items/maylove-ex-22/play/game.js	11418	code
 items/maylove-ex-22/play/index.html	4721	unknown
 items/maylove-ex-22/play/love.js	325312	code
 items/maylove-ex-22/play/love.wasm	4702493	unknown
+items/maylove-ex-23/Display.jpg	75935	image	912	684
+items/maylove-ex-23/Interaction-Instructions.jpg	88728	image	1500	600
+items/maylove-ex-23/Signpost.jpg	105648	image	1013	600
+items/maylove-ex-23/Touch.jpg	106977	image	1008	597
+items/maylove-ex-23/cover.jpg	49526	image	522	448
 items/maylove-ex-23/log/0715-ITO.jpg	117648	image	1200	800
 items/maylove-ex-23/log/0716-Sierpinski.jpg	87023	image	922	691
 items/maylove-ex-23/log/0716-Sierpinski.mp4	503553	video	10	960	540

@@ -1,0 +1,40 @@
+{{title.zh=}}身体红绿灯（2023）
+{{intro.zh=}}《我向许多人打听过你》展会互动道具（重制）
+{{title.en=}}Traffic Lights of the Body (2023)
+{{intro.en=}}Interactive installation on a sex-ed exhibition (second iteration)
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}30,15
+{{bannerimginpage=}}false
+{{bannerimgalt.zh=}}教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。
+{{bannerimgalt.en=}}Depictions of two children on a display board resembling a textbook. When approached with a hand, lights of different colours glow around the body parts.
+
+{{date=}}2023.12,2023.13
+
+{{contents.zh=}}
+!<img Touch.jpg <= 完整图像。教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。//（摄：海涵）> caption>
+
+2023 年莓辣 MAYLOVE / 摘星阁 PLUCK 大型性教育互动展会《我向许多人打听过你》互动道具。展览场地位于贵阳悦然广场。
+!<img Signpost.jpg <= 广场室外地面上放置的主题展板。>>
+
+伸手触摸，点亮“身体教科书”上的身体部位，观察不同彩灯的颜色，看到图上的孩子对自己身体隐私的认识。
+!<img Display.jpg <= 置于展览场地内的展板。>>
+!<img Interaction-Instructions.jpg <= 展览互动提示。“这是一个可以互动的展具，将手移动到人体的不同部分，可以通过亮起的灯光颜色明白，身体的哪些部位是能被他人触碰的‘安全地带’，而哪些又是不容侵犯的‘禁忌界限’。”>>
+(video)
+
+相比 <link maylove-ex-22 2022 年版本>，本次将技术方案改为电容传感，实现完整而美观的展板表面。电路集成在印刷电路板上，大部分元件在展览现场完成组装测试。装置搭建过程中获得了展览志愿者与外援们的大量协助。谢谢海子、花酱、肥肥、加盐、小李、妹妹以及许多没有留下名字的大家——
+
+{{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
+
+{{rellinks.zh=}}
+!<list
+  <li <link maylove-ex-22 初版装置（2022）>>
+  <li <link maylove-ex-23/log 重制版工作日志>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link maylove-ex-22 First iteration of the installation (2022)>>
+  <li <link maylove-ex-23/log Work journal of the revised iteration>>
+>
