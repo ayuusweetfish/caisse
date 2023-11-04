@@ -18,23 +18,35 @@
 !<img Signpost.jpg <= 广场室外地面上放置的主题展板。>>
 
 伸手触摸，点亮“身体教科书”上的身体部位，观察不同彩灯的颜色，看到图上的孩子对自己身体隐私的认识。
+
+!<filetable
+  <file On-Site.mp4 搭建完成时的现场留影>
+>
+
 !<img Display.jpg <= 置于展览场地内的展板。>>
 !<img Interaction-Instructions.jpg <= 展览互动提示。“这是一个可以互动的展具，将手移动到人体的不同部分，可以通过亮起的灯光颜色明白，身体的哪些部位是能被他人触碰的‘安全地带’，而哪些又是不容侵犯的‘禁忌界限’。”>>
-(video)
 
-相比 <link maylove-ex-22 2022 年版本>，本次将技术方案改为电容传感，实现完整而美观的展板表面。电路集成在印刷电路板上，大部分元件在展览现场完成组装测试。装置搭建过程中获得了展览志愿者与外援们的大量协助。谢谢海子、花酱、肥肥、加盐、小李、妹妹以及许多没有留下名字的大家——
+!<img Yuanbao.jpg <~=' 女孩们伸手触摸展板图案的场景。//贵州大方镇元宝小学女足队观展剪影（照片来自<link https://mp.weixin.qq.com/s/-3y-YfdRKmzut__rRBHlHA 莓辣>）'> caption>
+
+本次仍然负责全部电子技术实现部分；美术设计来自莓辣成员 Annie。相比 <link maylove-ex-22 2022 年版本>，本次将技术方案改为电容传感，实现完整而美观的展板表面。电路集成在印刷电路板上，大部分元件在展览现场完成组装测试。装置搭建过程中获得了莓辣成员、展览志愿者与外援们的大量协助。谢谢 Sea、Milky、Annie、海涵、77、海子、花酱、肥肥、加盐、妹妹、小李（各组内按出场时间顺序）以及许多没有留下名字的大家——
+
+!<img log/BodyLight_0715B.png <= 装置反面示意图，铜片通过导线连接到单片机上。标有文字：“导线悬空即可，若影响灵敏度则考虑用胶带固定于面板”；旁边局部放大图显示铜箔用导电胶带固定并粘在导线上，另外也可以直接用导电胶带组成感应区域。> syncdark>
+!<img log/BodyLight_0715C.png <= 装置夹层示意图，包括红黄绿不同颜色的灯带，各自伸出正负极导线接在 12 V 电源上，同时伸出一根导线连接到各自不同的单片机引脚。> syncdark>
+!<img Electronic-Components.jpg <= 展板背面安装于印刷电路板上的电子元器件。>>
+
+!<note 工作日志补全中。>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
 
 {{rellinks.zh=}}
 !<list
-  <li <link maylove-ex-22 初版装置（2022）>>
-  <li <link maylove-ex-23/log 重制版工作日志>>
+  <li <link maylove-ex-22 装置第一版>>
+  <--=' <li <link maylove-ex-23/log 重制版工作日志>> '>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link maylove-ex-22 First iteration of the installation (2022)>>
-  <li <link maylove-ex-23/log Work journal of the revised iteration>>
+  <--=' <li <link maylove-ex-23/log Work journal of the revised iteration>> '>
 >
