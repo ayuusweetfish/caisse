@@ -63,7 +63,7 @@
 
 通过同样的方法其实也可以主动去拓宽选择。在某宝上找一家种类丰富、面向学生与爱好者的电子元器件商店（如某家 r 开头的店以及某家 Z 开头的店），点进传感器大类，多逛几圈，也许就会有新的收获。有一些专门设计制造元器件模块的厂家，比如 <link https://www.adafruit.com/ Adafruit> 和 <link https://www.sparkfun.com/ SparkFun>，也有国内的品牌如<link https://www.waveshare.net/ 微雪>、<link https://www.dfrobot.com.cn/ DFRobot>，设计都十分用心，提供的元件也都有很大发挥空间，可以逛上许久。我偶遇过一个雷电传感器 <link https://www.sciosense.com/products/wireless-sensor-nodes/as3935-franklin-lightning-sensor-ic/ AS3935>（<link https://www.sparkfun.com/products/15441 SparkFun 模块产品页面>），只要外接一个小线圈，它就可以检测 40 km 范围内的雷电，距离分辨率精确到 1 km。这是不是也可以用来做些什么呢？留给读者作为练习。
 
-为了摸清当下科技能做到哪些事，参考案例也是一个有效的方法。如果设计中的某个功能或要求在已有的案例中出现过，那么我们就能知道它确实可行。例如仍然对于《身体红绿灯》，从设计者的角度，实际上只要见过感应水龙头，便能放心地继续设计这个方案，因为只要采取同样的技术即可。在它的 2023 年重制版中，我根据原本了解到的 <link https://www.bareconductive.com/ Bare Conductive 公司>使用导电油墨实现近距离互动墙面的案例，认为我们的设计要求（10 cm 左右的接近互动）也完全可以摆脱红外传感器的黑孔，由此在确定具体技术细节之前就向策划组提出要求，认为可以重制整套设备。又或者——随意举个例子——从<link http://www.digiart21.org/art/rain-room 《雨室》（Rain Room）>出发，我们也许可以设想同一种传感技术的不同应用：给参与者追光？地面互动投影？总之，在这个视角下，《雨室》告诉我们，存在一种技术手段，能在大空间里追踪到人的行迹。这便足够成为一个灵感的种子了。
+为了摸清当下科技能做到哪些事，参考案例也是一个有效的方法。如果设计中的某个功能或要求在已有的案例中出现过，那么我们就能知道它确实可行。例如仍然对于《身体红绿灯》，从设计者的角度，实际上只要见过感应水龙头，便能放心地继续设计这个方案，因为只要采取同样的技术即可。在<link maylove-ex-23 它的 2023 年重制版>中，我根据原本了解到的 <link https://www.bareconductive.com/ Bare Conductive 公司>使用导电油墨实现近距离互动墙面的案例，认为我们的设计要求（10 cm 左右的接近互动）也完全可以摆脱红外传感器的黑孔，由此在确定具体技术细节之前就向策划组提出要求，认为可以重制整套设备。又或者——随意举个例子——从<link http://www.digiart21.org/art/rain-room 《雨室》（Rain Room）>出发，我们也许可以设想同一种传感技术的不同应用：给参与者追光？地面互动投影？总之，在这个视角下，《雨室》告诉我们，存在一种技术手段，能在大空间里追踪到人的行迹。这便足够成为一个灵感的种子了。
 
 因此，案例积累是充满乐趣而十分有效的学习途径，在启发思考的同时也能掌握更多“技术细节”。除了常见的 <link https://www.behance.net/ Behance>、<link https://dribbble.com/ Dribbble> 等设计类网站，最近得知<link https://www.xiaohongshu.com/ 小红书>上也有一些做设计案例分享的账号会发布互动装置相关的内容；另外，许多电子技术爱好者会将自己的发明制作发布在 <link https://www.instructables.com/ Instructables> 和 <link https://hackaday.io/ Hackaday.io> 等网站上，国内则有<link https://oshwhub.com/ 立创开源硬件平台>、<link https://mc.dfrobot.com.cn/ DF 创客社区>等。前一边是提供设计参考，后一边则偏重技术的创造性应用，都可以成为不错的启发。有兴趣的读者也可以在网络上自行随意搜寻相关信息——也许互联网各处都散落着有趣的事物呢。<link fungi 《FUNgi》>的灵感起源便是 <link https://www.kobakant.at/DIY/ KOBAKANT> 这个宝藏小角落。
 
@@ -156,16 +156,20 @@ PCB 设计完成之后就可以交给工厂制作。国内一般价格为 20 元
 感谢大家能来听我废话。要是能带来一些启发与收获就再好不过啦！
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>. Translation is planned.>
+!<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
 
 {{rellinks.zh=}}
 !<list
   <li <link shovel/pcb-printer>>
+  <li <link fungi 提及的项目：%>>
+  <li <link maylove-ex-23 提及的项目：%>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link shovel/pcb-printer>>
+  <li <link fungi Referenced project: %>>
+  <li <link maylove-ex-23 Referenced project: %>>
 >
 
 {{toc=}}true
