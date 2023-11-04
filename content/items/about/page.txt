@@ -11,7 +11,7 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 有许多名字和昵称，但在这里叫我甜鱼就可以！图画来自友邻<link friends#Azalea 桂桂>～
 相信世界的美好可能性，永远在学习的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
 做的事情很杂，主业设计学/计算机，副业音乐/游戏制作，正在尝试学画画。整理归类放到这个小站就是敝帚自珍啦，但要是真的被喜欢的话会非常非常开心！
-是 ENFP/INFP，外向社恐，无可救药的空想家，重度拖延自救中 ; - ;
+是 INFP/ENFP，外向社恐，无可救药的空想家，重度拖延自救中 ; - ;
 !<clearfloat>
 !<hr windy>
 
@@ -20,17 +20,17 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 There are many ways of calling me, but I’m Ayu here! The picture is painted by my neighbour <link friends#Azalea Azalea>~
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
 I dip into a mixture of things, majoring in design and computing, while dabbling in music and game development as well as trying to learn to draw. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
-ENFP/INFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to overcome procrastination ; - ;
+INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to overcome procrastination ; - ;
 !<clearfloat>
 !<hr windy>
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-整理一些草率的角落。不知道夏天要怎么度过呢 <kao （´-`）.｡oO（><date 2023.06>
+想做大家都能玩的音乐小装置！<date 2023.18>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Tidying up odds and ends done in a hurry. How will the summer be spent? Seems really hard to tell <kao （´-`）.｡oO（><date 2023.06>
+Musing over musical gadgets approachable for everyone! <date 2023.18>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
