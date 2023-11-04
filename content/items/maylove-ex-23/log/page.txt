@@ -6,6 +6,7 @@
 
 {{contents.zh=}}
 
+!<note 补全中。>
 !<note 本文仅记录技术细节。>
 
 !<h1 07.06 #0706>
@@ -272,5 +273,6 @@ I2C <lang en bit-bang> 调低频率仍然无法支持长杜邦线（约 30 cm �
 不过家里没有万用表，乱切担心切出问题，暂时搁置。
 
 {{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
 
 {{toc=}}true
