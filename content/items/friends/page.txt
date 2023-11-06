@@ -154,6 +154,14 @@ Technically, this is a personal wiki, but please call it anything you deem appro
   langs = {'zh'},
   tint = {160, 140, 130},
   bgimg = 'revolver-bg.png',
+}, {
+  shortname = 'neutrino7',
+  title = '七号中微子',
+  author = 'JollyLight',
+  link = 'https://neutrino7.top',
+  langs = {'zh'},
+  tint = {0x90, 0xb0, 0xff},
+  bgimg = 'neutrino7-bg.png',
 --[[
 }, {
   shortname = 'Example',
