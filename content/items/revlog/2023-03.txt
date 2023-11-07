@@ -16,9 +16,9 @@
 {{contents.en=}}
 Springtide goes by so quickly here that all of a sudden, the footsteps of summer are around. A big portion of the year has escaped in a daze.
 !<list
-  <li <link flow/wantan>. I'm filled with more and more nonsensical things and have been writing this for most of the month.>
+  <li <link flow/wantan>. I’m filled with more and more nonsensical things and have been writing this for most of the month.>
   <li <link gpt>, episode 6: <link gpt/cross>.>
   <li <link planetarium>. Since the previous playlist was quite limited, this page replaces it by random picks. More content to be added next.>
-  <li <link email Emails status page> broke a few times recently, and it's still unclear whether it has been completely fixed…>
+  <li <link email Emails status page> broke a few times recently, and it’s still unclear whether it has been completely fixed…>
   <li The backlog from last month has not been sorted out, and new things are being made. Trying to get to these next month!>
 >
