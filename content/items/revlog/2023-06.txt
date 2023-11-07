@@ -1,0 +1,16 @@
+{{title.zh=}}23 未月 —— 消息盈虚
+{{title.en=}}23, Month of the Goat — Fulfilment and Decadence
+
+{{timestamp=}}2023.08.08.03
+
+{{contents.zh=}}
+被工作压垮，没能及时更新呢。
+!<list
+  <li <link flow/desert>。>
+>
+
+{{contents.en=}}
+Been away overloaded with work, did not manage to update on time.
+!<list
+  <li <link flow/desert>.>
+>
