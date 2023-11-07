@@ -1,0 +1,20 @@
+{{title.zh=}}23 申月 —— 几天几月几周几年
+{{title.en=}}23, Month of the Monkey — Days, Weeks, Months, Years
+
+{{timestamp=}}2023.09.08.06
+
+{{contents.zh=}}
+成为高山，成为溪流，成为冲破牢笼的自由的鸟。
+去了许多地方，实现了许多理想，结识了许多朋友。真好呀。
+!<list
+  <li <link flow/free>。>
+  <li 布展工作顺利收尾，待补全～>
+>
+
+{{contents.en=}}
+To become mountains, to become streams, to become the soaring birds that break free from the cages of confinement.
+Visited quite a few places, realized quite a few dreams, made quite a few friends. That has been really fantastic.
+!<list
+  <li <link flow/free>.>
+  <li The exhibition installation went on well — soon to be elaborated on.>
+>

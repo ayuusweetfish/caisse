@@ -1,0 +1,22 @@
+{{title.zh=}}23 戌月 —— 九月授衣
+{{title.en=}}23, Month of the Dog — Knitting for Dormancy
+
+{{timestamp=}}2023.11.08.01
+
+{{contents.zh=}}
+转眼间秋天都慌慌张张地逃走了！
+不过总算是重新开始打理这里啦。接下来要加油！
+!<list
+  <li <link hitchhiker>。>
+  <li <link fungi/log-r2>。>
+  <li 补全暑假期间的工作<link maylove-ex-23 《身体红绿灯》（重制）>。>
+>
+
+{{contents.en=}}
+In the blink of an eye, autumn has flown away in a panic!
+Anyway, I finally started cleaning up around here again. Hope I can keep it up!
+!<list
+  <li <link hitchhiker>.>
+  <li <link fungi/log-r2>.>
+  <li Caught up with the work during the summer vacation, <link maylove-ex-23 “Traffic Lights of the Body” (second iteration)>.>
+>

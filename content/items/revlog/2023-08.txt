@@ -1,0 +1,18 @@
+{{title.zh=}}23 酉月 —— 老虎与鸟儿
+{{title.en=}}23, Month of the Rooster — Autumn’s Tiger and Birds
+
+{{timestamp=}}2023.10.08.22
+
+{{contents.zh=}}
+秋老虎可真是厉害呀。
+做了许多、思考了许多，但还是没能追上无数念头飞奔的步伐，也没能认真地记录，日记都断更了。不过，有些故事将来慢慢讲述也无妨～
+!<list
+  <li 补上了此前的工作<link fungi 《%》>与<link fungi/log 日志>。>
+>
+
+{{contents.en=}}
+The little autumn of the geese is running wild.
+Occupied with much work and thoughts, I still failed to keep up with the countless, restless threads of thought. Nor did I take the time to pin them down, having a month off diaries. Nevertheless, there are the tales that might well be told in the future!
+!<list
+  <li Caught up with a previous work <link fungi> and a <link fungi/log work journal>.>
+>
