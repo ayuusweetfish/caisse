@@ -25,6 +25,9 @@ process_dir() {
       elif [ "$ext" == "mp4" ]
       then
         $FFMPEG -i $f -vf "scale='min(500,iw)':-2" $dst
+      elif [ "$ext" == "mp3" ]
+      then
+        $FFMPEG -i $f -b:a 80k $dst
       else
         echo "=== Unknown extension: $ext ==="
       fi

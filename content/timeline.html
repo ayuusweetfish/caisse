@@ -109,12 +109,12 @@ img.mastodon-em {
     return image(file('em/' .. shortcode .. '.png', 'items/' .. mainsavepath), ':' .. shortcode .. ':', 'mastodon-em')
   end) }}
   {{@ m in media}}
-    {{@ m:sub(-4) ~= '.mp4' }}
+    {{@ m:sub(-4) ~= '.mp4' and m:sub(-4) ~= '.mp3' }}
       <div class='image-container'>
         {{ image(file('media/' .. m, 'items/' .. mainsavepath), tr(noalt)) }}
       </div>
     {{@ end}}
-    {{@ m:sub(-4) == '.mp4' }}
+    {{@ m:sub(-4) == '.mp4' or m:sub(-4) == '.mp3' }}
       {{rendermarkup(
 [[
 !<filetable
