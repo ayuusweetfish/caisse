@@ -362,7 +362,20 @@ items/flow/rabbit/0205g.jpg	27427	image	365	274
 items/flow/rabbit/0205h.jpg	125776	image	912	684
 items/flow/rabbit/20230205_192145.mp3	261120	audio	16
 items/flow/rabbit/fin.jpg	68736	image	1368	1824
+items/flow/rove/1440291179.jpg	4140	image	120	120
 items/flow/rove/232-Triangle.jpg	31635	image	850	684
+items/flow/rove/233-Limiter.jpg	48226	image	730	547
+items/flow/rove/233-Maintenance.jpg	59867	image	730	310
+items/flow/rove/233-Mascots.jpg	21848	image	300	270
+items/flow/rove/233-Motor.jpg	67222	image	547	730
+items/flow/rove/233-Probe.jpg	52584	image	730	547
+items/flow/rove/233-Rice.jpg	51985	image	547	410
+items/flow/rove/233-Valves.jpg	52373	image	730	547
+items/flow/rove/233-Yuheng.jpg	62012	image	547	730
+items/flow/rove/236-EPD.jpg	34886	image	650	540
+items/flow/rove/239-Cinnamoroll.jpg	65392	image	730	547
+items/flow/rove/240-Board.jpg	53756	image	480	347
+items/flow/rove/Haruhikage.ogg	487861	audio	69
 items/flow/sun/002a.jpg	117583	image	730	547
 items/flow/sun/004a.jpg	60692	image	730	547
 items/flow/sun/007a.jpg	42301	image	663	264
@@ -1000,6 +1013,6 @@ items/zzz/cover.jpg	185995	image	1920	1080
 main.css	27273	unknown
 main.js	2004	code
 puffs.svg	2343	image	1200	120
-timeline.html	4579	unknown
+timeline.html	4626	unknown
 timeofday.html	1758	unknown
 top-fleuron.svg	19723	image	960	90
