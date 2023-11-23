@@ -9,7 +9,9 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.zh=}}
 !<h1 交换友链>
-期待着你的网站可以映出你自己的一部分！如果希望向各自的访客发出通往对面的邀请，或者只是想互相分享些什么，都请通过<link email 邮件>联系我～
+期待着你在赛博空间的印记可以映出你自己的一部分！如果希望向各自的访客发出通往对面的邀请，或者只是想互相分享些什么，都请通过<link email 邮件>联系我～
+如果并未建立网站，而是活跃在社交平台或创作社区，也欢迎你的到来。
+我相信每个灵魂都独一无二，浪游世间的信号终能寻找到各自共振的频率。我没有资格、更无意去评判任何一份作品或一个人，只是我希望这里的链接能成为自己心目中、或是访客们能够欣赏的“友”，因此我并不会将所有来信者的链接添加于此。但是，每一份来信于我都是一份珍贵的礼物，我愿满怀好奇与赤诚去期待每一次的相遇或重逢，去触摸这远比超链接更真切的连接。谢谢你们。
 
 !<note <~~=''
 严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<hovernote <lang en memex> memory expansion，延伸记忆>。无论如何，这就是它在你眼里成为的模样，不是嘛。
@@ -17,7 +19,9 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 
 {{outro.en=}}
 !<h1 Link Exchange>
-I’d expect that your site mirrors a part of yourself! If you would like to invite the visitors of both of our sites to stop by the other side, or are only wishing to share something, please reach me by <link email e-mail>!
+I’d expect that your stipples in cyberspace mirrors a part of yourself! If you would like to invite the visitors of both of our sites to stop by the other side, or are only wishing to share something, please reach me by <link email e-mail>!
+All are still welcome if they do not run a personal site but are active on social platforms or creative communities.
+I believe in the uniqueness of every soul. I believe that the stray signals in the world will eventually find their resonances. I’m not qualified, nor am I willing, to judge any work or person, but I do not add the links of all who approach me in the hope that the links here be truly “friends” able to be appreciated by myself or the visitors. Nevertheless, to me, every single message is an invaluable gift, and I stay wholeheartedly curious and sincere, looking forward to each encounter or reunion, touching the connexions far more real and meaningful than hyperlinks. Thank you.
 
 !<note <~~=''
 Technically, this is a personal wiki, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <hovernote memex memory expansion>. In any case, this is what it becomes in your eyes, isn’t it?
