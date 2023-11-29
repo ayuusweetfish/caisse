@@ -48,25 +48,25 @@ This is a solar calendar system. According to the position of the Sun on the ecl
 
 !<table
   <tr <th Season> <th Solar Term> <th Abbr.> <th Gregorian Calendar> <th Solar Month>>
-  <tr <tdspan 6 1 Spring> <td Spring’s arrival> <td {{ T[1].name.en }}> <td mid-Feb> <tdspan 2 1 Yin (Tiger)>>
+  <tr <tdspan 6 1 Spring> <td Spring’s establishment> <td {{ T[1].name.en }}> <td mid-Feb> <tdspan 2 1 Yin (Tiger)>>
   <tr                     <td Rain’s bedewing> <td {{ T[2].name.en }}> <td Feb — March>>
   <tr                     <td Insects’ arousal> <td {{ T[3].name.en }}> <td mid-March> <tdspan 2 1 Mao (Rabbit)>>
   <tr                     <td Vernal equinox> <td {{ T[4].name.en }}> <td March — April>>
   <tr                     <td Clear brightness> <td {{ T[5].name.en }}> <td mid-April> <tdspan 2 1 Chen (Dragon)>>
   <tr                     <td Rain-soaked grains> <td {{ T[6].name.en }}> <td April — May>>
-  <tr <tdspan 6 1 Summer> <td Summer’s arrival> <td {{ T[7].name.en }}> <td mid-May> <tdspan 2 1 Si (Snake)>>
+  <tr <tdspan 6 1 Summer> <td Summer’s establishment> <td {{ T[7].name.en }}> <td mid-May> <tdspan 2 1 Si (Snake)>>
   <tr                     <td Drips of buds> <td {{ T[8].name.en }}> <td May — June>>
   <tr                     <td Ripeness of awns> <td {{ T[9].name.en }}> <td mid-June> <tdspan 2 1 Wu (Horse)>>
   <tr                     <td Summer solstice> <td {{ T[10].name.en }}> <td June — July>>
   <tr                     <td Mild heat> <td {{ T[11].name.en }}> <td mid-July> <tdspan 2 1 Wei (Goat)>>
   <tr                     <td Torrid heat> <td {{ T[12].name.en }}> <td July — Aug>>
-  <tr <tdspan 6 1 Autumn> <td Autumn’s arrival> <td {{ T[13].name.en }}> <td mid-Aug> <tdspan 2 1 Shen (Monkey)>>
+  <tr <tdspan 6 1 Autumn> <td Autumn’s establishment> <td {{ T[13].name.en }}> <td mid-Aug> <tdspan 2 1 Shen (Monkey)>>
   <tr                     <td Embers of heat> <td {{ T[14].name.en }}> <td Aug — Sept>>
   <tr                     <td White dew> <td {{ T[15].name.en }}> <td mid-Sept> <tdspan 2 1 You (Rooster)>>
   <tr                     <td Autumnal equinox> <td {{ T[16].name.en }}> <td Sept — Oct>>
   <tr                     <td Chilled dew> <td {{ T[17].name.en }}> <td mid-Oct> <tdspan 2 1 Xu (Dog)>>
   <tr                     <td Frost’s descent> <td {{ T[18].name.en }}> <td Oct — Nov>>
-  <tr <tdspan 6 1 Winter> <td Winter’s arrival> <td {{ T[19].name.en }}> <td mid-Nov> <tdspan 2 1 Hai (Pig)>>
+  <tr <tdspan 6 1 Winter> <td Winter’s establishment> <td {{ T[19].name.en }}> <td mid-Nov> <tdspan 2 1 Hai (Pig)>>
   <tr                     <td Light snow> <td {{ T[20].name.en }}> <td Nov — Dec>>
   <tr                     <td Heavy snow> <td {{ T[21].name.en }}> <td mid-Dec> <tdspan 2 1 Zi (Rat)>>
   <tr                     <td Winter solstice> <td {{ T[22].name.en }}> <td Dec — Jan (+1)>>
