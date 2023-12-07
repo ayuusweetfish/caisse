@@ -1,0 +1,18 @@
+{{title.zh=}}23 亥月 —— 闭塞成冬
+{{title.en=}}23, Month of the Pig — Occluded into Winter
+
+{{timestamp=}}2023.12.07.18
+
+{{contents.zh=}}
+一整年啦。
+半途阻塞的一切都有重新开始流动的时候～
+!<list
+  <li <link flow/rove>。>
+>
+
+{{contents.en=}}
+A whole year has passed.
+All things blocked halfway will find its time to start flowing again!
+!<list
+  <li <link flow/rove>.>
+>
