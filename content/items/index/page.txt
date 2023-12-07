@@ -29,7 +29,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2023.19> <link flow/rove>>
+  <li <date 2023.19> <link flow/rove>（完结撒花？）>
   <li <date 2023.18> <link maylove-ex-23>>
   <li <date 2023.18> <link fungi/log-r2>>
   <li <date 2023.18> <link hitchhiker>>
@@ -61,7 +61,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
-  <li <date 2023.19> <link flow/rove> (currently Chinese-only).>
+  <li <date 2023.19> <link flow/rove> concludes? (currently Chinese-only.)>
   <li <date 2023.18> <link maylove-ex-23>>
   <li <date 2023.18> <link fungi/log-r2>>
   <li <date 2023.18> <link hitchhiker> (currently Chinese-only, translation in progress).>
