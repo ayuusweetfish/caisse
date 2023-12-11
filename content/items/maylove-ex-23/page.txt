@@ -7,12 +7,12 @@
 {{bannerimgpos=}}30,15
 {{bannerimginpage=}}false
 {{bannerimgalt.zh=}}教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。
-{{bannerimgalt.en=}}Depictions of two children on a display board resembling a textbook. When approached with a hand, lights of different colours glow around the body parts.
+{{bannerimgalt.en=}}Depictions of two children on a display panel resembling a textbook. When approached with a hand, lights of different colours glow around the body parts.
 
 {{date=}}2023.12,2023.13
 
 {{contents.zh=}}
-!<img Touch.jpg <= 完整图像。教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。//（摄：海涵）> caption>
+!<img Touch.jpg <= 装置的完整照片。教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。//（摄：海涵）> caption>
 
 2023 年莓辣 MAYLOVE / 摘星阁 PLUCK 大型性教育互动展会《我向许多人打听过你》互动道具。展览场地位于贵阳悦然广场。
 !<img Signpost.jpg <= 广场室外地面上放置的主题展板。>>
@@ -37,7 +37,30 @@
 !<note 工作日志补全中。>
 
 {{contents.en=}}
-!<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>
+!<img Touch.jpg <= Full image of the installation. Images of two children on a textbook-shaped display panel. When touched with the hand, parts of the bodies light up with different colours surrounding their borders.//(Photo by Haihan)> caption>
+
+An interactive installation in the 2023 sex-ed exhibition, <it I Have Asked Many People About You>, by MAYLOVE, Guizhou Huachengxinghe Culture Co. Ltd., and PLUCK. The exhibition venue is at Wonderful Square, Guiyang.
+!<img Signpost.jpg <= Themed signpost on the outdoor ground of the square.>>
+
+Reach out the hands and light up the body parts on the “body textbook”. Observe the different colours of the lights, and see the children’s understandings of privacy regarding their own bodies.
+
+!<filetable
+  <file On-Site.mp4 Video of the installation on completion of setup>
+>
+
+!<img Display.jpg <= The display panel at the exhibition space.>>
+!<img Interaction-Instructions.jpg <= Interaction hint. “This is an interactive exhibit: after touching different parts of the simulated human body, you can see which parts of the body are ‘safe areas’ that can be touched by others, and which parts are inviolable as in ‘Taboo Boundaries’.”>>
+
+!<img Yuanbao.jpg <~=' Photo of girls reaching out and touching the display panel.//Photo of the girls’ football team of Yuanbao Primary School (Dafang County, Guizhou) viewing the exhibition (photo courtesy of <link https://mp.weixin.qq.com/s/-3y-YfdRKmzut__rRBHlHA MAYLOVE>)'> caption>
+
+This time I was again responsible for the implementation of electronic technologies. Artwork design by MAYLOVE member Annie. Compared to the <link maylove-ex-22 2022 revision>, this one changes the technical approach to capacitive sensing, resulting in a coherent, aesthetically pleasing display surface. The circuit is integrated on a printed circuit board, with the majority of components assembled and tested on-site. Throughout the setup process, tremendous aid was received from the MAYLOVE members, exhibition volunteers, and external participants. Gratitude goes to Sea, Milky, Annie, Haihan, Qiqi, Haizi, Huajiang, Feifei, Jiayan, the little sister, and Li (in order of appearance within each group) together with a lot of friends who did not leave behind a name.
+
+!<img log/BodyLight_0715B.png <= Diagram the back side of the installation. Copper sheets are connected to the microcontroller through wires. A partial zoom-in diagram on the side depicts the copper sheet fixed to the wires with conductive tape, or alternatively, the sensing area directly formed with conductive tape.//Back side. Text in purple: “sufficient to leave wires overhanging; consider fixing them to the panel with tape, if sensitivity becomes a concern”.> caption syncdark>
+!<img log/BodyLight_0715C.png <= Diagram of the internal layer of the installation. This comprises light strips of different colours — red, yellow, green — each with positive and negative leads extended onto a 12 V power supply, and with another lead extended to a dedicated microcontroller pin.//Internal layer.> caption syncdark>
+!<img Electronic-Components.jpg <= Electronic components installed on a printed circuit board on the back of the display panel.>>
+
+!<note Work journal to be uploaded.>
+
 
 {{rellinks.zh=}}
 !<list
