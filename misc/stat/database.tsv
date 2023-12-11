@@ -389,7 +389,7 @@ items/flow/rove/Haruhikage.ogg	487861	audio	69
 items/flow/rove/Night_Light.png	6494	image	785	353
 items/flow/rush/255-Case.jpg	70418	image	730	547
 items/flow/rush/255-Cat.jpg	44008	image	730	547
-items/flow/rush/258-Snow.jpg	54340	image	547	547
+items/flow/rush/258-Snow.jpg	54379	image	547	547
 items/flow/sun/002a.jpg	117583	image	730	547
 items/flow/sun/004a.jpg	60692	image	730	547
 items/flow/sun/007a.jpg	42301	image	663	264
@@ -811,6 +811,7 @@ items/maylove-ex-22/play/game.js	11418	code
 items/maylove-ex-22/play/index.html	4721	unknown
 items/maylove-ex-22/play/love.js	325312	code
 items/maylove-ex-22/play/love.wasm	4702493	unknown
+items/maylove-ex-23/Certificate.jpg	94434	image	564	750
 items/maylove-ex-23/Display.jpg	75935	image	912	684
 items/maylove-ex-23/Electronic-Components.jpg	58790	image	730	547
 items/maylove-ex-23/Interaction-Instructions.jpg	88728	image	1500	600
