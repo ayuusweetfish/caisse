@@ -638,8 +638,10 @@ blockquote {
   padding-block: 0.6em 0.675em;
   padding-inline: 1em;
 }
-blockquote .quote-main *:first-child { margin-block-start: 0; }
-blockquote .quote-main *:last-child { margin-block-end: 0; }
+blockquote .quote-main > *:first-child { margin-block-start: 0; }
+blockquote .quote-main > *:last-child { margin-block-end: 0; }
+blockquote .quote-main > *:last-child > *:last-child { margin-block-end: 0; }
+blockquote .quote-main > *:last-child > *:last-child > *:last-child { margin-block-end: 0; }
 blockquote + blockquote { margin-block-start: 0.4em; }
 blockquote.note {
 }
