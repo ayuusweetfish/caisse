@@ -1,0 +1,45 @@
+{{title.zh=}}天上的云朵结冰掉下来
+{{intro.zh=}}我们和云朵一样都是世界的结晶
+{{title.en=}}Clouds Freeze and Come Down from the Sky
+{{intro.en=}}We, like clouds, are all crystals of the world
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}30,30
+{{bannerimgalt.zh=}}线条绘画，在雪地里独自行走的女孩。
+{{bannerimgalt.en=}}Line art of a girl walking alone in the snow.
+
+{{date=}}2023.21
+
+{{contents.zh=}}
+我不知道雨点是不是天空在落泪，但我觉得雪花一定是云朵在跳舞。
+
+来来往往劳作了一整年，躺下来向大地撒个娇当然没关系啦。云朵也和人一样会疲惫、会犯错，会经历聚散离合，会见证世事浮沉。但无论如何，这一年总算是要收尾啦。幸福、悲伤，遗憾、不舍，似乎都要被这一场雪盖住然后被阳光吹散开去，成为遍历大地角落的风。
+
+我们和云朵一样都是世界的结晶。当雪白的生命之源跳起舞，我也忍不住转起圈拥抱它们——在重新融回世界之前的时间里，我们都在尽情地舞蹈呢。
+
+!<hr>
+
+颤音琴独奏乐曲。
+
+!<filetable
+  <file Les_nuages_descendent.ogg 预览音频>
+  <file Les_nuages_descendent.pdf 乐谱>
+  <file Les_nuages_descendent.mscz MuseScore 3 文档>
+>
+
+{{contents.en=}}
+I don’t know whether raindrops come from a sky’s weep, but I think the snowflakes must fly around the clouds’ dance.
+
+After a whole year’s tiring work, it’s certainly fair to lie down and ask for the earth’s pampering. Clouds, like people, get tired, make mistakes, go through union and separation, and witness the ups and downs of the world. But no matter what, the year is finally coming to an end. Happiness, sadness, regret, reluctance, all these seem to be covered by snow and then blown away by the sunshine, melting into a wind that traverses all corners of the earth.
+
+We, like clouds, are all crystals of the world. As the origin of life whirls in its snow-white costume, I can’t help but spin round and embrace every bit of it — in the time before we dissolve into the world again, we’ve all been dancing our hearts out.
+
+!<hr>
+
+A solo piece for vibraphone.
+
+!<filetable
+  <file Les_nuages_descendent.ogg Preview audio>
+  <file Les_nuages_descendent.pdf Score>
+  <file Les_nuages_descendent.mscz MuseScore 3 document>
+>
