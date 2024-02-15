@@ -1,6 +1,8 @@
+/*
 .item-content div.image-container img:nth-of-type(1) {
   margin-block: 1.5em;
 }
+*/
 
 @media (min-width: 115vh) and (min-width: 48rem) {
   .item-content ul:nth-of-type(1),

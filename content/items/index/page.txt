@@ -23,7 +23,8 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link backyard 后花园>>
 >
 
-!<img fish.png 一条简笔画小鱼 orig-size>
+!<--=' !<img fish.png 一条简笔画小鱼 orig-size> '>
+!<img ../flow/cross/320-Gate.png <= 线条绘画。女孩人物捧着跃出的鱼从牌楼上飞过。//年年有鱼跃龙门！> caption square medsmall syncdark>
 
 !<hr windy>
 
@@ -55,7 +56,8 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link backyard Backyard>>
 >
 
-!<img fish.png <= Line art of a fish> orig-size>
+!<--=' !<img fish.png <= Line art of a fish> orig-size> '>
+!<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.//Over the Dragon Gate!> caption square medsmall syncdark>
 
 !<hr windy>
 
