@@ -1,0 +1,20 @@
+{{title.zh=}}蓝星飞行日记
+{{intro.zh=}}
+{{title.en=}}Planet Blue Flight Journal
+{{intro.en=}}
+
+{{bannerimg=}}../vividness/cover.jpg
+{{bannerimgpos=}}50,50
+{{bannerimginpage=}}true
+{{bannerimgalt.zh=}}
+{{bannerimgalt.en=}}
+
+{{date=}}2024.02
+
+{{contents.zh=}}
+
+{{contents.en=}}
+
+{{rellinks.zh=}}
+
+{{rellinks.en=}}
