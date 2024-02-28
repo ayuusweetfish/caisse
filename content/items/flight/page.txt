@@ -1,20 +1,83 @@
 {{title.zh=}}蓝星飞行日记
-{{intro.zh=}}
+{{intro.zh=}}厌倦了湿答答的话就乘风而起吧
 {{title.en=}}Planet Blue Flight Journal
-{{intro.en=}}
+{{intro.en=}}When weary of sogginess, ride the wind and soar
 
-{{bannerimg=}}../vividness/cover.jpg
+{{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,50
 {{bannerimginpage=}}true
-{{bannerimgalt.zh=}}
-{{bannerimgalt.en=}}
+{{bannerimgalt.zh=}}云层之上看到的橘粉色落日。
+{{bannerimgalt.en=}}Orange-pink sunset seen from above the clouds.
+
+{{!-- convert IMG_20231118_174045.jpg -rotate -1.8 +repage -crop 3604x1412+55+406 -brightness-contrast 3,3 planet.png }}
+{{!-- scale 50% waterpixels 12 }}
+
+{{!-- ffmpeg -i output-crf26.mp4 -f lavfi -t 3 -i anullsrc=channel_layout=stereo:sample_rate=44100 -i TwAll-22a.ogg -filter_complex '[1:a][2:a]concat=n=2:v=0:a=1' -c:v copy -b:a 96k -t 719 output-full.mp4 }}
 
 {{date=}}2024.02
 
 {{contents.zh=}}
+我们不如小王子般幸运，我们的星球每天只有一场日落；
+可我们又是何其有幸，恰到好处地拥有着、珍惜着这每天一次的特殊时刻。
+我不如圣埃克苏佩里那样幸运，能在变幻莫测的世界里读懂大自然的低语；
+可我又是何其有幸，不必独自面对荒野间无言的危机，也能在引擎的轰鸣声里一瞥前人梦想过的天地。
+厌倦了湿答答的话就乘风而起吧，云层之上永远是晴天。
+
+!<filetable
+  <file Flight_Journal.mp4 乐曲与动画>
+  <file Flight_Journal.pdf 乐谱>
+  <file Flight_Journal.mscz MuseScore 3 文档>
+>
+
+!<note <~~='
+声音是 MuseScore 直出，有许多不完善的细节，见谅。今年的唯一新年心愿是“放过自己”，就先完成再完美啦～
+另外，也许你可以找到那个反复出现的“sweetfish 动机”。
+'>>
+
+!<hr>
+给自己的第二十四次日落。
+
+“我映出我所遇见的一切”；从生命本身开始，似乎正是数不尽的无法报答的赠予缠绕在一起组成了我。
+正如生日的前一晚忽然下了一场大雪，无数雪花拉着我与它们一起跳舞，“哎，跟我们在一起的话会不会更容易找到天上的感觉呀？再试试嘛！”
+它们把我从搁置这次创作的边缘拖了回来。在深夜的雪地上踩下几十圈脚印之后，我终于在它们的欢呼声中写完了压轴的圆舞曲，又写完了结尾。
+雪花是大自然给我的礼物；我的世界里好像常常下着这样的雪，各种各样的抓不住的雪。
+那就将一切赠予我的还给世界吧。用力地生活，用力地把来到我身边的雪花吹出去——
+吹成一片片落到地上的云，好像可以乘着它们回到天空。做客的朋友也一起来吧？
 
 {{contents.en=}}
+We are not as lucky as the little prince, in that our planet sees only one sunset a day;
+But it’s enough of a blessing for us to hold and cherish this daily special moment at just the right period.
+I am not as lucky as Saint-Exupéry, who reads the whispers of nature in a turbulent mass;
+But it’s enough of a blessing for me to — without being confronted by the wordless crises of the wilderness alone, just with the roar of jet engines — catch a glimpse of the heavens, that people in the past had dreamt of.
+When weary of sogginess, ride the wind and soar. There’s always a clear sky above the clouds.
+
+!<filetable
+  <file Flight_Journal.mp4 Music and animation>
+  <file Flight_Journal.pdf Score>
+  <file Flight_Journal.mscz MuseScore 3 document>
+>
+
+!<note <~~='
+Sounds are directly exported from MuseScore with lot of imperfections are present, please forgive me. My sole resoultion for this year is to stop pressing myself, hence better done than perfect this time.
+On a side note, you might be able to spot the recurring “sweetfish motif” right there.
+'>>
+
+!<hr>
+Dedicated to my twenty-fourth sunset.
+
+“I am a part of all that I have met”; starting from life itself, it seems that it is the countless unrequitable offerings that interwave and make up me.
+Just as the sudden heavy snowfall on the night before the birthday, myriad snowflakes making me dancing with them: “Hey, would it be easier to feel the sky, with us by your side? Will you try some more?”
+I was dragged back from the brink of shelving this composition. With tens of circles of footprints in the snow at midnight, surrounded by the cheers of the snowflakes, I finally finished the second-to-last section, the waltz, and then the finale.
+They are a nature’s gift to me. My world seems to snow similarly quite often, with all kinds of fleeting, uncatchable snow.
+Then, let me return to the world all that has been gifted to me. Earnestly live the life, and in earnest, blow the snowflakes that have come to me.
+Blow, into clouds that have descended to the ground. As if they could be ridden back to the sky. My guest, will you come along?
 
 {{rellinks.zh=}}
+!<list
+  <li <link https://gist.github.com/ayuusweetfish/7c7791162bf31a9c78dd61f2ac79889a 动画程序>>
+>
 
 {{rellinks.en=}}
+!<list
+  <li <link https://gist.github.com/ayuusweetfish/7c7791162bf31a9c78dd61f2ac79889a Program for the animation>>
+>
