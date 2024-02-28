@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	5058	document
+categories.txt	5092	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -108,6 +108,10 @@ items/fireflies/screenshot.jpg	34780	image	800	500
 items/fledgling/Fledgling-Go.jpg	95608	image	640	400
 items/fledgling/Fledgling_Go_RPi.mp4	5027166	video	72	960	540
 items/fledgling/In-You.jpg	90289	image	800	300
+items/flight/Flight_Journal.mp4	43548388	video	719	1920	1200
+items/flight/Flight_Journal.mscz	165022	score
+items/flight/Flight_Journal.pdf	1323791	document	26
+items/flight/cover.jpg	92671	image	1802	706
 items/flow/28-days-22w/01.jpg	106386	image	912	684
 items/flow/28-days-22w/02.jpg	41088	image	638	500
 items/flow/28-days-22w/03.jpg	46163	image	683	455
