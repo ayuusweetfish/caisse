@@ -30,8 +30,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2024.02> <link flow/cross>，完结撒花～>
   <li <date 2024.02> <link flight>>
-  <li <date 2024.01> <link flow/cross>（326°）>
   <li <date 2023.21> <link nuages>>
   <li <date 2023.18> <link maylove-ex-23>>
   <li <date 2023.18> <link hitchhiker>>
@@ -63,8 +63,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2024.02> <link flow/cross> concludes! (currently Chinese-only.)>
   <li <date 2024.02> <link flight>.>
-  <li <date 2024.01> <link flow/cross> (326°) (currently Chinese-only.)>
   <li <date 2023.21> <link nuages>.>
   <li <date 2023.21> <link maylove-ex-23> (English version uploaded).>
   <li <date 2023.18> <link hitchhiker> (currently Chinese-only, translation in progress).>
