@@ -1,0 +1,22 @@
+{{title.zh=}}24 寅月 —— 如春之欣然
+{{title.en=}}23, Month of the Tiger — Into the Joy of Spring
+
+{{timestamp=}}2024.03.05.11
+
+{{contents.zh=}}
+农历新年到来，也又长大一岁啦……
+!<list
+  <li <link flow/cross>。>
+  <li 生日纪念乐曲 <link flight>。>
+  <li 完成课题的两篇论文。待整理上传～>
+  <li 在首页放了新的小画！>
+>
+
+{{contents.en=}}
+The lunisolar new year arrives, while the age counter goes up again for this grown-up…
+!<list
+  <li <link flow/cross>.>
+  <li Music piece dedicated to the birthday, <link flight>.>
+  <li Finished two research articles. To be collated and updated.>
+  <li Had a new little painting on the landing page!>
+>

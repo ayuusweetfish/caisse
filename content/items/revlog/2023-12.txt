@@ -1,0 +1,16 @@
+{{title.zh=}}23 丑月 —— 甜面酱！
+{{title.en=}}23, Month of the Ox — Jammed!
+
+{{timestamp=}}2024.02.04.17
+
+{{contents.zh=}}
+!<list
+  <li 继续捣鼓小装置课题！>
+  <li 参加了一场 game jam。成果待上传～>
+>
+
+{{contents.en=}}
+!<list
+  <li Continue working on the research with gadgets.>
+  <li Participated in a game jam. The work is to be uploaded.>
+>

@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	5092	document
+categories.txt	5113	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -964,6 +964,9 @@ items/revlog/2023-07.txt	762	document
 items/revlog/2023-08.txt	886	document
 items/revlog/2023-09.txt	774	document
 items/revlog/2023-10.txt	406	document
+items/revlog/2023-11.txt	497	document
+items/revlog/2023-12.txt	379	document
+items/revlog/2024-01.txt	703	document
 items/revlog/atom.xml	1374	unknown
 items/revlog/rss.xml	1236	unknown
 items/rose/Wild_Rose.mscz	24282	score
@@ -981,6 +984,7 @@ items/rose/rose9a.png	85819	image	800	800
 items/rose/rose9b.png	107372	image	800	800
 items/rose/rose9c.jpg	68011	image	684	912
 items/rose/rose9d.png	69933	image	800	800
+items/shards/Unicorn.png	25734	image	600	600
 items/sheepdogs-work/Sheepdogs_at_Work.ogg	1781851	audio	98
 items/sheepdogs-work/Sheepdogs_at_Work.tracktionedit	502306	musicnotes
 items/sheepdogs-work/Sheepdogs_on_Vacation.ogg	1591811	audio	84

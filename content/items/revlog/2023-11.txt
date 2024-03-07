@@ -1,0 +1,22 @@
+{{title.zh=}}23 子月 —— 雪花落下
+{{title.en=}}23, Month of the Rat — Snow Falls
+
+{{timestamp=}}2024.01.06.05
+
+{{contents.zh=}}
+捣鼓小装置的同时……
+!<list
+  <li <link flow/rush>。>
+  <li <link nuages>。>
+  <li <link shards>。>
+  <li <link maylove-ex-23>，补全双语版。>
+>
+
+{{contents.en=}}
+Tinkering with little devices. Meanwhile…
+!<list
+  <li <link flow/rush>.>
+  <li <link nuages>.>
+  <li <link shards>.>
+  <li <link maylove-ex-23>, English version updated.>
+>
