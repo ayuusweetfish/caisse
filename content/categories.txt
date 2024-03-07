@@ -96,6 +96,7 @@ cats.murmurs.pagelist = {
   {name = 'moon-river'},
   {name = 'why-comp-engr'},
 ]]
+  {name = 'shards'},
   {name = 'hitchhiker'},
   {name = 'stargazing'},
   {name = 'daydream'},
