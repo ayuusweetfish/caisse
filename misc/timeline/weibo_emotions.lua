@@ -51,6 +51,11 @@ local list = {
 ['抓狂'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/17/2018new_zhuakuang_org.png',
 ['浮云'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/61/2018new_yunduo_org.png',
 ['馋嘴'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/fa/2018new_chanzui_org.png',
+['并不简单'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_bingbujiandan_org.png',
+['失望'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/aa/2018new_shiwang_org.png',
+['生病'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/3b/2018new_shengbing_org.png',
+['疑问'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/b8/2018new_ningwen_org.png',
+['看书'] = 'https://face.t.sinajs.cn/t4/appstyle/expression/ext/normal/83/2023_read_org.png',
 }
 
 local download = select(1, ...) == 'download'
