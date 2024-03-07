@@ -10,6 +10,7 @@
 
 为了确保万无一失，以下是近期信件的清单。时间戳均为协调世界时（UTC），每个地址只显示最近的一份信件。
 如果你发了信，过一分钟再来应该就能看到它啦。
+邮箱中一部分没有回应的是订阅或广告邮件，请不用担心。我会回复所有信件～如果我真的忘记了请一定提醒我！
 
 {{intro.en=}}
 My mail address is <tt claire@ayu.land>.
@@ -20,6 +21,7 @@ I check the mailbox frequently and have even disabled the spam filter, since it 
 
 To make sure nothing is lost halfway, the most recent mails are listed here. Timestamps are all in UTC. Only the most recent message is displayed for each address.
 If you’ve written a mail to me, check here after a minute and it should appear.
+There are unanswered mails in the mailbox that are subscriptions or advertisements, so please don’t worry. I shall reply to all personal messages. If I do miss anything, please kindly remind me!
 
 {{daemonlost.zh=}}!<note （糟糕！看门小鬼头走丢啦……）>
 {{daemonlost.en=}}!<note (Oops! The daemon went stray…)>
