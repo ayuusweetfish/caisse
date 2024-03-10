@@ -505,7 +505,7 @@ local markupfnsenvitem  -- Item name of the item currently being processed
 local markupfns
 
 local function splitheading(text)
-  local bodytext, anchor = text:match('^(.+[^%s])%s*#([^#]*)$')
+  local bodytext, anchor = text:match('^(.*[^%s])%s*#([^#]*)$')
   if bodytext then return bodytext, anchor
   else return text, nil end
 end
