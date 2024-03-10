@@ -1,0 +1,13 @@
+{{title.zh=}}耕牛遍地走
+{{intro.zh=}}决定了，应当去爱、去劳动，就这样。
+{{title.en=}}Ploughing Cattle Traversing Fields
+{{intro.en=}}Decided that I have to love and work, and that’s it
+
+{{date=}}2024.03
+
+{{contents.zh=}}
+
+{{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>.>
+
+{{toc=}}true
