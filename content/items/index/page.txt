@@ -11,7 +11,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about 关于自己>>
   <li <link fireflies 萤火虫>>
   <li <link medle 旋律猜谜>>
-  <li <link vividness 打击乐合奏>>
+  <li <link flight 一起去梦里飞行吧>>
   <li <link traviata 《茶花女》序曲>>
   <li <link gpt 人工智能如是说>>
 >
@@ -30,12 +30,11 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2024.03> <link flow/plough>（353°）>
   <li <date 2024.03> <link shards>——两个月前投的稿终于传了上来>
-  <li <date 2024.02> <link flow/cross>，完结撒花～>
   <li <date 2024.02> <link flight>>
   <li <date 2023.21> <link nuages>>
   <li <date 2023.18> <link maylove-ex-23>>
-  <li <date 2023.18> <link hitchhiker>>
 >
 
 <link revlog>
@@ -45,7 +44,7 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about About>>
   <li <link fireflies Fireflies>>
   <li <link medle Melody puzzles>>
-  <li <link vividness Piece for percussion ensemble>>
+  <li <link flight Go flying in dreams>>
   <li <link traviata <it La Traviata> Overture>>
   <li <link gpt Thus spoke AI>>
 >
@@ -64,11 +63,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
-  <li <date 2024.02> <link flow/cross> concludes! (currently Chinese-only.)>
+  <li <date 2024.03> <link flow/plough> (353°) (currently Chinese-only).>
   <li <date 2024.02> <link flight>.>
   <li <date 2023.21> <link nuages>.>
   <li <date 2023.21> <link maylove-ex-23> (English version uploaded).>
-  <li <date 2023.18> <link hitchhiker> (currently Chinese-only, translation in progress).>
 >
 
 <link revlog>
