@@ -77,10 +77,12 @@
 !<h2 根据调号判断主音 #2-Tonic>
 目前只关注自然大调。
 !<list
-  <li <b 调号为空>：C 大调。>
-  <li <b 升号>：至多七个，顺序为 F (fa) - C (do) - G (sol) - D (re) - A (la) - E (mi) - B (si)。取最末尾的升号所对应变化音，再升高半音即为大调主音。例如，两个升号对应 C♯ 之上半音即 D 大调。>
-  <li <b 降号>：至多七个，顺序为 B (si) - E (mi) - A (la) - D (re) - G (sol) - C (do) - F (fa)。一个降号为 F 大调；多于一个时，倒数第二个降号对应的变化音即为大调主音。例如，两个降号对应 B♭ 大调。>
+  <li <b 空调号>：C 大调。>
+  <li <b 升号>：取最末尾的升号所对应变化音，再升高半音即为大调主音。例如，两个升号（F♯、C♯）对应 C♯ 之上半音即 D 大调。>
+  <li <b 降号>：一个降号为 F 大调；多于一个时，倒数第二个降号对应的变化音即为大调主音。例如，两个降号（B♭、E♭）对应 B♭ 大调。>
 >
+升号的位置顺序为 F (fa) - C (do) - G (sol) - D (re) - A (la) - E (mi) - B (si)；降号的位置顺序为 B (si) - E (mi) - A (la) - D (re) - G (sol) - C (do) - F (fa)。升降号的位置以及其对应的调性形成许多对称的五度关系。
+!<img Circle_of_fifths_deluxe_4.svg <~=' 五度圈示意图。//来源：<link https://zh.wikipedia.org/wiki/File:Circle_of_fifths_deluxe_4.svg Just plain Bill>'> caption square syncdarkmild>
 
 !<h2 基本练习 #2-Fundamentals>
 !<h3 大调音阶 #2-Fundamentals-Major-Scales>
