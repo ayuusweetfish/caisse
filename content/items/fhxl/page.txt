@@ -11,9 +11,13 @@
 {{date=}}2020.24-2021.08
 
 {{contents.zh=}}
-在古代酒令游戏“飞花令”基础上设计的双人对抗诗词游戏，添加了多样的玩法。
-微信搜索“飞花小令”或者扫描小程序码，邀请好友即可开始游玩。过程中会对规则进行详细介绍。
-!<img gh_a77036b8112b.jpg <= > small>
+在古代酒令游戏“飞花令”基础上设计的双人诗词游戏，共有四种多样的玩法。借助完善的诗词数据库，支持随机出题、检查答案。
+<link https://fhxl.ayu.land 网页版游玩链接>。过程中会对规则进行详细介绍。
+
+!<note <~~='
+由于微信小程序平台政策调整，小程序版目前已暂停运营。向网页版的迁移已经完成，程序仓库中的相关文档也已更新。<date 2024.04>
+!<img gh_a77036b8112b.jpg <= 微信小程序码。> small>
+'>>
 
 <hr>
 是和栗子同学的业余项目，也是组队向 2021 高校微信小程序应用开发赛提交的作品。
@@ -24,27 +28,38 @@
   <li <b 天女散花>：题目为一组固定字词与一组可消去字词（可选择“1 词 + 10 词”或“3 词 + 16 词”），玩家轮流从两组字词中各选择一个，说出同时含有两者的诗句。每个消去词只能被选择一次。>
   <li <b 雾里看花>：题目为两组字词（可选择每组 5—10 词）。玩家轮流从两组字词中各选择一个，说出同时含有两者的诗句。所有词都只能被选择一次。>
 >
-我们从网络上收集了数个诗词库，合并整理并进行了一些校对工作，形成了数十万首作品的文库；从中整理出常用词句与知名诗句用于自动随机命题，尽可能地提高游戏的可玩性。
-从后台统计数据看玩家数量出乎意料地多，有点惊喜www
+我们从网络上收集了数个诗词库，合并整理并进行了一些校对工作，形成了数十万首作品的文库；从中整理出常用词句与知名诗句用于自动随机命题，细心平衡难度，以求游戏富于趣味。
+从后台统计数据看，玩家数量出乎意料地多，着实令我们惊喜。网页版现已上线，希望未来可以继续和诗词爱好者们一起玩～
 
 {{contents.en=}}
-A game based on an ancient Chinese drinking game based on poetry, with added innovations.
-The game is hosted on the WeChat applet platform, but I am also interested in porting it to the web.
-!<img gh_a77036b8112b.jpg <= > small>
+<it Floral Ditties> or <it Fei Hua Xiao Ling> (<lang zh 飞花小令>) is a game based on an ancient Chinese drinking game based on poetry, with added innovations.
+<link https://fhxl.ayu.land Link to the game’s webpage version>. The rules will be introduced in-game. The game is only available in (simplified) Chinese due to its highly language-specific nature.
+!<note <~~='
+Due to policy changes in WeChat applet hosting platform, service of the applet version has been suspended. Migration to the webpage is complete, and documentation in the source repository has been updated. <date 2024.04>
+!<img gh_a77036b8112b.jpg <= A WeChat applet code.> small>
+'>>
 
 <hr>
 A collaborative effort with Kuriko as our entry in the 2021 students’ WeChat applet development contest.
-Fei Hua Ling (飞花令) is a game where players recite or compose poetry given a theme, which is usually a Chinese character (it was originally fixed to be “花”, “flower”; but variations exist). The verses should also adhere to metrical rules. Inspired by the Chinese Poetry Congress television programme, a set of new gameplay rules were implemented in the game, including themes of two-syllable words or verses, and pools of words.
+Fei Hua Ling (<lang zh 飞花令>) is a game where players recite or compose poetry given a theme, which is usually a Chinese character (it was originally fixed to be “<lang zh 花>”, “flower”; but variations existed). The verses should contain the theme character/word, while also adhering to metrical rules. Inspired by the <it Chinese Poetry Congress> television programme, a set of new gameplay rules were implemented in the game —
+!<list
+  <li <b <lang zh 梦笔生花> / Flowers under the dream brush>: The theme is a single character or a word (or a combination) of two characters.>
+  <li <b <lang zh 走马观花> / Flowers passing by on a horseback ride>: The theme is a verse (with a customisable character count of 5–9), in which the characters are used as keywords in order. Players take turns to name another verse that contains the current keyword.>
+  <li <b <lang zh 天女散花> / Flowers scattered by the nymph>: The theme comprises a set of fixed characters and a pool of eliminable words (either “1 char. + 10 words” or “3 chars. + 16 words”). Players take turns picking one from each set, and name a verse containing both selected words. Each eliminable word can be used only once in a game.>
+  <li <b <lang zh 雾里看花> / Flowers in misty vision>: The theme comprises two sets of words (with a customisable size of 5–10 words). Players take turns picking one from each set, and name a verse containing both selected words. Each word can be used only once in a game.>
+>
 
-We merged several Chinese poetry collections on the Internet and added emendations, resulting in a library of hundres of thousands of works. We curated a set of frequent words and phrases as well as well-known verses for automatic theme generation, trying our best to improve the playability of the game.
-According to the analytics, the number of players was unexpectedly high. This was surprising.
+We merged several poetry collections on the Internet and added emendations, obtaining a library of hundreds of thousands of works. We curated a set of frequent words and phrases as well as well-known verses for automatic theme generation and carefully tuned the difficulties, trying our best to deliver interesting and enjoyable games.
+The number of players was unexpectedly high according to the analytics, which made quite a pleasant susprise for us. Now that the web version is up, we hope to continue having fun with the enthusiasts in the time to come.
 
 {{rellinks.zh=}}
 !<list
+  <li <link https://fhxl.ayu.land 《飞花小令》网页版>>
   <li <link https://github.com/kuriko1023/fhl 程序仓库（GitHub）>>
 >
 
 {{rellinks.en=}}
 !<list
+  <li <link https://fhxl.ayu.land Web version of <it Floral Ditties>>>
   <li <link https://github.com/kuriko1023/fhl Source repository (GitHub)>>
 >
