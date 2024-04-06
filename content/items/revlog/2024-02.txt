@@ -1,0 +1,22 @@
+{{title.zh=}}24 卯月 —— 借问此何时　春风语流莺
+{{title.en=}}23, Month of the Rabbit — May I Ask the Time When Spring Breeze Whispers to Warblers
+
+{{timestamp=}}2024.04.04.16
+
+{{contents.zh=}}
+忽然意识到这里记录的是这个网站，而不是我自己。那就先摆烂啦。我将如烂泥般归来！
+
+!<list
+  <li <link flow/plough>。>
+  <li <link marimba>。>
+  <li 完成<link fhxl 《%》>向网页版的迁移。>
+>
+
+{{contents.en=}}
+Suddenly I came to realise that recorded here are the changes of the website rather than myself. Let me spare myself then. Someday I’ll come back in a mess!
+
+!<list
+  <li <link flow/plough>.>
+  <li <link marimba>.>
+  <li Completed migration of <link fhxl “%”> to the webpage version.>
+>
