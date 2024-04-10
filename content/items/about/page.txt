@@ -26,13 +26,12 @@ INFP/ENFP, socially-anxious extravert, incorrigibly unrealistic, trying hard to 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-捣鼓了两个月小装置，想换点事做了…… <date 2024.01>
-<link flow/plough> <date 2024.03>
+虽然好像所有事情都做不完，但是呜呼起飞！<date 2024.05>
+<link flow/drift> <date 2024.05>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Fiddling with gadgets for months and looking forward to a shift of gears now… <date 2024.01>
-In Chinese: <link flow/plough>. <date 2024.03>
+Although it seems that nothing is being completed properly, but let’s go flying! <date 2024.05>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
