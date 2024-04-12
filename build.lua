@@ -631,7 +631,7 @@ markupfns = {
     return text:gsub('^<a ', '<a rel="me" ')
   end,
   img = function (src, alt, class)
-    local altmain, altcap = alt:match('^([^/]*)//(.*)$')
+    local altmain, altcap = alt:match('^(.-)//(.*)$')
     if altmain then alt = altmain end
     return '<div class="image-container">' ..
       caisse.envadditions.image(
