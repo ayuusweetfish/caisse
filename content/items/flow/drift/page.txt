@@ -6,7 +6,7 @@
 {{date=}}2024.05
 
 {{contents.zh=}}
-!<note 最近更新：<link #020b 20–21°【雨】>～<link #022 22°【火车】>>
+!<note 最近更新：<link #Jam-Day-0 【四条人果酱团】第 0 日>～<link #Jam-Day-1 第 1 日>>
 
 !<blockquoteby <~=' 《流萤集》（<lang en <it Fireflies>>）<br>泰戈尔（<lang en Rabindranath Tagore>）'> <~~='
 <lang en April, like a child,><br><lang en writes hieroglyphs on dust with flowers,><br><lang en wipes them away and forgets.>
@@ -168,6 +168,26 @@ C 座的乘客回来之后阿婆也征求了同意。据说阿婆是没买票，
 !<hr>
 天气预报说南京这几天都是阴天，气温与晴朗的北京不相上下，可下车迎面而来的竟是一阵湿热。是哦，再不到一个月就要立夏了，总不能一直抱着冬天不放吧。北京都该热起来了——最近走出室外的一瞬间已经能感受到一股淡淡的温暖，再不过多久就要迎来更加炎热的天气啦。说不定回去的时候就要开始了……
 被伙伴们接到了民宿，稍作休整，明天一早就能开工。<link https://github.com/ayuusweetfish/LD55 LD 我来啦！>
+
+!<hr windy>
+!<h1 22–31°【四条人果酱团】 #Jam>
+!<h2 第 0 日 #Jam-Day-0>
+正式活动从明天早上九点开始，持续三天（72 小时）。说了那么久的 jam，这个词其实来源于音乐里的即兴演奏（<lang en jamming>），所谓 <lang en game jam> 就是在时限内根据给定主题“即兴创作”游戏，和技术行业的黑客马拉松（<lang en hackathon>）非常类似，但是更加注重艺术创造与随机应变的能力。翻译成中文实在不容易，大家也都这么叫习惯了，所以就一直用英文称呼啦。<lang lat Ludum Dare> 就是这次的 jam 活动名称，是拉丁语“给出一个游戏”的意思；每年举办两至三届，均在线上进行。不过这次我们四人（以下按名字缩写称为 A、J、P、S）选择在现实中聚到一起，期待着能碰撞出更热烈的火花。
+回到正题，下午晚上都在玩《星露谷物语》。据说昨天三人直接玩了个通宵，在游戏里过了一整个季节——此时我对此还没有概念，但一边佩服着朋友们的熬夜实力，一边又感叹《星露谷》的内容实在是太丰富。《星露谷》是大概去年这个时候（Steam 春促）在友人提醒之下一激动购入的，但一直放着没有打开（什么当代姑俟异日观），前些日子乐队同学整天大喊“我不能再玩星露谷了！”的时候也没敢轻举妄动立刻加入。今天终于“<lang en played for the first time>”，从捏人开始就入了迷。虽然刚入坑什么都不懂，只能每天给菜浇水、再出去瞎玩，但还是好玩！
+A：“我好像什么都不会哎，有什么能帮忙的呀？”
+J：“就到处去探索吧！”（星露谷版“没事去玩吧”）
+!<img Jam-00-Stardew.jpg <= 截图。“哦哟！Ayu 终于上床睡觉了！”//话说这个睡觉作息真是好健康！我学！> caption small>
+晚上和团队一起熟悉了 Git 工作流，做了一个“一键运行”脚本，这样所有成员都可以随时看到最新的进度了。由于四位成员都偏瘦，团队取名“四条人”。
+按照 LD 的惯例，参与者都会发布一篇“<lang en I’m in>”的帖子确认加入。于是临睡前躺在床上胡言乱语了一篇 <link https://ldj.am/$388153 <lang en We’re in!>>。预计早上八点起床，然后静待主题发布～
+
+!<hr>
+!<h2 第 1 日 #Jam-Day-1>
+八点时响起几阵此起彼伏的闹铃，不过最终大家还是一致睡到八点半。
+九点整，主题准时发布：“<lang en <b Summoning>>”，召唤。
+我并不喜欢这个主题词，感觉非常容易同质化，对于这种大型 jam 来说不是最合适。但是投票结果如此，说明许多参与者喜欢，也不是一件坏事。
+!<note 不过还是喜欢“<lang en it spreads>”啊！想做面包抹黄油游戏！怨念！>
+我们预计在下午左右确定主题然后开工。头脑风暴期间提及了许多元素，从北欧牧歌 <lang sv kulning> 到东北保家仙再到“阴间政权”，一起打开了《顿悟》（<lang en <it Understand>>）和《请出示文件》（<lang en <it Papers, Please>>）——这时是下午，考虑范围正缩小到模拟经营与解谜之间。
+我们大约在临近傍晚时确定了最终的形式：关于花朵与蜂蝶的解谜游戏。<link https://github.com/ayuusweetfish/Nectar-Nexus/commit/10831bbc838d32ecbaf5072bfae55d8a6b386154 开工！>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
