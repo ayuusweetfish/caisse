@@ -82,6 +82,7 @@ cats.music.pagelist = {
   {name = 'misty-jungle', dark = true},
 }
 cats.playful.pagelist = {
+  {name = 'nectar', dark = true},
   {name = 'fireflies', dark = true},
   {name = 'medle', dark = false},
   {name = 'ice-hatch', dark = false},

@@ -1,0 +1,60 @@
+{{title.zh=}}蜂觅蜜风
+{{intro.zh=}}在光怪陆离的陶瓷花园中解答花朵与蜜蜂的谜题
+{{title.en=}}Nectar Nexus
+{{intro.en=}}Puzzles in whimsical porcelain gardens, where the mysteries blossoms and bees unfold
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,26
+{{bannerimgalt.zh=}}游戏封面图；蜜蜂落在白色的花朵上，发出金黄色的光芒。
+{{bannerimgalt.en=}}Cover art of the image; a bee resting on a white blossom, giving off a golden glow.
+
+{{date=}}2024.05
+
+{{contents.zh=}}
+!<note <link https://ldjam.com/events/ludum-dare/55 Ludum Dare 55> 组队参赛作品，成员（按笔画排列）：天雷、木星果、鱼、酸。>
+可以在<catlink https://play.ayu.land/Nectar-Nexus/ playful 本站>游玩。
+《蜂觅蜜风》（暂定中文标题；原题 <lang en <it Nectar Nexus>>）是一个解谜游戏，玩家将在陶瓷花瓶上的精巧纹路之间探索花朵与蜜蜂的秘密。玩家也许是化作了瓷世界的花神，掌握着每一朵花的开放；而被花香吸引的蜜蜂似乎成为了花园发荣滋长的关键联结。
+!<img visual_elements.jpg <= 谜题画面中的视觉元素。>>
+!<img screen_1.jpg <= 游戏截图。>>
+!<img screen_2.jpg <= 游戏截图。>>
+!<img porcelain.jpg <= 谜题选择界面上的陶瓷花瓶与形状各异的小瓶。>>
+活动的主题是“召唤”（<lang en “Summoning”>）。我们通过其“与远处事物交流并操控之”的含义联想到动物之间的召唤，以及相关的语言之外的远距离沟通方式；经过多方面的探索，最终将设想落到了花朵与昆虫的解谜游戏上。
+考虑到这个词在西方（尤其是英文）语境下有趋同的倾向，我们将目光投向异域文化，意图通过作品调动文化新奇感。美术上参考了拜占庭马赛克、中国传统国画、波斯细密画等风格，将每一个谜题都描绘成瓷器上的一个图案。我们大胆地选择在游戏中避免一切现代文字，不仅维护了光怪陆离的场景氛围，也省去了翻译的麻烦，啊不是，也可以让不同文化的玩家都能畅通无阻地依靠自己的智慧来体会其中的奥妙。
+游戏共有 30 个谜题。提示与参考解答见<link https://github.com/ayuusweetfish/Nectar-Nexus/blob/master/misc/solutions/README.md 此处>。
+
+!<--='
+!<hr>
+关于游戏结束后画面上的涂鸦：
+!<list
+  <li “这是蝴蝶吗”<lang en meme>：讨论期间的设定是“蝴蝶、蜜蜂等小昆虫”，因此初期在程序中的名称是“<lang en butterfly>”，而后期为了保持一致，没有针对新的设定作修改——所有蜜蜂都统一称作“蝴蝶”。>
+  <li “花之 B 溃”：曾经的游戏中文标题。>
+  <li 大脑：开发期间一张变形的合影。另外，做完这个游戏所有人都有了仿佛大脑升级的感觉。>
+  <li “bee 从四面八方 come”：初期对于“召唤”的构想之一，“饭从四面八方来”。后来也出现在 Ludum Dare 网站上的一篇开发日志中。>
+>
+'>
+
+{{contents.en=}}
+!<note A collaborative entry to <link https://ldjam.com/events/ludum-dare/55 Ludum Dare 55>. Team members (in alphabetical order): Ayu, Jupiter in TARDIS, Persepolis, Suan.>
+Playable <catlink https://play.ayu.land/Nectar-Nexus/ playful on this site>.
+<it Nectar Nexus> is a puzzle game where the player explores the secrets of blossoms and flowers hidden among the delicate patterns on porcelain vases. The player seems to have taken on the role of the floral deity of the porcelain world, having in their hands the blooming of each blossom; while the bees, attracted by the scents, appears to be the key nexus for the garden to flourish.
+!<img visual_elements.jpg <= Visual elements from the puzzles.>>
+!<img screen_1.jpg <= A screenshot of the game.>>
+!<img screen_2.jpg <= A screenshot of the game.>>
+!<img porcelain.jpg <= Porcelain vases and variably-shaped bottles on the puzzle selection scene.>>
+The theme of the event is “Summoning”. Based on its meaning of “remotely communicating with and manipulating things”, we considered the calling between animals, as well as relevant means of remote communication beyond language. After much exploration, we arrived at a puzzle game about flowers and insects.
+Considering the word’s tendency to become homogenised in Western (especially anglophone) contexts, we looked to exotic cultures with the intention of invoking a vibe of novelty and curiosity through our work. The visuals referenced styles including Byzantine mosaics, Chinese traditional paintings, and Persian miniatures, rendering each puzzle as a decorative pattern on porcelain. We boldly went against any modern language script in the game, maintaining a whimsical atmosphere while saving the trouble of translation, ah no, … allowing players from varied cultural backgrounds to appreciate such delicacy through their own wisdom, unhindered.
+There are a total of 30 puzzles in the game. Hints and reference solutions are published <link https://github.com/ayuusweetfish/Nectar-Nexus/blob/master/misc/solutions/README.md here>.
+
+{{rellinks.zh=}}
+!<list
+  <li <catlink https://play.ayu.land/Nectar-Nexus/ playful 游玩链接>>
+  <li <link https://ldjam.com/events/ludum-dare/55/nectar-nexus LD55 参赛作品页面>>
+  <li <link https://github.com/ayuusweetfish/Nectar-Nexus 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <catlink https://play.ayu.land/Nectar-Nexus/ playful Play the game>>
+  <li <link https://ldjam.com/events/ludum-dare/55/nectar-nexus LD55 entry page>>
+  <li <link https://github.com/ayuusweetfish/Nectar-Nexus Source repository (GitHub)>>
+>
