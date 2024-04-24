@@ -18,8 +18,8 @@
 !<img screen_1.jpg <= 游戏截图。>>
 !<img screen_2.jpg <= 游戏截图。>>
 !<img porcelain.jpg <= 谜题选择界面上的陶瓷花瓶与形状各异的小瓶。>>
-活动的主题是“召唤”（<lang en “Summoning”>）。我们通过其“与远处事物交流并操控之”的含义联想到动物之间的召唤，以及相关的语言之外的远距离沟通方式；经过多方面的探索，最终将设想落到了花朵与昆虫的解谜游戏上。
-考虑到这个词在西方（尤其是英文）语境下有趋同的倾向，我们将目光投向异域文化，意图通过作品调动文化新奇感。美术上参考了拜占庭马赛克、中国传统国画、波斯细密画等风格，将每一个谜题都描绘成瓷器上的一个图案。我们大胆地选择在游戏中避免一切现代文字，不仅维护了光怪陆离的场景氛围，也省去了翻译的麻烦，啊不是，也可以让不同文化的玩家都能畅通无阻地依靠自己的智慧来体会其中的奥妙。
+活动的主题是“召唤”（<lang en “Summoning”>）。我们通过其“与远处事物交流并操控之”的含义联想到动物之间的呼唤，以及相关的语言之外的远距离沟通方式；经过多方面的探索，最终将设想落到了花朵与昆虫的解谜游戏上。
+考虑到这个词在西方（尤其是英文）语境下有趋同的倾向，我们将目光投向异域文化，意图通过作品调动文化新奇感。美术上参考了拜占庭马赛克、中国传统国画、波斯细密画等风格，将每一个谜题都描绘成瓷器上的一个图案。我们在游戏中避免了一切现代文字，这对于解谜游戏抽象而严密的规则而言无疑是个冒险的选择，可这样一来，不仅维护了光怪陆离的场景氛围，也省去了翻译的麻烦，啊不是，也可以让不同文化的玩家都能畅通无阻地依靠自己的智慧来体会其中的奥妙。
 游戏共有 30 个谜题。提示与参考解答见<link https://github.com/ayuusweetfish/Nectar-Nexus/blob/master/misc/solutions/README.md 此处>。
 
 !<--='
@@ -42,7 +42,7 @@ Playable <catlink https://play.ayu.land/Nectar-Nexus/ playful on this site>.
 !<img screen_2.jpg <= A screenshot of the game.>>
 !<img porcelain.jpg <= Porcelain vases and variably-shaped bottles on the puzzle selection scene.>>
 The theme of the event is “Summoning”. Based on its meaning of “remotely communicating with and manipulating things”, we considered the calling between animals, as well as relevant means of remote communication beyond language. After much exploration, we arrived at a puzzle game about flowers and insects.
-Considering the word’s tendency to become homogenised in Western (especially anglophone) contexts, we looked to exotic cultures with the intention of invoking a vibe of novelty and curiosity through our work. The visuals referenced styles including Byzantine mosaics, Chinese traditional paintings, and Persian miniatures, rendering each puzzle as a decorative pattern on porcelain. We boldly went against any modern language script in the game, maintaining a whimsical atmosphere while saving the trouble of translation, ah no, … allowing players from varied cultural backgrounds to appreciate such delicacy through their own wisdom, unhindered.
+Considering the word’s tendency to become homogenised in Western (especially anglophone) contexts, we looked to exotic cultures with the intention of invoking a vibe of novelty and curiosity through our work. The visuals referenced styles including Byzantine mosaics, Chinese traditional paintings, and Persian miniatures, rendering each puzzle as a decorative pattern on porcelain. We went against any modern language script in the game, which was a risky choice for the abstract, rigorous rules of the puzzles, but this maintained a whimsical atmosphere while saving the trouble of translation, ah no, … while allowing players from varied cultural backgrounds to appreciate such delicacy through their own wisdom, unhindered.
 There are a total of 30 puzzles in the game. Hints and reference solutions are published <link https://github.com/ayuusweetfish/Nectar-Nexus/blob/master/misc/solutions/README.md here>.
 
 {{rellinks.zh=}}
