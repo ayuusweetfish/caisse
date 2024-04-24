@@ -6,7 +6,7 @@
 {{date=}}2024.05
 
 {{contents.zh=}}
-!<note 最近更新：<link #Jam-Day-0 【四条人果酱团】第 0 日>～<link #Jam-Day-1 第 1 日>>
+!<note 最近更新：<link #Jam-Day-0 【四条人果酱团】第 0 日>～<link #Jam-Day-5 第 5 日>>
 
 !<blockquoteby <~=' 《流萤集》（<lang en <it Fireflies>>）<br>泰戈尔（<lang en Rabindranath Tagore>）'> <~~='
 <lang en April, like a child,><br><lang en writes hieroglyphs on dust with flowers,><br><lang en wipes them away and forgets.>
@@ -177,6 +177,7 @@ C 座的乘客回来之后阿婆也征求了同意。据说阿婆是没买票，
 A：“我好像什么都不会哎，有什么能帮忙的呀？”
 J：“就到处去探索吧！”（星露谷版“没事去玩吧”）
 !<img Jam-00-Stardew.jpg <= 截图。“哦哟！Ayu 终于上床睡觉了！”//话说这个睡觉作息真是好健康！我学！> caption small>
+还收到了论文中稿的消息。论文的课题是一个音乐互动装置，名字叫 Malletwand。虽然最近大概都没心思顾得上这个了，还是要先做游戏，但提前到来的消息仍然给 jam 的状态开了个不错的头。
 晚上和团队一起熟悉了 Git 工作流，做了一个“一键运行”脚本，这样所有成员都可以随时看到最新的进度了。由于四位成员都偏瘦，团队取名“四条人”。
 按照 LD 的惯例，参与者都会发布一篇“<lang en I’m in>”的帖子确认加入。于是临睡前躺在床上胡言乱语了一篇 <link https://ldj.am/$388153 <lang en We’re in!>>。预计早上八点起床，然后静待主题发布～
 
@@ -185,9 +186,51 @@ J：“就到处去探索吧！”（星露谷版“没事去玩吧”）
 八点时响起几阵此起彼伏的闹铃，不过最终大家还是一致睡到八点半。
 九点整，主题准时发布：“<lang en <b Summoning>>”，召唤。
 我并不喜欢这个主题词，感觉非常容易同质化，对于这种大型 jam 来说不是最合适。但是投票结果如此，说明许多参与者喜欢，也不是一件坏事。
-!<note 不过还是喜欢“<lang en it spreads>”啊！想做面包抹黄油游戏！怨念！>
+!<note 不过还是喜欢“<lang en It spreads>”啊！想做面包抹黄油游戏！怨念！>
 我们预计在下午左右确定主题然后开工。头脑风暴期间提及了许多元素，从北欧牧歌 <lang sv kulning> 到东北保家仙再到“阴间政权”，一起打开了《顿悟》（<lang en <it Understand>>）和《请出示文件》（<lang en <it Papers, Please>>）——这时是下午，考虑范围正缩小到模拟经营与解谜之间。
 我们大约在临近傍晚时确定了最终的形式：关于花朵与蜂蝶的解谜游戏。<link https://github.com/ayuusweetfish/Nectar-Nexus/commit/10831bbc838d32ecbaf5072bfae55d8a6b386154 开工！>
+房间里有一个可以像秋千一样摇摆的椅子，由于主攻美术的 J、P、S 三人都需要更稳定的桌面，秋千椅便顺理成章被我占据。前不久还在网上看到 ADHD 在家的各种乱七八糟坐姿蹲姿（意料之外的共性），正好这次试一试给自己多一些物理上的刺激，感觉会很有效。
+!<img Jam-02-Swing.jpg <= 侧面拍摄的躺在秋千椅子上使用电脑的场景。//大概是这样的> caption vertical>
+前几天大家提前买好了电饭煲和平底锅，今天都送达了。晚上几人出门探访周围的菜市场、干货和水果商店。
+讨论决定了最终的游戏机制，以及游戏界面设计。过了第一天就已经有了基本完整的原型，也确定了美术风格，进度喜人。这次可太从容啦。晚上还玩了一会儿《星露谷物语》，原本我正在狂敲代码，但听说《星露谷》的主角就是在公司敲电脑敲伤了——感觉自己总有一天要去种地了，种地多好。星露谷，启动！看完了联机模式下没有放出来的过场动画。
+!<blockquoteby <link https://ldj.am/$390249 第一日总结> <~~='
+<lang en We’re putting together our ideas and finding ourselves exploring an intricate design space. We are looking forward to the second day, when we prune the extending branches and focus our work in a pinned-down scope.>
+<lang en Today we received our rice cooker and visited several food markets nearby. I can’t wait for tomorrow’s cookery ^ ^>
+'>>
+
+!<hr>
+!<h2 第 2 日 #Jam-Day-2>
+早上拥有了稀饭和煎蛋。<link https://ldj.am/$390569 向国际友人发布之>。晚上又一起逛了菜市场，购入大量食材。
+补全游戏机制、增加谜题，实现了大量互动逻辑与动画。算了算感觉进度好像没有那么喜人，但还在可以处理的范围之内。
+深夜原本准备睡觉时围观美术组，发现配色不够清晰，画面上的元素也很难让人快速理解棋盘的成分。要在棋盘谜题上做出高度风格化的艺术设计实在是一个巨大的挑战，其中也免不了妥协。感觉所有人都十分不情愿——真的很好看！但是也真的看不清楚要怎么玩！没办法，交互设计是这个样子的。于是莫名又开始调颜色，又莫名熬到很晚，虽说是又推了不少进度，可是四点钟还没上床真的是要晕倒了。
+大家开始对进度很担心，但感觉……应该还好？哎，不好也只能硬着头皮继续，总之先睡觉吧。
+!<blockquoteby <link https://ldj.am/$391213 第二日总结> <~~='
+<lang en [T]his turns out to be a hard puzzle for us, but we think if we manage to find a way, it will be tremendously rewarding — isn’t game design a puzzle game itself?>
+<lang en […] Yet when everything comes together, incompatibilities arise: this is just what happens in many, if not all, design tasks. How does Matisse-style decoration and composition fit onto a grid-cells puzzle game, where all elements need to stay distinct and identifiable? That might well be an inspiring problem no one has tackled before, and we think we’ve spotted some glittering gems around this inquiry.>
+'>>
+
+!<hr>
+!<h2 第 3 日 #Jam-Day-3>
+早上爬起来坐在床上做了一大堆谜题，把大部分机制都串了起来。下午继续造题，感觉脑子要烧了。
+被三条人的晚饭狠狠感动（暗暗下定决心下次聚的时候一定要参与到做饭当中 T T）
+!<img Jam-03-Dish.jpg <= 饭菜与背景里模糊的解谜游戏画面。> vertical>
+傍晚时开始接入动画。回头看看这个时候才开始对接美术大概是有点太晚了，但毕竟有那么多解谜内容……
+大概是高强度解谜一整天之后耗尽了思考的心力，中途还拜托大家把外放的音乐暂停了一会儿才把脑子转过弯来。旋转方向的动画简直是绕死了。
+此时大概能预料到，今天只能熬通宵了。一点点对接完所有组件的动画，还剩下变色龙动画没有处理，此时是凌晨四点半。在秋千椅子上窝成一团睡下。迷迷糊糊之间发现竟然还能十分明显地感受到秋千的往返运动，不知道 Malletwand 能不能做到呢……
+……半小时后醒来继续工作，头脑似乎清醒了一些。不久之后谜题界面便完整了。呼。
+此时是早晨六点。J、P、S 三人开始绘制所有关卡的藤蔓，程序上也进入收尾阶段。八点左右 P、S 睡下——实在是非常辛苦；J 和我一起熬到了十点，打包提交。额外花了些时间才把网页版处理妥当，至此除了没有声音，以及选关界面有些设想没有完全实现，总算是还算圆满地收工了。
+——不过我还要和《拾忆触角》的工作组成员开会。十点半准时下楼，半小时的会议结束后回到房间敲门，里面却似乎没有反应。周围有好几位负责保洁的阿姨在聊天，有时还向我投来目光，感觉这个地方实在是很可怕，便决定出门散步。南方暮春的阴雨天很多，今天的阳光难得很不错，趁机把没来得及仔细观察的周围都逛了一圈，也想了想声音该怎么做。
+再次回到房间是一个小时后，来到秋千椅子上睡下。
+
+!<hr>
+!<h2 第 4 日 #Jam-Day-4>
+……也是从这一天开始四条人的作息彻底颠倒了。P 开玩笑说我们的饭已经不适合午饭、晚饭这种名字了，应该叫 1 饭、2 饭。好赛博朋克的感觉，或者也像是 Joja 干得出来的事。
+!<img Jam-04-Graffiti.jpg <= 参考网络上的“鱼”字甲骨文图像画图的场景。//听闻涂鸦中分别出现了金文和波斯语之后开始现场学习甲骨文> caption>
+
+!<hr>
+!<h2 第 5 日 #Jam-Day-5>
+给游戏做了一些音效。然后聊起下一个游戏项目，虽然没有太完整的设想，但是集体浏览了《昨日难留》（<lang en <it No Longer Home>>）和《艾迪芬奇的记忆》（<lang en <it What Remains of Edith Finch>>）。后者轮流玩通了全流程，感觉这部游戏的体验实在是独属于电子游戏、无法用语言传递的，留下的只有长久的震撼。
+整个晚上直到天亮都在促膝长谈。原本聊的是游戏构思，最后变成了人生经历、神秘学、信仰……
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
