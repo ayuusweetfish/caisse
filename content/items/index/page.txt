@@ -30,8 +30,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2024.09> <link flow/drift>（89°）>
   <li <date 2024.05> <link nectar>>
-  <li <date 2024.05> <link flow/drift>（果酱第 1 日）>
   <li <date 2024.04> <link fhxl> 网页版上线！>
   <li <date 2024.03> <link shards>>
   <li <date 2024.02> <link flight>>
@@ -63,8 +63,8 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2024.09> <link flow/drift> (89°) (currently Chinese-only).>
   <li <date 2024.05> <link nectar>.>
-  <li <date 2024.05> <link flow/drift> (Jam, Day 1) (currently Chinese-only).>
   <li <date 2024.04> <link fhxl>, webpage version up and running.>
   <li <date 2024.02> <link flight>.>
 >
