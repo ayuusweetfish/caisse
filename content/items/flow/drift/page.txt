@@ -6,7 +6,7 @@
 {{date=}}2024.05,2024.09
 
 {{contents.zh=}}
-!<note 最近更新：<link #090 90°【夜雨】>>
+!<note 最近更新：<link #093 93°【阻】>>
 
 !<blockquoteby <~=' 《流萤集》（<lang en <it Fireflies>>）<br>泰戈尔（<lang en Rabindranath Tagore>）'> <~~='
 <lang en April, like a child,><br><lang en writes hieroglyphs on dust with flowers,><br><lang en wipes them away and forgets.>
@@ -291,6 +291,10 @@ J：“就到处去探索吧！”（星露谷版“没事去玩吧”）
 虽然很喜欢早晨这样的雨，但起初还是因为看不到太阳和月亮失落了一小会儿，好在下午收工时惊觉桌面上已经满是斜阳的柔光，晚上也如愿以偿看到了低空的一轮满月。只是写下这些时已经是五更天了，满月不知道躲去了哪栋楼或者哪棵树背后。坐到外面来写这些之前，在彻夜开放的活动中心看到这块拼贴诗白板，即兴摆了一句。今天就以此作结好了。
 
 !<img 090-Found.jpg <= 拼贴诗白板。“蝴蝶翅膀吞没远方的山，投入别致的漫游”。>>
+
+!<hr windy>
+!<h1 93°【阻】 #093>
+至少<link https://hackaday.io/project/196643/logs 两篇工作日志>是发出来了，剩下的慢慢来啦。
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>
