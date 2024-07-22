@@ -166,6 +166,15 @@ Technically, this is a personal wiki, but please call it anything you deem appro
   langs = {'zh'},
   tint = {0x90, 0xb0, 0xff},
   bgimg = 'neutrino7-bg.png',
+}, {
+  shortname = 'hezicola',
+  title = '冷酷蹦迪',
+  author = '迪迪迪',
+  link = 'https://www.hezicola.com/',
+  langs = {'zh'},
+  tint = {60, 70, 80},
+  bgimg = 'hezicola-bg.png',
+
 --[[
 }, {
   shortname = 'Example',
@@ -174,6 +183,7 @@ Technically, this is a personal wiki, but please call it anything you deem appro
   link = 'http://example.com',
   langs = {'zh', 'en'},
   tint = {200, 160, 48},
+  bgimg = '',
   pending = true,
 ]]
 }} }}}
