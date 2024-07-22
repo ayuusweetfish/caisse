@@ -30,11 +30,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2024.12> <link canta-cart>>
   <li <date 2024.11> <link flow/drift>（110°）>
   <li <date 2024.05> <link nectar>>
-  <li <date 2024.04> <link fhxl> 网页版上线！>
-  <li <date 2024.03> <link shards>>
-  <li <date 2024.02> <link flight>>
 >
 
 <link revlog>
@@ -63,10 +61,9 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2024.12> <link canta-cart>.>
   <li <date 2024.11> <link flow/drift> (110°) (currently Chinese-only).>
   <li <date 2024.05> <link nectar>.>
-  <li <date 2024.04> <link fhxl>, webpage version up and running.>
-  <li <date 2024.02> <link flight>.>
 >
 
 <link revlog>
