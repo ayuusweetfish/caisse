@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	5220	document
+categories.txt	5258	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -60,6 +60,17 @@ items/candy/Candy_Girl.mp4	18906820	video	203	960	600
 items/candy/Candy_Girl.mscz	51696	score
 items/candy/cover.png	45068	image	640	360
 items/candy/main.lua	5887	code
+items/canta-cart/A-Short-Hike.mp4	1331331	video	39	640	450
+items/canta-cart/Cover.jpg	59107	image	912	684
+items/canta-cart/Merry-Go-Round.mp4	2177512	video	39	960	540
+items/canta-cart/Pigeons.mp4	634716	video	9	540	360
+items/canta-cart/Rev-1-Assembly.jpg	81312	image	1120	840
+items/canta-cart/keyboard-10-keys.png	5857	image	840	200
+items/canta-cart/keyboard-transpose.png	23038	image	716	920
+items/canta-cart/play/canta-cart.js	119859	code
+items/canta-cart/play/canta-cart.wasm	188001	unknown
+items/canta-cart/play/index.html	2614	unknown
+items/canta-cart/sense-circuit.png	5214	image	762	246
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
 items/courses-21/Iron_Man.mscz	55061	score

@@ -114,6 +114,7 @@ cats.murmurs.pagelist = {
   {name = 'inner-prod'},
 }
 cats.potpourri.pagelist = {
+  {name = 'canta-cart', dark = true},
   {name = 'fungi'},
   {name = 'fungi/log', unlisted = true},
   {name = 'fungi/log-r2', unlisted = true},

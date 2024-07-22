@@ -1,0 +1,191 @@
+{{title.zh=}}Canta-Cart
+{{intro.zh=}}低成本卡片拇指琴
+{{title.en=}}Canta-Cart
+{{intro.en=}}Low-cost card-sized musical instrument with touch keys
+
+{{bannerimg=}}Cover.jpg
+{{bannerimgpos=}}50,30
+{{bannerimgalt.zh=}}堆放的卡片形状电子装置。
+{{bannerimgalt.en=}}A stack of card-sized electronic devices.
+
+{{date=}}2024.09,2024.11
+{{usemath=}}true
+
+{{contents.zh=}}
+!<note <link https://hackaday.io/contest/195949-2024-business-card-contest Hackaday 2024 名片挑战>提交作品。>
+
+<b Canta-Cart> 是一件触摸式乐器/合成器。它仅有标准 ID-1 卡片大小（85.6 × 53.98 mm），是一个可以随身携带的小乐器，能成为任何人手里的小玩具，亦能在熟练玩家的手中大显神通。它即插即用，一个小小的 USB-C 电源可以带着它的声音走遍世界。材料清单的总成本为人民币 5 元（折合约 0.7 美元）。
+
+演示乐曲——
+!<list
+  <li 《人生的旋转木马》（<lang en <it Merry-Go-Round of Life>>）——电影《哈尔的移动城堡》插曲；久石让作曲>
+  <li 《短途旅行》（<lang en <it A Short Hike>>）——电子游戏配乐旋律主题；Mark Sparling 作曲>
+  <li 《白鸽与少年》（<lang ja ハトと少年>）——电影《天空之城》插曲；久石让作曲>
+>
+
+!<filetable
+  <file Merry-Go-Round.mp4 《人生的旋转木马》>
+  <file A-Short-Hike.mp4 《短途旅行》>
+  <file Pigeons.mp4 《白鸽与少年》>
+>
+
+!<hr>
+
+除了实体装置外，乐器也可以<subpagelink canta-cart/play 在浏览器中游玩>。
+
+!<note 以下内容与 <link https://hackaday.io/project/196643-canta-cart/details Hackaday 项目详情>一致。中文版本基于机器翻译修订。>
+
+!<h1 🎛️ 操作>
+
+卡片上有 12 个触摸按键（10 个用于发声，2 个用于转调）。发声按键对应自然大调音阶中的乐音，跨越十度音程。
+
+!<img keyboard-10-keys.png <= 按键布局与音高（音名）对应关系示意图。> syncdarkmild>
+
+转调按钮提供了多种扩展方法。操作方式如下：
+!<list
+  <li 按一次：沿音阶移动。>
+  <li 按住的同时演奏一个音符：临时升降半音。>
+  <li 按住其一的同时按下另一个：整体移调。>
+>
+
+!<img keyboard-transpose.png <= 移调按键操作示意图。> vertical syncdarkmild>
+
+其背后的考量是，大多数旋律（在与西方调性理论相兼容的音乐文化中）的音域都在十分之一左右，至少在短时间内是如此；这是因为人声的音域大致符合这一范围，而乐器和作品常常倾向于模仿人声，或是引发人声的感觉。因此，对于演奏者来说，十个调大多足以重现大多数旋律。在需要的情况下，移调按钮可以打开通往十音大调音阶以外音高的通道，覆盖其余情况，并为和声、音乐纹理等提供丰富的机会，使细腻的音乐表达成为可能。
+
+!<h1 ⚙️ 内部原理>
+
+（详情请参考<link https://github.com/ayuusweetfish/Canta-Cart/blob/master/fw/src/main.c 固件源程序>。）
+
+!<h2 电容传感>
+
+触摸感应是利用 RC 网络的阶跃响应实现的。
+
+电路由一个与感应电极串联的大电阻器（约 1 MΩ）组成。后者可被视为电路接地（不一定是接地，电池负极也可以）的电容器，其值会随着人体部位的接近而增加。驱动引脚为网络提供阶跃信号（即将其驱动为高电平），并监测电阻上的电压变化，等待传感引脚变为“逻辑高电平”。由于该网络的阶跃响应是一个指数函数（其推导过程在任何基础电子学教科书中都有解释），因此感应点的电压要上升到逻辑高电平阈值 <math V_\mathrm{IH} = k \cdot V_\mathrm{CC}> 以上（典型值 <math k = 0.7>），所需的时间为 <math -\ln (1 - k) \cdot RC>，与感应电容 <math C> 成线性关系。
+
+!<img sense-circuit.png <= 传感电路示意图。>>
+
+可以<link https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWK0AsYBMBmTD0E48B2dANjwA50xMQFJaQUaEBTAWjDACgAnEc+mBKDCJcMKjh48LgGMQ6SOXH10xFZNYcI9SFwDmC9UNXHRkvZhLKw5k+DvobkgDp6ASv0EShG1VLgFaCR0YItgrgAPWhsUPBA8JDBcRnEQABEeAEsANxYo8AQITniwPDEMdFTfAGUWADsAZ3yAdwcKiUUbCT022zE1Kq6jKstrdpGJ9BRBVz1DQcnFp2VdOQUlJfVFwXYwXSheL0n+ycFpOC42gUmb+z1o4eoINSTMFGqxAFEAGxZZAAuPAA9gATfLA6qSSp4HSwOBw+A6EA0ZHxPRAA 在此>运行电路的模拟。
+
+!<h2 音频合成>
+
+合成器是一个基础的波表三角波合成器，结合了一个 <lang en attack/release> 包络。所有计算均采用 32 位整数，从而最大限度地减少了合成时间，并将整体延迟时间降至 1 毫秒以下。
+
+!<h2 音频输出>
+
+音频通过由字选择 (WS)、位时钟 (BCK) 和串行数据 (DATA) 三个信号组成的数字总线发送到 DAC。电路中的 DAC IC 接收的式 LSBJ 格式，这与标准 I²S 格式非常相似。我们的微控制器没有直接适配此类格式的外设，但在限制之内也有可行方案：BCK 和 DATA 可由 SPI 输出覆盖，WS 可由细心作好同步的 PWM 定时器通道提供。DMA 提供一个“半完成”（<lang en half-complete>）中断，简化了双缓冲的实现。
+
+为什么会出现这些奇怪的限制？当然是为了节衣缩食！这就引出了……
+
+!<h1 🔥 The Muntz Wildcard>
+
+性价比是设计中的首要考虑因素之一。因此，在实施过程中出现了一些荒唐的现象，但整件装置最终拼凑起来的那一刻，便实现了每件 5 元的超低原料成本。由于如今不少厂家都为这种尺寸的电路板提供免费的打样服务，以上就是设备的最终制造成本。（所有元件都可以用热风枪或烙铁手工焊接；我并非经验丰富的制作者，我目前专注于设计，电子制作仅是副业，但我只用焊膏和热风枪就完成了所有工作，没有使用钢网、放大镜或助焊剂。不过每个人的情况也会不同啦。）
+
+微控制器是装置的核心，通常也是原料成本的主要组成部分。在本设计中，我选择了 PY32，这是半导体公司普冉（Puya）推出的 Arm Cortex-M 微控制器系列。入门产品线 PY32F002/3 的定价令人印象深刻，低至 1 元以内。PY32F003 型号的运行频率为 32 MHz，外设包括定时器、SPI 和 DMA，非常适合我们的连续数字音频输出使用场景。音频 DAC 和放大器 IC 也是低成本型号，但足以满足我们的应用需求。
+
+我现居中国境内，从淘宝上的一家大型经销商处购买元件的总成本为每台 4 元（数量 1+ 对应的阶梯价格）。知名的在线分销商在订购数量较少的情况下可能价格会略高，但数字相差不大，最高即为前述的约 5 元。
+
+音乐从来不只属于部分人。全世界音乐梦想家，联合起来！
+
+!<h1 ✨ 名片……？>
+
+名片离不开个人化的交流；我已经开始将这些送给周围的朋友。背面印有个人网站和一个小图标。这个图标隐晦地拼出一个音乐片段，我称其为“<lang en sweetfish> 旋律动机”。我想给首位正确解读它的人赠送一张卡片。如果你能看明白，请给我发信息 (^ -)☆
+
+!<img Rev-1-Assembly.jpg <= 组装完毕的装置，背面印刷的图案面朝上方。//写错了，其实是第一版哒> caption>
+
+{{contents.en=}}
+!<note A submission to the <link https://hackaday.io/contest/195949-2024-business-card-contest Hackaday 2024 Business Card Challenge>.>
+
+<b Canta-Cart> is a touch-operated musical instrument/synthesiser that takes the dimensions of a standard ID-1 card (85.6 × 53.98 mm). A portable little tune-maker in the pocket, it is easy for anyone to get hands on, yet versatile enough for the more aspiring of minds. It is plug-and-play — a USB-C power supply will take its sounds anywhere. The BOM adds up to a cost of CN¥5 / US$0.7.
+
+Music for demonstration:
+!<list
+  <li <it Merry-Go-Round of Life> — music from the film <it Howl’s Moving Castle>; composed by Joe Hisaishi.>
+  <li <it A Short Hike> — melodic theme of the video game; composed by Mark Sparling.>
+  <li <it Pigeons and a Boy> (<lang ja ハトと少年>) — music from the film <it Laputa: Castle in the Sky>; composed by Joe Hisaishi.>
+>
+
+!<filetable
+  <file Merry-Go-Round.mp4 <it Merry-Go-Round of Life>>
+  <file A-Short-Hike.mp4 <it A Short Hike>>
+  <file Pigeons.mp4 <it Pigeons and a Boy>>
+>
+
+!<hr>
+
+Apart from the actual device, the instrument can also be played <subpagelink canta-cart/play right in the browser>.
+
+!<note The following content is the same as the <link https://hackaday.io/project/196643-canta-cart/details project details on Hackaday>.>
+
+!<h1 🎛️ Controls>
+
+On the card are 12 touch keys (10 for sounds, 2 for transposition). The sounding keys correspond to the pitches in a diatonic major scale, spanning a tenth interval.
+
+!<img keyboard-10-keys.png <= An illustration of the layout of the keys and how they map to pitches or musical notes.> syncdarkmild>
+
+The transpose buttons open up to a variety of ways to extend this. They work as follows:
+!<list
+  <li Press once: move along the scale.>
+  <li Hold and play a note: accidentals.>
+  <li Press one while holding the other: key change.>
+>
+
+!<img keyboard-transpose.png <= Diagrams of transpose buttons being operated.> vertical syncdarkmild>
+
+The rationale is that most melodies (in music cultures compatible with the Western tonal theory) span a pitch range of around a tenth, at least over short periods, due to the register of the human voice and how musical instruments and compositions tend to imitate and invoke it. Thus, ten keys are mostly sufficient for a player to reproduce most melodies. The transpose buttons open a way to pitches beyond the ten-note major scale in cases where they are needed, covering the remaining cases as well as providing abundant chances for harmonies, musical textures, etc., through which delicate musical expression becomes more than possible.
+
+!<h1 ⚙️ Inner Workings>
+
+(Please refer to the <link https://github.com/ayuusweetfish/Canta-Cart/blob/master/fw/src/main.c firmware source> for all details.)
+
+!<h2 Capacitive Sensing>
+
+Touch sensing is achieved by utilising the step response of an RC network.
+
+The circuit consists of a large resistor (~1 MΩ) in series with the sensing electrode. The latter can be treated as a capacitor to the circuit’s ground (not necessarily earth; a battery negative reference works just fine), whose value increases as human body parts approach it. A driving pin feeds the network with a step signal (namely, drives it high) and monitors the voltage change across the resistor, waiting for the sensing pin to go “logical high”. As the step response of this network is an exponential function (the derivation of which is explained in any basic electronics textbook), for the voltage at the sensing point to rise above the logical high threshold <math V_\mathrm{IH} = k \cdot V_\mathrm{CC}> (with a typical value of <math k = 0.7>), the time taken is <math -\ln (1 - k) \cdot RC> which is linearly dependent on the sensed capacitance <math C>. By repeatedly sampling GPIO pins, the capacitance values at all electrodes can be straightforwardly deduced.
+
+!<img sense-circuit.png <= Diagram of a sensing circuit.>>
+
+Run a simulation of the circuit <link https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWK0AsYBMBmTD0E48B2dANjwA50xMQFJaQUaEBTAWjDACgAnEc+mBKDCJcMKjh48LgGMQ6SOXH10xFZNYcI9SFwDmC9UNXHRkvZhLKw5k+DvobkgDp6ASv0EShG1VLgFaCR0YItgrgAPWhsUPBA8JDBcRnEQABEeAEsANxYo8AQITniwPDEMdFTfAGUWADsAZ3yAdwcKiUUbCT022zE1Kq6jKstrdpGJ9BRBVz1DQcnFp2VdOQUlJfVFwXYwXSheL0n+ycFpOC42gUmb+z1o4eoINSTMFGqxAFEAGxZZAAuPAA9gATfLA6qSSp4HSwOBw+A6EA0ZHxPRAA here>.
+
+!<h2 Audio Synthesis>
+
+The synthesiser is a basic triangle wavetable synth combined with an attack/release envelope. All calculations are carried out with 32-bit integers, minimising the time spent in synthesis and reducing overall latency to under 1 ms.
+
+!<h2 Audio Output>
+
+Audio is sent to a DAC through a digital bus comprising three signals: word select (WS), bit clock (BCK), and serial data (DATA). The DAC IC in the circuit expects the LSBJ format, which closely resembles the standard I²S. Our microcontroller does not have a ready-to-go peripheral for such formats, but it is possible to work within the limitation: BCK and DATA can be covered by an SPI output, and WS can be supplied by a carefully synchronised PWM timer channel. The DMA provides a half-complete interrupt, easing the implementation of a double buffer.
+
+Why do these strange limitations arise? To squeeze out every penny/cent, of course! Which leads us to…
+
+!<h1 🔥 The Muntz Wildcard>
+
+Cost-effectiveness was an overarching consideration in the design. This gave rise to a few absurdities in the implementation, but as things were pieced together, they amounted to a knockdown BOM cost of US$0.6 per unit. As quite a few PCB houses now provide free prototyping services for boards of this size, this is the final manufacturing cost of the device. (Components can all be manually soldered with a hot air gun or an iron; I’m by no means a seasoned maker as electronics is only my side research as a design-focused student, but I did it all simply with solder paste and a hot air gun, without a paste stencil, a magnifying glass, or solder flux. YMMV, though.)
+
+The microcontroller is at the heart of the device and often a major contributor to the BOM cost. For this design, I looked at PY32, an Arm Cortex-M microcontroller series by the semiconductor company Puya. The entry product line, PY32F002/3, features an impressively low cost of down to US$0.1 per unit. The PY32F003 model runs at 32 MHz and has timers, SPI, and DMA in its peripherals, closely fitting our use case of continuous digital audio output. The audio DAC and amplifier ICs are also low-cost models, but are more than sufficient for our application.
+
+Being China-based, I obtained a combined cost of CN¥4/US$0.6 per unit (at quantities of 1+) ordering components from a large reseller on Taobao. Renowned online distributors may have a slightly higher price at lower quantities, but the figures do not differ by much, capping at around the aforementioned US$0.7.
+
+Music is never a meritocracy. Musical dreamers of the world, unite!
+
+!<h1 ✨ Business…?>
+
+Business cards are never complete without getting personal. I have already been giving away these to friends around. On the back side are printed my personal website and a signature in the form of an icon. The graphic obscurely spells a musical phrase that I dub “the sweetfish motif”. I’m willing to send a card to whoever correctly decodes it first. If you do, please message me (^  -)☆
+
+!<img Rev-1-Assembly.jpg <= Assembled devices with graphics printed on the back side facing up.//I spelt it wrong, this was revision 1> caption>
+
+
+{{toc=}}true
+
+{{rellinks.zh=}}
+!<list
+  <li <subpagelink canta-cart/play 在线游玩页面>>
+  <li <link https://hackaday.io/project/196643-canta-cart Hackaday 项目页面>>
+  <li <link https://github.com/ayuusweetfish/Canta-Cart 开源资料仓库>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <subpagelink canta-cart/play Online play page>>
+  <li <link https://hackaday.io/project/196643-canta-cart Hackaday project page>>
+  <li <link https://github.com/ayuusweetfish/Canta-Cart Open-source material repository>>
+>
