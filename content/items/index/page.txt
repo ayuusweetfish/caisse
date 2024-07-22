@@ -24,7 +24,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 >
 
 !<--=' !<img fish.png 一条简笔画小鱼 orig-size> '>
-!<img ../flow/cross/320-Gate.png <= 线条绘画。女孩人物捧着跃出的鱼从牌楼上飞过。//年年有鱼跃龙门！> caption square medsmall syncdark>
+!<img 120-Balloon.png <= 线条绘画，趴在地上的女孩向飞走的气球伸出手。> medsmall syncdark>
 
 !<hr windy>
 
@@ -57,7 +57,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 >
 
 !<--=' !<img fish.png <= Line art of a fish> orig-size> '>
-!<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.//Over the Dragon Gate!> caption square medsmall syncdark>
+!<img 120-Balloon.png <= Line art illustration of a girl getting down to the ground facing down, reaching out to a balloon flying away.> medsmall syncdark>
 
 !<hr windy>
 
