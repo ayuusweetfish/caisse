@@ -30,7 +30,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
-  <li <date 2024.12> <link flow/drift>（123°）>
+  <li <date 2024.13> <link flow/leaves>（暑训 Day 1）>
   <li <date 2024.12> <link canta-cart>>
   <li <date 2024.05> <link nectar>>
 >
@@ -61,7 +61,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
-  <li <date 2024.12> <link flow/drift> (123°) (currently Chinese-only).>
+  <li <date 2024.13> <link flow/leaves> (Summer Training Day 1) (currently Chinese-only).>
   <li <date 2024.12> <link canta-cart>.>
   <li <date 2024.05> <link nectar>.>
 >
