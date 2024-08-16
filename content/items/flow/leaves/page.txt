@@ -1,0 +1,48 @@
+{{title.zh=}}秋叶飘零时
+{{intro.zh=}}秋霜不惜人，倏忽侵蒲柳
+{{title.en=}}When Autumn Leaves Start to Fall
+{{intro.en=}}Et le vent du nord les emporte
+
+{{date=}}2024.13
+
+{{contents.zh=}}
+!<note 最近更新：<link #Training-Day-1 143–149°【暑训】/ Day 1【山】>>
+!<hr windy>
+
+!<blockquote <~~='
+<lang ja 普通に笑って普通に泣いて生きてみたかった><br>【曾希望着能在世间平常地欢笑哭泣】
+<lang ja そんなこと今更叶わないから　今日も眠りにつく><br>【那样的愿望如今也难以实现了　今天还是姑且入眠吧】
+'>>
+
+!<musictrack <~=' 春卷饭（<lang ja はるまきごはん>）'> <= 夜魔> <= > a94551326.jpg https://music.163.com/song?id=1474338006 专辑封面。>
+
+!<hr windy>
+!<h1 143–149°【暑训】 #Training>
+
+是这样的，再这样工作狂下去整个生活就要乱套了。虽然接下来的一个月仍然会有超多任务，但无论如何真的不可以再放任自己照顾不好自己了！废寝忘食不说，所有的胡思乱想全都积在脑袋里发酵发霉，看上去省出了工作的时间，实际上只会落得精神状态越来越糟糕。还是得把它们放出来面对面——忽然发觉自己其实已经离不开这种碎碎念的书写，还是挺意外的。
+接下来会尽可能把想记录的都记录下来，工作什么的，不差那点时间精力。之前已经写下的部分的也都要整理好补上。早就堆起来的 100 份消息（可没骗人，又没说是几进制）也要开始回复，不许再拿自找的一堆“工作”和 ADHD 的 <lang en object permanence> 问题做借口！所谓工作真的那么重要吗！怎么可以这样！
+
+!<hr windy>
+
+!<h2 Day 1【山】 #Training-Day-1>
+!<note <~~=''
+今日排练曲目
+!<list
+  <li 第一场 <list
+    <li <link https://www.youtube.com/watch?v=BUgn9ZMd-SI <lang en <it Cumberland Cross>>> — Carl Strommen>
+    <li <link https://www.jacobdehaan.com/en/node/117 <lang en <it Virginia>>> — Jacob de Haan>
+  >>
+  <li 第二场 <list
+    <li <link https://www.jwpepper.com/sheet-music/media-player.jsp?&type=audio&productID=2472462 <lang en <it Pilatus: Mountain of Dragons>>> — Steven Reineke>
+    <li 《红色娘子军》［<link https://www.bilibili.com/video/BV1PZ421Y7oW/ （上）>、<link https://www.bilibili.com/video/BV1JS421o7Gb/ （下）>］— Yoshika_DK>
+  >>
+>
+''>>
+
+最近以师父为首的一批同学开始在排练厅的钢琴上练习爵士即兴，于是我也莫名迷上了在上面瞎弹（练是不可能认真练的，唉）。
+困死了明天还要早起再这样下去肯定吃不消，明天再说。<lang ja 今日も眠りにつく>。
+
+{{contents.en=}}
+!<note This page is currently <link ?lang=zh Chinese-only>.>
+
+{{toc=}}true
