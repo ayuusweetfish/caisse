@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	5286	document
+categories.txt	5321	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -877,6 +877,18 @@ items/lili/Lili__Good_morning.mscz	26240	score
 items/lili/Lili__Into_a_Blossom.mp4	15047848	video	268	720	390
 items/lili/Lili__Into_a_Blossom.pdf	612314	document	27
 items/lili/cover.jpg	22340	image	720	240
+items/machine/cover.jpg	145025	image	692	487
+items/machine/play/index.html	1045	unknown
+items/machine/play/p0.jpg	457233	image	1754	1240
+items/machine/play/p1.jpg	431474	image	1754	1240
+items/machine/play/p2.jpg	449513	image	1754	1240
+items/machine/play/p3.jpg	391021	image	1754	1240
+items/machine/play/p4.jpg	492955	image	1754	1240
+items/machine/play/p5.jpg	467450	image	1754	1240
+items/machine/play/p6.jpg	417178	image	1754	1240
+items/machine/play/p7.jpg	421272	image	1754	1240
+items/machine/play/p8.jpg	428001	image	1754	1240
+items/machine/play/p9.jpg	288316	image	1754	1240
 items/marimba/1-1.svg	20494	image	2230	223
 items/marimba/1-2.svg	54619	image	2551	1123
 items/marimba/1-3.svg	63381	image	2551	1132
