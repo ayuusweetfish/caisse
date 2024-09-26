@@ -1,0 +1,16 @@
+{{title.zh=}}机器模型在世界中漂浮
+{{intro.zh=}}aa
+{{title.en=}}Machine Model Floats in the World
+{{intro.en=}}aa
+
+{{bannerimg=}}cover.jpg
+{{bannerimgalt.zh=}}aa
+{{bannerimgalt.en=}}aa
+
+{{date=}}2024.15,2024.16
+
+{{contents.zh=}}
+<subpagelink machine/play aa>
+
+{{contents.en=}}
+<subpagelink machine/play aa>
