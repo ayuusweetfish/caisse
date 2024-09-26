@@ -433,6 +433,17 @@ const serveReq = async (req, info) => {
   const url = new URL(req.url)
 
   if (req.method === 'GET') {
+    if (url.pathname === '/malletwand') {
+      persistLog([
+        req.url,
+        '',
+        req.headers.get('User-Agent'),
+        info.remoteAddr.hostname,
+        req.headers.get('Referer'),
+      ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
+      return redirectResponse('https://github.com/ayuusweetfish/Malletwand', null, true, true)
+    }
+
     if (url.pathname.endsWith('/') && url.pathname.length > 1) {
       url.pathname = url.pathname.match(/^(.+?)\/+$/)[1]
       return redirectResponse(url, null, true, true)
