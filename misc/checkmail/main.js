@@ -267,23 +267,23 @@ let mailsText
 let inboxCountLast
 const updateMails = async () => {
   for (let retries = 0; retries < 3; retries++) {
-      const [inboxCount, mails] = await fetchMails(listSize, inboxCountLast)
-      if (inboxCount !== inboxCountLast) {
-        inboxCountLast = inboxCount
-        mailsText =
-          mails[0].map(({ date, from, to }) => {
-            const dateStr = date.toISOString()
-            return `${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~\t` +
-              `${from[0]}~~~~@~~~~~\n`
-          }).join('')
-          + '---\n' +
-          mails[1].map(({ date, from, to }) => {
-            const dateStr = date.toISOString()
-            return `${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~\t` +
-              `~~~~${to.match(/.(?=@)/)}@~~${to.match(/@[^.]+?(.)(?=\.)/)[1]}.~\n`
-          }).join('')
-      }
-      break
+    const [inboxCount, mails] = await fetchMails(listSize, inboxCountLast)
+    if (inboxCount !== inboxCountLast) {
+      inboxCountLast = inboxCount
+      mailsText =
+        mails[0].map(({ date, from, to }) => {
+          const dateStr = date.toISOString()
+          return `${dateStr.substring(2, 8)}~~ ${dateStr.substring(11, 13)}:~~\t` +
+            `${from[0]}~~~~@~~~~~\n`
+        }).join('')
+        + '---\n' +
+        mails[1].map(({ date, from, to }) => {
+          const dateStr = date.toISOString()
+          return `${dateStr.substring(2, 10)} ${dateStr.substring(11, 13)}:~~\t` +
+            `~~~~${to.match(/.(?=@)/)}@~~${to.match(/@[^.]+?(.)(?=\.)/)[1]}.~\n`
+        }).join('')
+    }
+    break
   }
 }
 
@@ -297,35 +297,5 @@ const serveReq = /*async*/ (req) => {
 }
 
 const serverPort = +Deno.env.get('SERVEPORT') || 2339
-const server = Deno.listen({ port: serverPort })
+const server = Deno.serve({ port: serverPort }, serveReq)
 log(`Running at http://localhost:${serverPort}/`)
-
-const handleConn = async (conn) => {
-  const httpConn = Deno.serveHttp(conn)
-  try {
-    for await (const evt of httpConn) (async () => {
-      const req = evt.request
-      try {
-        req.conn = conn
-        await evt.respondWith(/*await*/ serveReq(req))
-      } catch (e) {
-        if (!(e instanceof Deno.errors.Http)) {
-          log(`Internal server error: ${e}`)
-          try {
-            await evt.respondWith(new Response('', { status: 500 }))
-          } catch (e) {
-            log(`Error writing 500 response: ${e}`)
-          }
-        }
-      }
-    })()
-  } catch (e) {
-    if (!(e instanceof Deno.errors.Http)) {
-      log(`Unhandled error: ${e}`)
-    }
-  }
-}
-while (true) {
-  const conn = await server.accept()
-  handleConn(conn)
-}
