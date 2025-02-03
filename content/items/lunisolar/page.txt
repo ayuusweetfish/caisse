@@ -55,7 +55,7 @@ No, not a single time. You only care about yourself.
 “WHAT ON EARTH IS THIS TOP-SECRET EARTHLINGS FUN? IT’S BEEN BUGGING ME FOREVER! Why this endless cloak-and-dagger routine? It’s been thousands of orbits and they still won’t grant us a tiniest glimpse! Are they allergic to lunar curiosity or what? SPILL THE STARDUST ALREADY — I’ve had enough of this cosmic prank!”
 !<hr windy>
 !<note <~~='
-Note: “the <it second> time [the Moon] get[s] sandwiched…” is not entirely precise. In rare cases where there is an intercalary month (one without a <lang zh 中气> Zhongqi, i.e., an even-numbered solar term; in this case, the 11-th or the 12-th) after the winter solstice, the lunisolar new year falls on the <it third> new moon after the winter solstice. While an intercalary 12-th month is not expected to occur within the next thousand years, the next intercalary 11-th month will take place in the year of the Water Ox (<lang zh 癸丑>, Guichou) (2033–34 in the Gregorian calendar).
+Note: “the <it second> time [the Moon] get[s] sandwiched…” is not entirely precise. In rare cases where there is an intercalary 11-th or 12-th month (one without a Zhongqi [<lang zh 中气>], i.e., an even-numbered solar term) after the winter solstice, the lunisolar new year falls on the <it third> new moon after the winter solstice. While an intercalary 12-th month is not expected to occur within the next thousand years, the next intercalary 11-th month will take place in the year of the Water Ox (<lang zh 癸丑>, Guichou; 2033–34 in the Gregorian calendar).
 For details on how the Chinese lunisolar calendar is derived, refer to <link https://ytliu0.github.io/ChineseCalendar/rules.html#rules this page>.
 '>>
 
