@@ -1,0 +1,70 @@
+{{title.zh=}}万年历
+{{intro.zh=}}每过一次农历新年……
+{{title.en=}}The Myriad-Year Calendar
+{{intro.en=}}Every time you enjoy the Chinese lunisolar new year vibes…
+
+{{bannerimg=}}cover.png
+{{bannerimgpos=}}50,50
+{{bannerimginpage=}}false
+{{bannerimgalt.zh=}}生气皱眉的月亮。
+{{bannerimgalt.en=}}An annoyed, frowning Moon.
+
+{{date=}}2024.24
+
+{{contents.zh=}}
+每过一次农历新年，就有一个月亮被无处安放的好奇心憋死。
+你有想过吗？
+你没有，你只关心你自己。
+!<hr windy>
+!<img 1.png <= “我发现……”> vertical syncdark>
+!<hr cloudy>
+!<img 2.png <= “每当你把大冰块全都照亮，”“然后我第二次夹在你们中间的时候……”> vertical syncdark>
+!<hr cloudy>
+!<img 3.png <= “那个地方就会爆炸！！”“而且每次都在背面！”> vertical syncdark>
+!<hr cloudy>
+!<img 4.png <= “而且”“每次我转到那一面想看看发生了什么，”“他们就把那些亮晶晶的东西全都收起来！”> vertical syncdark>
+!<hr cloudy>
+!<img 5.png <= “所以他们到底在瞒着我们搞什么啊！”“所以到底是什么好玩的东西好奇死了啊啊啊干嘛要藏着掖着不让我们知道啊啊啊啊几千圈了每圈都这样从来没给我看过一眼真的有那么见不得球吗到底有完没完了”> vertical syncdark>
+!<hr windy>
+!<note <~~='
+注：实际上“<b 第二次>夹在中间”的说法并不准确。如果冬至之后有闰月（无中气的阴历朔望月，即闰冬月或者闰腊月），那么新年位于冬至后的第三个新月。换言之，农历新年位于大寒起始后的首个合朔日。虽然未来千年内预计不会有闰腊月，但下一次闰冬月就在癸丑年（公历 2033~34 年）。
+农历的准确编算法则可参见<link https://ytliu0.github.io/ChineseCalendar/rules_simp.html#rules 此页>。
+'>>
+
+{{contents.en=}}
+Every time you enjoy the Chinese lunisolar new year vibes, a Moon melts away in suffocating curiosity.
+Did you ever care?
+No, not a single time. You only care about yourself.
+!<hr windy>
+!<img 1.png <= Illustration with the Moon’s monologue. (See text for content.)> vertical syncdark>
+“I’ve noticed…”
+!<hr cloudy>
+!<img 2.png <= Illustration with the Moon’s monologue. (See text for content.)> vertical syncdark>
+“Whenever you light up the ice slabs in their entirety,”
+“and the second time I get sandwiched between you two after that…”
+!<hr cloudy>
+!<img 3.png <= Illustration with the Moon’s monologue. (See text for content.)> vertical syncdark>
+“That place just explodes!!” “And it’s always on our far side!”
+!<hr cloudy>
+!<img 4.png <= Illustration with the Moon’s monologue. (See text for content.)> vertical syncdark>
+“And…” “every time I turn to that side to peek at the commotion,”
+“They instantly stash away all those sparkly stuff!”
+!<hr cloudy>
+!<img 5.png <= Illustration with the Moon’s monologue. (See text for content.)> vertical syncdark>
+“What sneaky shenanigans are they hiding from us?!”
+“WHAT ON EARTH IS THIS TOP-SECRET EARTHLINGS FUN? IT’S BEEN BUGGING ME FOREVER! Why this endless cloak-and-dagger routine? It’s been thousands of orbits and they still won’t grant us a tiniest glimpse! Are they allergic to lunar curiosity or what? SPILL THE STARDUST ALREADY — I’ve had enough of this cosmic prank!”
+!<hr windy>
+!<note <~~='
+Note: “the <it second> time [the Moon] get[s] sandwiched…” is not entirely precise. In rare cases where there is an intercalary month (the 11-th or the 12-th) after the winter solstice, the lunisolar new year falls on the <it third> new moon after the winter solstice. In other words, the new year always coincides with the <it first> new moon’s day after the start of the solar term of Freezing Cold (<lang zh 大寒>), the last among the 24-term cycle. While an intercalary 12-th month is not expected to occur within the next thousand years, the next intercalary 11-th month will take place in the year of the Water Ox (<lang zh 癸丑>, Guichou) (2033–34 in the Gregorian calendar).
+For details on how the Chinese lunisolar calendar is derived, refer to <link https://ytliu0.github.io/ChineseCalendar/rules.html#rules this page>.
+'>>
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://ich.unesco.org/en/RL/spring-festival-social-practices-of-the-chinese-people-in-celebration-of-traditional-new-year-02126 春节——中国人庆祝传统新年的社会实践>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://ich.unesco.org/en/RL/spring-festival-social-practices-of-the-chinese-people-in-celebration-of-traditional-new-year-02126 Spring festival, social practices of the Chinese people in celebration of traditional new year>>
+>

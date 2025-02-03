@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33277	image	600	1039
 bannerlist.html	1614	unknown
-categories.txt	5321	document
+categories.txt	5362	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -877,6 +877,12 @@ items/lili/Lili__Good_morning.mscz	26240	score
 items/lili/Lili__Into_a_Blossom.mp4	15047848	video	268	720	390
 items/lili/Lili__Into_a_Blossom.pdf	612314	document	27
 items/lili/cover.jpg	22340	image	720	240
+items/lunisolar/1.png	46144	image	900	1200
+items/lunisolar/2.png	64192	image	900	1200
+items/lunisolar/3.png	56288	image	900	1200
+items/lunisolar/4.png	79716	image	900	1200
+items/lunisolar/5.png	79686	image	900	1200
+items/lunisolar/cover.png	10359	image	600	250
 items/machine/cover.jpg	145025	image	692	487
 items/machine/play/index.html	1045	unknown
 items/machine/play/p0.jpg	457233	image	1754	1240
