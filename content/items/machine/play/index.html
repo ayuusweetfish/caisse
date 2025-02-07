@@ -61,10 +61,10 @@ img.no-translation {
   margin-bottom: 3ex;
 }
 
-html[lang='zh-Hans'] img {
+img:lang(zh) {
   max-width: 100vw;
 }
-html[lang='zh-Hans'] .translation {
+.translation:lang(zh) {
   display: none;
 }
 @media (max-aspect-ratio: 1/1) {
@@ -105,8 +105,15 @@ html[lang='zh-Hans'] .translation {
 </head><body>
 <script>
 {
-  const m = new URL(window.location).search.match(/^\?([A-Za-z\-]+)/)
-  const lang = m ? m[1] : 'zh-Hans'
+  const m1 = new URL(window.location).search.match(/^\?([A-Za-z\-]+)/)
+  let lang
+  if (m1) {
+    lang = m1[1]
+  } else {
+    const m2 = document.cookie.match(/(?:^|;\s*)lang=([A-Za-z\-]+)/)
+    lang = m2 ? m2[1] : 'zh-Hans'
+  }
+  if (lang === 'zh') lang = 'zh-Hans'
   document.getElementsByTagName('html')[0].setAttribute('lang', lang)
 }
 </script>
