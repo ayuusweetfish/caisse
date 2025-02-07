@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang='zh-Hans'><head>
+<html lang='en'><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-  <title></title>
-</head><body>
+  <title>机器模型在世界中漂浮 Machine Model Floats in the World</title>
 
 <style>
 body {
@@ -19,7 +18,7 @@ body {
 }
 
 .page {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -28,22 +27,281 @@ body {
 }
 
 img {
+  max-width: 80%;
+  max-height: 100vh;
+  /* min(80vw, 141.4vh) * min(56.6vw, 100vh) */
+  /* Scroll bar is ignored, slightly affecting .translation's height */
+}
+
+img.no-translation {
   max-width: 100%;
-  max-height: 100%;
+}
+
+.translation {
+  color: #fdfdfd;
+  line-height: 1.25;
+  font-family: monospace;
+  padding: 2ex 1em 3ex;
+  box-sizing: border-box;
+  width: min(20%, 35.4vh);
+  height: min(56.6vw, 100vh);
+  font-size: min(1.19vw, 2.25vh);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-end;
+}
+
+.translation br {
+  content: '';
+  margin-bottom: 1.5ex;
+  display: block;
+}
+.translation br.cont {
+  margin-bottom: 3ex;
+}
+
+html[lang='zh-Hans'] img {
+  max-width: 100vw;
+}
+html[lang='zh-Hans'] .translation {
+  display: none;
+}
+@media (max-aspect-ratio: 1/1) {
+  img {
+    max-width: 100%;
+  }
+  .page {
+    flex-direction: column;
+  }
+  .translation {
+    display: block;
+    height: unset;
+    padding: 2ex 1em 2ex;
+    width: 100%;
+    font-size: 3vw;
+  }
+  .translation span {
+    display: inline-block;
+    width: 50%;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    border-right: 1px solid #333;
+    border-collapse: collapse;
+  }
+  .translation span:first-child { padding-left: 0; }
+  .translation span:last-child { padding-right: 0; border: none; }
+  .translation span br.column-hidden {
+    display: none;
+  }
 }
 </style>
 
+</head><body>
+<script>
+{
+  const m = new URL(window.location).search.match(/^\?([A-Za-z\-]+)/)
+  const lang = m ? m[1] : 'zh-Hans'
+  document.getElementsByTagName('html')[0].setAttribute('lang', lang)
+}
+</script>
+
 <div class='container'>
-<div class='page'><img src='play/p0.jpg'></div>
-<div class='page'><img src='play/p1.jpg'></div>
-<div class='page'><img src='play/p2.jpg'></div>
-<div class='page'><img src='play/p3.jpg'></div>
-<div class='page'><img src='play/p4.jpg'></div>
-<div class='page'><img src='play/p5.jpg'></div>
-<div class='page'><img src='play/p6.jpg'></div>
-<div class='page'><img src='play/p7.jpg'></div>
-<div class='page'><img src='play/p8.jpg'></div>
-<div class='page'><img src='play/p9.jpg'></div>
+
+<div class='page'><img src='play/p0.jpg' class='no-translation' alt='机器模型在世界中漂浮 Machine Model Floats in the World'></div>
+
+<div class='page'><img src='play/p1.jpg' alt='
+  采集1片石英
+  调节光线穿透它产生的映像
+  将其拟作1面窗口
+  一座桥
+  一颗星
+'><div class='translation'>
+<span>
+  Collect 1 slice of quartz<br>
+  Adjust the image produced by the light penetrating it<br class='column-hidden'>
+  <br class='cont column-hidden'>
+</span><span>
+  Compare it to a window<br>
+  A bridge<br>
+  A star
+</span>
+</div></div>
+
+<div class='page'><img src='play/p2.jpg' alt='
+  机器模型与生灵同步
+  在两个世界中运行
+  具有相同的功能和运行方式
+  接口紧密相连，
+  用户的手和身体也会永久影响运行过程的危险
+  （条件是TA的设置可捕获流经视野的信号。）
+'><div class='translation'>
+<span>
+  Machine model synchronizes with life<br>
+  Running in two worlds<br>
+  With identical functionalities and operating methods<br>
+  The interfaces are closely connected,<br class='column-hidden'>
+</span><span>
+  The user’s hand and body will also permanently affect the dangers during operation<br>
+  (Given that their settings can capture the signals flowing across the field of view.)
+</span>
+</div></div>
+
+<div class='page'><img src='play/p3.jpg' alt='
+  一SHA一世界
+  玻璃
+  芯片
+  地平面
+
+  水珠
+  池
+  纹波
+  涓流
+  浪涌
+
+  风
+  树
+  通道间的分支
+
+  仰角
+  影子
+  极暗的光
+'><div class='translation'>
+<span>
+  A grain of sand, a world<br>
+  Glass<br>
+  Silicon chips<br>
+  Ground planes<br>
+  <br class='cont'>
+  Droplets<br>
+  Pools<br>
+  Ripples<br>
+  Trickles<br>
+  Surges<br class='column-hidden'>
+  <br class='cont column-hidden'>
+</span><span>
+  Winds<br>
+  Trees<br>
+  Branches among channels<br>
+  <br class='cont'>
+  Angles of elevation<br>
+  Shadows<br>
+  Diminutive lights
+</span>
+</div></div>
+
+<div class='page'><img src='play/p4.jpg' alt='
+  流水混叠进大地的衬底
+  梳过毛刺
+  灌溉每1mm潮湿
+
+  一直流
+  不会主动醒来
+
+  一直流到
+  烘烤
+  悬空
+  不可见
+
+  以一种干净的方式终止
+'><div class='translation'>
+<span>
+  Water flow blends into the ground’s substrate<br>
+  Combing through burrs<br>
+  Irrigating every 1 mm of wetness<br>
+  <br class='cont'>
+  Always flowing<br>
+  Does not wake up on its own<br class='column-hidden'>
+  <br class='cont column-hidden'>
+</span><span>
+  Always flowing, until<br>
+  Baked<br>
+  Floating<br>
+  Invisible<br>
+  <br class='cont'>
+  Terminating in a clean way
+</span>
+</div></div>
+
+<div class='page'><img src='play/p5.jpg' alt='
+  可以用下面的公式测算冻结嘀嗒：
+  𝅗𝅥 = 0   T = ∞
+
+  呼出自由的曲线风阵列
+  小心地将荧光彩灯装载至流动空气……
+  唤醒
+  映射
+  连接，
+  快速闪烁
+
+  注：（蝴蝶）希望的模式为低功耗操作，
+  否则会造成不可预知的结果。
+'><div class='translation'>
+<span>
+  The following formula can be applied to measure frozen ticks:<br>
+  𝅗𝅥 = 0 &nbsp;&nbsp;T = ∞<br>
+  <br class='cont'>
+  Exahale a free, curved wind array<br>
+  Carefully load the flourescent colourful lights into the flowing air…<br>
+  Wake up<br>
+  Map image<br>
+  Connect,<br>
+  Blink quickly<br class='column-hidden'>
+  <br class='cont column-hidden'>
+</span><span>
+  Note: 🦋’s expected mode is low-power operation,<br>
+  Otherwise, unpredictable results will be produced.
+</span>
+</div></div>
+
+<div class='page'><img src='play/p6.jpg' alt='
+  正常状态必须是周期的，
+  以增加日、月约定的可靠性。
+
+  影子自动渐变，渐变完成时产生星光晶体溢出
+
+  速度可以设置慢一点
+'><div class='translation'>
+<span>
+  Normal state is required to be periodical,<br>
+  To increase the reliability of the conventions between Sun and Moon.<br class='column-hidden'>
+  <br class='cont column-hidden'>
+</span><span>
+  Shadows automatically fade, generating an overflow of starlight crystals on completion<br>
+  <br class='cont'>
+  The speed can be set a bit slower
+</span>
+</div></div>
+
+<div class='page'><img src='play/p7.jpg' alt='
+  机器模型与生灵同步
+  在两个世界中运行
+  同时在接近
+
+  您应该知道，
+  密码就包含在睡眠模式的温度
+
+  终止计算时
+  D.U.T. 也将返回到世界里漂浮
+'><div class='translation'>
+<span>
+  Machine model synchronizes with life<br>
+  Running in two worlds<br>
+  While mutually approaching<br>
+  <br>
+  You should realize that<br>
+  The password is included in the temperature of sleep mode<br class='column-hidden'>
+  <br class='column-hidden'>
+</span><span>
+  When computation terminates<br>
+  D.U.T. will also return to the world, floating
+</span>
+</div></div>
+
+<div class='page'><img src='play/p8.jpg' class='no-translation' alt=''></div>
+
+<div class='page'><img src='play/p9.jpg' class='no-translation' alt=''></div>
+
 </div>
 
 </body></html>

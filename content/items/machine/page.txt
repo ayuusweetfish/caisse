@@ -13,4 +13,4 @@
 <subpagelink machine/play ……>
 
 {{contents.en=}}
-<subpagelink machine/play ……>
+<subpagelink machine/play?en ……>
