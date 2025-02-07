@@ -1,16 +1,32 @@
 {{title.zh=}}机器模型在世界中漂浮
-{{intro.zh=}}……
+{{intro.zh=}}一直流，不会主动醒来
 {{title.en=}}Machine Model Floats in the World
-{{intro.en=}}……
+{{intro.en=}}Always flowing, does not wake up on its own
 
 {{bannerimg=}}cover.jpg
-{{bannerimgalt.zh=}}……
-{{bannerimgalt.en=}}……
+{{bannerimgalt.zh=}}各种颜色的电路板与它们的扫描图像堆叠在一起。
+{{bannerimgalt.en=}}Circuit boards of various colours stacked together with their own scan images.
 
 {{date=}}2024.15,2024.16
 
 {{contents.zh=}}
-<subpagelink machine/play ……>
+<subpagelink machine/play 正文在此>。
+
+!<hr cloudy>
+
+从电子元器件说明书中摘出的拼贴独白。
+
+再无情的科技工程也是由人所造，而人的语言归根结底都是从大自然获取的灵感。当我们描述工程时我们说些什么？语言的层层障蔽之下，似乎仍是这个星球上使崭新的生灵们心生向往的一切。树、流水、影子；呼唤与倾听，心跳与睡眠。
+
+也许所谓冰冷的机器不过只是我们在星球上转瞬即逝的脚印。我们的造物也都如我们自己一样，始于星辰与泥土，也终将回归那里去。
 
 {{contents.en=}}
-<subpagelink machine/play?en ……>
+<subpagelink machine/play?en Main text>.
+
+!<hr cloudy>
+
+A collage monologue extracted from electronic component manuals.
+
+Even the most aloof and apathetic technological engineering is human-made, and human language essentially draws all its inspirations from nature. What do we talk about when we talk about engineering? Beneath the layered veils of language, we still seem to find everything on this planet that kindles a longing in the newborn creatures. Trees, flowing water, shadows; calls and listens, heartbeats and sleeps.
+
+Perhaps the so-called cold, impersonal machines are merely ephemeral footprints we leave upon this planet. Like us ourselves, all our creations originate from the cosmic and earthly dusts, to whose embrace they shall ultimately return.

@@ -54,7 +54,7 @@ img.no-translation {
 
 .translation br {
   content: '';
-  margin-bottom: 1.5ex;
+  margin: 0 0 1.5ex;
   display: block;
 }
 .translation br.cont {
@@ -80,9 +80,12 @@ html[lang='zh-Hans'] .translation {
     padding: 2ex 1em 2ex;
     width: 100%;
     font-size: 3vw;
+    font-size: min(3vw, 2vh);
   }
   .translation span {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: bottom;
     width: 50%;
     padding: 0 1.5em;
     box-sizing: border-box;
@@ -93,6 +96,8 @@ html[lang='zh-Hans'] .translation {
   .translation span:last-child { padding-right: 0; border: none; }
   .translation span br.column-hidden {
     display: none;
+  }
+  .translation br {
   }
 }
 </style>
@@ -241,8 +246,8 @@ html[lang='zh-Hans'] .translation {
   The following formula can be applied to measure frozen ticks:<br>
   𝅗𝅥 = 0 &nbsp;&nbsp;T = ∞<br>
   <br class='cont'>
-  Exahale a free, curved wind array<br>
-  Carefully load the flourescent colourful lights into the flowing air…<br>
+  Exhale a free, curved wind array<br>
+  Carefully load the fluorescent colourful lights into the flowing air…<br>
   Wake up<br>
   Map image<br>
   Connect,<br>
@@ -290,7 +295,7 @@ html[lang='zh-Hans'] .translation {
   While mutually approaching<br>
   <br>
   You should realize that<br>
-  The password is included in the temperature of sleep mode<br class='column-hidden'>
+  The password is contained in the temperature of sleep mode<br class='column-hidden'>
   <br class='column-hidden'>
 </span><span>
   When computation terminates<br>

@@ -115,7 +115,7 @@ cats.murmurs.pagelist = {
 }
 cats.potpourri.pagelist = {
   {name = 'lunisolar', dark = true},
-  {name = 'machine', dark = true, unlisted = true},
+  {name = 'machine', dark = true},
   {name = 'canta-cart', dark = true},
   {name = 'fungi'},
   {name = 'fungi/log', unlisted = true},
