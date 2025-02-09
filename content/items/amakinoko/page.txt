@@ -1,0 +1,21 @@
+{{title.zh=}}天气蘑菇
+{{intro.zh=}}蘑菇外形的彩灯装置，流动的颜色依天气变化
+{{title.en=}}Amakinoko
+{{intro.en=}}Mushroom-shaped chromatic light that reflects the weather
+
+{{bannerimg=}}cover.jpg
+{{bannerimgpos=}}50,50
+{{bannerimginpage=}}false
+{{bannerimgalt.zh=}}蘑菇外形的色彩各异的桌面小灯。
+{{bannerimgalt.en=}}Mushroom-shaped desktop lights with various colours.
+<--=' convert IMG_20241116_095255.jpg -crop 3500x1600+135+695 -scale 20% cover.jpg '>
+
+{{date=}}2024.17,2024.19
+
+{{contents.zh=}}
+!<img main.jpg <= 蘑菇外形的色彩各异的灯。>>
+A
+
+{{contents.en=}}
+!<img main.jpg <= Mushroom-shaped desktop lights with various colours.>>
+A
