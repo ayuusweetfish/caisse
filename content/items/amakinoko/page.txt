@@ -14,8 +14,50 @@
 
 {{contents.zh=}}
 !<img main.jpg <= 蘑菇外形的色彩各异的灯。>>
-A
+
+秋季学期的课程团队作业。<link https://ayuusweetfish.github.io/Amakinoko/ 汇报展示与视频>。
+随机组队的作业出乎意料地有趣！组内另有四位不同专业的同学，其中两名来自隔壁学校。
+
+!<hr>
+
+常见的 WS2812 灯带其实非常亮。取一截 24 个小灯，缠绕打结变成一个小小的球，再在底部粘贴、固定在 3D 打印的球壳中央，就能得到美丽的流光溢彩。
+
+然后再加一层外壳，把彩色纱布叠在镂空底下，就会得到更朦胧的光。
+
+（中途为了找参考还跑去宜家搬回了 <link https://www.ikea.cn/cn/zh/p/vindkast-wen-qia-si-tai-deng-bai-se-40539201/ VINDKAST 桌面小灯>，虽然实际上没有参考太多……好吧好吧我承认就是自己看到这种小玩艺走不动路了！）
+
+把这些全都画到电路板上，加上温湿度、气压与光强传感器，就可以感知到天气变化啦。再加一块 USB 芯片，还可以连上电脑，随时替换程序。
+
+哎不对，编程是需要安装那个重量级工具链的吧？没关系，只要<link https://github.com/ayuusweetfish/Amakinoko/tree/master/misc/mumu 模拟一个最简单的小计算机>就可以随时随地爱写什么写什么啦。
+
+好像也没有太多可说的，是吧？其余细节详见仓库。
 
 {{contents.en=}}
 !<img main.jpg <= Mushroom-shaped desktop lights with various colours.>>
-A
+
+A teamed course project in the autumn term. <link https://ayuusweetfish.github.io/Amakinoko/ Project presentation and videos> (a few words in Chinese).
+Randomly teamed-up work turned out unexpectedly intriguing! In the group were four other classmates from different majors, two of whom from the university next door.
+
+!<hr>
+
+The jellybean WS2812 LED strips can actually get quite bright. Take a segment of 24 LEDs, twist and knot them into a little ball, then glue it at the bottom to fix it inside of a 3D-printed spherical shell — a beautiful, dazzling light show.
+
+Add an outer layer with coloured gauze beneath the hollows, and the light becomes softer and more diffused.
+
+(To search for references, I even ran to IKEA and brought back the <link https://www.ikea.com/us/en/p/vindkast-table-lamp-white-90539208/ VINDKAST table lamp> — though honestly its help was limited… Okay, fine, I admit that I just cannot resist these cute little gadgets.)
+
+Draw all these onto a circuit board, add sensors for temperature, humidity, barometric pressure, and light intensity, and they will sense the changes of weather. Add a USB chip so that it can connect to a computer and get program replacements at any time.
+
+Wait, doesn’t programming require installing that super-heavyweight toolchain? No worries! Just <link https://github.com/ayuusweetfish/Amakinoko/tree/master/misc/mumu emulate a minimalist little computer> to write whatever code anytime, anywhere.
+
+Not much else to elaborate on, right? For all the details, please check the respository.
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/Amakinoko 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/Amakinoko Source repository (GitHub)>>
+>
