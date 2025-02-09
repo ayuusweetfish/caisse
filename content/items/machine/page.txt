@@ -4,12 +4,15 @@
 {{intro.en=}}Always flowing, does not wake up on its own
 
 {{bannerimg=}}cover.jpg
+{{bannerimginpage=}}false
 {{bannerimgalt.zh=}}各种颜色的电路板与它们的扫描图像堆叠在一起。
 {{bannerimgalt.en=}}Circuit boards of various colours stacked together with their own scan images.
+!<--=' convert "scan1/扫描 10.jpeg" -crop 1600x2400+2557+2292 -modulate 104x96 -scale 20% -rotate 270 +repage cover.jpg '>
 
 {{date=}}2024.15,2024.16
 
 {{contents.zh=}}
+!<img main.jpg <= 各种颜色的电路板与它们的扫描图像堆叠在一起。>>
 <subpagelink machine/play 正文在此>。
 
 !<hr cloudy>
@@ -21,6 +24,7 @@
 也许所谓冰冷的机器不过只是我们在星球上转瞬即逝的脚印。我们的造物也都如我们自己一样，始于星辰与泥土，也终将回归那里去。
 
 {{contents.en=}}
+!<img main.jpg <= Circuit boards of various colours stacked together with their own scan images.>>
 <subpagelink machine/play?en Main text>.
 
 !<hr cloudy>
