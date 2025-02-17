@@ -12,10 +12,14 @@
 如果你发了信，过一分钟再来应该就能看到它啦。
 邮箱中一部分没有回应的是订阅或广告邮件，请不用担心。我会回复所有信件～如果我真的忘记了请一定提醒我！
 
+!<note 2024 年夏季起的个人信件全部尚待回复，缓慢处理中 T-T <date 2025.01>>
+
 {{intro.en=}}
 My mail address is <tt claire@ayu.land>.
 This website does not have a comment section, nor am I active on public social networks; so please feel free to send anything here.
 I check the mailbox frequently and have even disabled the spam filter, since it would be too regretful for me to miss anything. It’s a great delight to have your messages!
+
+!<note Personal mails since the summer of 2024 are yet to be replied to. Slow but moving now T-T <date 2025.01>>
 
 !<hr>
 
