@@ -30,10 +30,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2025.01> <link flow/icebreak>（328˚）>
   <li <date 2025.01> / <date 2024.19> <link amakinoko>>
   <li <date 2025.01> / <date 2024.15> <link machine>>
   <li <date 2024.24> <link lunisolar>>
-  <li <date 2024.05> <link nectar>>
 >
 
 <link revlog>
@@ -62,10 +62,10 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2025.01> <link flow/icebreak> (328˚) (currently Chinese-only).>
   <li <date 2025.01> / <date 2024.19> <link amakinoko>.>
   <li <date 2025.01> / <date 2024.15> <link machine>.>
   <li <date 2024.24> <link lunisolar>.>
-  <li <date 2024.05> <link nectar>.>
 >
 
 <link revlog>
