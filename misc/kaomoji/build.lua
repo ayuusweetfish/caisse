@@ -78,7 +78,7 @@ while true do
         '" --export-id=' .. textelementid .. ' --export-id-only ' ..
         '--export-plain-svg --export-text-to-path "' .. textsvgfile .. '"')
       local content = io.popen(svgo .. ' --precision 2 "' .. pathsvgfile .. '" -o - | ' ..
-        'gsed \'s/ \\(style\\|aria-label\\)="[^"]*"//g\''):read('a')
+        [[perl -pe 's/ (style|aria-label)="[^"]*"//g']]):read('a')
       io.open(pathsvgfile, 'w'):write(content):close()
       -- os.remove(textsvgfile)
     end
