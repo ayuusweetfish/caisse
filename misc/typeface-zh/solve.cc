@@ -180,7 +180,7 @@ int main()
     if (s[len - 1] == '\n') s[len - 1] = '\0';
     docnames.push_back(strdup(s));
 
-    std::unordered_set<int> cpset;
+    std::unordered_set<codepoint> cpset;
     while (true) {
       codepoint c = readutf8(f);
       if (c == -1) break;

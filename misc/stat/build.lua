@@ -65,7 +65,10 @@ infofn['.pdf'] = function (path)
 end
 
 local function filesize(path)
-  local f = io.popen('stat -f "%z" "' .. path .. '" 2>/dev/null')
+  local f =
+    io.popen('stat -c "%s" "' .. path .. '" 2>/dev/null')
+    -- TODO: Use stat(2) for portability. macOS needs the following otherwise
+    -- io.popen('stat -f "%z" "' .. path .. '" 2>/dev/null')
   local s = f:read('n')
   f:close()
   return s

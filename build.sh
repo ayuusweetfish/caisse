@@ -23,6 +23,6 @@ fi
 lua build.lua
 
 if [[ "$*" == *"dist"* ]]; then
-  (cd misc/typeface-zh && sh run.sh)
+  (cd misc/typeface-zh && bash run.sh)
   DIST=1 lua build.lua
 fi
