@@ -37,7 +37,7 @@ Move with W/S/A/D or the arrow keys; I/K/J/U corresponds to the triangle/circle/
   <file AAKAMI.love LOVE2D game package>
 >
 
-A teamed game jam with the Future ACG Group. The theme being “SHIFT”, the game’s interpretation is that the protagonist can flip (shift) between Little Red Riding Hood and the wolf, being damaged by bullets of the different colour while absorbing energy from same-coloured ones. I was mainly responsible for the programs.
+A teamed game jam with the Future ACG Group, a student club of our university. The theme being “SHIFT”, the game’s interpretation is that the protagonist can flip (shift) between Little Red Riding Hood and the wolf, being damaged by bullets of the different colour while absorbing energy from same-coloured ones. I was mainly responsible for the programs.
 
 The enemies are C×ca Cola, P×psi Cola, C×conut Palm (Ye-shu) Coconut Milk, and St×rbucks Coffee. I liked the setting!
 
