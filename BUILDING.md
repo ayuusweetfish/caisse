@@ -18,7 +18,7 @@ Dependency: ImageMagick (`identify`), FFmpeg (`ffprobe`), Poppler (`pdfinfo`)
 
 Dependency: GCC (`g++`), Python `fonttools` (`pyftsubset`), WOFF2 (`woff2_compress`)
 
-`apt install g++ fonttools woff2`
+`apt install g++ fonttools woff2` / `dnf install g++ fonttools woff2-tools`
 
 `bash run.sh` to build all subsets.
 
