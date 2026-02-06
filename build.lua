@@ -536,8 +536,8 @@ local function itemlink(path, text, israw)
   end
   local item = itemreg[itemname]
   if not item then
-    if path:sub(1, 4) ~= 'http' then
-      print('!', markupfnsenvitem, path)
+    if not itemname:find('.', 1, true) then
+      print('Referenecd item ' .. path .. ' not found (from ' .. markupfnsenvitem .. ')')
     end
     text = (text ~= '' and text or path)
     if israw then
