@@ -181,13 +181,18 @@ local filedb = {}
 for _, path in ipairs({
   'misc/stat/database.tsv', 'content/items/backyard/stat_database.tsv'
 }) do
-  for line in io.open(path, 'r'):lines() do
-    local fields = split(line, '\t')
-    filedb[fields[1]] = {
-      size = tonumber(fields[2]),
-      type = fields[3],
-      args = {table.unpack(fields, 4)},
-    }
+  local f = io.open(path, 'r')
+  if f then
+    for line in f:lines() do
+      local fields = split(line, '\t')
+      filedb[fields[1]] = {
+        size = tonumber(fields[2]),
+        type = fields[3],
+        args = {table.unpack(fields, 4)},
+      }
+    end
+  else
+    print('File stat database ' .. path .. ' not found, skipping')
   end
 end
 local function fileinfo(src)
@@ -975,17 +980,22 @@ registeritemtempl('planetarium', 'home',
 registeritemmarkup('dates', 'home')
 registeritemmarkup('colophon', 'home')
 
-local backyarditems = require('content/items/backyard/list')
-for i = 1, #backyarditems do
-  if backyarditems[i].templ then
-    registeritemtempl('backyard/' .. backyarditems[i].name, 'backyard', backyarditems[i].templ,
-      render('items/backyard/' .. backyarditems[i].name .. '/page.txt'),
-      backyarditems[i].pagination)
-  else
-    registeritemmarkup('backyard/' .. backyarditems[i].name, 'backyard')
+local backyarditemsstr = caisse.readfile('items/backyard/list.lua')
+if backyarditemsstr then
+  local backyarditems = load(backyarditemsstr)()
+  for i = 1, #backyarditems do
+    if backyarditems[i].templ then
+      registeritemtempl('backyard/' .. backyarditems[i].name, 'backyard', backyarditems[i].templ,
+        render('items/backyard/' .. backyarditems[i].name .. '/page.txt'),
+        backyarditems[i].pagination)
+    else
+      registeritemmarkup('backyard/' .. backyarditems[i].name, 'backyard')
+    end
   end
+  registeritemmarkup('backyard', 'backyard')
+else
+  print('Backyard items list not found, skipping')
 end
-registeritemmarkup('backyard', 'backyard')
 
 registeritemtempl('music', 'music', 'bannerlist.html')
 registeritemtempl('playful', 'playful', 'bannerlist.html')
