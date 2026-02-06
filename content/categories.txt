@@ -138,6 +138,7 @@ cats.pebbles.pagelist = {
   {name = 'fledgling'},
   {name = 'bmflat'},
   {name = 'yukisora'},
+  {name = 'sunshine'},
   {name = 'gradatim'},
 }
 cats.flow.pagelist = {

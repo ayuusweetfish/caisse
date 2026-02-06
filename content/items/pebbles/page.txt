@@ -6,6 +6,7 @@
 <link fledgling>，小鸟飞行节奏游戏（但是汇编语言）。<date 2020.16,2020.22>
 <link bmflat>，音乐游戏乐曲格式程序库，以及一些小动画。<date 2019.13,2019.14>
 <link yukisora 飘雪的天空《ユキソラ》>，一份久远的和弦谱，也作为复杂排版功能测试。<date 2019.23,2022.23>
+<link sunshine>，早期 game jam 作品，一只吸血鬼与无法触及的心上人的故事。<date 2019.10,2019.11>
 <link gradatim> 是一个平台跳跃/节奏类游戏，作为之前程序设计课程的结课项目，不过内容不够充实，故只留了一段视频。
 
 {{contents.en=}}
@@ -15,4 +16,5 @@ Hasty makings and scribbles.
 <link fledgling> is a rhythm game about birds flying; it is however written in the assembly language. <date 2020.16,2020.22>
 <link bmflat> is a program library that reads music tracks from music games; included are some little animations. <date 2019.13,2019.14>
 <link yukisora Snowy Sky “Yukisora”>, a dated chord sheet also acting as a test for the complex layouts. <date 2019.23,2022.23>
+<link sunshine>, a dated game jam entry. A story of a vampire and her untouchable beloved. <date 2019.10,2019.11>
 <link gradatim> is a platformer/rhythmic game, as the final project in a course on program design. It does not have rich-enough content, hence only a video has been put up.
