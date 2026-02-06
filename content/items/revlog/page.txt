@@ -2,9 +2,8 @@
 {{title.en=}}Monthly Revision Logs
 
 {{contents.zh=}}
-{{@ i in seq(revloglatest, revlogfirst, -1) }}
-{{ year = (i - 1) // 12 }}
-{{ month = i - year * 12 }}
+{{@ e in entries }}
+{{ year, month = table.unpack(e) }}
 {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
 !<h1 {{ log.title.zh }}<date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
 {{ log.contents.zh }}
@@ -16,12 +15,11 @@
   <li RSS：<tt {{ siteroot }}/rss.zh.xml>>
   <li Atom：<tt {{ siteroot }}/atom.zh.xml>>
 >
-消息源内容与本页一致，每月更新一次。
+消息源内容与本页一致，仅包含链接，在有内容更新的月份发布。
 
 {{contents.en=}}
-{{@ i in seq(revloglatest, revlogfirst, -1) }}
-{{ year = (i - 1) // 12 }}
-{{ month = i - year * 12 }}
+{{@ e in entries }}
+{{ year, month = table.unpack(e) }}
 {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
 !<h1 {{ log.title.en }}<date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
 {{ log.contents.en }}
@@ -33,4 +31,4 @@
   <li RSS: <tt {{ siteroot }}/rss.en.xml>>
   <li Atom: <tt {{ siteroot }}/atom.en.xml>>
 >
-The feeds deliver contents identical to this page and are updated monthly.
+The feeds deliver contents identical to this page (containing links only), updated monthly when changes take place.

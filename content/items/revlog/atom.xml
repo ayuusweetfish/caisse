@@ -7,17 +7,17 @@
     <name>Ayu</name>
   </author>
   <updated>{{*
-    local year = (revloglatest - 1) // 12
-    local month = revloglatest - year * 12
+    local e = entries[#entries]
+    local year, month = table.unpack(e)
     local log = render(string.format('items/revlog/%d-%02d.txt', year, month))
     local y, m, d, h = table.unpack(split(log.timestamp, '.'))
     return os.date('!%FT%TZ', os.time({ year = y, month = m, day = d, hour = h }))
   }}</updated>
   <generator>Caisse</generator>
 
-{{@ i in seq(revloglatest, revlogfirst, -1) }}
-  {{ year = (i - 1) // 12 }}
-  {{ month = i - year * 12 }}
+{{@ e in entries }}
+  {{ year = e[1] }}
+  {{ month = e[2] }}
   {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
   <entry>
     <title>{{ log.title[lang]}}</title>

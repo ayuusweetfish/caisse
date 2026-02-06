@@ -1009,17 +1009,25 @@ registeritemmarkup('pebbles', 'pebbles', {
 })
 registeritemtempl('flow', 'flow', 'bannerlist.html')
 
-local revloglatest = 2024*12 + 2
-local revlogfirst = 2022*12 + 10
-registeritemmarkup('revlog', 'home', nil, { revloglatest = revloglatest, revlogfirst = revlogfirst })
+local revloglatest = 2026*12 + 12
+local revlogfirst = 2023*12 + 3
+local revlogentries = {}
+for i = revloglatest, revlogfirst, -1 do
+  local year = (i - 1) // 12
+  local month = i - year * 12
+  if caisse.readfile(string.format('items/revlog/%d-%02d.txt', year, month)) then
+    revlogentries[#revlogentries + 1] = { year, month }
+  end
+end
+registeritemmarkup('revlog', 'home', nil, { entries = revlogentries })
 for _, lang in ipairs({'zh', 'en'}) do
   registeritemempty('rss.' .. lang .. '.xml', 'home')
   registeritemempty('atom.' .. lang .. '.xml', 'home')
   caisse.lang = lang
   renderraw('rss.' .. lang .. '.xml', 'items/revlog/rss.xml',
-    { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
+    { lang = lang, entries = revlogentries })
   renderraw('atom.' .. lang .. '.xml', 'items/revlog/atom.xml',
-    { lang = lang, revloglatest = revloglatest, revlogfirst = revlogfirst })
+    { lang = lang, entries = revlogentries })
 end
 
 ensuredir('_/')

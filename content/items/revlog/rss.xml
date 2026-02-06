@@ -10,9 +10,8 @@
   <atom:link href='{{ siteroot }}/rss.{{ lang }}.xml' rel='self' type='application/rss+xml' />
   <generator>Caisse</generator>
 
-{{@ i in seq(revloglatest, revlogfirst, -1) }}
-  {{ year = (i - 1) // 12 }}
-  {{ month = i - year * 12 }}
+{{@ e in entries }}
+  {{ year, month = table.unpack(e) }}
   {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
   <item>
     <title>{{ log.title[lang]}}</title>
