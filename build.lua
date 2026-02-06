@@ -628,7 +628,10 @@ markupfns = {
   subpagelink = function (path, text)
     local itemname = split(path, '/')[1]
     local item = itemreg[itemname]
-    copydir('items/' .. path)
+    local actualpath, searchpos = path
+    local searchpos = path:find('?')
+    if searchpos ~= nil then actualpath = path:sub(1, searchpos - 1) end
+    copydir('items/' .. actualpath)
     return '<a class="pastel ' .. item.cat .. '" href="/' .. path .. '">'
       .. htmlescape(text) .. '</a>'
   end,
