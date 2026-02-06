@@ -12,8 +12,6 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link fireflies 萤火虫>>
   <li <link medle 旋律猜谜>>
   <li <link flight 一起去梦里飞行吧>>
-  <li <link traviata 《茶花女》序曲>>
-  <li <link gpt 人工智能如是说>>
 >
 
 !<list
@@ -44,8 +42,6 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link fireflies Fireflies>>
   <li <link medle Melody puzzles>>
   <li <link flight Go flying in dreams>>
-  <li <link traviata <it La Traviata> Overture>>
-  <li <link gpt Thus spoke AI>>
 >
 
 !<list

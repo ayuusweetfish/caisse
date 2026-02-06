@@ -89,27 +89,15 @@ cats.playful.pagelist = {
   {name = 'sheepdogs', dark = false},
   {name = 'fhxl', dark = true},
   {name = 'aakami', dark = true},
-  {name = 'sunshine', dark = true},
 }
 cats.murmurs.pagelist = {
---[[
-  {name = 'kuusoh-forest'},
-  {name = 'moon-river'},
-  {name = 'why-comp-engr'},
-]]
   {name = 'shards'},
   {name = 'hitchhiker'},
   {name = 'stargazing'},
-  {name = 'daydream'},
-  {name = 'daydream/horn', unlisted = true},
-  {name = 'daydream/fool', unlisted = true},
-  {name = 'daydream/star', unlisted = true},
-  {name = 'medle-postmortem'},
-  {name = 'fhxl-rehousing'},
+  {name = 'medle-postmortem', unlisted = true},
   {name = 'webfont'},
   {name = 'diversity'},
   {name = 'into'},
-  {name = 'amusing'},
   {name = 'traviata'},
   {name = 'inner-prod'},
 }
@@ -124,7 +112,6 @@ cats.potpourri.pagelist = {
   {name = 'maylove-ex-23', dark = true},
   {name = 'maylove-ex-23/log', unlisted = true},
   {name = 'pink-bubble'},
-  {name = 'rose'},
   {name = 'gpt'},
   {name = 'gpt/sleep-learning', unlisted = true},
   {name = 'gpt/gibberish', unlisted = true},
@@ -139,45 +126,29 @@ cats.potpourri.pagelist = {
   {name = 'rabbit-hole', dark = true},
   {name = 'tilde', dark = true},
   {name = 'zero'},
---[[
-  --{name = 'common-sky'},
-]]
 }
 cats.pebbles.pagelist = {
   {name = 'marimba'},
   {name = 'shovel/pcb-printer'},
   {name = 'fledgling'},
   {name = 'bmflat'},
-  {name = 'solo-boot'},
   {name = 'yukisora'},
-  {name = 'ne-er-do-well'},
   {name = 'gradatim'},
-  {name = 'courses-21'},
---[[
-  {name = 'ice-rink'},
-  {name = 'define-21'},
-  {name = 'mikabox'},
-]]
 }
 cats.flow.pagelist = {
   {name = 'flow/icebreak'},
-  -- {name = 'flow/leaves'},
   {name = 'flow/drift'},
   {name = 'flow/plough'},
   {name = 'flow/cross'},
   {name = 'flow/rush'},
   {name = 'flow/rove'},
-  -- {name = 'flow/fall'},
   {name = 'flow/free'},
   {name = 'flow/desert'},
   {name = 'flow/windborne'},
   {name = 'flow/monsoon'},
   {name = 'flow/wantan'},
-  {name = 'flow/sun'},
   {name = 'flow/toast'},
   {name = 'flow/drumbeats'},
-  {name = 'flow/rabbit'},
-  {name = 'flow/28-days-22w'},
 }
 cats.backyard.pagelist = {
 }
