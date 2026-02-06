@@ -215,7 +215,7 @@ It is because I am insignificant that I have to work harder. I don’t want to s
 
 !<h1 4>
 !<blockquote <~~='
-<lang ja “キミも逃げてきたの？”><br>(Have you come here to escape as well?)
+<lang ja “キミも逃げてきたの？”><br>(Did you come here to escape as well?)
 <lang ja 「生き辛いね、私もなの」><br>(Life is hard, I feel it too)
 '>>
 

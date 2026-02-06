@@ -75,7 +75,7 @@ One、Two、Three、
 <link https://twitter.com/pizyj/status/1598084660864913408 喵小白（@pizyj）发布于 Twitter>
 <~~='
 突然感觉［激素治疗与社会身份转换］有种拼拼图的感觉
-一点点的［原文如此］，拼出来一个少女
+一点点［地］，拼出来一个少女
 ［……］
 似乎也像是一个女孩子逐渐长大的过程
 '>>
@@ -196,7 +196,7 @@ Or who cannot, after all?
 !<img star_mirror.png <= An image sliced by a diagonal line, with an upright self-image on the right and a tilted stranger on the left. The line in the middle appears as if it were a mirror. Both people are holding a heart in their hands.> syncdark>
 
 !<blockquoteby
-<link https://twitter.com/pizyj/status/1598084660864913408 @pizyj on Twitter>
+<link https://twitter.com/pizyj/status/1598084660864913408 @pizyj on Twitter> (translated)
 <~~='
 Suddenly realizing that [hormone treatment and social transition] is like playing with a puzzle.
 Bit by bit, piecing together a girl.

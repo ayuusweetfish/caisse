@@ -7,6 +7,10 @@
 
 {{contents.zh=}}
 
+!<blockquote <~~='
+<b <lang ja “キミも逃げてきたの？”>><br>【你也是逃来的吗？】
+'>>
+
 !<list
   <li <link daydream/horn （上）蛋壳与犄角>>
   <li <link daydream/fool （中）愚者与黑鸟>>
@@ -16,6 +20,10 @@
 !<img calendar.png <= 空中飞舞的“30”、“31”、“1”、“2”四页日历。> vertical syncdark>
 
 {{contents.en=}}
+
+!<blockquote <~~='
+<b <lang ja “キミも逃げてきたの？”>><br>(Did you come here to escape as well?)
+'>>
 
 !<list
   <li <link daydream/horn (1) The Eggshell and the Horns>>
