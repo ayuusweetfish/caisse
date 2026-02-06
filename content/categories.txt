@@ -94,7 +94,12 @@ cats.murmurs.pagelist = {
   {name = 'shards'},
   {name = 'hitchhiker'},
   {name = 'stargazing'},
+  {name = 'daydream', unlisted = true},
+  {name = 'daydream/horn', unlisted = true},
+  {name = 'daydream/fool', unlisted = true},
+  {name = 'daydream/star', unlisted = true},
   {name = 'medle-postmortem', unlisted = true},
+  {name = 'fhxl-rehousing', unlisted = true},
   {name = 'webfont'},
   {name = 'diversity'},
   {name = 'into'},
@@ -147,8 +152,10 @@ cats.flow.pagelist = {
   {name = 'flow/windborne'},
   {name = 'flow/monsoon'},
   {name = 'flow/wantan'},
+  {name = 'flow/sun'},
   {name = 'flow/toast'},
   {name = 'flow/drumbeats'},
+  {name = 'flow/rabbit'},
 }
 cats.backyard.pagelist = {
 }
