@@ -71,3 +71,13 @@ Yet, just as my fantasies of becoming an outstanding engineer in undergraduate y
 Maybe I am nothing more than a conceited fool. But does that matter? To journey alongside more stars, I think that is enough.
 Being embraced here and allowed to give off my own light, is a euphonious dream that will bring me happiness forever. From <link zzz “Zzz”>, which I performed silently reading “Dreams come true”, the Tanabata night that I soaked myself into on my first stage experience after graduating as an apprentice, until the star-decorated postcard on this year's apprentices' concert and “I Dreamed a Dream” on the band concert, each is enough to overshadow the sweetness and bitterness behind it, shining in the night sky of memories. I wish to become a star among them, quietly accompanying those many that have fantasized about the banks of Babylon, delved into the tales of Laputa, and illustrated the joy of spring — those who went through apprenticeship with me but will be graduating this year.
 In times of solitude, look up. Wherever you may be, no matter whether the stars are visible, all creatures of the land will always gaze upon the same sky.
+
+{{rellinks.zh=}}
+!<list
+  <li <link murmurs/wind>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link murmurs/wind>>
+>

@@ -101,3 +101,13 @@ The people are different from year to year.
 People have come here, laughed and cried, been happy and troubled; then waved goodbye, becoming a few lightly written leaden words in the journal, leaving the stage to the best apprentices of the future, sealing the untold stories hidden behind each year and each performance.
 I am sad to see the people around me leave, for they will go with a part of me to faraway places; but we will also take a part of each of us, a part of the music we have made together, and run off to a wider future, to become the shapes we want to be.
 May the wind of wind music always resonate with your hearts; may friends of your career look to you to be free to become yourselves, or everything beyond yourselves.
+
+{{rellinks.zh=}}
+!<list
+  <li <link murmurs/wind>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link murmurs/wind>>
+>
