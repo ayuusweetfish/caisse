@@ -1,23 +1,19 @@
-{{
-  cats = render('categories.txt').cats
-  title = tr(cats[curcat].longtitle) or cats[curcat].title
-  intro = tr(cats[curcat].intro)
-}}
 <header>
   <h1>{{ title }}</h1>
   {{@ intro }}
-    {{@ intro:sub(-1) == '/' }}
+    {{ trintro = tr(intro) }}
+    {{@ trintro:sub(-1) == '/' }}
       {{ introsep = true }}
-      {{ intro = intro:sub(1, #intro - 1) }}
+      {{ trintro = trintro:sub(1, #intro - 1) }}
     {{@ end }}
-    {{ rendermarkup(intro) }}
+    {{ rendermarkup(trintro) }}
     {{@ introsep }}
       <div role='separator' class='item-separator'></div>
     {{@ end }}
   {{@ end }}
 </header>
 <section class='banner-list{{@ compact}} compact{{@ end}}'>
-{{@ cats[curcat].pagelist}}{{@ not unlisted}}
+{{@ list}}
 <a href='/{{ name }}' class='item-entry'><section>
   {{ page = render('items/' .. name .. '/page.txt') }}
   {{@ page.bannerimg }}
@@ -42,7 +38,7 @@
   </div>
 </section></a>
 <div role='separator' class='item-separator'></div>
-{{@ end}}{{@ end}}
+{{@ end}}
 </section>
 
 <style>

@@ -266,13 +266,27 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
           rawset(table, key, result)
           return result
         end
+        local function recursemetaindex(table)
+          for key, value in pairs(table) do
+            if type(value) == 'table' and not getmetatable(value) then
+              table[key] = recursemetaindex(value)
+            end
+          end
+          return setmetatable(table, {__index = metaindex})
+        end
         local setfn = load(
           string.gsub('? = (type(?) == "table" and "" or (? and (? .. "\\n") or "")) .. ...',
             '[?]', item.expr),
           item.expr, 't')
         local prevmt = getmetatable(_ENV)
         setmetatable(_ENV, {__index = function (table, key)
-          if locals[#locals][key] ~= nil then return locals[#locals][key] end
+          local t = locals[#locals][key]
+          if t ~= nil then
+            if type(t) == 'table' and not getmetatable(t) then
+              t = recursemetaindex(t)
+            end
+            return t
+          end
           local result = setmetatable({}, {__index = metaindex})
           rawset(locals[#locals], key, result)
           return result

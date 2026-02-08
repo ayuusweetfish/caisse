@@ -51,14 +51,16 @@ end
 {{cats.flow.longtitle.en=}}Pieces of Flowing Time
 {{cats.backyard.longtitle.en=}}Backyard
 
-{{cats.potpourri.intro.zh=}}零零碎碎或者稀奇古怪的产物——
-{{cats.potpourri.intro.en=}}Miscellaneous odds and ends —
-{{cats.flow.intro.zh=}}
+{{cats.music.intro['arrangements'].zh=}}已有作品的改编。
+{{cats.music.intro['arrangements'].en=}}Rearrangements of existing works.
+{{cats.potpourri.intro[''].zh=}}零零碎碎或者稀奇古怪的产物——
+{{cats.potpourri.intro[''].en=}}Miscellaneous odds and ends —
+{{cats.flow.intro[''].zh=}}
 “逝者如斯夫！不舍昼夜。”“帐，张也，张施于床上也。”
 不同于本站的<link dates 日期格式>，这里会使用公历与太阳黄经记载日期。
 !<note 连载中：<link flow/icebreak %>>
 /
-{{cats.flow.intro.en=}}
+{{cats.flow.intro[''].en=}}
 “It passes on like this, ceaseless day and night.” —— <it Analects>
 Different from the <link dates date format> throughout the site, dates here will be recorded in the Gregorian calendar and the solar longitude.
 !<note Content here is currently <catlink ?lang=zh flow Chinese-only>.>
@@ -70,15 +72,15 @@ Different from the <link dates date format> throughout the site, dates here will
 cats.music.pagelist = {
   {name = 'flight', dark = true},
   {name = 'nuages'},
-  {name = 'monogatari'},
-  {name = 'candy', dark = true},
+  {name = 'monogatari', listed = 'arrangements'},
+  {name = 'candy', listed = 'arrangements', dark = true},
   {name = 'vividness', dark = true},
-  {name = 'leaving', dark = true},
+  {name = 'leaving', listed = 'arrangements', dark = true},
   {name = 'bellflowers', dark = true},
   {name = 'wings', dark = true},
   {name = 'sheepdogs-work'},
   {name = 'lili', dark = true},
-  {name = 'zzz', dark = true},
+  {name = 'zzz', listed = 'arrangements', dark = true},
   {name = 'misty-jungle', dark = true},
 }
 cats.playful.pagelist = {
@@ -94,12 +96,12 @@ cats.murmurs.pagelist = {
   {name = 'shards'},
   {name = 'hitchhiker'},
   {name = 'stargazing'},
-  {name = 'daydream', unlisted = true},
-  {name = 'daydream/horn', unlisted = true},
-  {name = 'daydream/fool', unlisted = true},
-  {name = 'daydream/star', unlisted = true},
-  {name = 'medle-postmortem', unlisted = true},
-  {name = 'fhxl-rehousing', unlisted = true},
+  {name = 'daydream', listed = false},
+  {name = 'daydream/horn', listed = false},
+  {name = 'daydream/fool', listed = false},
+  {name = 'daydream/star', listed = false},
+  {name = 'medle-postmortem', listed = false},
+  {name = 'fhxl-rehousing', listed = false},
   {name = 'webfont'},
   {name = 'diversity'},
   {name = 'into'},
@@ -112,18 +114,18 @@ cats.potpourri.pagelist = {
   {name = 'machine', dark = true},
   {name = 'canta-cart', dark = true},
   {name = 'fungi'},
-  {name = 'fungi/log', unlisted = true},
-  {name = 'fungi/log-r2', unlisted = true},
+  {name = 'fungi/log', listed = false},
+  {name = 'fungi/log-r2', listed = false},
   {name = 'maylove-ex-23', dark = true},
-  {name = 'maylove-ex-23/log', unlisted = true},
+  {name = 'maylove-ex-23/log', listed = false},
   {name = 'pink-bubble'},
   {name = 'gpt'},
-  {name = 'gpt/sleep-learning', unlisted = true},
-  {name = 'gpt/gibberish', unlisted = true},
-  {name = 'gpt/mirror', unlisted = true},
-  {name = 'gpt/explain', unlisted = true},
-  {name = 'gpt/bard', unlisted = true},
-  {name = 'gpt/cross', unlisted = true},
+  {name = 'gpt/sleep-learning', listed = false},
+  {name = 'gpt/gibberish', listed = false},
+  {name = 'gpt/mirror', listed = false},
+  {name = 'gpt/explain', listed = false},
+  {name = 'gpt/bard', listed = false},
+  {name = 'gpt/cross', listed = false},
   {name = 'adventure'},
   {name = 'patchwork'},
   {name = 'maylove-ex-22'},

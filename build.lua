@@ -1003,14 +1003,34 @@ else
   print('Backyard items list not found, skipping')
 end
 
-registeritemtempl('music', 'music', 'bannerlist.html')
-registeritemtempl('playful', 'playful', 'bannerlist.html')
-registeritemtempl('murmurs', 'murmurs', 'bannerlist.html')
-registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', { compact = true })
+local function catbannerlistlocals(path, locals)
+  locals = locals or {}
+  local curcat = path:match('^[a-z%-]+')
+  local subpath = path:sub(#curcat + 2)
+  locals.title = trmerge(cats[curcat].longtitle, cats[curcat].title)
+  locals.intro = cats[curcat].intro[subpath]
+  local list = {}
+  for i = 1, #cats[curcat].pagelist do
+    local item = cats[curcat].pagelist[i]
+    if item.listed ~= false then
+      local listpath = item.listed or ''
+      if listpath == subpath then
+        list[#list + 1] = item
+      end
+    end
+  end
+  locals.list = list
+  return locals
+end
+registeritemtempl('music', 'music', 'bannerlist.html', catbannerlistlocals('music'))
+registeritemtempl('music/arrangements', 'music', 'bannerlist.html', catbannerlistlocals('music/arrangements', { compact = true }))
+registeritemtempl('playful', 'playful', 'bannerlist.html', catbannerlistlocals('playful'))
+registeritemtempl('murmurs', 'murmurs', 'bannerlist.html', catbannerlistlocals('murmurs'))
+registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', catbannerlistlocals('potpourri', { compact = true }))
 registeritemmarkup('pebbles', 'pebbles', {
   title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
 })
-registeritemtempl('flow', 'flow', 'bannerlist.html')
+registeritemtempl('flow', 'flow', 'bannerlist.html', catbannerlistlocals('flow'))
 
 local revloglatest = 2026*12 + 12
 local revlogfirst = 2023*12 + 3
