@@ -10,22 +10,22 @@
 
 为了确保万无一失，以下是近期信件的清单。时间戳均为协调世界时（UTC），每个地址只显示最近的一份信件。
 如果你发了信，过一分钟再来应该就能看到它啦。
-邮箱中一部分没有回应的是订阅或广告邮件，请不用担心。我会回复所有信件～如果我真的忘记了请一定提醒我！
+邮箱中的一部分活动是订阅或事务性邮件，请不用担心。我会回复所有个人信件～
 
-!<note 2024 年夏季起的个人信件全部尚待回复，缓慢处理中 T-T <date 2025.01>>
+!<note 2024 年夏季起的信件全部尚待回复 T-T 我会阅读所有邮件，但是目前出于多方面原因，暂时无法发送回信。条件合适后，会尽早恢复邮件活动。<date 2026.01>>
 
 {{intro.en=}}
 My mail address is <tt claire@ayu.land>.
 This website does not have a comment section, nor am I active on public social networks; so please feel free to send anything here.
 I check the mailbox frequently and have even disabled the spam filter, since it would be too regretful for me to miss anything. It’s a great delight to have your messages!
 
-!<note Personal mails since the summer of 2024 are yet to be replied to. Slow but moving now T-T <date 2025.01>>
-
 !<hr>
 
 To make sure nothing is lost halfway, the most recent mails are listed here. Timestamps are all in UTC. Only the most recent message is displayed for each address.
 If you’ve written a mail to me, check here after a minute and it should appear.
-There are unanswered mails in the mailbox that are subscriptions or advertisements, so please don’t worry. I shall reply to all personal messages. If I do miss anything, please kindly remind me!
+Some of the mailbox activities are subscriptions or transactional, so please don’t worry. I shall reply to all personal messages.
+
+!<note All messages since the summer of 2024 have not been replied to. I make sure to read all coming mails, but due to a variety of reasons I am unable to respond currently. I will return to outbound activity as soon as conditions become favourable. <date 2026.01>>
 
 {{daemonlost.zh=}}!<note （糟糕！看门小鬼头走丢啦……）>
 {{daemonlost.en=}}!<note (Oops! The daemon went stray…)>
