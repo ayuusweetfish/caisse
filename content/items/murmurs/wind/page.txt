@@ -1,0 +1,16 @@
+{{title.zh=}}管乐之风合集
+{{title.en=}}Wind Vibes Collection
+{{intro.zh=}}向学生艺术团军乐队刊物的投稿。
+{{intro.en=}}Submissions to the journal of the student art troupe’s wind band
+
+{{longintro.zh=}}
+!<note 回到<link murmurs>>
+《军韵》是清华大学学生艺术团军乐队的队内刊物，每半年出版一次，队内成员均可投稿。发出的投稿收集于此。
+“管乐之风”是队内对一首乐曲标题的翻译，同时也常用于相关的演出与活动名称，在此借用之。
+/
+
+{{longintro.en=}}
+!<note Return to <link murmurs>>
+<lang zh 军韵> (<it Rhymes of a Marching Band>; author’s translation) is an internal journal of the Tsinghua University Symphonic Band, a part of the university’s student art troupe. The journal is published biannually, accepting submissions from all members of the band. Submissions made are collected here.
+<it Wind Vibes> is a Chinese interpretation of a musical piece title literally translated back into English. The phrase is also frequently referenced in performances and relevant activities, thus borrowed here.
+/

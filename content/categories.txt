@@ -74,9 +74,10 @@ cats.playful.pagelist = {
   {name = 'aakami', dark = true},
 }
 cats.murmurs.pagelist = {
-  {name = 'shards'},
+  {name = 'murmurs/wind', islist = true},
+  {name = 'shards', listed = 'wind'},
   {name = 'hitchhiker'},
-  {name = 'stargazing'},
+  {name = 'stargazing', listed = 'wind'},
   {name = 'daydream', listed = false},
   {name = 'daydream/horn', listed = false},
   {name = 'daydream/fool', listed = false},
@@ -84,8 +85,8 @@ cats.murmurs.pagelist = {
   {name = 'medle-postmortem', listed = false},
   {name = 'fhxl-rehousing', listed = false},
   {name = 'webfont'},
-  {name = 'diversity'},
-  {name = 'into'},
+  {name = 'diversity', listed = 'wind'},
+  {name = 'into', listed = 'wind'},
   {name = 'traviata'},
   {name = 'inner-prod'},
 }

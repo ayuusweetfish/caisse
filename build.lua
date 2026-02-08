@@ -1009,7 +1009,6 @@ local function catbannerlistlocals(path, locals)
   locals = locals or {}
   local curcat = path:match('^[a-z%-]+')
   local subpath = path:sub(#curcat + 2)
-  local subpathinfo = cats[curcat].subpath[subpath]
   if caisse.readfile('items/' .. path .. '/page.txt') then
     local item = caisse.render('items/' .. path .. '/page.txt')
     locals.title = item.title
@@ -1033,6 +1032,7 @@ registeritemtempl('music', 'music', 'bannerlist.html', catbannerlistlocals('musi
 registeritemtempl('music/arrangements', 'music', 'bannerlist.html', catbannerlistlocals('music/arrangements', { compact = true }))
 registeritemtempl('playful', 'playful', 'bannerlist.html', catbannerlistlocals('playful'))
 registeritemtempl('murmurs', 'murmurs', 'bannerlist.html', catbannerlistlocals('murmurs'))
+registeritemtempl('murmurs/wind', 'murmurs', 'bannerlist.html', catbannerlistlocals('murmurs/wind'))
 registeritemtempl('potpourri', 'potpourri', 'bannerlist.html', catbannerlistlocals('potpourri', { compact = true }))
 registeritemmarkup('pebbles', 'pebbles', {
   title = trmerge(cats.pebbles.longtitle, cats.pebbles.title)
