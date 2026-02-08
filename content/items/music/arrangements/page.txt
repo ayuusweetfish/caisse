@@ -2,5 +2,12 @@
 {{title.en=}}Arrangements Collection
 {{intro.zh=}}已有乐曲的改编
 {{intro.en=}}Rearrangements of existing music
-
 {{bannerimg=}}../../monogatari/cover.jpg
+
+{{longintro.zh=}}
+!<note 回到<link music>>
+已有乐曲的改编。
+
+{{longintro.en=}}
+!<note Return to <link music>>
+Rearrangements of existing music.

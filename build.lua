@@ -1010,14 +1010,12 @@ local function catbannerlistlocals(path, locals)
   local curcat = path:match('^[a-z%-]+')
   local subpath = path:sub(#curcat + 2)
   local subpathinfo = cats[curcat].subpath[subpath]
-  if subpathinfo and rawget(subpathinfo, 'title') then
-    locals.title = subpathinfo.title
-  else
-    locals.title = trmerge(cats[curcat].longtitle, cats[curcat].title)
+  if caisse.readfile('items/' .. path .. '/page.txt') then
+    local item = caisse.render('items/' .. path .. '/page.txt')
+    locals.title = item.title
+    locals.intro = item.longintro
   end
-  if subpathinfo and rawget(subpathinfo, 'longintro') then
-    locals.intro = subpathinfo.longintro
-  end
+  locals.title = trmerge(locals.title, cats[curcat].longtitle, cats[curcat].title)
   local list = {}
   for i = 1, #cats[curcat].pagelist do
     local item = cats[curcat].pagelist[i]
