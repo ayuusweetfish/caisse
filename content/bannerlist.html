@@ -4,7 +4,7 @@
     {{ trintro = tr(intro) }}
     {{@ trintro:sub(-1) == '/' }}
       {{ introsep = true }}
-      {{ trintro = trintro:sub(1, #intro - 1) }}
+      {{ trintro = trintro:sub(1, #trintro - 1) }}
     {{@ end }}
     {{ rendermarkup(trintro) }}
     {{@ introsep }}
@@ -33,7 +33,7 @@
   <div class='item-plainheader'><header>{{ page.title }}</header></div>
   {{@ end }}
   <div class='item-peek'>
-    <p><span class='intro-text'>{{ page.intro }}</span><span class='date-container'>{{ renderdate(page.date, true) }}</span></p>
+    <p><span class='intro-text'>{{ page.intro }}</span><span class='date-container'>{{@ page.date }}{{ renderdate(page.date, true) }}{{@ end }}</span></p>
     <div class='clear-float'></div>
   </div>
 </section></a>
@@ -43,8 +43,11 @@
 
 <style>
 {{@ compact }}
-article header p {
-  margin-block: -0.75em 1.5em;
+article header > p:first-child {
+  margin-block-start: -0.75em;
+}
+article header > *:last-child {
+  margin-block-end: 1.5em;
 }
 {{@ end }}
 </style>

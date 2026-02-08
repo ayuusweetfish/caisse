@@ -969,7 +969,9 @@ copydir('vendor/katex-0.16.4')
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
   for j = 1, #pagelist do
-    registeritemmarkup(pagelist[j].name, cats[i].name)
+    if not pagelist[j].islist then
+      registeritemmarkup(pagelist[j].name, cats[i].name)
+    end
   end
 end
 registeritemmarkup('index', 'home')
@@ -1007,8 +1009,15 @@ local function catbannerlistlocals(path, locals)
   locals = locals or {}
   local curcat = path:match('^[a-z%-]+')
   local subpath = path:sub(#curcat + 2)
-  locals.title = trmerge(cats[curcat].longtitle, cats[curcat].title)
-  locals.intro = cats[curcat].intro[subpath]
+  local subpathinfo = cats[curcat].subpath[subpath]
+  if subpathinfo and rawget(subpathinfo, 'title') then
+    locals.title = subpathinfo.title
+  else
+    locals.title = trmerge(cats[curcat].longtitle, cats[curcat].title)
+  end
+  if subpathinfo and rawget(subpathinfo, 'longintro') then
+    locals.intro = subpathinfo.longintro
+  end
   local list = {}
   for i = 1, #cats[curcat].pagelist do
     local item = cats[curcat].pagelist[i]

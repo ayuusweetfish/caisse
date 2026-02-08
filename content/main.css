@@ -766,6 +766,7 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   float: right; /* inline-end */
   margin-inline-start: 2em;
   margin-block-start: 0.2em;
+  min-height: 1.5em;
 }
 .banner-list .item-peek > .clear-float {
   clear: both;

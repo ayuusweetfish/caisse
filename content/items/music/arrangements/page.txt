@@ -1,0 +1,6 @@
+{{title.zh=}}改编作合集
+{{title.en=}}Arrangements Collection
+{{intro.zh=}}已有乐曲的改编
+{{intro.en=}}Rearrangements of existing music
+
+{{bannerimg=}}../../monogatari/cover.jpg
