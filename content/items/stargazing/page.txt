@@ -1,7 +1,7 @@
 {{title.zh=}}一起去看星星吧
-{{intro.zh=}}（艺术团投稿）我是星星——或者说是一名星空的粉刷匠。
+{{intro.zh=}}我是星星——或者说是一名星空的粉刷匠。
 {{title.en=}}Let’s Go Stargazing
-{{intro.en=}}(Art troupe submission) I am a star — or a painter of the stars, to be exact.
+{{intro.en=}}I am a star — or a painter of the stars, to be exact.
 
 {{date=}}2023.08
 

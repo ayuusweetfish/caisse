@@ -1,7 +1,7 @@
 {{title.zh=}}梆梆两锤下的斑驳陆离
-{{intro.zh=}}（艺术团投稿）带着这份自由，把特别的景致化作别有洞天的绮思吧～
+{{intro.zh=}}带着这份自由，把特别的景致化作别有洞天的绮思吧～
 {{title.en=}}Diversity as Percussion’s Metaphor
-{{intro.en=}}(Art troupe submission) Take that freedom and turn the special sceneries into unique ideas.
+{{intro.en=}}Take that freedom and turn the special sceneries into unique ideas.
 
 {{date=}}2022.21
 
