@@ -238,6 +238,9 @@ pre, code, .tt {
 div[role='separator'] {
   filter: hue-rotate({{hue}}deg);
 }
+body.dark div[role='separator'] {
+  filter: hue-rotate({{hue}}deg) saturate(70%);
+}
 
 main header h1 { color: hsl({{hue}}deg, {{sat}}%, {{val1 / 2}}%); }
 body.dark main header h1 { color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.6}}%, {{val1 + (100 - val1) * 0.7}}%); }
@@ -247,8 +250,8 @@ blockquote {
   background: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 4%);
 }
 body.dark blockquote {
-  border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%);
-  background: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.45}}%, 8%);
+  border-inline-start: 0.1em solid hsl({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.3}}%);
+  background: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.3}}%, 8%);
 }
 blockquote.quote .quote-main::before,
 blockquote.quote .quote-main::after {

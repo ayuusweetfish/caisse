@@ -299,7 +299,7 @@ a.{{cat.name}} {
   border-image-source: {{ underlinesvg(hue, sat2, val2) }};
 }
 body.dark a.{{cat.name}} {
-  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.45}}%);
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.3}}%);
   border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.45, 40) }};
 }
 {{@ end}}
@@ -308,9 +308,16 @@ a.external {
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
   border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
 }
+a.external > sup.little-icons {
+  color: hsl({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
+}
 body.dark a.external {
-  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.4}}%, {{100 - (100 - val1) * 0.35}}%);
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%);
   border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.35, 40) }};
+}
+/* Safari clips glyph with `opacity`; work around */
+body.dark a.external > sup.little-icons {
+  color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%, 70%);
 }
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
 .pastel.miscellaneous {
@@ -474,7 +481,6 @@ body.dark #top-fleuron { opacity: 45%; }
 }
 @font-face {
   font-family: 'Ayuu Little Icons — 221202a';
-  u
   font-style: normal;
   font-weight: 400;
   font-display: block;
@@ -500,7 +506,9 @@ a.pastel.external > sup.little-icons {
   user-select: none;
   display: inline-block;
   position: relative;
-  top: -0.1em;
+  top: -0.05em;
+  margin-inline-start: -0.25em;
+  margin-inline-end: -0.5em;
 }
 
 a.date-term-link::after { background: rgb(216, 216, 216); }
@@ -572,7 +580,7 @@ div.item-separator:nth-child(5n+4) { background-position-x: -8em; }
 div.item-separator:nth-child(5n+5) { background-position-x: 8em; }
 
 body.dark div[role='separator']
-{ opacity: 60%; }
+{ opacity: 80%; }
 
 @media not (max-width: 60rem) {
   .hidden-in-widest {

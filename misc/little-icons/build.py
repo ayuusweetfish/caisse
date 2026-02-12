@@ -56,6 +56,8 @@ def tr(uni, *mats):
 def r(degs): return psMat.rotate(degs * math.pi / 180)
 def s(scale): return psMat.scale(scale)
 def t(x, y): return (x, y)
+# External link icon
+tr(0x1fa90, r(-60))
 # Star
 tr(0x1f31f, r(8))
 # Seasons
@@ -71,6 +73,12 @@ tr(0x1f9ca, r(-5))
 tr(0x1fabb, r(7), s(1.05))
 # Flow icon
 tr(0x1f390, r(-17), s(1.1), t(0.32, 0))
+
+# Shooting star icon
+glyph = font.createChar(0x1f320)
+glyph.width = 2600
+glyph.importOutlines('shooting-star.svg')
+tr(0x1f320, r(0))
 
 # Web feed icon
 glyph = font.createChar(0x1f5de)
