@@ -1,5 +1,6 @@
 {{
   cats = render('categories.txt').cats
+  transitiondur = '0.4s'
 }}
 
 html {
@@ -13,7 +14,7 @@ body {
   background: hsl(50deg, 100%, 99%); /* fallback */
   background: url(/bin/{{ hashverfile('background.svg') }}), hsl(50deg, 100%, 99%) center;
   color: #181410;
-  transition: background ease 0.2s, color ease 0.2s;
+  transition: background ease {{transitiondur}}, color ease {{transitiondur}};
 }
 body.dark {
   background: hsl(36deg, 80%, 7%); /* fallback */
@@ -112,7 +113,7 @@ aside {
   font-size: 3.5rem;
   transform: rotate(-9deg);
   user-select: none;
-  transition: color ease 0.2s;
+  transition: color ease {{transitiondur}};
 }
 aside div[role='separator'] {
   margin-block: 1em;
@@ -199,7 +200,7 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
     overflow-x: auto;
     overflow-y: hidden;
     margin-block-end: 0;
-    transition: box-shadow 0.2s ease;
+    transition: box-shadow {{transitiondur}} ease;
   }
   nav > ul > li {
     flex: 1 0 auto;
@@ -249,8 +250,8 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   background: hsl(0deg, 0%, 80%);
   /* Transitions with logical properties do not work on Safari 14 */
   transition:
-    width 0.2s ease, height 0.2s ease,
-    margin 0.2s ease;
+    width {{transitiondur}} ease, height {{transitiondur}} ease,
+    margin {{transitiondur}} ease;
 }
 .hidden-pastel::after {
   block-size: 0.08em;
@@ -273,7 +274,7 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   border-image-slice: 16 fill;
   border-image-width: 0.24em;
   border-image-outset: 0.20em 0;
-  transition: border-image 0.2s ease, color 0.2s ease;
+  transition: border-image {{transitiondur}} ease, color {{transitiondur}} ease;
 }
 .pastel:not(.noexpand):hover,
 .pastel:not(.noexpand):focus {
@@ -316,7 +317,7 @@ a.external {
 }
 a.external > sup.little-icons {
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
-  transition: color ease 0.2s;
+  transition: color ease {{transitiondur}};
 }
 body.dark a.external {
   color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%);
@@ -383,7 +384,7 @@ main {
 }
 main header h1 {
   margin-block: 0.83em;
-  transition: color ease 0.2s;
+  transition: color ease {{transitiondur}};
 }
 #top-fleuron {
   background: no-repeat center 0 / contain url('/bin/{{ hashverfile('top-fleuron.svg') }}');
@@ -393,7 +394,7 @@ main header h1 {
   inset-block-start: -0.3em;
   inset-inline-start: 0;
   z-index: -1;
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  transition: opacity {{transitiondur}} ease, filter {{transitiondur}} ease;
 }
 body.dark #top-fleuron { opacity: 45%; }
 
@@ -524,7 +525,7 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term {
   font-size: 0.9rem;
   color: rgb(112, 112, 112);
-  transition: color 0.2s ease;
+  transition: color {{transitiondur}} ease;
 }
 .date-term .date-bracket-start,
 .date-term .date-bracket-end {
@@ -562,7 +563,7 @@ div[role='separator'] {
   margin-inline-start: 1.5em;
   background: no-repeat center 0 / auto 100% url('/bin/{{ hashverfile('divider-fleuron-heart.svg') }}');
   position: relative;
-  transition: opacity ease 0.2s, filter ease 0.2s;
+  transition: opacity ease {{transitiondur}}, filter ease {{transitiondur}};
 }
 div[role='separator']::before, div[role='separator']::after {
   content: '';
@@ -604,7 +605,7 @@ body.dark div[role='separator']
   vertical-align: middle;
   height: 1em;
   line-height: 1;
-  transition: filter 0.2s ease;
+  transition: filter {{transitiondur}} ease;
 }
 .kaomoji > svg {
   block-size: 1em;
@@ -673,7 +674,7 @@ blockquote .quote-main > *:last-child > *:last-child { margin-block-end: 0; }
 blockquote .quote-main > *:last-child > *:last-child > *:last-child { margin-block-end: 0; }
 blockquote + blockquote { margin-block-start: 0.4em; }
 blockquote.note {
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition: background {{transitiondur}} ease, border-color {{transitiondur}} ease;
 }
 blockquote.quote .quote-main {
   position: relative;
@@ -740,7 +741,7 @@ a.music-track-link {
   display: block;
 }
 
-body img { transition: filter ease 0.2s; }
+body img { transition: filter ease {{transitiondur}}; }
 body.dark img { filter: grayscale(20%) brightness(95%); }
 body.dark img.syncdark { filter: grayscale(20%) invert() brightness(95%) hue-rotate(180deg); }
 body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brightness(95%) hue-rotate(180deg); }
