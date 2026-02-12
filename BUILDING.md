@@ -23,3 +23,11 @@ Dependency: GCC (`g++`), Python `fonttools` (`pyftsubset`), WOFF2 (`woff2_compre
 `bash run.sh` to build all subsets.
 
 *TODO: The site's build has a hard requirement on this run, due to subset WOFF2 files not being checked into the repository. This is less than ideal.*
+
+### Little icons (`little-icons`)
+
+Dependency: FontForge (`fontforge`), WOFF2 (`woff2_compress`), WOFF (`sfnt2woff`)
+
+`apt install fontforge woff2 woff-tools` / `dnf install fontforge woff2-tools woff`
+
+`sh build.sh` to build.
