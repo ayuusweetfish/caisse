@@ -8,7 +8,7 @@ process() {
     return
   fi
   echo Processing $name
-  convert \( $name.png -scale x300 -alpha off -fill $tint -colorize 100% \) \
+  magick \( $name.png -scale x300 -alpha off -fill $tint -colorize 100% \) \
     \( $name.png -scale x300 -colorspace gray -negate -evaluate Multiply 0.2 -alpha off \) \
     -compose CopyOpacity -composite $name-bg.png
 }
@@ -33,3 +33,4 @@ process origakid '#829692'
 process revolver '#a08c82'
 process neutrino7 '#90b0ff'
 process hezicola '#3c4650'
+process hash '#485460'
