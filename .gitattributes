@@ -1,3 +1,2 @@
 /deps/inspect.lua linguist-vendored
-/content/** linguist-vendored
-/content/*.html !linguist-vendored
+/content/items/** linguist-vendored
