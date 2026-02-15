@@ -444,72 +444,72 @@ body.dark #top-fleuron { opacity: 45%; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e, U+2026;
 }
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff') }}) format('woff');
-  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-25ff;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff') }}) format('woff');
+  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff;
 }
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ASCII.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ASCII.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+2010-201e;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-base.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-base.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+2010-201e, U+2026;
 }
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-Ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-Ext.woff') }}) format('woff');
-  unicode-range: U+80-200f, U+201f-25ff;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ext.woff') }}) format('woff');
+  unicode-range: U+80-200f, U+201f-2025, U+2027-25ff;
 }
 @font-face {
   font-family: 'Livvic — Lighter Bold';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e, U+2026;
 }
 @font-face {
   font-family: 'Livvic — Lighter Bold';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff') }}) format('woff');
-  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-25ff;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff') }}) format('woff');
+  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff;
 }
 @font-face {
   font-family: 'Livvic — Lighter Bold';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-ASCII.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Medium-ASCII.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+2010-201e;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-base.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Medium-base.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+2010-201e, U+2026;
 }
 @font-face {
   font-family: 'Livvic — Lighter Bold';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-Ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Medium-Ext.woff') }}) format('woff');
-  unicode-range: U+80-200f, U+201f-25ff;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Medium-ext.woff') }}) format('woff');
+  unicode-range: U+80-200f, U+201f-2025, U+2027-25ff;
 }
 @font-face {
   font-family: 'Sono';
@@ -556,7 +556,8 @@ body.dark #top-fleuron { opacity: 45%; }
 {{@ distbuild }}
 {{ AaKaiSong_css }}
 {{@ end }}
-*[lang='lat'] { font-style: italic; }
+*[lang='lat'] { font-style: oblique 9deg; }
+i { font-style: oblique 9deg; }
 
 pre, code, .tt {
   font-size: 0.9rem;
