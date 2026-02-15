@@ -25,6 +25,15 @@ body.dark {
 img { color: #181410; }
 body.dark img { color: #fefbfa; }
 
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .scroll-target {
+    scroll-margin-block-start: min(1rem, 5vh);
+  }
+}
+
 body {
   display: flex;
   flex-direction: column;

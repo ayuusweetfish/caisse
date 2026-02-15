@@ -517,7 +517,7 @@ end
 local function heading(tag, text)
   local bodytext, anchor = splitheading(text)
   return '<' .. tag ..
-    (anchor and (' id="' .. anchor .. '"') or '') ..
+    (anchor and (' class="scroll-target" id="' .. anchor .. '"') or '') ..
     '>' .. bodytext .. '</' .. tag .. '>'
 end
 
@@ -636,7 +636,7 @@ markupfns = {
       .. htmlescape(text) .. '</a>'
   end,
   anchor = function (id)
-    return '<a id="' .. id .. '"></a>'
+    return '<a class="scroll-target" id="' .. id .. '"></a>'
   end,
   relme = function (text)
     return text:gsub('^<a ', '<a rel="me" ')
