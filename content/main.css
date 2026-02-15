@@ -382,7 +382,7 @@ footer > span:first-child > span.group:not(:first-child)::before {
   margin-inline: 0.6em;
 }
 footer .little-icons {
-  line-height: 1;
+  line-height: 1.25;
 }
 footer a.hidden-pastel.little-icons::after {
   margin-block-start: 0.02em;
@@ -515,7 +515,7 @@ pre, code, .tt {
   font-size: 0.9rem;
 }
 .little-icons {
-  font-family: 'Ayuu Little Icons — 221202a';
+  font-family: 'Ayuu Little Icons — 221202a', 'Livvic', sans-serif;
 }
 
 sup {
