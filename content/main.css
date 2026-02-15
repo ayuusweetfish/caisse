@@ -444,32 +444,72 @@ body.dark #top-fleuron { opacity: 45%; }
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff') }}) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e;
+}
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff') }}) format('woff');
+  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-25ff;
 }
 @font-face {
   font-family: 'Livvic';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold.woff') }}) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ASCII.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ASCII.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+2010-201e;
+}
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-Ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-Ext.woff') }}) format('woff');
+  unicode-range: U+80-200f, U+201f-25ff;
 }
 @font-face {
   font-family: 'Livvic — Lighter Bold';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular.woff') }}) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ASCII.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e;
+}
+@font-face {
+  font-family: 'Livvic — Lighter Bold';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Regular-Ext.woff') }}) format('woff');
+  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-25ff;
 }
 @font-face {
   font-family: 'Livvic — Lighter Bold';
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Medium.woff') }}) format('woff');
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-ASCII.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Medium-ASCII.woff') }}) format('woff');
+  unicode-range: U+00-7f, U+2010-201e;
+}
+@font-face {
+  font-family: 'Livvic — Lighter Bold';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-Ext.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/Livvic-Medium-Ext.woff') }}) format('woff');
+  unicode-range: U+80-200f, U+201f-25ff;
 }
 @font-face {
   font-family: 'Sono';

@@ -951,7 +951,9 @@ copyfile('divider-fleuron-windy.svg', true)
 renderraw('bin/main.css', 'main.css', nil, true, postproc.css)
 renderraw('bin/main.js', 'main.js', nil, true)
 for _, fontname in ipairs({
-  'Livvic-Regular', 'Livvic-SemiBold', 'Livvic-Medium',
+  'Livvic-Regular-ASCII', 'Livvic-Regular-Ext',
+  'Livvic-SemiBold-ASCII', 'Livvic-SemiBold-Ext',
+  'Livvic-Medium-ASCII', 'Livvic-Medium-Ext',
   'Sono_Monospace-Regular', 'Sono_Monospace-SemiBold',
   'OpenSans-Regular-Greek',
   'OpenSans-Regular-Cyrillic',
