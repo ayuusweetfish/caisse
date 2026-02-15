@@ -957,6 +957,7 @@ for _, fontname in ipairs({
   'Sono_Monospace-Regular', 'Sono_Monospace-SemiBold',
   'OpenSans-Regular-Greek',
   'OpenSans-Regular-Cyrillic',
+  'AaKaiSong-langs',
   'little-icons',
 }) do
   copyfile('fonts/' .. fontname .. '.woff2', true)

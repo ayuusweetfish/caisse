@@ -86,6 +86,12 @@ nav > ul > li span.little-icons {
   display: inline-block;
   margin-inline-end: 0.33em;
 }
+html:not(:lang(zh)) #lang-container {
+  font-family: sans-serif;
+}
+html:not(:lang(zh)) #lang-container[open] {
+  font-family: 'Livvic', 'AaKaiSong Language Names', sans-serif;
+}
 #lang-list {
   inline-size: 8.5em;
   white-space: nowrap;
@@ -544,6 +550,14 @@ body.dark #top-fleuron { opacity: 45%; }
   font-display: swap;
   src: url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Cyrillic.woff2') }}) format('woff2'),
        url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Cyrillic.woff') }}) format('woff');
+}
+@font-face {
+  font-family: 'AaKaiSong Language Names';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/bin/{{ hashverfile('fonts/AaKaiSong-langs.woff2') }}) format('woff2'),
+       url(/bin/{{ hashverfile('fonts/AaKaiSong-langs.woff') }}) format('woff');
 }
 @font-face {
   font-family: 'Ayuu Little Icons — 221202a';
