@@ -970,6 +970,9 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
 .item-content li p > span.br-indent {
   margin-inline-start: 1em;
 }
+.item-content blockquote .quote-main > ul {
+  padding-inline-start: 2.5em;
+}
 .item-content > p.text-center {
   text-align: center;
   text-indent: 0;
