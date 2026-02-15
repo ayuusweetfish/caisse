@@ -1,0 +1,143 @@
+{{title.zh=}}测试页
+{{intro.zh=}}排版测试
+{{title.en=}}Testbed
+{{intro.en=}}Layout test
+
+{{date=}}2026.01
+
+{{contents=}}
+Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+!<list
+  <li Lorem;>
+  <li Lorem;>
+  <li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.>
+>
+
+!<hr>
+
+{{blockquotes=}}
+!<note Lorem. (plain)>
+!<note Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (plain)>
+!<note Lorem.<br>Lorem. (plain + br)>
+!<note <~~=' Lorem. (para) '>>
+!<note <~~=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para) '>>
+!<note <~~='
+Lorem. (para)
+Lorem. (para)
+'>>
+!<note <~~='
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para + br)
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para + br)
+'>>
+
+{{contents=}}
+
+!<h1 Note blocks #notes>
+{{blockquotes}}
+
+!<hr>
+!<h1 Blockquotes #blockquotes>
+
+{{blockquotes:gsub('<note', '<blockquote')}}
+
+!<blockquoteby <it De finibus bonorum et malorum> <~~='
+Lorem.<br>Lorem. (para + br)
+Lorem.<br>Lorem. (para + br)
+'>>
+
+!<hr>
+!<h1 Nested lists #nested>
+
+!<note <list
+  <li Lorem;>
+  <li Lorem;>
+  <li Lorem;>
+>>
+
+!<note <~~=''
+  !<list
+    <li Lorem;>
+    <li Lorem;>
+    <li Lorem;>
+  >
+  Lorem ipsum
+''>>
+
+!<note <~~=''
+  Lorem ipsum
+  !<list
+    <li Lorem;>
+    <li Lorem;>
+    <li Lorem;>
+  >
+''>>
+
+{{lists=}}
+Lorem ipsum
+!<list
+  <li Lorem;>
+  <li
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (plain + br)
+  >
+  <li Lorem.>
+>
+Lorem ipsum
+!<list
+  <li <~~='
+    Lorem ipsum.
+    Lorem ipsum.
+  '>><li <~~='
+    Lorem ipsum.
+  '>><li <~~='
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para + br)
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para + br)
+  '>><li <~~='
+    Lorem ipsum.
+  '>><li <~~='
+    Lorem ipsum:
+    !<list
+      <li Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (plain + br)>
+      <li Lorem;>
+      <li Lorem;>
+    >
+    Lorem.
+  '>><li <~~='
+    Lorem ipsum.
+  '>><li <~~='
+    Lorem ipsum.
+  '>><li <~~='
+    Lorem:
+    !<list
+      <li <~~=""
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para + br)
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. (para + br)
+      "">>
+      <li <~~="" Lorem; "">>
+      <li <~~="" Lorem; "">>
+    >
+    Lorem ipsum.
+  '>><li <~~='
+    Lorem:
+    !<list
+      <li Lorem;>
+      <li Lorem;>
+      <li Lorem;>
+    >
+    Lorem ipsum.
+  '>>
+>
+
+{{contents=}}
+{{lists}}
+
+!<note <~~=''
+{{lists}}
+''>>
+
+!<blockquote <~~=''
+{{lists}}
+''>>
+
+{{toc=}}true

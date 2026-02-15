@@ -31,7 +31,7 @@ f(\mathbf{u}) = \sum_{j=1}^n \sum_{k=1}^n a_{j,k} \overline {u_j\raisebox{0.67em
 
 !<note <~~=''
 未加说明的情况下，约定：
-!<listcompact
+!<list
   <li <math u_k>，<math v_k> 分别表示 <math \mathbb{C}^n> 中向量 <math \mathbf{u}>，<math \mathbf{v}> 的第 <math k> 维分量；>
   <li <math a_{j,k}> 表示正定 Hermite 矩阵 <math \mathbf{A}> 的第 <math j> 行第 <math k> 列元素。>
 >
@@ -121,7 +121,7 @@ After wrestling with this strange question for a long time, I had some wonderful
 
 !<note <~~=''
 Unless otherwise specified, we establish the following convention:
-!<listcompact
+!<list
   <li <math u_k>, <math v_k> stands for the <math k>-th component of the vectors <math \mathbf{u}> and <math \mathbf{v}> in <math \mathbb{C}^n>, respectively;>
   <li <math a_{j,k}> stands for the element at the <math j>-th row and the <math k>-th column of the positive definite Hermitian matrix <math \mathbf{A}>.>
 >

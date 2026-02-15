@@ -681,9 +681,6 @@ markupfns = {
   list = function (...)
     return '<ul>' .. table.concat({...}) .. '</ul>'
   end,
-  listcompact = function (...)
-    return '<ul class="compact">' .. table.concat({...}) .. '</ul>'
-  end,
   li = function (text)
     return '<li>' .. text .. '</li>'
   end,

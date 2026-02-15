@@ -143,5 +143,6 @@ cats.flow.pagelist = {
   {name = 'flow/rabbit'},
 }
 cats.backyard.pagelist = {
+  {name = 'testbed'},
 }
 }}}
