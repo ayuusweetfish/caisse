@@ -3,6 +3,46 @@ local rendermarkup = require('caisse/markup')
 
 os.setlocale('C')
 
+local lsh, rsh, band, xor
+if jit then
+  local bit = require('bit')
+  lsh, rsh, band, xor = bit.lshift, bit.rshift, bit.band, bit.bxor
+else
+  lsh  = load('return function (a, b) return a << b end')()
+  rsh  = load('return function (a, b) return a >> b end')()
+  band = load('return function (a, b) return a & b end')()
+  xor  = load('return function (a, b) return a ~ b end')()
+end
+table.unpack = table.unpack or unpack
+local idiv = function (a, b) return math.floor(a / b) end
+if not utf8 then
+  utf8 = {
+    char = function (n)
+      if n <= 0x7f then
+        return string.char(n)
+      elseif n <= 0x7ff then
+        return string.char(
+          0xc0 + rsh(n, 6),
+          0x80 + band(n, 0x3f)
+        )
+      elseif n <= 0xffff then
+        return string.char(
+          0xe0 + rsh(n, 12),
+          0x80 + band(rsh(n, 6), 0x3f),
+          0x80 + band(n, 0x3f)
+        )
+      elseif n <= 0x10ffff then
+        return string.char(
+          0xf0 + rsh(n, 18),
+          0x80 + band(rsh(n, 12), 0x3f),
+          0x80 + band(rsh(n, 6), 0x3f),
+          0x80 + band(n, 0x3f)
+        )
+      end
+    end,
+  }
+end
+
 caisse.envadditions.sitename = { zh = '甜鱼/Ayu', en = 'Sweetfish Ayu' }
 caisse.envadditions.siteroot = 'https://ayu.land'
 caisse.envadditions.domain = 'ayu.land'
@@ -46,12 +86,20 @@ local function copydst(src)
   return dst
 end
 
+local function foldhash(h)
+  return string.format('%08x', xor(rsh(h, 32), band(h, 0xffffffff)))
+end
+
+local hashzero = 0
+if jit then
+  hashzero = require('ffi').cast('uint64_t', 0)
+end
 local function basehash(s)
-  local h = 0
+  local h = hashzero
   for i = 1, #s do
     h = h * 997 + string.byte(s, i) + 1
   end
-  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+  return foldhash(h)
 end
 caisse.envadditions.basehash = basehash
 
@@ -331,12 +379,11 @@ if typefacestrayrec then
   for line in typefacestrayrec:lines() do
     local tabpos = line:find('\t')
     local docid = line:sub(1, tabpos - 1)
-    local h = 0
+    local h = hashzero
     for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
       h = h * 100019 + tonumber(w, 16) + 1
     end
-    AaKaiSong_subsethashes[docid] =
-      string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+    AaKaiSong_subsethashes[docid] = foldhash(h)
   end
   typefacestrayrec:close()
 end
@@ -414,7 +461,7 @@ local function base64encode(s)
   local bits = {}
   for i = 1, #s do
     local b = s:byte(i)
-    for j = 7, 0, -1 do bits[#bits + 1] = (b >> j) & 1 end
+    for j = 7, 0, -1 do bits[#bits + 1] = band(rsh(b, j), 1) end
   end
   while #bits % 6 ~= 0 do bits[#bits + 1] = 0 end
   while #bits % 24 ~= 0 do bits[#bits + 1] = -1 end
@@ -423,8 +470,8 @@ local function base64encode(s)
     if bits[i] == -1 then output[#output + 1] = '='
     else
       output[#output + 1] = string.char(base64seq:byte(
-        (bits[i + 0] << 5) + (bits[i + 1] << 4) + (bits[i + 2] << 3) +
-        (bits[i + 3] << 2) + (bits[i + 4] << 1) + (bits[i + 5] << 0) + 1
+        (bits[i + 0] * 32) + (bits[i + 1] * 16) + (bits[i + 2] *  8) +
+        (bits[i + 3] *  4) + (bits[i + 4] *  2) + (bits[i + 5]     ) + 1
       ))
     end
   end
@@ -472,10 +519,10 @@ end
 caisse.envadditions.sizestring = sizestring
 local function durstring(seconds)
   if seconds < 60 * 60 then
-    return string.format('%02d:%02d', seconds // 60, seconds % 60)
+    return string.format('%02d:%02d', idiv(seconds, 60), seconds % 60)
   else
     return string.format('%d:%02d:%02d',
-      seconds // 3600, (seconds % 3600) // 60, seconds % 60)
+      idiv(seconds, 3600), idiv(seconds % 3600, 60), seconds % 60)
   end
 end
 
@@ -1043,7 +1090,7 @@ local revloglatest = 2026*12 + 12
 local revlogfirst = 2023*12 + 3
 local revlogentries = {}
 for i = revloglatest, revlogfirst, -1 do
-  local year = (i - 1) // 12
+  local year = idiv(i - 1, 12)
   local month = i - year * 12
   if caisse.readfile(string.format('items/revlog/%d-%02d.txt', year, month)) then
     revlogentries[#revlogentries + 1] = { year, month }
@@ -1076,4 +1123,4 @@ for _, lang in ipairs({'zh', 'en'}) do
 end
 
 os.execute(table.concat(bufferedcmds, '; '))
-io.open('misc/katex/list.txt', 'w'):write(table.concat(katexstringlist, '\n')):close()
+io.open('misc/katex/list.txt', 'w'):write(table.concat(katexstringlist, '\n'))
