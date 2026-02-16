@@ -192,7 +192,6 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   }
   #curcat-icon {
     inset-block-start: 2.5rem;
-    opacity: 30%;
     z-index: -10;
   }
 }
@@ -247,6 +246,7 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   }
   #curcat-icon {
     inset-block-start: 10rem;
+    opacity: 75%;
   }
 }
 
