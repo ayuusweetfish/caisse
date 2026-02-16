@@ -28,6 +28,7 @@ local function parsetemplate(s)
     local fn = load(expr, expr, 't')
     if fn == nil then error('Expression "' .. expr .. '" is invalid') end
     return function (locals)
+      local _ENV = _ENV or getfenv(fn)  -- Lua 5.1 compat.
       local prevmt = getmetatable(_ENV)
       setmetatable(_ENV, {
         __index = function (table, key)
@@ -278,6 +279,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
           string.gsub('? = (type(?) == "table" and "" or (? and (? .. "\\n") or "")) .. ...',
             '[?]', item.expr),
           item.expr, 't')
+        local _ENV = _ENV or getfenv(setfn) -- Lua 5.1 compat.
         local prevmt = getmetatable(_ENV)
         setmetatable(_ENV, {__index = function (table, key)
           local t = locals[#locals][key]
