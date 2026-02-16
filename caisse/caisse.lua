@@ -257,7 +257,7 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
         -- Trim trailing whitespaces
         if #newoutputs > 0 then
           local n = #newoutputs
-          newoutputs[n] = tostring(newoutputs[n]):gsub('%s*$', '')
+          newoutputs[n] = tostring(newoutputs[n]):match('^.*%S')
         end
         local contents = table.concat(newoutputs)
         -- Assign the result to the variable specified,
