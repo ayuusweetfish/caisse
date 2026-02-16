@@ -380,7 +380,7 @@ if typefacestrayrec then
     local tabpos = line:find('\t')
     local docid = line:sub(1, tabpos - 1)
     local h = hashzero
-    for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
+    for w in line:sub(tabpos + 1):gmatch('[0-9a-f]+') do
       h = h * 100019 + tonumber(w, 16) + 1
     end
     AaKaiSong_subsethashes[docid] = foldhash(h)
