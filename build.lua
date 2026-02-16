@@ -1011,7 +1011,7 @@ for _, fontname in ipairs({
   copyfile('fonts/' .. fontname .. '.woff', true)
 end
 copydir('fonts-zh')
-copydir('vendor/katex-0.16.4')
+copydir('vendor/katex-0.16.28')
 
 for i = 1, #cats do
   local pagelist = cats[i].pagelist or {}
