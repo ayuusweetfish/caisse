@@ -183,6 +183,8 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
             error('Table results are not allowed: ' .. inspect(value))
           end
           value = trvalue
+        elseif type(value) == 'number' then
+          value = string.format('%.8g', value)
         end
         outputs[#outputs + 1] = value
       end
