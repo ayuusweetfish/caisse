@@ -441,7 +441,12 @@ local function katexrender(string, isdisp)
   local hash = basehash(string)
   katexstringlist[#katexstringlist + 1] =
     hash .. (isdisp and '\t1\t' or '\t0\t') .. string:gsub('\n', '\t')
-  return katexrendered[hash] or '(formula not rendered)'
+  if katexrendered[hash] then
+    return katexrendered[hash]
+  else
+    print('Formula not rendered: ' .. string)
+    return string
+  end
 end
 
 -- Dates
