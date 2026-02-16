@@ -436,11 +436,15 @@ if katexf then
   katexf:close()
 end
 local katexstringlist = {}
+local katexstringdedup = {}
 local function katexrender(string, isdisp)
   string = string:match('^%s*(.-)%s*$'):gsub('\t', ' ')
-  local hash = basehash(string)
-  katexstringlist[#katexstringlist + 1] =
-    hash .. (isdisp and '\t1\t' or '\t0\t') .. string:gsub('\n', '\t')
+  local hash = basehash((isdisp and '\001' or '\000') .. string)
+  if not katexstringdedup[hash] then
+    katexstringdedup[hash] = true
+    katexstringlist[#katexstringlist + 1] =
+      hash .. (isdisp and '\t1\t' or '\t0\t') .. string:gsub('\n', '\t')
+  end
   if katexrendered[hash] then
     return katexrendered[hash]
   else
