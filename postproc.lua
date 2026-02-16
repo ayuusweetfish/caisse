@@ -171,13 +171,13 @@ local function html(s)
   local styles = {}
   local firststylestart = nil
   while cur <= #s do
-    local pos1s, pos1e = s:match('()<style>()', cur)
+    local pos1s, pos1e = s:find('<style>', cur, true)
     if not pos1s then break end
-    local pos2s, pos2e = s:match('()</style>()', pos1e)
+    local pos2s, pos2e = s:find('</style>', pos1e + 1, true)
     ret[#ret + 1] = s:sub(cur, pos1s - 1)
-    styles[#styles + 1] = s:sub(pos1e, pos2s - 1)
+    styles[#styles + 1] = s:sub(pos1e + 1, pos2s - 1)
     if not firststylestart then firststylestart = #ret + 1 end
-    cur = pos2e
+    cur = pos2e + 1
   end
   ret[#ret + 1] = s:sub(cur)
   if firststylestart then
