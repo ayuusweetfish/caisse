@@ -26,11 +26,11 @@
       end
     }}
     {{ image(file(page.bannerimg, 'items/' .. name), tr(page.bannerimgalt), nil, style) }}
-    <header{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</header>
+    <h2{{@ dark}} class='item-title-dark'{{@ end}}>{{ page.title }}</h2>
   </div>
   {{@ end }}
   {{@ not page.bannerimg }}
-  <div class='item-plainheader'><header>{{ page.title }}</header></div>
+  <div class='item-plainheader'><h2>{{ page.title }}</h2></div>
   {{@ end }}
   <div class='item-peek'>
     <p><span class='intro-text'>{{ page.intro }}</span><span class='date-container'>{{@ page.date }}{{ renderdate(page.date, true) }}{{@ end }}</span></p>

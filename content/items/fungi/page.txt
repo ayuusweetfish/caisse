@@ -4,10 +4,8 @@
 {{intro.en=}}Interactive toy for children based on e-textiles
 
 {{bannerimg=}}Cover.jpg
-{{{--[[
-{{bannerimgalt.zh=}}
-{{bannerimgalt.en=}}
-]]}}}
+{{bannerimgalt.zh=}}置于草地上的树桩形状毛绒玩具，边上散落着几张彩色儿童画。
+{{bannerimgalt.en=}}A plush toy in the shape of a tree stump placed on the grass, with several colourful children’s drawings scattered beside it.
 
 {{date=}}2023.07,2023.17
 

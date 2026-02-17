@@ -99,16 +99,26 @@
 {{throughdelim.zh=}}至
 {{throughdelim.en=}} through
 
-{{ termtext = function (year, term)
+{{
+termtext = function (year, term)
   return string.format('%02d', year % 100) .. '-' .. tr(T[term].name)
-end }}
+end
+termtextfull = function (year, term)
+  if lang == 'zh' then
+    return termtext(year, term)
+  elseif lang == 'en' then
+    return string.format('%02d', year % 100) .. ' - '
+      .. tr(T[term].hint):match('(.+);')
+  end
+end
+}}
 
 {{builder =}}
-<span class='date-term' aria-label='{{*
+<span class='date-term' role='img' aria-label='{{*
   local s = {}
   for _, d in ipairs(dates) do
     if #s > 0 then s[#s + 1] = tr(throughdelim) .. ' ' end
-    s[#s + 1] = termtext(d.year, d.term)
+    s[#s + 1] = termtextfull(d.year, d.term)
   end
   return table.concat(s)
 }}'>

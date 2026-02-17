@@ -815,10 +815,10 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   text-decoration: inherit;
   margin-block: 1rem 1.5rem;
 }
-.banner-list a.item-entry header {
+.banner-list a.item-entry h2 {
   font-weight: bold;
 }
-.banner-list .item-plainheader header {
+.banner-list .item-plainheader h2 {
   font-size: 1.2rem;
   margin-block: 1rem;
 }
@@ -832,7 +832,7 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   object-fit: cover;
   border-radius: 0.75em;
 }
-.banner-list .item-banner > header {
+.banner-list .item-banner > h2 {
   position: absolute;
   inset-inline-start: 0;
   inset-block-end: 1rem;
@@ -856,10 +856,10 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   clear: both;
   margin-block-start: -2em;
 }
-.banner-list .item-banner header {
+.banner-list .item-banner h2 {
   color: #181410;
 }
-.banner-list .item-banner header.item-title-dark {
+.banner-list .item-banner h2.item-title-dark {
   color: #fdfdfd;
   text-shadow: #181410 0.05em 0.05em;
   border-image: url(/bin/{{ hashverfile('chalk-bg-b.png') }}) 18 fill / 0.3em / 0.1em 0;
@@ -868,7 +868,7 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   margin-block: 1em 1.5em;
 }
 
-.banner-list.compact > header > p {
+.banner-list.compact > h2 > p {
   text-indent: 2em;
   margin-block-end: 1.5em;
 }

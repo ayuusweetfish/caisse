@@ -2,7 +2,11 @@
 {{title.en=}}Arrangements Collection
 {{intro.zh=}}已有乐曲的改编
 {{intro.en=}}Rearrangements of existing music
+
 {{bannerimg=}}../../monogatari/cover.jpg
+{{bannerimgpos=}}50,47
+{{bannerimgalt.zh=}}简笔画绘制的贺卡放在花束里。
+{{bannerimgalt.en=}}A gift card with line art placed inside a bouquet.
 
 {{longintro.zh=}}
 !<note 回到<link music>>
