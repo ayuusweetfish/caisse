@@ -128,6 +128,8 @@ local function hashverfile(path, targetpath)
 end
 caisse.envadditions.hashverfile = hashverfile
 
+local cpcommand = os.getenv('CP') or 'cp -l'
+
 local function copyfile(src, ishashver, dstsuffix)
   local dst = copydst(src)
   if ishashver then dst = hashverfile(src, dst) end
@@ -136,32 +138,16 @@ local function copyfile(src, ishashver, dstsuffix)
     ensuredir(dst)
   end
   if contentpath[dst] then return dst end
-  if caisse.envadditions.distbuild then
-    bufferedcmds[#bufferedcmds + 1] =
-      'cp "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
-  else
-    -- Hard link
-    bufferedcmds[#bufferedcmds + 1] =
-      'ln "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
-  end
+  bufferedcmds[#bufferedcmds + 1] =
+    cpcommand .. ' "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
   contentpath[dst] = src
   return dst
 end
 local function copydir(src)
   local dst = copydst(src)
   if contentpath[dst] then return dst end
-  if caisse.envadditions.distbuild then
-    -- Recursive copy
-    bufferedcmds[#bufferedcmds + 1] =
-      'cp -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
-  else
-    -- Symbolic link
-    local dircompcount = select(2, (sitepath .. dst):gsub('[^/]+/', ''))
-    bufferedcmds[#bufferedcmds + 1] =
-      'ln -s ' ..
-      '"' .. string.rep('../', dircompcount) .. srcpath .. src .. '" ' ..
-      '"' .. sitepath .. dst .. '"'
-  end
+  bufferedcmds[#bufferedcmds + 1] =
+    cpcommand .. ' -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
   contentpath[dst] = src
   return dst
 end
