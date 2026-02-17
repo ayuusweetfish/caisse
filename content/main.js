@@ -52,6 +52,4 @@ const ixobs = new IntersectionObserver((entries) => {
 })
 ixobs.observe(navListFirst)
 ixobs.observe(navListLast)
-
-document.body.classList.add('js')
 })()

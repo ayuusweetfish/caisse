@@ -87,9 +87,6 @@ nav > ul > li span.little-icons {
   margin-inline-end: 0.33em;
 }
 html:not(:lang(zh)) #lang-container {
-  font-family: sans-serif;
-}
-html:not(:lang(zh)) #lang-container[open] {
   font-family: 'Livvic', 'AaKaiSong Language Names', sans-serif;
 }
 #lang-list {
@@ -101,6 +98,7 @@ html:not(:lang(zh)) #lang-container[open] {
   position: absolute;
   inset-block-start: 2rem;
   border-radius: 0.25em;
+  transition: background {{transitiondur}} ease;
 }
 #lang-list p {
   margin-block: 0.1em 0.3em;
