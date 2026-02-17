@@ -14,7 +14,7 @@ Every spirit is a unique world; here are some portals to them. Orders change eve
 我相信每个灵魂都独一无二，浪游世间的信号终能寻找到各自共振的频率。我没有资格、更无意去评判任何一份作品或一个人，只是我希望这里的链接能成为自己心目中、或是访客们能够欣赏的“友”，因此我并不会将所有来信者的链接添加于此。但是，每一份来信于我都是一份珍贵的礼物，我愿满怀好奇与赤诚去期待每一次的相遇或重逢，去触摸这远比超链接更真切的连接。谢谢你们。
 
 !<note <~~=''
-严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<hovernote <lang en memex> memory expansion，延伸记忆>。无论如何，这就是它在你眼里成为的模样，不是嘛。
+严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
 ''>>
 
 {{outro.en=}}
@@ -24,7 +24,7 @@ All are still welcome if they do not run a personal site but are active on socia
 I believe in the uniqueness of every soul. I believe that the stray signals in the world will eventually find their resonances. I’m not qualified, nor am I willing, to judge any work or person, but I do not add the links of all who approach me in the hope that the links here be truly “friends” able to be appreciated by myself or the visitors. Nevertheless, to me, every single message is an invaluable gift, and I stay wholeheartedly curious and sincere, looking forward to each encounter or reunion, touching the connexions far more real and meaningful than hyperlinks. Thank you.
 
 !<note <~~=''
-Technically, this is a personal wiki, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <hovernote memex memory expansion>. In any case, this is what it becomes in your eyes, isn’t it?
+Technically, this is a personal wiki, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
 ''>>
 
 {{=}}

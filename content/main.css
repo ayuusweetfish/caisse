@@ -350,7 +350,7 @@ body.dark .pastel.miscellaneous {
   border-image-source: {{ underlinesvg(hue, 0, 100 - (100 - val2) * 0.45, 40) }};
 }
 
-.pastel.hovernote {
+.pastel.base64 {
   border-image-source: {{ underlinesvg(0, 0, 70, 20) }};
 }
 

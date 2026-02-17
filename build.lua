@@ -860,8 +860,8 @@ markupfns = {
       zh = '请使用 Base64 解码工具揭晓明文',
       en = 'Please use a Base64 decoding tool to reveal the text',
     })
-    return '<span title="' .. title .. '" class="pastel noexpand hovernote">' ..
-      '<span class="tt all-break">' .. base64encode(text) .. '</span>' ..
+    return '<span title="' .. title .. '" class="pastel noexpand base64 tt all-break">' ..
+      base64encode(text) ..
       '</span>'
   end
 }
