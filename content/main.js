@@ -28,13 +28,10 @@ const darkToggle = document.getElementById('dark-toggle')
 darkToggle.addEventListener('click', (e) => {
   const isDark = !document.body.classList.contains('dark')
   document.body.classList.toggle('dark')
-  document.cookie = 'dark=' + (isDark ? '1' : '0') + '; SameSite=Strict; Max-Age=2592000'
+  document.cookie = 'dark=' + (isDark ? '1' : '0') + '; SameSite=Strict; Path=/; Secure; Max-Age=86400'
   darkToggle.href = darkToggle.href.substring(0, darkToggle.href.length - 1) + (isDark ? '0' : '1')
   e.preventDefault()
 })
-
-if (navigator.userAgent.indexOf('Chrome/') !== -1)
-  document.body.classList.add('ua-inline-height')
 
 const navList = document.querySelector('nav > ul')
 const navListFirst = navList.children[0]

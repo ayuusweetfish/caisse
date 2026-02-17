@@ -360,10 +360,6 @@ body.dark .pastel.miscellaneous {
 #dark-toggle {
   cursor: pointer;
   display: inline-block;
-  line-height: 1.1;
-}
-body.ua-inline-height #lang-container > summary,
-body.ua-inline-height #dark-toggle {
   line-height: 1.25;
 }
 
