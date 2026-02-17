@@ -1,6 +1,6 @@
 cd $(dirname ${BASH_SOURCE[0]})
 
-LUA=${LUA:-lua}
+LUA=${LUA:-luajit}
 
 if [[ "$*" == *"stat"* ]]; then
   echo "Updating stats"
