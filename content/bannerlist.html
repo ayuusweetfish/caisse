@@ -13,8 +13,7 @@
   {{@ end }}
 </header>
 <section class='banner-list{{@ compact}} compact{{@ end}}'>
-{{@ list}}
-<a href='/{{ name }}' class='item-entry'><section>
+{{@ list}}<a href='/{{ name }}' class='item-entry'><section>
   {{ page = render('items/' .. name .. '/page.txt') }}
   {{@ page.bannerimg }}
   <div class='item-banner'>
@@ -36,9 +35,7 @@
     <p><span class='intro-text'>{{ page.intro }}</span><span class='date-container'>{{@ page.date }}{{ renderdate(page.date, true) }}{{@ end }}</span></p>
     <div class='clear-float'></div>
   </div>
-</section></a>
-<div role='separator' class='item-separator'></div>
-{{@ end}}
+</section></a><div role='separator' class='item-separator'></div>{{@ end}}
 </section>
 
 <style>

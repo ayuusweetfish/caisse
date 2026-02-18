@@ -99,31 +99,6 @@ local function css(s)
         v = normalizetint(v)
         -- Emit a rule
         rules[#rules + 1] = k .. ': ' .. v .. ';'
-        -- Grid for IE11
-        if k == 'display' and v == 'grid' then
-          rules[#rules + 1] = 'display: -ms-grid;'
-        end
-        if k == 'grid-template-columns' then
-          rules[#rules + 1] = '-ms-grid-columns: ' .. v .. ';'
-        end
-        if k == 'grid-row' or k == 'grid-column' then
-          local start, span = v:match('(%d+) / span (%d+)')
-          if start then
-            rules[#rules + 1] = '-ms-' .. k .. ': ' .. start .. ';'
-            rules[#rules + 1] = '-ms-' .. k .. '-span: ' .. span .. ';'
-          else
-            local span = v:match('span (%d+)')
-            if span then
-              rules[#rules + 1] = '-ms-' .. k .. '-span: ' .. span .. ';'
-            else
-              rules[#rules + 1] = '-ms-' .. k .. ': ' .. v .. ';'
-            end
-          end
-        end
-        -- Writing mode for IE11
-        if k == 'writing-mode' and v == 'vertical-rl' then
-          rules[#rules + 1] = '-ms-writing-mode: tb-rl;'
-        end
       end
     end
     local cur = 1

@@ -581,7 +581,7 @@ a.pastel.external > sup.little-icons {
   user-select: none;
   display: inline-block;
   position: relative;
-  top: -0.05em;
+  inset-block-start: -0.05em;
   margin-inline-start: -0.25em;
   margin-inline-end: -0.5em;
 }
@@ -873,13 +873,9 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   margin-block-end: 1.5em;
 }
 .banner-list.compact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1em;
 }
 .banner-list.compact > div.item-separator {
-  grid-column: 1 / span 2;
-  margin-block: -0.5em 0.5em;
+  margin-block: 1.5em 0.5em;
   transform: rotate(5deg);
 }
 html[dir="rtl"] .banner-list.compact > div.item-separator {
@@ -889,18 +885,27 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
   display: none;
 }
 .banner-list.compact > a.item-entry:nth-child(4n+3) {
-  margin-block-start: 2em;
+  margin-inline-start: 1em;
+  position: relative;
+  inset-block-start: 2em;
 }
 .banner-list.compact a.item-entry {
   margin-block: 0;
+  display: inline-block;
+  inline-size: calc(50% - 0.5em);
+  vertical-align: top;
 }
 
 @media (max-width: 115vh), (max-width: 48rem) {
   .banner-list.compact {
     display: initial;
   }
+  .banner-list.compact > a.item-entry {
+    inline-size: 100%;
+  }
   .banner-list.compact > a.item-entry:nth-child(4n+3) {
-    margin-block-start: unset;
+    inset-block-start: unset;
+    margin-inline-start: unset;
   }
   .banner-list.compact > div.item-separator {
     transform: unset;
@@ -910,16 +915,16 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
     display: block;
   }
   .banner-list.compact a.item-entry > section {
-    display: grid;
+    display: flex;
   }
-  .banner-list.compact a.item-entry:nth-child(4n+1) > section {
-    grid-template-columns: 3fr 2fr;
+  .banner-list.compact a.item-entry > section > .item-banner {
+    flex: 3;
   }
-  .banner-list.compact a.item-entry:nth-child(4n+3) > section {
-    grid-template-columns: 2fr 3fr;
+  .banner-list.compact a.item-entry > section > .item-peek {
+    flex: 2;
   }
-  a.item-entry:nth-child(4n+3) > section > .item-banner { grid-column: 2; }
-  .banner-list.compact a.item-entry:nth-child(4n+3) > section > .item-peek { grid-column: 1; grid-row: 1; }
+  .banner-list.compact a.item-entry:nth-child(4n+3) > section > .item-banner { order: 1; }
+  .banner-list.compact a.item-entry:nth-child(4n+3) > section > .item-peek { order: 0; }
   .banner-list.compact .item-peek {
     max-height: 10rem;
     overflow-x: hidden;
