@@ -194,7 +194,7 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   }
 }
 
-@media (max-width: 115vh), (max-width: 48rem) {
+@media (max-width: 48rem) {
   #main-grid > nav,
   #main-grid > main,
   #main-grid > aside {
@@ -414,7 +414,7 @@ main header h1 {
 }
 body.dark #top-fleuron { opacity: 45%; }
 
-@media (max-width: 115vh), (max-width: 48rem) {
+@media (max-width: 48rem) {
   #top-fleuron {
     inset-block-start: 0;
     block-size: 9.375vw;  /* 100vw * 90/960 */
@@ -690,7 +690,7 @@ table.file-table .file-table-name {
   margin-inline: 0.2em 0.33em;
   word-break: break-all;
 }
-@media (max-width: 115vh), (max-width: 48rem) {
+@media (max-width: 48rem) {
   table.file-table {
     margin-block-start: -0.4em;
     border-spacing: 1em 0;
@@ -896,7 +896,7 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
   vertical-align: top;
 }
 
-@media (max-width: 115vh), (max-width: 48rem) {
+@media (max-width: 48rem) {
   .banner-list.compact {
     display: initial;
   }
@@ -1050,7 +1050,7 @@ img.item-banner,
 .item-date {
   margin-block-start: 1em;
 }
-@media (max-width: 115vh), (max-width: 48rem) {
+@media (max-width: 48rem) {
   img.item-banner, .item-content div.image-container img {
     max-inline-size: 100%;
   }
