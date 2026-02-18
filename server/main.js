@@ -340,6 +340,10 @@ const staticFile = async (req, opts, headers, path) => {
         const lines = value.split('\n', 1)
         fetched[lines[0]] = null
         return _
+      } else if (key === 'path') {
+        const s = (new URL(req.url)).pathname
+        console.log(req.url, s)
+        return s.substring(1)
       } else if (key === 'query') {
         const s = (new URL(req.url)).search
         return s ? ('&' + s.substring(1)) : ''

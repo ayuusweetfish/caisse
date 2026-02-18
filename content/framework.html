@@ -80,7 +80,7 @@ Collection of sundries —
       <p><a class='pastel miscellaneous' href='?lang=en<!-- (query) -->'>English/英语</a></p>
     </div>
   </details><a id='dark-toggle'
-    href='/{{ urlpath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
+    href='/{{ urlpath == '_/404' and '<!-- (path) -->' or urlpath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
       zh = '切换深色/浅色主题',
       en = 'Toggle dark/light theme',
     }) }}'>🌙</a>
