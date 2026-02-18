@@ -683,7 +683,7 @@ body.dark div[role='separator']
   position: relative;
   inset-block-start: -0.0875em;
 }
-body.dark .kaomoji { filter: invert(); }
+body.dark .kaomoji { filter: invert(1); }
 
 table.file-table {
   margin-block: 1em;
@@ -820,8 +820,8 @@ a.music-track-link {
 
 body img { transition: filter ease {{transitiondur}}; }
 body.dark img { filter: grayscale(20%) brightness(95%); }
-body.dark img.syncdark { filter: grayscale(20%) invert() brightness(95%) hue-rotate(180deg); }
-body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brightness(95%) hue-rotate(180deg); }
+body.dark img.syncdark { filter: grayscale(20%) invert(1) brightness(95%) hue-rotate(180deg); }
+body.dark img.syncdarkmild { filter: grayscale(20%) invert(1) contrast(75%) brightness(95%) hue-rotate(180deg); }
 
 /* Styles for bannerlist.html */
 
