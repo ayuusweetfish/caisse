@@ -713,7 +713,7 @@ ul > li::before {
   content: '–';
   margin-inline: -1.6em 0.5em;
   display: block;
-  float: left; /* inline-start */
+  float: inline-start;
   position: relative;
   inset-block-start: 0.075em;
 }
@@ -847,7 +847,7 @@ body.dark img.syncdarkmild { filter: grayscale(20%) invert() contrast(75%) brigh
   margin-inline: 1.3rem;
 }
 .banner-list .item-peek > p > span.date-container {
-  float: right; /* inline-end */
+  float: inline-end;
   margin-inline-start: 2em;
   margin-block-start: 0.2em;
   min-height: 1.5em;
@@ -1078,7 +1078,7 @@ img.item-banner,
 
 .item-content h2 a.date-term-link {
   margin-inline-start: 1em;
-  float: right;
+  float: inline-end;
 }
 .item-content h2::after {
   content: '';
