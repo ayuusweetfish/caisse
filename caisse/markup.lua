@@ -58,12 +58,16 @@ local function render(s, fns, ignoremissingfns)
     verb = false, -- Verbatim?
     endmark = '\n',
   }}
-  local endmarkpos = s:find('\n', 1, true) or (#s + 1)
+  local endmarkpos = {}
+  local eoln = s:find('\n', 1, true) or (#s + 1)
+  endmarkpos['\n'] = eoln
+  local endmarkpostop = eoln
   -- Array of { items = array of string, fnname = string, endmark = string }
+  local top = levels[#levels]
   while cur <= #s + 1 do
-    local topitems = levels[#levels].items
+    local topitems = top.items
     -- Top as in top of a the stack (innermost)
-    if not levels[#levels].verb and s:byte(cur) == 60 --[[ '<' ]] then
+    if not top.verb and s:byte(cur) == 60 --[[ '<' ]] then
       local text = s:sub(last + 1, cur - 1)
       if #levels == 1 then text = texttransform(text) end
       topitems[#topitems + 1] = {
@@ -85,12 +89,13 @@ local function render(s, fns, ignoremissingfns)
         if ignoremissingfns then fn = function () return '' end
         else error('Markup function ' .. fnname .. ' not provided') end
       end
-      levels[#levels + 1] = {
+      top = {
         items = {},
         fn = fn,
         verb = verb,
         endmark = endmark,
       }
+      levels[#levels + 1] = top
       -- Skip exactly one whitespace for verbatim text
       -- and all following whitespaces for ordinary functions
       if verb then
@@ -100,39 +105,48 @@ local function render(s, fns, ignoremissingfns)
       end
       cur = endpos
       last = endpos - 1
-      endmarkpos = s:find(endmark, cur, true)
-    else
-      if cur == endmarkpos then
-        local mark = levels[#levels].endmark
-        local fn = levels[#levels].fn
-        local fninfo = debug.getinfo(fn, 'u')
-        local arity = fninfo.nparams
-        if fninfo.isvararg then arity = nil end
-        local outitems = levels[#levels].items
-        local outverb = levels[#levels].verb
-        local text = s:sub(last + 1, cur - 1)
-        if #levels == 1 then text = texttransform(text) end
-        topitems[#topitems + 1] = {
-          text = text,
-          unit = false,
-        }
-        if #levels == 1 then
-          topitems = allitems
-          levels[1].items = {}
-        else
-          levels[#levels] = nil
-          topitems = levels[#levels].items
-        end
-        topitems[#topitems + 1] = {
-          text = fn(args(outitems, arity, outverb)),
-          unit = true,
-        }
-        cur = cur + #mark
-        last = cur - 1
-        endmarkpos = s:find(levels[#levels].endmark, cur, true) or (#s + 1)
-      else
-        cur = cur + 1
+      local e = endmarkpos[endmark]
+      if not e or e < cur then
+        e = s:find(endmark, cur, true)
+        endmarkpos[endmark] = e
       end
+      endmarkpostop = e
+    elseif cur == endmarkpostop then
+      local mark = top.endmark
+      local fn = top.fn
+      local fninfo = debug.getinfo(fn, 'u')
+      local arity = fninfo.nparams
+      if fninfo.isvararg then arity = nil end
+      local outitems = top.items
+      local outverb = top.verb
+      local text = s:sub(last + 1, cur - 1)
+      if #levels == 1 then text = texttransform(text) end
+      topitems[#topitems + 1] = {
+        text = text,
+        unit = false,
+      }
+      if #levels == 1 then
+        topitems = allitems
+        top.items = {}
+      else
+        levels[#levels] = nil
+        top = levels[#levels]
+        topitems = top.items
+      end
+      topitems[#topitems + 1] = {
+        text = fn(args(outitems, arity, outverb)),
+        unit = true,
+      }
+      cur = cur + #mark
+      last = cur - 1
+      local e = endmarkpos[top.endmark]
+      if e < cur then
+        e = s:find(top.endmark, cur, true) or (#s + 1)
+        endmarkpos[top.endmark] = e
+      end
+      endmarkpostop = e
+    else
+      cur = cur + 1
     end
   end
   for i = 1, #allitems do allitems[i] = allitems[i].text end
