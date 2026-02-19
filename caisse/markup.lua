@@ -58,6 +58,7 @@ local function render(s, fns, ignoremissingfns)
     verb = false, -- Verbatim?
     endmark = '\n',
   }}
+  local endmarkpos = s:find('\n', 1, true) or (#s + 1)
   -- Array of { items = array of string, fnname = string, endmark = string }
   while cur <= #s + 1 do
     local topitems = levels[#levels].items
@@ -99,9 +100,10 @@ local function render(s, fns, ignoremissingfns)
       end
       cur = endpos
       last = endpos - 1
+      endmarkpos = s:find(endmark, cur, true)
     else
-      local mark = levels[#levels].endmark
-      if cur == #s + 1 or s:sub(cur, cur + #mark - 1) == mark then
+      if cur == endmarkpos then
+        local mark = levels[#levels].endmark
         local fn = levels[#levels].fn
         local fninfo = debug.getinfo(fn, 'u')
         local arity = fninfo.nparams
@@ -127,6 +129,7 @@ local function render(s, fns, ignoremissingfns)
         }
         cur = cur + #mark
         last = cur - 1
+        endmarkpos = s:find(levels[#levels].endmark, cur, true) or (#s + 1)
       else
         cur = cur + 1
       end
