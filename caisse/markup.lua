@@ -62,7 +62,7 @@ local function render(s, fns, ignoremissingfns)
   while cur <= #s + 1 do
     local topitems = levels[#levels].items
     -- Top as in top of a the stack (innermost)
-    if not levels[#levels].verb and s:sub(cur, cur) == '<' then
+    if not levels[#levels].verb and s:byte(cur) == 60 --[[ '<' ]] then
       local text = s:sub(last + 1, cur - 1)
       if #levels == 1 then text = texttransform(text) end
       topitems[#topitems + 1] = {

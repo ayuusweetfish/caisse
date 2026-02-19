@@ -421,14 +421,13 @@ if katexf then
   end
   katexf:close()
 end
-local katexstringlist = {}
-local katexstringdedup = {}
+local katexupdate = (os.getenv('KATEX_UPDATE') ~= nil)
+local katexstrings = {}
 local function katexrender(string, isdisp)
   string = string:match('^%s*(.-)%s*$'):gsub('\t', ' ')
   local hash = basehash((isdisp and '\001' or '\000') .. string)
-  if not katexstringdedup[hash] then
-    katexstringdedup[hash] = true
-    katexstringlist[#katexstringlist + 1] =
+  if not katexstrings[hash] then
+    katexstrings[hash] =
       hash .. (isdisp and '\t1\t' or '\t0\t') .. string:gsub('\n', '\t')
   end
   if katexrendered[hash] then
@@ -480,14 +479,6 @@ local htmlescapelookup = {
   ['&'] = '&amp;',
 }
 local function htmlescape(s)
---[[
-  local cps = {utf8.codepoint(s, 1, #s)}
-  for i = 1, #cps do
-    if cps[i] == utf8.codepoint('!') then cps[i] = '!'
-    else cps[i] = string.format('&#x%x;', cps[i]) end
-  end
-  return table.concat(cps)
-]]
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
 caisse.envadditions.htmlescape = htmlescape
@@ -1118,4 +1109,10 @@ for _, lang in ipairs({'zh', 'en'}) do
 end
 
 os.execute(table.concat(bufferedcmds, '; '))
-io.open('misc/katex/list.txt', 'w'):write(table.concat(katexstringlist, '\n'))
+
+if katexupdate then
+  local list = {}
+  for _, v in pairs(katexstrings) do list[#list + 1] = v end
+  io.open('misc/katex/list.txt', 'w'):write(table.concat(list, '\n'))
+  print('Formula list updated')
+end
