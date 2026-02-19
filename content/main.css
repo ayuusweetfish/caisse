@@ -885,9 +885,9 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
   display: none;
 }
 .banner-list.compact > a.item-entry:nth-child(4n+3) {
-  margin-inline-start: 1em;
   position: relative;
   inset-block-start: 2em;
+  inset-inline-start: 1em;
 }
 .banner-list.compact a.item-entry {
   margin-block: 0;
@@ -905,7 +905,7 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
   }
   .banner-list.compact > a.item-entry:nth-child(4n+3) {
     inset-block-start: unset;
-    margin-inline-start: unset;
+    inset-inline-start: unset;
   }
   .banner-list.compact > div.item-separator {
     transform: unset;
