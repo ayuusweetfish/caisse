@@ -82,9 +82,9 @@ Bilibili 舞蹈嘉年华（BDF）2021 主题曲之一。
 {{box[i].imagealt.zh=}}专辑封面。四位主角：猫、魔女、鸟、人类，坐在悬崖边的草地上，四周围着彩色的灌木丛、山脉、水草、云朵、鲸鱼。
 {{box[i].imagealt.en=}}Cover of the album. Four protagonists: a cat, a witch, a bird, and a human, sitting on a cliffside meadow surrounded by colourful bushes, mountains, aquatic plants, clouds, and whales.
 {{box[i].cmt.zh=}}
-非常可爱的合成器风格音乐。它所在的专辑《Collecting Pieces》描绘的是“来自另一维度的四位伙伴的冒险”，10 首乐曲从初次相遇开始，讲述沿途遇见的奇妙景象，直至最后告别。半个小时的治愈系白日梦。
+非常可爱的合成器风格音乐。它所在的专辑《Collecting Pieces》描绘的是“来自另一维度的四位伙伴的冒险”，10 首乐曲从初次相遇开始，讲述沿途遇见的奇妙景象，直至最后告别——半个小时的治愈系白日梦。
 {{box[i].cmt.en=}}
-Adorable music in synthesizer style. The album it’s on, <it Collecting Pieces>, depicts an “adventure of 4 friends from another dimension”, with 10 tracks that start with the first encounter and unfold the wonders they meet along the way, until the final goodbye. Half an hour of soothing daydreams.
+An adorable piece in synthesizer style. The album it’s on, <it Collecting Pieces>, depicts an “adventure of 4 friends from another dimension”, with 10 tracks that start with the first encounter and unfold the wonders they meet along the way, until the final goodbye — half an hour of soothing daydreams.
 
 {{=}}
 {{i = #box + 1}}
@@ -167,10 +167,10 @@ In the eponymous album, <it Dream Makers> is a bonus track and is the only one o
 {{box[i].imagealt.en=}}Cover illustraton of the track. A gacha machine full of stars and crescent moons.
 {{box[i].cmt.zh=}}
 咸鱼中下游是一位插画师，但无论是绘画还是音乐都并非专业出身，只是依靠热爱与坚持实现自己的梦想。中下游老师制作了高质量的公开课，并且用收入捐赠过希望小学。
-最简单的乐器也可以拼凑成可爱动听的音乐，最基础的知识其实就足够支撑起创作表达的冲动。千万别被别人的复杂作品吓到啦。
+最简单的乐器也可以拼凑成可爱动听的音乐，最基础的知识其实就足够支撑起创作表达的冲动。创作意图是作品的灵魂所在，一个闪光的想法本身便足以形成一件有趣的作品，表面的形式反而并没有那么重要。许多有想法的创作者教会了我这一点，我也开始尝试用同样的方式把这份信心传递下去。千万别被复杂的作品吓到啦。
 {{box[i].cmt.en=}}
 Blaine Zhou is an illustrator, but does not come from a professional background in either painting or music and instead realizes these dreams through passion and perseverance. Blaine has published high-quality open lectures and have donated part of the income to Project Hope.
-The simplest instruments can be pieced together into lovely, sweet music, and the most basic knowledge can be enough to support the urge to create and express. Never be indimidated by the complexity of others’ work~
+The simplest instruments can be pieced together into lovely, sweet music, and the most basic knowledge can be enough to support the urge to create and express. The creative intent is the spirit of a work; a sparkling idea alone is enough to yield an interesting piece, while the form is merely superficial. It’s a belief taught to me by multiple aspiring creators, and I’m starting to pass it on in the same way. Never be indimidated by the complexity of existing work!
 
 {{=}}
 {{i = #box + 1}}
@@ -259,7 +259,7 @@ Soon afterwards, there was a mutual attraction that turned into a relationship. 
 在这个热衷于将一切生灵当作物品与工具的时代，或许我们都该从万物有灵、敬畏自然的朴素信仰中找些启示。
 {{box[i].cmt.en=}}
 !<blockquoteby
-<<~= <it Tsukumogami-emaki> (<lang ja 付喪神絵巻>) (<link https://rmda.kulib.kyoto-u.ac.jp/item/rb00013599 Kyoto University Library>、<link https://dl.ndl.go.jp/pid/2541764 National Diet Library>)>>
+<<~= <it Tsukumogami-emaki> (<lang ja 付喪神絵巻>) (<link https://rmda.kulib.kyoto-u.ac.jp/item/rb00013599 Kyoto University Library>, <link https://dl.ndl.go.jp/pid/2541764 National Diet Library>)>>
 <~~='
 <lang ja 陰陽雑記云　器物百年を経て　化して精霊を得てより　人の心を誑す　これを付喪神と号すといへり>
 (As has been told in <it Onnmyoh-zakki> — a tool or an object, after a hundred years have passed, will transform to acquire a spirit and deceive people’s hearts. These are referred to as <it Tsukumogami>.)
