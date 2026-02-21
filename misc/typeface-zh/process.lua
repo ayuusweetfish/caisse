@@ -56,7 +56,7 @@ function addsubset(subset, name, skipcss, comment)
   else
     local ttfpath = string.format('AaKaiSong.%s.%s.ttf', name, h)
     os.execute(string.format(
-      'pyftsubset AaKaiSong2WanZi2.ttf --unicodes=%s --output-file=%s',
+      'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
       table.concat(terms, ','), ttfpath))
     os.execute(string.format(
       'woff2_compress %s', ttfpath))
