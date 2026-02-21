@@ -564,8 +564,8 @@ body.dark #top-fleuron { opacity: 45%; }
 {{@ distbuild }}
 {{ AaKaiSong_css }}
 {{@ end }}
-*[lang='lat'] { font-style: oblique 9deg; }
-i { font-style: oblique 9deg; }
+*[lang='lat'] { font-style: italic; }
+i { font-style: italic; }
 
 pre, code, .tt {
   font-size: 0.9rem;
