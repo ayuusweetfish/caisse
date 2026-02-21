@@ -456,19 +456,21 @@ end
 }}
 
 {{
-  rangebase = 'U+00-7f, U+b0, U+b7, U+2010-201e, U+2026'
-  rangeext = 'U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff'
+  rangebasewithsym = 'U+00-7f, U+b0, U+b7, U+2010-201e, U+2026'
+  rangeextwithsym = 'U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff'
+  rangebase = 'U+00-7f, U+2010-201e, U+2026'
+  rangeext = 'U+80-200f, U+201f-2025, U+2027-25ff'
 }}
-{{ fontfacedef('Livvic', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
-{{ fontfacedef('Livvic', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
+{{ fontfacedef('Livvic', 'normal', 'normal', rangebasewithsym, 'Livvic-Regular-base') }}
+{{ fontfacedef('Livvic', 'normal', 'normal', rangeextwithsym, 'Livvic-Regular-ext') }}
 {{ fontfacedef('Livvic', 'normal', 'bold', rangebase, 'Livvic-SemiBold-base') }}
 {{ fontfacedef('Livvic', 'normal', 'bold', rangeext, 'Livvic-SemiBold-ext') }}
 {{ fontfacedef('Livvic', 'italic', 'normal', rangebase, 'Livvic-Italic-base') }}
 {{ fontfacedef('Livvic', 'italic', 'normal', rangeext, 'Livvic-Italic-ext') }}
 {{ fontfacedef('Livvic', 'italic', 'bold', rangebase, 'Livvic-SemiBoldItalic-base') }}
 {{ fontfacedef('Livvic', 'italic', 'bold', rangeext, 'Livvic-SemiBoldItalic-ext') }}
-{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
-{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangebasewithsym, 'Livvic-Regular-base') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangeextwithsym, 'Livvic-Regular-ext') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangebase, 'Livvic-Medium-base') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangeext, 'Livvic-Medium-ext') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'italic', 'normal', rangebase, 'Livvic-Italic-base') }}
