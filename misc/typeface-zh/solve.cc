@@ -185,7 +185,7 @@ int main()
       codepoint c = readutf8(f);
       if (c == -1) break;
       // http://ftp.unicode.org/Public/UNIDATA/Blocks.txt
-      if (c >= 0x800) {
+      if (c >= 0x800 || c == 0xB7) {
         auto it = cpcount.lower_bound(c);
         if (it == cpcount.end() || it->first != c) {
           if (charset.count(c) == 0) continue;

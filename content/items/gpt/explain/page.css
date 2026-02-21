@@ -6,8 +6,5 @@
   /* no-op */
 }
 .item-content span.dialogue + ul > li:nth-child(2n)::before {
-  content: '・';
-}
-.item-content span.dialogue + ul > li:nth-child(2n):lang(en)::before {
   content: '·';
 }

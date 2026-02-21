@@ -463,10 +463,6 @@ end
 {{ fontfacedef('Livvic', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
 {{ fontfacedef('Livvic', 'normal', 'bold', rangebase, 'Livvic-SemiBold-base') }}
 {{ fontfacedef('Livvic', 'normal', 'bold', rangeext, 'Livvic-SemiBold-ext') }}
-{{ fontfacedef('Livvic', 'italic', 'normal', rangebase, 'Livvic-Italic-base') }}
-{{ fontfacedef('Livvic', 'italic', 'normal', rangeext, 'Livvic-Italic-ext') }}
-{{ fontfacedef('Livvic', 'italic', 'bold', rangebase, 'Livvic-SemiBoldItalic-base') }}
-{{ fontfacedef('Livvic', 'italic', 'bold', rangeext, 'Livvic-SemiBoldItalic-ext') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangebase, 'Livvic-Medium-base') }}
@@ -638,6 +634,7 @@ ul ul {
 }
 ul > li::before {
   content: '–';
+  font-family: 'Livvic', sans-serif;
   margin-inline: -1.6em 0.5em;
   display: block;
   float: inline-start;

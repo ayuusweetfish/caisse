@@ -11,9 +11,5 @@
 }
 .item-content span.dialogue:not(.dialogue-rev) + ul > li:nth-child(2n)::before,
 .item-content span.dialogue.dialogue-rev + ul > li:nth-child(2n+1)::before {
-  content: '・';
-}
-.item-content span.dialogue:not(.dialogue-rev) + ul > li:nth-child(2n):lang(en)::before,
-.item-content span.dialogue.dialogue-rev + ul > li:nth-child(2n+1):lang(en)::before {
   content: '·';
 }
