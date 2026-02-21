@@ -6,7 +6,7 @@
 {{bannerimg=}}cover.jpg
 {{bannerimgpos=}}50,26
 {{bannerimgalt.zh=}}游戏封面图；蜜蜂落在白色的花朵上，发出金黄色的光芒。
-{{bannerimgalt.en=}}Cover art of the image; a bee resting on a white blossom, giving off a golden glow.
+{{bannerimgalt.en=}}Cover art of the game; a bee resting on a white blossom, giving off a golden glow.
 
 {{date=}}2024.05
 
