@@ -461,12 +461,20 @@ end
 }}
 {{ fontfacedef('Livvic', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
 {{ fontfacedef('Livvic', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
-{{ fontfacedef('Livvic', 'normal', 'bold', rangebase, 'Livvic-SemiBold-ext') }}
+{{ fontfacedef('Livvic', 'normal', 'bold', rangebase, 'Livvic-SemiBold-base') }}
 {{ fontfacedef('Livvic', 'normal', 'bold', rangeext, 'Livvic-SemiBold-ext') }}
+{{ fontfacedef('Livvic', 'italic', 'normal', rangebase, 'Livvic-Italic-base') }}
+{{ fontfacedef('Livvic', 'italic', 'normal', rangeext, 'Livvic-Italic-ext') }}
+{{ fontfacedef('Livvic', 'italic', 'bold', rangebase, 'Livvic-SemiBoldItalic-base') }}
+{{ fontfacedef('Livvic', 'italic', 'bold', rangeext, 'Livvic-SemiBoldItalic-ext') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
-{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangebase, 'Livvic-Medium-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangebase, 'Livvic-Medium-base') }}
 {{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangeext, 'Livvic-Medium-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'italic', 'normal', rangebase, 'Livvic-Italic-base') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'italic', 'normal', rangeext, 'Livvic-Italic-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'italic', 'bold', rangebase, 'Livvic-MediumItalic-base') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'italic', 'bold', rangeext, 'Livvic-MediumItalic-ext') }}
 
 {{ fontfacedef('Sono', 'normal', 'normal', nil, 'Sono_Monospace-Regular') }}
 {{ fontfacedef('Sono', 'normal', 'bold', nil, 'Sono_Monospace-SemiBold') }}
@@ -483,7 +491,7 @@ end
 {{@ end }}
 *[lang='lat'], i {
   /* font-style: oblique 9deg; */
-  font-style: oblique;
+  font-style: italic;
 }
 
 pre, code, .tt {
