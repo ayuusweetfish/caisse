@@ -1,4 +1,4 @@
-{{title.zh=}}元气女孩・打击乐七重奏
+{{title.zh=}}元气女孩·打击乐七重奏
 {{intro.zh=}}“登乐 V 计划”最终舞台乐曲，打击乐改编
 {{title.en=}}Candy Girl — Percussion septet cover
 {{intro.en=}}Music from the final stage of “Deng Yue Plan V”; adaptation for the percussion ensemble

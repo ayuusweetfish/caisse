@@ -1,4 +1,4 @@
-{{title.zh=}}你不知道的故事・打击乐六重奏
+{{title.zh=}}你不知道的故事·打击乐六重奏
 {{intro.zh=}}动画《化物语》片尾曲打击乐改编
 {{title.en=}}The Story You Don’t Know — Percussion sextet
 {{intro.en=}}Ending theme of “Bakemonogatari”; adaptation for percussion sextet
@@ -11,7 +11,7 @@
 {{date=}}2023.05,2023.07
 
 {{contents.zh=}}
-学生艺术团军乐队 2023 年二队沙龙音乐会演出・打击声部小重奏节目！是动画片《化物语》片尾曲的改编。
+学生艺术团军乐队 2023 年二队沙龙音乐会演出·打击声部小重奏节目！是动画片《化物语》片尾曲的改编。
 爵士鼓部分参考了嶋崎雄斗的改编版本。
 
 <b 声部配置>

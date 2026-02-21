@@ -1,4 +1,4 @@
-{{title.zh=}}Zzz・打击乐七重奏
+{{title.zh=}}Zzz·打击乐七重奏
 {{intro.zh=}}动画《日常》片尾曲打击乐改编
 {{title.en=}}Zzz — Percussion septet
 {{intro.en=}}Ending theme of “Nichijou: My Ordinary Life”; adaptation for percussion septet
@@ -16,7 +16,7 @@
 {{date=}}2021.07
 
 {{contents.zh=}}
-学生艺术团军乐队 2021 年二队沙龙音乐会演出・打击声部小重奏节目！是动画片《日常》片尾曲的改编。
+学生艺术团军乐队 2021 年二队沙龙音乐会演出·打击声部小重奏节目！是动画片《日常》片尾曲的改编。
 吹爆一起努力一起发光的大家！！
 <b 声部配置>
 !<list
