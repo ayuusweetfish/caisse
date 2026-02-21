@@ -439,133 +439,52 @@ body.dark #top-fleuron { opacity: 45%; }
   inset-inline-end: 0;
 }
 
+{{
+fontfacedef = function (family, style, weight, range, basename)
+  return [[
 @font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: 400;
+  font-family: ']] .. family .. [[';
+  font-style: ]] .. style .. [[;
+  font-weight: ]] .. weight .. [[;
   font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e, U+2026;
+  src: url(/bin/]] .. hashverfile('fonts/' .. basename .. '.woff2') .. [[) format('woff2'),
+       url(/bin/]] .. hashverfile('fonts/' .. basename .. '.woff') .. [[) format('woff');
+]] .. (range and [[  unicode-range: ]] .. range .. ';' or '') .. [[
 }
-@font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff') }}) format('woff');
-  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff;
-}
-@font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-base.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-base.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+2010-201e, U+2026;
-}
-@font-face {
-  font-family: 'Livvic';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-SemiBold-ext.woff') }}) format('woff');
-  unicode-range: U+80-200f, U+201f-2025, U+2027-25ff;
-}
-@font-face {
-  font-family: 'Livvic — Lighter Bold';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-base.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+b0, U+b7, U+2010-201e, U+2026;
-}
-@font-face {
-  font-family: 'Livvic — Lighter Bold';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Regular-ext.woff') }}) format('woff');
-  unicode-range: U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff;
-}
-@font-face {
-  font-family: 'Livvic — Lighter Bold';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-base.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Medium-base.woff') }}) format('woff');
-  unicode-range: U+00-7f, U+2010-201e, U+2026;
-}
-@font-face {
-  font-family: 'Livvic — Lighter Bold';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Livvic-Medium-ext.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Livvic-Medium-ext.woff') }}) format('woff');
-  unicode-range: U+80-200f, U+201f-2025, U+2027-25ff;
-}
-@font-face {
-  font-family: 'Sono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Sono_Monospace-Regular.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Sono_Monospace-Regular.woff') }}) format('woff');
-}
-@font-face {
-  font-family: 'Sono';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/Sono_Monospace-SemiBold.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/Sono_Monospace-SemiBold.woff') }}) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans — Greek';
-  unicode-range: U+0370-U+03ff;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Greek.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Greek.woff') }}) format('woff');
-}
-@font-face {
-  font-family: 'Open Sans — Cyrillic';
-  unicode-range: U+0400-U+052f;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Cyrillic.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/OpenSans-Regular-Cyrillic.woff') }}) format('woff');
-}
-@font-face {
-  font-family: 'AaKaiSong Language Names';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/bin/{{ hashverfile('fonts/AaKaiSong-langs.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/AaKaiSong-langs.woff') }}) format('woff');
-}
-@font-face {
-  font-family: 'Ayuu Little Icons — 221202a';
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(/bin/{{ hashverfile('fonts/little-icons.woff2') }}) format('woff2'),
-       url(/bin/{{ hashverfile('fonts/little-icons.woff') }}) format('woff');
-}
+]]
+end
+}}
+
+{{
+  rangebase = 'U+00-7f, U+b0, U+b7, U+2010-201e, U+2026'
+  rangeext = 'U+80-af, U+b1-b6, U+b8-200f, U+201f-2025, U+2027-25ff'
+}}
+{{ fontfacedef('Livvic', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
+{{ fontfacedef('Livvic', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
+{{ fontfacedef('Livvic', 'normal', 'bold', rangebase, 'Livvic-SemiBold-ext') }}
+{{ fontfacedef('Livvic', 'normal', 'bold', rangeext, 'Livvic-SemiBold-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangebase, 'Livvic-Regular-base') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'normal', rangeext, 'Livvic-Regular-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangebase, 'Livvic-Medium-ext') }}
+{{ fontfacedef('Livvic — Lighter Bold', 'normal', 'bold', rangeext, 'Livvic-Medium-ext') }}
+
+{{ fontfacedef('Sono', 'normal', 'normal', nil, 'Sono_Monospace-Regular') }}
+{{ fontfacedef('Sono', 'normal', 'bold', nil, 'Sono_Monospace-SemiBold') }}
+
+{{ fontfacedef('Open Sans — Greek', 'normal', 'normal', 'U+0370-U+03ff', 'OpenSans-Regular-Greek') }}
+{{ fontfacedef('Open Sans — Cyrillic', 'normal', 'normal', 'U+0400-U+052f', 'OpenSans-Regular-Cyrillic') }}
+
+{{ fontfacedef('AaKaiSong Language Names', 'normal', 'normal', nil, 'AaKaiSong-langs') }}
+
+{{ fontfacedef('Ayuu Little Icons — 221202a', 'normal', 'normal', nil, 'little-icons') }}
+
 {{@ distbuild }}
 {{ AaKaiSong_css }}
 {{@ end }}
-*[lang='lat'] { font-style: italic; }
-i { font-style: italic; }
+*[lang='lat'], i {
+  /* font-style: oblique 9deg; */
+  font-style: oblique;
+}
 
 pre, code, .tt {
   font-size: 0.9rem;
