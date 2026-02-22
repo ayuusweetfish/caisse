@@ -1,0 +1,55 @@
+{{title.zh=}}九尾日报·狐研新闻社
+{{intro.zh=}}与狐研新闻社的超级魔法师们一起展开无穷无尽的探索！
+{{title.en=}}Rolling Tail Headlines
+{{intro.en=}}Join the super-wizards at FoxNN in the never-ending inquiries!
+
+{{bannerimg=}}cover.png
+{{-- inkscape -o 1.png -b '#fef4e4' -w 900 -h 375 /mnt/data/misc/2602_foxmusic/banner.svg; pngcrush 1.png }}
+{{bannerimgalt.zh=}}游戏封面图；
+{{bannerimgalt.en=}}Cover art of the gae;
+
+{{date=}}2024.23,2024.24
+
+{{contents.zh=}}
+<link https://itch.io/jam/mini-jam-176-foxes Mini Jam 176: Foxes> 参赛作品，附加限制为“抛硬币作为一种游戏机制”。
+
+<link https://fox.ayu.land 来试试吧！>
+
+!<hr>
+
+<lang en <it A text-based exploration, with a grain of Automatic Imagination.>><br>「一段自动驾驶的文字漫游」
+
+<b “彩虹揭秘：竟是天空日记？”><br><b “火烈鸟大罢工，荒诞步法局宣告关停？”><br><b “真菌基建打造下一代光媒通讯网？”>
+
+好奇的同类们，狐研新闻社（FoxNN）从头到尾满足你的求知欲！在 22 世纪，狐狸是最最古灵精怪的超级魔法师。它们每日穿梭天地之间，用独一无二的“狐头狐尾”魔法来观察、发现世界——这可不是在抛硬币，而是不可言传的狐族秘法～
+
+泡上手边的月影花茶，加入狐狸们的探索之旅吧！
+
+{{contents.en=}}
+Submission to <link https://itch.io/jam/mini-jam-176-foxes Mini Jam 176: Foxes>, with a limitation of <it flipping a coin as a mechanic>.
+
+<link https://fox.ayu.land Have a try!>
+
+!<hr>
+
+<it A text-based exploration, with a grain of Automatic Imagination.>
+
+<b <it Rainbow Revealed to be Sky’s Diary?>><br><b <it Flamingoes Go on Strike, Disbanding Ministry of Silly Walks?>><br><b <it Mushrooms to Build the Next Glow-Based Comms Network?>>
+
+Inquiring minds alike, Fox Newroll Network (FoxNN) has you covered! In the 22nd century, foxes are the playful super-wizards. They traverse the world on a daily basis, observing, and discovering through a mechanism known as “heads or tails” — no, it’s not coin flipping, but a secret fox magic outside of the reach of languages~
+
+Bring your cup of moonbeam tea, join the foxes in their inquiries for this issue!
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://fox.ayu.land 游玩链接>>
+  <li <link https://ayuusweetfish.itch.io/rolling-tail-headlines Itch.io 页面>>
+  <li <link https://github.com/ayuusweetfish/Rolling-Tail-Headlines 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://fox.ayu.land Play>>
+  <li <link https://ayuusweetfish.itch.io/rolling-tail-headlines Itch.io page>>
+  <li <link https://github.com/ayuusweetfish/Rolling-Tail-Headlines Source repository (GitHub)>>
+>

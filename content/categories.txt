@@ -65,6 +65,7 @@ cats.music.pagelist = {
   {name = 'music/arrangements', islist = true, dark = true},
 }
 cats.playful.pagelist = {
+  {name = 'fox'},
   {name = 'nectar', dark = true},
   {name = 'fireflies', dark = true},
   {name = 'medle', dark = false},

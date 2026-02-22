@@ -2,7 +2,7 @@
 background-dark.svg	33293	image	600	1039
 background.svg	33278	image	600	1039
 bannerlist.html	1555	unknown
-categories.txt	4521	document
+categories.txt	4539	document
 chalk-bg-b.png	8536	image	360	90
 chalk-bg-w.png	8536	image	360	90
 code.html	677	unknown
@@ -705,6 +705,7 @@ items/flow/windborne/1850891652.jpg	2998	image	100	100
 items/flow/windborne/999-999.mp3	494750	audio	82
 items/flow/windborne/999-999.mscz	50392	score
 items/flow/windborne/999-999.pdf	152527	document	2
+items/fox/cover.png	41565	image	900	375
 items/friends/alicez-bg.png	9552	image	511	300
 items/friends/alicez.png	33251	image	1485	871
 items/friends/azalea-bg.png	9929	image	500	300
@@ -1165,7 +1166,7 @@ items/zzz/Zzz.mscz	101271	score
 items/zzz/Zzz.ogg	2677147	audio	179
 items/zzz/Zzz.pdf	706225	document	30
 items/zzz/cover.jpg	185995	image	1920	1080
-main.css	29906	unknown
+main.css	30077	unknown
 main.js	1881	code
 puffs.svg	2343	image	1200	120
 timeline.html	4626	unknown
