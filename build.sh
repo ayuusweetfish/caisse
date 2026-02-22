@@ -11,6 +11,7 @@ if [[ "$*" == *"stat"* ]]; then
     -not -path "../../content/fonts-zh/*" \
     -not -path "../../content/vendor/*" \
     -not -path "../../content/items/backyard/*" \
+    -not -regex "\.\./\.\./content/[^/]*\.\(html\|css\|js\|txt\)" \
     -not -name "page.txt" \
     | $LUA build.lua database.tsv ../../content/
 
