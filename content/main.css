@@ -376,7 +376,11 @@ footer > span:first-child > span.group {
 }
 footer > span:first-child > span.group > *:not(:last-child)::after {
   content: '·';
+  font-family: 'Livvic', sans-serif;
   margin-inline: 0.5em;
+}
+footer > span:first-child > span.group > *:not(:last-child):lang(zh)::after {
+  font-family: 'Livvic — Lighter Bold', sans-serif;
 }
 footer > span:first-child > span.group:not(:first-child)::before {
   content: '|';
