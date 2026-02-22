@@ -611,6 +611,8 @@ body.dark div[role='separator']
 .kaomoji > svg {
   block-size: 1em;
   inline-size: auto;
+  position: relative;
+  inset-block-start: -0.2ex;
 }
 body.dark .kaomoji { filter: invert(); }
 
