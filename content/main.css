@@ -604,7 +604,7 @@ body.dark div[role='separator']
 .kaomoji {
   display: inline-block;
   vertical-align: middle;
-  height: 1em;
+  height: 1.5em;
   line-height: 1;
   transition: filter {{transitiondur}} ease;
 }
@@ -612,7 +612,7 @@ body.dark div[role='separator']
   block-size: 1em;
   inline-size: auto;
   position: relative;
-  inset-block-start: -0.2ex;
+  inset-block-start: 0.15em;
 }
 body.dark .kaomoji { filter: invert(); }
 
