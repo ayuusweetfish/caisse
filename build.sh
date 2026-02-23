@@ -32,7 +32,7 @@ fi
 
 CP="$CP" $LUA build.lua
 
-if [[ "$*" == *"dist"* ]]; then
+if [ $? -eq 0 ] && [[ "$*" == *"dist"* ]]; then
   (cd misc/typeface-zh && bash run.sh)
   DIST=1 $LUA build.lua
 fi
