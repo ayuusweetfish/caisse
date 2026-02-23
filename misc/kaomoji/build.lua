@@ -5,7 +5,7 @@ local cwd = os.getenv('PWD') or io.popen('pwd'):read()
 local svgo = os.getenv('SVGO') or 'node_modules/svgo/bin/svgo'
 
 local outdir = cwd .. '/gen'
-os.execute('mkdir "' .. outdir .. '"')
+os.execute('mkdir -p "' .. outdir .. '"')
 
 local template1 =
 [[
