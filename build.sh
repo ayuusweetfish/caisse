@@ -3,6 +3,11 @@
 cd $(dirname ${BASH_SOURCE[0]})
 
 LUA=${LUA:-luajit}
+if [ ! -e build ] || [ "$(stat -c "%d" build/)" = "$(stat -c "%d" content/)" ]; then
+  CP="cp -l"
+else
+  CP="misc/symlinkabs.sh"
+fi
 
 if [[ "$*" == *"stat"* ]]; then
   echo "Updating stats"
@@ -25,7 +30,7 @@ if [[ "$*" == *"stat"* ]]; then
   cd ../..
 fi
 
-$LUA build.lua
+CP="$CP" $LUA build.lua
 
 if [[ "$*" == *"dist"* ]]; then
   (cd misc/typeface-zh && bash run.sh)

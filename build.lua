@@ -302,7 +302,7 @@ local function hashverfile(path, targetpath)
 end
 caisse.envadditions.hashverfile = hashverfile
 
-local cpcommand = os.getenv('CP') or 'cp -l'
+local cpcommand = os.getenv('CP') or 'cp'
 
 local function copyfile(src, ishashver, dstsuffix)
   local dst = copydst(src)

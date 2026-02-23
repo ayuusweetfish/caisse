@@ -6,9 +6,11 @@
 - `bash build.sh stats`: Update file metadata
 - `bash build.sh dist`: Distribution mode (subset fonts)
 
+Options:
 - `render=index,fireflies`: Only render a subset of pages
-- `LUA=luajit`: Use a specific Lua executable (Lua 5.4/5.1/LuaJIT)
-- `CP="cp -l"`: Use a specific file copying command. Should support `-r` argument for recursive copy. Consider `misc/symlinkabs.sh` for symlinks.
+- `LUA=luajit`: Use a specific Lua executable (Lua 5.4/LuaJIT)
+- `CP="cp -l"`: Use a specific file copying command. Should support `-r` argument for recursive copy.
+  - `build.sh` automatically sets this to `cp -r` if `build/` is on the same device as `content/` (after following symlinks), and a symlink creator otherwise.
 
 ## Miscellaneous components
 
