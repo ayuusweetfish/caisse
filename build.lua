@@ -824,7 +824,7 @@ markupfns = {
   extlink = function (href, text)
     return '<a class="pastel external" href="' .. href .. '" target="_blank">'
       .. text
-      .. '<sup class="little-icons">&#x1fa90;</sup>'
+      .. '<sup class="little-icons">&zwj;&#x1fa90;</sup>'
       .. '</a>'
   end,
   catlink = function (path, cat, text)

@@ -515,7 +515,6 @@ sup {
 }
 a.pastel.external > sup.little-icons {
   user-select: none;
-  display: inline-block;
   position: relative;
   inset-block-start: -0.05em;
   margin-inline-start: -0.25em;
