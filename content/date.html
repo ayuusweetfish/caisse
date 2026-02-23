@@ -134,7 +134,7 @@ end
   <span
       title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
     {{ termtext(year, term) }}
-    <sup class='season-{{ math.ceil(term / 3) }}'></sup>
+    <sup class='little-icons season-{{ math.ceil(term / 3) }}'></sup>
   </span>
   {{ first = false }}
 {{@ end }}

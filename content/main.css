@@ -329,8 +329,16 @@ a.external {
   border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
 }
 a.external > sup.little-icons {
+  user-select: none;
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
   transition: color ease {{transitiondur}};
+}
+a.external > sup.little-icons::after {
+  content: '\2060\1fa90';
+  position: relative;
+  inset-block-start: -0.05em;
+  margin-inline-start: -0.25em;
+  margin-inline-end: -0.5em;
 }
 body.dark a.external {
   color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%);
@@ -513,13 +521,6 @@ pre, code, .tt {
 sup {
   line-height: 0;
 }
-a.pastel.external > sup.little-icons {
-  user-select: none;
-  position: relative;
-  inset-block-start: -0.05em;
-  margin-inline-start: -0.25em;
-  margin-inline-end: -0.5em;
-}
 
 a.date-term-link::after { background: rgb(216, 216, 216); }
 .date-term {
@@ -539,11 +540,6 @@ a.date-term-link::after { background: rgb(216, 216, 216); }
   display: inline-block;
 }
 .date-term .delim { padding-inline: 0.1em 0.2em; }
-.date-term sup::after {
-  font-family: 'Ayuu Little Icons — 221202a';
-  line-height: 0;
-  display: inline-block;
-}
 .date-term sup.season-1::after { content: '\1f340'; }
 .date-term sup.season-2::after { content: '\1f338'; }
 .date-term sup.season-3::after { content: '\1f333'; }
