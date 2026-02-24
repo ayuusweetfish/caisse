@@ -2,7 +2,7 @@
 
 local rsvgconvert = os.getenv('RSVG_CONVERT') or 'rsvg-convert'
 local cwd = os.getenv('PWD') or io.popen('pwd'):read()
-local svgo = os.getenv('SVGO') or 'node_modules/svgo/bin/svgo'
+local svgo = os.getenv('SVGO') or 'node_modules/svgo/bin/svgo.js'
 
 local outdir = cwd .. '/gen'
 os.execute('mkdir -p "' .. outdir .. '"')
