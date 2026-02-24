@@ -33,9 +33,8 @@ local template1 =
      xml:space="preserve"
      x="0"
      y="14"
-     id="]]
-local template2 = [[">]]
-local template3 =
+  >]]
+local template2 =
 [[</text>
 </svg>
 ]]
@@ -70,17 +69,15 @@ while true do
     tspans = table.concat(tspans)
     local hash = basehash(curline)
     -- Write an SVG with text
-    local textsvgfile = outdir .. '/moji-' .. hash .. '-text.svg'
     local pathsvgfile = outdir .. '/moji-' .. hash .. '.svg'
     if not os.rename(pathsvgfile, pathsvgfile) then
       print(pathsvgfile, curline)
+      local textsvgfile = os.tmpname()
       local f = io.open(textsvgfile, 'w')
       local textelementid = 'moji-' .. hash
       f:write(template1)
-      f:write(textelementid)
-      f:write(template2)
       f:write(tspans)
-      f:write(template3)
+      f:write(template2)
       f:close()
       -- Convert text to paths
       local p1 = io.popen(rsvgconvert .. ' -f svg "' .. textsvgfile .. '"', 'r')
@@ -102,7 +99,7 @@ while true do
       local p2 = io.popen(svgo .. ' --precision 2 - -o "' .. pathsvgfile .. '"', 'w')
       p2:write(pathssvg)
       p2:close()
-      -- os.remove(textsvgfile)
+      os.remove(textsvgfile)
     end
     -- Clear state
     curline = {}
