@@ -1,6 +1,6 @@
--- lua % < kaomoji.txt
+-- lua build.lua < kaomoji.txt
 
-local inkscape = os.getenv('INKSCAPE') or 'inkscape'
+local rsvgconvert = os.getenv('RSVG_CONVERT') or 'rsvg-convert'
 local cwd = os.getenv('PWD') or io.popen('pwd'):read()
 local svgo = os.getenv('SVGO') or 'node_modules/svgo/bin/svgo'
 
@@ -14,23 +14,18 @@ local template1 =
 <svg
    width="1000"
    height="1000"
-   viewBox="0 0 264.58333 264.58333"
+   viewBox="0 0 1000 1000"
    version="1.1"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs2" />
-  <g
-     id="layer1">
-    <text
-       xml:space="preserve"
-       x="0"
-       y="0"
-       id="]]
+  <text
+     xml:space="preserve"
+     x="0"
+     y="18"
+     id="]]
 local template2 = [[">]]
 local template3 =
 [[</text>
-  </g>
 </svg>
 ]]
 
@@ -50,6 +45,8 @@ local htmlescapelookup = {
 local function htmlescape(s)
   return s:gsub('[%<%>%&]', htmlescapelookup)
 end
+
+local boundingbox = require('boundingbox')
 
 local curline = {}
 local tspans = {}
@@ -74,12 +71,26 @@ while true do
       f:write(tspans)
       f:write(template3)
       f:close()
-      os.execute(inkscape .. ' -o "' .. pathsvgfile ..
-        '" --export-id=' .. textelementid .. ' --export-id-only ' ..
-        '--export-plain-svg --export-text-to-path "' .. textsvgfile .. '"')
-      local content = io.popen(svgo .. ' --precision 2 "' .. pathsvgfile .. '" -o - | ' ..
-        [[perl -pe 's/ (style|aria-label)="[^"]*"//g']]):read('a')
-      io.open(pathsvgfile, 'w'):write(content):close()
+      -- Convert text to paths
+      local p1 = io.popen(rsvgconvert .. ' -f svg "' .. textsvgfile .. '"', 'r')
+      local pathssvg = p1:read('a')
+      p1:close()
+      -- Find bounding box
+      local w, h = 0, 0
+      for path in pathssvg:gmatch(' d="(.-)"') do
+        local minx, maxx, miny, maxy = boundingbox(path)
+        w = math.max(w, maxx)
+        h = math.max(h, maxy)
+      end
+      -- Replace size
+      pathssvg = pathssvg:gsub(
+        'width="1000" height="1000" viewBox="0 0 1000 1000"',
+        string.format('width="%g" height="%g" viewBox="0 0 %g %g"', w, h, w, h)
+      )
+      -- Optimize (minify)
+      local p2 = io.popen(svgo .. ' --precision 2 - -o "' .. pathsvgfile .. '"', 'w')
+      p2:write(pathssvg)
+      p2:close()
       -- os.remove(textsvgfile)
     end
     -- Clear state
