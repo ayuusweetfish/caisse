@@ -32,7 +32,7 @@ local template1 =
   <text
      xml:space="preserve"
      x="0"
-     y="18"
+     y="14"
      id="]]
 local template2 = [[">]]
 local template3 =
@@ -89,9 +89,9 @@ while true do
       -- Find bounding box
       local w, h = 0, 0
       for path in pathssvg:gmatch(' d="(.-)"') do
-        local minx, maxx, miny, maxy = boundingbox(path)
-        w = math.max(w, maxx)
-        h = math.max(h, maxy)
+        local minx, miny, maxx, maxy = boundingbox(path)
+        w = math.max(w, maxx + 1)
+        h = math.max(h, maxy + 1)
       end
       -- Replace size
       pathssvg = pathssvg:gsub(
