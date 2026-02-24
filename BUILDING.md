@@ -37,3 +37,15 @@ Dependency: FontForge (`fontforge`), WOFF2 (`woff2_compress`), WOFF (`sfnt2woff`
 `apt install fontforge woff2 woff-tools` / `dnf install fontforge woff2-tools woff`
 
 `sh build.sh` to build.
+
+### Kaomoji (`kaomoji`)
+
+Dependency: librsvg2 (`rsvg-convert`), Node.js (`node`)
+
+`apt install librsvg2-bin` / `dnf install librsvg2-tools`
+
+Run `npm i` to install SVGO and its dependencies.
+
+*TODO: Fonts should be stored somewhere. Refer to **fonts\_list.txt** for a list of file checksums.*
+
+`lua build.lua` to build.

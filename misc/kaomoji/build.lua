@@ -1,4 +1,4 @@
--- lua build.lua < kaomoji.txt
+-- lua build.lua
 
 local fontconfig = os.tmpname()
 local f = io.open(fontconfig, 'w')
@@ -61,7 +61,9 @@ local boundingbox = require('boundingbox')
 local curline = {}
 local tspans = {}
 
-local s = io.read('l')
+local inputlist = io.open('kaomoji.txt', 'r')
+
+local s = inputlist:read('l')
 while true do
   if s == '' or s == nil then
     -- Output
@@ -115,7 +117,7 @@ while true do
       ['font-stretch'] = 'normal',
       ['font-size'] = '16px',
     }
-    local paramsline = io.read('l')
+    local paramsline = inputlist:read('l')
     params['font-family'] = '\'' .. paramsline .. '\''  -- TODO: More parameters
     local paramsbuild = {}
     for k, v in pairs(params) do
@@ -124,7 +126,7 @@ while true do
     tspans[#tspans + 1] = '<tspan style="' .. table.concat(paramsbuild, ';') ..
       '">' .. htmlescape(s) .. '</tspan>'
   end
-  s = io.read('l')
+  s = inputlist:read('l')
 end
 
 os.remove(fontconfig)
