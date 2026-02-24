@@ -1,6 +1,17 @@
 -- lua build.lua < kaomoji.txt
 
-local rsvgconvert = os.getenv('RSVG_CONVERT') or 'rsvg-convert'
+local fontconfig = os.tmpname()
+local f = io.open(fontconfig, 'w')
+f:write([[
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <dir prefix="cwd">fonts</dir>
+</fontconfig>
+]])
+f:close()
+
+local rsvgconvert = os.getenv('RSVG_CONVERT') or 'FONTCONFIG_FILE=' .. fontconfig .. ' rsvg-convert'
 local cwd = os.getenv('PWD') or io.popen('pwd'):read()
 local svgo = os.getenv('SVGO') or 'node_modules/svgo/bin/svgo.js'
 
@@ -118,3 +129,5 @@ while true do
   end
   s = io.read('l')
 end
+
+os.remove(fontconfig)
