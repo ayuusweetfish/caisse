@@ -12,7 +12,7 @@ items/aakami/IMG_20190825_181704.jpg	126628	image	992	744
 items/aakami/illustration20.png	8290	image	320	240
 items/aakami/play/game.data	1495665	unknown
 items/aakami/play/game.js	11420	code
-items/aakami/play/index.html	4719	unknown
+items/aakami/play/index.html	4792	unknown
 items/aakami/play/love.js	325312	code
 items/aakami/play/love.wasm	4702493	unknown
 items/about/Ayu.jpg	17116	image	442	500
@@ -64,7 +64,7 @@ items/canta-cart/keyboard-10-keys.png	5857	image	840	200
 items/canta-cart/keyboard-transpose.png	23038	image	716	920
 items/canta-cart/play/canta-cart.js	119859	code
 items/canta-cart/play/canta-cart.wasm	188001	unknown
-items/canta-cart/play/index.html	2614	unknown
+items/canta-cart/play/index.html	2691	unknown
 items/canta-cart/sense-circuit.png	5214	image	762	246
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
@@ -92,7 +92,7 @@ items/daydream/star/star_mirror.png	22814	image	640	480
 items/daytime-cat/cover.png	26286	image	900	240
 items/daytime-cat/play/game.data	48550	unknown
 items/daytime-cat/play/game.js	11416	code
-items/daytime-cat/play/index.html	4719	unknown
+items/daytime-cat/play/index.html	4792	unknown
 items/daytime-cat/play/love.js	325312	code
 items/daytime-cat/play/love.wasm	4702493	unknown
 items/daytime-cat/screenshot.png	67714	image	720	480
@@ -107,7 +107,7 @@ items/fireflies/IMG_20220214_132810.jpg	53446	image	547	410
 items/fireflies/cover.png	47073	image	540	200
 items/fireflies/play/fireflies.zip	3581506	unknown
 items/fireflies/play/index.data	3414829	unknown
-items/fireflies/play/index.html	566	unknown
+items/fireflies/play/index.html	629	unknown
 items/fireflies/play/index.js	206390	code
 items/fireflies/play/index.wasm	613680	unknown
 items/fireflies/screenshot.jpg	34780	image	800	500
@@ -877,7 +877,7 @@ items/hitchhiker/guide_icons-4.png	3557	image	160	160
 items/ice-hatch/cover.png	22420	image	650	500
 items/ice-hatch/play/game.data	84924	unknown
 items/ice-hatch/play/game.js	11416	code
-items/ice-hatch/play/index.html	4717	unknown
+items/ice-hatch/play/index.html	4790	unknown
 items/ice-hatch/play/love.js	325312	code
 items/ice-hatch/play/love.wasm	4702493	unknown
 items/ice-hatch/screenshot1.png	14400	image	540	360
@@ -927,7 +927,7 @@ items/maylove-ex-22/cover.jpg	37199	image	720	420
 items/maylove-ex-22/game.jpg	43529	image	794	300
 items/maylove-ex-22/play/game.data	849602	unknown
 items/maylove-ex-22/play/game.js	11418	code
-items/maylove-ex-22/play/index.html	4721	unknown
+items/maylove-ex-22/play/index.html	4794	unknown
 items/maylove-ex-22/play/love.js	325312	code
 items/maylove-ex-22/play/love.wasm	4702493	unknown
 items/maylove-ex-23/Certificate.jpg	94434	image	564	750
@@ -1079,7 +1079,7 @@ items/sheepdogs/cover.jpg	110412	image	1351	550
 items/sheepdogs/play/.caisse.json	19	unknown
 items/sheepdogs/play/game.data	4715054	unknown
 items/sheepdogs/play/game.js	11420	code
-items/sheepdogs/play/index.html	4723	unknown
+items/sheepdogs/play/index.html	4796	unknown
 items/sheepdogs/play/love.js	385958	code
 items/sheepdogs/play/love.wasm	4727939	unknown
 items/sheepdogs/play/love.worker.js	3423	code
