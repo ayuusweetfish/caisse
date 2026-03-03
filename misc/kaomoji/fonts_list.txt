@@ -1,6 +1,8 @@
 find fonts -type f,l -exec sha1sum {} + | sort -k 2 | while read -r hash file; do printf "# %s\t%9d\t%s\n" ${hash} $(stat -L -c %s "$file") $(basename $file); done  # o=$(head -n 1 fonts_list.txt; sh fonts_list.txt) && echo "$o" > fonts_list.txt
 # f99ad248de437545eb55c32abd69083687369c96	 13947748	AaKaiSong2WanZi2.ttf
 # f5d778ee2bdbe070d971017f7f0160878b98a132	   170576	Cantarell-VF.otf
+# a6fc902288b3b68467d4389a9239e6913e927ebc	  4033576	DroidSansFallbackFull.ttf
+# 792f2b9ee2dcb2feadc17500fcfc131a5b1cdaf4	    35480	DroidSansThai.ttf
 # 473a225678d2ce9af7644eefa88400b883092f88	  1563944	FreeSans.ttf
 # 65f6134e1f2d0c2ab9ace978af9d590a9dca11e0	  2269108	Jomolhari-alpha3c-0605331.ttf
 # 8d31df39347cabc7031c8f8d59edb03b60b1d2de	  3532748	MPLUSRounded1c-Black.ttf
@@ -195,3 +197,13 @@ find fonts -type f,l -exec sha1sum {} + | sort -k 2 | while read -r hash file; d
 # f77fe9095138cc894f2e02ac1b5dc9db1e01a9b5	   742512	NotoSerif-SemiCondensedThinItalic.ttf
 # 02528b3d9114dc42ed67a577beeecbbc42b76132	   755308	NotoSerif-Thin.ttf
 # 5d7b3b2502c4c5909b5d987313d5006a862d862f	   749824	NotoSerif-ThinItalic.ttf
+# 442aca3df33e6cedc2d8fb65e6ceece768365383	   224592	OpenSans-Bold.ttf
+# 36e9196b272c7350fc3f03b64cd034c3e9b891b5	   213292	OpenSans-BoldItalic.ttf
+# 0ced9033e1894aa1c72728bc8db52c6377f9cc69	   222584	OpenSans-ExtraBold.ttf
+# 0007a9a40bf67b1bb2425e80b9f2fb538e7560e4	   213420	OpenSans-ExtraBoldItalic.ttf
+# 2aed30b9b91312a83399ae776e8fa4d28c1e9f50	   212896	OpenSans-Italic.ttf
+# 8303f5748af56135e6836728ac283d9f341fd878	   222412	OpenSans-Light.ttf
+# 440dbf7053c7abd6ddbd60274c8957a6ffbca90f	   213128	OpenSans-LightItalic.ttf
+# 0df472acc5cd5a006124369579b8920f1a882272	   217360	OpenSans-Regular.ttf
+# 3317764d27af28506894ea89a73a73c9f96bee61	   221328	OpenSans-Semibold.ttf
+# 7a97e1d2e698b0cd6ef799166ea2b220823c8be2	   212820	OpenSans-SemiboldItalic.ttf

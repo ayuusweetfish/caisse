@@ -43,14 +43,36 @@ Open Sans
 ∀
 Rounded Mplus 1c
 ｀
-Open Sans
+Droid Sans Fallback
 *)っ
 Rounded Mplus 1c
 
-（´-`）.｡oO（
+（
+Rounded Mplus 1c
+´-`
 Open Sans
+）
+Rounded Mplus 1c
+.
+Open Sans
+｡
+Rounded Mplus 1c; dy=-0.8
+oO
+Open Sans
+（
+Rounded Mplus 1c
 
-(๑ゝω╹๑)
+(
+Rounded Mplus 1c
+๑
+Droid Sans Thai
+ゝω
+Rounded Mplus 1c
+╹
+Noto Sans Mono
+๑
+Droid Sans Thai
+)
 Rounded Mplus 1c
 
 (｡ì _ í｡)
@@ -64,9 +86,9 @@ Rounded Mplus 1c
 ´
 Open Sans
 ﹃
-Source Han Sans
+Noto Sans CJK JP
 ｀
-Open Sans
+Droid Sans Fallback
 *)
 Rounded Mplus 1c
 
