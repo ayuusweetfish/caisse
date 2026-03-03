@@ -7,6 +7,7 @@ f:write([[
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
   <dir prefix="cwd">fonts</dir>
+  <cachedir>/tmp/fc-cache</cachedir>
 </fontconfig>
 ]])
 f:close()
@@ -60,6 +61,7 @@ local boundingbox = require('boundingbox')
 
 local curline = {}
 local tspans = {}
+local debugcmds = {}
 
 local inputlist = io.open('kaomoji.txt', 'r')
 
@@ -70,10 +72,13 @@ while true do
     curline = table.concat(curline)
     tspans = table.concat(tspans)
     local hash = basehash(curline)
+    print(hash, curline)
     -- Write an SVG with text
     local pathsvgfile = outdir .. '/moji-' .. hash .. '.svg'
     if not os.rename(pathsvgfile, pathsvgfile) then
       print(pathsvgfile, curline)
+      print(table.concat(debugcmds, '; '))
+      os.execute(table.concat(debugcmds, '; '))
       local textsvgfile = os.tmpname()
       local f = io.open(textsvgfile, 'w')
       local textelementid = 'moji-' .. hash
@@ -82,6 +87,7 @@ while true do
       f:write(template2)
       f:close()
       -- Convert text to paths
+      print(rsvgconvert .. ' -f svg "' .. textsvgfile .. '"')
       local p1 = io.popen(rsvgconvert .. ' -f svg "' .. textsvgfile .. '"', 'r')
       local pathssvg = p1:read('a')
       p1:close()
@@ -106,6 +112,7 @@ while true do
     -- Clear state
     curline = {}
     tspans = {}
+    debugcmds = {}
     if s == nil then break end
   else
     -- Append a text span
@@ -118,13 +125,16 @@ while true do
       ['font-size'] = '16px',
     }
     local paramsline = inputlist:read('l')
-    params['font-family'] = '\'' .. paramsline .. '\''  -- TODO: More parameters
+    local fontfamily = paramsline   -- TODO: More parameters
+    params['font-family'] = '\'' .. fontfamily .. '\''
     local paramsbuild = {}
     for k, v in pairs(params) do
       paramsbuild[#paramsbuild + 1] = k .. ':' .. v
     end
     tspans[#tspans + 1] = '<tspan style="' .. table.concat(paramsbuild, ';') ..
       '">' .. htmlescape(s) .. '</tspan>'
+    debugcmds[#debugcmds + 1] =
+      'bash fc_match.sh \'' .. s .. '\' \'' .. fontfamily .. '\''
   end
   s = inputlist:read('l')
 end
