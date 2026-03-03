@@ -68,6 +68,7 @@ local boundingbox = require('boundingbox')
 local curline = {}
 local tspans = {}
 local debugcmds = {}
+local lastdy = 0
 
 local inputlist = io.open('kaomoji.txt', 'r')
 
@@ -118,6 +119,7 @@ while true do
     curline = {}
     tspans = {}
     debugcmds = {}
+    lastdy = 0
     if s == nil then break end
   else
     -- Append a text span
@@ -128,16 +130,28 @@ while true do
       ['font-weight'] = 'normal',
       ['font-stretch'] = 'normal',
       ['font-size'] = '16px',
+      ['dx'] = 0, ['dy'] = 0,
     }
     local paramsline = inputlist:read('l')
-    local fontfamily = paramsline   -- TODO: More parameters
+    -- Parse arguments
+    local fontfamily = paramsline:gsub('; ([%w%-]+)=([^;]+)', function (k, v)
+      params[k] = (k == 'dx' or k == 'dy') and tonumber(v) or v
+      return ''
+    end)
     params['font-family'] = '\'' .. fontfamily .. '\''
     local paramsbuild = {}
     for k, v in pairs(params) do
-      paramsbuild[#paramsbuild + 1] = k .. ':' .. v
+      if k ~= 'dx' and k ~= 'dy' then
+        paramsbuild[#paramsbuild + 1] = k .. ':' .. v
+      end
     end
-    tspans[#tspans + 1] = '<tspan style="' .. table.concat(paramsbuild, ';') ..
-      '">' .. htmlescape(s) .. '</tspan>'
+    tspans[#tspans + 1] = string.format(
+      '<tspan style="%s" dx="%g" dy="%g">%s</tspan>',
+      table.concat(paramsbuild, ';'),
+      params['dx'], params['dy'] - lastdy,
+      htmlescape(s)
+    )
+    lastdy = params['dy']
     debugcmds[#debugcmds + 1] =
       string.format("bash fc_match.sh '%s' '%s'",
         s:gsub("'", [['\'']]), fontfamily)
