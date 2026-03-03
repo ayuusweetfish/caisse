@@ -77,7 +77,6 @@ while true do
     local pathsvgfile = outdir .. '/moji-' .. hash .. '.svg'
     if not os.rename(pathsvgfile, pathsvgfile) then
       print(pathsvgfile, curline)
-      print(table.concat(debugcmds, '; '))
       os.execute(table.concat(debugcmds, '; '))
       local textsvgfile = os.tmpname()
       local f = io.open(textsvgfile, 'w')
@@ -134,7 +133,8 @@ while true do
     tspans[#tspans + 1] = '<tspan style="' .. table.concat(paramsbuild, ';') ..
       '">' .. htmlescape(s) .. '</tspan>'
     debugcmds[#debugcmds + 1] =
-      'bash fc_match.sh \'' .. s .. '\' \'' .. fontfamily .. '\''
+      string.format("bash fc_match.sh '%s' '%s'",
+        s:gsub("'", [['\'']]), fontfamily)
   end
   s = inputlist:read('l')
 end
