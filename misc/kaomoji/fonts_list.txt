@@ -1,6 +1,8 @@
 find fonts -type f,l -exec sha1sum {} + | sort -k 2 | while read -r hash file; do printf "# %s\t%9d\t%s\n" ${hash} $(stat -L -c %s "$file") $(basename $file); done  # o=$(head -n 1 fonts_list.txt; sh fonts_list.txt) && echo "$o" > fonts_list.txt
+# f99ad248de437545eb55c32abd69083687369c96	 13947748	AaKaiSong2WanZi2.ttf
 # f5d778ee2bdbe070d971017f7f0160878b98a132	   170576	Cantarell-VF.otf
 # 473a225678d2ce9af7644eefa88400b883092f88	  1563944	FreeSans.ttf
+# 65f6134e1f2d0c2ab9ace978af9d590a9dca11e0	  2269108	Jomolhari-alpha3c-0605331.ttf
 # 8d31df39347cabc7031c8f8d59edb03b60b1d2de	  3532748	MPLUSRounded1c-Black.ttf
 # 0a7ddb6b417497190665f7f4b973e0c7ae67d750	  3443204	MPLUSRounded1c-Bold.ttf
 # 73e649edf37ffac1ed8192b933e269e89bb3ee04	  3526192	MPLUSRounded1c-ExtraBold.ttf

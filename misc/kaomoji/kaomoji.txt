@@ -17,8 +17,24 @@ AaKaiSong
 ♡
 Rounded Mplus 1c
 
-₍˄·͈༝·͈˄*₎◞ ̑̑
-Open Sans
+₍
+Noto Sans
+˄
+Noto Serif; dy=2
+·͈
+Noto Sans
+༝
+Jomolhari
+·͈
+Noto Sans; dx=1
+˄
+Noto Serif; dy=2
+*₎
+Noto Sans
+◞
+FreeSans
+ ̑̑
+Noto Sans; dy=1.5
 
 (っ*
 Rounded Mplus 1c
@@ -161,19 +177,19 @@ Rounded Mplus 1c
 Rounded Mplus 1c
 
 ദ്ദി
-Free Sans
+FreeSans
 (˵ 
 Rounded Mplus 1c
 •̀ 
 Cantarell
 ᴗ
-Free Sans
+Noto Sans
  - ˵ )
 Rounded Mplus 1c
 
 ≥
 Rounded Mplus 1c
 ﹏
-Noto Sans
+Noto Sans CJK JP
 ≤
 Rounded Mplus 1c
