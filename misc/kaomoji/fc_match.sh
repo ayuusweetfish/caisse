@@ -26,6 +26,9 @@ for (( i=0; i<${#input_string}; i++ )); do
     echo -ne '\033[0;33m'
   fi
   echo -n "U+${cp} [$char] ${font} -> ${fc_output}"
+  if [[ "${matched_family}" != "${font}" ]]; then
+    echo -n ' [mismatch]'
+  fi
   echo -ne '\033[0m\n'
 done
 

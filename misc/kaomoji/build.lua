@@ -48,6 +48,12 @@ local function basehash(s)
   return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
 end
 
+local overwrites = {}
+for i = 1, #arg do
+  overwrites[arg[i]] = true
+  overwrites[basehash(arg[i])] = true
+end
+
 local htmlescapelookup = {
   ['<'] = '&lt;',
   ['>'] = '&gt;',
@@ -75,7 +81,8 @@ while true do
     print(hash, curline)
     -- Write an SVG with text
     local pathsvgfile = outdir .. '/moji-' .. hash .. '.svg'
-    if not os.rename(pathsvgfile, pathsvgfile) then
+    if overwrites[curline] or overwrites[hash] or
+        not os.rename(pathsvgfile, pathsvgfile) then
       print(pathsvgfile, curline)
       os.execute(table.concat(debugcmds, '; '))
       local textsvgfile = os.tmpname()
@@ -86,7 +93,6 @@ while true do
       f:write(template2)
       f:close()
       -- Convert text to paths
-      print(rsvgconvert .. ' -f svg "' .. textsvgfile .. '"')
       local p1 = io.popen(rsvgconvert .. ' -f svg "' .. textsvgfile .. '"', 'r')
       local pathssvg = p1:read('a')
       p1:close()
