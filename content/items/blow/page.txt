@@ -1,0 +1,49 @@
+{{title.zh=}}Blow Something
+{{intro.zh=}}用泡泡作画的“你画我猜”小游戏
+{{title.en=}}Blow Something
+{{intro.en=}}A draw-and-guess game with bubbles as the paintbrush
+
+{{bannerimg=}}cover.png
+{{bannerimgpos=}}50,40
+{{bannerimgalt.zh=}}游戏封面图。小猫站在桌子后，举起一只手臂，展示身边各种形状漂浮的泡泡与糖果、玻璃弹珠等各色小物品；桌上有塑料瓶和照相机。
+{{bannerimgalt.en=}}Cover art of the game. A kitten stands behind a table, an arm raised, surrounded by floating bubbles and an assortment of items including candies, glass marbles, etc. On the table sit a plastic bottle and a camera.
+
+{{date=}}2024.24,2026.02
+
+{{contents.zh=}}
+<link https://globalgamejam.org Global Game Jam> 2025 参与作品，主题“泡泡”（<lang en Bubble>）。
+
+<link https://blow.ayu.land 在此游玩>。
+
+用泡泡作画的“你画我猜”小游戏。玩家拖动并戳破肥皂泡绘制图案，赛博猫咪则尝试读懂这幅灵魂画作。三个泡泡要怎样才能描绘出万千世界？我们相信每位玩家都会有自己的灵感。泡泡总是让我们想起回忆里的童年；在这里，我们尝试用像素画风重现千禧年温暖的午后一角。
+
+!<img photo_zh.png <= 游戏截图，泡泡绘制的“橘子”被猫咪猜中，彩色纸带飘在空中。> vertical small>
+
+Jam 结束后一年更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的 <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>。<date 2026.01,2026.02>
+
+网页版包含少量神秘技巧（如从浏览器版 LÖVE 访问网络、调用 WebAssembly、保存照片，以及泡泡渲染算法），可供感兴趣的读者参考。
+
+{{contents.en=}}
+Participating entry to <link https://globalgamejam.org Global Game Jam> 2025, with the theme <it Bubble>.
+
+<link https://blow.ayu.land Play here>.
+
+A draw-and-guess game with bubbles as the paintbrush. The player drags and pops the soap bubbles to paint, while the cyber kitten attempts to figure out these bubbly doodles. How can just three bubbles capture the vastness of the world? We believe that every player will find inspirations of their own. Bubbles always remind us of our past childhood memories; here, we try to recreate a slice of a mellow afternoon from the 2000s in pixel art.
+
+!<img photo_en.png <= Game screenshot, an “Orange” painted by bubbles is guessed correctly by the kitten; confetti fly in the air.> vertical small>
+
+Post-jam update one year later: bubble highlight; English support; extended word list; screenshot. The image recognition model was also migrated from Gemini 1.5 Flash (which had already been retired) to the newly-released <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>.
+
+The web version contains a few mysterious techniques (e.g., accessing network in browser-version LÖVE, calling WebAssembly, saving screenshots, as well as the bubble’s rendering algorithm), for reference to the interested audience.
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://blow.ayu.land 游玩链接>>
+  <li <link https://github.com/ayuusweetfish/Blow-Something 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://blow.ayu.land Play>>
+  <li <link https://github.com/ayuusweetfish/Blow-Something Source repository (GitHub)>>
+>
