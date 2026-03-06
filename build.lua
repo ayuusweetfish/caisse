@@ -822,6 +822,12 @@ markupfns = {
     return '<a href="' .. href .. '">' .. text .. '</a>'
   end,
   extlink = function (href, text)
+    if href:match('^https://[a-z%-]+%.ayu%.land') then
+      return '<a class="pastel external subdomain" href="' .. href .. '" target="_blank">'
+        .. text
+        .. '<sup class="little-icons"></sup>'
+        .. '</a>'
+    end
     return '<a class="pastel external" href="' .. href .. '" target="_blank">'
       .. text
       .. '<sup class="little-icons"></sup>'

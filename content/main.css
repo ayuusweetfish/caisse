@@ -330,7 +330,7 @@ a.external {
 }
 a.external > sup.little-icons {
   user-select: none;
-  color: hsl({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
+  color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
   transition: color ease {{transitiondur}};
 }
 a.external > sup.little-icons::after {
