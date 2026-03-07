@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1, maximum-scale=1">
+    <title>Nectar Nexus</title>
+    <style>
+      body { margin: 0; padding: 0; background: #040404; }
+      canvas {
+        border: none; background: black;
+        width: 100vw; height: 56.25vw; max-height: 100vh; max-width: 177.778vh;
+        width: 100dvw; height: 56.25dvw; max-height: 100dvh; max-width: 177.778dvh;
+        position: absolute; margin: auto;
+        top: 0; bottom: 0; left: 0; right: 0;
+      }
+      #loading {
+        position: absolute;
+        bottom: 0;
+        user-select: none;
+        color: #fefefe;
+      }
+      button#fullscreen-button {
+        background: none; border: none;
+        padding: 0; line-height: 0;
+        margin: 12px;
+        position: absolute; bottom: 0; right: 0;
+        opacity: 0.6;
+        transition: opacity 0.1s ease;
+        cursor: pointer;
+      }
+      button#fullscreen-button:hover,
+      button#fullscreen-button:active {
+        opacity: 1;
+      }
+      button#fullscreen-button > img {
+        width: 48px; height: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    <p id='loading'>Loading...</p>
+    <button id='fullscreen-button' style='display: none'><img src=''></button>
+
+    <script type='text/javascript'>
+      var loadingText = document.getElementById('loading');
+
+      window.onload = function () { window.focus(); };
+      window.onclick = function () { window.focus(); };
+
+      window.addEventListener('load', () => {
+        const button = document.getElementById('fullscreen-button')
+        const image = button.querySelector('img')
+        const updateIcon = () => {
+          if (document.fullscreenElement || document.webkitFullscreenElement)
+            image.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2ZmZmZmZiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xNDQsMTA0VjY0YTgsOCwwLDAsMSwxNiwwVjg0LjY5bDQyLjM0LTQyLjM1YTgsOCwwLDAsMSwxMS4zMiwxMS4zMkwxNzEuMzEsOTZIMTkyYTgsOCwwLDAsMSwwLDE2SDE1MkE4LDgsMCwwLDEsMTQ0LDEwNFptLTQwLDQwSDY0YTgsOCwwLDAsMCwwLDE2SDg0LjY5TDQyLjM0LDIwMi4zNGE4LDgsMCwwLDAsMTEuMzIsMTEuMzJMOTYsMTcxLjMxVjE5MmE4LDgsMCwwLDAsMTYsMFYxNTJBOCw4LDAsMCwwLDEwNCwxNDRabTY3LjMxLDE2SDE5MmE4LDgsMCwwLDAsMC0xNkgxNTJhOCw4LDAsMCwwLTgsOHY0MGE4LDgsMCwwLDAsMTYsMFYxNzEuMzFsNDIuMzQsNDIuMzVhOCw4LDAsMCwwLDExLjMyLTExLjMyWk0xMDQsNTZhOCw4LDAsMCwwLTgsOFY4NC42OUw1My42Niw0Mi4zNEE4LDgsMCwwLDAsNDIuMzQsNTMuNjZMODQuNjksOTZINjRhOCw4LDAsMCwwLDAsMTZoNDBhOCw4LDAsMCwwLDgtOFY2NEE4LDgsMCwwLDAsMTA0LDU2WiI+PC9wYXRoPjwvc3ZnPgo='
+          else
+            image.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iI2ZmZmZmZiIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTYsNDhWOTZhOCw4LDAsMCwxLTE2LDBWNjcuMzFsLTQyLjM0LDQyLjM1YTgsOCwwLDAsMS0xMS4zMi0xMS4zMkwxODguNjksNTZIMTYwYTgsOCwwLDAsMSwwLTE2aDQ4QTgsOCwwLDAsMSwyMTYsNDhaTTk4LjM0LDE0Ni4zNCw1NiwxODguNjlWMTYwYTgsOCwwLDAsMC0xNiwwdjQ4YTgsOCwwLDAsMCw4LDhIOTZhOCw4LDAsMCwwLDAtMTZINjcuMzFsNDIuMzUtNDIuMzRhOCw4LDAsMCwwLTExLjMyLTExLjMyWk0yMDgsMTUyYTgsOCwwLDAsMC04LDh2MjguNjlsLTQyLjM0LTQyLjM1YTgsOCwwLDAsMC0xMS4zMiwxMS4zMkwxODguNjksMjAwSDE2MGE4LDgsMCwwLDAsMCwxNmg0OGE4LDgsMCwwLDAsOC04VjE2MEE4LDgsMCwwLDAsMjA4LDE1MlpNNjcuMzEsNTZIOTZhOCw4LDAsMCwwLDAtMTZINDhhOCw4LDAsMCwwLTgsOFY5NmE4LDgsMCwwLDAsMTYsMFY2Ny4zMWw0Mi4zNCw0Mi4zNWE4LDgsMCwwLDAsMTEuMzItMTEuMzJaIj48L3BhdGg+PC9zdmc+Cg=='
+        }
+        const fullScreenFn = [(
+          document.body.requestFullscreen ||
+          document.body.webkitRequestFullscreen ||
+          document.body.webkitEnterFullscreen
+        ), (
+          document.exitFullscreen ||
+          document.webkitExitFullscreen
+        )]
+        if (fullScreenFn[0] && fullScreenFn[1]) {
+          button.addEventListener('click', () => {
+            if (document.fullscreenElement || document.webkitFullscreenElement)
+              fullScreenFn[1].apply(document)
+            else
+              fullScreenFn[0].apply(document.body)
+            updateIcon()
+          })
+          document.addEventListener('fullscreenchange', (e) => updateIcon())
+          button.style.display = ''
+          updateIcon()
+        } else {
+          button.remove()
+        }
+      })
+
+      window.addEventListener("keydown", function(e) {
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+          e.preventDefault();
+        }
+      }, false);
+
+      var Module = {
+        arguments: ["./game.love"],
+        INITIAL_MEMORY: 134217728,
+        print: function (text) {
+          if (loadingText !== null) {
+            if (text !== '*finish') {
+              loadingText.innerText = 'Loading assets... (' + text + ')';
+            } else {
+              loadingText.remove();
+              loadingText = null;
+            }
+          }
+        },
+        printErr: console.error.bind(console),
+        canvas: (function() {
+          var canvas = document.getElementById('canvas');
+
+          // As a default initial behavior, pop up an alert when webgl context is lost. To make your
+          // application robust, you may want to override this behavior before shipping!
+          // See http://www.khronos.org/registry/webgl/specs/latest/1.0/#5.15.2
+          canvas.addEventListener("webglcontextlost", function(e) { alert('WebGL context lost. You will need to reload the page.'); e.preventDefault(); }, false);
+
+          return canvas;
+        })(),
+        setStatus: function(text) {
+          if (text) {
+            if (text === 'Running...') text = 'Loading assets...';
+            loadingText.innerText = text;
+          } else if (Module.remainingDependencies === 0) {
+            loadingText.innerText = '';
+          }
+        },
+        totalDependencies: 0,
+        remainingDependencies: 0,
+        monitorRunDependencies: function(left) {
+          this.remainingDependencies = left;
+          this.totalDependencies = Math.max(this.totalDependencies, left);
+          Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+        }
+      };
+      Module.setStatus('Downloading...');
+      window.onerror = function(event) {
+        // TODO: do not warn on ok events like simulating an infinite loop or exitStatus
+        Module.setStatus('Exception thrown, see JavaScript console');
+        Module.setStatus = function(text) {
+          if (text) Module.printErr('[post-exception status] ' + text);
+        };
+      };
+
+      var applicationLoad = function(e) {
+        Love(Module);
+      }
+    </script>
+    <script type="text/javascript" src="play/game.js"></script>
+    <script async type="text/javascript" src="play/love.js" onload="applicationLoad(this)"></script>
+  </body>
+</html>
