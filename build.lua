@@ -833,10 +833,6 @@ markupfns = {
       .. '<sup class="little-icons"></sup>'
       .. '</a>'
   end,
-  catlink = function (path, cat, text)
-    return '<a class="pastel ' .. cat .. '" href="' .. path .. '">'
-      .. text .. '</a>'
-  end,
   link = function (path, text) return itemlink(path, text, false) end,
   subpagelink = function (path, text)
     local itemname = split(path, '/')[1]

@@ -6,7 +6,7 @@
       {{ introsep = true }}
       {{ trintro = trintro:sub(1, #trintro - 1) }}
     {{@ end }}
-    {{ rendermarkup(trintro) }}
+    {{ rendermarkup(trintro, name) }}
     {{@ introsep }}
       <div role='separator' class='item-separator'></div>
     {{@ end }}
