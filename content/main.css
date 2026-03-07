@@ -348,6 +348,25 @@ body.dark a.external {
 body.dark a.external > sup.little-icons {
   color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%, 70%);
 }
+/* Subdomain links */
+a.external.subdomain > sup.little-icons::after {
+  content: '\2060\1f352';
+}
+{{ hue, sat, val1, val2 = 18, 90, 42, 92 }}
+a.external.subdomain {
+  color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
+  border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
+}
+a.external.subdomain > sup.little-icons {
+  color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
+}
+body.dark a.external.subdomain {
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%);
+  border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.35, 40) }};
+}
+body.dark a.external.subdomain > sup.little-icons {
+  color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%, 70%);
+}
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
 .pastel.miscellaneous {
   color: hsl({{hue}}deg, 0%, {{val1}}%);

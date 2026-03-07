@@ -9,8 +9,8 @@ NotoEmojiSubset = sorted(set([
   0x1f310, 0x1f319, 0x26aa,
   # Categories
   0x1fab8, 0x1fa87, 0x1fa81, 0x1fab6, 0x2618, 0x1fae7, 0x1f390, 0x1fabb,
-  # External link, star
-  0x1fa90, 0x1f31f,
+  # External link, subdomain link, star
+  0x1fa90, 0x1f352, 0x1f31f,
   # File types
   0x1f4e6, 0x1f3a7, 0x1f3b6, 0x1f3bc, 0x1f5bc, 0x1f39e, 0x1f4c3, 0x1f47e,
   # Music track
@@ -56,8 +56,9 @@ def tr(uni, *mats):
 def r(degs): return psMat.rotate(degs * math.pi / 180)
 def s(scale): return psMat.scale(scale)
 def t(x, y): return (x, y)
-# External link icon
+# External/subdomain link icon
 tr(0x1fa90, r(-60))
+tr(0x1f352, r(1))
 # Star
 tr(0x1f31f, r(8))
 # Seasons
