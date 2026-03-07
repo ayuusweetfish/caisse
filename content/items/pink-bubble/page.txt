@@ -12,7 +12,7 @@
 
 {{contents.zh=}}
 !<note 课程《传媒研究》合作项目。>
-一件互动艺术装置，呈现网络暴力受害者依靠个人力量所面对的巨大困难。
+一件互动艺术装置方案原型，呈现网络暴力受害者依靠个人力量所面对的巨大困难。
 
 !<hr>
 
@@ -60,7 +60,7 @@
 
 {{contents.en=}}
 !<note Collaborative project for the course “Communication Studies”.>
-An interactive art installation discussing the massive difficulties of individuals overcoming cyberviolence.
+Prototype of an interactive art installation discussing the massive difficulties of individuals overcoming cyberviolence.
 
 !<hr>
 

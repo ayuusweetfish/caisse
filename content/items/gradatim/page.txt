@@ -11,7 +11,7 @@
 !<img Gradatim_1.jpg 关卡选择界面截图>
 !<img Gradatim_2.jpg 游戏界面截图>
 
-是《程序设计基础》课程的结课项目，受《啪嗒砰》和《蔚蓝》两个游戏的启发做了一个缝合品类的游戏。因为很喜欢所以那段时间一直都在做，其他课都没怎么认真学；还认真构思了一个部落遭遇天灾破坏了所有艺术所以有一位充满热情的学徒跑去周游世界求师学艺的中二故事（翻了翻当时的东西，三室一厅在抠了 (/- )
+是《程序设计基础》课程的结课项目，受《啪嗒砰》和《蔚蓝》两个游戏的启发做了一个缝合品类的游戏。因为很喜欢所以那段时间一直都在做，其他课都没怎么认真学；还认真构思了一个部落遭遇天灾破坏了所有艺术所以有一位充满热情的学徒跑去周游世界求师学艺的中二故事（翻了翻当时的东西，脚趾头在抠三室一厅了 <kao (´д⊂)>
 !<blockquote <~~=
   大作业不是 Game Jam —— 一个半月的时间，久到让人可以与一堆混乱不堪的代码、图片、声音和配置文件产生感情。
 >>
@@ -30,7 +30,7 @@ A platformer/rhythmic game. The moments available for jumps and dashes are dicta
 !<img Gradatim_1.jpg Screenshot of the level selection screen>
 !<img Gradatim_2.jpg Screenshot of the gameplay screen>
 
-The final project of the course “Fundamentals of Programming”. A hybrid-genre game inspired by Patapon and Celeste. I was quite absorbed, spending all the time on it without sparing efforts for other courses. I even had a serious idea of a story about a catastrophe-stricken tribe which lost all their arts and a passionate apprentice who went off travelling the world learning from maestri.
+The final project of the course “Fundamentals of Programming”. A hybrid-genre game inspired by <it Patapon> and <it Celeste>. I was quite absorbed, spending all the time on it without sparing efforts for other courses. I even had a serious idea of a story about a catastrophe-stricken tribe which lost all their arts and a passionate apprentice who went off travelling the world learning from maestri. Those naive drafts might embarass me by now <kao (´д⊂)>
 !<blockquote <~~=
   The course project is not a game jam — one and a half months is enough for one to become associated with a messy pile of code, images, sounds, and configuration files.
 >>

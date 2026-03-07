@@ -215,3 +215,9 @@ Rounded Mplus 1c
 Noto Sans CJK JP
 ≤
 Rounded Mplus 1c
+
+; - ;
+Rounded Mplus 1c
+
+T T
+Rounded Mplus 1c
