@@ -11,14 +11,14 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about 关于自己>>
   <li <link fireflies 萤火虫>>
   <li <link medle 旋律猜谜>>
-  <li <link flight 一起去梦里飞行吧>>
+  <li <link flight 飞行日记>>
+  <li <link lunisolar 地球爆炸之谜>>
 >
 
 !<list
   <li <link friends 朋友们>>
   <li <link email E-mail>>
   <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
-  <li <link backyard 后花园>>
 >
 
 !<--=' !<img fish.png 一条简笔画小鱼 orig-size> '>
@@ -31,7 +31,6 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <date 2026.03> <link blow>>
   <li <date 2026.02> <link fox>>
   <li <date 2025.01> <link amakinoko>>
-  <li <date 2024.24> <link lunisolar>>
 >
 
 <link revlog>
@@ -41,14 +40,14 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <link about About>>
   <li <link fireflies Fireflies>>
   <li <link medle Melody puzzles>>
-  <li <link flight Go flying in dreams>>
+  <li <link flight Flight journal>>
+  <li <link lunisolar Earth’s explosion mystery>>
 >
 
 !<list
   <li <link friends Friends>>
   <li <link email E-mail>>
   <li <title ayuusweetfish <relme <link https://github.com/ayuusweetfish GitHub>>>>
-  <li <link backyard Backyard>>
 >
 
 !<--=' !<img fish.png <= Line art of a fish> orig-size> '>
@@ -61,7 +60,6 @@ Half-baked polyglot, inquiring into every corner of the world.
   <li <date 2026.03> <link blow>.>
   <li <date 2026.02> <link fox>.>
   <li <date 2025.01> <link amakinoko>.>
-  <li <date 2024.24> <link lunisolar>.>
 >
 
 <link revlog>
