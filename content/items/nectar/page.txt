@@ -14,7 +14,7 @@
 !<note <link https://ldjam.com/events/ludum-dare/55 Ludum Dare 55> 组队参赛作品，成员（按笔画排列）：天雷、木星果、鱼、酸。>
 可以在<subpagelink nectar/play 本站>游玩，或使用本地版：
 !<filetable
-  <file play/Nectar_Nexus.love LÖVE 游戏包>
+  <file Nectar_Nexus.love LÖVE 游戏包>
 >
 
 《蜂觅蜜风》（暂定中文标题；原题 <lang en <it Nectar Nexus>>）是一个解谜游戏，玩家将在陶瓷花瓶上的精巧纹路之间探索花朵与蜜蜂的秘密。玩家也许是化作了瓷世界的花神，掌握着每一朵花的开放；而被花香吸引的蜜蜂似乎成为了花园发荣滋长的关键联结。
@@ -45,7 +45,7 @@
 !<note A collaborative entry to <link https://ldjam.com/events/ludum-dare/55 Ludum Dare 55>. Team members (in alphabetical order): Ayu, Jupiter in TARDIS, Persepolis, Suan.>
 Play <subpagelink nectar/play on this site>, or use the local version:
 !<filetable
-  <file play/Nectar_Nexus.love LÖVE game package>
+  <file Nectar_Nexus.love LÖVE game package>
 >
 
 <it Nectar Nexus> is a puzzle game where the player explores the secrets of blossoms and flowers hidden among the delicate patterns on porcelain vases. The player seems to have taken on the role of the floral deity of the porcelain world, having in their hands the blooming of each blossom; while the bees, attracted by the scents, appears to be the key nexus for the garden to flourish.
