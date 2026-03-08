@@ -28,7 +28,7 @@
 
 !<hr>
 
-约两年后更新：增加谜题预览与选择界面。<date 2026.02,2026.03>
+约两年后更新：增加谜题预览与选择界面；在互动细节与网页版性能上稍作优化。<date 2026.02,2026.03>
 
 !<--='
 !<hr>
@@ -59,7 +59,7 @@ There are a total of 30 puzzles in the game. Hints and reference solutions are p
 
 !<hr>
 
-An update around two years later: added a screen for puzzle preview and selection. <date 2026.02,2026.03>
+An update around two years later: added a screen for puzzle preview and selection; minor optimizations in interaction and web version performance. <date 2026.02,2026.03>
 
 {{rellinks.zh=}}
 !<list

@@ -28,6 +28,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 最近更新>
 !<list
+  <li <date 2026.03> <link nectar>，少量更新>
   <li <date 2026.03> <link blow>>
   <li <date 2026.02> <link fox>>
   <li <date 2025.01> <link amakinoko>>
@@ -57,6 +58,7 @@ Half-baked polyglot, inquiring into every corner of the world.
 
 !<h1 Recent updates>
 !<list
+  <li <date 2026.03> <link nectar>, minor update.>
   <li <date 2026.03> <link blow>.>
   <li <date 2026.02> <link fox>.>
   <li <date 2025.01> <link amakinoko>.>
