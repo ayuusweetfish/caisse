@@ -19,7 +19,7 @@
 
 !<img photo_zh.png <= 游戏截图，泡泡绘制的“橘子”被猫咪猜中，彩色纸带飘在空中。> vertical small>
 
-Jam 结束后一年更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 3.5>。<date 2026.01,2026.02>
+Jam 结束后一年更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 Qwen 3.5>。<date 2026.01,2026.02>
 
 网页版包含少量神秘技巧（如从浏览器版 LÖVE 访问网络、调用 WebAssembly、保存照片，以及泡泡渲染算法），可供感兴趣的读者参考。
 
