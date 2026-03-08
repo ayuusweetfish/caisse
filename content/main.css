@@ -341,18 +341,18 @@ a.external > sup.little-icons::after {
   margin-inline-end: -0.5em;
 }
 body.dark a.external {
-  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%);
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.27}}%);
   border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.35, 40) }};
 }
 /* Safari clips glyph with `opacity`; work around */
 body.dark a.external > sup.little-icons {
-  color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%, 70%);
+  color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.27}}%, 70%);
 }
 /* Subdomain links */
 a.external.subdomain > sup.little-icons::after {
   content: '\2060\1f352';
 }
-{{ hue, sat, val1, val2 = 18, 90, 42, 92 }}
+{{ hue, sat, val1, val2 = 10, 90, 42, 90 }}
 a.external.subdomain {
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
   border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
@@ -361,11 +361,11 @@ a.external.subdomain > sup.little-icons {
   color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
 }
 body.dark a.external.subdomain {
-  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%);
+  color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.27}}%);
   border-image-source: {{ underlinesvg(hue, sat + (100 - sat) * 0.4, 100 - (100 - val2) * 0.35, 40) }};
 }
 body.dark a.external.subdomain > sup.little-icons {
-  color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.3}}%, 70%);
+  color: hsla({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.27}}%, 70%);
 }
 {{ hue, sat, val1, val2 = 0, 0, 40, 80 }}
 .pastel.miscellaneous {
