@@ -20,7 +20,7 @@ htmllinks = function (links)
     local link = links[i]
     elms[i] = "<li><a class='pastel external' href='" .. link
       .. "' target='_blank'>" .. tr(sitename(link))
-      .. "<sup class='little-icons'>&#x1fa90;</sup></a></li>"
+      .. "<sup class='little-icons'></sup></a></li>"
   end
   return table.concat(elms)
 end

@@ -332,13 +332,14 @@ a.external > sup.little-icons {
   user-select: none;
   color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
   transition: color ease {{transitiondur}};
+  margin-inline-end: 0.533em;
+  position: relative;
 }
 a.external > sup.little-icons::after {
   content: '\2060\1fa90';
-  position: relative;
-  inset-block-start: -0.05em;
-  margin-inline-start: -0.25em;
-  margin-inline-end: -0.5em;
+  position: absolute;
+  inset-block-start: 0.45em;
+  inset-inline-start: -0.25em;
 }
 body.dark a.external {
   color: hsl({{hue}}deg, {{sat + (100 - sat) * 0.3}}%, {{100 - (100 - val1) * 0.27}}%);
