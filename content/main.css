@@ -57,29 +57,33 @@ nav, main, aside {
 }
 nav, main, aside, footer { padding: 1rem; }
 
-nav > div > header {
+.nav-present > header {
   font-size: 1.5rem;
   font-weight: bold;
   margin-block: 0.83em;
 }
-nav > div > header > a {
+.nav-present > header > a {
   text-decoration: none;
   color: inherit;
 }
 
-nav > div > ul {
+.nav-present > ul {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
-nav > div > ul > li {
+.nav-present > ul > li {
   flex: 1 0 2.25em;
 }
-nav > div > ul > li::before {
+.nav-present > ul > li::before {
   display: none;
 }
-nav > div > ul > li span.little-icons {
+.nav-present > ul > li span.little-icons {
   margin-inline-end: 0.125em;
+}
+
+#icon-buttons {
+  margin-block-end: 1em;
 }
 
 #lang-container {
@@ -172,7 +176,7 @@ nav > div, aside > div {
 
 @media (max-width: 60rem) {
   #main-grid {
-    display: block;
+    flex-wrap: wrap;
   }
   #main-grid > nav {
     width: 23.8%; /* 5/21 */
@@ -205,12 +209,15 @@ nav > div, aside > div {
     inset-block-start: 2.5rem;
     z-index: -10;
   }
-  .aside-decor {
+  aside .aside-decor {
     display: none;
   }
 }
 
 @media (max-width: 48rem) {
+  #main-grid {
+    display: block;
+  }
   #main-grid > nav,
   #main-grid > main,
   #main-grid > aside {
@@ -223,29 +230,32 @@ nav > div, aside > div {
   main {
     padding-block-start: 1.25rem;
   }
-  nav > div > ul {
+  .nav-present > ul {
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     margin-block-end: 0;
     transition: box-shadow {{transitiondur}} ease;
   }
-  nav > div > ul > li {
+  .nav-present > ul > li {
     flex: 1 0 auto;
     margin-block-end: 0.25em;
   }
-  nav > div > ul > li:not(:last-child) {
+  .nav-present > ul > li:not(:last-child) {
     margin-inline-end: 1rem;
   }
-  nav > div > ul.scroll-shadow-start {
+  .nav-present > ul.scroll-shadow-start {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  nav > div > ul.scroll-shadow-end {
+  .nav-present > ul.scroll-shadow-end {
     box-shadow: -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  nav > div > ul.scroll-shadow-start.scroll-shadow-end {
+  .nav-present > ul.scroll-shadow-start.scroll-shadow-end {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%),
                -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
+  }
+  nav .aside-decor {
+    display: none;
   }
   #icon-buttons {
     position: absolute;
