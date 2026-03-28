@@ -48,14 +48,19 @@ footer {
   align-items: stretch;
 }
 nav { width: 20%; }
-main { width: 60%; }
-aside { width: 20%; }
+#main-aside-container { width: 80%; }
+main { width: 75%; } /* 60% */
+aside { width: 25%; } /* 20% */
 nav, main, aside {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
 }
 nav, main, aside, footer { padding: 1rem; }
+#main-aside-container {
+  display: flex;
+  flex-direction: row;
+}
 
 .nav-present > header {
   font-size: 1.5rem;
@@ -178,15 +183,18 @@ nav > div, aside > div {
   #main-grid {
     flex-wrap: wrap;
   }
-  #main-grid > nav {
+  #main-grid nav {
     width: 23.8%; /* 5/21 */
   }
-  #main-grid > main {
+  #main-aside-container {
     width: 76.2%; /* 16/21 */
+    flex-direction: column;
   }
-  #main-grid > aside {
-    width: 76.2%; /* 16/21 */
-    margin-inline-start: 23.8%;
+  #main-grid main {
+    width: 100%;
+  }
+  #main-grid aside {
+    width: 100%;
   }
 
   main {
@@ -218,11 +226,14 @@ nav > div, aside > div {
   #main-grid {
     display: block;
   }
-  #main-grid > nav,
-  #main-grid > main,
-  #main-grid > aside {
+  #main-grid nav,
+  #main-grid main,
+  #main-grid aside {
     width: 100%;
     margin-inline-start: 0;
+  }
+  #main-aside-container {
+    width: 100%;
   }
   nav {
     padding-block: 0.5rem 0.25rem;
