@@ -31,7 +31,7 @@
 {{@ not ((intro and intro ~= '') or bannerimg) and toc == 'true' }}
   <div role='separator' class='item-separator hidden-in-widest'></div>
 {{@ end }}
-<section class='item-content e-content'>{{ rendermarkup(tr(contents)) }}</section>
+<div class='item-content e-content'>{{ rendermarkup(tr(contents)) }}</div>
 {{@ date }}
 <div class='item-date'>
   {{ renderdate(date) }}
