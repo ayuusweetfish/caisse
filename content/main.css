@@ -44,12 +44,13 @@ footer {
 
 #main-grid {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  align-items: stretch;
 }
 nav { width: 20%; }
 main { width: 60%; }
 aside { width: 20%; }
-#main-grid, nav, main, aside {
+nav, main, aside {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
@@ -159,8 +160,20 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
 #related-links ul li {
   margin-block: 0.5em;
 }
+aside > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+aside .aside-decor {
+  flex-grow: 1;
+  background: coral;
+}
 
 @media (max-width: 60rem) {
+  #main-grid {
+    display: block;
+  }
   #main-grid > nav {
     width: 23.8%; /* 5/21 */
   }
@@ -191,6 +204,9 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   #curcat-icon {
     inset-block-start: 2.5rem;
     z-index: -10;
+  }
+  aside .aside-decor {
+    display: none;
   }
 }
 
