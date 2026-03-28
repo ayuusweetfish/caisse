@@ -175,8 +175,10 @@ nav > div, aside > div {
   height: 100%;
 }
 .aside-decor {
+  pointer-events: none;
   flex-grow: 1;
   background: coral;
+  opacity: 0.05;
 }
 
 @media (max-width: 60rem) {
