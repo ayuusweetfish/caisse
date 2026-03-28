@@ -57,28 +57,28 @@ nav, main, aside {
 }
 nav, main, aside, footer { padding: 1rem; }
 
-nav > header {
+nav > div > header {
   font-size: 1.5rem;
   font-weight: bold;
   margin-block: 0.83em;
 }
-nav > header > a {
+nav > div > header > a {
   text-decoration: none;
   color: inherit;
 }
 
-nav > ul {
+nav > div > ul {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
-nav > ul > li {
+nav > div > ul > li {
   flex: 1 0 2.25em;
 }
-nav > ul > li::before {
+nav > div > ul > li::before {
   display: none;
 }
-nav > ul > li span.little-icons {
+nav > div > ul > li span.little-icons {
   margin-inline-end: 0.125em;
 }
 
@@ -160,12 +160,12 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
 #related-links ul li {
   margin-block: 0.5em;
 }
-aside > div {
+nav > div, aside > div {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-aside .aside-decor {
+.aside-decor {
   flex-grow: 1;
   background: coral;
 }
@@ -205,7 +205,7 @@ aside .aside-decor {
     inset-block-start: 2.5rem;
     z-index: -10;
   }
-  aside .aside-decor {
+  .aside-decor {
     display: none;
   }
 }
@@ -223,27 +223,27 @@ aside .aside-decor {
   main {
     padding-block-start: 1.25rem;
   }
-  nav > ul {
+  nav > div > ul {
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     margin-block-end: 0;
     transition: box-shadow {{transitiondur}} ease;
   }
-  nav > ul > li {
+  nav > div > ul > li {
     flex: 1 0 auto;
     margin-block-end: 0.25em;
   }
-  nav > ul > li:not(:last-child) {
+  nav > div > ul > li:not(:last-child) {
     margin-inline-end: 1rem;
   }
-  nav > ul.scroll-shadow-start {
+  nav > div > ul.scroll-shadow-start {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  nav > ul.scroll-shadow-end {
+  nav > div > ul.scroll-shadow-end {
     box-shadow: -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  nav > ul.scroll-shadow-start.scroll-shadow-end {
+  nav > div > ul.scroll-shadow-start.scroll-shadow-end {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%),
                -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
