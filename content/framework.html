@@ -272,6 +272,9 @@ body.dark #curcat-icon {
   color: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.35}}%, 40%);
 }
 
+.aside-decor > div {
+  filter: hue-rotate({{hue}}deg);
+}
 {{
   seed = tonumber(basehash(savepath .. '.' .. lang), 16)
   nexthash = function ()
