@@ -1,6 +1,6 @@
 if [[ "$FULL_DEBUG" == "1" ]]; then
-  woff2_compress AaKaiSong2WanZi2_mapped.ttf
-  mv AaKaiSong2WanZi2_mapped.woff2 ../../content/fonts-zh/AaKaiSong2-full.woff2
+  woff2_compress AaKaiSong2WanZi2_remapped.ttf
+  mv AaKaiSong2WanZi2_remapped.woff2 ../../content/fonts-zh/AaKaiSong2-full.woff2
   exit
 fi
 

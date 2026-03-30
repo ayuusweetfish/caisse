@@ -1004,7 +1004,9 @@ markupfns = {
             list[#list + 1] = '<div class="chord-tab-item' ..
                 (nextchord == '' and ' chord-tab-item-empty' or '') .. '">' ..
               '<span class="chord-tab-chord">' ..
-                nextchord:gsub('*', 'ø')
+                nextchord
+                  :gsub('*', 'ø')
+                  :gsub('b', '♭'):gsub('#', '♯')
                   :gsub('[()M7913o+%-,ø]+', '<sup>%1</sup>') ..
               '</span><span class="chord-tab-text">' ..
                 line:sub(p, q - 1) ..
