@@ -271,6 +271,21 @@ blockquote.quote .quote-main::after {
 body.dark #curcat-icon {
   color: hsla({{hue}}deg, {{sat}}%, {{100 - (100 - val1) * 0.35}}%, 40%);
 }
+
+{{
+  seed = tonumber(basehash(savepath .. '.' .. lang), 16)
+  nexthash = function ()
+    seed = bit.band((seed * 1664525) + 1013904223, 0xffffffff)
+    return math.floor(seed / 256)
+  end
+}}
+nav .aside-decor > div {
+  background-position-y: {{ nexthash() % 4 * 100 }}px, {{ nexthash() % 4 * 100 }}px;
+}
+aside .aside-decor > div {
+  background-position-y: {{ nexthash() % 4 * 100 }}px, {{ nexthash() % 4 * 100 }}px;
+}
+
 #bottom-fleuron {
   filter: hue-rotate({{hue}}deg);
 }
