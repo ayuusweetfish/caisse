@@ -11,9 +11,9 @@ if [[ ! -e "${SOLVE_EXEC}" ]]; then
 fi
 
 if [[ "$FULL" == "1" ]]; then
-  find ../../build -name "index.*.html" -not -path "../../build/backyard/*" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a-z]+)\.html)\n/\1\n\2.\3\n/g' | ${SOLVE_EXEC} > common.txt
+  find ../../build/ -name "index.*.html" -not -path "../../build/backyard/*" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a-z]+)\.html)\n/\1\n\2.\3\n/g' | ${SOLVE_EXEC} > common.txt
 fi
-find ../../build -name "index.*.html" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a-z]+)\.html)\n/\1\n\2.\3\n/g' | INC=1 ${SOLVE_EXEC} > stray.txt
+find ../../build/ -name "index.*.html" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a-z]+)\.html)\n/\1\n\2.\3\n/g' | INC=1 ${SOLVE_EXEC} > stray.txt
 
 exists() { [[ -f $1 ]]; }
 exists ../../content/fonts-zh/AaKaiSong.*.woff2 && mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
