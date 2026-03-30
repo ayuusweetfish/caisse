@@ -176,21 +176,22 @@ nav > div, aside > div {
 }
 .aside-decor {
   pointer-events: none;
+  z-index: -10;
   flex-grow: 1;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 .aside-decor > div {
   height: 100%;
     /* XXX: Hasty hack for graceful downgrade;
        the postprocessor does not support multiple declarations */
-  block-size: round(down, 100%, 100px);
+  block-size: round(down, 100%, 4rem);
   inline-size: 100%;
-  position: absolute;
-  inset-block-end: 0;
   background:
     repeat-y url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='400'%3E%3Ccircle cx='50' cy='25' r='10' fill='red'/%3E%3Ccircle cx='50' cy='125' r='10' fill='pink'/%3E%3Ccircle cx='50' cy='225' r='10' fill='orange'/%3E%3Ccircle cx='50' cy='325' r='10' fill='coral'/%3E%3C/svg%3E"),
     repeat-y url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='400'%3E%3Ccircle cx='50' cy='25' r='10' fill='red'/%3E%3Ccircle cx='50' cy='125' r='10' fill='pink'/%3E%3Ccircle cx='50' cy='225' r='10' fill='orange'/%3E%3Ccircle cx='50' cy='325' r='10' fill='coral'/%3E%3C/svg%3E");
   background-position-x: 20%, 80%;
+  background-size: 4rem, 4rem;
 }
 
 @media (max-width: 60rem) {
