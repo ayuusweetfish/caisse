@@ -730,9 +730,9 @@ html:lang(zh) ul > li::before {
   margin-inline: -1.75em 0.5em;
 }
 
-section h2 { font-size: 1.2rem; margin-block-end: 1.08rem; }
-section h3 { font-size: 1.14rem; margin-block-end: 1rem; }
-section h4 { font-size: 1.08rem; margin-block-end: 1rem; }
+main h2 { font-size: 1.2rem; margin-block-end: 1.08rem; }
+main h3 { font-size: 1.14rem; margin-block-end: 1rem; }
+main h4 { font-size: 1.08rem; margin-block-end: 1rem; }
 blockquote {
   margin-block: -0.1em;
   margin-inline: 1em;
