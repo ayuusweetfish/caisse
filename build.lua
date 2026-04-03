@@ -1190,6 +1190,8 @@ for i = 1, #cats do
 end
 registeritemmarkup('index', 'home')
 registeritemmarkup('about', 'home')
+registeritemmarkup('dates', 'home')
+registeritemmarkup('colophon', 'home')
 registeritemtempl('friends', 'home',
   'items/friends/page.html',
   render('items/friends/page.txt'))
@@ -1199,8 +1201,7 @@ registeritemtempl('email', 'home',
 registeritemtempl('planetarium', 'home',
   'items/planetarium/page.html',
   render('items/planetarium/page.txt'))
-registeritemmarkup('dates', 'home')
-registeritemmarkup('colophon', 'home')
+registeritemmarkup('observatory', 'home')
 
 local backyarditemsstr = caisse.readfile('items/backyard/list.lua')
 if backyarditemsstr then

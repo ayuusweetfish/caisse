@@ -7,31 +7,37 @@
 Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.zh=}}
-!<img Ayu.jpg 用打击乐琴槌戳脸蛋的画像。 float-end>
-有许多名字和昵称，但在这里叫我甜鱼就可以！图画来自友邻<link friends#Azalea 桂桂>～
-相信世界的美好可能性，永远在学习的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
-做的事情很杂，主业设计学/计算机，副业音乐/游戏制作，正在尝试学画画。整理归类放到这个小站就是敝帚自珍啦，但要是真的被喜欢的话会非常非常开心！
-INFP，无可救药的空想家，重度拖延自救中 ; - ;
+!<img ../index/120-Balloon.png <= What> float-end>
+有许多名字和昵称，但在这里叫我甜鱼就可以！
+相信世界的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
+做的事情很杂，主业设计学/互动媒体，副业计算机/音乐/游戏制作，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 ; - ;
+整理归类放到这个小站大概只是敝帚自珍而已。
 !<clearfloat>
+!<note <~~=''
+严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
+''>>
 !<hr windy>
 
 {{contents.en=}}
-!<img Ayu.jpg <= Depiction of me rubbing my face with percussion mallets.> float-end>
-There are many ways of calling me, but I’m Ayu here! The picture is painted by my neighbour <link friends#Azalea Azalea>~
+!<img ../index/120-Balloon.png <= What> float-end>
+There are many ways of calling me, but I’m Ayu here!
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
-I dip into a mixture of things, majoring in design and computing, while dabbling in music and game development as well as trying to learn to draw. To put them up on this site is more like cherishing my own scruffy broom; but it would truly be a delight to me in case it gets appreciated!
-INFP, incorrigibly unrealistic, trying hard to overcome procrastination ; - ;
+I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing, music, and game development, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome perfectionsi ; - ;
+To put them up on this site is more like cherishing my own scruffy broom.
 !<clearfloat>
+
+!<note <~~=''
+Technically, this is a personal wiki, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
+''>>
 !<hr windy>
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-筹备一下生日！<date 2025.01>
-<link flow/icebreak> <date 2025.01>
+……随风潜入夜？<date 2026.04>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Preparing for the birthday! <date 2025.01>
+… Into the night? <date 2026.04>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
@@ -48,9 +54,9 @@ Preparing for the birthday! <date 2025.01>
 {{contents.zh=}}
 !<h2 游戏 #games>
 !<list
-  <li <b 蔚蓝/Celeste> — Maddy Makes Games>
-  <li <b 短途旅行/A Short Hike> — Adam Robinson-Yu>
-  <li <b 节奏天国/リズム天国> — 任天堂 SPD>
+  <li <b 蔚蓝（<lang en <it Celeste>>）> — Maddy Makes Games>
+  <li <b 短途旅行（<lang en <it A Short Hike>>）> — Adam Robinson-Yu>
+  <li <b 节奏天国（<lang ja リズム天国>）> — 任天堂 SPD>
 >
 !<img games.png 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>
 
@@ -61,8 +67,8 @@ Preparing for the birthday! <date 2025.01>
 !<h2 动画 #animations>
 !<list
   <li <b 日常>>
-  <li <b 利兹与青鸟>>
-  <li <b 凉宫春日的忧郁>>
+  <li <b 利兹与青鸟（<lang ja リズと青い鳥>）>>
+  <li <b 凉宫春日的忧郁（<lang ja 涼宮ハルヒの憂鬱>）>>
 >
 !<img nichijou.jpg 《日常》片头中的三位主人公>
 
@@ -70,31 +76,19 @@ Preparing for the birthday! <date 2025.01>
   <li 以及很多很多独立动画>
 >
 
-!<h2 个站与频道>
-!<list
-  <li <link friends>>
-  <li <link https://100r.co/ Hundred Rabbits>（英）—— 海上航行、顺便做开源软件的两位神奇朋友。>
-  <li <link https://ddrkirby.com/ DDRKirby(ISQ)>（英）—— 音乐和可爱小游戏的创作者。>
-  <li <link https://space.bilibili.com/528182630 叨叨冯聊音乐> —— 浅显易懂的音乐趣味知识，来自百老汇华人打击乐手。>
-  <li <link https://nicechord.com/ NiceChord 好和弦> —— 台湾音乐人 Wiwi 的乐理与音乐制作教学频道。>
-  <li <link https://space.bilibili.com/39034282 王乐乐乐游> —— 音乐杂谈与整活。>
-  <li <link https://heiheihei.ca/ Cave • 小触手的书房> —— 画画的 Emmy。>
-  <li <link http://www.yini.org/ 秘密花园> —— 来自互联网早期的个人小小博物馆。>
-  <li <link https://www.lanisland.com/ 唉，澜的。> —— 写作、摄影、美食。>
-  <li <link http://eminism.org/ Eminism>（英）—— 女性主义，但是也卖小册子和小徽章（？）。>
->
+!<h2 有趣灵魂 #spirits>
+<link observatory>
 
 !<h2 杂七杂八 #miscellaneous>
-对好看的、花里胡哨的东西没什么抵抗力，也喜欢世界上的有趣灵魂！（好看皮囊也可以，我全都要！x
-!<img IMG_20220505_113339_mh1651727711263.jpg 巧克力冰淇淋，上面有彩色糖豆和樱桃和西瓜等水果小块>
+对好看的、花里胡哨的东西没有抵抗力！
 喜欢胡思乱想……（别骂了呜呜呜呜呜呜呜）
 
 {{contents.en=}}
 !<h2 Games #games>
 !<list
-  <li <b Celeste> — Maddy Makes Games>
-  <li <b A Short Hike> — Adam Robinson-Yu>
-  <li <b Rhythm Heaven/リズム天国> — Nintendo SPD>
+  <li <b <it Celeste>> — Maddy Makes Games>
+  <li <b <it A Short Hike> >— Adam Robinson-Yu>
+  <li <b <it Rhythm Heaven> (<lang ja リズム天国>)> — Nintendo SPD>
 >
 !<img games.png Characters in the games: winged strawberries, Claire the bird, Huebirds>
 
@@ -104,9 +98,9 @@ Preparing for the birthday! <date 2025.01>
 
 !<h2 Animations #animations>
 !<list
-  <li <b Nichijou: My Ordinary Life>>
-  <li <b Liz and the Blue Bird>>
-  <li <b The Melancholy of Suzumiya Haruhi>>
+  <li <b <it Nichijou: My Ordinary Life> (<lang ja 日常>)>>
+  <li <b <it Liz and the Blue Bird> (<lang ja リズと青い鳥>)>>
+  <li <b <it The Melancholy of Suzumiya Haruhi> (<lang ja 涼宮ハルヒの憂鬱>)>>
 >
 !<img nichijou.jpg The three main characters of Nichijou in the opening credits animation>
 
@@ -114,34 +108,22 @@ Preparing for the birthday! <date 2025.01>
   <li And lots, lots of individual animations>
 >
 
-!<h2 Individual websites and channels>
-!<list
-  <li <link friends>>
-  <li <link https://100r.co/ Hundred Rabbits> — Two friends that sail on the sea while making open-source software.>
-  <li <link https://ddrkirby.com/ DDRKirby(ISQ)> — Producer of music and cute games.>
-  <li <link https://www.youtube.com/@daodaofeng Feng's Music Channel> (Chinese) — Talks on musical explanations and trivia, by a Chinese percussionist at Broadway.>
-  <li <link https://nicechord.com/ NiceChord> (Chinese) — An educational channel on music theory and production, by the musician Wiwi Kuan from Taiwan.>
-  <li <link https://space.bilibili.com/39034282 王乐乐乐游> (Chinese) — Talks on trivia of music, self-arranged pieces, and musical memes.>
-  <li <link https://heiheihei.ca/ Cave • 小触手的书房> (Chinese) — Emmy with her paintings.>
-  <li <link http://www.yini.org/ Secret Garden> (Chinese) — A personal museum, from the old web.>
-  <li <link https://www.lanisland.com/ Lan Island> — Writing, photography, and food.>
-  <li <link https://eminism.org/ Eminism> — Feminism, but with a store of zines and buttons (?).>
->
+!<h2 Spirits #spirits>
+<link observatory>
 
 !<h2 Miscellaneous #miscellaneous>
-Vulnerable to all fancy good-looking trinkets; interested in all the diverting souls of the world! (Or charming appearances, I take both)
-!<img IMG_20220505_113339_mh1651727711263.jpg Chocolate ice-cream topped with colourful sugar beans and little slices of fruit including cherries and watermelon>
+Vulnerable to all fancy good-looking trinkets!
 Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 
 
 {{contents.zh=}}
 !<h1 戳戳 #contact>
-其实不怎么往社交平台发东西，可以通过<link email 邮件>联系呀～
+目前不活跃于社交平台。可以通过<link email 邮件>联系呀～
 总之谢谢你来！玩得开心！<kao (っ*´∀｀*)っ>
 
 {{contents.en=}}
 !<h1 Knock knock #contact>
-I do not really post much on social media platforms. For now, I can be reached by <link email e-mail>!
+Currently I am not active on social media platforms. I can be reached by <link email e-mail>!
 Thank you for coming! Have a great time here <kao (っ*´∀｀*)っ>
 
 {{toc=}}true
