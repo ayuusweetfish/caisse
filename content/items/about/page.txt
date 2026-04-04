@@ -21,7 +21,7 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 There are many ways of calling me, but I’m Ayu here!
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
 I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing and musical composition, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome procrastination <kao ≥﹏≤>
-To put them up on this site is more like cherishing my own scruffy broom. A lot of content are far from perfect and I am often hesitant to call them “works”; the name sounds a bit too large. Nevertheless, I might be silently hoping that they could inspire a visitor passing by someday, or bring someone a dose of fulfillment and joy. I will be delighted if this happens.
+To put them up on this site is more like cherishing my own scruffy broom. A lot of content is far from perfect and I am often hesitant to call them “works”; the name sounds a bit too large. Nevertheless, I might be silently hoping that they could inspire a visitor passing by someday, or bring someone a dose of fulfillment and joy. I will be delighted if this happens.
 Technically, this is a <it personal wiki>, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
 !<clearfloat>
 !<hr windy>
@@ -162,7 +162,7 @@ The following tags can assemble a quick, partial impression of the current me. H
 >
 
 
-{{{--[[
+{{{'' --[[
 TODO: Make a proper table and collect the missing pieces!
 
 {{contents.zh=}}
