@@ -7,42 +7,39 @@
 Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.zh=}}
-!<img ../index/120-Balloon.png <= What> float-end>
+!<img ../flow/cross/320-Gate.png <= 线条绘画。女孩捧着跃出的鱼从牌楼上飞过。> float-end>
 有许多名字和昵称，但在这里叫我甜鱼就可以！
 相信世界的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
-做的事情很杂，主业设计学/互动媒体，副业计算机/音乐/游戏制作，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 ; - ;
-整理归类放到这个小站大概只是敝帚自珍而已。
-!<clearfloat>
-!<note <~~=''
+做的事情很杂，主业设计学/互动媒体，副业计算机/作曲，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 <kao ≥﹏≤>
+整理归类放到这个小站大概只是敝帚自珍而已。许多内容都不够完美，我也时常不好意思称其为“作品”；这个名字显得有点太大了。不过，我或许还是在暗暗期待着它们能够启发某日路过的访客，或是为谁带去一些充实的欢乐。能实现这些，会是件很幸福的事。
 严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
-''>>
+!<clearfloat>
 !<hr windy>
 
 {{contents.en=}}
-!<img ../index/120-Balloon.png <= What> float-end>
+!<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.> float-end>
 There are many ways of calling me, but I’m Ayu here!
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
-I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing, music, and game development, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome perfectionsi ; - ;
-To put them up on this site is more like cherishing my own scruffy broom.
+I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing and musical composition, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome procrastination <kao ≥﹏≤>
+To put them up on this site is more like cherishing my own scruffy broom. A lot of content are far from perfect and I am often hesitant to call them “works”; the name sounds a bit too large. Nevertheless, I might be silently hoping that they could inspire a visitor passing by someday, or bring someone a dose of fulfillment and joy. I will be delighted if this happens.
+Technically, this is a <it personal wiki>, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
 !<clearfloat>
-
-!<note <~~=''
-Technically, this is a personal wiki, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
-''>>
 !<hr windy>
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-……随风潜入夜？<date 2026.04>
+正在……悄悄地随风潜入夜？<date 2026.04>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-… Into the night? <date 2026.04>
+Into… nightwalks with the breeze? <date 2026.04>
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
+要选择“最喜欢”或是“具有代表性”的喜好真是好难好难……当作心血来潮随意提及的事情就好。
 {{contents.en=}}
 !<h1 Likings #likings>
+It is too hard to pick something “favourite” or “representative”… Treat these as topics mentioned on a whim.
 
 {{contents.zh=}}
 !<h2 音乐 #music>
@@ -54,11 +51,11 @@ Technically, this is a personal wiki, but please call it anything you deem appro
 {{contents.zh=}}
 !<h2 游戏 #games>
 !<list
-  <li <b 蔚蓝（<lang en <it Celeste>>）> — Maddy Makes Games>
-  <li <b 短途旅行（<lang en <it A Short Hike>>）> — Adam Robinson-Yu>
-  <li <b 节奏天国（<lang ja リズム天国>）> — 任天堂 SPD>
+  <li <b 蔚蓝（<lang en <it Celeste>>）>— Maddy Makes Games>
+  <li <b 短途旅行（<lang en <it A Short Hike>>）>— Adam Robinson-Yu>
+  <li <b 节奏天国（<lang ja リズム天国>）>— 任天堂 SPD>
 >
-!<img games.png 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>
+!<img games.png <= 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>>
 
 !<list
   <li 以及 <link https://wholesomegames.com/ Wholesome Games>>
@@ -70,27 +67,32 @@ Technically, this is a personal wiki, but please call it anything you deem appro
   <li <b 利兹与青鸟（<lang ja リズと青い鳥>）>>
   <li <b 凉宫春日的忧郁（<lang ja 涼宮ハルヒの憂鬱>）>>
 >
-!<img nichijou.jpg 《日常》片头中的三位主人公>
+!<img nichijou.jpg <= 《日常》片头中的三位主人公>>
 
 !<list
-  <li 以及很多很多独立动画>
+  <li 以及许多许多独立动画>
 >
 
-!<h2 有趣灵魂 #spirits>
+!<h2 书 #books>
+!<note <link bookshelf 图书角>建设中，之后回来看看吧 <<^= > <>>>
+
+!<h2 数字空间 #cyberspace>
 <link observatory>
 
 !<h2 杂七杂八 #miscellaneous>
-对好看的、花里胡哨的东西没有抵抗力！
+喜欢散步，喜欢逛超市，喜欢在各自忙碌的人群中发呆。
+对零食充满兴趣，但又吃不了多少（又菜又爱玩系列）。
+会被花里胡哨的美丽小玩意诱捕。
 喜欢胡思乱想……（别骂了呜呜呜呜呜呜呜）
 
 {{contents.en=}}
 !<h2 Games #games>
 !<list
   <li <b <it Celeste>> — Maddy Makes Games>
-  <li <b <it A Short Hike> >— Adam Robinson-Yu>
+  <li <b <it A Short Hike>> — Adam Robinson-Yu>
   <li <b <it Rhythm Heaven> (<lang ja リズム天国>)> — Nintendo SPD>
 >
-!<img games.png Characters in the games: winged strawberries, Claire the bird, Huebirds>
+!<img games.png <= Characters in the games: winged strawberries, Claire the bird, Huebirds>>
 
 !<list
   <li And <link https://wholesomegames.com/ Wholesome Games>>
@@ -102,24 +104,83 @@ Technically, this is a personal wiki, but please call it anything you deem appro
   <li <b <it Liz and the Blue Bird> (<lang ja リズと青い鳥>)>>
   <li <b <it The Melancholy of Suzumiya Haruhi> (<lang ja 涼宮ハルヒの憂鬱>)>>
 >
-!<img nichijou.jpg The three main characters of Nichijou in the opening credits animation>
+!<img nichijou.jpg <= The three main characters of Nichijou in the opening credits animation>>
 
 !<list
   <li And lots, lots of individual animations>
 >
 
-!<h2 Spirits #spirits>
+!<h2 Books #books>
+!<note The <link bookshelf bookshelf> is a work in progress, please check back later!>
+
+!<h2 Cyberspace #cyberspace>
 <link observatory>
 
 !<h2 Miscellaneous #miscellaneous>
-Vulnerable to all fancy good-looking trinkets!
+Likes going for strolls. Likes wandering around in supermarkets. Likes zoning amidst an occupied crowd.
+Interested in snacks, but unable to take much.
+Vulnerable to all fancy, pretty trinkets.
 Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 
 
 {{contents.zh=}}
+!<h1 标签 #tags>
+可以通过下面的标签来快速认识一部分当下的我。不过，人都是复杂的，片面的归类承载着太多的偏见与误解，所以不希望任何人被标签概括或限制。
+
+!<list
+  <li 性格、人格与多样性
+    <marker Tags-Image>
+    <img neka_12685_fig.png <= 棕色头发、浅棕色衣着的人物画像。水印 @Masaki Q。> medsmall>
+    <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, RLUAI, 抑郁质-多血液质, 混乱善良, 女, Genderfuck, ADHD> medsmall syncdark>
+  >
+  <li 长三角地域>
+  <li 高敏感人群（HSP）>
+  <li 选择困难>
+  <li 业余乐手>
+  <li <lang en Lolita>>
+  <li <lang en Solarpunk>>
+  <li 太阳双鱼、月亮室女、上升双子；<link flow/monsoon#070-Mirror 月亮与圣杯九>>
+>
+
+{{contents.en=}}
+!<h1 Tags #tags>
+The following tags can assemble a quick, partial impression of the current me. However, humans are complex; one-sided categorizations often carry with them too much prejudice and misunderstanding, thus I hope that no one is reduced to or constrained by the tags.
+
+!<list
+  <li Character, personality, and diversity
+    <marker Tags-Image>
+    <img neka_12685_fig.png <= A figure with brown hair, in light brown outfit. Watermark @Masaki Q.> medsmall>
+    <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, RLUAI, Melancholic-Sanguine, Chaotic Good, Female, Genderfuck, ADHD> medsmall syncdark>
+  >
+  <li Yangtze Delta>
+  <li Highly sensitive person (HSP)>
+  <li Choice paralysis>
+  <li Amateur musician>
+  <li Lolita>
+  <li Solarpunk>
+  <li Sun Pisces, Moon Virgo, Ascendent Gemini; the Moon and the Nine of Cups>
+>
+
+
+{{{--[[
+TODO: Make a proper table and collect the missing pieces!
+
+{{contents.zh=}}
+!<h1 Fanart #fanart>
+!<img ../flow/icebreak/332-Package.jpg <~=' 写着“生日快乐”的礼物包装，有戴着帽子小人与蛋糕的简笔画。//ZY <date 2025.02>'> small caption>
+!<img 23_Azalea.jpg <~=' 用打击乐琴槌戳脸蛋的画像。//<link friends#Azalea 桂桂> <date 2023.02>'> small caption>
+!<img ../flow/toast/0223b.jpg <~=' 贺卡上用铅笔绘制的图画，举着琴槌站在琴前。//鸭鸭 <date 2023.02>'> small caption>
+!<img ../flow/drumbeats/0218c.png <~=' 奋力抄谱的画像//XN <date 2023.01>'> small caption>
+
+{{contents.en=}}
+!<h1 Fanart #fanart>
+]]}}}
+
+
+{{contents.zh=}}
 !<h1 戳戳 #contact>
-目前不活跃于社交平台。可以通过<link email 邮件>联系呀～
-总之谢谢你来！玩得开心！<kao (っ*´∀｀*)っ>
+目前不活跃于社交平台。可以通过<link email 邮件>联系～
+谢谢你来到这里！玩得开心哦 <kao (っ*´∀｀*)っ>
 
 {{contents.en=}}
 !<h1 Knock knock #contact>

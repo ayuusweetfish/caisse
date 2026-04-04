@@ -1201,6 +1201,7 @@ registeritemtempl('email', 'home',
 registeritemtempl('planetarium', 'home',
   'items/planetarium/page.html',
   render('items/planetarium/page.txt'))
+registeritemmarkup('bookshelf', 'home')
 registeritemmarkup('observatory', 'home')
 
 local backyarditemsstr = caisse.readfile('items/backyard/list.lua')

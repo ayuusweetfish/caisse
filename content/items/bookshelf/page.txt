@@ -1,0 +1,30 @@
+{{title.zh=}}图书角
+{{title.en=}}Bookshelf
+
+{{contents.zh=}}
+!<note 图书角建设中……>
+!<hr windy>
+
+!<list
+  <li <~~='
+    <b 《第二自我：计算机与人类灵魂》（<lang en <it The Second Self: Computers and the Human Spirit>>）>— Sherry Turkle<br>人喜欢借助自然界的事物来理解科技，而自然界中最接近计算机的就是人类自己；个人计算的普及悄悄改变了人们眼里的自己与机器。觉得别人的电脑很难用吗？会不会用“死机”来形容自己？学程序语言像学人类语言一样？世界上的大人小孩们似乎都在探索着同样的“第二自我”哦。
+  '>>
+  <anchor interpreters>
+  <li <~~='
+    <b 《手作解释器》（<lang en <it Crafting Interpreters>>）>— Bob Nystrom<br>精巧的小书，透彻地讲解一门程序语言的设计与构造。而且手绘插图和排版非常漂亮！即使不是领域内的读者也值得去<link https://craftinginterpreters.com/ 网站上>随便翻开几章欣赏一下 <kao ദ്ദി(˵ •̀ ᴗ - ˵ )>
+  '>>
+>
+
+{{contents.en=}}
+!<note The bookshelf is a work in progress…>
+!<hr>
+
+!<list
+  <li <~~='
+    <b <it The Second Self: Computers and the Human Spirit>> — Sherry Turkle<br>Humans tend to understand technology through the lens of the natural world; and in nature, the closest thing to the computer is the human itself. The spread of personal computing has quietly shifted how we perceive both ourselves and our machines.<br>Ever felt stumbling using someone else’s computer? Do you describe yourself as “hardcoded” to do something? How is learning a programming language similar to picking up a foreign tongue? It seems that everyone around the world — adults and children alike — is curiously exploring this same “second self”.
+  '>>
+  <anchor interpreters>
+  <li <~~='
+    <b <it Crafting Interpreters>> — Bob Nystrom<br>A delicate little book that develops a programming language, clearly explaining its design and construction. The hand-drawn illustrations and the formatting are beautiful! Even for the non-target audience, it will be worth it to visit the <link https://craftinginterpreters.com/ website> and have a look at random chapters <kao ദ്ദി(˵ •̀ ᴗ - ˵ )>
+  '>>
+>

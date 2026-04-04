@@ -27,7 +27,7 @@
 
 !<h1 世界书信 #letters>
 !<list
-  <li <~~=' <link https://journal.stuffwithstuff.com/ journal.stuffwithstuff.com><br>工程师 Bob Nystrom 的日志站。作者的书<link https://craftinginterpreters.com/ 《手作解释器》（<lang en <it Crafting Interpreters>>）>非常美丽！'>>
+  <li <~~=' <link https://journal.stuffwithstuff.com/ journal.stuffwithstuff.com><br><link bookshelf#interpreters 图书角>页面提及的《手作解释器》（<lang en <it Crafting Interpreters>>）作者 Bob Nystrom 的日志站。'>>
   <li <~~=' <link https://www.lanisland.com/ 唉，澜的。><br>生活、摄影、美食。'>>
 >
 
@@ -57,7 +57,7 @@ One-way links to works related to or similar to this site’s content. Two-way l
 
 !<h1 World’s Letters #letters>
 !<list
-  <li <~~=' <link https://journal.stuffwithstuff.com/ journal.stuffwithstuff.com><br>Journal site of the engineer Bob Nystrom. The author’s book <link https://craftinginterpreters.com/ <it Crafting Interpreters>> is beautifully crafted.'>>
+  <li <~~=' <link https://journal.stuffwithstuff.com/ journal.stuffwithstuff.com><br>Journal site of Bob Nystrom, author of <it Crafting Interpreters> mentioned on the <link bookshelf#interpreters bookshelf> page.'>>
   <li <~~=' <link https://www.lanisland.com/ Lan Island> (Chinese)<br>Writing, photography, and food.'>>
 >
 
