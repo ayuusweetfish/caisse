@@ -262,7 +262,7 @@
 
 !<hr>
 
-!<musictrack <lang en Humbert Humbert> 白车轴草 <lang ja しろつめくさ> ../../about/music/hundreds.jpg https://music.163.com/song?id=740765 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
+!<musictrack <lang en Humbert Humbert> 白车轴草 <lang ja しろつめくさ> ../../planetarium/images/For-Hundreds-of-Children.jpg https://music.163.com/song?id=740765 专辑封面，黑色背景下五彩的方块排列成蝴蝶形状。>
 白车轴草，春天开花的可爱小草。四年前因为老师要求寻找歌曲中的“起承转合”结构，惊喜地遇到了这首歌，并且发现它的前半段甚至恰好是一个嵌套的“起承转合”。感觉“起承转合”四个字甚至带着点乡愁也说不定，虽然我现在仍然还在这一片土地上。啊，好奇怪。
 歌词讲述的是一个含着几分忧伤的故事，但是好像唱完这首歌，它便随风飘散，只留下和煦春光中淡淡的孤独。无论如何，未来总是会来的呀。
 三年前新冠疫情伊始时，居家许久之后终于出门，见到的最初几种植物也有白车轴草。
