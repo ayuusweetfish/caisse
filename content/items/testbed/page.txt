@@ -66,11 +66,11 @@ Lorem.<br>Lorem. (para + br)
     <li Lorem;>
     <li Lorem;>
   >
-  Lorem ipsum
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ''>>
 
 !<note <~~=''
-  Lorem ipsum
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
   !<list
     <li Lorem;>
     <li Lorem;>
@@ -79,7 +79,7 @@ Lorem.<br>Lorem. (para + br)
 ''>>
 
 {{lists=}}
-Lorem ipsum
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 !<list
   <li Lorem;>
   <li
