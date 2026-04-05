@@ -26,6 +26,7 @@ Technically, this is a <it personal wiki>, but please call it anything you deem 
 !<clearfloat>
 !<hr windy>
 
+
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
 正在……悄悄地随风潜入夜？<date 2026.04>
@@ -34,12 +35,53 @@ Technically, this is a <it personal wiki>, but please call it anything you deem 
 !<h1 <= Recently up to> #recent>
 Into… nightwalks with the breeze? <date 2026.04>
 
+
+{{contents.zh=}}
+!<h1 速识标签 #tags>
+可以通过下面的标签来快速认识一部分当下的我。不过，人都是复杂的，片面的归类承载着太多的偏见与误解，所以不希望任何人被标签概括或限制。
+
+!<list
+  <li 类型学捏捏
+    <marker Tags-Image>
+    <img neka_12685_fig.png <= 棕色头发、浅棕色衣着的人物画像。水印 @Masaki Q。> medsmall>
+    <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, RLUAI, 抑郁质-多血液质, 混乱善良, 女, Genderfuck, ADHD> medsmall syncdark>
+  >
+  <li 长三角地域>
+  <li 高敏感人群（HSP）>
+  <li 选择困难>
+  <li <lang en Lolita>>
+  <li <lang en Solarpunk>>
+  <li 太阳双鱼、月亮室女、上升双子；<link flow/monsoon#070-Mirror 月亮与圣杯九>>
+>
+
+{{contents.en=}}
+!<h1 Quick tags #tags>
+The following tags can assemble a quick, partial impression of the current me. However, humans are complex; one-sided categorizations often carry with them too much prejudice and misunderstanding, thus I hope that no one is reduced to or constrained by the tags.
+
+!<list
+  <li Typologies avatar
+    <marker Tags-Image>
+    <img neka_12685_fig.png <= A figure with brown hair, in light brown outfit. Watermark @Masaki Q.> medsmall>
+    <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, RLUAI, Melancholic-Sanguine, Chaotic Good, Female, Genderfuck, ADHD> medsmall syncdark>
+  >
+  <li Yangtze Delta>
+  <li Highly sensitive person (HSP)>
+  <li Choice paralysis>
+  <li Lolita>
+  <li Solarpunk>
+  <li Sun Pisces, Moon Virgo, Ascendent Gemini; in Tarot, the Moon and the Nine of Cups>
+>
+
+
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
 要选择“最喜欢”或是“具有代表性”的喜好真是好难好难……当作心血来潮随意提及的事情就好。
+
+
 {{contents.en=}}
 !<h1 Likings #likings>
 It is too hard to pick something “favourite” or “representative”… Treat these as topics mentioned on a whim.
+
 
 {{contents.zh=}}
 !<h2 音乐 #music>
@@ -121,45 +163,6 @@ Likes going for strolls. Likes wandering around in supermarkets. Likes zoning am
 Interested in snacks, but unable to take much.
 Vulnerable to all fancy, pretty trinkets.
 Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
-
-
-{{contents.zh=}}
-!<h1 标签 #tags>
-可以通过下面的标签来快速认识一部分当下的我。不过，人都是复杂的，片面的归类承载着太多的偏见与误解，所以不希望任何人被标签概括或限制。
-
-!<list
-  <li 类型学
-    <marker Tags-Image>
-    <img neka_12685_fig.png <= 棕色头发、浅棕色衣着的人物画像。水印 @Masaki Q。> medsmall>
-    <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, RLUAI, 抑郁质-多血液质, 混乱善良, 女, Genderfuck, ADHD> medsmall syncdark>
-  >
-  <li 长三角地域>
-  <li 高敏感人群（HSP）>
-  <li 选择困难>
-  <li 业余乐手>
-  <li <lang en Lolita>>
-  <li <lang en Solarpunk>>
-  <li 太阳双鱼、月亮室女、上升双子；<link flow/monsoon#070-Mirror 月亮与圣杯九>>
->
-
-{{contents.en=}}
-!<h1 Tags #tags>
-The following tags can assemble a quick, partial impression of the current me. However, humans are complex; one-sided categorizations often carry with them too much prejudice and misunderstanding, thus I hope that no one is reduced to or constrained by the tags.
-
-!<list
-  <li Typologies
-    <marker Tags-Image>
-    <img neka_12685_fig.png <= A figure with brown hair, in light brown outfit. Watermark @Masaki Q.> medsmall>
-    <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, RLUAI, Melancholic-Sanguine, Chaotic Good, Female, Genderfuck, ADHD> medsmall syncdark>
-  >
-  <li Yangtze Delta>
-  <li Highly sensitive person (HSP)>
-  <li Choice paralysis>
-  <li Amateur musician>
-  <li Lolita>
-  <li Solarpunk>
-  <li Sun Pisces, Moon Virgo, Ascendent Gemini; the Moon and the Nine of Cups>
->
 
 
 {{{'' --[[
