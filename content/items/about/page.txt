@@ -7,7 +7,7 @@
 Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.zh=}}
-!<img ../flow/cross/320-Gate.png <= 线条绘画。女孩捧着跃出的鱼从牌楼上飞过。> float-end>
+!<img ../flow/cross/320-Gate.png <= 线条绘画。女孩捧着跃出的鱼从牌楼上飞过。> float-end syncdark>
 有许多名字和昵称，但在这里叫我甜鱼就可以！
 相信世界的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
 做的事情很杂，主业设计学/互动媒体，副业计算机/作曲，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 <kao ≥﹏≤>
@@ -17,7 +17,7 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 !<hr windy>
 
 {{contents.en=}}
-!<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.> float-end>
+!<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.> float-end syncdark>
 There are many ways of calling me, but I’m Ayu here!
 Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
 I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing and musical composition, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome procrastination <kao ≥﹏≤>
@@ -128,7 +128,7 @@ Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 可以通过下面的标签来快速认识一部分当下的我。不过，人都是复杂的，片面的归类承载着太多的偏见与误解，所以不希望任何人被标签概括或限制。
 
 !<list
-  <li 性格、人格与多样性
+  <li 类型学
     <marker Tags-Image>
     <img neka_12685_fig.png <= 棕色头发、浅棕色衣着的人物画像。水印 @Masaki Q。> medsmall>
     <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, RLUAI, 抑郁质-多血液质, 混乱善良, 女, Genderfuck, ADHD> medsmall syncdark>
@@ -147,7 +147,7 @@ Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 The following tags can assemble a quick, partial impression of the current me. However, humans are complex; one-sided categorizations often carry with them too much prejudice and misunderstanding, thus I hope that no one is reduced to or constrained by the tags.
 
 !<list
-  <li Character, personality, and diversity
+  <li Typologies
     <marker Tags-Image>
     <img neka_12685_fig.png <= A figure with brown hair, in light brown outfit. Watermark @Masaki Q.> medsmall>
     <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, RLUAI, Melancholic-Sanguine, Chaotic Good, Female, Genderfuck, ADHD> medsmall syncdark>
