@@ -1,0 +1,18 @@
+{{title.zh=}}26 卯月 —— 寻寻觅觅
+{{title.en=}}26, Month of the Rabbit — Searching and Finding
+
+{{timestamp=}}2024.04.05.02
+
+{{contents.zh=}}
+!<list
+  <li <link blow>。>
+  <li <link nectar>，补全谜题选择界面与一个谜题背景图案，并作多处小优化；将游戏本体转移至本站内托管。>
+  <li 修订<link about 关于页>与<link friends 友链页>；新增<link observatory>。>
+>
+
+{{contents.en=}}
+!<list
+  <li <link blow>.>
+  <li <link nectar>, added a puzzle selection interface and a background pattern for a puzzle, and implemented various minor optimizations. The game package is now collected and hosted under this site.>
+  <li Revisions on the <link about About page>; added <link observatory>.>
+>

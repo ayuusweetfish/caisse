@@ -1,0 +1,18 @@
+{{title.zh=}}26 寅月 —— 又一年，辞旧迎新
+{{title.en=}}26, Month of the Tiger — Another Year Passed, Another Start New
+
+{{timestamp=}}2026.03.05.22
+
+{{contents.zh=}}
+!<list
+  <li 大量细节修订，包括全站样式以及部分页面内容。>
+  <li 重组页面列表，增加<link music/arrangements>与<link murmurs/wind>。>
+  <li <link fox>。>
+>
+
+{{contents.en=}}
+!<list
+  <li Lots of revisions in the details, including site-wide styles and content of some pages.>
+  <li Reorganized page lists, introducing <link music/arrangements> and <link murmurs/wind>.>
+  <li <link fox>.>
+>
