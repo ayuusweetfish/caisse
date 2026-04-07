@@ -281,6 +281,9 @@ body.dark #curcat-icon {
 .aside-decor > div {
   filter: hue-rotate({{hue}}deg);
 }
+body.dark .aside-decor > div {
+  filter: hue-rotate({{hue}}deg) saturate(70%);
+}
 {{
   seed = tonumber(basehash(savepath .. '.' .. lang), 16)
   nexthash = function ()
