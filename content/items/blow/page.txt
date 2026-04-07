@@ -11,7 +11,7 @@
 {{date=}}2024.24
 
 {{contents.zh=}}
-<link https://globalgamejam.org Global Game Jam> 2025 参与作品，主题“泡泡”（<lang en Bubble>）。
+<link https://globalgamejam.org Global Game Jam> 2025 组队作品，主题“泡泡”（<lang en Bubble>）。参与游戏设计（合作）、音乐音效、技术开发。
 
 <link https://blow.ayu.land 在此游玩>。
 
@@ -19,12 +19,21 @@
 
 !<img photo_zh.png <= 游戏截图，泡泡绘制的“橘子”被猫咪猜中，彩色纸带飘在空中。> vertical small>
 
-Jam 结束后一年更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 Qwen 3.5>。<date 2026.01,2026.02>
+活动后更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 Qwen 3.5>。<date 2026.02,2026.03>
 
-网页版包含少量神秘技巧（如从浏览器版 LÖVE 访问网络、调用 WebAssembly、保存照片，以及泡泡渲染算法），可供感兴趣的读者参考。
+对技术感兴趣的读者可以在<link https://github.com/ayuusweetfish/Blow-Something 程序仓库>中找到：
+!<list
+  <li 泡泡高光的渲染算法；>
+  <li 浏览器版 LÖVE 中，更丰富的互动功能实现：
+  <list
+    <li 保存照片；>
+    <li 访问网络；>
+    <li 调用 WebAssembly。>
+  >>
+>
 
 {{contents.en=}}
-Participating entry to <link https://globalgamejam.org Global Game Jam> 2025, with the theme <it Bubble>.
+Team entry to <link https://globalgamejam.org Global Game Jam> 2025, with the theme <it Bubble>. Took care of game design (collaborative), music/sound effects, and technical development.
 
 <link https://blow.ayu.land Play here>.
 
@@ -32,9 +41,18 @@ A draw-and-guess game with bubbles as the paintbrush. The player drags and pops 
 
 !<img photo_en.png <= Game screenshot, an “Orange” painted by bubbles is guessed correctly by the kitten; confetti fly in the air.> vertical small>
 
-Post-jam update one year later: bubble highlight; English support; extended word list; screenshot. The image recognition model was also migrated from Gemini 1.5 Flash (which had already been retired) to the newly-released <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>.
+Post-jam update: bubble highlight; English support; extended word list; screenshot. The image recognition model was also migrated from Gemini 1.5 Flash (which had already been retired) to the newly-released <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>. <date 2026.02,2026.03>
 
-The web version contains a few mysterious techniques (e.g., accessing network in browser-version LÖVE, calling WebAssembly, saving screenshots, as well as the bubble’s rendering algorithm), for reference to the interested audience.
+The technically proficient visitor might be interested in looking into <link https://github.com/ayuusweetfish/Blow-Something the source repository> for:
+!<list
+  <li The algorthm to render the bubble’s highlight;>
+  <li Implementation of richer interaction functionalities in browser-version LÖVE:
+  <list
+    <li Accessing network;>
+    <li Saving screenshots;>
+    <li Calling WebAssembly.>
+  >>
+>
 
 {{rellinks.zh=}}
 !<list

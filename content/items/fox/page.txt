@@ -27,7 +27,13 @@
 
 !<hr>
 
-与其说是游戏，其实更像是玩具。人工语言模型的“想象力”在这一年渐趋成熟，词元序列里天马行空的想法开始有了形状，于是我试着在其中刻画出了一片不着边际的随机梦话海洋。那个时候 <link https://www.deepseek.com/ DeepSeek> 还没有被世人所熟知，调试时的 V3 模型跑得飞快；我想，这只鲸鱼漫游的大概确实是一片孤独的海吧。做到一半时发布了一个新模型，我试了试，感觉这堆不知所云的东西并不需要太多额外的思考，故没有选择迁移。这个模型便是后来大名鼎鼎的 R1，几天后就随着官方客户端的发布火遍整片大陆——而这片刚发现的海洋也跟着干涸了好多好多天……
+与其说是游戏，其实更像是玩具。人工语言模型的“想象力”在这一年渐趋成熟，词元序列里天马行空的想法开始有了形状，于是我试着在其中刻画出了一片不着边际的随机梦话海洋。
+
+!<note <~~='
+当时 <link https://www.deepseek.com/ DeepSeek> 还没有被世人所熟知，调试时的 V3 模型跑得飞快：这只鲸鱼漫游着的，大概确实是一片孤独的海吧？
+做到一半时发布了一个新模型，尝试后感觉这里这堆梦到哪句说哪句的“狐言”并不需要太多额外的思考，故没有选择迁移。这个模型便是后来大名鼎鼎的 R1，几天后就随着官方客户端的发布火遍整片大陆——而这片狐狸们的海洋也受牵连，干涸了好些日子……
+所幸狐狸们的好奇心永远不会干涸，海洋回来的时候，它们随时都准备着出发！
+'>>
 
 完成一年后，将图像模型从原本的通义万相迁移至近期发布的<link https://github.com/Tongyi-MAI/Z-Image 造相 Z-Image-Turbo> 轻量模型，部署于课题组项目共用的服务器，不仅降低了计算资源耗费，也取得了更稳定的作图风格［还保护了自己的钱包！<kao (๑ゝω╹๑)>］此外，所有涉及的计算至此均运行在开放权重与开源程序上。<date 2026.02>
 
@@ -48,11 +54,15 @@ Bring your cup of moonbeam tea, join the foxes in their inquiries for this issue
 
 !<hr>
 
-This is more of a toy than a game. This was the year when the “imagination” of artificial language models grew towards maturity; the flying ideas in the token sequences started to take shape. So, I tried to cartograph a boundless ocean in it, composed of random daydreams. It was a time when <link https://www.deepseek.com/ DeepSeek> was not known to all, the V3 model running lightning fast during debugging. This whale was probably indeed wandering a lonely ocean, I thought.
+This is more of a toy than a game. This was the year when the “imagination” of artificial language models grew towards maturity; the flying ideas in the token sequences started to take shape. So, I tried to cartograph a boundless ocean in it, composed of random daydreams.
 
-Halfway through the jam, a new model was released. I tried it, but felt that this pile of ungrounded murmurs did not call for much additional thinking, and chose not to migrate. This model was the later famous R1, which, with the release of the official client just a few days later, became phenomenal across the land — while drying this newly discovered ocean up for quite a few days…
+!<note <~~='
+It was a time when <link https://www.deepseek.com/ DeepSeek> was not known to many, the V3 model running lightning fast during debugging: this whale was probably indeed wandering a lonely ocean.
+Halfway through the jam, a new model was released. I tried it, but felt that this pile of ungrounded murmurs did not call for much additional thinking, and chose not to migrate. This model was the later famous R1, which, with the release of the official client just a few days later, became phenomenal across the land — while drying up this ocean of foxes for quite some time…
+It is fortunate that the foxes always have an undrainable curiosity to explore. They are ready whenever the ocean is!
+'>>
 
-One year later, the image model was migrated from the original Tongyi Wanx to <link https://github.com/Tongyi-MAI/Z-Image Z-Image-Turbo>, a lightweight model recently released, deployed on a server shared by our research lab. This not only reduced the consumption of computing resources, but also achieved a more consistent visual style [and protected my wallet! <kao (๑ゝω╹๑)>]. Also, all the processing involved by this time was run on open weights and open source programs. <date 2026.02>
+One year after initial completion, the image model was migrated from the original Tongyi Wanx to <link https://github.com/Tongyi-MAI/Z-Image Z-Image-Turbo>, a lightweight model recently released, deployed on a server shared by our research lab. This not only reduced the consumption of computing resources, but also achieved a more consistent visual style [and protected my wallet! <kao (๑ゝω╹๑)>]. Also, all the processing involved by this time was run on open weights and open source programs. <date 2026.02>
 
 {{rellinks.zh=}}
 !<list
