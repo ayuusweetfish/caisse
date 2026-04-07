@@ -12,12 +12,12 @@
 {{contents.zh=}}
 企鹅冰壶孵蛋游戏——指引企鹅在滑溜溜冰面上孵出丢掉的蛋。
 可以在 <subpagelink ice-hatch/play 这里> 玩！
-受 2022 年北京冬奥会期间火了一把的冰壶运动启发，在 <link https://itch.io/jam/mini-jam-99-birds Mini Jam #99> 中制作了这个游戏。活动主题是“鸟（Birds）”，附加限制是“无法停止运动（Can't stop moving）”；加起来就有了这一群不经常动动就会掉进冰窟窿的肥鸟们。
+受 2022 年北京冬奥会期间火了一把的冰壶运动启发，在 <link https://itch.io/jam/mini-jam-99-birds Mini Jam #99> 中制作了这个游戏。活动主题是“鸟（<lang en Birds>）”，附加限制是“无法停止运动（<lang en Can’t stop moving>）”；加起来就有了这一群不经常动动就会掉进冰窟窿的肥鸟们。
 
 !<img screenshot1.png <= 游戏截图>>
 !<img screenshot2.png <= 游戏截图>>
 
-互评期间大家纷纷表达出对水里小笨蛋们的担忧——发现了自己的盲点，可是企鹅明明会游泳呀！没有企鹅在本游戏中受伤！
+互评期间大家纷纷表达出对水里小笨蛋们的担忧——可是企鹅明明会游泳呀！没有企鹅在本游戏中受伤！
 音乐做了一半，不过已经提交得很晚了所以就没有继续写完。会抽空更新~
 
 中文标题原本草率地定为“冰雪繁忙”，后来忽然想到这可不是冰雪“笨蛋”吗。遂趁着新一届冬奥会开幕之时修改之。<date 2026.01>
@@ -30,7 +30,7 @@ Inspired by the sport of curling which gained popularity in the 2022 Winter Olym
 !<img screenshot1.png <= Game screenshot>>
 !<img screenshot2.png <= Game screenshot>>
 
-During the peer rating period, there was a lot of concern about the little anserine creatures in the water — which was indeed a blind spot of me, but the penguins can swim! No penguins were hurt in this game!
+During the peer rating period, there was a lot of concern about the little anserine creatures in the water — but the penguins can swim! No penguins were hurt in this game!
 Halfway done with the music but did not finish it as the game was already submitted late. Will update it sometime!
 
 {{rellinks.zh=}}
