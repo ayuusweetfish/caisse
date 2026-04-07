@@ -64,31 +64,33 @@ Collection of sundries —
 }}
 
 <div id='main-grid'>
-<nav><div>
-<div class='nav-present'>
-<header><a href='/'>{{ sitename }}</a></header>
-<ul>
-  {{@ cat in cats}}{{@ cat.name ~= 'backyard'}}
-  <li><a class='pastel {{cat.name}}'
-    href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'><span class='little-icons'>{{utf8.char(cat.icon)}}</span>{{cat.title}}</a></li>
-  {{@ end}}{{@ end}}
-</ul>
-<div id='icon-buttons'>
-  <details id='lang-container'>
-    <summary class='pastel miscellaneous little-icons' title='语言/Language'>🌐</summary>
-    <div id='lang-list'>
-      <p><a class='pastel miscellaneous' href='?lang=zh<!-- (query) -->'>汉语/Chinese</a></p>
-      <p><a class='pastel miscellaneous' href='?lang=en<!-- (query) -->'>English/英语</a></p>
-    </div>
-  </details><a id='dark-toggle'
-    href='/{{ urlpath == '_/404' and '<!-- (path) -->' or urlpath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
-      zh = '切换深色/浅色主题',
-      en = 'Toggle dark/light theme',
-    }) }}'>🌙</a>
-</div>
-</div>
-<div class='aside-decor'><div></div></div>
-</div></nav><!--
+<div class='banner'><div><!-- For flexbox -->
+  <header>
+    <div class='banner-heading'><a href='/'>{{ sitename }}</a></div>
+    <nav>
+      <ul>
+        {{@ cat in cats}}{{@ cat.name ~= 'backyard'}}
+        <li><a class='pastel {{cat.name}}'
+          href='/{{@ cat.name ~= "home"}}{{cat.name}}{{@ end}}'><span class='little-icons'>{{utf8.char(cat.icon)}}</span>{{cat.title}}</a></li>
+        {{@ end}}{{@ end}}
+      </ul>
+      <div id='icon-buttons'>
+        <details id='lang-container'>
+          <summary class='pastel miscellaneous little-icons' title='语言/Language'>🌐</summary>
+          <div id='lang-list'>
+            <p><a class='pastel miscellaneous' href='?lang=zh<!-- (query) -->'>汉语/Chinese</a></p>
+            <p><a class='pastel miscellaneous' href='?lang=en<!-- (query) -->'>English/英语</a></p>
+          </div>
+        </details><a id='dark-toggle'
+          href='/{{ urlpath == '_/404' and '<!-- (path) -->' or urlpath }}?dark=<!-- (dark) 0 1 -->' class='pastel miscellaneous little-icons' title='{{ tr({
+            zh = '切换深色/浅色主题',
+            en = 'Toggle dark/light theme',
+          }) }}'>🌙</a>
+      </div>
+    </nav>
+  </header>
+  <div class='aside-decor'><div></div></div>
+</div></div><!--
 
 --><div id='main-aside-container'><main>
 
@@ -138,11 +140,14 @@ Current page belongs to the category of {{cats[curcat].title}}
 
 {{@ not not aside.headinglist and #aside.headinglist > 0 }}
 {{ asideempty = false }}
-<div class='aside-section table-of-contents'>
+{{ tableofcontents = {} }}
+{{ tableofcontents.zh = '目录'}}
+{{ tableofcontents.en = 'Table of Contents'}}
+<section class='aside-section table-of-contents' aria-label='{{ tableofcontents }}'>
   {{@ h in aside.headinglist }}
   <p class='toc-level{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
   {{@ end }}
-</div>
+</section>
 {{@ end }}
 
 {{@ aside.rellinks }}
@@ -192,7 +197,7 @@ Current page belongs to the category of {{cats[curcat].title}}
 {{@ not distbuild }}<span style='float: right; opacity: 0.5;'>Debug build</span>{{@ end }}
 </footer>
 
-<div id='bottom-fleuron'><div></div></div>
+<div id='bottom-fleuron' role='presentation'><div></div></div>
 
 <style>
 {{ stray_typeface_hash = AaKaiSong_subsethash(savepath .. '.' .. lang) }}

@@ -18,7 +18,7 @@
   {{ aside.headinglist = markupheadings(tr(contents)) }}
   <details class='details-toc'>
     <summary>{{ tableofcontents }}</summary>
-    <section class='table-of-contents'>
+    <section class='table-of-contents' aria-label='{{ tableofcontents }}'>
       {{@ h in aside.headinglist }}
       <p class='toc-level{{h[1]}}'><a class='hidden-pastel' href='#{{h[3]}}'>{{h[2]}}</a></p>
       {{@ end }}
@@ -31,7 +31,7 @@
 {{@ not ((intro and intro ~= '') or bannerimg) and toc == 'true' }}
   <div role='separator' class='item-separator hidden-in-widest'></div>
 {{@ end }}
-<div class='item-content e-content'>{{ rendermarkup(tr(contents)) }}</div>
+<section class='item-content e-content'>{{ rendermarkup(tr(contents)) }}</section>
 {{@ date }}
 <div class='item-date'>
   {{ renderdate(date) }}

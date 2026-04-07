@@ -47,43 +47,43 @@ footer {
   display: flex;
   align-items: stretch;
 }
-nav { width: 20%; }
+div.banner { width: 20%; }
 #main-aside-container { width: 80%; }
 main { width: 75%; } /* 60% */
 aside { width: 25%; } /* 20% */
-nav, main, aside {
+div.banner, main, aside {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
 }
-nav, main, aside, footer { padding: 1rem; }
+div.banner, main, aside, footer { padding: 1rem; }
 #main-aside-container {
   display: flex;
   flex-direction: row;
 }
 
-.nav-present > header {
+.banner-heading {
   font-size: 1.5rem;
   font-weight: bold;
   margin-block: 0.83em;
 }
-.nav-present > header > a {
+.banner-heading > a {
   text-decoration: none;
   color: inherit;
 }
 
-.nav-present > ul {
+nav > ul {
   display: flex;
   flex-direction: column;
   padding: 0;
 }
-.nav-present > ul > li {
+nav > ul > li {
   flex: 1 0 2.25em;
 }
-.nav-present > ul > li::before {
+nav > ul > li::before {
   display: none;
 }
-.nav-present > ul > li span.little-icons {
+nav > ul > li span.little-icons {
   margin-inline-end: 0.125em;
 }
 
@@ -169,7 +169,7 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
 #related-links ul li {
   margin-block: 0.5em;
 }
-nav > div, aside > div {
+div.banner > div, aside > div {
   display: flex;
   flex-direction: column;
   block-size: 100%;
@@ -200,7 +200,7 @@ nav > div, aside > div {
   #main-grid {
     flex-wrap: wrap;
   }
-  #main-grid nav {
+  #main-grid div.banner {
     width: 23.8%; /* 5/21 */
   }
   #main-aside-container {
@@ -243,7 +243,7 @@ nav > div, aside > div {
   #main-grid {
     display: block;
   }
-  #main-grid nav,
+  #main-grid div.banner,
   #main-grid main,
   #main-grid aside {
     width: 100%;
@@ -252,37 +252,37 @@ nav > div, aside > div {
   #main-aside-container {
     width: 100%;
   }
-  nav {
+  div.banner {
     padding-block: 0.5rem 0.25rem;
   }
   main {
     padding-block-start: 1.25rem;
   }
-  .nav-present > ul {
+  nav > ul {
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     margin-block-end: 0;
     transition: box-shadow {{transitiondur}} ease;
   }
-  .nav-present > ul > li {
+  nav > ul > li {
     flex: 1 0 auto;
     margin-block-end: 0.25em;
   }
-  .nav-present > ul > li:not(:last-child) {
+  nav > ul > li:not(:last-child) {
     margin-inline-end: 1rem;
   }
-  .nav-present > ul.scroll-shadow-start {
+  nav > ul.scroll-shadow-start {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  .nav-present > ul.scroll-shadow-end {
+  nav > ul.scroll-shadow-end {
     box-shadow: -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  .nav-present > ul.scroll-shadow-start.scroll-shadow-end {
+  nav > ul.scroll-shadow-start.scroll-shadow-end {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%),
                -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  nav .aside-decor {
+  div.banner .aside-decor {
     display: none;
   }
   #icon-buttons {
@@ -676,7 +676,7 @@ body.dark div[role='separator']
   block-size: 1em;
   line-height: 1;
   position: relative;
-  inset-block-start: -0.0875em;
+  inset-block-start: -0.125em;
   transition: filter {{transitiondur}} ease;
 }
 body.dark .kaomoji { filter: invert(1); }
