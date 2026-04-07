@@ -348,14 +348,6 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
   border-image-outset: 0.32em 0;
 }
 
-html:lang(zh) .pastel:not(.little-icons) {
-  border-image-outset: 0.24em 0;
-}
-html:lang(zh) .pastel:not(.little-icons):not(.noexpand):hover,
-html:lang(zh) .pastel:not(.little-icons):not(.noexpand):focus {
-  border-image-outset: 0.36em 0;
-}
-
 {{
 function underlinesvg(hue, sat, val, opacity)
   opacity = (opacity or 100) / 100
