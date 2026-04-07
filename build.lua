@@ -1161,6 +1161,9 @@ copyfile('divider-fleuron-cloudy.svg', true)
 copyfile('divider-fleuron-heart.svg', true)
 copyfile('divider-fleuron-windy.svg', true)
 
+copyfile('decor1.svg', true)
+copyfile('decor2.svg', true)
+
 renderraw('bin/main.css', 'main.css', nil, true, postproccss)
 renderraw('bin/main.js', 'main.js', nil, true)
 for _, fontname in ipairs({

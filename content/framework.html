@@ -290,12 +290,13 @@ body.dark .aside-decor > div {
     seed = bit.band((seed * 1664525) + 1013904223, 0xffffffff)
     return math.floor(seed / 256)
   end
+  nexthash()
 }}
-nav .aside-decor > div {
-  background-position-y: {{ nexthash() % 4 * 4 }}rem, {{ nexthash() % 4 * 4 }}rem;
+#site-banner-container .aside-decor > div {
+  background-position-y: {{ nexthash() % 72 * 8 }}rem, {{ nexthash() % 58 * 8 }}rem;
 }
 aside .aside-decor > div {
-  background-position-y: {{ nexthash() % 4 * 4 }}rem, {{ nexthash() % 4 * 4 }}rem;
+  background-position-y: {{ nexthash() % 72 * 8 }}rem, {{ nexthash() % 58 * 8 }}rem;
 }
 
 #bottom-fleuron {
