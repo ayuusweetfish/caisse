@@ -47,27 +47,27 @@ footer {
   display: flex;
   align-items: stretch;
 }
-div.banner { width: 20%; }
+#site-banner-container { width: 20%; }
 #main-aside-container { width: 80%; }
 main { width: 75%; } /* 60% */
 aside { width: 25%; } /* 20% */
-div.banner, main, aside {
+#site-banner-container, main, aside {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
 }
-div.banner, main, aside, footer { padding: 1rem; }
+#site-banner-container, main, aside, footer { padding: 1rem; }
 #main-aside-container {
   display: flex;
   flex-direction: row;
 }
 
-.banner-heading {
+#site-banner-heading {
   font-size: 1.5rem;
   font-weight: bold;
   margin-block: 0.83em;
 }
-.banner-heading > a {
+#site-banner-heading > a {
   text-decoration: none;
   color: inherit;
 }
@@ -169,7 +169,7 @@ body.dark .table-of-contents a.hidden-pastel::after { background: hsl(36deg, 9%,
 #related-links ul li {
   margin-block: 0.5em;
 }
-div.banner > div, aside > div {
+#site-banner-container > div, aside > div {
   display: flex;
   flex-direction: column;
   block-size: 100%;
@@ -200,7 +200,7 @@ div.banner > div, aside > div {
   #main-grid {
     flex-wrap: wrap;
   }
-  #main-grid div.banner {
+  #main-grid #site-banner-container {
     width: 23.8%; /* 5/21 */
   }
   #main-aside-container {
@@ -243,7 +243,7 @@ div.banner > div, aside > div {
   #main-grid {
     display: block;
   }
-  #main-grid div.banner,
+  #main-grid #site-banner-container,
   #main-grid main,
   #main-grid aside {
     width: 100%;
@@ -252,7 +252,7 @@ div.banner > div, aside > div {
   #main-aside-container {
     width: 100%;
   }
-  div.banner {
+  #site-banner-container {
     padding-block: 0.5rem 0.25rem;
   }
   main {
@@ -282,7 +282,7 @@ div.banner > div, aside > div {
     box-shadow: 1em 0 1em -1em inset rgba(174, 172, 170, 25%),
                -1em 0 1em -1em inset rgba(174, 172, 170, 25%);
   }
-  div.banner .aside-decor {
+  #site-banner-container .aside-decor {
     display: none;
   }
   #icon-buttons {
