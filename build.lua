@@ -658,7 +658,8 @@ end
 caisse.envadditions.htmlescape = htmlescape
 
 local function uriescape(s)
-  return s:gsub(' ', '%%20')
+  return s
+    :gsub('[% %<%>%"%\']', function (c) return string.format('%%%02X', c:byte(1)) end)
 end
 
 local function sizestring(size)
@@ -923,9 +924,10 @@ markupfns = {
     return renderdate(datestr)
   end,
   kao = function (text)
-    return '<span class="kaomoji">' ..
-      io.open('misc/kaomoji/gen/moji-' .. basehash(text) .. '.svg'):read('a') ..
-      '</span>'
+    return '<img class="kaomoji" src=\'data:image/svg+xml,' ..
+        uriescape(io.open('misc/kaomoji/gen/moji-' .. basehash(text) .. '.svg'):read('a'))
+      .. '\' alt="' .. uriescape(text) .. '" aria-label="'
+      .. (caisse.lang == 'zh' and '颜文字' or 'Kaomoji') .. '">'
   end,
   gridtable = function (class, ...)
     local builder = {'<div class="' .. class .. '">', ...}

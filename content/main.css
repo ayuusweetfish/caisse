@@ -673,15 +673,11 @@ body.dark div[role='separator']
 .kaomoji {
   display: inline-block;
   vertical-align: middle;
-  height: 1em;
-  line-height: 1;
-  transition: filter {{transitiondur}} ease;
-}
-.kaomoji > svg {
   block-size: 1em;
-  inline-size: auto;
+  line-height: 1;
   position: relative;
   inset-block-start: -0.0875em;
+  transition: filter {{transitiondur}} ease;
 }
 body.dark .kaomoji { filter: invert(1); }
 
