@@ -33,7 +33,7 @@ darkToggle.addEventListener('click', (e) => {
   e.preventDefault()
 })
 
-const navList = document.querySelector('.nav-present > ul')
+const navList = document.querySelector('nav > ul')
 const navListFirst = navList.children[0]
 const navListLast = navList.children[navList.children.length - 1]
 const ixobs = new IntersectionObserver((entries) => {
