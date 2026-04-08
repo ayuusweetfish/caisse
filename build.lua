@@ -531,11 +531,12 @@ end
 caisse.envadditions.renderdate = renderdate
 
 -- Chinese font subsetting
-local AaKaiSong_css = io.open('misc/typeface-zh/AaKaiSong.css'):read('a')
-caisse.envadditions.AaKaiSong_css = AaKaiSong_css
 local AaKaiSong_subsethashes = {}
-local typefacestrayrec = io.open('misc/typeface-zh/stray.txt')
-if typefacestrayrec then
+if caisse.envadditions.distbuild then
+  local AaKaiSong_css = io.open('/tmp/caisse-typeface-zh-AaKaiSong.css'):read('a')
+  caisse.envadditions.AaKaiSong_css = AaKaiSong_css
+
+  local typefacestrayrec = io.open('/tmp/caisse-typeface-zh-stray.txt')
   for line in typefacestrayrec:lines() do
     local tabpos = line:find('\t')
     local docid = line:sub(1, tabpos - 1)
@@ -547,6 +548,7 @@ if typefacestrayrec then
   end
   typefacestrayrec:close()
 end
+
 local function AaKaiSong_subsethash(docid)
   local hash = AaKaiSong_subsethashes[docid]
   return hash
@@ -1301,6 +1303,6 @@ os.execute(table.concat(bufferedcmds, '; '))
 if katexupdate then
   local list = {}
   for _, v in pairs(katexstrings) do list[#list + 1] = v end
-  io.open('misc/katex/list.txt', 'w'):write(table.concat(list, '\n'))
+  io.open('/tmp/caisse-katex-list.txt', 'w'):write(table.concat(list, '\n'))
   print('Formula list updated')
 end

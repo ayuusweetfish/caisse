@@ -2,7 +2,7 @@
 Files to be prepared:
   AaKaiSong2WanZi2.charset.txt
   common.txt
-  stray.txt
+  /tmp/caisse-typeface-zh-stray.txt
 Then run without arguments or input:
   lua process.lua
 To use the cache:
@@ -19,7 +19,7 @@ for line in io.open('AaKaiSong2WanZi2.charset.txt'):lines() do
 end
 print('#codepoints', ncodepoints)
 
-local css = io.open('AaKaiSong.css', 'w')
+local css = io.open('/tmp/caisse-typeface-zh-AaKaiSong.css', 'w')
 
 local subsetsocc = {} -- Deduplication
 function addsubset(subset, name, skipcss, comment)
@@ -87,7 +87,7 @@ local function basehash(s)
 end
 
 -- Page-curated subset
-for line in io.open('stray.txt'):lines() do
+for line in io.open('/tmp/caisse-typeface-zh-stray.txt'):lines() do
   local tabpos = line:find('\t')
   local docid = line:sub(1, tabpos - 1)
   local cps = {}
