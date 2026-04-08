@@ -1,9 +1,3 @@
-if [[ "$FULL_DEBUG" == "1" ]]; then
-  woff2_compress AaKaiSong2WanZi2_remapped.ttf
-  mv AaKaiSong2WanZi2_remapped.woff2 ../../content/fonts-zh/AaKaiSong2-full.woff2
-  exit
-fi
-
 SOLVE_EXEC=/tmp/caisse-typeface-zh-solve
 if [[ ! -e "${SOLVE_EXEC}" ]]; then
   echo "Compiling solver"
