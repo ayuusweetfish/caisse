@@ -133,8 +133,8 @@ const nonRepeatRandom = (fn, seed, range) => {
       return (i % 2 === 1) ? x : range - 1
 }
 
-const timeInMin = (timezoneOffsetMin) =>
-  Math.floor(Date.now() / 60000) + timezoneOffsetMin
+const timeInMin = (timestampMs, timezoneOffsetMin) =>
+  Math.floor(timestampMs / 60000) + timezoneOffsetMin
 const timeOfDay = (timestampMinute) => {
   const minuteInDay = timestampMinute % 1440
   const day = (timestampMinute - minuteInDay) / 1440
@@ -297,7 +297,8 @@ const staticFile = async (req, opts, headers, path) => {
     if (path === '/_/404') status = 404
     // Templates
     let text = new TextDecoder().decode(await readAll(file))
-    const timeInMinCur = timeInMin(opts.tz || 8 * 60)
+    const timestampMs = Date.now()
+    const timeInMinCur = timeInMin(timestampMs, opts.tz || 8 * 60)
     const timeOfDayCur = timeOfDay(timeInMinCur)
     const fetched = {}
     text = text.replace(/<!-- \((.+?)\)\s?(.*?)\s*-->/gs, (_, key, value) => {
@@ -355,7 +356,7 @@ const staticFile = async (req, opts, headers, path) => {
         const contentTempl = value.substring(lineEnd + 1, contentEnd)
         const entries = value.substring(contentEnd + delim.length)
           .split('\n').filter((s) => s.length > 0)
-        const timeSeed = Math.floor(timeInMin(8 * 60) / 10)
+        const timeSeed = Math.floor(timeInMin(timestampMs, 8 * 60) / 10)
         const plainRandom = (seed) => {
           const addr = req.aux.remoteHost
           for (let i = 0; i < addr.length; i++) {
@@ -394,6 +395,33 @@ const staticFile = async (req, opts, headers, path) => {
         return text
       }
     })
+    let cssNakedDay
+    if (opts.tz !== undefined) {
+      const offsetDate = new Date(timeInMinCur * 60000)
+      cssNakedDay = (
+        offsetDate.getUTCMonth() + 1 === 4 &&
+        offsetDate.getUTCDate() === 9
+      )
+    } else {
+      const offsetDate = new Date(timestampMs)
+      cssNakedDay = (
+        offsetDate.getUTCMonth() + 1 === 4 &&
+        ((offsetDate.getUTCDate() === 8 && offsetDate.getUTCHour() >= 10) ||
+          offsetDate.getUTCDate() === 9 ||
+         (offsetDate.getUTCDate() === 10 && offsetDate.getUTCHour() < 12))
+      )
+    }
+    if (cssNakedDay) {
+      text = text
+        .replace(/<link rel=['"]stylesheet['"].*?>/g, '')
+        .replace(/<style>.*?<\/style>/gs, '')
+        .replace(/<(.+?)\s*style=['"].*?['"](.*?)>/g, '<$1$2>')
+      text = text.replace(/<body(.+?)>/, '<body$1><blockquote>' + (
+        opts.lang == 'zh' ?
+          "📜 本站正在庆祝 <a href='https://css-naked-day.org/'>CSS 裸奔节</a>！4 月 9 日期间，本站不使用任何附加样式。<br>这项年度活动意在倡导<a href='https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Accessibility/HTML'>清晰、语义化的网页结构</a>，让更多的访客能够在网上自由地冲浪。" :
+          "<i>📜 This site is celebrating <a href='https://css-naked-day.org/'>CSS Naked Day!</a> Throughout 9 April, no additional styles will be applied.</i><br><i>This annual event advocates for <a href='https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML'>clear, semantic web page construction</a>, allowing more visitors to navigate and enjoy content online.</i>"
+        ) + '</blockquote>')
+    }
     headers.set('Cache-Control', 'no-store')
     return new Response(text, { status, headers })
   } else {
