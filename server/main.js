@@ -418,7 +418,7 @@ const staticFile = async (req, opts, headers, path) => {
         .replace(/<(.+?)\s*style=['"].*?['"](.*?)>/g, '<$1$2>')
       text = text.replace(/<body(.+?)>/, '<body$1><blockquote>' + (
         opts.lang == 'zh' ?
-          "📜 本站正在庆祝 <a href='https://css-naked-day.org/'>CSS 裸奔节</a>！4 月 9 日期间，本站不使用任何附加样式。<br>这项年度活动意在倡导<a href='https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Accessibility/HTML'>清晰、语义化的网页结构</a>，让更多的访客能够在网上自由地冲浪。" :
+          "📜 本站正在庆祝 <a href='https://css-naked-day.org/'>CSS 裸奔节</a>！4 月 9 日期间，本站不使用任何附加样式。<br>这项年度活动意在倡导<a href='https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Accessibility/HTML'>清晰、语义化的网页结构</a>，让更多访客能够在网上自由地冲浪。" :
           "<i>📜 This site is celebrating <a href='https://css-naked-day.org/'>CSS Naked Day!</a> Throughout 9 April, no additional styles will be applied.</i><br><i>This annual event advocates for <a href='https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML'>clear, semantic web page construction</a>, allowing more visitors to navigate and enjoy content online.</i>"
         ) + '</blockquote>')
     }
