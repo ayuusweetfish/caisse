@@ -406,9 +406,9 @@ const staticFile = async (req, opts, headers, path) => {
       const offsetDate = new Date(timestampMs)
       cssNakedDay = (
         offsetDate.getUTCMonth() + 1 === 4 &&
-        ((offsetDate.getUTCDate() === 8 && offsetDate.getUTCHour() >= 10) ||
+        ((offsetDate.getUTCDate() === 8 && offsetDate.getUTCHours() >= 10) ||
           offsetDate.getUTCDate() === 9 ||
-         (offsetDate.getUTCDate() === 10 && offsetDate.getUTCHour() < 12))
+         (offsetDate.getUTCDate() === 10 && offsetDate.getUTCHours() < 12))
       )
     }
     if (cssNakedDay) {
