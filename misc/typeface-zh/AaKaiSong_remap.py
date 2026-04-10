@@ -26,8 +26,8 @@ def copy_across(f_from, cp_from, f_to, cp_to=None, tfm=None, scale=1, weight=0):
   if weight != 0: f_to.changeWeight(weight)
   f_to[cp_to].width = round(w * scale)
 
-copy_across(f, 0xFF08, f, tfm=psMat.translate(0, 54))
-copy_across(f, 0xFF09, f, tfm=psMat.translate(0, 54))
+copy_across(f, 0xFF08, f, tfm=psMat.translate(0, 60))
+copy_across(f, 0xFF09, f, tfm=psMat.translate(0, 60))
 
 # ba0a4e8d1ca0b02e9b506c04254ff8ca7d53330d  /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf
 # pyftsubset /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf --unicodes=266d-266f --output-file=DejaVuSans.ttf
