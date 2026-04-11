@@ -27,12 +27,12 @@ Music from the game <link sheepdogs>. The first version received the feedback th
 
 {{rellinks.zh=}}
 !<list
-  <li <link sheepdogs 关于游戏《%》>>
+  <li <link sheepdogs 游戏《%》>>
   <li <subpagelink sheepdogs/play 游玩链接（本站）>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link sheepdogs About the game “%”>>
+  <li <link sheepdogs The game “%”>>
   <li <subpagelink sheepdogs/play Play the game (this site)>>
 >
