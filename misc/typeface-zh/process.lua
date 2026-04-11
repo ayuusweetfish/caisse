@@ -56,7 +56,7 @@ function addsubset(subset, name, writecss, comment)
   if exists then
     f:close()
   else
-    subsetinvocations[#subsetinvocations + 1] = {table.concat(terms, ','), woff2basename}
+    subsetinvocations[#subsetinvocations + 1] = {table.concat(terms, ','), woff2pathcontent}
   end
   if writecss then
     css[#css + 1] = string.format([[
@@ -118,7 +118,8 @@ for i = 1, #cpseq do
 end
 
 for i = 1, #subsetinvocations do
-  local codepoints, woff2basename = table.unpack(subsetinvocations[i])
+  local codepoints, woff2pathcontent = table.unpack(subsetinvocations[i])
+  local woff2basename = woff2pathcontent:match('/([^/]+)$')
   local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
   local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
   if not os.execute(

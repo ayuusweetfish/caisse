@@ -9,7 +9,4 @@ if [[ "$FULL" == "1" ]]; then
 fi
 find ../../build/ -name "index.*.html" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a-z]+)\.html)\n/\1\n\2.\3\n/g' | INC=1 ${SOLVE_EXEC} > /tmp/caisse-typeface-zh-stray.txt
 
-exists() { [[ -f $1 ]]; }
-exists ../../content/fonts-zh/AaKaiSong.*.woff2 && mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
 lua process.lua
-test -n "$(find . -maxdepth 1 -name 'AaKaiSong.*.woff2' -print -quit)" && rm AaKaiSong.*.woff2
