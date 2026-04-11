@@ -19,12 +19,11 @@ for line in io.open('AaKaiSong2WanZi2.charset.txt'):lines() do
 end
 print('#codepoints', ncodepoints)
 
-local css = io.open('/tmp/caisse-typeface-zh-AaKaiSong.css', 'w')
-
-local scratchprefix = '/tmp/caisse-typeface-zh-'
+local css = {}
 
 local subsetsocc = {} -- Deduplication
-function addsubset(subset, name, skipcss, comment)
+local subsetinvocations = {}  -- {{codepoints, WOFF2 file name}, ...}
+function addsubset(subset, name, writecss, comment)
   local terms = {}
   local j = 1
   while j <= #subset do
@@ -44,7 +43,6 @@ function addsubset(subset, name, skipcss, comment)
   --print(table.concat(terms, ','))
   -- Deduplication
   local woff2basename = string.format('AaKaiSong.%s.%s.woff2', name, h)
-  local woff2pathscratch = scratchprefix .. woff2basename
   local woff2pathcontent = '../../content/fonts-zh/' .. woff2basename
   -- Short-circuit if already processed
   if subsetsocc[woff2basename] then return end
@@ -58,23 +56,10 @@ function addsubset(subset, name, skipcss, comment)
   if exists then
     f:close()
   else
-    local ttfpath = woff2pathscratch:sub(1, -7) .. '.ttf'
-    local success, _ = os.execute(
-      string.format(
-        'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
-        table.concat(terms, ','), ttfpath
-      ) .. ' && ' .. string.format(
-        'woff2_compress %s',
-        ttfpath
-      ) .. ' && ' .. string.format(
-        'mv "%s" "%s"',
-        woff2pathscratch, woff2pathcontent
-      )
-    )
-    if not success then os.exit(1) end
+    subsetinvocations[#subsetinvocations + 1] = {table.concat(terms, ','), woff2basename}
   end
-  if not skipcss then
-    css:write(string.format([[
+  if writecss then
+    css[#css + 1] = string.format([[
 @font-face {
   font-family: 'AaKaiSong';
   font-style: normal;
@@ -84,7 +69,7 @@ function addsubset(subset, name, skipcss, comment)
   unicode-range: %s;
 }
 ]],
-    name .. '.' .. h, table.concat(terms, ',')))
+    name .. '.' .. h, table.concat(terms, ','))
   end
 end
 
@@ -104,7 +89,7 @@ for line in io.open('/tmp/caisse-typeface-zh-stray.txt'):lines() do
   for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
     cps[#cps + 1] = tonumber(w, 16)
   end
-  addsubset(cps, 'stray', true, docid)
+  addsubset(cps, 'stray', false, docid)
 end
 
 -- Precalculated subset
@@ -127,7 +112,26 @@ for i = 1, #cpseq do
   subset[#subset + 1] = cpseq[i]
   codepoints[cpseq[i]] = nil
   if sep:byte(i) == sepmarker then
-    addsubset(subset, 'common')
+    addsubset(subset, 'common', true)
     subset = {}
   end
 end
+
+for i = 1, #subsetinvocations do
+  local codepoints, woff2basename = table.unpack(subsetinvocations[i])
+  local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
+  local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
+  if not os.execute(
+    string.format(
+      'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
+      codepoints, ttfpathscratch
+    ) .. ' && ' .. string.format(
+      'woff2_compress %s',
+      ttfpathscratch
+    ) .. ' && ' .. string.format(
+      'mv "%s" "%s"',
+      woff2pathscratch, woff2pathcontent
+    )
+  ) then os.exit(1) end
+end
+io.open('/tmp/caisse-typeface-zh-AaKaiSong.css', 'w'):write(table.concat(css))
