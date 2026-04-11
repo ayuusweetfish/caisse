@@ -21,6 +21,8 @@ print('#codepoints', ncodepoints)
 
 local css = io.open('/tmp/caisse-typeface-zh-AaKaiSong.css', 'w')
 
+local scratchprefix = '/tmp/caisse-typeface-zh-'
+
 local subsetsocc = {} -- Deduplication
 function addsubset(subset, name, skipcss, comment)
   local terms = {}
@@ -41,12 +43,14 @@ function addsubset(subset, name, skipcss, comment)
   h = string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
   --print(table.concat(terms, ','))
   -- Deduplication
-  local woff2path = string.format('AaKaiSong.%s.%s.woff2', name, h)
+  local woff2basename = string.format('AaKaiSong.%s.%s.woff2', name, h)
+  local woff2pathscratch = scratchprefix .. woff2basename
+  local woff2pathcontent = '../../content/fonts-zh/' .. woff2basename
   -- Short-circuit if already processed
-  if subsetsocc[woff2path] then return end
-  subsetsocc[woff2path] = true
+  if subsetsocc[woff2basename] then return end
+  subsetsocc[woff2basename] = true
   -- Check if file exists
-  local f = io.open(woff2path, 'r')
+  local f = io.open(woff2pathcontent, 'r')
   local exists = (f ~= nil)
   print(string.format(
     'Subset %s, hash %s, size %d, comment %s%s',
@@ -54,15 +58,21 @@ function addsubset(subset, name, skipcss, comment)
   if exists then
     f:close()
   else
-    local ttfpath = string.format('AaKaiSong.%s.%s.ttf', name, h)
-    os.execute(string.format(
-      'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
-      table.concat(terms, ','), ttfpath))
-    os.execute(string.format(
-      'woff2_compress %s', ttfpath))
-    os.remove(ttfpath)
+    local ttfpath = woff2pathscratch:sub(1, -7) .. '.ttf'
+    local success, _ = os.execute(
+      string.format(
+        'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
+        table.concat(terms, ','), ttfpath
+      ) .. ' && ' .. string.format(
+        'woff2_compress %s',
+        ttfpath
+      ) .. ' && ' .. string.format(
+        'mv "%s" "%s"',
+        woff2pathscratch, woff2pathcontent
+      )
+    )
+    if not success then os.exit(1) end
   end
-  os.rename(woff2path, '../../content/fonts-zh/' .. woff2path)
   if not skipcss then
     css:write(string.format([[
 @font-face {
