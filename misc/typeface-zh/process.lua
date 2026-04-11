@@ -117,22 +117,41 @@ for i = 1, #cpseq do
   end
 end
 
-for i = 1, #subsetinvocations do
-  local codepoints, woff2pathcontent = table.unpack(subsetinvocations[i])
-  local woff2basename = woff2pathcontent:match('/([^/]+)$')
-  local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
-  local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
-  if not os.execute(
-    string.format(
-      'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
-      codepoints, ttfpathscratch
-    ) .. ' && ' .. string.format(
-      'woff2_compress %s',
-      ttfpathscratch
-    ) .. ' && ' .. string.format(
-      'mv "%s" "%s"',
-      woff2pathscratch, woff2pathcontent
-    )
-  ) then os.exit(1) end
+if os.getenv('FONT_SUBSET_PARALLEL') then
+  local pipe = io.popen([[
+parallel --colsep '\t' '
+  BASENAME="$(basename "{2}")"
+  TTF_SCRATCH="$(mktemp --suffix .ttf)"
+  WOFF2_SCRATCH="${TTF_SCRATCH%.ttf}.woff2"
+  pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes={1} --output-file="$TTF_SCRATCH" && \
+    woff2_compress "$TTF_SCRATCH" && \
+    mv "$WOFF2_SCRATCH" "{2}"
+'
+]], 'w')
+  for i = 1, #subsetinvocations do
+    local codepoints, woff2pathcontent = table.unpack(subsetinvocations[i])
+    pipe:write(codepoints .. '\t' .. woff2pathcontent .. '\n')
+  end
+  pipe:close()
+else
+  for i = 1, #subsetinvocations do
+    local codepoints, woff2pathcontent = table.unpack(subsetinvocations[i])
+    local woff2basename = woff2pathcontent:match('/([^/]+)$')
+    local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
+    local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
+    if not os.execute(
+      string.format(
+        'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
+        codepoints, ttfpathscratch
+      ) .. ' && ' .. string.format(
+        'woff2_compress %s',
+        ttfpathscratch
+      ) .. ' && ' .. string.format(
+        'mv "%s" "%s"',
+        woff2pathscratch, woff2pathcontent
+      )
+    ) then os.exit(1) end
+  end
 end
+
 io.open('/tmp/caisse-typeface-zh-AaKaiSong.css', 'w'):write(table.concat(css))
