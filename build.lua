@@ -821,6 +821,9 @@ markupfns = {
   symbols = function (text)
     return '<span class="symbols">' .. text .. '</span>'
   end,
+  span = function (text)
+    return '<span>' .. text .. '</span>'
+  end,
   rawlink = function (href, text)
     return '<a href="' .. href .. '">' .. text .. '</a>'
   end,

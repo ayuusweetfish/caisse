@@ -7,11 +7,26 @@
 
 !<list
   <li <~~='
-    <b 《第二自我：计算机与人类灵魂》（<lang en <it The Second Self: Computers and the Human Spirit>>）>— Sherry Turkle<br>人喜欢借助自然界的事物来理解科技，而自然界中最接近计算机的就是人类自己；个人计算的普及悄悄改变了人们眼里的自己与机器。觉得别人的电脑很难用吗？会不会用“死机”来形容自己？学程序语言像学人类语言一样？世界上的大人小孩们似乎都在探索着同样的“第二自我”哦。
+    <b 《第二自我：计算机与人类灵魂》（<lang en <it The Second Self: Computers and the Human Spirit>>）><br><span Sherry Turkle　1984, 2004><br>人喜欢借助自然界的事物来理解科技，而自然界中最接近计算机的就是人类自己；个人计算的普及悄悄改变了人们眼里的自己与机器。觉得别人的电脑很难用吗？会不会用“死机”来形容自己？学程序语言像学人类语言一样？世界上的大人小孩们似乎都在探索着同样的“第二自我”哦。
   '>>
   <anchor interpreters>
   <li <~~='
-    <b 《手作解释器》（<lang en <it Crafting Interpreters>>）>— Bob Nystrom<br>精巧的小书，透彻地讲解一门程序语言的设计与构造。而且手绘插图和排版非常漂亮！即使不是领域内的读者也值得去<link https://craftinginterpreters.com/ 网站上>随便翻开几章欣赏一下 <kao ദ്ദി(˵ •̀ ᴗ - ˵ )>
+    <b 《手作解释器》（<lang en <it Crafting Interpreters>>）><br><span Bob Nystrom　2021><br>精巧的小书，透彻地讲解一门程序语言的设计与构造。而且手绘插图和排版非常漂亮！即使不是领域内的读者也值得去<link https://craftinginterpreters.com/ 网站上>随便翻开几章欣赏一下 <kao ദ്ദി(˵ •̀ ᴗ - ˵ )>
+  '>>
+  <li <~~='
+    <b 《MAEDA@MEDIA》><br><span John Maeda　2000><br>
+  '>>
+  <li <~~='
+    <b 《电子音乐理论与技术》（<lang en <it The Theory and Technique of Electronic Music>>）><br><span Miller Puckette　2006><br><link https://msp.ucsd.edu/techniques/latest/book.pdf>
+  '>>
+  <li <~~='
+    <b 《登上帕那索斯山的台阶》（<lang lat <it Gradus ad Parnassum>>）><br><span Johann Joseph Fux　1725><br><link https://imslp.org/wiki/Gradus_ad_Parnassum_(Fux%2C_Johann_Joseph)><link http://www.opus28.co.uk/Fux_Gradus.pdf>
+  '>>
+  <li <~~='
+    <b 《狮子之家的点心日》（<lang ja ライオンのおやつ>）><br><span 小川糸　2019><br>
+  '>>
+  <li <~~='
+    <b 《看不见的城市》（<lang it <it Le città invisibili>>）><br><span Italo Calvino　1972><br>
   '>>
 >
 
@@ -21,10 +36,25 @@
 
 !<list
   <li <~~='
-    <b <it The Second Self: Computers and the Human Spirit>> — Sherry Turkle<br>Humans tend to understand technology through the lens of the natural world; and in nature, the closest thing to the computer is the human itself. The spread of personal computing has quietly shifted how we perceive both ourselves and our machines.<br>Ever felt stumbling using someone else’s computer? Do you describe yourself as “hardcoded” to do something? How is learning a programming language similar to picking up a foreign tongue? It seems that everyone around the world — adults and children alike — is curiously exploring this same “second self”.
+    <b <it The Second Self: Computers and the Human Spirit>><br><span Sherry Turkle　1984, 2004><br>Humans tend to understand technology through the lens of the natural world; and in nature, the closest thing to the computer is the human itself. The spread of personal computing has quietly shifted how we perceive both ourselves and our machines.<br>Ever felt stumbling using someone else’s computer? Do you describe yourself as “hard-wired” into your behaviour? How is learning a programming language similar to picking up a foreign tongue? It seems that everyone around the world — adults and children alike — is curiously exploring this same “second self”.
   '>>
   <anchor interpreters>
   <li <~~='
-    <b <it Crafting Interpreters>> — Bob Nystrom<br>A delicate little book that develops a programming language, clearly explaining its design and construction. The hand-drawn illustrations and the formatting are beautiful! Even for the non-target audience, it will be worth it to visit the <link https://craftinginterpreters.com/ website> and have a look at random chapters <kao ദ്ദി(˵ •̀ ᴗ - ˵ )>
+    <b <it Crafting Interpreters>><br><span Bob Nystrom　2021><br>A delicate little book that develops a programming language, clearly explaining its design and construction. The hand-drawn illustrations and the formatting are beautiful! Even for the non-target audience, it will be worth it to visit the <link https://craftinginterpreters.com/ website> and have a look at random chapters <kao ദ്ദി(˵ •̀ ᴗ - ˵ )>
+  '>>
+  <li <~~='
+    <b <it MAEDA@MEDIA>><br><span John Maeda　2000><br>
+  '>>
+  <li <~~='
+    <b <it The Theory and Technique of Electronic Music>><br><span Miller Puckette　2006><br><link https://msp.ucsd.edu/techniques/latest/book.pdf>
+  '>>
+  <li <~~='
+    <b <it The Study of Counterpoint> (<lang lat <it Gradus ad Parnassum>>)><br><span Johann Joseph Fux　1725><br><link https://imslp.org/wiki/Gradus_ad_Parnassum_(Fux%2C_Johann_Joseph)><link http://www.opus28.co.uk/Fux_Gradus.pdf>
+  '>>
+  <li <~~='
+    <b <it Lion’s Snack> (<lang ja ライオンのおやつ>)><br><span 小川糸　2019><br>
+  '>>
+  <li <~~='
+    <b <it Invisible Cities> (<lang it <it Le città invisibili>>)><br><span Italo Calvino　1972><br>
   '>>
 >
