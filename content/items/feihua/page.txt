@@ -1,6 +1,6 @@
 {{title.zh=}}飞花小令
 {{intro.zh=}}玩法多样的双人诗词游戏
-{{title.en=}}Fei Hua Xiao Ling / Floral Ditties
+{{title.en=}}Fei Hua Xiao Ling (Floral Ditties)
 {{intro.en=}}A game based on classical Chinese poetry
 
 {{bannerimg=}}cover.jpg
@@ -32,7 +32,7 @@
 从后台统计数据看，玩家数量出乎意料地多，着实令我们惊喜。网页版现已上线，希望未来可以继续和诗词爱好者们一起玩～
 
 {{contents.en=}}
-<it Floral Ditties> or <it Fei Hua Xiao Ling> (<lang zh 飞花小令>) is a game based on an ancient Chinese drinking game based on poetry, with added innovations.
+<it Fei Hua Xiao Ling> (<lang zh 飞花小令>, also <it Floral Ditties>) is a game based on an ancient Chinese drinking game based on poetry, with added innovations.
 <link https://feihua.ayu.land Link to the game’s webpage version>. The rules will be introduced in-game. The game is only available in (simplified) Chinese due to its highly language-specific nature.
 !<note <~~='
 Due to policy changes in WeChat applet hosting platform, service of the applet version has been suspended. Migration to the webpage is complete, and documentation in the source repository has been updated. <date 2024.04>
@@ -41,12 +41,12 @@ Due to policy changes in WeChat applet hosting platform, service of the applet v
 
 <hr>
 A collaborative effort with Kuriko as our entry in the 2021 students’ WeChat applet development contest.
-Fei Hua Ling (<lang zh 飞花令>) is a game where players recite or compose poetry given a theme, which is usually a Chinese character (it was originally fixed to be “<lang zh 花>”, “flower”; but variations existed). The verses should contain the theme character/word, while also adhering to metrical rules. Inspired by the <it Chinese Poetry Congress> television programme, a set of new gameplay rules were implemented in the game —
+Fei Hua Ling (<lang zh 飞花令>, “wine game of flying flowers”) is a game where players recite or compose poetry given a theme, which is usually a Chinese character (it was originally fixed to be “<lang zh 花>”, “flower”; but variations existed). The verses should contain the theme character/word, while also adhering to metrical rules. Inspired by the <it Chinese Poetry Congress> television programme, a set of new gameplay rules were implemented in the game —
 !<list
-  <li <b <lang zh 梦笔生花> / Flowers under the dream brush>: The theme is a single character or a word (or a combination) of two characters.>
-  <li <b <lang zh 走马观花> / Flowers passing by on a horseback ride>: The theme is a verse (with a customisable character count of 5–9), in which the characters are used as keywords in order. Players take turns to name another verse that contains the current keyword.>
-  <li <b <lang zh 天女散花> / Flowers scattered by the nymph>: The theme comprises a set of fixed characters and a pool of eliminable words (either “1 char. + 10 words” or “3 chars. + 16 words”). Players take turns picking one from each set, and name a verse containing both selected words. Each eliminable word can be used only once in a game.>
-  <li <b <lang zh 雾里看花> / Flowers in misty vision>: The theme comprises two sets of words (with a customisable size of 5–10 words). Players take turns picking one from each set, and name a verse containing both selected words. Each word can be used only once in a game.>
+  <li <b <lang zh 梦笔生花> (Flowers under the dream brush)>: The theme is a single character or a word (or a combination) of two characters.>
+  <li <b <lang zh 走马观花> (Flowers passing by on a horseback ride)>: The theme is a verse (with a customisable character count of 5–9), in which the characters are used as keywords in order. Players take turns to name another verse that contains the current keyword.>
+  <li <b <lang zh 天女散花> (Flowers scattered by the nymph)>: The theme comprises a set of fixed characters and a pool of eliminable words (either “1 char. + 10 words” or “3 chars. + 16 words”). Players take turns picking one from each set, and name a verse containing both selected words. Each eliminable word can be used only once in a game.>
+  <li <b <lang zh 雾里看花> (Flowers in misty vision)>: The theme comprises two sets of words (with a customisable size of 5–10 words). Players take turns picking one from each set, and name a verse containing both selected words. Each word can be used only once in a game.>
 >
 
 We merged several poetry collections on the Internet and added emendations, obtaining a library of hundreds of thousands of works. We curated a set of frequent words and phrases as well as well-known verses for automatic theme generation and carefully tuned the difficulties, trying our best to deliver interesting and enjoyable games.
