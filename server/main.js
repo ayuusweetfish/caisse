@@ -1,5 +1,3 @@
-import { readAll } from 'https://deno.land/std@0.168.0/streams/read_all.ts'
-
 const log = (msg) => console.log(`${(new Date()).toISOString()} ${msg}`)
 
 const persistEndpoint = Deno.env.get('PERS')
@@ -296,7 +294,7 @@ const staticFile = async (req, opts, headers, path) => {
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
     if (path === '/_/404') status = 404
     // Templates
-    let text = new TextDecoder().decode(await readAll(file))
+    let text = await new Response(file.readable).text()
     const timestampMs = Date.now()
     const timeInMinCur = timeInMin(timestampMs, opts.tz || 8 * 60)
     const timeOfDayCur = timeOfDay(timeInMinCur)
