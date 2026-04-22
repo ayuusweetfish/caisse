@@ -13,7 +13,7 @@
 
 !<h1 1. 出走>
 
-这几天收到了好几条 A 云（国内知名云服务提供商）发来的短信，提醒我租的服务器马上到期。这台机器是<link fhxl 《%》>的家，要是塌了游戏就不能玩了，但是本 deadline 战神不到最后一天是坚决不会动的！于是这天晚上眼看着还有几个小时就要过期了，便按计划登上 A 云控制台，找到“续费”——
+这几天收到了好几条 A 云（国内知名云服务提供商）发来的短信，提醒我租的服务器马上到期。这台机器是<link feihua 《%》>的家，要是塌了游戏就不能玩了，但是本 deadline 战神不到最后一天是坚决不会动的！于是这天晚上眼看着还有几个小时就要过期了，便按计划登上 A 云控制台，找到“续费”——
 
 一年怎么要 600 多啊！去年这个时候新客优惠的年租只收了 38 块钱，明明记得当时说可以续费几年来着。立刻开了个工单，然后被机器人回答了：一切以实时报价为准。好 bia，或许我记错了。
 
@@ -67,7 +67,7 @@ Who was it that mentioned mentioned ChatGPT Ops? I really need a bot to supervis
 
 !<h1 1. Running Away>
 
-Over the past few days I’ve received multiple text messages from A-Cloud (a well-known cloud service provider in China) reminding me that the server I rented will expire soon. This machine is the home of <link fhxl Floral Ditties> and the game will go offline if it collapses, but I, being a deadline warlord, will certainly refrain from taking actions unless it’s the very last day! So that night, with a few hours to go before the expiry, I logged onto the A-Cloud console as planned and found “Renew” —
+Over the past few days I’ve received multiple text messages from A-Cloud (a well-known cloud service provider in China) reminding me that the server I rented will expire soon. This machine is the home of <link feihua Floral Ditties> and the game will go offline if it collapses, but I, being a deadline warlord, will certainly refrain from taking actions unless it’s the very last day! So that night, with a few hours to go before the expiry, I logged onto the A-Cloud console as planned and found “Renew” —
 
 Why is it asking for over ¥600 a year! This time last year, the offer for new customers was only ¥38 per year, and my memory tells me that it was renewable at the same price for several years. I immediately opened a ticket and was answered by the robot: all prices are subject to the real-time quote. Well well… I probably remembered wrong.
 

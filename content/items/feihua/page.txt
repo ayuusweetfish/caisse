@@ -12,7 +12,7 @@
 
 {{contents.zh=}}
 在古代酒令游戏“飞花令”基础上设计的双人诗词游戏，共有四种多样的玩法。借助完善的诗词数据库，支持随机出题、检查答案。
-<link https://fhxl.ayu.land 网页版游玩链接>。过程中会对规则进行详细介绍。
+<link https://feihua.ayu.land 网页版游玩链接>。过程中会对规则进行详细介绍。
 
 !<note <~~='
 由于微信小程序平台政策调整，小程序版目前已暂停运营。向网页版的迁移已经完成，程序仓库中的相关文档也已更新。<date 2024.04>
@@ -33,7 +33,7 @@
 
 {{contents.en=}}
 <it Floral Ditties> or <it Fei Hua Xiao Ling> (<lang zh 飞花小令>) is a game based on an ancient Chinese drinking game based on poetry, with added innovations.
-<link https://fhxl.ayu.land Link to the game’s webpage version>. The rules will be introduced in-game. The game is only available in (simplified) Chinese due to its highly language-specific nature.
+<link https://feihua.ayu.land Link to the game’s webpage version>. The rules will be introduced in-game. The game is only available in (simplified) Chinese due to its highly language-specific nature.
 !<note <~~='
 Due to policy changes in WeChat applet hosting platform, service of the applet version has been suspended. Migration to the webpage is complete, and documentation in the source repository has been updated. <date 2024.04>
 !<img gh_a77036b8112b.jpg <= A WeChat applet code.> small>
@@ -54,12 +54,12 @@ The number of players was unexpectedly high according to the analytics, which ma
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://fhxl.ayu.land 《飞花小令》网页版>>
+  <li <link https://feihua.ayu.land 《飞花小令》网页版>>
   <li <link https://github.com/kuriko1023/fhl 程序仓库（GitHub）>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link https://fhxl.ayu.land Web version of <it Floral Ditties>>>
+  <li <link https://feihua.ayu.land Web version of <it Floral Ditties>>>
   <li <link https://github.com/kuriko1023/fhl Source repository (GitHub)>>
 >

@@ -13,7 +13,7 @@
       <li <link flow/rabbit 新年游记>，堆放了许多出游照片与胡思乱想的文字。>
     >
   >
-  <li 生产了一篇笨蛋运维纪实，<link fhxl-rehousing>。>
+  <li 生产了一篇笨蛋运维纪实，<link feihua-rehousing>。>
   <li 超级开心地认识了<link friends 新朋友>，也加入了 XXIIVV webring。>
 >
 
@@ -29,7 +29,7 @@ A month filled with fragments, spent in painting and New Year’s outings.
       <li <link flow/rabbit New Year’s outings>, a collection of photos and rambling words.>
     >
   >
-  <li Wrote a record of a bumbling Ops experience, <link fhxl-rehousing>.>
+  <li Wrote a record of a bumbling Ops experience, <link feihua-rehousing>.>
   <li Joyful encounters with <link friends new friends> as well as the acceptance into the XXIIVV webring.>
 >
 

@@ -9,7 +9,7 @@
 !<list
   <li <link flow/plough>。>
   <li <link marimba>。>
-  <li 完成<link fhxl 《%》>向网页版的迁移。>
+  <li 完成<link feihua 《%》>向网页版的迁移。>
 >
 
 {{contents.en=}}
@@ -18,5 +18,5 @@ Suddenly I came to realise that recorded here are the changes of the website rat
 !<list
   <li <link flow/plough>.>
   <li <link marimba>.>
-  <li Completed migration of <link fhxl “%”> to the webpage version.>
+  <li Completed migration of <link feihua “%”> to the webpage version.>
 >

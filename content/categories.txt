@@ -72,7 +72,7 @@ cats.playful.pagelist = {
   {name = 'medle', dark = false},
   {name = 'ice-hatch', dark = false},
   {name = 'sheepdogs', dark = false},
-  {name = 'fhxl', dark = true},
+  {name = 'feihua', dark = true},
   {name = 'aakami', dark = true},
 }
 cats.murmurs.pagelist = {
@@ -85,7 +85,7 @@ cats.murmurs.pagelist = {
   {name = 'daydream/fool', listed = false},
   {name = 'daydream/star', listed = false},
   {name = 'medle-postmortem', listed = false},
-  {name = 'fhxl-rehousing', listed = false},
+  {name = 'feihua-rehousing', listed = false},
   {name = 'webfont'},
   {name = 'diversity', listed = 'wind'},
   {name = 'into', listed = 'wind'},
