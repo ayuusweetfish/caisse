@@ -11,7 +11,7 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 有许多名字和昵称，但在这里叫我甜鱼就可以！
 相信世界的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
 做的事情很杂，主业设计学、互动媒体，副业计算机、作曲，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 <kao ≥﹏≤>
-整理归类放到这个小站大概只是敝帚自珍而已。许多内容都不够成熟，我也时常不愿称其为“作品”；这个名字显得有些太大了。不过，我或许还是在暗暗期待着它们能够启发某日路过的访客，或是为谁带去一些充实的欢乐。能实现这些，会是件非常幸福的事。
+整理归类放到这个小站大概只是敝帚自珍而已。许多内容都不够成熟，我也时常不愿称其为“作品”；这个名字显得有些太大。不过，我或许还是在暗暗期待着它们能够启发某日路过的访客，或是为谁带去一些充实的欢乐。能实现这些，会是件非常幸福的事。
 严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
 !<clearfloat>
 !<hr windy>
@@ -51,12 +51,17 @@ Into… nightwalks with the breeze? <date 2026.04>
   <li 选择困难>
   <li <lang en Lolita>>
   <li <lang en Solarpunk>>
-  <li 太阳双鱼、月亮室女、上升双子；<link flow/monsoon#070-Mirror 月亮与圣杯九>>
+  <li 神秘学
+    <list
+      <li 太阳双鱼、月亮室女、上升双子>
+      <li <link flow/monsoon#070-Mirror 月亮与圣杯九>>
+    >
+  >
 >
 
 {{contents.en=}}
 !<h1 Quick tags #tags>
-The following tags can assemble a quick, partial impression of the current me. However, humans are complex; one-sided categorizations often carry with them too much prejudice and misunderstanding, thus I hope that no one is reduced to or constrained by the tags.
+While one-sided categorizations carry too much prejudice and misunderstanding, the following tags can assemble a quick, partial impression of the current me.
 
 !<list
   <li Typologies avatar
@@ -69,7 +74,12 @@ The following tags can assemble a quick, partial impression of the current me. H
   <li Choice paralysis>
   <li Lolita>
   <li Solarpunk>
-  <li Sun Pisces, Moon Virgo, Ascendent Gemini; in Tarot, the Moon and the Nine of Cups>
+  <li Occult
+    <list
+      <li Sun Pisces, Moon Virgo, Ascendent Gemini>
+      <li The Moon and the Nine of Cups>
+    >
+  >
 >
 
 
@@ -150,7 +160,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 !<img nichijou.jpg <= The three main characters of Nichijou in the opening credits animation>>
 
 !<list
-  <li And lots, lots of individual animations>
+  <li And lots, lots of independent animations>
 >
 
 !<h2 Books #books>
