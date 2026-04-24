@@ -1,12 +1,48 @@
-{{title.zh=}}1
-{{intro.zh=}}1
-{{title.en=}}1
-{{intro.en=}}1
+{{title.zh=}}下一场花季
+{{intro.zh=}}花吹雪 TORNADO
+{{title.en=}}The Next Blossoming Season
+{{intro.en=}}HANAFUBUKI TORNADO
 
 {{date=}}2026.05,2026.06
 
 {{contents.zh=}}
-1
+!<musictrack <~=' 佐佐木朋子//大桥彩香（岛村卯月）et al.'> <= 闪耀！全开 Smile> <lang ja キラッ!満開スマイル> cover_474574918.jpg https://music.163.com/song?id=474574918 歌曲封面。>
+!<blockquote <~~='
+<lang ja 顔が赤いわけは　花に酔ったせいよ><br>【脸红全都是因为沉醉于花朵啦】
+<lang ja 言い訳つむぐ　罪つくりなくちびる><br>【还在编织着借口啊，这惹祸的嘴】
+'>>
+
+!<hr windy>
+!<h1 15°【】 #015>
+
+!<hr windy>
+!<h1 30°【】 #030>
+
+!<hr windy>
+!<h1 16°【】 #016>
+
+!<hr windy>
+!<h1 31°【】 #031>
+
+!<hr windy>
+!<h1 17°【】 #017>
+
+!<hr windy>
+!<h1 32°【】 #032>
+
+!<hr windy>
+!<h1 18°【】 #018>
+
+!<hr windy>
+!<h1 33°【】 #033>
+
+!<hr windy>
+!<h1 19°【】 #019>
+
+!<hr windy>
+!<h1 34°【】 #034>
+
+!<musictrack 娅娅酱 十万个春天 <= > cover_2683699962.jpg https://music.163.com/#/song?id=2683699962 歌曲封面。>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>.>

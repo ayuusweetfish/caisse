@@ -2,7 +2,7 @@
 “逝者如斯夫！不舍昼夜。”“帐，张也，张施于床上也。”
 不同于本站的<link dates 日期格式>，这里会使用公历与太阳黄经记载日期。
 !<--
-!<note 连载中：<link flow/icebreak %>>
+!<note 连载中：<link flow/next %>>
 >
 /
 
@@ -11,6 +11,6 @@
 Different from the <link dates date format> throughout the site, dates here will be recorded in the Gregorian calendar and the solar longitude.
 !<note Content here is currently <link ?lang=zh Chinese-only>.>
 !<--
-!<note Currently running: <link flow/icebreak %>>
+!<note Currently running: <link flow/next %>>
 >
 /
