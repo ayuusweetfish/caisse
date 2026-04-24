@@ -172,8 +172,8 @@ const editScore = (s, t) => {
       a[i * stride + j] = Math.min(
         a[(i - 1) * stride + j] + 1,
         a[i * stride + (j - 1)] + 1,
-        a[(i - 1) * stride + (j - 1)] + (s[i - 1] === t[i - 1] ? 0 : 1),
-        (i >= 2 && j >= 2 && s[i - 2] === t[i - 1] && s[i - 1] === t[i - 2])
+        a[(i - 1) * stride + (j - 1)] + (s[i - 1] === t[j - 1] ? 0 : 1),
+        (i >= 2 && j >= 2 && s[i - 2] === t[j - 1] && s[i - 1] === t[j - 2])
           ? a[(i - 2) * stride + (j - 2)] + 1
           : ns + nt
       )
