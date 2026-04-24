@@ -1,0 +1,26 @@
+{{title.zh=}}Malletwand
+{{intro.zh=}}手持摆球，作为音乐探索的趣味玩具
+{{title.en=}}Malletwand
+{{intro.en=}}A handheld pendulum for exploratory musical play
+
+{{date=}}2024.01
+
+{{contents.zh=}}
+!<note 本页面将放置此装置的更多文档。在此期间，请参阅<link https://github.com/ayuusweetfish/Malletwand 程序仓库>。>
+<b Malletwand> 是形似一个摆（手柄与垂下的摇摆小球）的手持设备。它作为一种鼓励探索的输入界面，让参与者能够感受并操作音乐的节奏。参与者晃动摆锤，一台机械钟琴便按照摆动的节奏来演奏音乐，每一次摆动对应音乐的一拍。
+摆锤的物理特性创造出一种有机的映射，能够自然地趋向于稳定、合适的节奏，同时也提供直观的控制方式。尽管这一装置尤其适合作为音乐入门的教学工具，它也适用于不同技能水平的用户。它可以显示出参与者自身对音乐句法的理解，借此为他们提供表达的可能性。此外，亦有多人合作模式，以鼓励社交性的互动。我们设想，这种以物理引导、触觉驱动、易于操作的交互方式可以扩展到更广泛的语境和更多样的媒介形式，促进参与者的探索、发现与创造力。
+
+{{contents.en=}}
+!<note This page will hold further documentation of the device. Meanwhile, please refer to the <link https://github.com/ayuusweetfish/Malletwand source repository>.>
+<b Malletwand> is a handheld device in the form of a pendulum (a handle with a hanging, swinging bob). It acts as an exploratory interface that allows participants to feel and manipulate musical timing. The participant swings the pendulum, and a robotic glockenspiel instrument plays music with a tempo matching the pendulum at one beat per swing.
+The physical properties of the pendulum make an organic mapping that naturally gravitates towards a steady, plausible rhythm, while still intuitively open to explicit control. While particularly suitable as an introductory, educational means of musical engagement, this interface caters to varied levels of expertise, providing opportunities for expression by manifesting the participant’s own understanding of the musical phrases. Social play is also encouraged through a multi-player cooperative mode. We envision that the approach of physically-guided, tactile, accessible interaction schemes can be extended to wider contexts and different media formats to foster participant exploration, discovery, and creativity.
+
+{{rellinks.zh=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/Malletwand 程序仓库（GitHub）>>
+>
+
+{{rellinks.en=}}
+!<list
+  <li <link https://github.com/ayuusweetfish/Malletwand Source repository (GitHub)>>
+>

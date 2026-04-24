@@ -97,6 +97,7 @@ cats.potpourri.pagelist = {
   {name = 'amakinoko', dark = true},
   {name = 'machine', dark = true},
   {name = 'canta-cart', dark = true},
+  {name = 'malletwand', listed = false},
   {name = 'fungi'},
   {name = 'fungi/log', listed = false},
   {name = 'fungi/log-r2', listed = false},
