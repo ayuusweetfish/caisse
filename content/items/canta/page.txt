@@ -31,7 +31,7 @@
 
 !<hr>
 
-除了实体装置外，乐器也可以<subpagelink canta-cart/play 在浏览器中游玩>。
+除了实体装置外，乐器也可以<subpagelink canta/play 在浏览器中游玩>。
 
 !<note 以下内容与 <link https://hackaday.io/project/196643-canta-cart/details Hackaday 项目详情>一致。中文版本基于机器翻译修订。>
 
@@ -112,7 +112,7 @@ Music for demonstration:
 
 !<hr>
 
-Apart from the actual device, the instrument can also be played <subpagelink canta-cart/play right in the browser>.
+Apart from the actual device, the instrument can also be played <subpagelink canta/play right in the browser>.
 
 !<note The following content is identical to the <link https://hackaday.io/project/196643-canta-cart/details project details on Hackaday>.>
 
@@ -178,14 +178,14 @@ Business cards are never complete without getting personal. I have already been 
 
 {{rellinks.zh=}}
 !<list
-  <li <subpagelink canta-cart/play 在线游玩页面>>
+  <li <subpagelink canta/play 在线游玩页面>>
   <li <link https://hackaday.io/project/196643-canta-cart Hackaday 项目页面>>
   <li <link https://github.com/ayuusweetfish/Canta-Cart 开源资料仓库>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <subpagelink canta-cart/play Online play page>>
+  <li <subpagelink canta/play Online play page>>
   <li <link https://hackaday.io/project/196643-canta-cart Hackaday project page>>
   <li <link https://github.com/ayuusweetfish/Canta-Cart Open-source material repository>>
 >

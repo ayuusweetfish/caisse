@@ -57,17 +57,17 @@ items/candy/Candy_Girl.mp4	18906820	video	203	960	600
 items/candy/Candy_Girl.mscz	51696	score
 items/candy/cover.png	45068	image	640	360
 items/candy/main.lua	5887	code
-items/canta-cart/A-Short-Hike.mp4	1331331	video	39	640	450
-items/canta-cart/Cover.jpg	59107	image	912	684
-items/canta-cart/Merry-Go-Round.mp4	2177512	video	39	960	540
-items/canta-cart/Pigeons.mp4	634716	video	9	540	360
-items/canta-cart/Rev-1-Assembly.jpg	81312	image	1120	840
-items/canta-cart/keyboard-10-keys.png	5857	image	840	200
-items/canta-cart/keyboard-transpose.png	23038	image	716	920
-items/canta-cart/play/canta-cart.js	119859	code
-items/canta-cart/play/canta-cart.wasm	188001	unknown
-items/canta-cart/play/index.html	2691	unknown
-items/canta-cart/sense-circuit.png	5214	image	762	246
+items/canta/A-Short-Hike.mp4	1331331	video	39	640	450
+items/canta/Cover.jpg	59107	image	912	684
+items/canta/Merry-Go-Round.mp4	2177512	video	39	960	540
+items/canta/Pigeons.mp4	634716	video	9	540	360
+items/canta/Rev-1-Assembly.jpg	81312	image	1120	840
+items/canta/keyboard-10-keys.png	5857	image	840	200
+items/canta/keyboard-transpose.png	23038	image	716	920
+items/canta/play/canta-cart.js	119859	code
+items/canta/play/canta-cart.wasm	188001	unknown
+items/canta/play/index.html	2691	unknown
+items/canta/sense-circuit.png	5214	image	762	246
 items/courses-21/Crescent_Moon.mp3	4466232	audio	223
 items/courses-21/Iron_Man.mp4	9889886	video	203	640	266
 items/courses-21/Iron_Man.mscz	55061	score
@@ -888,6 +888,10 @@ items/ice-hatch/screenshot2.png	19453	image	540	360
 items/index/120-Balloon.png	10613	image	600	360
 items/index/fish.png	2116	image	60	60
 items/index/page.css	1714	unknown
+items/jungle/Misty Jungle.mp3	5333994	audio	333
+items/jungle/Misty Jungle.mscz	58927	score
+items/jungle/Misty Jungle.pdf	401794	document	17
+items/jungle/cover.jpg	109596	image	1000	600
 items/leaving/IMG_20221130_151158.jpg	57870	image	912	684
 items/leaving/deteiku.mscz	52697	score
 items/leaving/deteiku.ogg	2269069	audio	194
@@ -993,10 +997,6 @@ items/medle-postmortem/medle-05.png	16958	image	600	320
 items/medle-postmortem/medle-06.png	13053	image	600	320
 items/medle-postmortem/medle-07.png	17402	image	600	320
 items/medle/cover.png	24623	image	960	360
-items/misty-jungle/Misty Jungle.mp3	5333994	audio	333
-items/misty-jungle/Misty Jungle.mscz	58927	score
-items/misty-jungle/Misty Jungle.pdf	401794	document	17
-items/misty-jungle/cover.jpg	109596	image	1000	600
 items/monogatari/Monogatari.mscz	123514	score
 items/monogatari/Monogatari.ogg	3597496	audio	280
 items/monogatari/Monogatari.pdf	809290	document	52
@@ -1022,12 +1022,12 @@ items/nuages/Les_nuages_descendent.ogg	741155	audio	127
 items/nuages/Les_nuages_descendent.pdf	282853	document	2
 items/nuages/cover.jpg	16218	image	900	320
 items/patchwork/illust.png	19803	image	800	560
-items/pink-bubble/cover.jpg	68359	image	1050	1086
-items/pink-bubble/floor-plan-analysis.jpg	27353	image	732	724
-items/pink-bubble/floor-plan.jpg	31977	image	745	720
-items/pink-bubble/model.jpg	39604	image	912	684
-items/pink-bubble/onsite.jpg	59530	image	1080	607
-items/pink-bubble/rendering.jpg	20577	image	869	231
+items/pink/cover.jpg	68359	image	1050	1086
+items/pink/floor-plan-analysis.jpg	27353	image	732	724
+items/pink/floor-plan.jpg	31977	image	745	720
+items/pink/model.jpg	39604	image	912	684
+items/pink/onsite.jpg	59530	image	1080	607
+items/pink/rendering.jpg	20577	image	869	231
 items/planetarium/images/Akkannbe.jpg	40552	image	320	320
 items/planetarium/images/Collecting-Pieces.jpg	51923	image	500	500
 items/planetarium/images/Dream-Makers.jpg	67661	image	480	480
