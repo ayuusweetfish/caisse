@@ -160,6 +160,8 @@ const timeOfDay = (timestampMinute) => {
 }
 
 const editScore = (s, t) => {
+  s = s.substring(0, 100)
+  t = t.substring(0, 100)
   const ns = s.length
   const nt = t.length
   const a = new Array((ns + 1) * (nt + 1))
@@ -178,17 +180,24 @@ const editScore = (s, t) => {
           : ns + nt
       )
   const dist = a[ns * stride + nt]
-  // Common subsequences
-  for (let i = 0; i <= ns; i++) a[i * stride + 0] = 0
-  for (let j = 1; j <= nt; j++) a[0 * stride + j] = 0
+  // Sum of lengths of common subsequences
+  const b = new Array((ns + 1) * (nt + 1))
+  for (let i = 0; i <= ns; i++) a[i * stride + 0] = 1, b[i * stride + 0] = 0
+  for (let j = 1; j <= nt; j++) a[0 * stride + j] = 1, b[0 * stride + j] = 0
   for (let i = 1; i <= ns; i++)
-    for (let j = 1; j <= nt; j++)
+    for (let j = 1; j <= nt; j++) {
       a[i * stride + j] =
         a[(i - 1) * stride + j] +
         a[i * stride + (j - 1)] +
-        (s[i - 1] === t[j - 1] ? 1 : -a[(i - 1) * stride + (j - 1)])
-  const sub = a[ns * stride + nt]
-  return dist * 5 - sub
+        (s[i - 1] === t[j - 1] ? 0 : -a[(i - 1) * stride + (j - 1)])
+      b[i * stride + j] =
+        b[(i - 1) * stride + j] +
+        b[i * stride + (j - 1)] +
+        (s[i - 1] === t[j - 1] ? a[(i - 1) * stride + (j - 1)] : -b[(i - 1) * stride + (j - 1)])
+    }
+  const sub = b[ns * stride + nt]
+  const n = Math.min(ns, nt)
+  return dist - sub / n
 }
 
 const negotiateLang = (accept, supported) => {
