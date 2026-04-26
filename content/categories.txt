@@ -129,7 +129,7 @@ cats.pebbles.pagelist = {
   {name = 'gradatim'},
 }
 cats.flow.pagelist = {
-  {name = 'flow/next'},
+  -- {name = 'flow/next'},
   {name = 'flow/icebreak'},
   {name = 'flow/drift'},
   {name = 'flow/plough'},
