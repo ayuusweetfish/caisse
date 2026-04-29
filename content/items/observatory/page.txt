@@ -27,7 +27,7 @@
 
 !<h1 世界书信 #letters>
 !<list
-  <li <~~=' <link https://journal.stuffwithstuff.com/ journal.stuffwithstuff.com><br><link bookshelf#interpreters 图书角>页面提及的《手作解释器》（<lang en <it Crafting Interpreters>>）作者 Bob Nystrom 的日志站。'>>
+  <li <~~=' <link https://journal.stuffwithstuff.com/ journal.stuffwithstuff.com><br><link bookshelf#interpreters 图书>页面提及的《手作解释器》（<lang en <it Crafting Interpreters>>）作者 Bob Nystrom 的日志站。'>>
   <li <~~=' <link https://www.lanisland.com/ 唉，澜的。><br>生活、摄影、美食。'>>
 >
 

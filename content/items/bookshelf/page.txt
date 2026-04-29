@@ -1,8 +1,8 @@
-{{title.zh=}}图书角
-{{title.en=}}Bookshelf
+{{title.zh=}}图书档案室
+{{title.en=}}Bookshelf Archive
 
 {{contents.zh=}}
-!<note 图书角建设中……>
+!<note 档案建设中……>
 !<hr windy>
 
 !<list
@@ -57,7 +57,7 @@
   '>>
   <anchor gradus>
   <li <~~='
-    <b <it Steps to Parnassus> (<lang lat <it Gradus ad Parnassum>>)><br><span Johann Joseph Fux　1725>　<link http://www.opus28.co.uk/Fux_Gradus.pdf Text (English translation)><br>A tutorial on counterpoint, based on the Renaissance <it <lang it stile antico>>. In a progressive dialogue form, it introduces the fundamental rules of counterpoint music of 2 to 4 parts, while also explaining the underlying principles and reasonings. This work has a far-reaching impact; its core ideas (including voice leading, voice independence, and harmonic balance) laid the basis for later classical harmonic theories. The knowledge here, along with the precious remarks of experience on musical perception and writing, also remain directly applicable across genres of composition.<br>The original work comprises two books. Mann’s English translation covers only the early chapters of the second (<it <lang lat liber secundus>>), discussing species counterpoint. The first book introduces the mathematical, rational principles of tones and intervals, known as speculative music (<it <lang lat musica speculativa>>). It is a rigorous, mathematical, and philosophical perspective, serving as a metaphysical foundation for the practical applications of harmony that follow.
+    <b <it Steps to Parnassus> (<lang lat <it Gradus ad Parnassum>>)><br><span Johann Joseph Fux　1725>　<link http://www.opus28.co.uk/Fux_Gradus.pdf Text (English translation)>　<link https://ks15.imslp.org/files/imglnks/usimg/f/fd/IMSLP91138-PMLP187246-Fux_-_Gradus_ad_Parnassum.pdf Text (original)><br>A tutorial on counterpoint, based on the Renaissance <it <lang it stile antico>>. In a progressive dialogue form, it introduces the fundamental rules of counterpoint music of 2 to 4 parts, while also explaining the underlying principles and reasonings. This work has a far-reaching impact; its core ideas (including voice leading, voice independence, and harmonic balance) laid the basis for later classical harmonic theories. The knowledge here, along with the precious remarks of experience on musical perception and writing, also remain directly applicable across genres of composition.<br>The original work comprises two books. Mann’s English translation covers only the early chapters of the second (<it <lang lat liber secundus>>), discussing species counterpoint. The first book introduces the mathematical, rational principles of tones and intervals, known as speculative music (<it <lang lat musica speculativa>>). It is a rigorous, mathematical, and philosophical perspective, serving as a metaphysical foundation for the practical applications of harmony that follow.
   '>>
   <li <~~='
     <b <it Lion’s Snack> (<lang ja ライオンのおやつ>)><br><span 小川糸　2019><br>—— TODO? ——

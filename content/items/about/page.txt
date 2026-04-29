@@ -8,37 +8,37 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.zh=}}
 !<img ../flow/cross/320-Gate.png <= 线条绘画。女孩捧着跃出的鱼从牌楼上飞过。> float-end syncdark>
-有许多名字和昵称，但在这里叫我甜鱼就可以！
+名字与称呼都只是流动的标记，不过在这里叫我甜鱼或者 Ayu 就好！
 相信世界的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
 做的事情很杂，主业设计学、互动媒体，副业计算机、作曲，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 <kao ≥﹏≤>
-整理归类放到这个小站大概只是敝帚自珍而已。许多内容都不够成熟，我也时常不愿称其为“作品”；这个名字显得有些太大。不过，我或许还是在暗暗期待着它们能够启发某日路过的访客，或是为谁带去一些充实的欢乐。能实现这些，会是件非常幸福的事。
-严格来说，这是一份个人百科（<lang en personal wiki>），但是叫它任何名字都可以——赛博小屋、博客、作品集、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
+整理归类放到这个小站大概只是敝帚自珍而已。许多内容都不够成熟，不过，我或许还是在暗暗期待着它们能够启发某日路过的访客，或是为谁带去一些充实的欢乐。能实现这些，会是件非常幸福的事。
+严格来说，这是一份个人百科（<lang en personal wiki>），但是用任何称呼都可以——赛博小屋、博客、数字花园、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
 !<clearfloat>
 !<hr windy>
 
 {{contents.en=}}
 !<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.> float-end syncdark>
-There are many ways of calling me, but I’m Ayu here!
-Believing in the possibilities of a wonderful world, always on the way of inquiries; may I be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
+Names are always just fluid, ephemeral identifiers, but I’m Ayu here!
+Believing in the possibilities of a wonderful world, always on the way of inquiries; seeking to be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
 I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing and musical composition, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome procrastination <kao ≥﹏≤>
-To put them up on this site is more like cherishing my own scruffy broom. A lot of content is far from mature and I am often hesitant to call them “works”; the name sounds a bit too large. Nevertheless, I might be silently hoping that they could inspire a visitor passing by someday, or bring someone a dose of fulfillment and joy. I will be heartily delighted if this happens.
-Technically, this is a <it personal wiki>, but please call it anything you deem appropriate — a cyber home, a blog, a portfolio, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
+To put them up on this site is more like cherishing my own scruffy broom. A lot of content is far from mature; nevertheless, I might be silently hoping that they could inspire a visitor passing by someday, or bring someone a dose of fulfillment and joy. I will be heartily delighted if this happens.
+Technically, this is a <it personal wiki>, but please call it anything you deem appropriate — a cyber home, a blog, a digital garden, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
 !<clearfloat>
 !<hr windy>
 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-正在……悄悄地随风潜入夜？<date 2026.04>
+赏花中！等一下我花呢？昨天还在这的？<date 2026.06>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Into… nightwalks with the breeze? <date 2026.04>
+Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 2026.06>
 
 
 {{contents.zh=}}
 !<h1 速识标签 #tags>
-可以通过下面的标签来快速认识一部分当下的我。不过，人都是复杂的，片面的归类承载着太多的偏见与误解，所以不希望任何人被标签概括或限制。
+尽管片面的归类承载着太多的偏见与误解，下面的标签可用于快速认识一部分当下的我。
 
 !<list
   <li 类型学捏捏
@@ -47,8 +47,7 @@ Into… nightwalks with the breeze? <date 2026.04>
     <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, RLUAI, 抑郁质-多血液质, 混乱善良, 女, Genderfuck, ADHD> medsmall syncdark>
   >
   <li 长三角地域>
-  <li 高敏感人群（HSP）>
-  <li 选择困难>
+  <li 高敏>
   <li <lang en Lolita>>
   <li <lang en Solarpunk>>
   <li 神秘学
@@ -58,6 +57,8 @@ Into… nightwalks with the breeze? <date 2026.04>
     >
   >
 >
+
+
 
 {{contents.en=}}
 !<h1 Quick tags #tags>
@@ -71,7 +72,6 @@ While one-sided categorizations carry too much prejudice and misunderstanding, t
   >
   <li Yangtze Delta>
   <li Highly sensitive person (HSP)>
-  <li Choice paralysis>
   <li Lolita>
   <li Solarpunk>
   <li Occult
@@ -103,9 +103,9 @@ It is too hard to pick something “favourite” or “representative”… Trea
 {{contents.zh=}}
 !<h2 游戏 #games>
 !<list
-  <li <b 蔚蓝（<lang en <it Celeste>>）>— Maddy Makes Games>
-  <li <b 短途旅行（<lang en <it A Short Hike>>）>— Adam Robinson-Yu>
-  <li <b 节奏天国（<lang ja リズム天国>）>— 任天堂 SPD>
+  <li <b 蔚蓝（<lang en <it Celeste>>）>>
+  <li <b 短途旅行（<lang en <it A Short Hike>>）>>
+  <li <b 节奏天国（<lang ja リズム天国>）>>
 >
 !<img games.png <= 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>>
 
@@ -126,7 +126,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 >
 
 !<h2 书 #books>
-!<note <link bookshelf 图书角>建设中，之后回来看看吧 <<^= > <>>>
+<link bookshelf>
 
 !<h2 数字空间 #cyberspace>
 <link observatory>
@@ -141,9 +141,9 @@ It is too hard to pick something “favourite” or “representative”… Trea
 {{contents.en=}}
 !<h2 Games #games>
 !<list
-  <li <b <it Celeste>> — Maddy Makes Games>
-  <li <b <it A Short Hike>> — Adam Robinson-Yu>
-  <li <b <it Rhythm Heaven> (<lang ja リズム天国>)> — Nintendo SPD>
+  <li <b <it Celeste>>>
+  <li <b <it A Short Hike>>>
+  <li <b <it Rhythm Heaven> (<lang ja リズム天国>)>>
 >
 !<img games.png <= Characters in the games: winged strawberries, Claire the bird, Huebirds>>
 
@@ -164,7 +164,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 >
 
 !<h2 Books #books>
-!<note The <link bookshelf bookshelf> is a work in progress, please check back later!>
+<link bookshelf>
 
 !<h2 Cyberspace #cyberspace>
 <link observatory>
