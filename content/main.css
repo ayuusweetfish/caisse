@@ -569,7 +569,7 @@ end
 {{@ distbuild }}
 {{ AaKaiSong_css }}
 {{@ end }}
-*[lang='lat'], i {
+i {
   /* font-style: oblique 9deg; */
   font-style: italic;
 }

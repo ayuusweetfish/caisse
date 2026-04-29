@@ -11,7 +11,7 @@
 
 !<musictrack <lang en Lennon–McCartney> 黑鸟 <lang en Blackbird> 4336738.jpg https://music.163.com/#/song?id=1412142637 <= 《披头士》专辑封面，白色背景上写着“The BEATLES”字样。>>
 
-!<img fool_blackbird.png <<~= 欧亚乌鸫的简笔画。//欧亚乌鸫（<lang lat Turdus merula>），但是不完全乌>> square medsmall syncdarkmild caption>
+!<img fool_blackbird.png <<~= 欧亚乌鸫的简笔画。//欧亚乌鸫（<lang lat <it Turdus merula>>），但是不完全乌>> square medsmall syncdarkmild caption>
 
 !<h1 1>
 !<blockquote <~~='
@@ -91,7 +91,7 @@
 
 !<musictrack <lang en Lennon–McCartney> Blackbird <= > 4336738.jpg https://music.163.com/#/song?id=1412142637 <= Cover of the album “The Beatles”, with the title of the album written on a white background>>
 
-!<img fool_blackbird.png <<~= Line art of a common blackbird.//Common blackbird (<lang lat Turdus merula>), but not entirely black>> square medsmall syncdarkmild caption>
+!<img fool_blackbird.png <<~= Line art of a common blackbird.//Common blackbird (<lang lat <it Turdus merula>>), but not entirely black>> square medsmall syncdarkmild caption>
 
 !<h1 1>
 !<blockquote <~~='
