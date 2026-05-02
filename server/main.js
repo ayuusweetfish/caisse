@@ -259,14 +259,13 @@ const staticFile = async (req, opts, headers, path) => {
     let file
     let fileInfo
     try {
-      // XXX: Atomicity is sacrificed here, but as of December 2022
-      // the Deno Deploy runtime does not support FsFile.stat()
-      // and throws an exception (EISDIR) on Deno.open()'ing a directory
-      fileInfo = await Deno.stat(siteRootDir + path)
-      if (fileInfo.isDirectory) return null
       file = await Deno.open(siteRootDir + path)
+      fileInfo = await file.stat()
+      if (fileInfo.isDirectory) return null
     } catch (e) {
       if (e instanceof Deno.errors.NotFound) return null
+      // Deno Deploy (Classic) runtime does not support `open()`ing a directory
+      if (e.code === 'EISDIR') return null
       throw e
     }
     return {
