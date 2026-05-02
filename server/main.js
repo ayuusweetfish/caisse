@@ -42,15 +42,18 @@ const mime = (s) => {
 }
 
 const etagReg = {}
+const metaReg = {}
 
 const openFile = async (path) => {
-  let file, fileInfo, etag
+  let file, fileInfo, etag, meta
   try {
     file = await Deno.open(siteRootDir + path)
     fileInfo = await file.stat()
     if (fileInfo.isDirectory) return null
+
+    // ETag
     etag = etagReg[path]
-    if (etag === undefined) {
+    if (meta === undefined) {
       const buf = new Uint8Array(1024 * 1024)
       let n = 0
       let hash = 0
@@ -62,8 +65,22 @@ const openFile = async (path) => {
       }
       if (hash < 0) hash += 4294967296
       file.seek(0, Deno.SeekMode.Start)
-      etag = `"${hash.toString(16).padStart(8, '0')}"`
-      etagReg[path] = etag
+      etagReg[path] = etag = `"${hash.toString(16).padStart(8, '0')}"`
+    }
+    // Metadata properties
+    meta = metaReg[path]
+    if (meta === undefined) {
+      try {
+        meta = JSON.parse(await Deno.readTextFile(siteRootDir + path + '.caisse.json'))
+      } catch (e) {
+        if (e instanceof Deno.errors.NotFound) meta = {}
+        else if (e instanceof SyntaxError) {
+          log(`Syntax error in ${metaPath}: ${e}`)
+          meta = {}
+        }
+        else throw e
+      }
+      metaReg[path] = meta
     }
   } catch (e) {
     if (e instanceof Deno.errors.NotFound) return null
@@ -74,47 +91,19 @@ const openFile = async (path) => {
   return {
     path, file,
     fileSize: fileInfo.size,
-    etag,
+    etag, meta,
   }
-}
-
-const metaReg = {}
-const metaRead = async (metaPath) => {
-  if (metaReg[metaPath] !== undefined) return metaReg[metaPath]
-  try {
-    const text = await Deno.readTextFile(siteRootDir + metaPath)
-    metaReg[metaPath] = JSON.parse(text)
-  } catch (e) {
-    if (e instanceof Deno.errors.NotFound) metaReg[metaPath] = null
-    else if (e instanceof SyntaxError) {
-      log(`Syntax error in ${metaPath}: ${e}`)
-      metaReg[metaPath] = null
-    }
-    else throw e
-  }
-  return metaReg[metaPath]
-}
-const metaGet = async (path, attr) => {
-  // assert(path.startsWith('/'))
-  let index = path.length
-  while (index > 0) {
-    index = path.lastIndexOf('/', index - 1)
-    const metaPath = path.substring(0, index + 1) + '.caisse.json'
-    const metaObj = await metaRead(metaPath)
-    if (metaObj && metaObj[attr]) return metaObj[attr]
-  }
-  return undefined
 }
 
 ;(async () => {
   const watcher = Deno.watchFs(siteRootDir)
   for await (const event of watcher) {
-    if (event.kind === 'create' || event.kind === 'modify' || event.kind === 'delete') {
+    if (event.kind === 'create' || event.kind === 'modify' || event.kind === 'remove') {
       for (const path of event.paths) {
         const relPath = path.substring(siteRootDir.length)
         delete etagReg[relPath]
-        if (relPath.endsWith('/.caisse.json'))
-          delete metaReg[relPath]
+        if (relPath.endsWith('.caisse.json'))
+          delete metaReg[relPath.substring(0, relPath.length - 12)]
       }
     }
   }
@@ -267,7 +256,7 @@ const staticFile = async (req, opts, headers, path) => {
 
   let status = 200
 
-  const { path: realPath, file, fileSize, etag } =
+  const { path: realPath, file, fileSize, etag, meta } =
     await openFile(path) ||
     (opts.isRaw ? (await openFile(path + `/raw`)) : null) ||
     await openFile(path + `/index.${opts.lang}.html`) ||
@@ -280,7 +269,7 @@ const staticFile = async (req, opts, headers, path) => {
   }
 
   headers.set('Content-Type', mime(realPath))
-  if ((await metaGet(realPath, 'COOP')) === true) {
+  if (meta['COOP'] === true) {
     headers.set('Cross-Origin-Opener-Policy', 'same-origin')
     headers.set('Cross-Origin-Embedder-Policy', 'require-corp')
   }
