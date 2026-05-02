@@ -44,7 +44,7 @@ const mime = (s) => {
 const etagReg = {}
 const metaReg = {}
 
-const openFile = async (path) => {
+const openFile = async (path, byteStart, byteEnd) => {
   let file, fileInfo, etag, meta
   try {
     file = await Deno.open(siteRootDir + path)
@@ -64,7 +64,6 @@ const openFile = async (path) => {
         }
       }
       if (hash < 0) hash += 4294967296
-      file.seek(0, Deno.SeekMode.Start)
       etagReg[path] = etag = `"${hash.toString(16).padStart(8, '0')}"`
     }
     // Metadata properties
@@ -88,10 +87,17 @@ const openFile = async (path) => {
     if (e.code === 'EISDIR') return null
     throw e
   }
+
+  const fileSize = fileInfo.size
+  if (byteStart === undefined) byteStart = 0
+  if (byteEnd === undefined) byteEnd = fileSize - 1
+  let rangeValid = (byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd)
+  file.seek(rangeValid ? byteStart : fileSize - 1, Deno.SeekMode.Start)
+
   return {
-    path, file,
-    fileSize: fileInfo.size,
+    path, stream: file.readable,
     etag, meta,
+    byteStart, byteEnd, fileSize, rangeValid,
   }
 }
 
@@ -256,9 +262,14 @@ const staticFile = async (req, opts, headers, path) => {
 
   let status = 200
 
-  const { path: realPath, file, fileSize, etag, meta } =
-    await openFile(path) ||
-    (opts.isRaw ? (await openFile(path + `/raw`)) : null) ||
+  const rangeHeader = req.headers.get('Range')
+  const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
+  const reqByteStart = (result && result[1]) ? +result[1] : undefined
+  const reqByteEnd = (result && result[2]) ? +result[2] : undefined
+
+  const { path: realPath, stream, etag, meta, byteStart, byteEnd, fileSize, rangeValid } =
+    await openFile(path, reqByteStart, reqByteEnd) ||
+    (opts.isRaw ? (await openFile(path + `/raw`, reqByteStart, reqByteEnd)) : null) ||
     await openFile(path + `/index.${opts.lang}.html`) ||
     await openFile(path + `/index.html`) ||
     {}
@@ -284,7 +295,7 @@ const staticFile = async (req, opts, headers, path) => {
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
     if (path === '/_/404') status = 404
     // Templates
-    let text = await new Response(file.readable).text()
+    let text = await new Response(stream).text()
     const timestampMs = Date.now()
     const timeInMinCur = timeInMin(timestampMs, opts.tz || 8 * 60)
     const timeOfDayCur = timeOfDay(timeInMinCur)
@@ -414,20 +425,14 @@ const staticFile = async (req, opts, headers, path) => {
     return new Response(text, { status, headers })
   } else {
     // Static file
-    headers.set('ETag', etag)
-    const rangeHeader = req.headers.get('Range')
-    const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
-    const byteStart = (result && result[1]) ? +result[1] : 0
-    const byteEnd = (result && result[2]) ? +result[2] : fileSize - 1;
-    if (byteStart < 0 || byteEnd >= fileSize || byteStart > byteEnd) {
+    if (!rangeValid) {
       status = 416
       return new Response(null, { status, headers })
-    }
-    if (result) {
+    } else if (reqByteStart !== undefined) {
       headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
-      file.seek(byteStart, Deno.SeekMode.Start)
       status = 206
     }
+    headers.set('ETag', etag)
     headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
     if (realPath.match(/\.[0-9a-f]{8}\.[a-zA-Z0-9-_]+$/)  // Versioned
       || realPath.match(/^\/bin\/vendor\//)   // Vendored
@@ -448,7 +453,7 @@ const staticFile = async (req, opts, headers, path) => {
       return new Response(null, { status, headers })
     }
     return new Response(
-      file.readable.pipeThrough(new Truncate(byteEnd - byteStart + 1)),
+      stream.pipeThrough(new Truncate(byteEnd - byteStart + 1)),
       { status, headers }
     )
   }
