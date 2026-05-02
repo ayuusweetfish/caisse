@@ -42,28 +42,40 @@ const mime = (s) => {
 }
 
 const etagReg = {}
-const etagGet = async (path, file) => {
-  if (etagReg[path]) return etagReg[path]
-  const buf = new Uint8Array(1024 * 1024)
-  let n = 0
-  let hash = 0
-  while ((n = await file.read(buf)) !== null) {
-    for (let i = 0; i < n; i++) {
-      hash = hash * 997 + buf[i] + 1
-      hash = (hash / 4294967296) ^ hash
+
+const openFile = async (path) => {
+  let file, fileInfo, etag
+  try {
+    file = await Deno.open(siteRootDir + path)
+    fileInfo = await file.stat()
+    if (fileInfo.isDirectory) return null
+    etag = etagReg[path]
+    if (etag === undefined) {
+      const buf = new Uint8Array(1024 * 1024)
+      let n = 0
+      let hash = 0
+      while ((n = await file.read(buf)) !== null) {
+        for (let i = 0; i < n; i++) {
+          hash = hash * 997 + buf[i] + 1
+          hash = (hash / 4294967296) ^ hash
+        }
+      }
+      if (hash < 0) hash += 4294967296
+      file.seek(0, Deno.SeekMode.Start)
+      etag = `"${hash.toString(16).padStart(8, '0')}"`
+      etagReg[path] = etag
     }
+  } catch (e) {
+    if (e instanceof Deno.errors.NotFound) return null
+    // Deno Deploy (Classic) runtime does not support `open()`ing a directory
+    if (e.code === 'EISDIR') return null
+    throw e
   }
-  if (hash < 0) hash += 4294967296
-  file.seek(0, Deno.SeekMode.Start)
-  const etag = `"${hash.toString(16).padStart(8, '0')}"`
-  etagReg[path] = etag
-  return etag
-}
-const etagMatch = (a, b) => {
-  if (!a || !b) return false
-  if (a.startsWith('W/')) a = a.substring(2)
-  if (b.startsWith('W/')) b = b.substring(2)
-  return a === b
+  return {
+    path, file,
+    fileSize: fileInfo.size,
+    etag,
+  }
 }
 
 const metaReg = {}
@@ -255,30 +267,11 @@ const staticFile = async (req, opts, headers, path) => {
 
   let status = 200
 
-  const tryOpenFile = async (path) => {
-    let file
-    let fileInfo
-    try {
-      file = await Deno.open(siteRootDir + path)
-      fileInfo = await file.stat()
-      if (fileInfo.isDirectory) return null
-    } catch (e) {
-      if (e instanceof Deno.errors.NotFound) return null
-      // Deno Deploy (Classic) runtime does not support `open()`ing a directory
-      if (e.code === 'EISDIR') return null
-      throw e
-    }
-    return {
-      path, file,
-      fileSize: fileInfo.size,
-    }
-  }
-
-  const { path: realPath, file, fileSize } =
-    await tryOpenFile(path) ||
-    (opts.isRaw ? (await tryOpenFile(path + `/raw`)) : null) ||
-    await tryOpenFile(path + `/index.${opts.lang}.html`) ||
-    await tryOpenFile(path + `/index.html`) ||
+  const { path: realPath, file, fileSize, etag } =
+    await openFile(path) ||
+    (opts.isRaw ? (await openFile(path + `/raw`)) : null) ||
+    await openFile(path + `/index.${opts.lang}.html`) ||
+    await openFile(path + `/index.html`) ||
     {}
   if (realPath === undefined) {
     // In case the 404 page is not rendered
@@ -432,7 +425,6 @@ const staticFile = async (req, opts, headers, path) => {
     return new Response(text, { status, headers })
   } else {
     // Static file
-    const etag = await etagGet(realPath, file)
     headers.set('ETag', etag)
     const rangeHeader = req.headers.get('Range')
     const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
@@ -456,6 +448,12 @@ const staticFile = async (req, opts, headers, path) => {
       headers.set('Cache-Control', 'public, no-cache, max-age=31536000')
     }
     // Check whether not modified
+    const etagMatch = (a, b) => {
+      if (!a || !b) return false
+      if (a.startsWith('W/')) a = a.substring(2)
+      if (b.startsWith('W/')) b = b.substring(2)
+      return a === b
+    }
     if (etagMatch(etag, req.headers.get('If-None-Match'))) {
       status = 304
       return new Response(null, { status, headers })
