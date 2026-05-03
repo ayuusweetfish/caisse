@@ -449,6 +449,9 @@ const staticFile = async (req, opts, headers, path) => {
     }
     if (etagMatch(etag, req.headers.get('If-None-Match'))) {
       status = 304
+      headers.delete('Content-Type')
+      headers.delete('Content-Length')
+      headers.delete('Accept-Ranges')
       return new Response(null, { status, headers })
     }
     return new Response(
