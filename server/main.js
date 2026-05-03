@@ -493,8 +493,8 @@ const serveReq = async (req, info) => {
     }
     opts.isRaw = (url.searchParams.get('raw') !== null)
     // Timezone
-    if (isFinite(cookies['tz'])) {
-      const tz = -cookies['tz']
+    if (isFinite(+cookies['tz'])) {
+      const tz = +cookies['tz']
       if (tz >= -13 * 60 && tz <= 13 * 60) opts.tz = tz
     }
     // Query string
