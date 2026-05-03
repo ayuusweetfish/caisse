@@ -438,7 +438,7 @@ const staticFile = async (req, opts, headers, path) => {
     ) {
       headers.set('Cache-Control', 'public, max-age=31536000')
     } else {
-      headers.set('Cache-Control', 'public, no-cache, max-age=31536000')
+      headers.set('Cache-Control', 'public, max-age=600')
     }
     // Check whether not modified
     const etagMatch = (a, b) => {
