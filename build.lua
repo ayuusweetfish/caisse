@@ -1152,7 +1152,8 @@ end
 
 -- Site content
 
-copyfile('favicon.png')
+copyfile('favicon.png', true)
+copyfile('favicon.png', false)  -- For default /favicon.ico path
 
 copyfile('background.svg', true)
 copyfile('background-dark.svg', true)

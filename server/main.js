@@ -342,7 +342,6 @@ const staticFile = async (req, opts, headers, path) => {
         return _
       } else if (key === 'path') {
         const s = (new URL(req.url)).pathname
-        console.log(req.url, s)
         return s.substring(1)
       } else if (key === 'query') {
         const s = (new URL(req.url)).search
@@ -527,7 +526,7 @@ const serveReq = async (req, info) => {
     if (url.pathname === '/') {
       return await staticFile(req, opts, headers, '/index')
     }
-    if (url.pathname === '/favicon.ico' || url.pathname === '/favicon.png') {
+    if (url.pathname === '/favicon.ico') {
       return await staticFile(req, opts, headers, '/bin/favicon.png')
     }
     if (url.pathname === '/_' || url.pathname.startsWith('/_/')) {

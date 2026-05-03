@@ -2,7 +2,7 @@
 <html lang='{{ lang }}'><head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='icon' href='/favicon.png'>
+  <link rel='icon' href='/bin/{{ hashverfile('favicon.png') }}'>
 
 {{fulltitle.zh =}}
 {{ title }} — Ayu
@@ -23,7 +23,7 @@ Collection of sundries —
   <meta property='og:title' content='{{ fulltitle }}'>
   <meta property='og:type' content='website'>
   <meta property='og:url' content='{{ siteroot }}/{{ urlpath }}'>
-  <meta property='og:image' content='{{ siteroot }}/bin/favicon.png'>
+  <meta property='og:image' content='{{ siteroot }}/bin/{{ hashverfile('favicon.png') }}'>
   <meta property='og:image:alt' content='{{ ogimagealt }}'>
   <meta property='og:description' content='{{ metadescription }}'>
   <meta property='og:locale' content='{{ lang }}'>
@@ -107,7 +107,7 @@ Collection of sundries —
   <a href='/' class='u-url u-uid'>
     <span class='p-name'>{{ sitename }}</span>
   </a>
-  <img class='u-photo' src='/bin/favicon.png' alt='{{ ogimagealt }}'>
+  <img class='u-photo' src='/bin/{{ hashverfile('favicon.png') }}' alt='{{ ogimagealt }}'>
   <span class='p-note'>{{ personalshortdesc }}</span>
 </div>
 {{@ end }}
