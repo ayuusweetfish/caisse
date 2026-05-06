@@ -971,7 +971,7 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
   margin-block-start: 0;
 }
 .item-content li > *:last-child:not(p) {
-  margin-block-end: 1em;
+  margin-block-end: 0.05em;
 }
 .item-content p > span.br-indent,
 .item-content blockquote.quote .quote-main > span.br-indent {

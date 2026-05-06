@@ -80,6 +80,37 @@ Lorem.<br>Lorem. (para + br)
 
 {{lists=}}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+!<list
+  <li Lorem;>
+  <li Lorem; (plain <<= > >> plain)<list <li Lorem;> <li Lorem;>>>
+  <li Lorem;>
+>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+!<list
+  <li <~~=' Lorem;'>>
+  <li <~~='
+    Lorem; (para <<= > >> plain)
+    <list <li Lorem;> <li Lorem;>>
+  '>>
+  <li <~~=' Lorem;'>>
+>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+!<list
+  <li <~~=' Lorem;'>>
+  <li <~~="
+    Lorem; (para <<= > >> para)
+    <list <li <~~=' Lorem;'>> <li <~~=' Lorem;'>>>
+  ">>
+  <li <~~=' Lorem;'>>
+>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
 !<list
   <li Lorem;>
   <li
@@ -87,7 +118,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
   >
   <li Lorem.>
 >
-Lorem ipsum
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
 !<list
   <li <~~='
     Lorem ipsum.

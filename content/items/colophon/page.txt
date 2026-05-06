@@ -2,7 +2,7 @@
 {{title.en=}}Colophon
 
 {{contents.zh=}}
-若无特别注明，发布于本站的内容均以 <link https://creativecommons.org/licenses/by-sa/4.0/deed.zh 知识共享署名-相同方式共享 4.0 国际许可协议>（CC BY-SA 4.0）进行许可。
+若无特别注明，发布于本站的内容均以<link https://creativecommons.org/licenses/by-sa/4.0/deed.zh 知识共享署名-相同方式共享 4.0 国际许可协议>（CC BY-SA 4.0）进行许可。
 
 依照所有者的使用授权或者开源许可证，本站引用以下图像与字体资源：
 !<list
@@ -18,7 +18,7 @@
 
 !<hr>
 
-本站收集的访客信息包括站点设置（语言、配色、时区）、IP 地址、浏览客户端（user agent）与链接来源（referrer）。数据只用于整体统计，任何除爬虫外的个体不会被追踪。数据不会提供给他人；若确有意外，将在此布告。
+本站收集的访客信息包括站点设置（语言、配色、时区）、IP 地址、浏览客户端（user agent）与链接来源（referrer）。数据只用于整体统计，除网络爬虫外的个体不会被追踪。任何记录不会向其他人透露。
 
 {{contents.en=}}
 Unless otherwise specified, all content published on this site is licensed under a <link https://creativecommons.org/licenses/by-sa/4.0/deed.en Creative Commons Attribution-ShareAlike 4.0 International Licence>.
@@ -37,4 +37,4 @@ The programs that assemble these pages and send them to the reader are named “
 
 !<hr>
 
-This site collects the sitewise settings (language, colour scheme, and timezone), the IP address, the browsing client (user agent) and the source of visit (referrer) of each visitor. The data will only be inspected through overall statistics, and any individual except for crawler bots will not be tracked. The data will not be provided to others; in case accidents happen, notices will be put up here.
+This site collects the sitewise settings (language, colour scheme, and timezone), the IP address, the browsing client (user agent) and the source of visit (referrer) of each visitor. The data will only be inspected through overall statistics, and any individual except for crawler bots will not be tracked. No record will be disclosed to others.

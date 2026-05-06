@@ -46,9 +46,9 @@ Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 
     <img neka_12685_fig.png <= 棕色头发、浅棕色衣着的人物画像。水印 @Masaki Q。> medsmall>
     <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, RLUAI, 抑郁质-多血液质, 混乱善良, 女, Genderfuck, ADHD> medsmall syncdark>
   >
-  <li 长三角地域>
+  <li 长三角 → 北京>
   <li 高敏>
-  <li <lang en Lolita>>
+  <li 洛丽塔风尚　※ lo 娘>
   <li <lang en Solarpunk>>
   <li 神秘学
     <list
@@ -56,6 +56,7 @@ Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 
       <li <link flow/monsoon#070-Mirror 月亮与圣杯九>>
     >
   >
+  <li 尚无证据表明非 <it Homo sapiens>>
 >
 
 
@@ -70,9 +71,9 @@ While one-sided categorizations carry too much prejudice and misunderstanding, t
     <img neka_12685_fig.png <= A figure with brown hair, in light brown outfit. Watermark @Masaki Q.> medsmall>
     <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, RLUAI, Melancholic-Sanguine, Chaotic Good, Female, Genderfuck, ADHD> medsmall syncdark>
   >
-  <li Yangtze Delta>
+  <li Yangtze Delta → Beijing>
   <li Highly sensitive person (HSP)>
-  <li Lolita>
+  <li Lolita fashion>
   <li Solarpunk>
   <li Occult
     <list
@@ -80,6 +81,7 @@ While one-sided categorizations carry too much prejudice and misunderstanding, t
       <li The Moon and the Nine of Cups>
     >
   >
+  <li No evidence against <it Homo sapiens>>
 >
 
 
@@ -135,6 +137,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 !<h2 杂七杂八 #miscellaneous>
 喜欢散步，喜欢逛超市，喜欢在各自忙碌的人群中发呆。
 对零食充满兴趣，但又吃不了多少（又菜又爱玩系列）。
+喜欢吃草。
 会被花里胡哨的美丽小玩意诱捕。
 喜欢胡思乱想……（别骂了呜呜呜呜呜呜呜）
 
@@ -173,6 +176,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 !<h2 Miscellaneous #miscellaneous>
 Likes going for strolls. Likes wandering around in supermarkets. Likes zoning amidst an occupied crowd.
 Captured by snacks, but eyes bigger than the gut.
+Makes more sense of plants regarding food.
 Vulnerable to all fancy, pretty trinkets.
 Loves daydreaming… (stop blaming me, I’m sorry <<^= > <>>)
 
