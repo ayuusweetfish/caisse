@@ -1,4 +1,4 @@
-{{title.zh=}}敲锣打鼓都不够/敲碗拍桌甩衣袖
+{{title.zh=}}敲锣打鼓都不够　敲碗拍桌甩衣袖
 {{intro.zh=}}寒假的尾声与艺术团训练
 {{title.en=}}Days on Drumbeats
 {{intro.en=}}Outro of the winter holidays; art troupe’s trainings
