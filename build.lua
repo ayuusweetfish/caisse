@@ -1051,9 +1051,12 @@ end
 -- Used by XML feeds
 caisse.envadditions.rendermarkupabslink = function (s)
   local oldlinkfn = markupfns.link
+  local oldkaofn = markupfns.kao
   markupfns.link = function (path, text) return itemlink(path, text, true) end
+  markupfns.kao = function (text) return text end
   local result = rendermarkup(s, markupfns)
   markupfns.link = oldlinkfn
+  markupfns.kao = oldkaofn
   return result
 end
 
