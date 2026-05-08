@@ -1044,26 +1044,27 @@ items/rabbit-hole/cover.jpg	56098	image	958	539
 items/rabbit-hole/particles.jpg	100074	image	1280	720
 items/rabbit-hole/pbr-ibl.jpg	60758	image	770	376
 items/rabbit-hole/squirrel.jpg	84714	image	958	538
-items/revlog/2022-10.txt	3086	document
-items/revlog/2022-11.txt	2533	document
-items/revlog/2022-12.txt	1793	document
-items/revlog/2023-01.txt	930	document
-items/revlog/2023-02.txt	2161	document
-items/revlog/2023-03.txt	1514	document
-items/revlog/2023-04.txt	841	document
-items/revlog/2023-05.txt	649	document
-items/revlog/2023-06.txt	355	document
-items/revlog/2023-07.txt	762	document
-items/revlog/2023-08.txt	886	document
-items/revlog/2023-09.txt	774	document
-items/revlog/2023-10.txt	406	document
-items/revlog/2023-11.txt	497	document
-items/revlog/2023-12.txt	379	document
-items/revlog/2024-01.txt	703	document
-items/revlog/2024-02.txt	765	document
-items/revlog/2026-01.txt	605	document
-items/revlog/2026-02.txt	746	document
-items/revlog/atom.xml	1316	unknown
+items/revlog/22.20.txt	3086	document
+items/revlog/22.22.txt	2533	document
+items/revlog/22.24.txt	1793	document
+items/revlog/23.02.txt	930	document
+items/revlog/23.04.txt	2161	document
+items/revlog/23.06.txt	1514	document
+items/revlog/23.08.txt	841	document
+items/revlog/23.10.txt	649	document
+items/revlog/23.12.txt	355	document
+items/revlog/23.14.txt	762	document
+items/revlog/23.16.txt	886	document
+items/revlog/23.18.txt	774	document
+items/revlog/23.20.txt	406	document
+items/revlog/23.22.txt	497	document
+items/revlog/23.24.txt	379	document
+items/revlog/24.02.txt	703	document
+items/revlog/24.04.txt	765	document
+items/revlog/26.02.txt	605	document
+items/revlog/26.04.txt	746	document
+items/revlog/26.06.txt	587	document
+items/revlog/atom.xml	1309	unknown
 items/revlog/rss.xml	1188	unknown
 items/rose/Wild_Rose.mscz	24282	score
 items/rose/Wild_Rose.ogg	728812	audio	45
