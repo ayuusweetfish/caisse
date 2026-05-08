@@ -4,8 +4,8 @@
 {{contents.zh=}}
 {{@ e in entries }}
 {{ year, month = table.unpack(e) }}
-{{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
-!<h1 {{ log.title.zh }}<date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+{{ log = render(string.format('items/revlog/%d.%02d.txt', year, month)) }}
+!<h1 {{ log.title.zh }}<date {{ string.format('%d.%02d, %d.%02d', year + 2000, month - 1, year + 2000, month) }}>#{{ string.format('%d%02d', year, month) }}>
 {{ log.contents.zh }}
 !<hr windy>
 {{@ end }}
@@ -20,8 +20,8 @@
 {{contents.en=}}
 {{@ e in entries }}
 {{ year, month = table.unpack(e) }}
-{{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
-!<h1 {{ log.title.en }}<date {{ string.format('%d.%02d, %d.%02d', year, month * 2 - 1, year, month * 2) }}>#{{ string.format('%d%02d', year, month) }}>
+{{ log = render(string.format('items/revlog/%d.%02d.txt', year, month)) }}
+!<h1 {{ log.title.en }}<date {{ string.format('%d.%02d, %d.%02d', year + 2000, month - 1, year + 2000, month) }}>#{{ string.format('%d%02d', year, month) }}>
 {{ log.contents.en }}
 !<hr windy>
 {{@ end }}

@@ -12,7 +12,7 @@
 
 {{@ e in entries }}
   {{ year, month = table.unpack(e) }}
-  {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
+  {{ log = render(string.format('items/revlog/%d.%02d.txt', year, month)) }}
   <item>
     <title>{{ log.title[lang]}}</title>
     <link>{{ siteroot }}/revlog#{{ string.format('%d%02d', year, month) }}</link>

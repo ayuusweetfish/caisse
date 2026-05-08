@@ -1266,13 +1266,13 @@ registeritemmarkup('pebbles', 'pebbles', {
 })
 registeritemtempl('flow', 'flow', 'bannerlist.html', catbannerlistlocals('flow'))
 
-local revloglatest = 2026*12 + 12
-local revlogfirst = 2023*12 + 3
+local revloglatest = 26*24 + 24
+local revlogfirst = 23*24 + 6
 local revlogentries = {}
-for i = revloglatest, revlogfirst, -1 do
-  local year = idiv(i - 1, 12)
-  local month = i - year * 12
-  if caisse.readfile(string.format('items/revlog/%d-%02d.txt', year, month)) then
+for i = revloglatest, revlogfirst, -2 do
+  local year = idiv(i - 1, 24)
+  local month = i - year * 24
+  if caisse.readfile(string.format('items/revlog/%d.%02d.txt', year, month)) then
     revlogentries[#revlogentries + 1] = { year, month }
   end
 end

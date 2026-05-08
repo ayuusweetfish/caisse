@@ -9,7 +9,7 @@
   <updated>{{*
     local e = entries[#entries]
     local year, month = table.unpack(e)
-    local log = render(string.format('items/revlog/%d-%02d.txt', year, month))
+    local log = render(string.format('items/revlog/%d.%02d.txt', year, month))
     local y, m, d, h = table.unpack(split(log.timestamp, '.'))
     return os.date('!%FT%TZ', os.time({ year = y, month = m, day = d, hour = h }))
   }}</updated>
@@ -18,10 +18,10 @@
 {{@ e in entries }}
   {{ year = e[1] }}
   {{ month = e[2] }}
-  {{ log = render(string.format('items/revlog/%d-%02d.txt', year, month)) }}
+  {{ log = render(string.format('items/revlog/%d.%02d.txt', year, month)) }}
   <entry>
     <title>{{ log.title[lang]}}</title>
-    <id>tag:{{ domain }},2022-12:revlog#{{ string.format('%d%02d', year, month) }}</id>
+    <id>tag:{{ domain }},2026-05:revlog#{{ string.format('%d%02d', year, month) }}</id>
     <link rel='alternate' href='{{ siteroot }}/revlog#{{ string.format("%d%02d", year, month) }}' />
     <content type='html'>{{ htmlescape(rendermarkupabslink(log.contents[lang])) }}</content>
     <updated>{{*
