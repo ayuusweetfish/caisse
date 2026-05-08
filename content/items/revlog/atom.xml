@@ -7,7 +7,7 @@
     <name>Ayu</name>
   </author>
   <updated>{{*
-    local e = entries[#entries]
+    local e = entries[1]
     local year, month = table.unpack(e)
     local log = render(string.format('items/revlog/%d.%02d.txt', year, month))
     local y, m, d, h = table.unpack(split(log.timestamp, '.'))
