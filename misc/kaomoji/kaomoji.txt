@@ -137,26 +137,42 @@ Source Han Sans
 °)°｡
 Rounded Mplus 1c
 
-(>﹏<)
+(>
+Rounded Mplus 1c
+﹏
+Noto Sans CJK JP
+<)
 Rounded Mplus 1c
 
-٩(๑>
+٩
+Noto Sans Math
+(
+Rounded Mplus 1c
+๑
+Droid Sans Thai
+>
 Rounded Mplus 1c
 ◡
-Melo
-<๑)۶
+FreeSans
+<
 Rounded Mplus 1c
+๑
+Droid Sans Thai
+)
+Rounded Mplus 1c
+۶
+Noto Sans Math
 
 ✧
-WenQuanYi Micro Hei
+Iosevka Charon Mono
 ٩
-Arial Unicode MS
+Noto Sans Math
 (ˊωˋ*)
 Rounded Mplus 1c
 و
-Arial Unicode MS
+Noto Sans Math
 ✧
-WenQuanYi Micro Hei
+Iosevka Charon Mono
 
 (/≧
 Rounded Mplus 1c
@@ -192,8 +208,20 @@ Rounded Mplus 1c
 ｡ﾟ(ﾟ´Д｀ﾟ)ﾟ｡
 Rounded Mplus 1c
 
-(๑>؂<๑)
-Rounded Mplus 1c
+(
+Noto Sans CJK SC
+๑
+Droid Sans Thai
+>
+Noto Sans CJK SC
+؂
+Noto Sans Arabic
+<
+Noto Sans CJK SC
+๑
+Droid Sans Thai
+)
+Noto Sans CJK SC
 
 (ﾉ)ﾟДﾟ(ヽ)
 Rounded Mplus 1c
