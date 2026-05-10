@@ -1,5 +1,6 @@
 find fonts -type f,l -exec sha1sum {} + | sort -k 2 | while read -r hash file; do printf "# %s\t%9d\t%s\n" ${hash} $(stat -L -c %s "$file") $(basename $file); done  # o=$(head -n 1 fonts_list.txt; sh fonts_list.txt) && echo "$o" > fonts_list.txt
 # f99ad248de437545eb55c32abd69083687369c96	 13947748	AaKaiSong2WanZi2.ttf
+# ba1f33ec67f13067c80e199f754ba17190c85f77	  1417460	AdwaitaMono-Regular.ttf
 # f5d778ee2bdbe070d971017f7f0160878b98a132	   170576	Cantarell-VF.otf
 # a6fc902288b3b68467d4389a9239e6913e927ebc	  4033576	DroidSansFallbackFull.ttf
 # 792f2b9ee2dcb2feadc17500fcfc131a5b1cdaf4	    35480	DroidSansThai.ttf
@@ -86,6 +87,7 @@ find fonts -type f,l -exec sha1sum {} + | sort -k 2 | while read -r hash file; d
 # 373391786d7a999b8bc258ce4addc1411544f1e7	   597616	NotoSans-Thin.ttf
 # 468fb2c7793991ae849c27c5cb5257a47285a91a	   623584	NotoSans-ThinItalic.ttf
 # efc2bf8b651e881d8a0b2325c83deefa6f562945	   239324	NotoSansArabic[wght].ttf
+# 60def0f5ca55a9d67858e4ed898b484e363b1a31	    32800	NotoSansArmenian[wght].ttf
 # 89a120f20275c1f3fc69f4b8ed0cf9d22e46fb89	 32682580	NotoSansCJK-VF.ttc
 # 381ffb0af395239d26cb82cd0c3df2c21c8e8323	    11824	NotoSansGothic-Regular.ttf
 # 874c710bd2b315081d65b281984f17d7983a19b8	   990564	NotoSansMath-Regular.ttf
@@ -209,3 +211,4 @@ find fonts -type f,l -exec sha1sum {} + | sort -k 2 | while read -r hash file; d
 # 0df472acc5cd5a006124369579b8920f1a882272	   217360	OpenSans-Regular.ttf
 # 3317764d27af28506894ea89a73a73c9f96bee61	   221328	OpenSans-Semibold.ttf
 # 7a97e1d2e698b0cd6ef799166ea2b220823c8be2	   212820	OpenSans-SemiboldItalic.ttf
+# 9ce704281ee7f2eaaceea2ac5e55964105c8a5ff	   199228	SourceCodePro_VariableFont_wght.ttf

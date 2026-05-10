@@ -108,18 +108,18 @@ Open Sans
 O
 Rounded Mplus 1c
 ｀
-Open Sans
+Droid Sans Fallback
 )
 Rounded Mplus 1c
 
 (｡
 Rounded Mplus 1c
 •́
-Verdana
+Adwaita Mono
 ︿
-Rounded Mplus 1c
+Noto Sans CJK JP
 •̀
-Verdana
+Adwaita Mono
 ｡)
 Rounded Mplus 1c
 
@@ -129,11 +129,11 @@ Rounded Mplus 1c
 ｡°(°
 Rounded Mplus 1c
 ¯᷄
-Source Han Sans
+Noto Sans CJK SC
  ᵕ 
-Rounded Mplus 1c
+Noto Sans; dy=0.5
 ¯᷅
-Source Han Sans
+Noto Sans CJK SC
 °)°｡
 Rounded Mplus 1c
 
@@ -177,7 +177,7 @@ Iosevka Charon Mono
 (/≧
 Rounded Mplus 1c
 ▽
-SF Pro Text
+Source Code Pro; dy=1.5; font-size=20px
 ≦/)
 Rounded Mplus 1c
 
@@ -195,9 +195,9 @@ Rounded Mplus 1c
 Ծ
 Noto Sans Armenian
 ‸
-SF Pro Rounded
+Adwaita Mono; font-size=12px; dy=0.4; dx=1.2
 Ծ
-Noto Sans Armenian
+Noto Sans Armenian; dx=1.2
 
 (╥ω╥`)
 Rounded Mplus 1c
