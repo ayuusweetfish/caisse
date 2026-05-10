@@ -81,7 +81,7 @@ while true do
     local hash = basehash(curline)
     print(hash, curline)
     -- Write an SVG with text
-    local pathsvgfile = outdir .. '/moji-' .. hash .. '.svg'
+    local pathsvgfile = outdir .. '/' .. hash .. '.svg'
     if overwrites[curline] or overwrites[hash] or
         not os.rename(pathsvgfile, pathsvgfile) then
       print(pathsvgfile, curline)

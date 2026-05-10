@@ -930,7 +930,7 @@ markupfns = {
   end,
   kao = function (text)
     return '<img class="kaomoji" src=\'data:image/svg+xml,' ..
-        uriescape(io.open('misc/kaomoji/gen/moji-' .. basehash(text) .. '.svg'):read('a'))
+        uriescape(io.open('misc/kaomoji/gen/' .. basehash(text) .. '.svg'):read('a'))
       .. '\' alt="' .. uriescape(text) .. '" aria-label="'
       .. (caisse.lang == 'zh' and '颜文字' or 'Kaomoji') .. '">'
   end,
