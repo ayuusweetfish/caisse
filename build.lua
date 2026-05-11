@@ -903,6 +903,9 @@ markupfns = {
     return '<p class="text-center">' .. text .. '</p>'
   end,
   blockquote = function (text)
+    -- Work around first-child and last-child stylesheet selectors
+    if not text:match('^%s*<') then text = '<span></span>' .. text end
+    if not text:match('>%s*$') then text = text .. '<span></span>' end
     return '<blockquote class="quote"><div class="quote-main">' .. text .. '</div></blockquote>'
   end,
   blockquoteby = function (by, text)
@@ -910,6 +913,9 @@ markupfns = {
       '<div class="quote-by">' .. by .. '</div></blockquote>'
   end,
   note = function (text)
+    -- Work around first-child and last-child stylesheet selectors
+    if not text:match('^%s*<') then text = '<span></span>' .. text end
+    if not text:match('>%s*$') then text = text .. '<span></span>' end
     return '<blockquote class="note"><div class="quote-main">' .. text .. '</div></blockquote>'
   end,
   clearfloat = function ()

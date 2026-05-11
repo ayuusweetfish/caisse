@@ -38,9 +38,9 @@
 
 !<h2 Day 2 #Training-Day-2>
 
-!<note <~~=''
+!<note
 今日排练曲目
-!<list
+<list
   <li 第一场 <list
     <li 行进训练>
   >>
@@ -48,7 +48,7 @@
     <li <lang en <link https://www.youtube.com/watch?v=5O7ZKPe_CAU <it Overture to “Egmont”>, Op. 84> — Ludwig van Beethoven, Gerard Posch (arr.)>>
   >>
 >
-''>>
+>
 
 天下没有免费的午餐，但是有免费的早餐！
 
@@ -77,9 +77,9 @@
 !<hr windy>
 !<h2 Day 3 #Training-Day-3>
 
-!<note <~~=''
+!<note
 今日排练曲目
-!<list
+<list
   <li 第一场 <list
     <li 行进训练>
   >>
@@ -88,7 +88,7 @@
     <li <link https://www.bilibili.com/video/BV1Pb411y7bE/ 《在太行山上》>— 冼星海、王和声（编曲）>
   >>
 >
-''>>
+>
 
 不小心熬了夜（再也不熬了呜呜呜呜呜！！）然后 10 点起床在宿舍写曲写到 13 点，我觉得我就是 13 点，这都能吃不上饭还有谁做得到。我只能说超绝 ADHD。在超市买了一袋面包和一瓶饮料就往艺教楼冲去。
 
@@ -117,7 +117,7 @@
 !<hr windy>
 !<h2 Day 4 #Training-Day-4>
 
-!<note <~~=''
+!<note
 今日排练曲目
 !<list
   <li 第一场 <list
@@ -127,7 +127,7 @@
     <li <lang en <it Overture to “Egmont”>>>
   >>
 >
-''>>
+>
 
 平平无奇排练的一天。破天荒拿了一整天小鼓，想来大概是今年的曲子都没有琴的缘故。已经是第六个年头了，闭合滚奏还是没怎么弄明白。
 
@@ -152,14 +152,14 @@
 !<hr windy>
 !<h2 Day 5 #Training-Day-5>
 
-!<note <~~=''
+!<note
 今日排练曲目
-!<list
+<list
   <li 第二场 <list
     <li 《红旗颂》>
   >>
 >
-''>>
+>
 
 中午起床，原本想去距离艺教楼最近的 G 园食堂点一份豆浆，可是那边收摊比较早（指 12:50），而我自然不可能赶得上这个时候出门，遂转而前往最常去（也是最晚关门）的 Z 园。幸运地点到了倒数第二份水果捞。
 
@@ -178,9 +178,9 @@
 !<hr windy>
 !<h2 Day 6 #Training-Day-6>
 
-!<note <~~=''
+!<note
 今日排练曲目
-!<list
+<list
   <li 第一场 <list
     <li 《红旗颂》>
   >>
@@ -195,7 +195,7 @@
     <li 学员班：<lang en <it Addison Way> — Ed Huckeby>>
   >>
 >
-''>>
+>
 
 起床，冲澡，然后在宿舍不想动，又一次主动放弃午饭，哈哈！但是早饭好好吃过了（叉腰）！
 
@@ -227,14 +227,14 @@
 !<hr windy>
 !<h2 Day 7 #Training-Day-7>
 
-!<note <~~=''
+!<note
 今日排练曲目
-!<list
+<list
   <li 团内汇报 <list
     <li 《红旗颂》>
   >>
 >
-''>>
+>
 
 早上成功早起，踩着点吃到了真正的最后一次免费早餐，接着去走台。下午换上衣服，上台前半分钟临时把头发扎了起来，然后便是演出。
 与以往一样，演出总是印象最浅的，好像什么都没发生就结束了。滚奏，虽然后半部分折了好多，可至少前半曲全都抓住了 <kao T T>

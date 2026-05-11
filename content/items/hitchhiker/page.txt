@@ -6,12 +6,12 @@
 {{date=}}2023.18
 
 {{contents.zh=}}
-!<note <~~='
+!<note
 本文是由课题组内的分享内容整理出的文字稿。幻灯片见下，供阅读时参考。
-!<filetable
+<filetable
   <file HHG_Interactives.pdf 幻灯片>
 >
-'>>
+>
 
 这篇分享面向不同知识背景的读者，希望大家可以通过它对互动装置的设计与实现流程（尤其是其中涉及物理互动与电子技术的部分）获得大致而完整的了解。也许读完这些并不能立刻着手工作，但如果读者能看到更宽广的设计空间、甚至产生一点点灵感，或是更清楚地知道要实现自己的设计需要经历哪些步骤，那笔者就十分满足啦。
 
@@ -156,14 +156,13 @@ PCB 设计完成之后就可以交给工厂制作。国内一般价格为 20 元
 感谢大家能来听我废话。要是能带来一些启发与收获就再好不过啦！
 
 !<hr>
-!<note <~~='
-补记：
-如果还在犹疑的话，也来看看 KiCad 维护者之一 Kliment 的分享汇报吧！
-!<list
+!<note
+补记：如果还在犹疑的话，也来看看 KiCad 维护者之一 Kliment 的分享汇报吧！
+<list
   <li <link https://media.ccc.de/v/39c3-building-hardware-easier-than-ever-harder-than-it-should-be “构建硬件——空前容易，理应更容易”>>
   <li <link https://media.ccc.de/v/camp2023-57409-electronics_prototyping_is_way_too_easy_and_there_s_no_reason_you_can_t_do_it “电子原型太简单了你上你也行”>>
 >
-'>>
+>
 
 {{contents.en=}}
 !<note This page is currently <link ?lang=zh Chinese-only>. Translation is in progress.>

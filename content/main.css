@@ -960,16 +960,12 @@ html[dir="rtl"] .banner-list.compact > div.item-separator {
   text-indent: 2em;
 }
 .item-content p *,
-.item-content blockquote.note .quote-main > p,
 .item-content blockquote p *,
 .item-content div.image-container p {
   text-indent: 0;
 }
 .item-content li > p {
   text-indent: 1em;
-}
-.item-content li > p:not(ul + p) {
-  margin-block-start: 0;
 }
 .item-content li > *:last-child:not(p) {
   margin-block-end: 0.05em;

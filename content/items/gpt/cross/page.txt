@@ -5,17 +5,17 @@
 
 {{contents.zh=}}
 !<note <link gpt “%”>第六集。>
-!<note <~~='
-Bard Experiment，2023 年 3 月
+!<note
+Bard Experiment，2023 年 3 月<br>
 ChatGPT 版本：2023-03-23；模型：gpt-3.5-turbo
-'>>
+>
 
 {{contents.en=}}
 !<note <link gpt>, Episode 6.>
-!<note <~~='
-Bard Experiment, March 2023
+!<note
+Bard Experiment, March 2023<br>
 ChatGPT version: Mar 23, 2023; model: gpt-3.5-turbo
-'>>
+>
 
 {{contents.zh=}}
 !<h1 GPT 先手 #GPT-First>

@@ -5,17 +5,17 @@
 
 {{contents.zh=}}
 !<note <link gpt “%”>第三集。>
-!<note <~~='
-ChatGPT 版本：2023-03-14；模型：gpt-3.5-turbo
+!<note
+ChatGPT 版本：2023-03-14；模型：gpt-3.5-turbo<br>
 InstructGPT 模型：text-davinci-003；默认参数
-'>>
+>
 
 {{contents.en=}}
 !<note <link gpt>, Episode 3.>
-!<note <~~='
-ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo
+!<note
+ChatGPT version: Mar 14, 2023; model: gpt-3.5-turbo<br>
 InstructGPT model: text-davinci-003; default parameters
-'>>
+>
 
 {{contents.zh=}}
 !<h1 魔镜魔镜 #Mirror>

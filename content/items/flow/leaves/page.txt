@@ -25,9 +25,9 @@
 !<hr windy>
 
 !<h2 Day 1【山】 #Training-Day-1>
-!<note <~~=''
+!<note
 今日排练曲目
-!<list
+<list
   <li 第一场 <list
     <li <link https://www.youtube.com/watch?v=BUgn9ZMd-SI <lang en <it Cumberland Cross>>> — Carl Strommen>
     <li <link https://www.jacobdehaan.com/en/node/117 <lang en <it Virginia>>> — Jacob de Haan>
@@ -37,7 +37,7 @@
     <li 《红色娘子军》［<link https://www.bilibili.com/video/BV1PZ421Y7oW/ （上）>、<link https://www.bilibili.com/video/BV1JS421o7Gb/ （下）>］— Yoshika_DK>
   >>
 >
-''>>
+>
 
 最近以师父 X 为首的一批同学开始在排练厅的钢琴上练习爵士即兴，于是我也莫名迷上了在上面瞎弹（练是不可能认真练的，唉）。
 困死了明天还要早起再这样下去肯定吃不消，明天再说。<lang ja 今日も眠りにつく>。
