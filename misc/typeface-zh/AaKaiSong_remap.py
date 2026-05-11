@@ -44,13 +44,13 @@ f2 = fontforge.open('LiberationSans.ttf')
 copy_across(f2, 0x2669, f, tfm=psMat.compose(psMat.scale(0.75), psMat.translate(0, -75)), scale=0.75/2, weight=-10)
 copy_across(f2, 0x266A, f, tfm=psMat.compose(psMat.scale(0.75), psMat.translate(0, -75)), scale=0.75, weight=-10)
 
-f.generate('AaKaiSong2WanZi2_remapped.ttf', flags=('no-FFTM-table'))
+f.generate('/tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf', flags=('no-FFTM-table'))
 f.close()
 
 # To temporarily use the remapped font:
-# cp AaKaiSong2WanZi2_remapped.ttf ../../build/bin/AaKaiSong2WanZi2_remapped.ttf
+# cp /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf ../../build/bin/AaKaiSong2WanZi2_remapped.ttf
 # In the target page HTML:
 # src: url(/bin/AaKaiSong2WanZi2_remapped.ttf);
 
 # To build full WOFF2:
-# woff2_compress AaKaiSong2WanZi2_remapped.ttf && mv AaKaiSong2WanZi2_remapped.woff2 ../../content/fonts-zh/AaKaiSong2-full.woff2
+# woff2_compress /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf && mv /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.woff2 ../../content/fonts-zh/AaKaiSong2-full.woff2

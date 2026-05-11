@@ -123,7 +123,7 @@ parallel --colsep '\t' '
   BASENAME="$(basename "{2}")"
   TTF_SCRATCH="$(mktemp --suffix .ttf)"
   WOFF2_SCRATCH="${TTF_SCRATCH%.ttf}.woff2"
-  pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes={1} --output-file="$TTF_SCRATCH" && \
+  pyftsubset /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf --unicodes={1} --output-file="$TTF_SCRATCH" && \
     woff2_compress "$TTF_SCRATCH" && \
     mv "$WOFF2_SCRATCH" "{2}"
 '
@@ -141,7 +141,7 @@ else
     local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
     if not os.execute(
       string.format(
-        'pyftsubset AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
+        'pyftsubset /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
         codepoints, ttfpathscratch
       ) .. ' && ' .. string.format(
         'woff2_compress %s',
