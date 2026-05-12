@@ -105,7 +105,7 @@ cats.potpourri.pagelist = {
   {name = 'maylove-ex-23/log', listed = false},
   {name = 'pink'},
   {name = 'gpt'},
-  {name = 'gpt/sleep-learning', listed = false},
+  {name = 'gpt/sleep', listed = false},
   {name = 'gpt/gibberish', listed = false},
   {name = 'gpt/mirror', listed = false},
   {name = 'gpt/explain', listed = false},
