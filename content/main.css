@@ -662,9 +662,8 @@ body.dark div[role='separator']
   }
 }
 
-.kaomoji {
-  display: inline-block;
-  vertical-align: middle;
+.item-content img.kaomoji {
+  display: inline;
   block-size: 1em;
   line-height: 1;
   position: relative;
@@ -672,7 +671,7 @@ body.dark div[role='separator']
   vertical-align: bottom;
   transition: filter {{transitiondur}} ease;
 }
-body.dark .kaomoji { filter: invert(1); }
+body.dark .item-content img.kaomoji { filter: invert(1); }
 
 table.file-table {
   margin-block: 1em;
