@@ -62,7 +62,7 @@
 
 电路由一个与感应电极串联的大电阻器（约 1 MΩ）组成。后者可被视为电路接地（不一定是接地，电池负极也可以）的电容器，其值会随着人体部位的接近而增加。驱动引脚为网络提供阶跃信号（即将其驱动为高电平），并监测电阻上的电压变化，等待传感引脚变为“逻辑高电平”。由于该网络的阶跃响应是一个指数函数（其推导过程在任何基础电子学教科书中都有解释），因此感应点的电压要上升到逻辑高电平阈值 <math V_\mathrm{IH} = k \cdot V_\mathrm{CC}> 以上（典型值 <math k = 0.7>），所需的时间为 <math -\ln (1 - k) \cdot RC>，与感应电容 <math C> 成线性关系。
 
-!<img sense-circuit.png <= 传感电路示意图。>>
+!<img sense-circuit.png <= 传感电路示意图。> medsmall>
 
 可以<link https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWK0AsYBMBmTD0E48B2dANjwA50xMQFJaQUaEBTAWjDACgAnEc+mBKDCJcMKjh48LgGMQ6SOXH10xFZNYcI9SFwDmC9UNXHRkvZhLKw5k+DvobkgDp6ASv0EShG1VLgFaCR0YItgrgAPWhsUPBA8JDBcRnEQABEeAEsANxYo8AQITniwPDEMdFTfAGUWADsAZ3yAdwcKiUUbCT022zE1Kq6jKstrdpGJ9BRBVz1DQcnFp2VdOQUlJfVFwXYwXSheL0n+ycFpOC42gUmb+z1o4eoINSTMFGqxAFEAGxZZAAuPAA9gATfLA6qSSp4HSwOBw+A6EA0ZHxPRAA 在此>运行电路的模拟。
 
@@ -88,7 +88,7 @@
 
 !<h1 ✨ 名片……？>
 
-名片离不开个人化的交流；我已经开始将这些送给周围的朋友。背面印有个人网站和一个小图标。这个图标隐晦地拼出一个音乐片段，我称其为“<lang en sweetfish> 旋律动机”。我想给首位正确解读它的人赠送一张卡片。如果你能看明白，请给我发信息 (^ -)☆
+名片离不开个人化的交流；我已经开始将这些送给周围的朋友。背面印有个人网站和一个小图标。这个图标隐晦地拼出一个音乐片段，我称其为“<lang en sweetfish> 旋律动机”。我想给首位正确解读它的人赠送一张卡片。如果你能看明白，请给我发信息 <kao (^  -)☆>
 
 !<img Rev-1-Assembly.jpg <= 组装完毕的装置，背面印刷的图案面朝上方。//写错了，其实是第一版哒> caption>
 
@@ -143,7 +143,7 @@ Touch sensing is achieved by utilising the step response of an RC network.
 
 The circuit consists of a large resistor (~1 MΩ) in series with the sensing electrode. The latter can be treated as a capacitor to the circuit’s ground (not necessarily earth; a battery negative reference works just fine), whose value increases as human body parts approach it. A driving pin feeds the network with a step signal (namely, drives it high) and monitors the voltage change across the resistor, waiting for the sensing pin to go “logical high”. As the step response of this network is an exponential function (the derivation of which is explained in any basic electronics textbook), for the voltage at the sensing point to rise above the logical high threshold <math V_\mathrm{IH} = k \cdot V_\mathrm{CC}> (with a typical value of <math k = 0.7>), the time taken is <math -\ln (1 - k) \cdot RC> which is linearly dependent on the sensed capacitance <math C>. By repeatedly sampling GPIO pins, the capacitance values at all electrodes can be straightforwardly deduced.
 
-!<img sense-circuit.png <= Diagram of a sensing circuit.>>
+!<img sense-circuit.png <= Diagram of a sensing circuit.> medsmall>
 
 Run a simulation of the circuit <link https://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWK0AsYBMBmTD0E48B2dANjwA50xMQFJaQUaEBTAWjDACgAnEc+mBKDCJcMKjh48LgGMQ6SOXH10xFZNYcI9SFwDmC9UNXHRkvZhLKw5k+DvobkgDp6ASv0EShG1VLgFaCR0YItgrgAPWhsUPBA8JDBcRnEQABEeAEsANxYo8AQITniwPDEMdFTfAGUWADsAZ3yAdwcKiUUbCT022zE1Kq6jKstrdpGJ9BRBVz1DQcnFp2VdOQUlJfVFwXYwXSheL0n+ycFpOC42gUmb+z1o4eoINSTMFGqxAFEAGxZZAAuPAA9gATfLA6qSSp4HSwOBw+A6EA0ZHxPRAA here>.
 
@@ -169,7 +169,7 @@ Music is never a meritocracy. Musical dreamers of the world, unite!
 
 !<h1 ✨ Business…?>
 
-Business cards are never complete without getting personal. I have already been giving away these to friends around. On the back side are printed my personal website and a signature in the form of an icon. The graphic obscurely spells a musical phrase that I dub “the sweetfish motif”. I’m willing to send a card to whoever correctly decodes it first. If you do, please message me (^  -)☆
+Business cards are never complete without getting personal. I have already been giving away these to friends around. On the back side are printed my personal website and a signature in the form of an icon. The graphic obscurely spells a musical phrase that I dub “the sweetfish motif”. I’m willing to send a card to whoever correctly decodes it first. If you do, please message me <kao (^  -)☆>
 
 !<img Rev-1-Assembly.jpg <= Assembled devices with graphics printed on the back side facing up.//I spelt it wrong, this was revision 1> caption>
 
