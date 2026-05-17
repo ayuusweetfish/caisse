@@ -52,15 +52,15 @@ end
 cats.music.pagelist = {
   {name = 'flight', dark = true},
   {name = 'nuages'},
-  {name = 'monogatari', listed = 'arrangements', dark = true},
-  {name = 'candy', listed = 'arrangements', dark = true},
+  {name = 'monogatari', listed = 'music/arrangements', dark = true},
+  {name = 'candy', listed = 'music/arrangements', dark = true},
   {name = 'vividness', dark = true},
-  {name = 'leaving', listed = 'arrangements', dark = true},
+  {name = 'leaving', listed = 'music/arrangements', dark = true},
   {name = 'bellflowers', dark = true},
   {name = 'wings', dark = true},
   {name = 'sheepdogs-work'},
   {name = 'lili', dark = true},
-  {name = 'zzz', listed = 'arrangements', dark = true},
+  {name = 'zzz', listed = 'music/arrangements', dark = true},
   {name = 'jungle', dark = true},
   {name = 'music/arrangements', islist = true, dark = true},
 }
@@ -77,9 +77,9 @@ cats.playful.pagelist = {
 }
 cats.murmurs.pagelist = {
   {name = 'murmurs/wind', islist = true},
-  {name = 'shards', listed = 'wind'},
+  {name = 'shards', listed = 'murmurs/wind'},
   {name = 'hitchhiker'},
-  {name = 'stargazing', listed = 'wind'},
+  {name = 'stargazing', listed = 'murmurs/wind'},
   {name = 'daydream', listed = false},
   {name = 'daydream/horn', listed = false},
   {name = 'daydream/fool', listed = false},
@@ -87,8 +87,8 @@ cats.murmurs.pagelist = {
   {name = 'medle-postmortem', listed = false},
   {name = 'feihua-rehousing', listed = false},
   {name = 'webfont'},
-  {name = 'diversity', listed = 'wind'},
-  {name = 'into', listed = 'wind'},
+  {name = 'diversity', listed = 'murmurs/wind'},
+  {name = 'into', listed = 'murmurs/wind'},
   {name = 'traviata'},
   {name = 'inner-prod'},
 }

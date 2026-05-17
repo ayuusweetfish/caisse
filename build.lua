@@ -1244,7 +1244,6 @@ end
 local function catbannerlistlocals(path, locals)
   locals = locals or {}
   local curcat = path:match('^[a-z%-]+')
-  local subpath = path:sub(#curcat + 2)
   if caisse.readfile('items/' .. path .. '/page.txt') then
     local item = caisse.render('items/' .. path .. '/page.txt')
     locals.title = item.title
@@ -1255,8 +1254,8 @@ local function catbannerlistlocals(path, locals)
   for i = 1, #cats[curcat].pagelist do
     local item = cats[curcat].pagelist[i]
     if item.listed ~= false then
-      local listpath = item.listed or ''
-      if listpath == subpath then
+      local listpath = item.listed or curcat
+      if listpath == path then
         list[#list + 1] = item
       end
     end
