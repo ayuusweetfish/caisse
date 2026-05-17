@@ -3,7 +3,13 @@
 cd $(dirname ${BASH_SOURCE[0]})
 
 LUA=${LUA:-luajit}
-if [ ! -e build ] || [ "$(stat -c "%d" build/)" = "$(stat -c "%d" content/)" ]; then
+if [ -z "$CP_NO_STDIN" ]; then
+  if [ ! -e /tmp/caisse-symlinkabs ]; then
+    cc misc/symlinkabs.c -O2 -o /tmp/caisse-symlinkabs
+  fi
+  CP="/tmp/caisse-symlinkabs"
+  CP_STDIN=1
+elif [ ! -e build ] || [ "$(stat -c "%d" build/)" = "$(stat -c "%d" content/)" ]; then
   CP="cp -l"
   CP_R="cp -lr"
 else
@@ -33,7 +39,7 @@ if [[ "$*" == *"stat"* ]]; then
   cd ../..
 fi
 
-CP="$CP" CP_R="$CP_R" $LUA build.lua
+CP="$CP" CP_R="$CP_R" CP_STDIN="$CP_STDIN" $LUA build.lua
 
 if [ $? -eq 0 ] && [[ "$*" == *"dist"* ]]; then
   (cd misc/typeface-zh && bash run.sh)

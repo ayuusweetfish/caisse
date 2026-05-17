@@ -248,17 +248,28 @@ local function ensuredir(filepath)
   end
 end
 
+-- Supports two modes: write file paths to stdin, or pass as arguments
+-- XXX: Maybe use FFI someday?
 local cpcommand = os.getenv('CP') or 'cp'
 local cprcommand = os.getenv('CP_R') or 'cp -r'
-local bufferedcmds = {}
+local cpstdin = (os.getenv('CP_STDIN') or '') ~= ''
+local cpprocess = cpstdin and io.popen(cpcommand, 'w') or {}
 
 local function fscp(src, dst)
-  bufferedcmds[#bufferedcmds + 1] =
-    cpcommand .. ' "' .. src .. '" "' .. dst .. '"'
+  if cpstdin then
+    cpprocess:write(src .. '\n' .. dst .. '\n')
+  else
+    cpprocess[#cpprocess + 1] =
+      cpcommand .. ' "' .. src .. '" "' .. dst .. '"'
+  end
 end
 local function fscpdir(src, dst)
-  bufferedcmds[#bufferedcmds + 1] =
-    cprcommand .. ' "' .. src .. '" "' .. dst .. '"'
+  if cpstdin then
+    cpprocess:write(src .. '\n' .. dst .. '\n')
+  else
+    cpprocess[#cpprocess + 1] =
+      cprcommand .. ' "' .. src .. '" "' .. dst .. '"'
+  end
 end
 
 -- End
@@ -1322,7 +1333,11 @@ for _, lang in ipairs({'zh', 'en'}) do
   itemreg = itemregglobal
 end
 
-os.execute(table.concat(bufferedcmds, '; '))
+if cpstdin then
+  cpprocess:close()
+else
+  os.execute(table.concat(cpprocess, '; '))
+end
 
 if katexupdate then
   local list = {}
