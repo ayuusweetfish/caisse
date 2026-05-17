@@ -34,7 +34,7 @@
   <tr                 <td 大寒> <td 1 月末至 2 月初>>
 >
 
-本站惯例取建寅之月（立春）为岁首；简洁起见，年份取立春所在公历年份末二位。如公历 2022 年 1 月末记为 <date 21.24>，2 月中旬为 <date 22.01>。
+本站惯例取建寅之月（立春）为岁首；年份取立春所在公历年份减去 2000。如公历 2022 年 1 月末记为 <date 21.24>，2 月中旬为 <date 22.01>。
 
 {{contents.en=}}
 Dates on this site are denoted by the 24 <link https://en.wikipedia.org/wiki/Solar_term solar terms>.
@@ -74,4 +74,4 @@ This is a solar calendar system. According to the position of the Sun on the ecl
   <tr                     <td Freezing cold> <td {{ T[24].name.en }}> <td Jan — Feb>>
 >
 
-This site starts the new year with the month of Tiger, or Spring’s arrival; for simplicity, the year is written as the last two digits of the Gregorian calendar year in which this moment falls. For instance, late January of 2022 is denoted as <date 21.24>, while the middle of February is denoted as <date 22.01>.
+This site starts the new year with the month of Tiger, or Spring’s arrival; the year is written as the Gregorian calendar year in which this moment falls, subtracted by 2000. For instance, late January of 2022 is denoted as <date 21.24>, while the middle of February is denoted as <date 22.01>.

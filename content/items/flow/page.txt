@@ -1,6 +1,6 @@
 {{longintro.zh=}}
 “逝者如斯夫！不舍昼夜。”“帐，张也，张施于床上也。”
-不同于本站的<link dates 日期格式>，这里会使用公历与太阳黄经记载日期。
+在本站<link dates 日期格式>的基础上，这里使用太阳黄经坐标记载精确到日的时间刻度。
 !<--
 !<note 连载中：<link flow/next %>>
 >
@@ -8,7 +8,7 @@
 
 {{longintro.en=}}
 “It passes on like this, ceaseless day and night.” —— <it Analects>
-Different from the <link dates date format> throughout the site, dates here will be recorded in the Gregorian calendar and the solar longitude.
+In addition to the <link dates date format> throughout the site, day-level timestamps here are denoted by the solar longitude.
 !<note Content here is currently <link ?lang=zh Chinese-only>.>
 !<--
 !<note Currently running: <link flow/next %>>
