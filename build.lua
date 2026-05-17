@@ -234,10 +234,10 @@ end
 os.execute('rm -rf ' .. sitepath)
 os.execute('mkdir ' .. sitepath)
 
-local bufferedcmds = {}
+-- File system operations
 
 local function writefile(file, s) io.open(file, 'w'):write(s) end
---local function writefile(file, s) end
+
 -- `filepath` is an absolute path without the leading slash
 local existingdirs = {}
 local function ensuredir(filepath)
@@ -247,6 +247,22 @@ local function ensuredir(filepath)
     existingdirs[dirname] = true
   end
 end
+
+local cpcommand = os.getenv('CP') or 'cp'
+local cprcommand = os.getenv('CP_R') or 'cp -r'
+local bufferedcmds = {}
+
+local function fscp(src, dst)
+  bufferedcmds[#bufferedcmds + 1] =
+    cpcommand .. ' "' .. src .. '" "' .. dst .. '"'
+end
+local function fscpdir(src, dst)
+  bufferedcmds[#bufferedcmds + 1] =
+    cprcommand .. ' "' .. src .. '" "' .. dst .. '"'
+end
+
+-- End
+
 local contentpath = {}
 -- `src` is an absolute path without the leading slash
 local function copydst(src)
@@ -302,8 +318,6 @@ local function hashverfile(path, targetpath)
 end
 caisse.envadditions.hashverfile = hashverfile
 
-local cpcommand = os.getenv('CP') or 'cp'
-
 local function copyfile(src, ishashver, dstsuffix)
   local dst = copydst(src)
   if ishashver then dst = hashverfile(src, dst) end
@@ -312,16 +326,14 @@ local function copyfile(src, ishashver, dstsuffix)
     ensuredir(dst)
   end
   if contentpath[dst] then return dst end
-  bufferedcmds[#bufferedcmds + 1] =
-    cpcommand .. ' "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
+  fscp(srcpath .. src, sitepath .. dst)
   contentpath[dst] = src
   return dst
 end
 local function copydir(src)
   local dst = copydst(src)
   if contentpath[dst] then return dst end
-  bufferedcmds[#bufferedcmds + 1] =
-    cpcommand .. ' -r "' .. srcpath .. src .. '" "' .. sitepath .. dst .. '"'
+  fscpdir(srcpath .. src, sitepath .. dst)
   contentpath[dst] = src
   return dst
 end

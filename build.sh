@@ -5,8 +5,10 @@ cd $(dirname ${BASH_SOURCE[0]})
 LUA=${LUA:-luajit}
 if [ ! -e build ] || [ "$(stat -c "%d" build/)" = "$(stat -c "%d" content/)" ]; then
   CP="cp -l"
+  CP_R="cp -lr"
 else
-  CP="misc/symlinkabs.sh"
+  CP="ln -sr"
+  CP_R="ln -sr"
 fi
 
 if [[ "$*" == *"stat"* ]]; then
@@ -31,7 +33,7 @@ if [[ "$*" == *"stat"* ]]; then
   cd ../..
 fi
 
-CP="$CP" $LUA build.lua
+CP="$CP" CP_R="$CP_R" $LUA build.lua
 
 if [ $? -eq 0 ] && [[ "$*" == *"dist"* ]]; then
   (cd misc/typeface-zh && bash run.sh)
