@@ -101,13 +101,13 @@
 
 {{
 termtext = function (year, term)
-  return string.format('%02d', year % 100) .. '-' .. tr(T[term].name)
+  return string.format('%02d', year) .. '-' .. tr(T[term].name)
 end
 termtextfull = function (year, term)
   if lang == 'zh' then
     return termtext(year, term)
   elseif lang == 'en' then
-    return string.format('%02d', year % 100) .. ' - '
+    return string.format('%02d', year) .. ' - '
       .. tr(T[term].hint):match('(.+);')
   end
 end
@@ -132,7 +132,7 @@ end
     <span class='date-term-single'>
   {{@ end }}
   <span
-      title='{{ tr(T[term].hint):gsub("%(A%)", year):gsub("%(B%)", year + 1) }}'>
+      title='{{ tr(T[term].hint):gsub("%(A%)", year + 2000):gsub("%(B%)", year + 2000 + 1) }}'>
     {{ termtext(year, term) }}
     <sup class='little-icons season-{{ math.ceil(term / 3) }}'></sup>
   </span>

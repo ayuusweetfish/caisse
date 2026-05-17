@@ -7,8 +7,8 @@
 
 {{contents=}}
 Lorem ipsum.
-Lorem ipsum.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Lorem ipsum. <date 26.01>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <date 00.01,150.01>
 !<list
   <li Lorem;>
   <li Lorem;>
