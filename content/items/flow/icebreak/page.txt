@@ -3,7 +3,7 @@
 {{title.en=}}Fish Surfacing Under Thinning Ice
 {{intro.en=}}It seems as if time has become a loop and I have stayed the same all the time.
 
-{{date=}}2025.01,2025.02
+{{date=}}25.01,25.02
 
 {{contents.zh=}}
 !<note 最近更新：<link #329 329˚【工作狂】>～<link #343 343˚【Flow】>。完结撒花！>

@@ -3,7 +3,7 @@
 {{title.en=}}When Autumn Leaves Start to Fall
 {{intro.en=}}Et le vent du nord les emporte
 
-{{date=}}2024.13
+{{date=}}24.13
 
 {{contents.zh=}}
 !<note 最近更新：<link #Training-Day-1 143–149°【暑训】/ Day 1【山】>>

@@ -14,7 +14,7 @@
 
 {{!-- ffmpeg -i output-crf26.mp4 -f lavfi -t 3 -i anullsrc=channel_layout=stereo:sample_rate=44100 -i TwAll-22a.ogg -filter_complex '[1:a][2:a]concat=n=2:v=0:a=1' -c:v copy -b:a 96k -t 719 output-full.mp4 }}
 
-{{date=}}2024.02
+{{date=}}24.02
 
 {{contents.zh=}}
 我们不如小王子般幸运，我们的星球每天只有一场日落；

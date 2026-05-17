@@ -1,7 +1,7 @@
 {{title.zh=}}不情愿的白日梦（中）：愚者与黑鸟
 {{title.en=}}A Reluctant Daydream (2): The Fool and the Blackbird
 
-{{date=}}2023.04
+{{date=}}23.04
 
 {{contents.zh=}}
 !<note <~~='

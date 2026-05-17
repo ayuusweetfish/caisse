@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}被泡泡形状的透明保护罩包围的粉色头发女孩，被外面的尖刺环绕。
 {{bannerimgalt.en=}}A pink-haired girl in a bubble-shaped translucent shield, surrounded by spikes outside.
 
-{{date=}}2023.04
+{{date=}}23.04
 
 {{contents.zh=}}
 !<note 课程《传媒研究》合作项目。>

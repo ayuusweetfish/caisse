@@ -7,12 +7,12 @@
 {{bannerimgalt.zh=}}置于草地上的树桩形状毛绒玩具，边上散落着几张彩色儿童画。
 {{bannerimgalt.en=}}A plush toy in the shape of a tree stump placed on the grass, with several colourful children’s drawings scattered beside it.
 
-{{date=}}2023.07,2023.17
+{{date=}}23.07,23.17
 
 {{contents.zh=}}
 !<note 合作项目。>
 
-!<note 更新了技术方案并再次展览，<link #Rev-2 见下>。<date 2023.17>>
+!<note 更新了技术方案并再次展览，<link #Rev-2 见下>。<date 23.17>>
 
 FUNgi 是一种幼儿玩具。借助导电纱线，柔软的毛绒织物也可以感知到触摸、挤压、拍打等肢体互动，再通过声音进行反馈，结合形似树桩与菌落的自然外观与鲜艳色彩，形成情感化的多感官体验。
 !<img Form-1.jpg <= 置于草地上的毛绒玩具，远景。>>

@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}游戏截图，包含提醒服药的闹钟与日历。
 {{bannerimgalt.en=}}Game screenshot containing an alarm clock for medication reminders and a calendar.
 
-{{date=}}2022.15
+{{date=}}22.15
 
 {{contents.zh=}}
 2022 年由莓辣 MAYLOVE 策划、摘星阁 PLUCK 赞助的大型性教育互动展会中的两组互动道具。

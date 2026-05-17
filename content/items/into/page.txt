@@ -3,7 +3,7 @@
 {{title.en=}}Freely, Into Everything Beyond Self
 {{intro.en=}}At least with the mallets in hand, I can freely choose not to be myself.
 
-{{date=}}2022.08
+{{date=}}22.08
 
 {{contents.zh=}}
 !<note 本文是向清华大学学生艺术团军乐队队刊《军韵》2022 年 06 月总第 57 期的投稿。>

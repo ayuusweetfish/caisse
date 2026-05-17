@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}游戏封面图；蜜蜂落在白色的花朵上，发出金黄色的光芒。
 {{bannerimgalt.en=}}Cover art of the game; a bee resting on a white blossom, giving off a golden glow.
 
-{{date=}}2024.05
+{{date=}}24.05
 
 {{contents.zh=}}
 !<note <link https://ldjam.com/events/ludum-dare/55 Ludum Dare 55> 组队参赛作品，成员（按笔画排列）：天雷、木星果、鱼、酸。>
@@ -28,7 +28,7 @@
 
 !<hr>
 
-活动后更新：增加谜题预览与选择界面；在互动细节与网页版性能上稍作优化。将游戏包转移至本站内托管。<date 2026.02,2026.03>
+活动后更新：增加谜题预览与选择界面；在互动细节与网页版性能上稍作优化。将游戏包转移至本站内托管。<date 26.02,26.03>
 
 !<--='
 !<hr>
@@ -59,7 +59,7 @@ There are a total of 30 puzzles in the game. Hints and reference solutions are p
 
 !<hr>
 
-Post-jam update: added a screen for puzzle preview and selection; minor optimizations in interaction and web version performance. The game package is also migrated to this site, hosted locally. <date 2026.02,2026.03>
+Post-jam update: added a screen for puzzle preview and selection; minor optimizations in interaction and web version performance. The game package is also migrated to this site, hosted locally. <date 26.02,26.03>
 
 {{rellinks.zh=}}
 !<list

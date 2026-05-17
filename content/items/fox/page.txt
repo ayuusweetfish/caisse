@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}游戏封面图；狐狸用尾巴握笔，伏案书写。旁边是一个圆形标识的下半部分，画着一只趴着的狐狸。
 {{bannerimgalt.en=}}Cover art of the game. A fox holding a pen with its tail, writing at a desk. Next to it is the lower half of a circular badge, depicting a reclining fox.
 
-{{date=}}2024.23,2024.24
+{{date=}}24.23,24.24
 
 {{contents.zh=}}
 <link https://itch.io/jam/mini-jam-176-foxes Mini Jam 176: Foxes> 参赛作品，附加限制为“抛硬币作为一种游戏机制”。
@@ -35,9 +35,9 @@
 所幸狐狸们的好奇心永远不会干涸，海洋回来的时候，它们随时都准备着出发！
 '>>
 
-完成一年后，将图像模型从原本的通义万相迁移至近期发布的<link https://github.com/Tongyi-MAI/Z-Image 造相 Z-Image-Turbo> 轻量模型，部署于课题组项目共用的服务器，不仅降低了计算资源耗费，也取得了更稳定的作图风格［还保护了自己的钱包！<kao (๑ゝω╹๑)>］此外，所有涉及的计算至此均运行在开放权重与开源程序上。<date 2026.02>
+完成一年后，将图像模型从原本的通义万相迁移至近期发布的<link https://github.com/Tongyi-MAI/Z-Image 造相 Z-Image-Turbo> 轻量模型，部署于课题组项目共用的服务器，不仅降低了计算资源耗费，也取得了更稳定的作图风格［还保护了自己的钱包！<kao (๑ゝω╹๑)>］此外，所有涉及的计算至此均运行在开放权重与开源程序上。<date 26.02>
 
-语言模型已迁移至 <link https://api-docs.deepseek.com/zh-cn/news/news260424 DeepSeek V4 Flash>。<date 2026.07>
+语言模型已迁移至 <link https://api-docs.deepseek.com/zh-cn/news/news260424 DeepSeek V4 Flash>。<date 26.07>
 
 {{contents.en=}}
 Submission to <link https://itch.io/jam/mini-jam-176-foxes Mini Jam 176: Foxes>, with a limitation of <it flipping a coin as a mechanic>.
@@ -64,9 +64,9 @@ Halfway through the jam, a new model was released. I tried it, but felt that thi
 It is fortunate that the foxes always have an undrainable curiosity to explore. They are ready whenever the ocean is!
 '>>
 
-One year after initial completion, the image model was migrated from the original Tongyi Wanx to <link https://github.com/Tongyi-MAI/Z-Image Z-Image-Turbo>, a lightweight model recently released, deployed on a server shared by our research lab. This not only reduced the consumption of computing resources, but also achieved a more consistent visual style [and protected my wallet! <kao (๑ゝω╹๑)>]. Also, all the processing involved by this time was run on open weights and open source programs. <date 2026.02>
+One year after initial completion, the image model was migrated from the original Tongyi Wanx to <link https://github.com/Tongyi-MAI/Z-Image Z-Image-Turbo>, a lightweight model recently released, deployed on a server shared by our research lab. This not only reduced the consumption of computing resources, but also achieved a more consistent visual style [and protected my wallet! <kao (๑ゝω╹๑)>]. Also, all the processing involved by this time was run on open weights and open source programs. <date 26.02>
 
-The language model has been migrated to <link https://api-docs.deepseek.com/news/news260424 DeepSeek V4 Flash>. <date 2026.07>
+The language model has been migrated to <link https://api-docs.deepseek.com/news/news260424 DeepSeek V4 Flash>. <date 26.07>
 
 {{rellinks.zh=}}
 !<list

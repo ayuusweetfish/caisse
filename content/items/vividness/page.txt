@@ -9,7 +9,7 @@
 {{bannerimgalt.zh=}}浅紫色天空下的彩色云朵与其上的闪烁星点。
 {{bannerimgalt.en=}}Colourful clouds under a lilac-coloured sky with twinkling stars.
 
-{{date=}}2022.12, 2022.22
+{{date=}}22.12, 22.22
 
 {{contents.zh=}}
 

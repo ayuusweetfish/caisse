@@ -12,7 +12,7 @@
 如果你发了信，过一分钟再来应该就能看到它啦。
 邮箱中的一部分活动是订阅或事务性邮件，请不用担心。我会回复所有个人信件～
 
-!<note 2024 年夏季起的信件全部尚待回复 T-T 我会阅读所有邮件，但是目前出于多方面原因，暂时无法发送回信。条件合适后，会尽早恢复邮件活动。<date 2026.01>>
+!<note 2024 年夏季起的信件全部尚待回复 T-T 我会阅读所有邮件，但是目前出于多方面原因，暂时无法发送回信。条件合适后，会尽早恢复邮件活动。<date 26.01>>
 
 {{intro.en=}}
 My mail address is <tt claire@ayu.land>.
@@ -25,7 +25,7 @@ To make sure nothing is lost halfway, the most recent mails are listed here. Tim
 If you’ve written a mail to me, check here after a minute and it should appear.
 Some of the mailbox activities are subscriptions or transactional, so please don’t worry. I shall reply to all personal messages.
 
-!<note All messages since the summer of 2024 have not been replied to. I make sure to read all coming mails, but due to a variety of reasons I am unable to respond currently. I will return to outbound activity as soon as conditions become favourable. <date 2026.01>>
+!<note All messages since the summer of 2024 have not been replied to. I make sure to read all coming mails, but due to a variety of reasons I am unable to respond currently. I will return to outbound activity as soon as conditions become favourable. <date 26.01>>
 
 {{daemonlost.zh=}}!<note （糟糕！看门小鬼头走丢啦……）>
 {{daemonlost.en=}}!<note (Oops! The daemon went stray…)>

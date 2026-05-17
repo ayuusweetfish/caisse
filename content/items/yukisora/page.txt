@@ -1,7 +1,7 @@
 {{title.zh=}}飘雪的天空《ユキソラ》和弦谱
 {{title.en=}}Chord Analysis of ユキソラ “Snowy Sky”
 
-{{date=}}2019.23,2022.23
+{{date=}}19.23,22.23
 
 {{contents.zh=}}
 
@@ -10,7 +10,7 @@
 是喜欢的 Vocaloid 制作人<lang ja とあ>（Toa）的歌曲。一般大部分日语的歌曲都会有日本网站贴出和弦谱，但是这一首算是<lang ja とあ>给中国粉丝的特别礼物，在 YouTube 过了一年多才上传，niconico 没有投。大概也是因此在几家网站都没有找到谱，故自己扒了一份。当时正好在学校看到了公历 2020 年的初雪，便计划趁机发到当时的旧版博客站上，后来想想单发个和弦谱也没什么营养，就搁置了。
 此后每次下雪都会把这个翻出来回顾一遍，想着是不是要发出来。今天在家看到了公历 2023 年的初雪，就趁机偷偷挂上来吧，可能有点错漏，先不管那么多啦。副歌段落结尾（<lang ja 「ねむれた」>处）经过增和弦的运用很喜欢。
 
-!<note 更新：核对一遍揪出了一堆问题，看来是有进步了（高情商.jpg）<date 2022.23>>
+!<note 更新：核对一遍揪出了一堆问题，看来是有进步了（高情商.jpg）<date 22.23>>
 
 !<hr windy>
 
@@ -62,7 +62,7 @@
 This is a song by <lang ja とあ> (Toa), the Vocaloid producer that I appreciate. Most Japanese songs usually will have chord sheets posted on Japanese websites, but this one was more of a special gift from Toa to the Chinese fans, uploaded to YouTube only over a year later and still absent on Niconico to date. I guess this is why the sites do not have the sheets available, so I made one myself. At the time, I was seeing the first snowfall of 2020 at school and planned to post it on my previous blog site, but then thought it would not make much sense to just post a chord sheet and shelved it.
 Since then, I’ve been looking back at this and wondering whether I should post it every time I see a snowfall. Today was my first encounter with the snow in 2023, so I’ll take the opportunity to quietly put it up without much thought about mistakes. I especially like the use of passing augmented triads at the end of the chorus (<lang ja 「ねむれた」>).
 
-!<note Update: a pass of proofreading revealed a lot of problems, which indicates that I’ve made progress (considerate wording). <date 2022.23>>
+!<note Update: a pass of proofreading revealed a lot of problems, which indicates that I’ve made progress (considerate wording). <date 22.23>>
 
 !<hr windy>
 

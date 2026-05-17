@@ -1,7 +1,7 @@
 {{title.zh=}}课程习作集合（2021）
 {{title.en=}}Practice compositions in courses (2021)
 
-{{date=}}2021.07, 2021.22
+{{date=}}21.07, 21.22
 
 {{contents.zh=}}
 

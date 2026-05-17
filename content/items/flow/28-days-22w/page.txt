@@ -3,7 +3,7 @@
 {{title.en=}}28 Days for a Year’s Goodbye
 {{intro.en=}}A daily record of activities at a junction of years.
 
-{{date=}}2022.23,2022.24
+{{date=}}22.23,22.24
 
 {{contents.zh=}}
 

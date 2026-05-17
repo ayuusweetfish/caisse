@@ -3,7 +3,7 @@
 {{title.en=}}Malletwand
 {{intro.en=}}A handheld pendulum for exploratory musical play
 
-{{date=}}2024.01
+{{date=}}24.01
 
 {{contents.zh=}}
 !<note 本页面将放置此装置的更多文档。在此期间，请参阅<link https://github.com/ayuusweetfish/Malletwand 程序仓库>。>

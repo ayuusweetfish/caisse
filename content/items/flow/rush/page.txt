@@ -3,7 +3,7 @@
 {{title.en=}}Rushing Through Hurries
 {{intro.en=}}Poco a poco accel.
 
-{{date=}}2023.21
+{{date=}}23.21
 
 {{contents.zh=}}
 !<note 最近更新：<link #263 263°【舞台（上）】>～<link #265 265°【舞台（下）】>>

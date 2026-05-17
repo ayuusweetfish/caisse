@@ -7,7 +7,7 @@
 {{bannerimgalt.zh=}}一个画有八分音符的圆，散落在许多绿色、黄色、灰色圆圈中。
 {{bannerimgalt.en=}}A circle containing a quaver symbol, among lots of green, yellow, and grey solid circles.
 
-{{date=}}2022.02
+{{date=}}22.02
 
 {{contents.zh=}}
 <link https://medle.ayu.land/ 游玩链接>！

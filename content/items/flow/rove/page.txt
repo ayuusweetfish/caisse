@@ -3,7 +3,7 @@
 {{title.en=}}Unhurried Rovings
 {{intro.en=}}Every day unfolds as an unconstrained inquiry
 
-{{date=}}2023.19,2023.20
+{{date=}}23.19,23.20
 
 {{contents.zh=}}
 !<note 最近更新：<link #249 249°【昏迷】>～<link #254 254°【镜】>。待补全：<link #233-TBC 花城见闻录>与 <link #250-TBC Peas of Cake>>

@@ -1,7 +1,7 @@
 {{title.zh=}}启程的孤单独奏
 {{title.en=}}A Bootstrapping Solo
 
-{{date=}}2023.01
+{{date=}}23.01
 
 {{contents.zh=}}
 !<blockquoteby 村上春树《世界尽头与冷酷仙境》 <~~='

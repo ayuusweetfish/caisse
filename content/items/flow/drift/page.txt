@@ -3,7 +3,7 @@
 {{title.en=}}Fallen Flowers Drifted Again by the Wind
 {{intro.en=}}Alas for me!
 
-{{date=}}2024.05,2024.12
+{{date=}}24.05,24.12
 
 {{contents.zh=}}
 !<note 最近更新：<link #Torrid 113–122°【伏】>～<link #123a 123°【Joy】>>

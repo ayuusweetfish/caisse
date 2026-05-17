@@ -7,7 +7,7 @@
 {{bannerimgalt.zh=}}游戏封面图；小猫在草丛间行走，地面上散布着许多猫爪印。
 {{bannerimgalt.en=}}Cover art of the game; a kitten walking among the bushes; on the ground scatters lots of paw prints of cats.
 
-{{date=}}2021.23
+{{date=}}21.23
 
 {{contents.zh=}}
 “做一只白天活动的猫不容易，但是普通猫猫可享受不到那么多阳光的美好。”

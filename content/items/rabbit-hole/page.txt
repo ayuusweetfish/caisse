@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}计算机渲染图：低模风格的树丛中有一只小松鼠和许多物体。
 {{bannerimgalt.en=}}Computer rendered image: trees of low-poly style with a squirrel and many objects scattered among them.
 
-{{date=}}2021.18, 2021.20
+{{date=}}21.18, 21.20
 
 {{contents.zh=}}
 这是《计算机图形学基础》与《计算机动画的算法与技术》两门课的课程作业集合，程序和实验报告都发布在 <link https://github.com/ayuusweetfish/graphics-lab-THSS GitHub>。

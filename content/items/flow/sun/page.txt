@@ -3,7 +3,7 @@
 {{title.en=}}Here Comes the Sun
 {{intro.en=}}It seems like years since it’s been here
 
-{{date=}}2023.03,2023.05
+{{date=}}23.03,23.05
 
 {{contents.zh=}}
 

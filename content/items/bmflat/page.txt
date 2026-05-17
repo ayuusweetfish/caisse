@@ -1,7 +1,7 @@
 {{title.zh=}}Bmflat
 {{title.en=}}Bmflat
 
-{{date=}}2019.13,2019.14
+{{date=}}19.13,19.14
 
 {{contents.zh=}}
 <b Bmflat/Bm♭> 是一个 C 语言程序库，用于解析 BMS（Be-Music Source）。BMS 是音乐游戏常用的乐曲格式，这一程序库可以在编写游戏或相关分析工具时派上用场。

@@ -7,7 +7,7 @@
 {{bannerimgalt.zh=}}薄雾笼罩的高耸树木间点缀着些许粉红色的花丛。
 {{bannerimgalt.en=}}Mist-shrouded towering trees, embellished with a few splashes of pink blossoms.
 
-{{date=}}2020.23
+{{date=}}20.23
 
 {{contents.zh=}}
 第一次正经写管弦的产物。存在一些声部平衡方面的问题，不过还是原样留存啦。

@@ -3,7 +3,7 @@
 {{title.en=}}Medle Muddle Medley
 {{intro.en=}}So thankful to have had a year of Medle.
 
-{{date=}}2023.02
+{{date=}}23.02
 
 {{contents.zh=}}
 

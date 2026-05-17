@@ -9,7 +9,7 @@
 {{bannerimgalt.zh=}}实验人员与参与者进行用户实验。
 {{bannerimgalt.en=}}Experimenters conduct user experiments with participants.
 
-{{date=}}2022.17
+{{date=}}22.17
 
 {{contents.zh=}}
 <lang en Patchwork Girl> “拼布女孩”是针对绿野仙踪（<lang en Wizard of Oz>）用户测试方法的工具包，旨在提高前期测试所用的软件原型的开发效率。

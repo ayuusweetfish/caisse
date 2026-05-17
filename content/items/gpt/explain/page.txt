@@ -1,7 +1,7 @@
 {{title.zh=}}向六岁小朋友解释
 {{title.en=}}Explain to a Six-year-old
 
-{{date=}}2023.03
+{{date=}}23.03
 
 {{contents.zh=}}
 !<note <link gpt “%”>第四集。>

@@ -1,7 +1,7 @@
 {{title.zh=}}Gradatim
 {{title.en=}}Gradatim
 
-{{date=}}2018.23
+{{date=}}18.23
 
 {{contents.zh=}}
 一个平台跳跃/节奏类游戏。只有按照音乐节拍才能找到跳跃和冲刺的时机，因此也带有不少解谜元素。

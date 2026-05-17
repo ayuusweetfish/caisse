@@ -3,7 +3,7 @@
 {{title.en=}}Testbed
 {{intro.en=}}Layout test
 
-{{date=}}2026.01
+{{date=}}26.01
 
 {{contents=}}
 Lorem ipsum.

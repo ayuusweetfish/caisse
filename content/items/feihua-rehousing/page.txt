@@ -3,7 +3,7 @@
 {{title.en=}}Floral Ditties’ Rehousing
 {{intro.en=}}Clumsy Ops technician sobs over her own incompetance
 
-{{date=}}2022.23
+{{date=}}22.23
 
 {{contents.zh=}}
 

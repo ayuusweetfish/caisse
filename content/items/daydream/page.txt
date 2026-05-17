@@ -3,7 +3,7 @@
 {{title.en=}}A Reluctant Daydream
 {{intro.en=}}Ramblings about self
 
-{{date=}}2023.04
+{{date=}}23.04
 
 {{contents.zh=}}
 

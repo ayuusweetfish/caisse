@@ -3,7 +3,7 @@
 {{title.en=}}Little White Bunny’s Travels
 {{intro.en=}}Dump of random daily logs at the start of the lunisolar new year!
 
-{{date=}}2022.24,2023.01
+{{date=}}22.24,23.01
 
 {{contents.zh=}}
 

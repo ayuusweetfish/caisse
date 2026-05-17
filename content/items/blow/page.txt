@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}游戏封面图。小猫站在桌子后，举起一只手臂，展示身边各种形状漂浮的泡泡与糖果、玻璃弹珠等各色小物品；桌上有塑料瓶和照相机。
 {{bannerimgalt.en=}}Cover art of the game. A kitten stands behind a table, an arm raised, surrounded by floating bubbles and an assortment of items including candies, glass marbles, etc. On the table sit a plastic bottle and a camera.
 
-{{date=}}2024.24
+{{date=}}24.24
 
 {{contents.zh=}}
 <link https://globalgamejam.org Global Game Jam> 2025 组队作品，主题“泡泡”（<lang en Bubble>）。参与游戏设计（合作）、音乐音效、技术开发。
@@ -19,7 +19,7 @@
 
 !<img photo_zh.png <= 游戏截图，泡泡绘制的“橘子”被猫咪猜中，彩色纸带飘在空中。> vertical small>
 
-活动后更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 Qwen 3.5>。<date 2026.02,2026.03>
+活动后更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 Qwen 3.5>。<date 26.02,26.03>
 
 对技术感兴趣的读者可以在<link https://github.com/ayuusweetfish/Blow-Something 程序仓库>中找到：
 !<list
@@ -41,7 +41,7 @@ A draw-and-guess game with bubbles as the paintbrush. The player drags and pops 
 
 !<img photo_en.png <= Game screenshot, an “Orange” painted by bubbles is guessed correctly by the kitten; confetti fly in the air.> vertical small>
 
-Post-jam update: bubble highlight; English support; extended word list; screenshot. The image recognition model was also migrated from Gemini 1.5 Flash (which had already been retired) to the newly-released <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>. <date 2026.02,2026.03>
+Post-jam update: bubble highlight; English support; extended word list; screenshot. The image recognition model was also migrated from Gemini 1.5 Flash (which had already been retired) to the newly-released <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>. <date 26.02,26.03>
 
 The technically proficient visitor might be interested in looking into <link https://github.com/ayuusweetfish/Blow-Something the source repository> for:
 !<list

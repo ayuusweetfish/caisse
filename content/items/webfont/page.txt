@@ -3,7 +3,7 @@
 {{title.en=}}A New Method for Chinese Web Font Embedding
 {{intro.en=}}Within 20 KiB for each page, statically embedded, without hindering text modifications and dynamic content
 
-{{date=}}2022.22
+{{date=}}22.22
 {{usemath=}}true
 
 {{contents.zh=}}

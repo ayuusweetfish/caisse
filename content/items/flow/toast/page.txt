@@ -3,7 +3,7 @@
 {{title.en=}}A Toast to a Lovely Life
 {{intro.en=}}The unknown that lies ahead
 
-{{date=}}2023.02,2023.03
+{{date=}}23.02,23.03
 
 {{contents.zh=}}
 

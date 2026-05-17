@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}简笔画绘制的贺卡放在花束里。
 {{bannerimgalt.en=}}A gift card with line art placed inside a bouquet.
 
-{{date=}}2023.05,2023.07
+{{date=}}23.05,23.07
 
 {{contents.zh=}}
 学生艺术团军乐队 2023 年二队沙龙音乐会演出·打击声部小重奏节目！是动画片《化物语》片尾曲的改编。

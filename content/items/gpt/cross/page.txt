@@ -1,7 +1,7 @@
 {{title.zh=}}跨服聊天
 {{title.en=}}Cross-Server Chat
 
-{{date=}}2023.04,2023.05
+{{date=}}23.04,23.05
 
 {{contents.zh=}}
 !<note <link gpt “%”>第六集。>

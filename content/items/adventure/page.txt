@@ -9,7 +9,7 @@
 {{bannerimgalt.zh=}}简笔画，望向火车车窗外的孩子。
 {{bannerimgalt.en=}}Line sketch of a child looking out of a train’s window.
 
-{{date=}}2022.20
+{{date=}}22.20
 
 {{contents.zh=}}
 !<cen “那位姑娘快上车啦，别一会儿关门了！”>

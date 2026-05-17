@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}游戏封面图；一群小羊在草坪上围成一圈，牧羊犬在一旁望着它们。
 {{bannerimgalt.en=}}Cover art of the game; a flock of lambs forming a circle on the lawn with a sheepdog looking over them.
 
-{{date=}}2021.11
+{{date=}}21.11
 
 {{contents.zh=}}
 <subpagelink sheepdogs/play 在线游玩>！

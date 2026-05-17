@@ -1,7 +1,7 @@
 {{title.zh=}}身体红绿灯（2023）工作日志
 {{title.en=}}Lights of the Body (2023) Work Journal
 
-{{date=}}2023.11
+{{date=}}23.11
 {{usemath=}}true
 
 {{contents.zh=}}

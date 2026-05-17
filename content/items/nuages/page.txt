@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}线条绘画，在雪地里独自行走的女孩。
 {{bannerimgalt.en=}}Line art of a girl walking alone in the snow.
 
-{{date=}}2023.21
+{{date=}}23.21
 
 {{contents.zh=}}
 我不知道雨点是不是天空在落泪，但我觉得雪花一定是云朵在跳舞。

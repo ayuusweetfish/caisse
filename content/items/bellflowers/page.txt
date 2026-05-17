@@ -6,7 +6,7 @@
 {{bannerimg=}}../fireflies/cover.png
 {{bannerimgalt = render('items/fireflies/page.txt').bannerimgalt}}
 
-{{date=}}2022.13
+{{date=}}22.13
 
 {{contents.zh=}}
 <link fireflies 《%》>游戏配乐。

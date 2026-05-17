@@ -14,7 +14,7 @@
 {{bannerimgalt.zh=}}电影画面；主人公 Elbe 抱着花束与白色长裙坐在一幅油画画像旁。
 {{bannerimgalt.en=}}Film footage; the protagonist, Elbe, holds a bouquet and a long white dress sitting beside an oil painting portrait.
 
-{{date=}}2021.11
+{{date=}}21.11
 
 {{contents.zh=}}
 也算是辅修的毕业作业啦，趁机给了自己一个理由把这部一直想看的电影看了。

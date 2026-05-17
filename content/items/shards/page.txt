@@ -3,7 +3,7 @@
 {{title.en=}}Shards’ Whispers
 {{intro.en=}}Sometimes I really crave for a visit to the composer’s head…
 
-{{date=}}2023.22
+{{date=}}23.22
 
 {{contents.zh=}}
 !<note 本文是向清华大学学生艺术团军乐队队刊《军韵》2023 年 12 月总第 60 期的投稿。>

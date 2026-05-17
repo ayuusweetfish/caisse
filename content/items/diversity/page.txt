@@ -3,7 +3,7 @@
 {{title.en=}}Diversity as Percussion’s Metaphor
 {{intro.en=}}Take that freedom and turn the special sceneries into unique ideas.
 
-{{date=}}2022.21
+{{date=}}22.21
 
 {{contents.zh=}}
 !<note 本文是向清华大学学生艺术团军乐队队刊《军韵》2022 年 12 月总第 58 期的投稿。>

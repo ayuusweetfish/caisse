@@ -10,7 +10,7 @@
 {{bannerimgalt.en=}}Mushroom-shaped desktop lights with various colours.
 <--=' convert IMG_20241116_095255.jpg -crop 3500x1600+135+695 -scale 20% cover.jpg '>
 
-{{date=}}2024.17,2024.19
+{{date=}}24.17,24.19
 
 {{contents.zh=}}
 !<img main.jpg <= 蘑菇外形的色彩各异的灯。>>

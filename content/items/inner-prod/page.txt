@@ -3,7 +3,7 @@
 {{title.en=}}Digging into the Conjugation in Complex Inner Products
 {{intro.en=}}The inconsistency between the inner product of complex spaces and the quadratic forms regarding the positions of conjugate elements.
 
-{{date=}}2019.09
+{{date=}}19.09
 {{usemath=}}true
 
 {{contents.zh=}}

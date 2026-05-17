@@ -9,7 +9,7 @@
 {{bannerimgalt.zh=}}生气皱眉的月亮。
 {{bannerimgalt.en=}}An annoyed, frowning Moon.
 
-{{date=}}2024.24
+{{date=}}24.24
 
 {{contents.zh=}}
 每过一次农历新年，就有一个月亮被无处安放的好奇心憋死。

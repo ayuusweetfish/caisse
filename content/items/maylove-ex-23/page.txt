@@ -9,7 +9,7 @@
 {{bannerimgalt.zh=}}教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。
 {{bannerimgalt.en=}}Depictions of two children on a display panel resembling a textbook. When approached with a hand, lights of different colours glow around the body parts.
 
-{{date=}}2023.12,2023.13
+{{date=}}23.12,23.13
 
 {{contents.zh=}}
 !<img Touch.jpg <= 装置的完整照片。教科书形状展板上的两个孩子图案，当伸手触摸时，身体部位周围亮起不同颜色的灯光。//（摄：海涵）> caption>

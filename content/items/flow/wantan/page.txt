@@ -3,7 +3,7 @@
 {{title.en=}}A Tangle of Dumplings
 {{intro.en=}}Given the circumstances, best to grab a meal first
 
-{{date=}}2023.05,2023.06
+{{date=}}23.05,23.06
 
 {{contents.zh=}}
 

@@ -3,7 +3,7 @@
 {{title.en=}}“Amusing Ourselves to Death” Reading Notes
 {{intro.en=}}How can create a positive social value from media technology?
 
-{{date=}}2022.03
+{{date=}}22.03
 
 {{contents.zh=}}
 !<note 本书作者为尼尔·波兹曼（Neil Postman）。参考版本为《媒介批评三部曲：娱乐至死+童年的消逝+技术垄断》，章艳译，中信出版社 2019 年版。>

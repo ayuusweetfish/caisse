@@ -3,7 +3,7 @@
 {{title.en=}}Spring’s Passing in Drizzle
 {{intro.en=}}Turning a blind eye to nature and awe
 
-{{date=}}2023.07,2023.08
+{{date=}}23.07,23.08
 
 {{contents.zh=}}
 

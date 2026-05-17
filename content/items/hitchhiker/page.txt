@@ -3,7 +3,7 @@
 {{title.en=}}The Hitchhiker’s Guide to Electronic Interactives
 {{intro.en=}}A comprehensive overview of the design and implementation of interactive installations
 
-{{date=}}2023.18
+{{date=}}23.18
 
 {{contents.zh=}}
 !<note

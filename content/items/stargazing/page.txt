@@ -3,7 +3,7 @@
 {{title.en=}}Let’s Go Stargazing
 {{intro.en=}}I am a star — or a painter of the stars, to be exact.
 
-{{date=}}2023.08
+{{date=}}23.08
 
 {{contents.zh=}}
 !<note 本文是向清华大学学生艺术团军乐队队刊《军韵》2023 年 06 月总第 59 期的投稿。>

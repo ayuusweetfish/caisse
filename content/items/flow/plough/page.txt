@@ -3,7 +3,7 @@
 {{title.en=}}Ploughing Cattle Traversing Fields
 {{intro.en=}}Decided that one has to love and work, and that’s it
 
-{{date=}}2024.03
+{{date=}}24.03
 
 {{contents.zh=}}
 !<note 最近更新：<link #349 349°【Blue】>～<link #352 352°【Soleil】>>

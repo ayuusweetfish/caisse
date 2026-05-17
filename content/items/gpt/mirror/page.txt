@@ -1,7 +1,7 @@
 {{title.zh=}}魔镜魔镜
 {{title.en=}}Mirror, Mirror on the Wall
 
-{{date=}}2023.03
+{{date=}}23.03
 
 {{contents.zh=}}
 !<note <link gpt “%”>第三集。>

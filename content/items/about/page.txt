@@ -29,11 +29,11 @@ Technically, this is a <it personal wiki>, but please call it anything you deem 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-赏花中！等一下我花呢？昨天还在这的？<date 2026.06>
+赏花中！等一下我花呢？昨天还在这的？<date 26.06>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 2026.06>
+Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 26.06>
 
 
 {{contents.zh=}}
@@ -186,10 +186,10 @@ TODO: Make a proper table and collect the missing pieces!
 
 {{contents.zh=}}
 !<h1 Fanart #fanart>
-!<img ../flow/icebreak/332-Package.jpg <~=' 写着“生日快乐”的礼物包装，有戴着帽子小人与蛋糕的简笔画。//ZY <date 2025.02>'> small caption>
-!<img 23_Azalea.jpg <~=' 用打击乐琴槌戳脸蛋的画像。//<link friends#Azalea 桂桂> <date 2023.02>'> small caption>
-!<img ../flow/toast/0223b.jpg <~=' 贺卡上用铅笔绘制的图画，举着琴槌站在琴前。//鸭鸭 <date 2023.02>'> small caption>
-!<img ../flow/drumbeats/0218c.png <~=' 奋力抄谱的画像//XN <date 2023.01>'> small caption>
+!<img ../flow/icebreak/332-Package.jpg <~=' 写着“生日快乐”的礼物包装，有戴着帽子小人与蛋糕的简笔画。//ZY <date 25.02>'> small caption>
+!<img 23_Azalea.jpg <~=' 用打击乐琴槌戳脸蛋的画像。//<link friends#Azalea 桂桂> <date 23.02>'> small caption>
+!<img ../flow/toast/0223b.jpg <~=' 贺卡上用铅笔绘制的图画，举着琴槌站在琴前。//鸭鸭 <date 23.02>'> small caption>
+!<img ../flow/drumbeats/0218c.png <~=' 奋力抄谱的画像//XN <date 23.01>'> small caption>
 
 {{contents.en=}}
 !<h1 Fanart #fanart>

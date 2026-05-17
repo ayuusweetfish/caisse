@@ -6,7 +6,7 @@
 {{!--[[
 ~/Downloads/ffmpeg-6.0 -ss 1.7 -i ~/Downloads/BV1Y541177Rg.m4s -frames:v 1 -vf "scale=iw/2:ih/2" cover.png
 ]]}}
-{{date=}}2021.04,2023.03
+{{date=}}21.04,23.03
 {{bannerimg=}}cover.png
 {{bannerimgpos=}}50,10
 {{bannerimgalt.zh=}}音乐动画画面；夜色中的城市天际线，粉彩色。

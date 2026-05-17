@@ -8,7 +8,7 @@
 {{bannerimgalt.zh=}}堆放的卡片形状电子装置。
 {{bannerimgalt.en=}}A stack of card-sized electronic devices.
 
-{{date=}}2024.09,2024.11
+{{date=}}24.09,24.11
 {{usemath=}}true
 
 {{contents.zh=}}

@@ -1,7 +1,7 @@
 {{title.zh=}}不情愿的白日梦（下）：星星与拼图
 {{title.en=}}A Reluctant Daydream (3): The Stars and the Puzzles
 
-{{date=}}2023.04
+{{date=}}23.04
 
 {{contents.zh=}}
 !<note <~~='

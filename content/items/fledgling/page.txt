@@ -1,7 +1,7 @@
 {{title.zh=}}小菜鸡 Go
 {{title.en=}}Fledgling Go
 
-{{date=}}2020.16,2020.22
+{{date=}}20.16,20.22
 
 {{*--[[
 ffmpeg \

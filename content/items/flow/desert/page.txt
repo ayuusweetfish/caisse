@@ -3,7 +3,7 @@
 {{title.en=}}The Mighty Desert
 {{intro.en=}}Worship the processes of fulfilment and decadence, honouring the heavenly rules
 
-{{date=}}2023.11,2023.12
+{{date=}}23.11,23.12
 
 {{contents.zh=}}
 

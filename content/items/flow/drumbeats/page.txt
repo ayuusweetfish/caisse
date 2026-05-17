@@ -3,7 +3,7 @@
 {{title.en=}}Days on Drumbeats
 {{intro.en=}}Outro of the winter holidays; art troupe’s trainings
 
-{{date=}}2023.01,2023.02
+{{date=}}23.01,23.02
 
 {{contents.zh=}}
 

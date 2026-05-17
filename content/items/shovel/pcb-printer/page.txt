@@ -1,7 +1,7 @@
 {{title.zh=}}梦之墨 T Series PCB 制板体验记录
 {{title.en=}}Field Notes: Dream Ink’s T Series PCB Production System
 
-{{date=}}2023.18
+{{date=}}23.18
 
 {{contents.zh=}}
 

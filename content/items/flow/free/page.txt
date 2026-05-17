@@ -3,7 +3,7 @@
 {{title.en=}}Kiddie’s Escape
 {{intro.en=}}Run, run freely and fleetly
 
-{{date=}}2023.13,2023.14
+{{date=}}23.13,23.14
 
 {{contents.zh=}}
 !<note 最近更新：<link #163 163°【归】>～<link #164 164°【折叠】>>
