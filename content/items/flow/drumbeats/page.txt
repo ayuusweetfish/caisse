@@ -68,7 +68,7 @@
 
 三年前，大约也是这几天，我把手机屏幕开了关、关了开，几句话在脑子里过了不知道有没有上百次，按下“发送”，看着撤回选项消失，然后把头蒙住翻来覆去直到六点才昏昏睡去。十九岁的一切好像都是那么青涩、可爱。
 
-五年前的冬天，我还在因为高考政治抄到手疼还找不到出路，差点在老师办公室掉眼泪；脑子里全是高中隔壁学校小朋友早操的音乐《兔子舞》（<lang en Penguins’ Game>），可能还夹杂着一团乱麻——日语、围棋、喜欢唱的歌儿，还有《黄金拼图》和《伪物语》。
+五年前的冬天，我还在因为高考政治抄到手疼还找不到出路，差点在老师办公室掉眼泪；脑子里全是高中隔壁学校小朋友早操的音乐《兔子舞》（<lang en <it Penguins’ Game>>），可能还夹杂着一团乱麻——日语、围棋、喜欢唱的歌儿，还有《黄金拼图》和《伪物语》。
 
 一切好像全都一样，未曾过去。仿佛身体的感受也形成了一座记忆宫殿，把我的过往按着季节绕成一个个环，刻在心脏与皮肤的一丝丝感触里。
 
@@ -308,10 +308,10 @@
 
 整个白天都独自窝在宿舍。下午在空无一人的浴室开了场演唱会和吹奏（口哨）会，下面是节目单。
 !<list
-  <li <b Do-Re-Mi>，Richard Rodgers、Oscar Hammerstein II>
-  <li <b Edelweiss>（雪绒花），Richard Rodgers、Oscar Hammerstein II>
+  <li <b <lang en <it Do-Re-Mi>>>，Richard Rodgers、Oscar Hammerstein II>
+  <li <b <lang en <it Edelweiss>>>（雪绒花），Richard Rodgers、Oscar Hammerstein II>
   <li <b 小白船>，尹克荣、金铁男、金正平>
-  <li <b Moon River>（月河），Henry Mancini>
+  <li <b <lang en <it Moon River>>>（月河），Henry Mancini>
   <li <b メッセージ>（音讯），ハンバートハンバート>
   <li <b 長いこと待っていたんだ>（等了好久好久呢），ハンバートハンバート>
 >
