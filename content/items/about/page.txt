@@ -56,7 +56,7 @@ Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 
       <li <link flow/monsoon#070-Mirror 月亮与圣杯九>>
     >
   >
-  <li 尚无证据表明非 <it Homo sapiens>>
+  <li 尚无证据表明当前形态非 <it Homo sapiens>>
 >
 
 
@@ -81,7 +81,7 @@ While one-sided categorizations carry too much prejudice and misunderstanding, t
       <li The Moon and the Nine of Cups>
     >
   >
-  <li No evidence against <it Homo sapiens>>
+  <li No evidence against a <it Homo sapiens> manifestation>
 >
 
 
