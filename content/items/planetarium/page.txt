@@ -1,8 +1,10 @@
 {{title.zh=}}音乐天文馆
 {{title.en=}}Musical Planetarium
 
+{{ box = {} }}
+
 {{=}}
-{{i = 1}}
+{{i = #box + 1}}
 {{box[i].title.zh=}}Elma
 {{box[i].title.en=}}Elma
 {{box[i].title.ja=}}エルマ
