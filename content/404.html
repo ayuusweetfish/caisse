@@ -17,9 +17,9 @@ Are you looking for these?
 <p>{{ prompt }}</p>
 <ul>
 <!-- (cataloguesearch)
-{{@ catalogue }}
+{{@ catalogue }}{{@ cat ~= 'backyard' or (path == 'backyard' or path == 'testbed') }}
 {{path}} <li><a class='pastel {{cat}}' href='/{{path}}'>{{title}}</a><span class='tt catalogue-path'>/{{path}}</span><div class='catalogue-path-after'></div></li>
-{{@ end }}
+{{@ end }}{{@ end }}
 -->
 </ul>
 </section>

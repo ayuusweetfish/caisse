@@ -80,10 +80,6 @@ cats.murmurs.pagelist = {
   {name = 'shards', listed = 'murmurs/wind'},
   {name = 'hitchhiker'},
   {name = 'stargazing', listed = 'murmurs/wind'},
-  {name = 'daydream', listed = false},
-  {name = 'daydream/horn', listed = false},
-  {name = 'daydream/fool', listed = false},
-  {name = 'daydream/star', listed = false},
   {name = 'medle-postmortem', listed = false},
   {name = 'feihua-rehousing', listed = false},
   {name = 'webfont'},
@@ -148,5 +144,9 @@ cats.flow.pagelist = {
 }
 cats.backyard.pagelist = {
   {name = 'testbed'},
+  {name = 'daydream'},
+  {name = 'daydream/horn'},
+  {name = 'daydream/fool'},
+  {name = 'daydream/star'},
 }
 }}}
