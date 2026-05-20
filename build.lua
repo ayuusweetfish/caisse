@@ -505,12 +505,14 @@ caisse.envadditions.highlightcode = function (text, linenum)
     local pad = function (s) return string.rep('&nbsp;', len - #s) .. s end
     local processed = {}
     for i, line in ipairs(lines) do
-      processed[#processed + 1] = '<a class="line-num'
+      processed[#processed + 1] =
+        '<span class="line scroll-target" id="L' .. tostring(i)
+        .. '"><a class="line-num'
         .. (i % 10 == 0 and ' line-num-accent' or '')
-        .. '" id="L'
-        .. tostring(i) .. '" href="#L' .. tostring(i) .. '">'
-        .. pad(tostring(i)) .. '</a><span class="line">'
+        .. '" href="#L' .. tostring(i) .. '">'
+        .. pad(tostring(i)) .. '</a><span class="line-content">'
       processed[#processed + 1] = line
+      processed[#processed + 1] = '</span>'
     end
     result = table.concat(processed)
   end

@@ -1092,15 +1092,21 @@ img.item-banner,
 .item-content pre.code {
   width: 95%;
 }
-.item-content pre.code > span {
+.item-content pre.code .line {
+  display: block;
+}
+.item-content pre.code .line:target {
+  background: rgba(255, 232, 160, 40%);
+}
+.item-content pre.code .line-content {
   text-indent: 5%;
   display: block;
   min-height: 1.5em;
 }
-.item-content pre.code.with-line-num > span {
+.item-content pre.code.with-line-num .line-content {
   display: inline;
 }
-.item-content pre.code > .line-num {
+.item-content pre.code .line-num {
   display: inline;
   user-select: none;
   text-indent: 0;
@@ -1108,7 +1114,7 @@ img.item-banner,
   text-decoration: none;
   margin-inline-end: 1em;
 }
-.item-content pre.code > .line-num.line-num-accent {
+.item-content pre.code .line-num.line-num-accent {
   /* color: rgba(180, 144, 144, 80%); */
 }
 .chroma .c, .chroma .cm, .chroma .c1
