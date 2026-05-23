@@ -4,7 +4,7 @@ local function args(ss, n, verb)
   local cur = 1
   local ssi = 1
   local s = ss[1].text
-  while (n and #results < n - 1) or (not n and ssi <= #ss) do
+  while (n > 0 and #results < n - 1) or (n < 0 and ssi <= #ss) do
     -- Extract a whitespace-insensitive argument
     if not ss[ssi] or ss[ssi].unit then
       -- An unbreakable unit
@@ -25,7 +25,7 @@ local function args(ss, n, verb)
       end
     end
   end
-  if n then
+  if n > 0 then
     if not verb then cur = s:find('[^%s]', cur) or (#s + 1) end
     local rems = {}
     for i = ssi + 1, #ss do rems[#rems + 1] = ss[i].text end
@@ -115,8 +115,7 @@ local function render(s, fns, ignoremissingfns)
       local mark = top.endmark
       local fn = top.fn
       local fninfo = debug.getinfo(fn, 'u')
-      local arity = fninfo.nparams
-      if fninfo.isvararg then arity = nil end
+      local arity = fninfo.isvararg and -1 or fninfo.nparams
       local outitems = top.items
       local outverb = top.verb
       local text = s:sub(last + 1, cur - 1)
