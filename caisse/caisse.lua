@@ -12,6 +12,15 @@ local caisse = {
   readfile = function (path) return io.open(path, 'r'):read('a') end,
 }
 
+local loadcache = {}
+local function cachedload(code, name)
+  local f = loadcache[code]
+  if f then return f end
+  f = load(code, name, 't')
+  loadcache[code] = f
+  return f
+end
+
 -- Item format:
 -- {type = 'string', expr = string}
 -- {type = 'expr'/'stmt', expr = string, fn = function}
@@ -25,7 +34,7 @@ local function parsetemplate(s)
   local levelbegin = {}
   local blockbegin = 0
   local loadfn = function (expr)
-    local fn = load(expr, expr, 't')
+    local fn = cachedload(expr, expr)
     if fn == nil then error('Expression "' .. expr .. '" is invalid') end
     return function (locals)
       local _ENV = _ENV or getfenv(fn)  -- Lua 5.1 compat.
@@ -277,10 +286,10 @@ local function renderslice(template, locals, outputs, rangestart, rangeend)
           end
           return setmetatable(table, {__index = metaindex})
         end
-        local setfn = load(
+        local setfn = cachedload(
           string.gsub('? = (type(?) == "table" and "" or (? and (? .. "\\n") or "")) .. ...',
             '[?]', item.expr),
-          item.expr, 't')
+          item.expr)
         local _ENV = _ENV or getfenv(setfn) -- Lua 5.1 compat.
         local prevmt = getmetatable(_ENV)
         setmetatable(_ENV, {__index = function (table, key)
