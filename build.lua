@@ -287,6 +287,10 @@ local function copydst(src)
   return dst
 end
 
+caisse.envadditions.bit = {
+  lsh = lsh, rsh = rsh, band = band, xor = xor
+}
+
 local function foldhash(h)
   return string.format('%08x', xor(rsh(h, 32), band(h, 0xffffffff)))
 end
