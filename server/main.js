@@ -351,7 +351,6 @@ const staticFile = async (req, opts, headers, path) => {
         const params = value.substring(0, lineEnd).split('\t')
         const delim = params[0]
         const contentEnd = value.indexOf(delim, lineEnd + 1)
-        const contentTempl = value.substring(lineEnd + 1, contentEnd)
         const entries = value.substring(contentEnd + delim.length)
           .split('\n').filter((s) => s.length > 0)
         const timeSeed = Math.floor(timeInMin(timestampMs, 8 * 60) / 10)
@@ -366,11 +365,13 @@ const staticFile = async (req, opts, headers, path) => {
           return (g.sum >> 8)
         }
         const queryIndex = (new URL(req.url)).searchParams.get('index')
-        const entryIndex = (
-          (queryIndex !== null && +queryIndex >= 1 && +queryIndex <= entries.length) ?
-          +queryIndex - 1 :
-          nonRepeatRandom(plainRandom, timeSeed, entries.length)
-        )
+        const queryIndexValid =
+          (queryIndex !== null && +queryIndex >= 1 && +queryIndex <= entries.length)
+        const entryIndex = (queryIndexValid ? +queryIndex - 1 :
+          nonRepeatRandom(plainRandom, timeSeed, entries.length))
+        const contentTempl = value.substring(lineEnd + 1, contentEnd)
+          .replace(/\/\/\/(.+)\/\/\/(.+)\/\/\//s,
+            (_, textRandom, textFixed) => queryIndexValid ? textFixed : textRandom)
         const entryContent = entries[entryIndex].split('\t').reduce(
           (s, t, i) => s.replaceAll(params[1 + i], t), contentTempl)
         return entryContent

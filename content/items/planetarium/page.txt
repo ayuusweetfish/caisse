@@ -299,6 +299,10 @@ In such an age that is so keen on treating all living matter as mere objects and
 
 {{intro.zh=}}
 每十分钟随机选取一首不同的乐曲。这是 {{ #box }} 首中的第 %index% 首。
+{{introfixed.zh=}}
+正在观测指定的乐曲。这是 {{ #box }} 首中的第 %index% 首。也可以<link planetarium 随机选择>。
 
 {{intro.en=}}
 A different piece of music is randomly picked every ten minutes. Among all {{ #box }}, here is the piece numbered %index%.
+{{introfixed.en=}}
+Observing a given piece of music. Among all {{ #box }}, this is the piece numbered %index%. <link planetarium Random pick> also available.
