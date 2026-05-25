@@ -16,7 +16,7 @@
 {{box[i].links=}}https://open.spotify.com/track/5YCwibP7MrreKevBdimMZU https://music.163.com/song?id=1357960252
 {{box[i].image=}}Gave-Up-Music.jpg
 {{box[i].imagealt.zh=}}专辑封面。用白色线条绘制的、站在小巷里的人物，头被白色线条覆盖。
-{{box[i].imagealt.en=}}Cover of the album. A human painted with white lines standing in an alley, with the head covered in white scribbles.
+{{box[i].imagealt.en=}}Cover image of the album. A human painted with white lines standing in an alley, with the head covered in white scribbles.
 {{box[i].cmt.zh=}}
 Amy 决定带着自己的秘密，悄悄踏上旅程前往北欧，在路上写下留给 Elma 的信和歌词，连同春天与夏天一起装在一个小盒子里。过了不知多久，这个小盒子来到 Elma 手中，于是 Elma 沿着 Amy 的足迹追随去，揣摩着这挣扎的内心世界。
 这是夜鹿——或者说，是 Elma ——用两张专辑讲述的故事。
@@ -44,7 +44,7 @@ This is the story that Yorushika — or rather, Elma — tells in two albums.
 {{box[i].links=}}https://b23.tv/BV1ab411g7Fb https://youtu.be/-zZ-jUTtZUg https://music.163.com/song?id=1357172690
 {{box[i].image=}}Green-Hills.jpg
 {{box[i].imagealt.zh=}}歌曲封面。柳叶间的苏东坡形象，一旁是毛笔书写的“如见青山”四字。
-{{box[i].imagealt.en=}}Cover of the song. A portrait of the ancient Chinese poet Su Dongpo standing among the willow leaves, with the Chinese title of the song written in brushstrokes beside.
+{{box[i].imagealt.en=}}Cover image of the song. A portrait of the ancient Chinese poet Su Dongpo standing among the willow leaves, with the Chinese title of the song written in brushstrokes beside.
 {{box[i].cmt.zh=}}
 !<blockquote 役于物得失患　役于形不超然>
 苏东坡与佛印和尚的故事。知名的“狗啃河上骨”“水流东坡诗”句子就是两人之间的玩笑；当然二者交情之深，远非一首诗歌、一段文字所能及。
@@ -69,7 +69,7 @@ At the end of the day, however, none of these debates matter. It is Su Dongpo’
 {{box[i].links=}}https://b23.tv/BV1rK4y1m7Px https://youtu.be/AGEUtj0meKo https://music.163.com/song?id=1831829639
 {{box[i].image=}}Flower-Moon.jpg
 {{box[i].imagealt.zh=}}歌曲封面。毛笔书写的“花月成双”四字，置于模糊月色的背景上，四周包围着淡粉色花朵。
-{{box[i].imagealt.en=}}Cover of the song. The Chinese title of the song written in brushstrokes on a background of blurred moonlit sky, surrounded by flowers of pale pink colour.
+{{box[i].imagealt.en=}}Cover image of the song. The Chinese title of the song written in brushstrokes on a background of blurred moonlit sky, surrounded by flowers of pale pink colour.
 {{box[i].cmt.zh=}}
 “人间匆忙一趟　偶尔疏狂何妨”
 Bilibili 舞蹈嘉年华（BDF）2021 主题曲之一。
@@ -86,7 +86,7 @@ Bilibili 舞蹈嘉年华（BDF）2021 主题曲之一。
 {{box[i].links=}}https://youtu.be/kg1g_l5p8bk?t=909 https://parkbird.bandcamp.com/track/dream-of-orca https://soundcloud.com/pivot1/dream-of-orca?in=pivot1/sets/collecting-pieces
 {{box[i].image=}}Collecting-Pieces.jpg
 {{box[i].imagealt.zh=}}专辑封面。四位主角：猫、魔女、鸟、人类，坐在悬崖边的草地上，四周围着彩色的灌木丛、山脉、水草、云朵、鲸鱼。
-{{box[i].imagealt.en=}}Cover of the album. Four protagonists: a cat, a witch, a bird, and a human, sitting on a cliffside meadow surrounded by colourful bushes, mountains, aquatic plants, clouds, and whales.
+{{box[i].imagealt.en=}}Cover image of the album. Four protagonists: a cat, a witch, a bird, and a human, sitting on a cliffside meadow surrounded by colourful bushes, mountains, aquatic plants, clouds, and whales.
 {{box[i].cmt.zh=}}
 非常可爱的合成器风格音乐。它所在的专辑《Collecting Pieces》描绘的是“来自另一维度的四位伙伴的冒险”，10 首乐曲从初次相遇开始，讲述沿途遇见的奇妙景象，直至最后告别——半个小时的治愈系白日梦。
 {{box[i].cmt.en=}}
@@ -103,8 +103,8 @@ An adorable piece in synthesizer style. The album it’s on, <it Collecting Piec
 {{box[i].origlang=}}ja
 {{box[i].links=}}https://youtu.be/tYcQ6BTvVQw https://open.spotify.com/track/4INFnKJnwU2KrPISp9j37H https://music.163.com/song?id=1311345944
 {{box[i].image=}}Solo-Trip.jpg
-{{box[i].imagealt.zh=}}歌曲动画中的画面。女孩背着包、脖子上挂着相机独自走在路上。由 Mitsuki Sanagi 绘制。
-{{box[i].imagealt.en=}}Image from the music animation. A girl walking alone on the street with a backpack and a camera. Illustrated by Mitsuki Sanagi.
+{{box[i].imagealt.zh=}}歌曲动画中的画面。女孩背着包、脖子上挂着相机独自走在楼房之间的街道上。由 Mitsuki Sanagi 绘制。
+{{box[i].imagealt.en=}}Image from the music animation. A girl, carrying a bag on her back and a camera on her heck, walks alone on the street between the buildings. Illustrated by Mitsuki Sanagi.
 {{box[i].cmt.zh=}}
 孤独的旅途简直能把世界变成天堂！真的有人觉得这是件坏事吗？
 !<blockquote <~~='
@@ -133,7 +133,7 @@ It might be well-intentioned to make assumptions about other people’s experien
 {{box[i].links=}}https://b23.tv/BV1z3411a7v2 https://nico.ms/sm39875678 https://youtu.be/gUGmed-NOow https://open.spotify.com/track/53d7Te0Vp1s4OcQ2W2vmW1 https://music.163.com/song?id=1913268085
 {{box[i].image=}}Fireflies-Never-Came.jpg
 {{box[i].imagealt.zh=}}歌曲封面。两位女孩相拥在一起，深绿的夜色被仿佛两人心中照出的黄色光亮划破。
-{{box[i].imagealt.en=}}Cover of the song. Two girls embracing each other, as if the deep green night was cut by a yellow light shining from their hearts.
+{{box[i].imagealt.en=}}Cover image of the song. Two girls embracing each other, as if the deep green night was cut by a yellow light shining from their hearts.
 {{box[i].cmt.zh=}}
 !<blockquoteby <~=' <link https://www.xiaohongshu.com/user/profile/678c5243000000000d00b336 @春卷御饭银河墙>，译自 <link https://www.reddit.com/r/harumakigohan/comments/vu1lb5/ @Kendrillion>'> <~~="
   !<img images/Fireflies-rel-zh.jpg <= 人物关系图。美影→Spica：（火车窗前的躲闪眼神）。Spica→美影：想要更加了解她。美影→夕阳：童年伙伴，感觉她就像小动物一样。夕阳→美影：想要帮助她（也许太过了）。Spica↔夕阳：很容易聊得来。Spica→丽：令人感觉舒服。丽→美影：zzz…… 夕阳→丽：有一些伙伴情谊。丽→美影：zzz…… 美影→丽：神秘。丽→美影：……> square>
@@ -159,7 +159,7 @@ That aside, if I were to feel relatable for one of them, it would probably be Yu
 {{box[i].links=}}https://ahicha.bandcamp.com/track/dream-makers https://music.163.com/song?id=1364977558
 {{box[i].image=}}Dream-Makers.jpg
 {{box[i].imagealt.zh=}}专辑封面。彩色的背景上，三个小动物卡通角色各自拿着蜡笔，周围围绕着音符、星星、火箭、食物等小元素。右下角是专辑名称“Dream Makers”。
-{{box[i].imagealt.en=}}Cover of the album. On a colourful background, three cartoon characters with animal-like appearances each holds a crayon, surrounded by little elements including notes, stars, a rocket, and food. In the bottom-right corner is the album’s title, “Dream Makers”.
+{{box[i].imagealt.en=}}Cover image of the album. On a colourful background, three cartoon characters with animal-like appearances each holds a crayon, surrounded by little elements including notes, stars, a rocket, and food. In the bottom-right corner is the album’s title, “Dream Makers”.
 {{box[i].cmt.zh=}}
 A-Hi-Cha（<lang ja ああ…翡翠茶漬け…>，“哎哟翡翠茶泡饭”）是由三位音乐作者组成的团体，有许多作品被音乐节奏类游戏收录。三人之间也会两两成组，再加上独立创作，一共有七种署名方式，仿佛让人在每张专辑里都能看到一个热闹而欢乐的场面——三只福瑞各自合作，忙忙碌碌制造美梦的情景，谁看了不大呼可爱呢！
 《Dream Makers》是同名专辑里的彩蛋乐曲，也是专辑中唯一一首全体成员合作完成的作品。变化多端的风格里混合着三人各自的鲜明特色：AAAA（<lang ja ああああ>）擅长富于叙事与交响性的旋律与和声，Isuka（<lang ja 翡乃イスカ>）常常融入电子舞曲的音色与编配风格，而茶泡饭（<lang ja 梅干茶漬け>）则更接近流行乐曲与复古游戏配乐式的“正统”芯片音乐——每个段落似乎都依稀可辨是哪几位躲在背后拨弄着叮叮当当的声音，有时大家甚至各自大张旗鼓地塞进自己以前作品的旋律音效，宛如一场灵动俏皮的舞台演出。
@@ -234,7 +234,7 @@ To be “in the position to support all” — it must be happy and fulfilling t
 {{box[i].links=}}https://open.spotify.com/track/3FQtTH7gloLBbQ5ipCVswG https://y.qq.com/n/ryqq/songDetail/2844924 https://youtu.be/iSzI0UF9nak
 {{box[i].image=}}For-Hundreds-of-Children.jpg
 {{box[i].imagealt.zh=}}歌曲封面。黑色背景下五彩的方块排列成蝴蝶形状。
-{{box[i].imagealt.en=}}Cover of the song. On a black background, colourful squares laid out in a pattern resembling a butterfly.
+{{box[i].imagealt.en=}}Cover image of the song. On a black background, colourful squares laid out in a pattern resembling a butterfly.
 {{box[i].cmt.zh=}}
 二十岁生日之前看着透过窗户照进房间的夕阳想着，不知道自己还有没有机会亲历这样纯真美好的情感了。那个时候对恋爱啊人生规划啊什么的都毫无概念，只觉得希望尝尝这番甘甜滋味、不愿留下遗憾，却又不知如何是好。“在夏日雨后的天空架起长长的彩虹因为喜欢你”，一个灵魂飞奔着去拥抱另一个的场景仿佛就在眼前，这该是有多浪漫呀！于是在玻璃窗映出的温暖影子里落下混着感动与心酸的泪水。
 其实两人写下这首歌的时候也只有二十三岁——那时的我还很难相信在这个年纪就可以追逐这样的理想、创造出如此动人的作品，好像那一切都是属于成熟大人的。但其实二十年的人生早已足够丰富，何况谁不能重新当回小孩子呢。
@@ -256,7 +256,7 @@ Soon afterwards, I was struck by a mutual attraction that turned into a relation
 {{box[i].links=}}https://nico.ms/sm41956094 https://b23.tv/BV12g4y1x7yk https://youtu.be/cIJmxkohX3Q https://open.spotify.com/track/2NTUs49LzhcpaSM6jpWU9I https://music.163.com/song?id=2026660742
 {{box[i].image=}}Akkannbe.jpg
 {{box[i].imagealt.zh=}}歌曲封面。身着红色和服的长发女孩在日式建筑前举着油纸伞，伞上托着一个转动的球。
-{{box[i].imagealt.en=}}Cover of the song. In front of a Japanese style building, a long-haired girl in red kimono holds an oil-paper umbrella supporting a spinning ball.
+{{box[i].imagealt.en=}}Cover image of the song. In front of a Japanese style building, a long-haired girl in red kimono holds an oil-paper umbrella supporting a spinning ball.
 {{box[i].cmt.zh=}}
 !<blockquoteby
 <<~= 《付丧神绘卷》（<link https://rmda.kulib.kyoto-u.ac.jp/item/rb00013599 京都大学附属图书馆>、<link https://dl.ndl.go.jp/pid/2541764 国立国会图书馆>）>>
@@ -296,9 +296,54 @@ A discarded umbrella takes on a human form, idling away while playing games, lam
 >
 In such an age that is so keen on treating all living matter as mere objects and tools, perhaps we should all seek some inspiration from the primitive beliefs that spirits reside in everything and the nature is to be revered.
 
+{{=}}
+{{i = #box + 1}}
+{{box[i].id=}}telo
+{{box[i].title.zh=}}雨
+{{box[i].title.en=}}The Rain
+{{box[i].title.tok=}}telo sewi
+{{box[i].artist.zh=}}tori-pochun / Hoshinikomi
+{{box[i].artist.en=}}tori-pochun / Hoshinikomi
+{{box[i].artist.ja=}}とりぽちゅん / ホシニコミ
+{{box[i].origlang=}}tok
+{{box[i].artistlang=}}ja
+{{box[i].links=}}https://youtu.be/RPkuTDrCPts https://nico.ms/sm42342286 https://music.163.com/song?id=2623851803 https://yukuerecords.bandcamp.com/track/telo-sewi https://open.spotify.com/track/292G4frpLWNlZWtTm2Gaei
+{{box[i].image=}}telo-sewi.jpg
+{{box[i].imagealt.zh=}}歌曲动画中的画面。身披黄色雨衣的黄色头发女孩（弦卷真纪）在草地上雨后小水潭中的倒影。
+{{box[i].imagealt.en=}}Image from the music animation. Reflection of a yellow-haired girl in a yellow raincoat (Tsurumaki Maki) in a small puddle on the grass after the rain.
+{{box[i].cmt.zh=}}
+!<blockquote <~~='
+  <lang tok mi pini e oko mi a! mi pilin e wan ona><br>【我闭上眼睛呀，体会着她们中的一滴】
+'>>
+一首<link https://tokipona.net/ 道本语>歌曲。道本语（<lang tok toki pona>）是一门只有百余个单词的人造语言，可以用简单的词语创造性地排列组合来表达复杂的概念。比如，“雨”就是“高处（<lang tok sewi>）的水（<lang tok telo>）”。聪明的你一定发现了 <lang tok telo> 就是 <lang fr de l’eau>！什么什么，你想用这几个词说“你我侧耳倾听雨声，用心感受，便知道了雨滴们的无数去向”？听了就知道啦！
+本曲是我开始学习道本语的直接缘起，这首歌的歌词是我第一批学会的词语、第一组读懂的句子。道本语的初创者 Sonja 希望这门语言“有趣又可爱”，我想，这首曲子应当是十分生动的体现。
+初听时虽然一个词都不认识，但全曲的氛围莫名给了我清晰的印象：“似乎是与很多很多好朋友一起唱的歌”。巧合的是，歌词确实站在雨滴的角度此般叙述：
+!<blockquote <~~='
+  <lang tok ona li tan kon walo pimeja><br>【她从乌云中来】
+  <lang tok poka jan pona, li pilin e ijo nanpa wan><br>【与朋友一起，初次体验世间万物】
+  <lang tok li lukin e jan, e tomo, e kasi, e soweli><br>【看见行人、房屋、草木与走兽】
+  <lang tok la ona li pilin pona!><br>【她便感到十分快乐！】
+'>>
+本曲另有<link https://youtu.be/atR0cDv3sNU 日语版>、<link https://youtu.be/9IcLqFEQhNc 世界语版>、<link https://youtu.be/GeXnufhzXUo 阿卡贝拉合唱版>。日语版的评论区提到，如果是吹奏乐课题曲的话会很有意思。这种轻快的“朋友感”确实很有日式中学生课题曲的风格！指挥我要演这个！
+{{box[i].cmt.en=}}
+!<blockquote <~~='
+  <lang tok mi pini e oko mi a! mi pilin e wan ona><br>(I close my eyes, oh! I feel with one of them)
+'>>
+A song in <link https://tokipona.net/ Toki Pona>. Toki Pona is an artificially constructed language with a vocabulary of just over a hundred words. In this language, complex concepts are expressed by combining simple words creatively. For example, “rain” is “water (<it <lang tok telo>>) above (<it <lang tok sewi>>)”. You might be witty enough to notice that <it <lang tok telo>> is <it <lang fr de l’eau>>! What, with these few words you want to say “<it You and I listen and feel the sounds of the rain, then we will know their myriad travels>”? You will find out after listening!
+This song was the catalyst that sparked my Toki Pona journey. Its lyrics were the first words I got acquainted with and the very first sentences I got to appreciate. The language’s creator, Sonja, envisioned the language as “fun and cute”, of which this track I think is a vivid manifestation.
+Upon first encounter, I did not understand a single word, yet the overall atmosphere soaked me in an unexpectedly evocative impression: this feels like a song sung together with many, many dear friends. As it happens, the lyrics indeed narrate as such from the perspective of a raindrop:
+!<blockquote <~~='
+  <lang tok ona li tan kon walo pimeja><br>(She comes from the dark clouds)
+  <lang tok poka jan pona, li pilin e ijo nanpa wan><br>(Together with friends, experiencing everything for the first time)
+  <lang tok li lukin e jan, e tomo, e kasi, e soweli><br>(Seeing people, houses, plants, and animals)
+  <lang tok la ona li pilin pona!><br>(And thus she feels good!)
+'>>
+This song also has a <link https://youtu.be/atR0cDv3sNU Japanese version>, an <link https://youtu.be/9IcLqFEQhNc Esperanto version>, and an <link https://youtu.be/GeXnufhzXUo a cappella version>. A comment on the Japanese version envisioned the music to be captivating as a set piece in a wind band competition. This breezy, <it friend-y> vibe definitely matches the Japanese high school wind band style! Conductor, I want to have this on our programme!
+
 {{{!--[[
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}
 {{box[i].title.zh=}}
 {{box[i].title.en=}}
 {{box[i].title.ja=}}
@@ -309,7 +354,7 @@ In such an age that is so keen on treating all living matter as mere objects and
 {{box[i].links=}}
 {{box[i].image=}}
 {{box[i].imagealt.zh=}}歌曲封面。
-{{box[i].imagealt.en=}}Cover of the song.
+{{box[i].imagealt.en=}}Cover image of the song/track/album.
 {{box[i].cmt.zh=}}
 {{box[i].cmt.en=}}
 ]]}}}
