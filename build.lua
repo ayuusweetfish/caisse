@@ -1129,6 +1129,7 @@ local function renderallitems()
       local locals = item.locals
       locals.name = path
       locals.curcat = item.cat
+      markupfnsenvitem = path
       if item.template ~= nil then
         if item.pagination ~= nil then
           local list = item.pagination.list
@@ -1151,10 +1152,9 @@ local function renderallitems()
         end
       else
         -- Markup
-        markupfnsenvitem = path
         renderpage(path, 'item.html', locals)
-        markupfnsenvitem = nil
       end
+      markupfnsenvitem = nil
       if path:sub(1, 9) ~= 'backyard/' and path ~= 'index' and path:sub(1, 2) ~= '_/' then
         local title = caisse.envadditions.tr(locals.title)
         print(item.cat, title)
