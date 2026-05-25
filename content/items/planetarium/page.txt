@@ -39,7 +39,7 @@ This is the story that Yorushika — or rather, Elma — tells in two albums.
 {{box[i].title.en=}}As If Green Hills Heave in Sight
 {{box[i].artist.zh=}}潮汐-tide / 冉语优
 {{box[i].origlang=}}zh
-{{box[i].links=}}https://b23.tv/BV1ab411g7Fb https://music.163.com/song?id=1357172690
+{{box[i].links=}}https://b23.tv/BV1ab411g7Fb https://youtu.be/-zZ-jUTtZUg https://music.163.com/song?id=1357172690
 {{box[i].image=}}Green-Hills.jpg
 {{box[i].imagealt.zh=}}歌曲封面。柳叶间的苏东坡形象，一旁是毛笔书写的“如见青山”四字。
 {{box[i].imagealt.en=}}Cover of the song. A portrait of the ancient Chinese poet Su Dongpo standing among the willow leaves, with the Chinese title of the song written in brushstrokes beside.
@@ -79,7 +79,7 @@ Bilibili 舞蹈嘉年华（BDF）2021 主题曲之一。
 {{box[i].title.en=}}Dream of Orca
 {{box[i].artist.en=}}park bird
 {{box[i].origlang=}}en
-{{box[i].links=}}https://youtu.be/kg1g_l5p8bk?t=909 https://soundcloud.com/pivot1/dream-of-orca?in=pivot1/sets/collecting-pieces
+{{box[i].links=}}https://youtu.be/kg1g_l5p8bk?t=909 https://parkbird.bandcamp.com/track/dream-of-orca https://soundcloud.com/pivot1/dream-of-orca?in=pivot1/sets/collecting-pieces
 {{box[i].image=}}Collecting-Pieces.jpg
 {{box[i].imagealt.zh=}}专辑封面。四位主角：猫、魔女、鸟、人类，坐在悬崖边的草地上，四周围着彩色的灌木丛、山脉、水草、云朵、鲸鱼。
 {{box[i].imagealt.en=}}Cover of the album. Four protagonists: a cat, a witch, a bird, and a human, sitting on a cliffside meadow surrounded by colourful bushes, mountains, aquatic plants, clouds, and whales.
