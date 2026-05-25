@@ -139,13 +139,13 @@ It might be well-intentioned to make assumptions about other people’s experien
   !<img images/Fireflies-rel-zh.jpg <= 人物关系图。美影→Spica：（火车窗前的躲闪眼神）。Spica→美影：想要更加了解她。美影→夕阳：童年伙伴，感觉她就像小动物一样。夕阳→美影：想要帮助她（也许太过了）。Spica↔夕阳：很容易聊得来。Spica→丽：令人感觉舒服。丽→美影：zzz…… 夕阳→丽：有一些伙伴情谊。丽→美影：zzz…… 美影→丽：神秘。丽→美影：……> square>
 ">>
 Spica 或许只是假装不知道美影的情愫。又或许她真的不知道，甚至没法知道；要是如此的话，对美影来说该有多难过——自己或许永远只是这个活泼女孩子的一名好朋友，接下来的一切仿佛都隔着一层厚厚的玻璃无法触及。身处玻璃背后的迷惘，大概要比期待落空的失落更煎熬吧。合影中 Spica 靠在自己身上时，美影都在想些什么呢。
-话说回来，如果要说最能代入谁的话，大概还是助攻的 Yuhi。不过，阳光般温暖的 Yuhi 即使知道自己帮不上什么，也只会一笑而过，接着在未来提供力所能及的支持；如果是我的话，就会被那种“被需要”的执念与过度同理的痛苦萦绕，甚至生发出“要是我是她就好了”这样的想法……故事周围的 Yuhi 与 Urara 两人意外地成为了学习榜样？
+话说回来，如果要说最能代入谁的话，大概还是助攻的 Yuhi。不过，阳光般温暖的 Yuhi 即使知道自己帮不上什么，也只会一笑而过，接着在未来提供力所能及的支持；如果是我的话，就会被那种“被需要”的执念与过度共情的痛苦萦绕，甚至生发出“要是我是她就好了”这样的想法……大概，故事周围的 Yuhi 与 Urara 两人意外地成为了学习榜样？
 {{box[i].cmt.en=}}
 !<blockquoteby <~=' <link https://www.reddit.com/r/harumakigohan/comments/vu1lb5/ @Kendrillion>'> <~~="
   !<img images/Fireflies-rel-en.jpg <= Character relationship chart. Mikage→Spica: (Dodging eyes by the train window). Spica→Mikage: Wants to get to know her better. Mikage→Yuhi: Childhood friends; She is like a small animal. Yuhi→Mikage: Wants to help her (a little too much). Spica↔Yuhi: Easy to talk to. Spica→Urara: Comfortable. Urara→Mikage: zzz…… Yuhi→Urara: Some kind of feeling of fellowship. Urara→Mikage: zzz…… Mikage→Urara: Mystery. Urara→Mikage: ……> square>
 ">>
 Spica might just be pretending not to know about Mikage’s sentiment. Or maybe she really didn’t know, or even couldn’t know; how sad it would be for Mikage if this is true — that she can only go on to be a good friend to this lively girl, and that everything beyond feel as if blocked by a thick layer of glass. The helplessness of being behind that glass was probably more painful than the loss of a wish. What was Mikage thinking about when Spica was leaning on her in the photo?
-That aside, if I were to feel relatable for one of them, it would probably be Yuhi the wingmate. Though Yuhi, unlike me, with her warmth like the sunlight, would simply smile it away knowing she was unable to do much, continuing to offer whatever support she could afterwards. If it were me, I would be consumed by the obsession with “being needed” and the pain of overdone empathy, to the point of harbouring the thought of “if only I were her…” — Yuhi and Urara, standing on the periphery of the story, have unexpectedly become role models that I would learn from?
+That aside, if I were to feel relatable for one of them, it would probably be Yuhi the wingmate. Though Yuhi, unlike me, with her warmth like the sunlight, would simply smile it away knowing she was unable to do much, continuing to offer whatever support she could afterwards. If it were me, I would be consumed by the obsession with “being needed” and the pain of overdone empathy, to the point of harbouring the thought of “if only I were her…” — probably, Yuhi and Urara, standing on the periphery of the story, have unexpectedly become role models that I would learn from?
 
 {{=}}
 {{i = #box + 1}}
@@ -330,8 +330,8 @@ In such an age that is so keen on treating all living matter as mere objects and
   <lang tok mi pini e oko mi a! mi pilin e wan ona><br>(I close my eyes, oh! I feel with one of them)
 '>>
 A song in <link https://tokipona.net/ Toki Pona>. Toki Pona is an artificially constructed language with a vocabulary of just over a hundred words. In this language, complex concepts are expressed by combining simple words creatively. For example, “rain” is “water (<it <lang tok telo>>) above (<it <lang tok sewi>>)”. You might be witty enough to notice that <it <lang tok telo>> is <it <lang fr de l’eau>>! What, with these few words you want to say “<it You and I listen and feel the sounds of the rain, then we will know their myriad travels>”? You will find out after listening!
-This song was the catalyst that sparked my Toki Pona journey. Its lyrics were the first words I got acquainted with and the very first sentences I got to appreciate. The language’s creator, Sonja, envisioned the language as “fun and cute”, of which this track I think is a vivid manifestation.
-Upon first encounter, I did not understand a single word, yet the overall atmosphere soaked me in an unexpectedly evocative impression: this feels like a song sung together with many, many dear friends. As it happens, the lyrics indeed narrate as such from the perspective of a raindrop:
+This song was the catalyst that sparked my Toki Pona journey. Its lyrics were the first words I got acquainted with and the very first sentences I grew to appreciate. The language’s creator, Sonja, envisioned the language as “fun and cute”, of which this track I think is a vivid manifestation.
+Upon first encounter, I did not understand a single word, yet the overall atmosphere soaked me in an unexpectedly evocative impression: this felt like a song sung together with many, many dear friends. As it happens, the lyrics indeed narrate as such from the perspective of a raindrop:
 !<blockquote <~~='
   <lang tok ona li tan kon walo pimeja><br>(She comes from the dark clouds)
   <lang tok poka jan pona, li pilin e ijo nanpa wan><br>(Together with friends, experiencing everything for the first time)
