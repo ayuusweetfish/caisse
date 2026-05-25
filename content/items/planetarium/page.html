@@ -45,7 +45,7 @@ end
 ----
 {{i = 0}}
 {{@ box }}
-{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{imagealt}}	{{title}}	{{title[origlang] == title[lang] and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)):gsub('\n', '') }}
+{{id}}	{{* i=i+1; return i}}	{{file('images/' .. image, 'items/' .. name)}}	{{imagealt}}	{{title}}	{{title[origlang] == title[lang] and '' or title[origlang]}}	{{origlang}}	{{tr(artist) or artist[artistlang or origlang]}}	{{(not tr(artist) or lang == (artistlang or origlang)) and '' or artist[artistlang or origlang]}}	{{artistlang or origlang}}	{{htmllinks(split(links, ' '))}}	{{ rendermarkup(tr(cmt)):gsub('\n', '') }}
 {{@ end }}
 -->
 </section>

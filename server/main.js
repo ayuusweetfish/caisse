@@ -364,15 +364,20 @@ const staticFile = async (req, opts, headers, path) => {
           for (let i = 0; i < 7; i++) g = randNext(g)
           return (g.sum >> 8)
         }
-        const queryIndex = (new URL(req.url)).searchParams.get('index')
-        const queryIndexValid =
-          (queryIndex !== null && +queryIndex >= 1 && +queryIndex <= entries.length)
-        const entryIndex = (queryIndexValid ? +queryIndex - 1 :
+        let queryIndex = null
+        let query = (new URL(req.url)).searchParams.get('id')
+        if (query !== null && +query >= 1 && +query <= entries.length) {
+          queryIndex = +query - 1
+        } else {
+          const i = entries.map((s) => s.substring(0, s.indexOf('\t'))).indexOf(query)
+          if (i !== -1) queryIndex = i
+        }
+        const entryIndex = (queryIndex !== null ? queryIndex :
           nonRepeatRandom(plainRandom, timeSeed, entries.length))
         const contentTempl = value.substring(lineEnd + 1, contentEnd)
           .replace(/\/\/\/(.+)\/\/\/(.+)\/\/\//s,
-            (_, textRandom, textFixed) => queryIndexValid ? textFixed : textRandom)
-        const entryContent = entries[entryIndex].split('\t').reduce(
+            (_, textRandom, textFixed) => queryIndex !== null ? textFixed : textRandom)
+        const entryContent = entries[entryIndex].split('\t').slice(1).reduce(
           (s, t, i) => s.replaceAll(params[1 + i], t), contentTempl)
         return entryContent
       }

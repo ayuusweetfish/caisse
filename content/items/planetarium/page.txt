@@ -5,6 +5,7 @@
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}elma
 {{box[i].title.zh=}}Elma
 {{box[i].title.en=}}Elma
 {{box[i].title.ja=}}エルマ
@@ -35,6 +36,7 @@ This is the story that Yorushika — or rather, Elma — tells in two albums.
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}qingshan
 {{box[i].title.zh=}}如见青山
 {{box[i].title.en=}}As If Green Hills Heave in Sight
 {{box[i].artist.zh=}}潮汐-tide / 冉语优
@@ -59,6 +61,7 @@ At the end of the day, however, none of these debates matter. It is Su Dongpo’
 {{{!--[[
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}huayue
 {{box[i].title.zh=}}花月成双
 {{box[i].title.en=}}Duet of Flower and Moon
 {{box[i].artist.zh=}}三无Marblue/LS/夏安兰
@@ -75,6 +78,7 @@ Bilibili 舞蹈嘉年华（BDF）2021 主题曲之一。
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}orca
 {{box[i].title.zh=}}虎鲸之梦
 {{box[i].title.en=}}Dream of Orca
 {{box[i].artist.en=}}park bird
@@ -90,6 +94,7 @@ An adorable piece in synthesizer style. The album it’s on, <it Collecting Piec
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}trip
 {{box[i].title.zh=}}独自旅行
 {{box[i].title.en=}}Solo Trip
 {{box[i].title.ja=}}ひとり旅
@@ -117,6 +122,7 @@ It might be well-intentioned to make assumptions about other people’s experien
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}fireflies
 {{box[i].title.zh=}}萤火虫未曾来过
 {{box[i].title.en=}}Fireflies Never Came
 {{box[i].title.ja=}}蛍はいなかった
@@ -143,6 +149,7 @@ That aside, if I were to feel relatable for one of them, it would probably be Yu
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}makers
 {{box[i].title.zh=}}造梦者
 {{box[i].title.en=}}Dream Makers
 {{box[i].title.ja=}}Dream Makers
@@ -164,6 +171,7 @@ In the eponymous album, <it Dream Makers> is a bonus track and is the only one o
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}gatcha
 {{box[i].title.zh=}}星 空 扭 蛋 机
 {{box[i].title.en=}}Starry Gacha Machine
 {{box[i].artist.zh=}}中下游
@@ -182,6 +190,7 @@ The simplest instruments can be pieced together into lovely, sweet music, and th
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}prologue
 {{box[i].title.zh=}}序章。
 {{box[i].title.en=}}Prologue.
 {{box[i].title.ja=}}序章。
@@ -214,6 +223,7 @@ To be “in the position to support all” — it must be happy and fulfilling t
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}message
 {{box[i].title.zh=}}音讯
 {{box[i].title.en=}}Message
 {{box[i].title.ja=}}メッセージ
@@ -236,6 +246,7 @@ Soon afterwards, I was struck by a mutual attraction that turned into a relation
 
 {{=}}
 {{i = #box + 1}}
+{{box[i].id=}}akkanpe
 {{box[i].title.zh=}}冲你做鬼脸
 {{box[i].title.en=}}Pull a Face at You
 {{box[i].title.ja=}}あんたにあっかんべ
