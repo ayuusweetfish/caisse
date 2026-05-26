@@ -547,7 +547,10 @@ const serveReq = async (req, info) => {
 }
 
 const port = +Deno.env.get('PORT') || 1123
-const server = Deno.serve({ port }, async (req, info) => {
+const server = Deno.serve({
+  port,
+  onListen: () => log(`Running at http://localhost:${port}/`),
+}, async (req, info) => {
   try {
     return await serveReq(req, info)
   } catch (e) {
@@ -555,4 +558,3 @@ const server = Deno.serve({ port }, async (req, info) => {
     return new Response('Internal server error', { status: 500 })
   }
 })
-log(`Running at http://localhost:${port}/`)
