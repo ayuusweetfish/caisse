@@ -581,6 +581,13 @@ body:lang(lat), *[lang='lat'] {
 body:lang(zh), *[lang='zh'] {
   font-family: 'AaKaiSong', var(--typeface-zh-subset), 'Livvic — Lighter Bold', 'Open Sans — Greek', sans-serif;
 }
+body:lang(zh) span[lang='en']:not(:has(p)),
+body:lang(zh) span[lang='fr']:not(:has(p)),
+body:lang(zh) span[lang='it']:not(:has(p)),
+body:lang(zh) span[lang='de']:not(:has(p)),
+body:lang(zh) span[lang='lat']:not(:has(p)) {
+  font-family: 'Livvic — Lighter Bold', 'Open Sans — Greek', 'AaKaiSong', var(--typeface-zh-subset), sans-serif;
+}
 .symbols,
 body:lang(el), *[lang='el'],
 body:lang(grc), *[lang='grc'] {
