@@ -40,12 +40,23 @@ local template2 =
 </svg>
 ]]
 
+local fold32
+local zero64
+if jit then
+  local bit = require('bit')
+  fold32 = function (h) return bit.bxor(bit.rshift(h, 32), bit.band(h, 0xffffffff)) end
+  zero64 = require('ffi').cast('uint64_t', 0)
+else
+  fold32 = load('return function (h) return (h >> 32) ~ (h & ((1 << 32) - 1)) end')()
+  zero64 = 0
+end
+
 local function basehash(s)
-  local h = 0
+  local h = zero64
   for i = 1, #s do
     h = h * 997 + string.byte(s, i) + 1
   end
-  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+  return string.format('%08x', fold32(h))
 end
 
 local overwrites = {}

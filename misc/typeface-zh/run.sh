@@ -12,4 +12,4 @@ find ../../build/ -name "index.*.html" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a
 if [[ ! -e "/tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf" ]]; then
   fontforge -lang=py -script AaKaiSong_remap.py
 fi
-lua process.lua
+${LUA:-lua} process.lua

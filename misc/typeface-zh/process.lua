@@ -11,6 +11,72 @@ To use the cache:
 Dependencies: pyftsubset (fonttools), woff2_compress (woff2)
 ]]
 
+local fold32
+local zero64
+if jit then
+  local bit = require('bit')
+  fold32 = function (h) return bit.bxor(bit.rshift(h, 32), bit.band(h, 0xffffffff)) end
+  zero64 = require('ffi').cast('uint64_t', 0)
+else
+  fold32 = load('return function (h) return (h >> 32) ~ (h & ((1 << 32) - 1)) end')()
+  zero64 = 0
+end
+
+table.unpack = table.unpack or unpack
+
+if not utf8 then
+  utf8 = {
+    codepoint = function (s, i, j)
+      i = i or 1
+      j = j or i
+
+      local cps = {}
+      while i <= j and i <= #s do
+        local b1, b2, b3, b4 = string.byte(s, i, i + 3)
+        local cp
+        if b1 < 0x80 then
+          cp = b1
+          i = i + 1
+        elseif b1 < 0xe0 then
+          if not (
+            b2 and b2 >= 0x80 and b2 < 0xc0
+          ) then
+            error('invalid UTF-8 code', 2)
+          end
+          cp = ((b1 - 0xc0) * 0x40) + (b2 - 0x80)
+          i = i + 2
+        elseif b1 < 0xf0 then
+          if not (
+            b2 and b2 >= 0x80 and b2 < 0xc0 and
+            b3 and b3 >= 0x80 and b3 < 0xc0
+          ) then
+            error('invalid UTF-8 code', 2)
+          end
+          cp = ((b1 - 0xe0) * 0x1000) + ((b2 - 0x80) * 0x40) + (b3 - 0x80)
+          i = i + 3
+        elseif b1 < 0xf8 then
+          if not (
+            b2 and b2 >= 0x80 and b2 < 0xc0 and
+            b3 and b3 >= 0x80 and b3 < 0xc0 and
+            b4 and b4 >= 0x80 and b4 < 0xc0
+          ) then
+            error('invalid UTF-8 code', 2)
+          end
+          cp = ((b1 - 0xf0) * 0x40000) + ((b2 - 0x80) * 0x1000) + 
+               ((b3 - 0x80) * 0x40) + (b4 - 0x80)
+          i = i + 4
+        else
+          error('invalid UTF-8 code', 2)
+        end
+
+        cps[#cps + 1] = cp
+      end
+
+      return table.unpack(cps)
+    end,
+  }
+end
+
 local codepoints = {}
 local ncodepoints = 0
 for line in io.open('AaKaiSong2WanZi2.charset.txt'):lines() do
@@ -37,9 +103,9 @@ function addsubset(subset, name, writecss, comment)
     j = j + k
   end
   -- Hash
-  local h = 0
+  local h = zero64
   for i = 1, #subset do h = h * 100019 + subset[i] + 1 end
-  h = string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+  h = string.format('%08x', fold32(h))
   --print(table.concat(terms, ','))
   -- Deduplication
   local woff2basename = string.format('AaKaiSong.%s.%s.woff2', name, h)
@@ -74,11 +140,11 @@ function addsubset(subset, name, writecss, comment)
 end
 
 local function basehash(s)
-  local h = 0
+  local h = zero64
   for i = 1, #s do
     h = h * 997 + string.byte(s, i) + 1
   end
-  return string.format('%08x', (h >> 32) ~ (h & ((1 << 32) - 1)))
+  return string.format('%08x', fold32(h))
 end
 
 -- Page-curated subset
@@ -86,7 +152,7 @@ for line in io.open('/tmp/caisse-typeface-zh-stray.txt'):lines() do
   local tabpos = line:find('\t')
   local docid = line:sub(1, tabpos - 1)
   local cps = {}
-  for w in line:gmatch('[0-9a-f]+', tabpos + 1) do
+  for w in line:gmatch('%s([0-9a-f]+)') do
     cps[#cps + 1] = tonumber(w, 16)
   end
   addsubset(cps, 'stray', false, docid)
