@@ -564,7 +564,7 @@ end
 
 {{ fontfacedef('AaKaiSong Language Names', 'normal', 'normal', nil, 'AaKaiSong-langs') }}
 
-{{ fontfacedef('Ayuu Little Icons — 221202a', 'normal', 'normal', nil, 'little-icons') }}
+{{ fontfacedef('Ayuu Little Icons', 'normal', 'normal', nil, 'little-icons') }}
 
 {{@ distbuild }}
 {{ AaKaiSong_css }}
@@ -601,10 +601,10 @@ pre, code, .tt {
   font-size: 0.9rem;
 }
 .little-icons {
-  font-family: 'Ayuu Little Icons — 221202a', 'Livvic', sans-serif;
+  font-family: 'Ayuu Little Icons', 'Livvic', sans-serif;
 }
 .little-icons:lang(zh) {
-  font-family: 'Ayuu Little Icons — 221202a', 'Livvic — Lighter Bold', sans-serif;
+  font-family: 'Ayuu Little Icons', 'Livvic — Lighter Bold', sans-serif;
 }
 
 sup {
