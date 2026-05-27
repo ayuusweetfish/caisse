@@ -10,7 +10,90 @@ const persistLog = (line) => {
     })
 }
 
+// ============ Platform adapter (`openFile`) ============ //
+
 const siteRootDir = Deno.cwd() + '/build'
+
+const etagReg = {}
+const metaReg = {}
+
+const openFile = async (path, byteStart, byteEnd) => {
+  let file
+
+  try {
+    file = await Deno.open(siteRootDir + path)
+  } catch (e) {
+    if (e instanceof Deno.errors.NotFound) return null
+    // Deno Deploy (Classic) runtime does not support `open()`ing a directory
+    if (e.code === 'EISDIR') return null
+    throw e
+  }
+
+  const fileInfo = await file.stat()
+  if (fileInfo.isDirectory) return null
+
+  const fileSize = fileInfo.size
+  if (byteStart === undefined) byteStart = 0
+  if (byteEnd === undefined) byteEnd = fileSize - 1
+  const rangeValid = (byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd)
+  if (!rangeValid) return { rangeValid }
+
+  // ETag
+  let etag = etagReg[path]
+  if (etag === undefined) {
+    const buf = new Uint8Array(1024 * 1024)
+    let n = 0
+    let hash = 0
+    while ((n = await file.read(buf)) !== null) {
+      for (let i = 0; i < n; i++) {
+        hash = hash * 997 + buf[i] + 1
+        hash = (hash / 4294967296) ^ hash
+      }
+    }
+    if (hash < 0) hash += 4294967296
+    etagReg[path] = etag = `"${hash.toString(16).padStart(8, '0')}"`
+  }
+
+  // Metadata properties
+  let meta = metaReg[path]
+  if (meta === undefined) {
+    try {
+      meta = JSON.parse(await Deno.readTextFile(siteRootDir + path + '.caisse.json'))
+    } catch (e) {
+      if (e instanceof Deno.errors.NotFound) meta = {}
+      else if (e instanceof SyntaxError) {
+        log(`Syntax error in ${metaPath}: ${e}`)
+        meta = {}
+      }
+      else throw e
+    }
+    metaReg[path] = meta
+  }
+
+  file.seek(byteStart, Deno.SeekMode.Start)
+
+  return {
+    path, stream: file.readable,
+    etag, meta,
+    byteStart, byteEnd, fileSize, rangeValid: true,
+  }
+}
+
+;(async () => {
+  const watcher = Deno.watchFs(siteRootDir)
+  for await (const event of watcher) {
+    if (event.kind === 'create' || event.kind === 'modify' || event.kind === 'remove') {
+      for (const path of event.paths) {
+        const relPath = path.substring(siteRootDir.length)
+        delete etagReg[relPath]
+        if (relPath.endsWith('.caisse.json'))
+          delete metaReg[relPath.substring(0, relPath.length - 12)]
+      }
+    }
+  }
+})()
+
+// ============ End of platform adapter ============ //
 
 const supportedLangs = ['en', 'zh']
 
@@ -40,80 +123,6 @@ const mime = (s) => {
   }
   return 'application/octet-stream'
 }
-
-const etagReg = {}
-const metaReg = {}
-
-const openFile = async (path, byteStart, byteEnd) => {
-  let file, fileInfo, etag, meta
-  try {
-    file = await Deno.open(siteRootDir + path)
-    fileInfo = await file.stat()
-    if (fileInfo.isDirectory) return null
-
-    // ETag
-    etag = etagReg[path]
-    if (meta === undefined) {
-      const buf = new Uint8Array(1024 * 1024)
-      let n = 0
-      let hash = 0
-      while ((n = await file.read(buf)) !== null) {
-        for (let i = 0; i < n; i++) {
-          hash = hash * 997 + buf[i] + 1
-          hash = (hash / 4294967296) ^ hash
-        }
-      }
-      if (hash < 0) hash += 4294967296
-      etagReg[path] = etag = `"${hash.toString(16).padStart(8, '0')}"`
-    }
-    // Metadata properties
-    meta = metaReg[path]
-    if (meta === undefined) {
-      try {
-        meta = JSON.parse(await Deno.readTextFile(siteRootDir + path + '.caisse.json'))
-      } catch (e) {
-        if (e instanceof Deno.errors.NotFound) meta = {}
-        else if (e instanceof SyntaxError) {
-          log(`Syntax error in ${metaPath}: ${e}`)
-          meta = {}
-        }
-        else throw e
-      }
-      metaReg[path] = meta
-    }
-  } catch (e) {
-    if (e instanceof Deno.errors.NotFound) return null
-    // Deno Deploy (Classic) runtime does not support `open()`ing a directory
-    if (e.code === 'EISDIR') return null
-    throw e
-  }
-
-  const fileSize = fileInfo.size
-  if (byteStart === undefined) byteStart = 0
-  if (byteEnd === undefined) byteEnd = fileSize - 1
-  let rangeValid = (byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd)
-  file.seek(rangeValid ? byteStart : fileSize - 1, Deno.SeekMode.Start)
-
-  return {
-    path, stream: file.readable,
-    etag, meta,
-    byteStart, byteEnd, fileSize, rangeValid,
-  }
-}
-
-;(async () => {
-  const watcher = Deno.watchFs(siteRootDir)
-  for await (const event of watcher) {
-    if (event.kind === 'create' || event.kind === 'modify' || event.kind === 'remove') {
-      for (const path of event.paths) {
-        const relPath = path.substring(siteRootDir.length)
-        delete etagReg[relPath]
-        if (relPath.endsWith('.caisse.json'))
-          delete metaReg[relPath.substring(0, relPath.length - 12)]
-      }
-    }
-  }
-})()
 
 const redirectResponse = (url, headers, isPerm, isNoCache) => {
   if (!headers) headers = new Headers()
