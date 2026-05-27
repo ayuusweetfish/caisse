@@ -569,6 +569,29 @@ end
 {{@ distbuild }}
 {{ AaKaiSong_css }}
 {{@ end }}
+
+body:lang(en), *[lang='en'],
+body:lang(fr), *[lang='fr'],
+body:lang(it), *[lang='it'],
+body:lang(de), *[lang='de'],
+body:lang(lat), *[lang='lat'] {
+  font-family: 'Livvic', 'Open Sans — Greek', 'AaKaiSong', var(--typeface-zh-subset), sans-serif;
+}
+body:lang(zh), *[lang='zh'] {
+  font-family: 'AaKaiSong', var(--typeface-zh-subset), 'Livvic — Lighter Bold', 'Open Sans — Greek', sans-serif;
+}
+.symbols,
+body:lang(el), *[lang='el'],
+body:lang(grc), *[lang='grc'] {
+  font-family: 'Open Sans — Greek', 'Livvic', 'AaKaiSong', var(--typeface-zh-subset), sans-serif;
+}
+body:lang(ru), *[lang='ru'] {
+  font-family: 'Open Sans — Cyrillic', 'Livvic', 'AaKaiSong', var(--typeface-zh-subset), sans-serif;
+}
+pre, code, .tt {
+  font-family: 'Sono', 'AaKaiSong', var(--typeface-zh-subset), monospace;
+}
+
 i {
   /* font-style: oblique 9deg; */
   font-style: italic;
