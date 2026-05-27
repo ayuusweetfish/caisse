@@ -373,12 +373,13 @@ body.dark a.{{cat.name}} {
 a.external {
   color: hsl({{hue}}deg, {{sat}}%, {{val1}}%);
   border-image-source: {{ underlinesvg(hue, sat, val2, 90) }};
+  margin-inline-end: 0.3em;
 }
 a.external > sup.little-icons {
   user-select: none;
   color: hsla({{hue}}deg, {{sat}}%, {{val1}}%, 60%);
   transition: color ease {{transitiondur}};
-  margin-inline-end: 0.533em;
+  margin-inline-end: 0.233em;
   position: relative;
 }
 a.external > sup.little-icons::after {
