@@ -2,14 +2,14 @@
 {{title.en=}}The Host
 
 {{contents.zh=}}
-很开心见到你！<<='' {{ renderlang('zh', 'timeofday.html') }}''>>
+碰巧遇见，漂流愉快！<<='' {{ renderlang('zh', 'timeofday.html') }}''>>
 {{contents.en=}}
-Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
+Enjoy the drift while encounters fortuitously take place! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.zh=}}
 !<img ../flow/cross/320-Gate.png <= 线条绘画。女孩捧着跃出的鱼从牌楼上飞过。> float-end syncdark>
-名字与称呼都只是流动多变的非独占标记，不过使用甜鱼或者 Ayu 可以显著增加找到正确实体的机会！
-相信世界的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
+名字称呼都只是流动多变的非独占标记，不过使用甜鱼或者 Ayu 可以显著增加触发正确连接的机会！
+相信万物的美好可能性，永远在探索的路上；愿做一点无名的光，在黑暗的地方尽情燃烧，为万花筒般的世界添上一抹色彩。
 做的事情很杂，主业设计学、互动媒体，副业计算机、作曲，正在尝试学很多很多其他的东西。INFP，无可救药的空想家，重度拖延自救中 <kao ≥﹏≤>
 整理归类放到这个小站大概只是敝帚自珍而已。许多内容都不够成熟，不过，我或许还是在暗暗期待着它们能够启发某日路过的访客，或是为谁带去一些充实的欢乐。能实现这些，会是件非常幸福的事。
 严格来说，这是一份个人百科（<lang en personal wiki>），但是用任何称呼都可以——赛博小屋、博客、数字花园、<lang en <it memex>>（记忆延伸）。无论如何，这就是它在你眼里成为的模样，不是嘛。
@@ -18,8 +18,8 @@ Glad to have you here! <<='' {{ renderlang('en', 'timeofday.html') }}''>>
 
 {{contents.en=}}
 !<img ../flow/cross/320-Gate.png <= Line art of a girl holding a leaping fish, flying past an archway.> float-end syncdark>
-Names are always just fluid, ephemeral, non-unique labels, but use Ayu for an increased chance of identifying the correct entity!
-Believing in the possibilities of a wonderful world, always on the way of inquiries; seeking to be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic world.
+Names are always just fluid, ephemeral, non-unique labels, but use <it Ayu> for significantly increased odds of a correct connection!
+Believing in the possibilities of a wonderful world, always on the way of inquiries; seeking to be a nameless light, burning merrily in the darkness, adding a splash of tints to this kaleidoscopic universe.
 I dip into a mixture of fields, majoring in design and interactive media, dabbling in computing and musical composition, while trying to stumble into too many others. INFP, incorrigibly unrealistic, trying hard to overcome procrastination <kao ≥﹏≤>
 To put them up on this site is more like cherishing my own scruffy broom. A lot of content is far from mature; nevertheless, I might be silently hoping that they could inspire a visitor passing by someday, or bring someone a dose of fulfillment and joy. I will be heartily delighted if this happens.
 Technically, this is a <it personal wiki>, but please call it anything you deem appropriate — a cyber home, a blog, a digital garden, a <it memex> (memory expansion). In any case, this is what it becomes in your eyes, isn’t it?
@@ -29,16 +29,16 @@ Technically, this is a <it personal wiki>, but please call it anything you deem 
 
 {{contents.zh=}}
 !<h1 最近在干嘛 #recent>
-赏花中！等一下我花呢？昨天还在这的？<date 26.06>
+想写字……写不出来……（趴）<date 26.08>
 
 {{contents.en=}}
 !<h1 <= Recently up to> #recent>
-Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 26.06>
+Feeling like writing, yet unable to… <date 26.08>
 
 
 {{contents.zh=}}
 !<h1 速识标签 #tags>
-尽管片面的归类承载着太多的偏见与误解，下面的标签可用于快速认识一部分当下的我。
+尽管片面的归类承载着太多的偏见与误解，下面的标签可用于快速认识一部分当下的 Ayu。
 
 !<list
   <li 类型学捏捏
@@ -63,7 +63,7 @@ Seeing flowers! Wait where are the flowers? Yesterday they were all here? <date 
 
 {{contents.en=}}
 !<h1 Quick tags #tags>
-While one-sided categorizations carry too much prejudice and misunderstanding, the following tags can assemble a quick, partial impression of the current me.
+While one-sided categorizations carry too much prejudice and misunderstanding, the following tags can assemble a quick, partial impression of the current Ayu.
 
 !<list
   <li Typologies avatar
@@ -87,7 +87,7 @@ While one-sided categorizations carry too much prejudice and misunderstanding, t
 
 {{contents.zh=}}
 !<h1 喜欢的东西 #likings>
-要选择“最喜欢”或是“具有代表性”的喜好真是好难好难……当作心血来潮随意提及的事情就好。
+要选择“最喜欢”或是“具有代表性”的偏好真是好难好难……当作心血来潮随意提及的事情就好。
 
 
 {{contents.en=}}
@@ -112,7 +112,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 !<img games.png <= 游戏中的角色们：有翅膀的草莓、小鸟克莱尔、Huebirds 彩鸟>>
 
 !<list
-  <li 以及 <link https://wholesomegames.com/ Wholesome Games>>
+  <li <link https://wholesomegames.com/ Wholesome Games>>
 >
 
 !<h2 动画 #animations>
@@ -151,7 +151,7 @@ It is too hard to pick something “favourite” or “representative”… Trea
 !<img games.png <= Characters in the games: winged strawberries, Claire the bird, Huebirds>>
 
 !<list
-  <li And <link https://wholesomegames.com/ Wholesome Games>>
+  <li <link https://wholesomegames.com/ Wholesome Games>>
 >
 
 !<h2 Animations #animations>
@@ -204,6 +204,6 @@ TODO: Make a proper table and collect the missing pieces!
 {{contents.en=}}
 !<h1 Knock knock #contact>
 Currently I am not active on social media platforms. I can be reached by <link email e-mail>!
-Thank you for coming! Have a great time here <kao (っ*´∀｀*)っ>
+Thank you for coming! Enjoy yourself playing around <kao (っ*´∀｀*)っ>
 
 {{toc=}}true
