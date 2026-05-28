@@ -17,7 +17,7 @@
 
 {{contents.zh=}}
 学生艺术团军乐队 2021 年二队沙龙音乐会演出·打击声部小重奏节目！是动画片《日常》片尾曲的改编。
-吹爆一起努力一起发光的大家！！
+赞美一起努力一起发光的大家！
 <b 声部配置>
 !<list
   <li ① 钟琴、木琴>
@@ -34,11 +34,11 @@
   <file Zzz.mscz MuseScore 文档>
 >
 
-高中时就十分喜欢这首曲子！第一次尝试扒带也是用它练的手，虽然好像扒得挺破烂的。在一次 Animenz 音乐会上买到的谱子里找到了钢琴改编，喜出望外地练上了。（看了看 A 叔传的<link https://youtu.be/r4_w-_YxWmU 视频>发现已经十年了，哇 <kao ; - ;>
+高中时就十分喜欢这首曲子！第一次尝试扒带也是用它练的手，虽然好像扒得挺破烂的。在一次 Animenz 音乐会上买到的谱子里找到了钢琴改编，喜出望外地练上了。（看了看 A 叔传的<link https://youtu.be/r4_w-_YxWmU 视频>发现已经十年了，哇 <kao ; - ;>）
 之后自然是还没有过瘾，于是自己动手改了一份完整版（不过没有亲自练完，写了就是练了x）。当时写下的许多元素以及 A 叔改编中的一些处理最后都融入到这份改编里啦！想想也真是神奇，几年前在钢琴前摇摇晃晃地按下这些音符的时候，如果看到现在的自己一定会觉得超级超级——Super Ultra Great Delicious Wonderful 幸福吧~
 
 {{contents.en=}}
-Performance of the percussion ensemble on the 2021 juniors’ salon concert of the wind band of the university students’ art troupe. An adaptation of the ending theme of the animated series “Nichijou: My Ordinary Life”.
+Performance of the percussion ensemble on the 2021 apprentices’ salon concert of the wind band of the university students’ art troupe. An adaptation of the ending theme of the animated series <it Nichijou: My Ordinary Life> (<lang ja 日常>).
 Compliments to friends who work hard and shine together!
 <b Instrumentation>
 !<list
@@ -56,5 +56,5 @@ Compliments to friends who work hard and shine together!
   <file Zzz.mscz MuseScore document>
 >
 
-I have been digging this song since high school years. My first attempt at recreating an entire track was attempted at it, although it was likely a disaster. I jumped into practice when I found a piano arrangement in a sheet book purchased at a concert by Animenz. (Turns out <link https://youtu.be/r4_w-_YxWmU the video> by Animenz is over a decade old, wow <kao ; - ;>
+I have been digging this song since high school years. My first attempt at recreating an entire track was attempted at it, although it was likely a disaster. I jumped into practice when I found a piano arrangement in a sheet book purchased at a concert by Animenz. (Turns out <link https://youtu.be/r4_w-_YxWmU the video> by Animenz is over a decade old, wow <kao ; - ;>)
 Of course I did not get enough after this, so I rearranged the full-length version of the song myself (without actually practising it). Many details I wrote down at the time, as well as some touches in the version of Animenz, ended up in this arrangement! It’s amazing to think about it — when I stumble through these notes in front a piano several years ago, I must be Super Ultra Great Delicious Wonderful thrilled to see how I would have been doing in the years to come!
