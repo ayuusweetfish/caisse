@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-cd $(dirname ${BASH_SOURCE[0]})
+cd $(dirname $0)
 
 LUA=${LUA:-luajit}
 if [ -z "$CP_NO_STDIN" ]; then
@@ -17,7 +15,14 @@ else
   CP_R="ln -sr"
 fi
 
-if [[ "$*" == *"stat"* ]]; then
+arg_has() {
+  case " $1 " in
+    *" $2 "*) return 0 ;;
+    *) return 1 ;;
+  esac
+}
+
+if arg_has "$*" stat; then
   echo "Updating stats"
   cd misc/stat
 
@@ -41,7 +46,7 @@ fi
 
 CP="$CP" CP_R="$CP_R" CP_STDIN="$CP_STDIN" $LUA build.lua
 
-if [ $? -eq 0 ] && [[ "$*" == *"dist"* ]]; then
+if [ $? -eq 0 ] && arg_has "$*" dist; then
   (cd misc/typeface-zh && LUA=$LUA sh run.sh)
   DIST=1 $LUA build.lua
 fi

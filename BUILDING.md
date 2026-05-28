@@ -2,9 +2,9 @@
 
 ## Building
 
-- `bash build.sh`: Debug build
-- `bash build.sh stat`: Update file metadata
-- `bash build.sh dist`: Distribution mode (subset fonts)
+- `sh build.sh`: Debug build
+- `sh build.sh stat`: Update file metadata
+- `sh build.sh dist`: Distribution mode (subset fonts)
 
 Options:
 - `render=index,fireflies`: Only render a subset of pages
