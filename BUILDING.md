@@ -3,18 +3,19 @@
 ## Building
 
 - `bash build.sh`: Debug build
-- `bash build.sh stats`: Update file metadata
+- `bash build.sh stat`: Update file metadata
 - `bash build.sh dist`: Distribution mode (subset fonts)
 
 Options:
 - `render=index,fireflies`: Only render a subset of pages
 - `LUA=luajit`: Use a specific Lua executable (Lua 5.4/LuaJIT)
-- `CP="cp -l"`: Use a specific file copying command. Should support `-r` argument for recursive copy.
-  - `build.sh` automatically sets this to `cp -r` if `build/` is on the same device as `content/` (after following symlinks), and a symlink creator otherwise.
+- `CP="cp -l" CP_R="ln -s"`: Use specific file copying commands.
+  - `CP_STDIN=1` writes file names through standard input rather than arguments.
+  - `build.sh` automatically sets these to `cp -l`/`cp -lr` if `build/` is on the same device as `content/` (after following symlinks), and a symlink creator otherwise.
 
 ## Miscellaneous components
 
-### File metadata (`stats`)
+### File metadata (`stat`)
 
 Dependency: ImageMagick (`identify`), FFmpeg (`ffprobe`), Poppler (`pdfinfo`)
 
@@ -26,7 +27,7 @@ Dependency: GCC (`g++`), Python `fonttools` (`pyftsubset`), WOFF2 (`woff2_compre
 
 `apt install g++ fonttools woff2` / `dnf install g++ fonttools woff2-tools`
 
-`bash run.sh` to build all subsets.
+`sh run.sh` to build all subsets.
 
 *TODO: The site's build has a hard requirement on this run, due to subset WOFF2 files not being checked into the repository. This is less than ideal.*
 
