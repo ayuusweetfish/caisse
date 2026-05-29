@@ -23,9 +23,9 @@ Dependency: ImageMagick (`identify`), FFmpeg (`ffprobe`), Poppler (`pdfinfo`)
 
 ### Chinese typeface (`typeface-zh`)
 
-Dependency: GCC (`g++`), Python `fonttools` (`pyftsubset`), WOFF2 (`woff2_compress`)
+Dependency: GCC (`g++`), \<either HarfBuzz (`hb-subset`) or Python fontTools (`pyftsubset`)\>, WOFF2 (`woff2_compress`)
 
-`apt install g++ fonttools woff2` / `dnf install g++ fonttools woff2-tools`
+`apt install g++ libharfbuzz-bin fonttools woff2` / `dnf install g++ harfbuzz fonttools woff2-tools`
 
 `sh run.sh` to build all subsets.
 

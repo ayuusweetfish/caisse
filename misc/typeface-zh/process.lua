@@ -8,7 +8,8 @@ Then run without arguments or input:
 To use the cache:
   mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
 
-Dependencies: pyftsubset (fonttools), woff2_compress (woff2)
+Dependencies: hb-subset (harfbuzz), woff2_compress (woff2)
+Also compatible with pyftsubset (fonttools)
 ]]
 
 local fold32
@@ -183,13 +184,22 @@ for i = 1, #cpseq do
   end
 end
 
+local subsetexec = os.getenv('FONT_SUBSET') or 'hb-subset'
+local function subsetcmd(unicodes, outputfile)
+  return subsetexec
+    .. [[ /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf]]
+    .. [[ --drop-tables=name,meta,desc]]
+    .. [[ --unicodes=]] .. unicodes
+    .. [[ --output-file="]] .. outputfile .. [["]]
+end
+
 if os.getenv('FONT_SUBSET_PARALLEL') then
   local pipe = io.popen([[
 parallel --colsep '\t' '
   BASENAME="$(basename "{2}")"
   TTF_SCRATCH="$(mktemp --suffix .ttf)"
   WOFF2_SCRATCH="${TTF_SCRATCH%.ttf}.woff2"
-  pyftsubset /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf --unicodes={1} --output-file="$TTF_SCRATCH" && \
+  ]] .. subsetcmd('{1}', '$TTF_SCRATCH') .. [[ && \
     woff2_compress "$TTF_SCRATCH" && \
     mv "$WOFF2_SCRATCH" "{2}"
 '
@@ -206,8 +216,7 @@ else
     local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
     local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
     if not os.execute(
-      string.format(
-        'pyftsubset /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf --unicodes=%s --output-file=%s',
+      subsetcmd(
         codepoints, ttfpathscratch
       ) .. ' && ' .. string.format(
         'woff2_compress %s',
