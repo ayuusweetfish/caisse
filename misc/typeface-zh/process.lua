@@ -188,7 +188,7 @@ local subsetexec = os.getenv('FONT_SUBSET') or 'hb-subset'
 local function subsetcmd(unicodes, outputfile)
   return subsetexec
     .. [[ /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf]]
-    .. [[ --drop-tables=name,meta,desc]]
+    .. [[ --drop-tables=meta,desc]]
     .. [[ --unicodes=]] .. unicodes
     .. [[ --output-file="]] .. outputfile .. [["]]
 end
