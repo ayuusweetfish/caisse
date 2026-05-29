@@ -31,8 +31,8 @@ copy_across(f, 0xFF09, f, tfm=psMat.translate(0, 60))   # ）
 copy_across(f, 0xFF3B, f, tfm=psMat.translate(0, 60))   # ［
 copy_across(f, 0xFF3D, f, tfm=psMat.translate(0, 60))   # ］
 
-# ba0a4e8d1ca0b02e9b506c04254ff8ca7d53330d  /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf
-# pyftsubset /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf --unicodes=266d-266f --output-file=DejaVuSans.ttf
+# 48d488e32bd817fcf0216d447808a0838c82101b  /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf
+# hb-subset /usr/share/fonts/dejavu-sans-fonts/DejaVuSans.ttf --drop-tables=name --unicodes=266d-266f --output-file=DejaVuSans.ttf
 f1 = fontforge.open('DejaVuSans.ttf')
 # Flat, natural, sharp
 copy_across(f1, 0x266D, f, tfm=psMat.scale(0.5), scale=0.5, weight=8)
@@ -40,7 +40,7 @@ copy_across(f1, 0x266E, f, tfm=psMat.compose(psMat.compose(psMat.scale(0.5), (1,
 copy_across(f1, 0x266F, f, tfm=psMat.compose(psMat.compose(psMat.scale(0.5), (1, -0.2, 0, 1, 0, 0)), psMat.translate(0, 32)), scale=0.5, weight=8)
 
 # 822a13649cfa7475343d52bfb2db9f0358a36822  /usr/share/fonts/liberation-sans-fonts/LiberationSans-Regular.ttf
-# pyftsubset /usr/share/fonts/liberation-sans-fonts/LiberationSans-Regular.ttf --unicodes=2669-266a --output-file=LiberationSans.ttf
+# hb-subset /usr/share/fonts/liberation-sans-fonts/LiberationSans-Regular.ttf --drop-tables=name --unicodes=2669-266a --output-file=LiberationSans.ttf
 f2 = fontforge.open('LiberationSans.ttf')
 # Crotchet, quaver
 copy_across(f2, 0x2669, f, tfm=psMat.compose(psMat.scale(0.75), psMat.translate(0, -75)), scale=0.75/2, weight=-10)
