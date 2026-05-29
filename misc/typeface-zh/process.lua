@@ -9,7 +9,7 @@ To use the cache:
   mv ../../content/fonts-zh/AaKaiSong.*.woff2 .
 
 Dependencies: hb-subset (harfbuzz), woff2_compress (woff2)
-Also compatible with pyftsubset (fonttools)
+Also compatible with pyftsubset (fonttools); use `FONT_SUBSET=pyftsubset`
 ]]
 
 local fold32
@@ -216,15 +216,9 @@ else
     local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
     local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
     if not os.execute(
-      subsetcmd(
-        codepoints, ttfpathscratch
-      ) .. ' && ' .. string.format(
-        'woff2_compress %s',
-        ttfpathscratch
-      ) .. ' && ' .. string.format(
-        'mv "%s" "%s"',
-        woff2pathscratch, woff2pathcontent
-      )
+      subsetcmd(codepoints, ttfpathscratch)
+      .. ' && ' .. string.format('woff2_compress %s', ttfpathscratch)
+      .. ' && ' .. string.format('mv "%s" "%s"', woff2pathscratch, woff2pathcontent)
     ) then os.exit(1) end
   end
 end
