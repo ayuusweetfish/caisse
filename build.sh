@@ -1,11 +1,15 @@
 cd $(dirname $0)
 
 LUA=${LUA:-luajit}
+
+mkdir -p /tmp/caissebuild
+if [ -L ./build ]; then mkdir -p $(readlink ./build); fi
+
 if [ -z "$CP_NO_STDIN" ]; then
-  if [ ! -e /tmp/caisse-symlinkabs ]; then
-    cc misc/symlinkabs.c -O2 -o /tmp/caisse-symlinkabs
+  if [ ! -e /tmp/caissebuild/symlinkabs ]; then
+    cc misc/symlinkabs.c -O2 -o /tmp/caissebuild/symlinkabs
   fi
-  CP="/tmp/caisse-symlinkabs"
+  CP="/tmp/caissebuild/symlinkabs"
   CP_STDIN=1
 elif [ ! -e build ] || [ "$(stat -c "%d" build/)" = "$(stat -c "%d" content/)" ]; then
   CP="cp -l"

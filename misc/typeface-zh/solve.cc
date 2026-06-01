@@ -156,8 +156,8 @@ int main()
   if (incremental) fprintf(stderr, "Incremental mode: common charset will not be updated\n");
 
   // Charset
-  // otfinfo -u /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf | perl -pe 's/^uni([0-9A-F]+) .*$/\1/g' > AaKaiSong2WanZi2.charset.txt
-  // ttx /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf -t cmap -o - | perl -ne 'if (/<cmap_format_4 platformID="0" platEncID="3"/ .. /<\/cmap_format_4/) { printf("%04X\n", hex($1)) if /code="0x([0-9a-f]+)"/i; }' > AaKaiSong2WanZi2.charset.txt
+  // otfinfo -u /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf | perl -pe 's/^uni([0-9A-F]+) .*$/\1/g' > AaKaiSong2WanZi2.charset.txt
+  // ttx /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf -t cmap -o - | perl -ne 'if (/<cmap_format_4 platformID="0" platEncID="3"/ .. /<\/cmap_format_4/) { printf("%04X\n", hex($1)) if /code="0x([0-9a-f]+)"/i; }' > AaKaiSong2WanZi2.charset.txt
   std::unordered_set<codepoint> charset;
   {
     FILE *f = fopen("AaKaiSong2WanZi2.charset.txt", "r");

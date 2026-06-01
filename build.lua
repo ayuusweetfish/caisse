@@ -232,7 +232,7 @@ caisse.readfile = function (path)
   if f then return f:read('a') end
 end
 os.execute('rm -rf ' .. sitepath)
-os.execute('mkdir ' .. sitepath)
+os.execute('mkdir -p ' .. sitepath)
 
 -- File system operations
 
@@ -562,10 +562,10 @@ caisse.envadditions.renderdate = renderdate
 -- Chinese font subsetting
 local AaKaiSong_subsethashes = {}
 if caisse.envadditions.distbuild then
-  local AaKaiSong_css = io.open('/tmp/caisse-typeface-zh-AaKaiSong.css'):read('a')
+  local AaKaiSong_css = io.open('/tmp/caissebuild/typeface-zh-AaKaiSong.css'):read('a')
   caisse.envadditions.AaKaiSong_css = AaKaiSong_css
 
-  local typefacestrayrec = io.open('/tmp/caisse-typeface-zh-stray.txt')
+  local typefacestrayrec = io.open('/tmp/caissebuild/typeface-zh-stray.txt')
   for line in typefacestrayrec:lines() do
     local tabpos = line:find('\t')
     local docid = line:sub(1, tabpos - 1)
@@ -1348,6 +1348,6 @@ end
 if katexupdate then
   local list = {}
   for _, v in pairs(katexstrings) do list[#list + 1] = v end
-  io.open('/tmp/caisse-katex-list.txt', 'w'):write(table.concat(list, '\n'))
+  io.open('/tmp/caissebuild/katex-list.txt', 'w'):write(table.concat(list, '\n'))
   print('Formula list updated')
 end

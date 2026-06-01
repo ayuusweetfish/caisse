@@ -2,7 +2,7 @@
 Files to be prepared:
   AaKaiSong2WanZi2.charset.txt
   common.txt
-  /tmp/caisse-typeface-zh-stray.txt
+  /tmp/caissebuild/typeface-zh-stray.txt
 Then run without arguments or input:
   lua process.lua
 To use the cache:
@@ -149,7 +149,7 @@ local function basehash(s)
 end
 
 -- Page-curated subset
-for line in io.open('/tmp/caisse-typeface-zh-stray.txt'):lines() do
+for line in io.open('/tmp/caissebuild/typeface-zh-stray.txt'):lines() do
   local tabpos = line:find('\t')
   local docid = line:sub(1, tabpos - 1)
   local cps = {}
@@ -187,7 +187,7 @@ end
 local subsetexec = os.getenv('FONT_SUBSET') or 'hb-subset'
 local function subsetcmd(unicodes, outputfile)
   return subsetexec
-    .. [[ /tmp/caisse-typeface-zh-AaKaiSong2WanZi2_remapped.ttf]]
+    .. [[ /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf]]
     .. [[ --drop-tables=meta,desc]]
     .. [[ --unicodes=]] .. unicodes
     .. [[ --output-file="]] .. outputfile .. [["]]
@@ -213,7 +213,7 @@ else
   for i = 1, #subsetinvocations do
     local codepoints, woff2pathcontent = table.unpack(subsetinvocations[i])
     local woff2basename = woff2pathcontent:match('/([^/]+)$')
-    local woff2pathscratch = '/tmp/caisse-typeface-zh-' .. woff2basename
+    local woff2pathscratch = '/tmp/caissebuild/typeface-zh-' .. woff2basename
     local ttfpathscratch = woff2pathscratch:sub(1, -7) .. '.ttf'
     if not os.execute(
       subsetcmd(codepoints, ttfpathscratch)
@@ -223,4 +223,4 @@ else
   end
 end
 
-io.open('/tmp/caisse-typeface-zh-AaKaiSong.css', 'w'):write(table.concat(css))
+io.open('/tmp/caissebuild/typeface-zh-AaKaiSong.css', 'w'):write(table.concat(css))
