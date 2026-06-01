@@ -13,5 +13,9 @@ find ../../build/ -name "index.*.html" | perl -pe 's/(.+build\/(.+)\/[^\/]+\.([a
 
 if [ ! -e "/tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf" ]; then
   fontforge -lang=py -script AaKaiSong_remap.py
+  hb-info /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf --list-unicodes | awk '/^U\+[0-9A-F][0-9A-F][0-9A-F][0-9A-F]/ {print substr($1,3)}' > /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2.charset.txt
+  # otfinfo -u /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf | perl -pe 's/^uni([0-9A-F]+) .*$/\1/g'
+  # ttx /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf -t cmap -o - | perl -ne 'if (/<cmap_format_4 platformID="0" platEncID="3"/ .. /<\/cmap_format_4/) { printf("%04X\n", hex($1)) if /code="0x([0-9a-f]+)"/i; }'
 fi
+
 ${LUA:-lua} process.lua

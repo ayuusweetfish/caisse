@@ -1,7 +1,7 @@
 --[[
 Files to be prepared:
-  AaKaiSong2WanZi2.charset.txt
   common.txt
+  /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2.charset.txt
   /tmp/caissebuild/typeface-zh-stray.txt
 Then run without arguments or input:
   lua process.lua
@@ -80,7 +80,7 @@ end
 
 local codepoints = {}
 local ncodepoints = 0
-for line in io.open('AaKaiSong2WanZi2.charset.txt'):lines() do
+for line in io.open('/tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2.charset.txt'):lines() do
   codepoints[tonumber(line, 16)] = true
   ncodepoints = ncodepoints + 1
 end
