@@ -1,8 +1,9 @@
 --[[
 Files to be prepared:
   common.txt
-  /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2.charset.txt
   /tmp/caissebuild/typeface-zh-stray.txt
+  /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2_remapped.ttf
+  /tmp/caissebuild/typeface-zh-AaKaiSong2WanZi2.charset.txt
 Then run without arguments or input:
   lua process.lua
 To use the cache:

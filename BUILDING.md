@@ -23,13 +23,13 @@ Dependency: ImageMagick (`identify`), FFmpeg (`ffprobe`), Poppler (`pdfinfo`)
 
 ### Chinese typeface (`typeface-zh`)
 
-Dependency: GCC (`g++`), \<either HarfBuzz (`hb-subset`) or Python fontTools (`pyftsubset`)\>, WOFF2 (`woff2_compress`)
+Dependency: GCC (`g++`), FontForge (`fontforge`), HarfBuzz (`hb-subset`, `hb-info`), WOFF2 (`woff2_compress`)
 
-`apt install g++ libharfbuzz-bin fonttools woff2` / `dnf install g++ harfbuzz fonttools woff2-tools`
+`apt install g++ fontforge libharfbuzz-bin woff2` / `dnf install g++ fontforge harfbuzz woff2-tools`
 
 `sh run.sh` to build all subsets.
 
-*TODO: The site's build has a hard requirement on this run, due to subset WOFF2 files not being checked into the repository. This is less than ideal.*
+*TODO: The site’s distribution build has a hard requirement on this run, due to subset WOFF2 files not being checked into the repository. This is less than ideal.*
 
 ### Little icons (`little-icons`)
 
