@@ -19,7 +19,7 @@
 {{box[i].imagealt.en=}}Cover image of the album. A human painted with white lines standing in an alley, with the head covered in white scribbles.
 {{box[i].cmt.zh=}}
 Amy 决定带着自己的秘密，悄悄踏上旅程前往北欧，在路上写下留给 Elma 的信和歌词，连同春天与夏天一起装在一个小盒子里。过了不知多久，这个小盒子来到 Elma 手中，于是 Elma 沿着 Amy 的足迹追随去，揣摩着这挣扎的内心世界。
-这是夜鹿——或者说，是 Elma ——用两张专辑讲述的故事。
+这是夜鹿乐队——或者说，是 Elma ——用两张专辑讲述的故事。
 !<blockquoteby Elma <~~='
 <lang ja 「この世で一番美しい音楽が何処にもあるかわかるかい？」><br>【知道世界上最动听的音乐在哪里吗？】
 <lang ja 私がわからないと答えると、彼は私の頭を掴んで優しく揺らすった。><br>【我回答不知道，他便抓住我的头轻轻晃了晃。】
@@ -48,14 +48,14 @@ This is the story that Yorushika — or rather, Elma — tells in two albums.
 {{box[i].cmt.zh=}}
 !<blockquote 役于物得失患　役于形不超然>
 苏东坡与佛印和尚的故事。知名的“狗啃河上骨”“水流东坡诗”句子就是两人之间的玩笑；当然二者交情之深，远非一首诗歌、一段文字所能及。
-信息时代里待得久了，都开始觉得从前人与人的交情实在奇妙。苏东坡赴京赶考之后，也不知什么时候二人才能再次见面；和尚对于东坡而言成了虚幻的记忆与文字，于是所见的每一座青山似乎都有佛印和尚。见到真正的和尚，便仿佛与青山重叠，而和尚的佛性又好似无言的大自然一般，二者浑然一体——
+信息时代里待得久了，想想从前人与人的交情便觉实在奇妙。苏东坡赴京赶考之后，不知何时二人才能重逢；和尚对于东坡而言成了虚幻的记忆与文字，于是所见的每一座青山似乎都有佛印和尚。见到真正的和尚，便仿佛与青山重叠，而和尚的佛性又好似无言的大自然一般，二者浑然一体——
 当然最后这些辩论都不重要。苏东坡“谁怕人生到处相逢难”、“所遇即安到处无牵绊”的洒脱，才是最触动人的吧。
 {{box[i].cmt.en=}}
 !<blockquote <~~='
 <lang zh 役于物得失患　役于形不超然><br>(Attachment to possessions accentuates vicissitudes)<br>(Attachment to appearances hinders contentment)
 '>>
 A story between the ancient Chinese poet Su Dongpo and the monk Fo-Yin. The famous pun lines “狗啃河上骨”, “水流东坡诗” — “Dog eating a bone on the river, water carrying a poem east of the slope”, which, based on the pronunciation, can also be interpreted as “dog eating the bones of the monk, water carrying the corpse of Dongpo” — are a joke between the two. Of course, the depth of their friendship goes far beyond a poem, a song, or a paragraph of text.
-Immersed in the information age, one starts to be fascinated by people’s relationships in the past. After Su Dongpo went to the capital for his exam, it would no more be clear when they would meet again; for Dongpo, the monk became an unreal blur of memory and language, and then every hill he saw seemed to have the monk in it. Should he eventually meet the real Fo-Yin, the monk would start to overlap with the hills, with the monk’s Buddhist insights blending into the wordless nature, unifying the two —
+Immersed in the information age, one starts to be fascinated by people’s relationships in the past. After Su Dongpo went to the capital for his exam, their reunion would no longer bear a clear time; for Dongpo, the monk became an unreal blur of memory and language, and then every hill he saw seemed to have the monk in it. Should he eventually meet the real Fo-Yin, the monk would start to overlap with the hills, with the monk’s Buddhist insights blending into the wordless nature, unifying the two —
 At the end of the day, however, none of these debates matter. It is Su Dongpo’s carefree spirit — “who cares that it’s difficult to be together”, “find peace in wherever one is placed” — that is the most touching.
 
 {{{!--[[
@@ -139,13 +139,13 @@ It might be well-intentioned to make assumptions about other people’s experien
   !<img images/Fireflies-rel-zh.jpg <= 人物关系图。美影→Spica：（火车窗前的躲闪眼神）。Spica→美影：想要更加了解她。美影→夕阳：童年伙伴，感觉她就像小动物一样。夕阳→美影：想要帮助她（也许太过了）。Spica↔夕阳：很容易聊得来。Spica→丽：令人感觉舒服。丽→美影：zzz…… 夕阳→丽：有一些伙伴情谊。丽→美影：zzz…… 美影→丽：神秘。丽→美影：……> square>
 ">>
 Spica 或许只是假装不知道美影的情愫。又或许她真的不知道，甚至没法知道；要是如此的话，对美影来说该有多难过——自己或许永远只是这个活泼女孩子的一名好朋友，接下来的一切仿佛都隔着一层厚厚的玻璃无法触及。身处玻璃背后的迷惘，大概要比期待落空的失落更煎熬吧。合影中 Spica 靠在自己身上时，美影都在想些什么呢。
-话说回来，如果要说最能代入谁的话，大概还是助攻的 Yuhi。不过，阳光般温暖的 Yuhi 即使知道自己帮不上什么，也只会一笑而过，接着在未来提供力所能及的支持；如果是我的话，就会被那种“被需要”的执念与过度共情的痛苦萦绕，甚至生发出“要是我是她就好了”这样的想法……大概，故事周围的 Yuhi 与 Urara 两人意外地成为了学习榜样？
+话说回来，如果要说最能代入谁的话，大概还是助攻的 Yuhi。不过，阳光般温暖的 Yuhi 即使知道自己帮不上什么，也只会一笑而过，接着在未来提供力所能及的支持；如果是我的话，就会被那种“被需要”的执念与过度共情的痛苦萦绕，甚至生发出“如果是我来承受这一切就好了”这样的想法……似乎，故事周围的 Yuhi 与 Urara 两人意外地成为了学习榜样？
 {{box[i].cmt.en=}}
 !<blockquoteby <~=' <link https://www.reddit.com/r/harumakigohan/comments/vu1lb5/ @Kendrillion>'> <~~="
   !<img images/Fireflies-rel-en.jpg <= Character relationship chart. Mikage→Spica: (Dodging eyes by the train window). Spica→Mikage: Wants to get to know her better. Mikage→Yuhi: Childhood friends; She is like a small animal. Yuhi→Mikage: Wants to help her (a little too much). Spica↔Yuhi: Easy to talk to. Spica→Urara: Comfortable. Urara→Mikage: zzz…… Yuhi→Urara: Some kind of feeling of fellowship. Urara→Mikage: zzz…… Mikage→Urara: Mystery. Urara→Mikage: ……> square>
 ">>
 Spica might just be pretending not to know about Mikage’s sentiment. Or maybe she really didn’t know, or even couldn’t know; how sad it would be for Mikage if this is true — that she can only go on to be a good friend to this lively girl, and that everything beyond feel as if blocked by a thick layer of glass. The helplessness of being behind that glass was probably more painful than the loss of a wish. What was Mikage thinking about when Spica was leaning on her in the photo?
-That aside, if I were to feel relatable for one of them, it would probably be Yuhi the wingmate. Though Yuhi, unlike me, with her warmth like the sunlight, would simply smile it away knowing she was unable to do much, continuing to offer whatever support she could afterwards. If it were me, I would be consumed by the obsession with “being needed” and the pain of overdone empathy, to the point of harbouring the thought of “if only I were her…” — probably, Yuhi and Urara, standing on the periphery of the story, have unexpectedly become role models that I would learn from?
+That aside, if I were to feel relatable for one of them, it would probably be Yuhi the wingmate. Though Yuhi, unlike me, with her warmth like the sunlight, would simply smile it away knowing she was unable to do much, continuing to offer whatever support she could afterwards. If it were me, I would be consumed by the obsession with “being needed” and the pain of overdone empathy, to the point of harbouring the thought of “if only it could be me who go through all this…” — probably, Yuhi and Urara, standing on the periphery of the story, have unexpectedly become role models that I would learn from?
 
 {{=}}
 {{i = #box + 1}}
@@ -183,10 +183,10 @@ In the eponymous album, <it Dream Makers> is a bonus track and is the only one o
 {{box[i].imagealt.en=}}Cover illustraton of the track. A gacha machine full of stars and crescent moons.
 {{box[i].cmt.zh=}}
 咸鱼中下游是一位插画师，但无论是绘画还是音乐都并非专业出身，只是依靠热爱与坚持实现自己的梦想。中下游老师制作了高质量的公开课，并且用收入捐赠过希望小学。
-最简单的乐器也可以拼凑成可爱动听的音乐，最基础的知识其实就足够支撑起创作表达的冲动。创作意图是作品的灵魂所在，一个闪光的想法本身便足以形成一件有趣的作品，表面的形式反而并没有那么重要。许多有想法的创作者教会了我这一点，我也开始尝试用同样的方式把这份信心传递下去。千万别被复杂的作品吓到啦。
+最简单的乐器也可以拼凑成可爱动听的音乐，最基础的知识就足够支撑起创作表达的冲动。创作意图是作品的灵魂所在，一个闪光的想法本身便足以形成一件有趣的作品，表面的形式反而并没有那么重要。许多有想法的创作者教会了我这一点，我也开始尝试用同样的方式把这份信心传递下去。想要创作的话，就丢掉条条框框大胆去做吧，你会喜欢自己的光芒的！
 {{box[i].cmt.en=}}
 Blaine Zhou is an illustrator, but does not come from a professional background in either painting or music and instead realizes these dreams through passion and perseverance. Blaine has published high-quality open lectures and have donated part of the income to Project Hope.
-The simplest instruments can be pieced together into lovely, sweet music, and the most basic knowledge can be enough to support the urge to create and express. The creative intent is the spirit of a work; a sparkling idea alone is enough to yield an interesting piece, while the form is merely superficial. It’s a belief taught to me by multiple aspiring creators, and I’m starting to pass it on in the same way. Never be indimidated by the complexity of existing work!
+The simplest instruments can be pieced together into lovely, sweet music; the first-steps knowledge can be enough to support the urge to create and express. The creative intent is the spirit of a work; a sparkling idea alone is enough to yield an interesting piece, while the form is merely superficial. It’s a belief taught to me by multiple aspiring creators, and I’m starting to pass it on in the same way. If you want to create something, you can forget everything and do it. You will enjoy your own sparkles!
 
 {{=}}
 {{i = #box + 1}}
@@ -236,13 +236,13 @@ To be “in the position to support all” — it must be happy and fulfilling t
 {{box[i].imagealt.zh=}}歌曲封面。黑色背景下五彩的方块排列成蝴蝶形状。
 {{box[i].imagealt.en=}}Cover image of the song. On a black background, colourful squares laid out in a pattern resembling a butterfly.
 {{box[i].cmt.zh=}}
-二十岁生日之前看着透过窗户照进房间的夕阳想着，不知道自己还有没有机会亲历这样纯真美好的情感了。那个时候对恋爱啊人生规划啊什么的都毫无概念，只觉得希望尝尝这番甘甜滋味、不愿留下遗憾，却又不知如何是好。“在夏日雨后的天空架起长长的彩虹因为喜欢你”，一个灵魂飞奔着去拥抱另一个的场景仿佛就在眼前，这该是有多浪漫呀！于是在玻璃窗映出的温暖影子里落下混着感动与心酸的泪水。
-其实两人写下这首歌的时候也只有二十三岁——那时的我还很难相信在这个年纪就可以追逐这样的理想、创造出如此动人的作品，好像那一切都是属于成熟大人的。但其实二十年的人生早已足够丰富，何况谁不能重新当回小孩子呢。
-接着不久，我便偶遇了一次双向奔赴，哼唱着这首歌度过四季，还把乐谱认真地抄写在纸上。啊，生活真是神奇。
+二十岁生日将近时，望着透过窗户照进房间的夕阳，想着不知道自己还有没有机会亲历这样纯真美好的情感了。那个时候对恋爱啊人生规划啊什么的都毫无概念，只觉得希望尝尝这番甘甜滋味、不愿留下遗憾，却又不知如何是好。“在夏日雨后的天空架起长长的彩虹因为喜欢你”，一个灵魂飞奔着去拥抱另一个的场景仿佛就在眼前，这该是有多浪漫呀！于是在玻璃窗映出的温暖影子里落下混着感动与心酸的泪水。
+其实 Humbert Humbert 乐队两人写下这首歌的时候也只有二十三岁——那时的我还很难相信在这个年纪就可以追逐这样的理想、创造出如此动人的作品，好像那一切都是属于成熟大人的。但其实二十年的人生早已足够丰富，何况谁不能重新当回小孩子呢。
+接着不久，我便偶遇了一次双向奔赴。哼唱着这首歌度过四季，还把乐谱认真地抄写在纸上——啊，生活真是神奇。
 {{box[i].cmt.en=}}
 It was a few days before my twentieth birthday. As I watched the sunset shining through the window, I wondered whether I’d ever have the chance to experience such pure and beautiful emotions myself. Back then, I had no idea of love, life plans, or anything. I simply longed for the mellow taste and did not want to leave any regret. Yet, I was at a loss to go forward. “<it In the sky after a summer rain, I will build a wide rainbow, because I like you.>” As if right in front of me were a scene of a soul rushing to embrace another; can it be any more romantic? Then, tears mixed with bittersweet emotions and sadness blended into the warm shadows cast by the glass windows.
-Actually, the duo were only 23 when they wrote this song — it was hard for me then to believe that they could pursue such ideals and create such touching works right at such an “early age”, as all these seemed to belong to mature adults. But really, twenty years of life can already be rich enough; and who doesn’t have the choice to revert to being a child again sometimes?
-Soon afterwards, I was struck by a mutual attraction that turned into a relationship. Humming this song through the four seasons, and carefully copying the melodies onto paper — isn’t life magical?
+Actually, the duo (Humbert Humbert) were only 23 when they wrote this song — it was hard for me then to believe that they could pursue such ideals and create such touching works right at such an “early age”, as all these seemed to belong to mature adults. But really, two decades of life can already be rich enough; and who doesn’t have the choice to revert to being a child again sometimes?
+Soon afterwards, I was struck by a mutual attraction that turned into a relationship. Humming this song through the four seasons, and carefully copying the melodies onto paper — life is so magical.
 
 {{=}}
 {{i = #box + 1}}
@@ -317,7 +317,7 @@ In such an age that is so keen on treating all living matter as mere objects and
 '>>
 一首<link https://tokipona.net/ 道本语>歌曲。道本语（<lang tok toki pona>）是一门只有百余个单词的人造语言，可以用简单的词语创造性地排列组合来表达复杂的概念。比如，“雨”就是“高处（<lang tok sewi>）的水（<lang tok telo>）”。聪明的你一定发现了 <lang tok telo> 就是 <lang fr de l’eau>！什么什么，你想用这几个词说“你我侧耳倾听雨声，用心感受，便知道了雨滴们的无数去向”？听了就知道啦！
 本曲是我开始学习道本语的直接缘起，这首歌的歌词是我第一批学会的词语、第一组读懂的句子。道本语的初创者 Sonja 希望这门语言“有趣又可爱”，我想，这首曲子应当是十分生动的体现。
-初听时虽然一个词都不认识，但全曲的氛围莫名给了我清晰的印象：“似乎是与很多很多好朋友一起唱的歌”。巧合的是，歌词确实站在雨滴的角度此般叙述：
+初听时虽然一个词都不认识，却在全曲的氛围里获得莫名清晰的印象：“似乎是与很多很多好朋友一起唱的歌”。巧合的是，歌词确实站在雨滴的角度此般叙述：
 !<blockquote <~~='
   <lang tok ona li tan kon walo pimeja><br>【她从乌云中来】
   <lang tok poka jan pona, li pilin e ijo nanpa wan><br>【与朋友一起，初次体验世间万物】
@@ -329,7 +329,7 @@ In such an age that is so keen on treating all living matter as mere objects and
 !<blockquote <~~='
   <lang tok mi pini e oko mi a! mi pilin e wan ona><br>(I close my eyes, oh! I feel with one of them)
 '>>
-A song in <link https://tokipona.net/ Toki Pona>. Toki Pona is an artificially constructed language with a vocabulary of just over a hundred words. In this language, complex concepts are expressed by combining simple words creatively. For example, “rain” is “water (<it <lang tok telo>>) above (<it <lang tok sewi>>)”. You might be witty enough to notice that <it <lang tok telo>> is <it <lang fr de l’eau>>! What, with these few words you want to say “<it You and I listen and feel the sounds of the rain, then we will know their myriad travels>”? You will find out after listening!
+A song in <link https://tokipona.net/ Toki Pona>. Toki Pona is an artificially constructed language with a vocabulary of just over a hundred words. In this language, complex concepts are expressed by combining simple words creatively. For example, “rain” is “water (<it <lang tok telo>>) above (<it <lang tok sewi>>)”. It is witty of you to notice that <it <lang tok telo>> is <it <lang fr de l’eau>>! What, with these few words you want to say “<it You and I listen and feel the sounds of the rain, and then we will know their myriad travels>”? You will find out if you listen!
 This song was the catalyst that sparked my Toki Pona journey. Its lyrics were the first words I got acquainted with and the very first sentences I grew to appreciate. The language’s creator, Sonja, envisioned the language as “fun and cute”, of which this track I think is a vivid manifestation.
 Upon first encounter, I did not understand a single word, yet the overall atmosphere soaked me in an unexpectedly evocative impression: this felt like a song sung together with many, many dear friends. As it happens, the lyrics indeed narrate as such from the perspective of a raindrop:
 !<blockquote <~~='
