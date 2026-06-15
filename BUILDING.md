@@ -19,13 +19,13 @@ Options:
 
 Dependency: ImageMagick (`identify`), FFmpeg (`ffprobe`), Poppler (`pdfinfo`)
 
-`apt install imagemagick ffmpeg poppler-utils`
+`apk add imagemagick ffmpeg poppler-utils` / `dnf install ImageMagick ffmpeg poppler-utils` / `apt install imagemagick ffmpeg poppler-utils`
 
 ### Chinese typeface (`typeface-zh`)
 
 Dependency: GCC (`g++`), FontForge (`fontforge`), HarfBuzz (`hb-subset`, `hb-info`), WOFF2 (`woff2_compress`)
 
-`apt install g++ fontforge libharfbuzz-bin woff2` / `dnf install g++ fontforge harfbuzz woff2-tools`
+`apk add g++ fontforge harfbuzz-utils woff2` / `dnf install g++ fontforge harfbuzz woff2-tools` / `apt install g++ fontforge libharfbuzz-bin woff2`
 
 `sh run.sh` to build all subsets.
 
@@ -35,7 +35,7 @@ Dependency: GCC (`g++`), FontForge (`fontforge`), HarfBuzz (`hb-subset`, `hb-inf
 
 Dependency: FontForge (`fontforge`), WOFF2 (`woff2_compress`), WOFF (`sfnt2woff`)
 
-`apt install fontforge woff2 woff-tools` / `dnf install fontforge woff2-tools woff`
+`apk add fontforge woff2` / `dnf install fontforge woff2-tools woff` / `apt install fontforge woff2 woff-tools`
 
 `sh build.sh` to build.
 
@@ -43,7 +43,7 @@ Dependency: FontForge (`fontforge`), WOFF2 (`woff2_compress`), WOFF (`sfnt2woff`
 
 Dependency: librsvg2 (`rsvg-convert`), \<either Deno (`deno`) or Node.js (`node`)\>
 
-`apt install librsvg2-bin` / `dnf install librsvg2-tools`
+`apk add rsvg-convert` / `dnf install librsvg2-tools` / `apt install librsvg2-bin`
 
 Run `deno i` or `npm i` to install SVGO and its dependencies.
 
