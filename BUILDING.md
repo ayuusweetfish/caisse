@@ -31,6 +31,16 @@ Dependency: GCC (`g++`), FontForge (`fontforge`), HarfBuzz (`hb-subset`, `hb-inf
 
 *TODO: The site’s distribution build has a hard requirement on this run, due to subset WOFF2 files not being checked into the repository. This is less than ideal.*
 
+### Prebuilt subset fonts (`typeface-bake`)
+
+Dependency: HarfBuzz (`hb-subset`), WOFF2 (`woff2_compress`), WOFF (`sfnt2woff`)
+
+`apk add harfbuzz-utils woff2` / `dnf install harfbuzz woff2-tools woff` / `apt install libharfbuzz-bin woff2 woff-tools`
+
+`sh <name>.sh` to build a subset.
+
+For Alpine Linux where `sfnt2woff` is not readily available, consider `fontforge -lang=py -c 'import fontforge, sys; f = fontforge.open(sys.argv[1]); f.generate(sys.argv[1][:-4] + ".woff")'`.
+
 ### Little icons (`little-icons`)
 
 Dependency: FontForge (`fontforge`), WOFF2 (`woff2_compress`), WOFF (`sfnt2woff`)

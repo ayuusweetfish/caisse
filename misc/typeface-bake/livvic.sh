@@ -2,11 +2,11 @@ process_variant() {
   i=$1
   r1=$2
   r2=$3
-  fonttools subset /tmp/Livvic/Livvic-$i.ttf --unicodes=$r1 --output-file=/tmp/1.ttf
+  hb-subset /tmp/Livvic/Livvic-$i.ttf --unicodes=$r1 --output-file=/tmp/1.ttf
   sfnt2woff /tmp/1.ttf
   woff2_compress /tmp/1.ttf
   for j in woff woff2; do mv /tmp/1.$j Livvic-$i-base.$j; done
-  fonttools subset /tmp/Livvic/Livvic-$i.ttf --unicodes=$r2 --output-file=/tmp/1.ttf
+  hb-subset /tmp/Livvic/Livvic-$i.ttf --unicodes=$r2 --output-file=/tmp/1.ttf
   sfnt2woff /tmp/1.ttf
   woff2_compress /tmp/1.ttf
   for j in woff woff2; do mv /tmp/1.$j Livvic-$i-ext.$j; done
