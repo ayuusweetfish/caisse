@@ -32,12 +32,6 @@ const openFile = async (path, byteStart, byteEnd) => {
   const fileInfo = await file.stat()
   if (fileInfo.isDirectory) return null
 
-  const fileSize = fileInfo.size
-  if (byteStart === undefined) byteStart = 0
-  if (byteEnd === undefined) byteEnd = fileSize - 1
-  const rangeValid = (byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd)
-  if (!rangeValid) return { rangeValid }
-
   // ETag
   let etag = etagReg[path]
   if (etag === undefined) {
@@ -69,6 +63,13 @@ const openFile = async (path, byteStart, byteEnd) => {
     }
     metaReg[path] = meta
   }
+
+  // Ranges
+  const fileSize = fileInfo.size
+  if (byteStart === undefined) byteStart = 0
+  if (byteEnd === undefined) byteEnd = fileSize - 1
+  const rangeValid = (byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd)
+  if (!rangeValid) return { path, etag, meta, fileSize, rangeValid }
 
   file.seek(byteStart, Deno.SeekMode.Start)
 
@@ -441,10 +442,11 @@ const staticFile = async (req, opts, headers, path) => {
     // Static file
     if (!rangeValid) {
       status = 416
+      headers.set('Content-Range', `bytes */${fileSize}`)
       return new Response(null, { status, headers })
     } else if (reqByteStart !== undefined) {
-      headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
       status = 206
+      headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
     }
     headers.set('ETag', etag)
     headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
