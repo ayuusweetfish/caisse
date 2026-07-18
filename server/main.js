@@ -35,17 +35,13 @@ const openFile = async (path, byteStart, byteEnd) => {
   // ETag
   let etag = etagReg[path]
   if (etag === undefined) {
-    const buf = new Uint8Array(1024 * 1024)
-    let n = 0
-    let hash = 0
-    while ((n = await file.read(buf)) !== null) {
-      for (let i = 0; i < n; i++) {
-        hash = hash * 997 + buf[i] + 1
-        hash = (hash / 4294967296) ^ hash
-      }
+    const hash = (x, y, s) => {
+      x = Math.imul(((x << 5) | (x >>> 27)) ^ y, 0x9e3779b9)
+      for (let i = 0; i < s.length; i++)
+        x = Math.imul(((x << 5) | (x >>> 27)) ^ s.charCodeAt(i), 0x9e3779b9)
+      return (x >>> 1).toString(36).padStart(6, '0')
     }
-    if (hash < 0) hash += 4294967296
-    etagReg[path] = etag = `"${hash.toString(16).padStart(8, '0')}"`
+    etagReg[path] = etag = `"${hash(+fileInfo.mtime, fileInfo.size, path)}"`
   }
 
   // Metadata properties
@@ -68,15 +64,14 @@ const openFile = async (path, byteStart, byteEnd) => {
   const fileSize = fileInfo.size
   if (byteStart === undefined) byteStart = 0
   if (byteEnd === undefined) byteEnd = fileSize - 1
-  const rangeValid = (byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd)
-  if (!rangeValid) return { path, etag, meta, fileSize, rangeValid }
+  if (!(byteStart >= 0 && byteEnd < fileSize && byteStart <= byteEnd))
+    return { path, etag, meta, fileSize, rangeValid: false }
 
   file.seek(byteStart, Deno.SeekMode.Start)
 
   return {
-    path, stream: file.readable,
-    etag, meta,
-    byteStart, byteEnd, fileSize, rangeValid: true,
+    path, stream: file.readable, etag, meta, fileSize,
+    byteStart, byteEnd, rangeValid: true,
   }
 }
 
@@ -249,13 +244,8 @@ class Truncate extends TransformStream {
   constructor(limit) {
     super({
       transform(chunk, controller) {
-        if (chunk.length >= limit) {
-          chunk = chunk.slice(0, limit)
-          limit = 0
-        } else {
-          limit -= chunk.length
-        }
-        controller.enqueue(chunk)
+        controller.enqueue(chunk.slice(0, limit))
+        if ((limit -= chunk.length) <= 0) controller.terminate()
       },
     })
   }
@@ -267,17 +257,13 @@ const notFoundPage = async (req, opts, headers, path) => {
 
 const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
-  headers.set('Accept-Ranges', 'bytes')
-  headers.set('Date', new Date().toUTCString())
-
-  let status = 200
 
   const rangeHeader = req.headers.get('Range')
   const result = /bytes=(\d+)-(\d+)?/g.exec(rangeHeader)
   const reqByteStart = (result && result[1]) ? +result[1] : undefined
   const reqByteEnd = (result && result[2]) ? +result[2] : undefined
 
-  const { path: realPath, stream, etag, meta, byteStart, byteEnd, fileSize, rangeValid } =
+  const { path: realPath, stream, etag, meta, fileSize, byteStart, byteEnd, rangeValid } =
     await openFile(path, reqByteStart, reqByteEnd) ||
     (opts.isRaw ? (await openFile(path + `/raw`, reqByteStart, reqByteEnd)) : null) ||
     await openFile(path + `/index.${opts.lang}.html`) ||
@@ -303,7 +289,7 @@ const staticFile = async (req, opts, headers, path) => {
       req.aux.remoteHost,
       req.headers.get('Referer'),
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
-    if (path === '/_/404') status = 404
+    const isNotFound = (path === '/_/404')
     // Templates
     let text = await new Response(stream).text()
     const timestampMs = Date.now()
@@ -437,19 +423,15 @@ const staticFile = async (req, opts, headers, path) => {
         ) + '</blockquote>')
     }
     headers.set('Cache-Control', 'no-store')
-    return new Response(text, { status, headers })
+    return new Response(text, { status: isNotFound ? 404 : 200, headers })
   } else {
     // Static file
-    if (!rangeValid) {
-      status = 416
-      headers.set('Content-Range', `bytes */${fileSize}`)
-      return new Response(null, { status, headers })
-    } else if (reqByteStart !== undefined) {
-      status = 206
-      headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
-    }
     headers.set('ETag', etag)
-    headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
+    headers.set('Accept-Ranges', 'bytes')
+    if (!rangeValid) {
+      headers.set('Content-Range', `bytes */${fileSize}`)
+      return new Response(null, { status: 416, headers })
+    }
     if (realPath.match(/\.[0-9a-f]{8}\.[a-zA-Z0-9-_]+$/)  // Versioned
       || realPath.match(/^\/bin\/vendor\//)   // Vendored
     ) {
@@ -457,24 +439,19 @@ const staticFile = async (req, opts, headers, path) => {
     } else {
       headers.set('Cache-Control', 'public, max-age=600')
     }
-    // Check whether not modified
-    const etagMatch = (a, b) => {
-      if (!a || !b) return false
-      if (a.startsWith('W/')) a = a.substring(2)
-      if (b.startsWith('W/')) b = b.substring(2)
-      return a === b
-    }
-    if (etagMatch(etag, req.headers.get('If-None-Match'))) {
-      status = 304
+    if (etag === req.headers.get('If-None-Match')) {
       headers.delete('Content-Type')
-      headers.delete('Content-Length')
-      headers.delete('Accept-Ranges')
-      return new Response(null, { status, headers })
+      return new Response(null, { status: 304, headers })
     }
-    return new Response(
-      stream.pipeThrough(new Truncate(byteEnd - byteStart + 1)),
-      { status, headers }
-    )
+    headers.set('Content-Length', (byteEnd - byteStart + 1).toString())
+    if (reqByteStart !== undefined) {
+      headers.set('Content-Range', `bytes ${byteStart}-${byteEnd}/${fileSize}`)
+      return new Response(
+        stream.pipeThrough(new Truncate(byteEnd - byteStart + 1)),
+        { status: 206, headers }
+      )
+    }
+    return new Response(stream, { status: 200, headers })
   }
 }
 
