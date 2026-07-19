@@ -286,7 +286,9 @@ const staticFile = async (req, opts, headers, path) => {
       req.url + (path === '/_/404' ? ' *' : ''),
       JSON.stringify(opts),
       req.headers.get('User-Agent'),
-      req.aux.remoteHost,
+      req.aux.remoteHost === '127.0.0.1' ?
+        req.headers.get('X-Forwarded-For') || '127.0.0.1' :
+        req.aux.remoteHost,
       req.headers.get('Referer'),
     ].map((s) => (s || '').replace(/\t/g, ' ')).join('\t'))
     const isNotFound = (path === '/_/404')
