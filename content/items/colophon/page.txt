@@ -14,7 +14,7 @@
   <li <link https://www.aafont.com.cn/detail.html?fontId=s9K1vqVZ Aa楷宋> —— Aa字库（非商用授权）>
 >
 
-搭起这些页面并且把它们送到读者面前的一组程序名叫 Caisse（“盒子”）。负责搭建页面的部分是用 Lua 语言写成的；云端门神的咒语是 JavaScript，它们目前住在 <link https://deno.land/ Deno Deploy> 平台上。可以在 GitHub 上访问<link https://github.com/ayuusweetfish/caisse 程序仓库>。
+搭起这些页面并且把它们送到读者面前的一组程序名叫 Caisse（“盒子”）。负责搭建页面的部分是用 Lua 语言写成的；云端门神的咒语是 JavaScript，它们目前住在北大西洋西岸一座数据中心的某个小机架上。可以在 GitHub 上访问<link https://github.com/ayuusweetfish/caisse 程序仓库>。
 
 !<hr>
 
@@ -33,7 +33,7 @@ According to the grants of use or the open-source licences of the owners, this s
   <li <link https://www.aafont.com.cn/detail.html?fontId=s9K1vqVZ Aa Kai Song> — Aa Fonts (non-commercial licence)>
 >
 
-The programs that assemble these pages and send them to the reader are named “Caisse”. The parts responsible for page content are written in the Lua language; the daemons on the cloud have their incantation in JavaScript and currently live on the <link https://deno.land/ Deno Deploy> platform. The <link https://github.com/ayuusweetfish/caisse source repository> can be accessed on GitHub.
+The programs that assemble these pages and send them to the reader are named “Caisse”. The parts responsible for page content are written in the Lua language; the daemons on the cloud have their incantation in JavaScript and currently live on a little rack in a data centre, on the west coast of the North Atlantic. The <link https://github.com/ayuusweetfish/caisse source repository> can be accessed on GitHub.
 
 !<hr>
 
