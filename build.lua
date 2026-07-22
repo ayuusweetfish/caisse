@@ -7,16 +7,10 @@ os.setlocale('C')
 
 -- LuaJIT / Lua 5.4 compatibility polyfill
 
-local lsh, rsh, band, xor
-if jit then
-  local bit = require('bit')
-  lsh, rsh, band, xor = bit.lshift, bit.rshift, bit.band, bit.bxor
-else
-  lsh  = load('return function (a, b) return a << b end')()
-  rsh  = load('return function (a, b) return a >> b end')()
-  band = load('return function (a, b) return a & b end')()
-  xor  = load('return function (a, b) return a ~ b end')()
-end
+local lsh = function (a, b) return a << b end
+local rsh = function (a, b) return a >> b end
+local band = function (a, b) return a & b end
+local xor = function (a, b) return a ~ b end
 
 table.unpack = table.unpack or unpack
 
