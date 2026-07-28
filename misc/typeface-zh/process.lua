@@ -13,16 +13,8 @@ Dependencies: hb-subset (harfbuzz), woff2_compress (woff2)
 Also compatible with pyftsubset (fonttools); use `FONT_SUBSET=pyftsubset`
 ]]
 
-local fold32
-local zero64
-if jit then
-  local bit = require('bit')
-  fold32 = function (h) return bit.bxor(bit.rshift(h, 32), bit.band(h, 0xffffffff)) end
-  zero64 = require('ffi').cast('uint64_t', 0)
-else
-  fold32 = load('return function (h) return (h >> 32) ~ (h & ((1 << 32) - 1)) end')()
-  zero64 = 0
-end
+local uzero = 0
+if jit then uzero = load('return 0ULL')() end
 
 table.unpack = table.unpack or unpack
 
@@ -105,9 +97,9 @@ function addsubset(subset, name, writecss, comment)
     j = j + k
   end
   -- Hash
-  local h = zero64
+  local h = uzero
   for i = 1, #subset do h = h * 100019 + subset[i] + 1 end
-  h = string.format('%08x', fold32(h))
+  h = string.format('%08x', h % 0x100000000)
   --print(table.concat(terms, ','))
   -- Deduplication
   local woff2basename = string.format('AaKaiSong.%s.%s.woff2', name, h)
@@ -139,14 +131,6 @@ function addsubset(subset, name, writecss, comment)
 ]],
     name .. '.' .. h, table.concat(terms, ','))
   end
-end
-
-local function basehash(s)
-  local h = zero64
-  for i = 1, #s do
-    h = h * 997 + string.byte(s, i) + 1
-  end
-  return string.format('%08x', fold32(h))
 end
 
 -- Page-curated subset

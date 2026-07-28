@@ -46,7 +46,7 @@ if jit then uzero = load('return 0ULL')() end
 local function fxhash32(s)
   local h = uzero + 1
   for i = 1, #s do
-    h = ((((h << 5) + (h >> 27)) ~ string.byte(s, i)) * 0x9e3779b9) % 0x100000000
+    h = ((((h << 5) + (h >> 27)) ~ string.byte(s, i)) * 0x9e3779b9) & 0xffffffff
   end
   return string.format('%08x', h)
 end

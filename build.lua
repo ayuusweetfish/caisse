@@ -7,15 +7,15 @@ os.setlocale('C')
 
 -- LuaJIT / Lua 5.4 compatibility polyfill
 
-local rsh = function (a, b) return a >> b end
-local lsh = function (a, b) return a << b end
-local band = function (a, b) return a & b end
-local xor = function (a, b) return a ~ b end
-
 table.unpack = table.unpack or unpack
 
 local idiv = function (a, b) return math.floor(a / b) end
+
 if not utf8 then
+  local rsh = function (a, b) return a >> b end
+  local lsh = function (a, b) return a << b end
+  local band = function (a, b) return a & b end
+
   utf8 = {
     char = function (n)
       if n <= 0x7f then
@@ -281,17 +281,13 @@ local function copydst(src)
   return dst
 end
 
-local function foldhash(h)
-  return string.format('%08x', xor(rsh(h, 32), band(h, 0xffffffff)))
-end
-
 local uzero = 0
 if jit then uzero = load('return 0ULL')() end
 
 local function basehash(s)
   local h = uzero + 1
   for i = 1, #s do
-    h = (xor(lsh(h, 5) + rsh(h, 27), string.byte(s, i)) * 0x9e3779b9) % 0x100000000
+    h = ((((h << 5) + (h >> 27)) ~ string.byte(s, i)) * 0x9e3779b9) & 0xffffffff
   end
   return string.format('%08x', h)
 end
@@ -558,11 +554,11 @@ if caisse.envadditions.distbuild then
   for line in typefacestrayrec:lines() do
     local tabpos = line:find('\t')
     local docid = line:sub(1, tabpos - 1)
-    local h = hashzero
+    local h = uzero
     for w in line:sub(tabpos + 1):gmatch('[0-9a-f]+') do
       h = h * 100019 + tonumber(w, 16) + 1
     end
-    AaKaiSong_subsethashes[docid] = foldhash(h)
+    AaKaiSong_subsethashes[docid] = string.format('%08x', h % 0x100000000)
   end
   typefacestrayrec:close()
 end
@@ -648,8 +644,11 @@ local base64seq = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012345678
 local function base64encode(s)
   local bits = {}
   for i = 1, #s do
-    local b = s:byte(i)
-    for j = 7, 0, -1 do bits[#bits + 1] = band(rsh(b, j), 1) end
+    local b = s:byte(i) / 128
+    for j = 7, 0, -1 do
+      bits[#bits + 1] = math.floor(b) % 2
+      b = b + b
+    end
   end
   while #bits % 6 ~= 0 do bits[#bits + 1] = 0 end
   while #bits % 24 ~= 0 do bits[#bits + 1] = -1 end
