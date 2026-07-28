@@ -637,7 +637,7 @@ caisse.envadditions.accuratetime = function (utc, tz)
   local tz = tz or 8
   local Y, M, D, h, m, s, ms =
     utc:match('(%d+)-(%d+)-(%d+)T(%d+):(%d+):(%d+).(%d+)Z')
-  return os.date('%F %T', os.time({
+  return os.date('%Y-%m-%d %H:%M:%S', os.time({
     year = Y, month = M, day = D,
     hour = h + tz, min = m, sec = s
   }))
