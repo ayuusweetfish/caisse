@@ -8,6 +8,7 @@ os.setlocale('C')
 -- LuaJIT / Lua 5.4 compatibility polyfill
 
 local rsh = function (a, b) return a >> b end
+local lsh = function (a, b) return a << b end
 local band = function (a, b) return a & b end
 local xor = function (a, b) return a ~ b end
 
@@ -284,16 +285,15 @@ local function foldhash(h)
   return string.format('%08x', xor(rsh(h, 32), band(h, 0xffffffff)))
 end
 
-local hashzero = 0
-if jit then
-  hashzero = require('ffi').cast('uint64_t', 0)
-end
+local uzero = 0
+if jit then uzero = load('return 0ULL')() end
+
 local function basehash(s)
-  local h = hashzero
+  local h = uzero + 1
   for i = 1, #s do
-    h = h * 997 + string.byte(s, i) + 1
+    h = (xor(lsh(h, 5) + rsh(h, 27), string.byte(s, i)) * 0x9e3779b9) % 0x100000000
   end
-  return foldhash(h)
+  return string.format('%08x', h)
 end
 caisse.envadditions.basehash = basehash
 

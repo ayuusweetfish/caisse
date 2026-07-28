@@ -40,29 +40,21 @@ local template2 =
 </svg>
 ]]
 
-local fold32
-local zero64
-if jit then
-  local bit = require('bit')
-  fold32 = function (h) return bit.bxor(bit.rshift(h, 32), bit.band(h, 0xffffffff)) end
-  zero64 = require('ffi').cast('uint64_t', 0)
-else
-  fold32 = load('return function (h) return (h >> 32) ~ (h & ((1 << 32) - 1)) end')()
-  zero64 = 0
-end
+local uzero = 0
+if jit then uzero = load('return 0ULL')() end
 
-local function basehash(s)
-  local h = zero64
+local function fxhash32(s)
+  local h = uzero + 1
   for i = 1, #s do
-    h = h * 997 + string.byte(s, i) + 1
+    h = ((((h << 5) + (h >> 27)) ~ string.byte(s, i)) * 0x9e3779b9) % 0x100000000
   end
-  return string.format('%08x', fold32(h))
+  return string.format('%08x', h)
 end
 
 local overwrites = {}
 for i = 1, #arg do
   overwrites[arg[i]] = true
-  overwrites[basehash(arg[i])] = true
+  overwrites[fxhash32(arg[i])] = true
 end
 
 local htmlescapelookup = {
@@ -89,7 +81,7 @@ while true do
     -- Output
     curline = table.concat(curline)
     tspans = table.concat(tspans)
-    local hash = basehash(curline)
+    local hash = fxhash32(curline)
     print(hash, curline)
     -- Write an SVG with text
     local pathsvgfile = outdir .. '/' .. hash .. '.svg'
