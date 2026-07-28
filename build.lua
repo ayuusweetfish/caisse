@@ -284,7 +284,7 @@ end
 local uzero = 0
 if jit then uzero = load('return 0ULL')() end
 
-local function basehash(s)
+local function fxhash32(s)
   local h = uzero + 1
   for i = 1, #s do
     h = ((((h << 5) + (h >> 27)) ~ string.byte(s, i)) * 0x9e3779b9) & 0xffffffff
@@ -303,14 +303,14 @@ local function hashverhash(hash, targetpath)
   return pathwithver
 end
 local function hashverstr(str, targetpath)
-  local hash = basehash(str)
+  local hash = fxhash32(str)
   return hashverhash(hash, targetpath), hash
 end
 local filehashreg = {}
 local function hashverfile(path, targetpath)
   local hash = filehashreg[path]
   if hash == nil then
-    hash = basehash(io.open(srcpath .. path):read('a'))
+    hash = fxhash32(io.open(srcpath .. path):read('a'))
     filehashreg[hash] = hash
   end
   return hashverhash(hash, targetpath or path)
@@ -475,7 +475,7 @@ caisse.envadditions.highlightcode = function (text, linenum)
   local pos = text:find('\n')
   local lang = text:sub(1, pos - 1)
   local s = text:sub(pos + 1)
-  local hash = basehash(s)
+  local hash = fxhash32(s)
   local f = io.open('misc/highlight/res.' .. hash .. '.' .. lang .. '.html', 'r')
   if not f then
     f = io.open('misc/highlight/src.' .. hash .. '.' .. lang, 'w')
@@ -614,7 +614,7 @@ local katexupdate = (os.getenv('KATEX_UPDATE') ~= nil)
 local katexstrings = {}
 local function katexrender(string, isdisp)
   string = string:match('^%s*(.-)%s*$'):gsub('\t', ' ')
-  local hash = basehash((isdisp and '\001' or '\000') .. string)
+  local hash = fxhash32((isdisp and '\001' or '\000') .. string)
   if not katexstrings[hash] then
     katexstrings[hash] =
       hash .. (isdisp and '\t1\t' or '\t0\t') .. string:gsub('\n', '\t')
@@ -952,7 +952,7 @@ markupfns = {
   end,
   kao = function (text)
     return '<img class="kaomoji" src=\'data:image/svg+xml,' ..
-        uriescape(io.open('misc/kaomoji/gen/' .. basehash(text) .. '.svg'):read('a'))
+        uriescape(io.open('misc/kaomoji/gen/' .. fxhash32(text) .. '.svg'):read('a'))
       .. '\' alt="' .. htmlescape(text) .. '" aria-label="'
       .. (caisse.lang == 'zh' and '颜文字' or 'Kaomoji') .. '">'
   end,
