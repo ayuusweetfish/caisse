@@ -7,7 +7,6 @@ os.setlocale('C')
 
 -- LuaJIT / Lua 5.4 compatibility polyfill
 
-local lsh = function (a, b) return a << b end
 local rsh = function (a, b) return a >> b end
 local band = function (a, b) return a & b end
 local xor = function (a, b) return a ~ b end
@@ -280,10 +279,6 @@ local function copydst(src)
   ensuredir(dst)
   return dst
 end
-
-caisse.envadditions.bit = {
-  lsh = lsh, rsh = rsh, band = band, xor = xor
-}
 
 local function foldhash(h)
   return string.format('%08x', xor(rsh(h, 32), band(h, 0xffffffff)))

@@ -276,17 +276,17 @@ body.dark .aside-decor > div {
 }
 {{
   seed = tonumber(basehash(savepath .. '.' .. lang), 16)
-  nexthash = function ()
-    seed = bit.band((seed * 1664525) + 1013904223, 0xffffffff)
+  nextrand = function ()
+    seed = ((seed * 1664525) + 1013904223) % 0x100000000
     return math.floor(seed / 256)
   end
-  nexthash()
+  nextrand()
 }}
 #site-banner-container .aside-decor > div {
-  background-position-y: {{ nexthash() % 72 * 8 }}rem, {{ nexthash() % 58 * 8 }}rem;
+  background-position-y: {{ nextrand() % 72 * 8 }}rem, {{ nextrand() % 58 * 8 }}rem;
 }
 aside .aside-decor > div {
-  background-position-y: {{ nexthash() % 72 * 8 }}rem, {{ nexthash() % 58 * 8 }}rem;
+  background-position-y: {{ nextrand() % 72 * 8 }}rem, {{ nextrand() % 58 * 8 }}rem;
 }
 
 #bottom-fleuron {
