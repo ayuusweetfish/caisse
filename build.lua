@@ -291,7 +291,6 @@ local function basehash(s)
   end
   return string.format('%08x', h)
 end
-caisse.envadditions.basehash = basehash
 
 local function hashverhash(hash, targetpath)
   local name, ext = targetpath:match('(.+)%.([^./]+)')

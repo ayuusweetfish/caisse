@@ -275,12 +275,16 @@ body.dark .aside-decor > div {
   filter: hue-rotate({{hue}}deg) saturate(70%);
 }
 {{
-  seed = tonumber(basehash(savepath .. '.' .. lang), 16)
+  seed = 0
   nextrand = function ()
     seed = ((seed * 1664525) + 1013904223) % 0x100000000
     return math.floor(seed / 256)
   end
-  nextrand()
+  s = savepath .. '.' .. lang
+  for i = 1, #s do
+    seed = seed + s:byte(i)
+    nextrand()
+  end
 }}
 #site-banner-container .aside-decor > div {
   background-position-y: {{ nextrand() % 72 * 8 }}rem, {{ nextrand() % 58 * 8 }}rem;

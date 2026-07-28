@@ -73,7 +73,7 @@ end
 <!-- (shuffle) {{ 20230201 + sublistid * 202321 }} {{ list == friendlist and 0 or 0.5 }}
 {{@ sublist }}
 ====
-{{ hash = basehash(shortname) }}
+{{ hash = shortname:gsub('[A-Z]', function (a) return string.char(string.byte(a) + 32) end) }}
 <a class='friend-item friend-item-{{ hash }}'
   id='{{ shortname }}'
   href='{{ link }}'
