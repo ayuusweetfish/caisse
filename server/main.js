@@ -348,7 +348,13 @@ const staticFile = async (req, opts, headers, path) => {
         return best.slice(0, 5).map(x => x.content).join('')
       } else if (key === 'fetch') {
         const lines = value.split('\n')
-        let text = await (await fetch(lines[0])).text()
+        const url = lines[0]
+        let text
+        try {
+          text = await (await fetch(lines[0])).text()
+        } catch (e) {
+          text = ''
+        }
         if (!text.match(new RegExp('^' + lines[1]))) return lines[2]
         for (const replacement of lines.slice(3)) {
           const spacePos = replacement.indexOf(' ')
