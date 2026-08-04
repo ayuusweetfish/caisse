@@ -255,6 +255,18 @@ const notFoundPage = async (req, opts, headers, path) => {
   return staticFile(req, opts, headers, '/_/404')
 }
 
+const asyncReplace = async (s, re, fn) => {
+  const parts = []
+  let match, i = 0
+  while ((match = re.exec(s)) !== null) {
+    parts.push(s.substring(i, match.index))
+    parts.push(fn(...match))
+    i = re.lastIndex
+  }
+  parts.push(s.substring(i))
+  return (await Promise.all(parts)).join('')
+}
+
 const staticFile = async (req, opts, headers, path) => {
   headers.set('Server', 'Caisse-Deno')
 
@@ -298,7 +310,7 @@ const staticFile = async (req, opts, headers, path) => {
     const timeInMinCur = timeInMin(timestampMs, opts.tz || 8 * 60)
     const timeOfDayCur = timeOfDay(timeInMinCur)
     const fetched = {}
-    text = text.replace(/<!-- \((.+?)\)\s?(.*?)\s*-->/gs, (_, key, value) => {
+    text = await asyncReplace(text, /<!-- \((.+?)\)\s?(.*?)\s*-->/gs, async (_, key, value) => {
       if (key === 'dark') {
         const spacePos = value.indexOf(' ')
         if (spacePos !== -1)
@@ -335,9 +347,17 @@ const staticFile = async (req, opts, headers, path) => {
         best.sort((a, b) => a.score - b.score)
         return best.slice(0, 5).map(x => x.content).join('')
       } else if (key === 'fetch') {
-        const lines = value.split('\n', 1)
-        fetched[lines[0]] = null
-        return _
+        const lines = value.split('\n')
+        let text = await (await fetch(lines[0])).text()
+        if (!text.match(new RegExp('^' + lines[1]))) return lines[2]
+        for (const replacement of lines.slice(3)) {
+          const spacePos = replacement.indexOf(' ')
+          if (spacePos !== -1)
+            text = text.replace(
+              new RegExp(replacement.substring(0, spacePos), 'g'),
+              replacement.substring(spacePos + 1))
+        }
+        return text
       } else if (key === 'path') {
         const s = (new URL(req.url)).pathname
         return s.substring(1)
@@ -378,23 +398,6 @@ const staticFile = async (req, opts, headers, path) => {
         const entryContent = entries[entryIndex].split('\t').slice(1).reduce(
           (s, t, i) => s.replaceAll(params[1 + i], t), contentTempl)
         return entryContent
-      }
-    })
-    for (const url in fetched)
-      fetched[url] = await (await fetch(url)).text()
-    text = text.replace(/<!-- \((.+?)\)\s?(.+?)\s*-->/gs, (_, key, value) => {
-      if (key === 'fetch') {
-        const lines = value.split('\n')
-        let text = fetched[lines[0]]
-        if (!text.match(new RegExp('^' + lines[1]))) return lines[2]
-        for (const replacement of lines.slice(3)) {
-          const spacePos = replacement.indexOf(' ')
-          if (spacePos !== -1)
-            text = text.replace(
-              new RegExp(replacement.substring(0, spacePos), 'g'),
-              replacement.substring(spacePos + 1))
-        }
-        return text
       }
     })
     let cssNakedDay
