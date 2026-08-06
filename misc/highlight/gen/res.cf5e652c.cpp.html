@@ -1,7 +1,7 @@
 <span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;CapacitiveSensor.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdlib.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">CapacitiveSensor</span> <span class="n">sensor</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">CapacitiveSensor</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">  <span class="n">CapacitiveSensor</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
@@ -19,14 +19,14 @@
 </span></span><span class="line"><span class="cl"><span class="k">template</span> <span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span> <span class="kr">inline</span> <span class="kt">void</span> <span class="n">swap</span><span class="p">(</span><span class="n">T</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="n">T</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span> <span class="n">T</span> <span class="n">t</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span> <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">t</span><span class="p">;</span> <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">sensorBase</span><span class="p">[</span><span class="n">N_SENSORS</span><span class="p">];</span> <span class="c1">// Floor values for sensors
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="n">lastBaseInc</span><span class="p">;</span>
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">lastBaseInc</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">  <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">  <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">N_SENSORS</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">sensor</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">set_CS_AutocaL_Millis</span><span class="p">(</span><span class="mh">0xFFFFFFFF</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="n">sensorBase</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mh">0x7FFFFFF0</span><span class="p">;</span> <span class="c1">// Avoid accidental wraparound
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="p">}</span>
+</span></span></span><span class="line"><span class="cl">  <span class="p">}</span>
 </span></span><span class="line"><span class="cl">  <span class="n">lastBaseInc</span> <span class="o">=</span> <span class="n">millis</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">

@@ -476,9 +476,9 @@ caisse.envadditions.highlightcode = function (text, linenum)
   local lang = text:sub(1, pos - 1)
   local s = text:sub(pos + 1)
   local hash = fxhash32(s)
-  local f = io.open('misc/highlight/res.' .. hash .. '.' .. lang .. '.html', 'r')
+  local f = io.open('misc/highlight/gen/res.' .. hash .. '.' .. lang .. '.html', 'r')
   if not f then
-    f = io.open('misc/highlight/src.' .. hash .. '.' .. lang, 'w')
+    f = io.open('misc/highlight/gen/src.' .. hash .. '.' .. lang, 'w')
     f:write(s)
     f:close()
     return '<pre class="code">(code not rendered)</pre>'

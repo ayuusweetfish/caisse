@@ -2,7 +2,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;inttypes.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdint.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">FILE</span> <span class="o">*</span><span class="n">f_out_gdb</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">uint8_t</span> <span class="n">page_buf</span><span class="p">[</span><span class="mi">256</span><span class="p">];</span>
@@ -57,7 +57,7 @@
 </span></span><span class="line"><span class="cl">    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">path_in</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span> <span class="o">+</span> <span class="n">i</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl">    <span class="n">FILE</span> <span class="o">*</span><span class="n">f_in</span> <span class="o">=</span> <span class="nf">fopen</span><span class="p">(</span><span class="n">path_in</span><span class="p">,</span> <span class="s">&#34;rb&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="c1">// fprintf(stderr, &#34;Reading file (%d/%d) %s\n&#34;, i + 1, in_count, path_in);
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="n">f_in</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+</span></span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">f_in</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">      <span class="nf">fprintf</span><span class="p">(</span><span class="n">stderr</span><span class="p">,</span> <span class="s">&#34;Cannot open %s for reading</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">path_in</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">      <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">}</span>
@@ -82,7 +82,7 @@
 </span></span></span><span class="line"><span class="cl"><span class="cp">    } \
 </span></span></span><span class="line"><span class="cl"><span class="cp">    for (int i = 0; i &lt; spaces; i++) putchar(&#39; &#39;); \
 </span></span></span><span class="line"><span class="cl"><span class="cp">  } while (0)
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34;#define FILE_ADDR_&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">print_name</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">    <span class="nf">printf</span><span class="p">(</span><span class="s">&#34; %&#34;</span> <span class="n">PRId32</span> <span class="s">&#34;</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">addr_start</span><span class="p">);</span>
