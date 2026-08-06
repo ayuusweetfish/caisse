@@ -1,8 +1,6 @@
 // LOG_PATH=log1.txt,log2.txt sh -c 'deno run --allow-env=LOG_PATH,PORT --allow-read=$LOG_PATH --allow-run=openssl,tail --allow-net log-digest.js'
 // openssl dgst -sha3-512 log1.txt
 
-import { encodeHex, decodeHex } from 'https://deno.land/std@0.220.1/encoding/hex.ts'
-
 const logPaths = (Deno.env.get('LOG_PATH') || '').split(',')
 if (logPaths.length === 0) {
   console.log('Please specify a path through environment variable LOG_PATH')
@@ -24,23 +22,24 @@ const rehash = async (path) => {
     args: ['-n', '1', path],
     stdout: 'piped',
   })).spawn()
-  const timestamp = (new TextDecoder()).decode((await p2.output()).stdout).match(/^.([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}Z)/)[1]
+  const match = (new TextDecoder()).decode((await p2.output()).stdout).match(/^.?([0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}\.[0-9]{3}Z)/)
+  const timestamp = match ? match[1] : null
 
-  return [decodeHex(digest), timestamp]
+  return [Uint8Array.fromHex(digest), timestamp]
 }
 const update = async (paths) => {
   if (typeof paths === 'string') paths = [paths]
   try {
     const allDigest = new Uint8Array(64)
-    let maxTimestamp
+    let maxTimestamp = ''
     for (const path of logPaths) {
       const [digest, timestamp] = await rehash(path)
       for (let i = 0; i < 64; i++)
         allDigest[i] ^= digest[i]
-      if (maxTimestamp === undefined || timestamp > maxTimestamp)
+      if (timestamp > maxTimestamp)
         maxTimestamp = timestamp
     }
-    [digest, timestamp] = [encodeHex(allDigest), maxTimestamp]
+    [digest, timestamp] = [allDigest.toHex(), maxTimestamp]
   } catch (e) {
     // console.log(`${(new Date()).toISOString()} Rehash failed`)
     [digest, timestamp] = [null, null]
