@@ -94,9 +94,9 @@ const fetchMails = async (count, inboxCountLast) => {
     const bufr = new Uint8Array(1)
     while (true) {
       const n = await conn.read(bufr)
-      if (n === 0) throw new Error('Connection closed')
-      for (let i = 0; i < n; i++) {
-        const status = parser.next(bufr[i])
+      if (n === null) throw new Error('Connection closed')
+      if (n === 1) {
+        const status = parser.next(bufr[0])
         if (status.value !== undefined) return status.value
       }
     }
@@ -259,6 +259,8 @@ const fetchMails = async (count, inboxCountLast) => {
   }
 
   await cmd('LOGOUT', 'Log out')
+  conn.close()
+
   return [inboxCount, mails]
 } // fetchMails
 // ====================
