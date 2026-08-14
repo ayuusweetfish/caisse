@@ -9,7 +9,7 @@
 !<list
   <li <link hitchhiker>。>
   <li <link fungi/log-r2>。>
-  <li 补全暑假期间的工作<link maylove-ex-23 《身体红绿灯》（重制）>。>
+  <li 补全暑假期间的工作<link maylove-23 《身体红绿灯》（重制）>。>
 >
 
 {{contents.en=}}
@@ -18,5 +18,5 @@ Anyway, I finally started cleaning up around here again. Hope I can keep it up!
 !<list
   <li <link hitchhiker>.>
   <li <link fungi/log-r2>.>
-  <li Caught up with the work during the summer vacation, <link maylove-ex-23 “Traffic Lights of the Body” (second iteration)>.>
+  <li Caught up with the work during the summer vacation, <link maylove-23 “Traffic Lights of the Body” (second iteration)>.>
 >

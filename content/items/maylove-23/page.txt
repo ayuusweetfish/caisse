@@ -28,7 +28,7 @@
 
 !<img Yuanbao.jpg <~=' 女孩们伸手触摸展板图案的场景。//贵州大方镇元宝小学女足队观展剪影（照片来自<link https://mp.weixin.qq.com/s/-3y-YfdRKmzut__rRBHlHA 莓辣>）'> caption>
 
-本次仍然负责全部电子技术实现部分；美术设计来自莓辣成员 Annie。相比 <link maylove-ex-22 2022 年版本>，本次将技术方案改为电容传感，实现完整而美观的展板表面。电路集成在印刷电路板上，大部分元件在展览现场完成组装测试。装置搭建过程中获得了莓辣成员、展览志愿者与外援们的大量协助。谢谢 Sea、Milky、Annie、海涵、77、海子、花酱、肥肥、加盐、妹妹、小李（各组内按出场时间顺序）以及许多没有留下名字的大家——
+本次仍然负责全部电子技术实现部分；美术设计来自莓辣成员 Annie。相比 <link maylove-22 2022 年版本>，本次将技术方案改为电容传感，实现完整而美观的展板表面。电路集成在印刷电路板上，大部分元件在展览现场完成组装测试。装置搭建过程中获得了莓辣成员、展览志愿者与外援们的大量协助。谢谢 Sea、Milky、Annie、海涵、77、海子、花酱、肥肥、加盐、妹妹、小李（各组内按出场时间顺序）以及许多没有留下名字的大家——
 
 !<img log/BodyLight_0715B.png <= 装置反面示意图，铜片通过导线连接到单片机上。标有文字：“导线悬空即可，若影响灵敏度则考虑用胶带固定于面板”；旁边局部放大图显示铜箔用导电胶带固定并粘在导线上，另外也可以直接用导电胶带组成感应区域。> syncdark>
 !<img log/BodyLight_0715C.png <= 装置夹层示意图，包括红黄绿不同颜色的灯带，各自伸出正负极导线接在 12 V 电源上，同时伸出一根导线连接到各自不同的单片机引脚。> syncdark>
@@ -55,7 +55,7 @@ Reach out the hands and light up the body parts on the “body textbook”. Obse
 
 !<img Yuanbao.jpg <~=' Photo of girls reaching out and touching the display panel.//Photo of the girls’ football team of Yuanbao Primary School (Dafang County, Guizhou) viewing the exhibition (photo courtesy of <link https://mp.weixin.qq.com/s/-3y-YfdRKmzut__rRBHlHA MAYLOVE>)'> caption>
 
-This time I was again responsible for the implementation of electronic technologies. Artwork design by MAYLOVE member Annie. Compared to the <link maylove-ex-22 2022 revision>, this one changes the technical approach to capacitive sensing, resulting in a coherent, aesthetically pleasing display surface. The circuit is integrated on a printed circuit board, with the majority of components assembled and tested on-site. Throughout the setup process, tremendous aid was received from the MAYLOVE members, exhibition volunteers, and external participants. Gratitude goes to Sea, Milky, Annie, Haihan, Qiqi, Haizi, Huajiang, Feifei, Jiayan, the little sister, and Li (in order of appearance within each group) together with a lot of friends who did not leave behind a name.
+This time I was again responsible for the implementation of electronic technologies. Artwork design by MAYLOVE member Annie. Compared to the <link maylove-22 2022 revision>, this one changes the technical approach to capacitive sensing, resulting in a coherent, aesthetically pleasing display surface. The circuit is integrated on a printed circuit board, with the majority of components assembled and tested on-site. Throughout the setup process, tremendous aid was received from the MAYLOVE members, exhibition volunteers, and external participants. Gratitude goes to Sea, Milky, Annie, Haihan, Qiqi, Haizi, Huajiang, Feifei, Jiayan, the little sister, and Li (in order of appearance within each group) together with a lot of friends who did not leave behind a name.
 
 !<img log/BodyLight_0715B.png <= Diagram the back side of the installation. Copper sheets are connected to the microcontroller through wires. A partial zoom-in diagram on the side depicts the copper sheet fixed to the wires with conductive tape, or alternatively, the sensing area directly formed with conductive tape.//Back side. Text in purple: “sufficient to leave wires overhanging; consider fixing them to the panel with tape, if sensitivity becomes a concern”.> caption syncdark>
 !<img log/BodyLight_0715C.png <= Diagram of the internal layer of the installation. This comprises light strips of different colours — red, yellow, green — each with positive and negative leads extended onto a 12 V power supply, and with another lead extended to a dedicated microcontroller pin.//Internal layer.> caption syncdark>
@@ -67,12 +67,12 @@ This time I was again responsible for the implementation of electronic technolog
 
 {{rellinks.zh=}}
 !<list
-  <li <link maylove-ex-22 装置第一版>>
-  <--=' <li <link maylove-ex-23/log 重制版工作日志>> '>
+  <li <link maylove-22 装置第一版>>
+  <--=' <li <link maylove-23/log 重制版工作日志>> '>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link maylove-ex-22 First iteration of the installation (2022)>>
-  <--=' <li <link maylove-ex-23/log Work journal of the revised iteration>> '>
+  <li <link maylove-22 First iteration of the installation (2022)>>
+  <--=' <li <link maylove-23/log Work journal of the revised iteration>> '>
 >

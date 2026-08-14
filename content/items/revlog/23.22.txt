@@ -9,7 +9,7 @@
   <li <link flow/rush>。>
   <li <link nuages>。>
   <li <link shards>。>
-  <li <link maylove-ex-23>，补全双语版。>
+  <li <link maylove-23>，补全双语版。>
 >
 
 {{contents.en=}}
@@ -18,5 +18,5 @@ Tinkering with little devices. Meanwhile…
   <li <link flow/rush>.>
   <li <link nuages>.>
   <li <link shards>.>
-  <li <link maylove-ex-23>, English version updated.>
+  <li <link maylove-23>, English version updated.>
 >
