@@ -84,7 +84,7 @@ It was when I came home in the summer vacation, finding the same state of mind i
 !<list
   <li <subpagelink fireflies/play 游玩链接（本站）>>
   <li <link https://ayuusweetfish.itch.io/fireflies-in-forest-flowers 游玩链接（itch.io）>>
-  <li <link https://github.com/ayuusweetfish/Fireflies-in-Forest-Flowers 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Fireflies-in-Forest-Flowers 程序仓库>>
   <li <link bellflowers 音乐《%》>>
 >
 
@@ -92,6 +92,6 @@ It was when I came home in the summer vacation, finding the same state of mind i
 !<list
   <li <subpagelink fireflies/play Play the game (this site)>>
   <li <link https://ayuusweetfish.itch.io/fireflies-in-forest-flowers Play the game (itch.io)>>
-  <li <link https://github.com/ayuusweetfish/Fireflies-in-Forest-Flowers Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Fireflies-in-Forest-Flowers Source repository>>
   <li <link bellflowers Music “%”>>
 >

@@ -74,10 +74,10 @@ Blow, into clouds that have descended to the ground. As if they could be ridden 
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://gist.github.com/ayuusweetfish/7c7791162bf31a9c78dd61f2ac79889a 动画程序>>
+  <li <link https://git.ayu.land/flight-vis 动画程序>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link https://gist.github.com/ayuusweetfish/7c7791162bf31a9c78dd61f2ac79889a Program for the animation>>
+  <li <link https://git.ayu.land/flight-vis Program for the animation>>
 >

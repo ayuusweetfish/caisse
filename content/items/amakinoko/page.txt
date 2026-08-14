@@ -28,7 +28,7 @@
 
 把这些全都画到电路板上，加上温湿度、气压与光强传感器，就可以感知到天气变化啦。再加一块 USB 芯片，还可以连上电脑，随时替换程序。
 
-哎不对，编程是需要安装那个重量级工具链的吧？没关系，只要<link https://github.com/ayuusweetfish/Amakinoko/tree/master/misc/mumu 模拟一个最简单的小计算机>就可以随时随地爱写什么写什么啦。
+哎不对，编程是需要安装那个重量级工具链的吧？没关系，只要<link https://git.ayu.land/Amakinoko/about/misc/mumu/README.md 模拟一个最简单的小计算机>就可以随时随地爱写什么写什么啦。
 
 好像也没有太多可说的，是吧？其余细节详见仓库。
 
@@ -48,16 +48,16 @@ Add an outer layer with coloured gauze beneath the hollows, and the light become
 
 Draw all these onto a circuit board, add sensors for temperature, humidity, barometric pressure, and light intensity, and they will sense the changes of weather. Add a USB chip so that it can connect to a computer and get program replacements at any time.
 
-Wait, doesn’t programming require installing that super-heavyweight toolchain? No worries! Just <link https://github.com/ayuusweetfish/Amakinoko/tree/master/misc/mumu emulate a minimalist little computer> to write whatever code anytime, anywhere.
+Wait, doesn’t programming require installing that super-heavyweight toolchain? No worries! Just <link https://git.ayu.land/Amakinoko/about/misc/mumu/README.md emulate a minimalist little computer> to write whatever code anytime, anywhere.
 
 Not much else to elaborate on, right? For all the details, please check the respository.
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://github.com/ayuusweetfish/Amakinoko 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Amakinoko 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link https://github.com/ayuusweetfish/Amakinoko Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Amakinoko Source repository>>
 >

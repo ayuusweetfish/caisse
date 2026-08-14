@@ -33,13 +33,13 @@ The production process was filled with twists, with lots of mechanics discussed 
 {{rellinks.zh=}}
 !<list
   <li <subpagelink sheepdogs/play 游玩链接（本站）>>
-  <li <link https://github.com/ayuusweetfish/sheepdog 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Sheepdogs 程序仓库>>
   <li <link sheepdogs-work 音乐《%》>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <subpagelink sheepdogs/play Play the game (this site)>>
-  <li <link https://github.com/ayuusweetfish/sheepdog Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Sheepdogs Source repository>>
   <li <link sheepdogs-work Music “%”>>
 >

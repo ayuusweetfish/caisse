@@ -21,7 +21,7 @@
 
 活动后更新：泡泡高光、英语支持、扩展词库、截图功能，并将识图模型从 Gemini 1.5 Flash（此时已停止服务）更换到新鲜出炉的<link https://qwen.ai/blog?id=qwen3.5 千问 Qwen 3.5>。<date 26.02,26.03>
 
-对技术感兴趣的读者可以在<link https://github.com/ayuusweetfish/Blow-Something 程序仓库>中找到：
+对技术感兴趣的读者可以在<link https://git.ayu.land/Blow-Something 程序仓库>中找到：
 !<list
   <li 泡泡高光的渲染算法；>
   <li 浏览器版 LÖVE 中，更丰富的互动功能实现：
@@ -43,7 +43,7 @@ A draw-and-guess game with bubbles as the paintbrush. The player drags and pops 
 
 Post-jam update: bubble highlight; English support; extended word list; screenshot. The image recognition model was also migrated from Gemini 1.5 Flash (which had already been retired) to the newly-released <link https://qwen.ai/blog?id=qwen3.5 Qwen 3.5>. <date 26.02,26.03>
 
-The technically proficient visitor might be interested in looking into <link https://github.com/ayuusweetfish/Blow-Something the source repository> for:
+The technically proficient visitor might be interested in looking into <link https://git.ayu.land/Blow-Something the source repository> for:
 !<list
   <li The algorthm to render the bubble’s highlight;>
   <li Implementation of richer interaction functionalities in browser-version LÖVE:
@@ -57,11 +57,11 @@ The technically proficient visitor might be interested in looking into <link htt
 {{rellinks.zh=}}
 !<list
   <li <link https://blow.ayu.land 游玩链接>>
-  <li <link https://github.com/ayuusweetfish/Blow-Something 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Blow-Something 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link https://blow.ayu.land Play>>
-  <li <link https://github.com/ayuusweetfish/Blow-Something Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Blow-Something Source repository>>
 >

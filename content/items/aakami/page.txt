@@ -55,13 +55,13 @@ The console’s graphics unit seems to be a little bit less capable than expecte
 {{rellinks.zh=}}
 !<list
   <li <subpagelink aakami/play 游玩链接>>
-  <li <link https://github.com/ayuusweetfish/AAKAMI 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/AAKAMI 程序仓库>>
   <li <link https://xiashj96.itch.io/aakami itch.io 页面>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <subpagelink aakami/play Play the game>>
-  <li <link https://github.com/ayuusweetfish/AAKAMI Source repository (GitHub)>>
+  <li <link https://git.ayu.land/AAKAMI Source repository>>
   <li <link https://xiashj96.itch.io/aakami itch.io page>>
 >

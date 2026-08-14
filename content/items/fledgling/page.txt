@@ -56,10 +56,10 @@ The game logic is written in ARMv6 assembly. We built a simple single-tasking op
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://github.com/ayuusweetfish/Fledgling-Go 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Fledgling-Go 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link https://github.com/ayuusweetfish/Fledgling-Go Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Fledgling-Go Source repository>>
 >

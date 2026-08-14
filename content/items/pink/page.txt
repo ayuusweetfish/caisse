@@ -111,13 +111,13 @@ To have a taste of the experience, open <link https://pink.ayu.land/kiosk/ the d
 {{rellinks.zh=}}
 !<list
   <li <link https://pink.ayu.land/kiosk/ 互动演示>>
-  <li <link https://github.com/ayuusweetfish/Pink-Bubble 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Pink-Bubble 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link https://pink.ayu.land/kiosk/ Interactive demonstration>>
-  <li <link https://github.com/ayuusweetfish/Pink-Bubble Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Pink-Bubble Source repository>>
 >
 
 {{toc=}}true

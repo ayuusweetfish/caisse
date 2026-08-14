@@ -37,14 +37,14 @@ Halfway done with the music but did not finish it as the game was already submit
 !<list
   <li <subpagelink ice-hatch/play 游玩链接（本站）>>
   <li <link https://ayuusweetfish.itch.io/ice-hatch 游玩链接（itch.io）>>
-  <li <link https://github.com/ayuusweetfish/Ice-Hatch 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Ice-Hatch 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <subpagelink ice-hatch/play Play (this site)>>
   <li <link https://ayuusweetfish.itch.io/ice-hatch Play (itch.io)>>
-  <li <link https://github.com/ayuusweetfish/Ice-Hatch Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Ice-Hatch Source repository>>
 >
 
 {{rellinks.en=}}

@@ -72,12 +72,12 @@ The language model has been migrated to <link https://api-docs.deepseek.com/news
 !<list
   <li <link https://fox.ayu.land 游玩链接>>
   <li <link https://ayuusweetfish.itch.io/rolling-tail-headlines Itch.io 页面>>
-  <li <link https://github.com/ayuusweetfish/Rolling-Tail-Headlines 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Rolling-Tail-Headlines 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link https://fox.ayu.land Play>>
   <li <link https://ayuusweetfish.itch.io/rolling-tail-headlines Itch.io page>>
-  <li <link https://github.com/ayuusweetfish/Rolling-Tail-Headlines Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Rolling-Tail-Headlines Source repository>>
 >

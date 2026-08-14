@@ -29,12 +29,12 @@ Daytime cat simulator. Follow the pawprints to find other cats (and also fish!).
 !<list
   <li <subpagelink daytime-cat/play 游玩链接（本站）>>
   <li <link https://ayuusweetfish.itch.io/daytime-cat 游玩链接（itch.io）>>
-  <li <link https://github.com/ayuusweetfish/Daytime-Cat 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Daytime-Cat 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <subpagelink daytime-cat/play Play the game (this site)>>
   <li <link https://ayuusweetfish.itch.io/daytime-cat Play the game (itch.io)>>
-  <li <link https://github.com/ayuusweetfish/Daytime-Cat Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Daytime-Cat Source repository>>
 >

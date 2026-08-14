@@ -65,12 +65,12 @@ Post-jam update: added a screen for puzzle preview and selection; minor optimiza
 !<list
   <li <subpagelink nectar/play 游玩链接>>
   <li <link https://ldjam.com/events/ludum-dare/55/nectar-nexus LD55 参赛作品页面>>
-  <li <link https://github.com/ayuusweetfish/Nectar-Nexus 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Nectar-Nexus 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <subpagelink nectar/play Play the game>>
   <li <link https://ldjam.com/events/ludum-dare/55/nectar-nexus LD55 entry page>>
-  <li <link https://github.com/ayuusweetfish/Nectar-Nexus Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Nectar-Nexus Source repository>>
 >

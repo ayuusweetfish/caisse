@@ -16,21 +16,21 @@
 这个项目主要面向正在编写绿野仙踪法实验中软件原型的开发者，他们所编制的程序需要由人类观察者来手动远程操控。借助此工具包，可以相对容易地实现这种远程控制功能。
 !<img illust.png <= 工作原理示意图：实验参与者操作的软件以及一旁的人类观察者使用的 web 界面都通过 WebSocket 与一台服务器通信。观察者通过界面上的按钮和滑动条发出远程控制的指令，参与者的软件接收这些信号并执行对应的改变，实现远程控制的功能。> caption>
 Patchwork Girl 定义了一个基于 WebSocket 的应用层协议，并提供了一个带有 web 界面的服务端程序。被控制的程序可以使用任何语言或程序库编写，它们只要按标准流程向服务器建立 WebSocket 连接并编解码其上传输的简单 JSON 数据，就可以获得一个远程控制的界面，提供给实验操作人员使用。
-具体可参见<link https://github.com/ayuusweetfish/PatchworkGirl 源码仓库>中的 README 说明文档。
+具体可参见<link https://git.ayu.land/Patchwork-Girl 源码仓库>中的 README 说明文档。
 
 {{contents.en=}}
 Patchwork Girl is a toolkit for the Wizard of Oz methodology, aiding the development of software prototypes for early-stage usability tests.
 The intended audience of this project are developers looking forward to building software prototypes for use in Wizard of Oz experiments, i.e. programs that need to be remote-controlled manually by human observers. With this toolkit, such functionalities can be implemented with more ease.
 !<img illust.png <= Diagram: the software operated by the participant and the web interface used by a human observer both communicate with a server through WebSocket. The observer sends remote control commands via buttons and sliders on the interface, and the participant’s software receives these signals and applies the corresponding changes, enabling remote control.> caption>
 Patchwork Girl defines an application-level protocol based on WebSocket and provides a server application with a web interface. Programs being controlled can employ any programming language/framework/library. By establishing a standard WebSocket connection to the server and processing simple JSON messages transmitted, they can obtain an interface for remotely control available to the experiment operators.
-For details, please refer to the README document in the <link https://github.com/ayuusweetfish/PatchworkGirl source repository>.
+For details, please refer to the README document in the <link https://git.ayu.land/Patchwork-Girl source repository>.
 
 {{rellinks.zh=}}
 !<list
-  <li <link https://github.com/ayuusweetfish/PatchworkGirl 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Patchwork-Girl 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
-  <li <link https://github.com/ayuusweetfish/PatchworkGirl Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Patchwork-Girl Source repository>>
 >

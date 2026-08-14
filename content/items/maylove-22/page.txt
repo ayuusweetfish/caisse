@@ -61,13 +61,13 @@ However, remote collaboration was way more challenging then expected. Due to my 
 {{rellinks.zh=}}
 !<list
   <li <subpagelink maylove-22/play “我从哪里来”游玩链接>>
-  <li <link https://github.com/ayuusweetfish/MAYLOVE2022_Contraception “我从哪里来”程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Contraception “我从哪里来”程序仓库>>
   <li <link maylove-23 《身体红绿灯》第二版>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <subpagelink maylove-22/play Play “The Origin of Me”>>
-  <li <link https://github.com/ayuusweetfish/MAYLOVE2022_Contraception “The Origin of Me” source repository (GitHub)>>
+  <li <link https://git.ayu.land/Contraception “The Origin of Me” source repository>>
   <li <link maylove-23 Second iteration of the “Traffic Lights of the Body”>>
 >

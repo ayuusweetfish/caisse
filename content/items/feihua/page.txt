@@ -55,11 +55,11 @@ The number of players was unexpectedly high according to the analytics, which ma
 {{rellinks.zh=}}
 !<list
   <li <link https://feihua.ayu.land 《飞花小令》网页版>>
-  <li <link https://github.com/kuriko1023/fhl 程序仓库（GitHub）>>
+  <li <link https://git.ayu.land/Feihua 程序仓库>>
 >
 
 {{rellinks.en=}}
 !<list
   <li <link https://feihua.ayu.land Web version of <it Floral Ditties>>>
-  <li <link https://github.com/kuriko1023/fhl Source repository (GitHub)>>
+  <li <link https://git.ayu.land/Feihua Source repository>>
 >
