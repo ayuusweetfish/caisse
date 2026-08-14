@@ -2,7 +2,7 @@
 {{title.en=}}E-mail
 
 {{intro.zh=}}
-邮件地址是任意英文字母后接 <tt @ayu.land>。
+邮件地址是任意单个英文字母后接 <tt @ayu.land>。
 网站上没有设置评论区，我也不在公开的社交网络上活跃，因此有任何想法都请随意写给我。漫漫世间的回响总是让人幸福～
 
 !<hr>
@@ -14,7 +14,7 @@
 !<note 24 夏季起的信件全部尚待回复 <kao T T>……活动缓慢恢复中！<br>另，26 夏季搬迁后列表重置，此前所有邮件均已归档保存。<date 26.13>>
 
 {{intro.en=}}
-The mail address is any English letter followed by <tt @ayu.land>.
+The mail address is any single English letter followed by <tt @ayu.land>.
 This website does not have a comment section, nor am I active on public social networks; so please feel free to send anything here. It’s always a delight to hear a callback in this vast world!
 
 !<hr>
