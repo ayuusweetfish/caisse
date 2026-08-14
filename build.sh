@@ -56,5 +56,6 @@ CP="$CP" CP_R="$CP_R" CP_STDIN="$CP_STDIN" $LUA build.lua
 
 if [ $? -eq 0 ] && arg_has "$*" dist; then
   (cd misc/typeface-zh && LUA=$LUA sh run.sh)
+  rm -rf ./build/*
   DIST=1 $LUA build.lua
 fi
