@@ -40,6 +40,7 @@ if arg_has "$*" stat; then
     -not -path "../../content/items/backyard/*" \
     -not -regex "\.\./\.\./content/[^/]*\.\(html\|css\|js\|txt\)" \
     -not -name "page.txt" \
+    -not -name "page.html" \
     -not -name "*.caisse.json" \
     | $LUA build.lua database.tsv ../../content/
 
