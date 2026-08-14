@@ -1093,6 +1093,7 @@ img.item-banner,
 }
 .item-content div.table-container table {
   min-inline-size: 75%;
+  max-inline-size: 100%;
   margin-inline: auto;
 }
 .item-content div.table-container table,
