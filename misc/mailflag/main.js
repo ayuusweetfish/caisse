@@ -8,6 +8,7 @@ const pwd = Deno.env.get('PWD')
 const myAddrs = (Deno.env.get('ADDRS') ? Deno.env.get('ADDRS').split(',') : null)
 const listSize = +Deno.env.get('LISTSIZE') || 5
 const mailboxName = Deno.env.get('MAILBOX') || 'INBOX'
+const interval = +Deno.env.get('INTERVAL') || 60
 
 const log = (s) => Deno.stdout.writeSync(new TextEncoder().encode(`${new Date().toISOString()} ${s}\n`))
 
@@ -290,7 +291,7 @@ const updateMails = async () => {
 }
 
 await updateMails()
-setInterval(() => updateMails(), 60000)
+setInterval(() => updateMails(), interval * 1000)
 
 const serveReq = /*async*/ (req) => {
   const url = new URL(req.url)
