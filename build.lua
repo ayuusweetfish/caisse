@@ -225,8 +225,6 @@ caisse.readfile = function (path)
   local f = io.open(srcpath .. path, 'r')
   if f then return f:read('a') end
 end
-os.execute('rm -rf ' .. sitepath)
-os.execute('mkdir -p ' .. sitepath)
 
 -- File system operations
 

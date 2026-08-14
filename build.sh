@@ -3,7 +3,11 @@ cd $(dirname $0)
 LUA=${LUA:-luajit}
 
 mkdir -p /tmp/caissebuild
-if [ -L ./build ]; then mkdir -p $(readlink ./build); fi
+if [ -L ./build ]; then
+  mkdir -p $(readlink ./build)
+else
+  rm -rf ./build/*
+fi
 
 if [ -z "$CP_NO_STDIN" ]; then
   if [ ! -e /tmp/caissebuild/symlinkabs ]; then
