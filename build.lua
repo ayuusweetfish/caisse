@@ -260,7 +260,7 @@ local function fscpdir(src, dst)
     cpprocess:write(src .. '\n' .. dst .. '\n')
   else
     cpprocess[#cpprocess + 1] =
-      cprcommand .. ' "' .. src .. '" "' .. dst .. '"'
+      cprcommand .. ' "' .. src .. '"/. "' .. dst .. '"'
   end
 end
 
@@ -1327,7 +1327,16 @@ end
 if cpstdin then
   cpprocess:close()
 else
-  os.execute(table.concat(cpprocess, '; '))
+  local argmax = tonumber(io.popen('getconf ARG_MAX', 'r'):read('a')) or 4096
+  local start, len = 1, 0
+  for i = 1, #cpprocess do
+    if len + #cpprocess[i] + 2 > argmax then
+      os.execute(table.concat(cpprocess, '; ', start, i - 1))
+      start, len = i, 0
+    end
+    len = len + #cpprocess[i] + 2
+  end
+  os.execute(table.concat(cpprocess, '; ', start, #cpprocess))
 end
 
 if katexupdate then
