@@ -44,7 +44,7 @@ Feeling like writing, yet unable to… <date 26.08>
   <li 类型学捏捏
     <marker Tags-Image>
     <img neka_12685_fig.png <= 棕色头发、浅棕色衣着的人物画像。水印 @Masaki Q。> medsmall>
-    <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, EII-Ne, RLUAI, 抑郁质-多血质, 混乱善良, 女, ADHD> medsmall syncdark>
+    <img neka_12685_zh.png <= INFP, 4w3, 479, so/sx, EII-Ne, RLUAI, EVFL, 抑郁质-多血质, 混乱善良, 女, ADHD> medsmall syncdark>
   >
   <li 长三角 → 北京>
   <li 高敏>
@@ -69,7 +69,7 @@ While one-sided categorizations carry too much prejudice and misunderstanding, t
   <li Typologies avatar
     <marker Tags-Image>
     <img neka_12685_fig.png <= A figure with brown hair, in light brown outfit. Watermark @Masaki Q.> medsmall>
-    <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, EII-Ne, RLUAI, Melancholic-Sanguine, Chaotic Good, Female, ADHD> medsmall syncdark>
+    <img neka_12685_en.png <= INFP, 4w3, 479, so/sx, EII-Ne, RLUAI, EVFL, Melancholic-Sanguine, Chaotic Good, Female, ADHD> medsmall syncdark>
   >
   <li Yangtze Delta → Beijing>
   <li Highly sensitive person (HSP)>
