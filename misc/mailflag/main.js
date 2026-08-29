@@ -300,5 +300,7 @@ const serveReq = /*async*/ (req) => {
 }
 
 const serverPort = +Deno.env.get('SERVEPORT') || 2339
-const server = Deno.serve({ port: serverPort }, serveReq)
-log(`Running at http://localhost:${serverPort}/`)
+const server = Deno.serve({
+  port: serverPort,
+  onListen: () => log(`Running at http://localhost:${serverPort}/`),
+}, serveReq)
