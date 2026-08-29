@@ -237,7 +237,8 @@ const fetchMails = async (count, inboxCountLast) => {
         for (const [_seqStr, headersStrQuoted] of headersMatched) {
           const [headersStr, _] = consumeStrOrAtom(headersStrQuoted)
           const headers = parseHeaders(headersStr)
-          const date = new Date(headers['Date'])
+          const parsedDate = new Date(headers['Date'])
+          const date = Number.isNaN(parsedDate) ? new Date(0) : parsedDate
           const fromAddrs = parseAddresses(headers['From'])
           const toAddrs = parseAddresses(headers['To'])
           let from = fromAddrs[0]
