@@ -204,6 +204,7 @@ const fetchMails = async (count, inboxCountLast) => {
   )[0][0]
   if (inboxCount === inboxCountLast) {
     await cmd('LOGOUT', 'Log out')
+    conn.close()
     return [inboxCount, null]
   }
 
@@ -261,7 +262,6 @@ const fetchMails = async (count, inboxCountLast) => {
 
   await cmd('LOGOUT', 'Log out')
   conn.close()
-
   return [inboxCount, mails]
 } // fetchMails
 // ====================
